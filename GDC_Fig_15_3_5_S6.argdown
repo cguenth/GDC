@@ -1,0 +1,368 @@
+===
+title: Prelimenary Reconstruction of the GDC - S6 - 1837.2
+author: Corinna Günth-Stiegeler
+date: 17/05/2019  
+transformStatementRelations: true // using strict mode
+dot: 
+    graphVizSettings: 
+      "rankdir": "TB"  
+      "ranksep": "1"   
+===
+
+# Rival Hypotheses
+
+[Devonian Strata as CAM]: In Devon, *all* the strata - older than the New Red Sandstone - were attributed to the Cambrian #GRE
+ 
+[Culm as CM]: Dated by its fossils, the Devonian Culm strata were attributed to the Coal Measures #COA
+
+/* The explanations were understood to be rivals: */
+
+[Culm as CM]
+    -> [Devonian Strata as CAM] // GRE and COA are contrary
+    - [Devonian Strata as CAM]
+   
+
+# Evidence
+
+/* The following items of evidence were considered to be relevant for deciding which of the three hypotheses is correct. */
+
+[Unbroken Sequence of Strata]: In Devon, *all* the strata - older than the New Red Sandstone - were regarded as forming an unbroken sequence of strata #ev
+ 
+[CM Plants in Devon Culm]: In Devon, the Culm strata contained Coal Measures fossil plants #ev
+
+[Instances of Coal in Ancient Strata]: In Munster, the Bocage and Pennsylvannia, there were coal deposits in pre-Old Red Sandstone strata #ev
+
+[Major Unconformity in Devon]: In Devon, there was a major unconformity between the Culm and the strata below #ev
+    -> [Unbroken Sequence of Strata]
+    - [Unbroken Sequence of Strata]
+
+[CM Plants in Ancient French Strata]: In northwest France, the limestones were considered as pre-Old Red Sandstone and containing fossil plants of which at least some were referable to species of the Coal Measures #ev
+
+[Munster Coal as Carboniferous]: In Munster, the limestone and coal seams were pre-Carboniferous #ev
+    -> [Instances of Coal in Ancient Strata]
+    - [Instances of Coal in Ancient Strata]
+
+[Major Unconformity in Devon II]: In Devon, there was a major unconformity between the main part of the Culm and black Culm limestone #ev
+    -> [Major Unconformity in Devon] 
+    - [Major Unconformity in Devon]
+    -> [Unbroken Sequence of Strata]
+    - [Unbroken Sequence of Strata]
+
+[Yorkshire similarities]: The Black Culm limestone in Devon was similar to some strata in Yorkshire -  both in fossils and rock type #ev
+
+[CM Plants in North Devon]: In north Devon, the non-Culm strata contained fossil plants similar to Coal Measures plants #ev
+
+[ML Fauna in South Devon]: In south Devon, fossils from the non-Culm strata were dated to somewhere near the base of the ML #ev
+
+
+# Arguments and Further Theses {isGroup: false}
+
+/* The arguments reconstructed in this section detail whether the three hypotheses can explain or whether they conflict with the available evidence.
+Arguments are tagged according to whether the lay out explanatory relations or conflicts of hypothesis GRE and COA. 
+In addition to these arguments, the section makes further auxiliary assumptions explicit. */
+
+
+## Inferential Relations between @[Devonian Strata as CAM] and the Available Evidence {isGroup: false}
+
+/* GRE.1a  DLB's proposal, late in 1834
++ GRE.1b   At Bristol: DLB conceded his critics' structural interpretation and reversed the sequence
++ GRE.2    After the Bristol meeting: DLB accepted MUR's LSIL dating for the youngest non-Culm strata;
+           this constituted a shift of the Culm to USIL
+*/
+
+<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata were Cambrian, then the Devonian sequence was unbrocken. #GRE
+
+    (1) [Devonian Strata as CAM]
+    ----
+    (2) [Unbroken Sequence of Strata]
+
+[Culm as CAM]: The whole Culm strata of Devonshire were attributed to the Cambrian #GRE #strat-hyp #aux
+
+[Culm in the Middle]: The Culm and its fossil plants were considered to be somewhere in the middle of the sequence #GRE #super-hyp
+
+<Culm as CAM>: If, in Devon, all the strata were Cambrian, then the Culm - lying in the middle of the sequence - were Cambrian, too #GRE
+
+    (1) [Devonian Strata as CAM]
+    (2) [Culm in the Middle]
+    ----
+    (3) [Culm as CAM] 
+
+
+[Coal in Ancient Strata]: There were coal deposits in pre-Old Red Sandstone strata #GRE #pri
+
+[Instances of Ancient Strata]: In Munster, the Bocage and Pennsylvannia, there were pre-Old Red Sandstone strata #GRE #strat-hyp
+
+<Coal in Ancient Strata>: If there were coal deposits in pre-Old Red Sandstone strata and such strata was found in Munster, the Bocage and Pennsylvannia, then there were coal deposits in the pre-Old Red Sandstone strata of Munster, the Bocage and Pennsylvannia #GRE
+    
+    (1) [Instances of Ancient Strata]
+    (2) [Coal in Ancient Strata]
+    ----
+    (3) [Instances of Coal in Ancient Strata]
+
+
+[CM Plants in Ancient Strata]: In pre-Old Red Sandstone strata, there were fossil plants similar to those of the Coal Measures  #GRE #pri
+
+[Coal and CM Plants]: The Coal Measures were noted for the great amounts of coal they contained (accounted for the major portion of England’s production of coal) #GRE #pri
+
+<Coal and CM Plants>: If there were coal deposits in pre-Old Red Sandstone strata and the Coal Measures were noted for the great amounts of coal they contained, then there had been similarities between the faunas of the Coal Measures and pre-Old Red Sandstone formations #GRE
+
+    (1) [Coal in Ancient Strata]
+    (2) [Coal and CM Plants]
+    ----
+    (3) [CM Plants in Ancient Strata]
+
+<Culm and CM Plants>: If the Devon Culm strata were pre-Old Red Sandstone in age and there were Coal Measure plants in pre-Old Red Sandstone, then there were Coal Measure plants in the Devon Culm   #GRE
+
+    (1) [Culm as CAM]
+    (2) [CM Plants in Ancient Strata]
+    ----
+    (3) [CM Plants in Devon Culm]
+    
+
+[Ancient French Strata]: In the Bocage, there were pre-Old Red Sandstone strata. #GRE #strat-hyp
+
+<French Ancient Strata and CM Plants>: If some French strata were pre-Old Red Sandstone in age and there were Coal Measures plants in pre-Old Red Sandstone, then there were Coal Measures plants in ancient French strata  #GRE
+
+    (1) [Ancient French Strata]
+    (2) [CM Plants in Ancient Strata]
+    ----
+    (3) [CM Plants in Ancient French Strata]
+
+
+<Reversing the Sequence - GRE.1b>: If both, the Culm strata - lying uppermost - and the non-Culm strata, were Cambrian in age, then the Devonian sequence was unbrocken #GRE
+
+    (1) [Culm Uppermost]
+    (2) [Culm as CAM]
+    (3) [Non-Culm Strata as CAM]
+    ----
+    (4) [Unbroken Sequence of Strata]
+
+
+[Culm as SIL]: The whole Culm strata of Devonshire were attributed to the Silurian #GRE #strat-hyp #aux 
+    -> [Culm as CM] // contrary to @[Culm as CM]
+    - [Culm as CM]
+    -> [Devonian Strata as CAM] // contrary to @[Devonian Strata as CAM]
+    - [Devonian Strata as CAM]
+
+<Extending the Sequence Upwards - GRE.2>: If the Culm strata - lying uppermost - were Silurian in age and the non-Culm strata ranging from Cambrian to Silurian, then the Devonian sequence was unbrocken #GRE
+
+    (1) [Culm Uppermost]
+    (2) [Culm as SIL]
+    (3) [Non-Culm Strata as SIL and CAM]
+    ----
+    (4) [Unbroken Sequence of Strata]
+
+
+
+
+## Inferential Relations between @[Culm as CM] and the Available Evidence {isGroup: false}
+
+/* COA.1 Late 1834: MUR and Lyell immediately as response to DLB; 
+         denying @[CM Plants in Ancient Strata]
++ COA.3 ( bzw. COA.3' + COA.3'') 1836: Devon Campaign: MUR as response of conformable passage between Culm and the older strata
++ COA.2a At the Bristol meeting: Devon Campaign: Official summary
+        Culm as altered CM at the top of the sequence 
+        LSIL fossil dating of non-Culm strata
++ COA.2b At Bristol: Phillips identified Mountain Limestone fossils from the older part of the Culm
++ COA.4 MUR as response to Harding's report of fossil plants in the putative SIL strata 
+*/
+
+[Lyellian Principals]: At the earth's surface, there is a constant but piecemeal change in the composition of the faunas and floras (in correlation with ever-changing physical environments) #COA #pri
+
+[Common Species]: Two formations deposited at widely separated periods would be expected to have few if any species in common #COA #pri
+    - [CM Plants in Ancient Strata]
+    -> [CM Plants in Ancient Strata]
+
+<Assemblages of Species>: From Lyellian prncipals, it follows that while particular species might have had long ranges in time, an assemblage of many species would not remain unchanged for long; therefore, two formations deposited at widely separated periods would be expected to have few if any species in common #COA
+
+    (1) [Lyellian Principals]
+    ----
+    (2) [Common Species]
+
+[Fossil Criterion]: Strata can be identified by means of their imbedded fossils #COA #pri
+
+<Fossil Criterion andand Common Species>: If strata can be identified by means of their imbedded fossils, then it holds that two formations deposited at widely separated periods have few if any species in common #COA
+
+    (1) [Fossil Criterion]
+    ----
+    (2) [Common Species]
+
+    
+<Culm as CM>: If strata could be identified by means of their embedded fossil, then the Devon Culm - being Coal Measures in age - contained Coal Measures plants #COA
+
+    (1) [Fossil Criterion]
+    (2) [Culm as CM]
+    ----
+    (3) [CM Plants in Devon Culm]
+
+[Culm Uppermost]: The Culm strata were uppermost in the sequence #COA #super-hyp
+    -> [Culm in the Middle]
+    - [Culm in the Middle]
+
+[Non-Culm Strata as CAM]: In Devon, the non-Culm strata were attributed to the Cambrian #COA #strat-hyp
+    + [Devonian Strata as CAM]
+
+<Postulating A Major Gap - COA.1>: If the Culm strata were Coal Measures - lying uppermost - and the older strata Cambrian in age, then there was a major unconformity between the Culm and the strata below #COA
+
+    (1) [Culm Uppermost]
+    (2) [Culm as CM]
+    (3) [Non-Culm Strata as CAM]
+    ----
+    (4) [Major Unconformity in Devon]
+   
+[Non-Culm Strata at Youngest SIL]: In Devon, a significant part of the non-Culm strata were regarded as equivalent to the Silurian #COA #strat-hyp
+    - [Devonian Strata as CAM]
+    -> [Devonian Strata as CAM]
+
+[Non-Culm Strata at Oldest CAM]: In Devon, a significant part of the non-Culm strata were regarded as equivalent to the Cambrian #COA #strat-hyp
+    + [Devonian Strata as CAM]
+
+[Non-Culm Strata as SIL and CAM]: In Devon, the non-Culm strata were considered to range from Cambrian to Silurian in age #COA #strat-hyp
+    + [Non-Culm Strata at Youngest SIL]
+    + [Non-Culm Strata at Oldest CAM]
+
+<Culm Trough>: If the strata to the north and south were much older, then the Culm strata
+  were in the form of a huge trough, i.e. uppermost in the sequence #COA
+
+    (1) [Non-Culm Strata as SIL and CAM]
+    (2) [Culm Uppermost]
+    ----
+    (3) [Culm as CM]
+
+<Postulating A Major Gap - COA.2a>: If the Culm strata were Coal Measures - lying uppermost - and the older strata Silurian and Cambrian in age, then there was a major unconformity between the Culm and the strata below #COA
+
+    (1) [Culm Uppermost]
+    (2) [Culm as CM]
+    (3) [Non-Culm Strata as SIL and CAM]
+    ----
+    (4) [Major Unconformity in Devon]
+
+[Black Culm Limestone as USIL]: The Culm limestone was attributed to the upper part of the Silurian system. #COA #strat-hyp
+    - [Culm as CM]
+    -> [Culm as CM]
+
+[Main part of the Culm as CM]: In Devon, the main or plant-bearing part of the Culm strata were attributed to the Coal Measures #COA #strat-hyp
+    + [Culm as CM]
+
+<Postulating A Major Gap - COA.3.1>: If the main part of the Culm strata were Coal Measures - lying uppermost - and the black Culm limestone at youngest Silurian in age, then there was a major unconformity between the main part of the Culm and the strata below #COA
+
+    (1) [Culm Uppermost]
+    (2) [Main part of the Culm as CM]
+    (3) [Black Culm Limestone as USIL]
+    ----
+    (4) [Major Unconformity in Devon II]
+
+[Black Culm Limestone as USIL and ORS]: The Culm limestone was considered to encompass the upper part of the Silurian as well as the whole of the Old Red Sandstone. #COA #strat-hyp
+    +> [ORS in Devon]
+
+<Postulating A Minor Gap - COA.3.2>: If the Culm strata were Coal Measures - lying uppermost - and the black Culm limestone at youngest Old Red Sandstone in age, then there was an unconformity between the main part of the Culm and the strata below #COA
+
+    (1) [Culm Uppermost]
+    (2) [Main part of the Culm as CM]
+    (3) [Black Culm Limestone as USIL and ORS]
+    ----
+    (4) [Major Unconformity in Devon II]
+
+
+[Culm as CM and ML]: In Devon, the main or plant-bearing part of the Culm strata were attributed to the Coal Measures, a lower part - particularly the black Culm limestone - was attributed to the Mountain Limestone #COA
+
+[Yorkshire Limestone as ML]: In Yorkshire, there were some strata Mountain Limestone in age #COA #strat-hyp
+
+<Black Culm Limestone and Yorkshire>: If there was a similarity - both in fossils and rock type between some strata in Yorkshire dated as Mountain Limestone and the black Culm limestone, then the Culm limestone had to be considered as Mountain Limestone, too #COA
+
+    (1) [Yorkshire Limestone as ML] 
+    (2) [Yorkshire similarities]
+    ----
+    (3) [Black Culm Limestone as ML]
+
+[Black Culm Limestone as ML]: The Culm limestone was considered as Mountain Limestone in age #COA #strat-hyp
+    - [Culm as CM]
+    -> [Culm as CM]
+
+<Extending the Sequence Downwards>: If, in Devon, the main part of the Culm strata were Coal Measures and its lower part Mountain Limestone in age, then the Culm strata were at youngest Mountain Limestone in age #COA
+
+    (1) [Black Culm Limestone as ML]
+    (2) [Main part of the Culm as CM]
+    ----
+    (3) [Culm as CM and ML]
+
+<Postulating A Minor Gap - COA.2b>: If the Culm strata were at oldest Mountain Limestone - lying uppermost - and the older strata Cambrian and Silurian in age, then there was an unconformity between the Culm and the strata below #COA
+
+    (1) [Culm Uppermost]
+    (2) [Culm as CM and ML]
+    (3) [Non-Culm Strata as SIL and CAM]
+    ----
+    (4) [Major Unconformity in Devon]
+
+<North Devonian Strata as ORS>: If strata could be identified by means of their embedded fossils, then the non-Culm strata of north Devon - at youngest upper Old Red Sandstone in age - contained Carboniferous fossil species #COA
+
+    (1) [Fossil Criterion]
+    (2) [North Devonian Strata as ORS]
+    ----
+    (3) [CM Plants in North Devon]
+
+[North Devonian Strata as ORS]: In north Devon, some strata were considered as Old Red Sandstone in age #COA #strat-hyp
+    +> [ORS in Devon]
+
+[Non-Culm Strata as SIL and ORS]: In Devon, the non-Culm strata were considered to range from Silurian to Old Red Sandstone in age #COA #strat-hyp
+
+<Postulating A Minor Gap - COA.4>: If the Culm strata were at oldest Coal Measures - lying uppermost - and the older strata Silurian and Old Red Sandstone in age, then there was an unconformity between the Culm and the strata below #COA
+
+    (1) [Culm Uppermost]
+    (2) [Culm as CM]
+    (3) [Non-Culm Strata as SIL and ORS]
+    ----
+    (4) [Major Unconformity in Devon]
+
+
+
+## Inferential Relations between @[ORS in Devon] and the Available Evidence {isGroup: false}
+
+/*
+DEV.1 At Bristol meeting: Buckland
++ DEV.2a Austen: Fossil from the younger non-Culm strata in south Devon were ML species
+        Displaying them in public, late in 1837: South Devonian fossils dated to somewhere near the base of the ML
+*/
+
+[ORS in Devon]: In Devon, a significant part of strata were regarded as equivalent to the Old Red Sandstone #DEV #strat-hyp
+    -> [Devonian Strata as CAM]
+    - [Devonian Strata as CAM]
+
+[Culm as ML and ORS]: The Culm strata were regarded as ranging from the Old Red Sandstone to the Mountain Limestone #DEV #strat-hyp
+    - [Culm as CM]
+    -> [Culm as CM]
+    +> [ORS in Devon]
+
+<Devonian Interpretation - DEV.1>: If the Culm strata - lying uppermost and at oldest Old Red Sandstone in age - were conformably underlain by Silurian and Cambrian strata, then the sequence was unbroken #DEV
+
+    (1) [Culm Uppermost]
+    (2) [Culm as ML and ORS]
+    (3) [Non-Culm Strata as SIL and CAM]
+    ----
+    (4) [Unbroken Sequence of Strata]
+
+
+<South Devonian Strata as ORS>: If strata could be identified by means of their embedded fossil, then the strata of south Devon - being dated at the base of the Mountain Limestone - contained a fossil fauna ressembling the one from Mountain Limestone #DEV
+
+    (1) [Fossil Criterion]
+    (2) [South Devonian Strata as Upper ORS]
+    ----
+    (3) [ML Fauna in South Devon]
+
+[South Devonian Strata as Upper ORS]: In south Devon, some strata were considered as upper Old Red Sandstone in age #DEV #strat-hyp
+    +> [ORS in Devon]
+
+[Non-Culm Strata as CAM, SIL and ORS]: In Devon, the non-Culm strata were considered to range from Cambrian to Old Red Sandstone in age #DEV #strat-hyp
+    + [South Devonian Strata as Upper ORS]
+    + [Non-Culm Strata as SIL and CAM]
+
+<Devonian Interpretation - DEV.2a>: If the Culm strata - lying uppermost and at oldest Mountain Limestone in age - were conformably underlain by strata ranging from Cambrian to Old Red Sandstone, then the sequence was unbroken #DEV
+
+    (1) [Culm Uppermost]
+    (2) [Culm as CM and ML]
+    (3) [Non-Culm Strata as CAM, SIL and ORS]
+    ----
+    (4) [Unbroken Sequence of Strata]
+
+
+

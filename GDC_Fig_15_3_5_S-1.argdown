@@ -1,0 +1,90 @@
+===
+title: Prelimenary Reconstruction of the GDC - S-1 - 1834.1
+author: Corinna Günth-Stiegeler
+date: 17/05/2019  
+transformStatementRelations: true // using strict mode
+dot: 
+    graphVizSettings: 
+      "rankdir": "TB"  
+      "ranksep": "1"   
+===
+
+# Hypotheses
+
+[Devonian Strata as CAM]: In Devon, *all* the strata - older than the New Red Sandstone - were attributed to the Cambrian #GRE
+ 
+
+/* The following items of evidence were considered to be relevant for deciding which of the three hypotheses is correct. */
+
+# Evidence
+
+/* The following items of evidence were considered to be relevant for deciding which of the three hypotheses is correct. */
+
+[Unbroken Sequence of Strata]: In Devon, *all* the strata - older than the New Red Sandstone - were regarded as forming an unbroken sequence of strata #ev
+ 
+[CM Plants in Devon Culm]: In Devon, the Culm strata contained Coal Measures fossil plants #ev
+
+[Instances of Coal in Ancient Strata]: In Munster, the Bocage and Pennsylvannia, there were coal deposits in pre-Old Red Sandstone strata #ev
+
+
+
+# Arguments and Further Theses {isGroup: false}
+
+/* The arguments reconstructed in this section detail whether the three hypotheses can explain or whether they conflict with the available evidence.
+Arguments are tagged according to whether the lay out explanatory relations or conflicts of hypothesis H1 and H2. 
+In addition to these arguments, the section makes further auxiliary assumptions explicit. */
+
+
+## Inferential Relations between @[Devonian Strata as CAM] and the Available Evidence {isGroup: false}
+
+/* GRE.1a  DLB's proposal, late in 1834 */
+
+<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata were Cambrian, then the Devonian sequence was unbrocken. #GRE
+
+    (1) [Devonian Strata as CAM]
+    ----
+    (2) [Unbroken Sequence of Strata]
+
+[Culm as CAM]: The whole Culm strata of Devonshire were attributed to the Cambrian #GRE #strat-hyp
+
+[Culm in the Middle]: The Culm and its fossil plants were considered to be somewhere in the middle of the sequence #GRE #super-hyp
+
+
+<Culm as CAM>: If, in Devon, all the strata were Cambrian, then the Culm - lying in the middle of the sequence - were Cambrian, too #GRE
+
+    (1) [Devonian Strata as CAM]
+    (2) [Culm in the Middle]
+    ----
+    (3) [Culm as CAM] 
+
+
+[Coal in Ancient Strata]: There were coal deposits in pre-Old Red Sandstone strata #GRE #pri
+
+[Instances of Ancient Strata]: In Munster, the Bocage and Pennsylvannia, there were pre-Old Red Sandstone strata #GRE #strat-hyp
+
+<Coal in Ancient Strata>: If there were coal deposits in pre-Old Red Sandstone strata and such strata was found in Munster, the Bocage and Pennsylvannia, then there were coal deposits in the pre-Old Red Sandstone strata of Munster, the Bocage and Pennsylvannia #GRE
+    
+    (1) [Instances of Ancient Strata]
+    (2) [Coal in Ancient Strata]
+    ----
+    (3) [Instances of Coal in Ancient Strata]
+
+[CM Plants in Ancient Strata]: In pre-Old Red Sandstone strata, there were fossil plants similar to those of the Coal Measures  #GRE #pri
+
+[Coal and CM Plants]: The Coal Measures were noted for the great amounts of coal they contained (accounted for the major portion of England’s production of coal) #GRE #pri
+
+<Coal and CM Plants>: If there were coal deposits in pre-Old Red Sandstone strata and the Coal Measures were noted for the great amounts of coal they contained, then there had been similarities between the faunas of the Coal Measures and pre-Old Red Sandstone formations #GRE
+
+    (1) [Coal in Ancient Strata]
+    (2) [Coal and CM Plants]
+    ----
+    (3) [CM Plants in Ancient Strata]
+
+<Culm and CM Plants>: If the Devon Culm strata were pre-Old Red Sandstone in age and there were Coal Measure plants in pre-Old Red Sandstone, then there were Coal Measure plants in the Devon Culm   #GRE
+
+    (1) [Culm as CAM]
+    (2) [CM Plants in Ancient Strata]
+    ----
+    (3) [CM Plants in Devon Culm]
+
+
