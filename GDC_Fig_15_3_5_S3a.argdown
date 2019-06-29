@@ -20,7 +20,6 @@ color:
         - "#f5f5dc"
         - "#eee8cd"
         - "#e5e5e5"
-        - "#dedede"
 group:
     groupDepth: 4
 dot: 
@@ -106,28 +105,6 @@ E1 und E6 können nicht beide zugleich wahr sein: If all the strata form an unbr
 
 */
 
-[Unconformity in Devon II]:  Between the main part of the Devon Culm and its black limestone, there is at least one formation missing from the standard sequence #ev #E11
-    -> [Unbroken Sequence of Devon Strata]
-    - [Unbroken Sequence of Devon Strata] // E1 and E10 are contrary
-
-
-/*
-E1 und E11 können beide zugleich falsch sein (Es gibt eine Lücke, aber nicht innerhalb des Culm)
-E1 und E11 können nicht beide zugleich wahr sein: If all the strata form an unbroken sequence, then there is no gap in the sequence (E1 -> NOT:E11)
-                                                  If there is a gap in the sequence, then the strata do not form an unbroken sequence (E11 -> NOT:E1)
-[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different but not successive geological periods #GRE #pri
-[Gap in a Sequence of Strata II]: There is a gap in a local sequence of strata, iff certain formations are missing in that particular area from the standard sequence #GRE #pri
-[Unconformity]: A lower set of strata is truncated at an angle and overlain by an upper set lying in a different orientation
-                signalling that certain formations are missing in that particular area from the standard sequence
-
-E11 und E6 können beide zugleich wahr sein (Es gibt eine Lücke innerhalb des Culm und eine zweite Lücke zwischen Culm und angrezendem Gestein)
-E11 und E6 können beide zugleich falsch sein (Es gibt keine Lücke innerhalb des Culm und keine Lücke zwischen Culm und angrezendem Gestein)
-*/
-
-
-
-
-[Yorkshire similarities]: The Black Culm limestone in Devon is similar to the Yorkshire limestone - both in fossils and rock type #ev #E12
 
 
 
@@ -151,14 +128,6 @@ COA.1 Late 1834: MUR and Lyell immediately as response to DLB;
 + COA.2a At the Bristol meeting: Devon Campaign: Official summary
         Culm as altered CM at the top of the sequence 
         LSIL fossil dating of non-Culm strata
-
-
-+ COA.2b At Bristol: Phillips identified Mountain Limestone fossils from the older part of the Culm
-
-+  DEV.1 At Bristol meeting: Buckland
-
-rausgefallen an dieser Stelle :  GRE.1b   At Bristol: DLB conceded his critics' structural interpretation and reversed the sequence
-
 
  */
 
@@ -212,26 +181,6 @@ rausgefallen an dieser Stelle :  GRE.1b   At Bristol: DLB conceded his critics' 
     (5) [Unconformity in Devon]
 
 
-<Postulating A Gap - COA.3.1>: If the main part of the Culm strata are Coal Measures and underlain by the black Culm limestone which is at youngest Silurian in age, then there is a major gap in the local sequence #COA
-
-    (1) [Gap in a Sequence of Strata] 
-    (2) [Standard Sequence]
-    (3) [Non-Culm Strata as SIL and CAM]
-    (4) [Culm as CM and USIL]
-    ----
-    (5) [Unconformity in Devon II]
-
-
-<Postulating A Gap - COA.3.2>: If the main part of the Culm strata are Coal Measures and underlain by the black Culm limestone which is at youngest Old Red Sandstone in age, then there is a gap in the local sequence #COA
-
-    (1) [Gap in a Sequence of Strata] 
-    (2) [Standard Sequence]
-    (3) [Non-Culm Strata as SIL and CAM]
-    (4) [Culm as USIL, ORS and CM]
-    ----
-    (5) [Unconformity in Devon II]
-
-
 <Postulating A Gap - COA.2a>: If the Culm strata are Coal Measures in age and juxtaposed with Silurian and Cambrian strata, then there is a major gap in the local sequence #COA
 
     (1) [Gap in a Sequence of Strata]
@@ -240,27 +189,6 @@ rausgefallen an dieser Stelle :  GRE.1b   At Bristol: DLB conceded his critics' 
     (4) [Culm as CM]
     ----
     (5) [Unconformity in Devon]
-
-
-
-<Postulating A Minor Gap - COA.2b>: If the Culm strata - at oldest Mountain Limestone in age - are juxtaposed with Cambrian and Silurian strata, then there is a gap in the local sequence  #COA
-
-    (1) [Gap in a Sequence of Strata]
-    (2) [Standard Sequence]
-    (3) [Non-Culm Strata as SIL and CAM]
-    (4) [Culm as CM and ML]
-    ----
-    (5) [Unconformity in Devon]
-
-
-<Devonian Interpretation - DEV.1>: If the Culm strata - at oldest Old Red Sandstone in age - are juxtaposed with Silurian and Cambrian strata, then there is no gap in the local sequence #DEV
-
-    (1) [Gap in a Sequence of Strata]
-    (2) [Standard Sequence] 
-    (3) [Non-Culm Strata as SIL and CAM]
-    (4) [Culm as ML and ORS]
-    ----
-    (5) [Unbroken Sequence of Devon Strata]
 
 
 
@@ -333,280 +261,6 @@ then the Culm strata do not contain Coal Measures plants #COA
     - [Black Culm Limestone as CAM]
 
 
-### Some Culm as SIL {color: 8}
-
-[Some USIL dating of Culm]: Some part of the Culm is upper Silurian in age #COA #chron-hyp // C : "Einiges S ist Q"
-    -> [Culm as CM] // A : "Alles S ist P"
-    - [Culm as CM]
-    -> [Culm as CAM] // A' : "Alles S ist P'"
-    - [Culm as CAM]
-
-/*
-
-A : [Culm as CM] : Der ganze Culm ist CM (Alles S ist P)
-C : [Some USIL dating of Culm] : Ein Teil des Culm ist USIL (Einiges S ist Q)
-
-Sind A und C konträr, denn beides kann gleichzeitig falsch, aber nicht wahr sein!!! 
-
-A und C sind konträr
-<=> NOT:(A AND C) 
-<=> NOT-A OR NOT-C
-<=> A -> NOT-C           (1)                (Der ganze Culm ist CM -> Kein Teil des Culm ist USIL)
-<=> C -> NOT-A  mit MT   (2)                (Ein Teil des Culm ist USIL -> Ein Teil des Culm is nicht CM)
-
-Jedoch ist C nicht von der Art "Kein S ist P"!!!
-
-*/
-
-<Extending the Sequence Onwards - COA.3.1>: If, in Devon, there is some part of the Culm being Coal Measures in age and some part being upper Silurian in age, 
-then the Culm strata encompass the the Silurian and Coal Measures #COA
-
-    (1) [Some CM dating of Culm]
-    (2) [Some USIL dating of Culm]
-    ----
-    (3) [Culm as CM and USIL]
-
-
-[Culm as CM and USIL]: The Culm strata encompass Coal Measures and upper Silurian strata #COA #chron-hyp 
-    -> [Culm as CM]
-    - [Culm as CM]
-    -> [Culm as CAM]
-    - [Culm as CAM]
-    -> [Devonian Strata as CAM]
-    - [Devonian Strata as CAM]
-
-/*
-[Culm as CM and USIL] : B UND C : Ein Teil des Culm ist CM und ein Teil ist USIL ((Einiges S ist P) UND (Einiges S ist Q))
-[Culm as CM]: A : Der ganze Culm ist CM (Alles S ist P)
-
-"A und (B UND C) sind konträr" folgt aus "A und C konträr sind" !
-
-A und C sind konträr
-<=> NICHT:(A und C) 
-<=> A -> NOT-C           (1)                (Der ganze Culm ist CM -> Kein Teil des Culm ist USIL)
-
-=>  (A -> NOT-C) -> (A -> (NOT-C ODER NOT-B))  Mit (q -> p) -> (q -> (p ODER r))
-<=> A und (B UND C) sind konträr                                          
-*/
-
-
-
-[Black Culm Limestone as USIL]: The whole of the Culm limestone is upper Silurian in age. #COA #chron-hyp
-     +> [Some USIL dating of Culm]
-     -> [Black Culm Limestone as CM] 
-     - [Black Culm Limestone as CM]
-     -> [Black Culm Limestone as CAM] 
-     - [Black Culm Limestone as CAM]
-     
-
-// Beides kann zugleich falsch sein (z.B The whole Culm limestone as ORS)
-// Beides kann nicht zugleich wahr sein 
-
-
-
-
-
-
-### Some Culm as ORS {color: 9}
-
-[Some ORS dating of the Culm]: Some part of the Culm is Old Red Sandstone in age #COA #chron-hyp // C : "Einiges S ist Q"
-    +> [ORS in Devon]
-    -> [Culm as CAM] // A' : "Alles S ist P'"
-    - [Culm as CAM]
-    -> [Culm as CM] // A : "Alles S ist P"
-    - [Culm as CM]
-    -> [Culm as CM and USIL] // A* : "Alles S ist P*"
-    - [Culm as CM and USIL]
-
-/*
-A und C sind konträr, denn beides kann gleichzeitig falsch, aber nicht wahr sein!!! 
-Jedoch ist C nicht von der Art "Kein S ist P"!!!
-*/
-
-[Some ORS dating of Culm Limestone]: Some part of the black Culm limestone is Old Red Sandstone in age #COA #chron-hyp // F : "Einiges BCL ist Q"
-    +> [Some ORS dating of the Culm]
-    -> [Black Culm Limestone as USIL] // D* : "Alles BCL ist P*"
-    - [Black Culm Limestone as USIL]
-    ->  [Black Culm Limestone as CAM] // D' : "Alles BCL ist P'"
-    - [Black Culm Limestone as CAM]
-    -> [Black Culm Limestone as CM] // D : "Alles BCL ist P"
-    - [Black Culm Limestone as CM]
-
-/*
-F und D sind konträr, denn beides kann gleichzeitig falsch, aber nicht wahr sein!!! 
-Jedoch ist F nicht von der Art "Kein BCL ist P"!!!
-*/
-
-
-[Some USIL dating of Culm Limestone]: Some part of the black Culm limestone is upper Silurian in age #COA #chron-hyp
-    + [Black Culm Limestone as USIL]
-    +> [Some USIL dating of Culm]
-    -> [Black Culm Limestone as CAM]
-    - [Black Culm Limestone as CAM]
-    -> [Black Culm Limestone as CM]
-    - [Black Culm Limestone as CM]
-
-[Black Culm Limestone as USIL and ORS]: The balck Culm limestone encompasses the upper part of the Silurian and the whole of the Old Red Sandstone. #COA #chron-hyp
-   
-<Extending the Sequence Onwards I - COA.3.2>: If, in Devon, there is some part of the black Culm limestone being Old Red Sandstone in age and some part being upper Silurian in age, then the Culm limestone encompasses the the Silurian and Coal Measures #COA
-
-    (1) [Some ORS dating of Culm Limestone]
-    (2) [Some USIL dating of Culm Limestone]
-    ----
-    (3) [Black Culm Limestone as USIL and ORS]
-
-
-[Black Culm Limestone as USIL and ORS]
-    -> [Black Culm Limestone as CM] 
-    - [Black Culm Limestone as CM]
-    -> [Black Culm Limestone as CAM] 
-    - [Black Culm Limestone as CAM]
-    -> [Black Culm Limestone as USIL]
-    - [Black Culm Limestone as USIL]
-
-
-/*
-[BCL as USIL and ORS] : B UND C : Ein Teil des BCL ist USIL und ein Teil ist ORS ((Einiges S ist P) UND (Einiges S ist Q))
-[BCL as USIL]: A : Der ganze BCL ist USIL  (Alles S ist P)
-
-"A und (B UND C) sind konträr" folgt aus "A und C konträr sind" !
-*/
-
-   
-<Extending the Sequence Onwards II - COA.3.2>: If, in Devon, the main part of the Culm is Coal Mesures in age and the Culm limestone encompasses the upper Silurian and the whole of the Old Red Sandstone, then the Culm encompasses the upper part of the Silurian, the whole of the Old Red Sandstone and the Coal Measures #COA
-
-    (1) [Some CM dating of Culm]
-    (2) [Some ORS dating of the Culm]
-    (3) [Some USIL dating of Culm]
-    ----
-    (4) [Culm as USIL, ORS and CM]
-
-
-[Culm as USIL, ORS and CM]: The Culm strata encompass Coal Measures, Old Red Sandstone and upper Silurian strata #COA #chron-hyp
-    -> [Culm as CAM]
-    - [Culm as CAM]
-    -> [Culm as CM]
-    - [Culm as CM]
-    -> [Culm as CM and USIL]
-    - [Culm as CM and USIL]
-    -> [Devonian Strata as CAM]
-    - [Devonian Strata as CAM]
-
-
-/*
-A : [Culm as CM] : Der ganze Culm ist CM (Alles S ist P)
-B UND C : [Culm as CM, USIL and ORS]        mit B : Ein Teil des Culm ist CM  (Einiges S ist P)
-                                                C : Ein Teil des Culm ist ORS und ein Teil is USIL (Einiges S ist Q UND Einiges S ist R)
-bzw.
-A : [Culm as CM and USIL] : Der ganze Culm ist CM und USIL (Alles S ist P)
-B UND C : [Culm as CM, USIL and ORS]        mit B : Ein Teil des Culm ist CM UND Ein Teil ist USIL (Einiges S ist P)
-                                                C : Ein Teil des Culm ist ORS (Einiges S ist R)
-
-"A und (B UND C) sind konträr" folgt aus "A und C konträr sind" !
-*/
-
-### Some Culm as ML {color: 10}
-
-
-[Some ML dating of the Culm]: Some part of the Culm is Mountain Limestone in age #COA #chron-hyp // C : "Einiges S ist Q"
-    -> [Culm as CAM] // A' : "Alles S ist P'"
-    - [Culm as CAM]
-    -> [Culm as CM] // A : "Alles S ist P"
-    - [Culm as CM]
-    -> [Culm as CM and USIL] // A* : "Alles S ist P*"
-    - [Culm as CM and USIL]
-    -> [Culm as USIL, ORS and CM] // A^ : "Alles S ist P^"
-    - [Culm as USIL, ORS and CM]
-
-/*
-A und C sind konträr, denn beides kann gleichzeitig falsch, aber nicht wahr sein!!! 
-Jedoch ist C nicht von der Art "Kein S ist P"!!!
-*/
-
-
-[Yorkshire Limestone as ML]: In Yorkshire, the limestone is Mountain Limestone in age #COA #chron-hyp
-
-[Yorkshire and Culm Limestone]: The black Culm limestone is as old as the Yorkshire limestone #COA #chron-hyp
-
-<Black Culm Limestone and Yorkshire I>: If strata can be identified by means of their embedded fossils and the black Culm limestone is not as old as the Yorkshire limestone, then there are no similarities in fossils between them #COA 
-
-    (1) The black Culm limestone is not as old as the Yorkshire limestone
-            >< [Yorkshire and Culm Limestone] 
-    (2) [Fossil Criterion]
-    ----
-    (3) There are no similarities - in fossils - between the Yorkshire Limestone and the Black Culm Limestone
-            >< [Yorkshire similarities]
-
-<Black Culm Limestone and Yorkshire II>: If the black Culm limestone is as old as the Yorkshire limestone being Mountain Limestone in age, then the Culm limestone is Mountain Limestone in age, too #COA 
-
-    (1) [Yorkshire and Culm Limestone] 
-    (2) [Yorkshire Limestone as ML]
-    ----
-    (3) [Black Culm Limestone as ML]
-
-
-[Black Culm Limestone as ML]: The black Culm limestone is Mountain Limestone in age #COA #chron-hyp 
-    +> [Some ML dating of the Culm]
-    -> [Black Culm Limestone as USIL] // D* : "Alles BCL ist P*"
-    - [Black Culm Limestone as USIL]
-    ->  [Black Culm Limestone as CAM] // D' : "Alles BCL ist P'"
-    - [Black Culm Limestone as CAM]
-    -> [Black Culm Limestone as CM] // D : "Alles BCL ist P"
-    - [Black Culm Limestone as CM]
-    -> [Black Culm Limestone as USIL and ORS] // D^ : "Alles BCL ist P^"
-    - [Black Culm Limestone as USIL and ORS]
- 
-<Extending the Sequence Downwards - COA.2b>: If, in Devon, the main part of the Culm strata is Coal Measures and their lower part Mountain Limestone in age, then the Culm strata range from Mountain Limestone to Coal Measures #COA
-
-    (1) [Some ML dating of the Culm]
-    (2) [Main part of the Culm as CM]
-    ----
-    (3) [Culm as CM and ML]
-
-   
-[Culm as CM and ML]: In Devon, the main or plant-bearing part of the Culm strata is Coal Measures in age, 
- a lower part - particularly the black Culm limestone -  is Mountain Limestone in age #COA #chron-hyp  // B UND C : Einiges S ist Q UND Einiges S ist R 
-    -> [Culm as CAM] // A' : "Alles S ist P'"
-    - [Culm as CAM]
-    -> [Culm as CM] // A : "Alles S ist P"
-    - [Culm as CM]
-    -> [Culm as CM and USIL] // A* : "Alles S ist P*"
-    - [Culm as CM and USIL]
-    -> [Culm as USIL, ORS and CM] // A^ : "Alles S ist P^"
-    - [Culm as USIL, ORS and CM]
-    -> [Devonian Strata as CAM]
-    - [Devonian Strata as CAM]
-
-
-
-[Main part of the Culm as ML]: In Devon, the main part of the Culm strata is Mountain Limestone in age #DEV #chron-hyp
-    +> [Some ML dating of the Culm]
-    -> [Main part of the Culm as CM]
-    - [Main part of the Culm as CM]
- 
-<Extending the Sequence Downwards II - DEV.1>: If, in Devon, the main part of the Culm strata is Mountain Limestone and their lower part 
-Old Red Sandstone in age, then the Culm strata range from Old Red Sandstone to Mountain Limestone in age #DEV
-
-    (1) [Some ORS dating of the Culm]
-    (2) [Main part of the Culm as ML]
-    ----
-    (3) [Culm as ML and ORS]
-
-[Culm as ML and ORS]: The Culm strata encompass the Old Red Sandstone and the Mountain Limestone #DEV #chron-hyp
-    -> [Culm as CAM] // A' : "Alles S ist P'"
-    - [Culm as CAM]
-    -> [Culm as CM] // A : "Alles S ist P"
-    - [Culm as CM]
-    -> [Culm as CM and USIL] // A* : "Alles S ist P*"
-    - [Culm as CM and USIL]
-    -> [Culm as USIL, ORS and CM] // A^ : "Alles S ist P^"
-    - [Culm as USIL, ORS and CM]
-    -> [Culm as CM and ML] // A% : "Alles S ist P%"
-    - [Culm as CM and ML]
-    -> [Devonian Strata as CAM]
-    - [Devonian Strata as CAM]
-
-
 ## Dating of the Non-Culm Strata {color: 6}
 
 // Alles S ist P -> Einiges S ist P
@@ -636,7 +290,7 @@ Old Red Sandstone in age, then the Culm strata range from Old Red Sandstone to M
     -> [Non-Culm Strata as CAM]
 
 
-<Extending the Sequence Onwards II - COA.3a>: If, in Devon, the main part of the non-Culm strata is Cambrian and some smaller part Silurian in age, then the non-Culm strata encompass the Cambrian and the Silurian #COA
+<Extending the Sequence Onwards II - COA.2a>: If, in Devon, the main part of the non-Culm strata is Cambrian and some smaller part Silurian in age, then the non-Culm strata encompass the Cambrian and the Silurian #COA
 
     (1) [Some part of Non-Culm as SIL]
     (2) [Some part of Non-Culm as CAM]

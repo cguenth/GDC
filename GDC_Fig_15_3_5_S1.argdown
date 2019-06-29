@@ -25,9 +25,16 @@ dot:
       "ranksep": "1"   
 ===
 
+/*
+selection:
+    selectedTags:
+        - DEV   
+        - ev
+*/
+
 # Rival Hypotheses
 
-[Devonian Strata as CAM]: In Devon, *all* the strata - older than the New Red Sandstone - are Cambrian in age #GRE #H1
+[Devonian Strata as CAM]: In Devon, *all* the strata - older than the New Red Sandstone - are Cambrian in age #GRE #chron-hyp
 
 
 # Evidence
@@ -38,9 +45,13 @@ dot:
  
 [CM Plants in Devon Culm]: In Devon, the Culm strata contain Coal Measures fossil plants #ev #E2
 
-[Trough through Exmoor]: There is a trough through Exmoor - formed by a band of limestone running out to the north coast at Ilfracombe and south of Barnstaple #ev #E3
+[North of Exmoor]: Passing Exmoor northwards, the strata become older #ev #E3
 
-[Instances of Coal in Ancient Strata]: In Munster and Pennsylvannia, there are coal deposits in pre-Old Red Sandstone strata #ev #E4
+[Trough through Exmoor]: There is a trough through Exmoor - formed by a band of limestone running out to the north coast at Ilfracombe 
+and south of Barnstaple #ev #E4
+ 
+[Instances of Coal in Ancient Strata]: In Munster and Pennsylvannia, there are coal deposits in pre-Old Red Sandstone strata #ev #E5
+
 
 
 
@@ -62,16 +73,19 @@ GRE.1a  DLB's proposal, late in 1834
 // [Existence of a Global Sequence]: There is a sequence of distinctive major groups of strata which can be recognized throughout the world  #COA #pri
 
 
-[Standard Sequence]: Cambrian strata are overlain by Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata and New Red Sandstone strata, respectively #COA #pri
+[Standard Sequence]: Given the strata are undisturbed, Cambrian strata are overlain by Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, 
+Coal Measures strata and New Red Sandstone strata, respectively #COA #pri
 
 
 
 
 ## Gap in the Sequence {color: 4}
 
-[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different but not successive geological periods #GRE #pri
+[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different 
+but not successive geological periods #GRE #pri
 
-<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata are Cambrian in age, i.e. belonging to the same geological period, then there is no gap in the local sequence. #GRE
+<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata are Cambrian in age, i.e. belonging to the same geological period, then there is no gap in the 
+local sequence. #GRE
 
     (1) [Devonian Strata as CAM]
     (2) [Gap in a Sequence of Strata]
@@ -83,21 +97,8 @@ GRE.1a  DLB's proposal, late in 1834
 
 ## Dating of the Culm {color: 5}
 
-[Culm as CAM]: The whole Culm strata of Devonshire is Cambrian in age #GRE #chron-hyp
-
-<Culm as CAM>: If, in Devon, all the strata are Cambrian in age, then the Culm strata are Cambrian in age, too #GRE
-
-    (1) [Devonian Strata as CAM]
-    ----
-    (2) [Culm as CAM] 
-
-
-## Dating of the Non-Culm Strata {color: 6}
-
-
-[Non-Culm Strata as CAM]: In Devon, the non-Culm strata are Cambrian in age #COA #chron-hyp
-    + [Devonian Strata as CAM] // If the whole of the Devonian strata are CAM, then the non-Culm strata are CAM
-
+[Culm as CAM]: The whole Culm strata of Devonshire are Cambrian in age #GRE #chron-hyp
+    + [Devonian Strata as CAM]
 
 
 ## Aporia I : Coal in Ancient Strata {color: 1}
@@ -106,7 +107,8 @@ GRE.1a  DLB's proposal, late in 1834
 
 [Instances of Ancient Strata]: In Munster and Pennsylvannia, there are pre-Old Red Sandstone strata #GRE #chron-hyp
 
-<Coal in Ancient Strata>: If there are no coal deposits in Pre-Old Red Sandstone strata, then there are no coal deposits in the pre-Old Red Sandstone strata of Munster and Pennsylvannia #GRE
+<Coal in Ancient Strata>: If there are no coal deposits in Pre-Old Red Sandstone strata, then there are no coal deposits in the pre-Old Red Sandstone strata 
+of Munster and Pennsylvannia #GRE
     
     (1) [Instances of Ancient Strata]
     (2) There are no coal deposits in pre-Old Red Sandstone strata
@@ -122,20 +124,23 @@ GRE.1a  DLB's proposal, late in 1834
 [CM Plants in Ancient Strata]: In pre-Old Red Sandstone strata, there are fossil plants similar to those of the Coal Measures  #GRE #pri
 
 
-<Culm and CM Plants>: If the Devon Culm strata are pre-Old Red Sandstone in age and there are no Coal Measures plants in pre-Old Red Sandstone strata, then there are no Coal Measures plants in the Devon Culm strata  #GRE
+<Culm and CM Plants>: If the Devon Culm strata are pre-Old Red Sandstone in age and there are no Coal Measures plants in pre-Old Red Sandstone strata, 
+then there are no Coal Measures plants in the Devon Culm strata  #GRE
 
     (1) [Culm as CAM]
     (2) There are no CM plants in CAM strata
          >< [CM Plants in Ancient Strata]
     ----
     (3) There are no CM Plants in Devon Culm strata
-         >< [CM Plants in Devon Culm]
+         -> [CM Plants in Devon Culm]
 
 
-[Flora Similarities as Best Explanation]: The best explanation of the existence of coal in some strata G is the similarity between G's flora and the one of the Coal Measures (the Coal Measures being noted for the great amounts of coal they contain) #GRE
+[Flora Similarities as Best Explanation]: The best explanation of the existence of coal in some strata G is the similarity between G's flora 
+and the one of the Coal Measures (the Coal Measures being noted for the great amounts of coal they contain) #GRE #aux
 
 
-<Coal and CM Plants>: If the similarity between the floras of the Coal Measures and pre-Old Red Sandstone formations is the best explanation for the existence of coal deposists in pre-Old Red Sandstone strata, then there are Coal Measures plants in pre-Old Red Sandstone strata. #GRE
+<Coal and CM Plants>: If the similarity between the floras of the Coal Measures and pre-Old Red Sandstone formations is the best explanation 
+for the existence of coal deposists in pre-Old Red Sandstone strata, then there are Coal Measures plants in pre-Old Red Sandstone strata. #GRE
 
     (1) [Coal in Ancient Strata]
     (2) [Flora Similarities as Best Explanation]
@@ -146,25 +151,52 @@ GRE.1a  DLB's proposal, late in 1834
 
 ## Youngest Devonian Strata {color: 3}
 
-[Formation of strata]: Strata are originally formed from sediments that were deposited in flat horizontal sheets - the younger sediments deposited on older ones. #GRE #pri
+[Formation of strata]: Strata are originally formed from sediments that were deposited in flat horizontal sheets - the younger sediments 
+deposited on older ones. #GRE #pri
 
-[Definition Trough]: Iff the strata are folded into an archlike form, with the concave side upward, then they form a trough #GRE #pri
+// [Definition Trough]: Iff strata are folded into an archlike form, with the concave side upward, then they form a trough #GRE #pri
+
+[Traversing Northward]: The strata south of Exmoor become progessively younger the furhter one traverses northward #GRE #chron-hyp
+
+[Exmoor Trough as Best Explanation]: Assuming that the strata south of Exmoor become progessively younger the furhter one traverses northward 
+and that, originally, younger strata rest upon older ones, 
+the existence of a trough running trough Exmoor is the best explanation of the strata north of Exmoor being older  #GRE #aux
+
+
+<Trough through Exmoor - GRE.1a>: If the existence of a trough running trough Exmoor is the best explanation of 
+the Exmoor strata being juxtaposed solely by older strata, then there is a trough through Exmoor  #GRE
+
+    (1) [North of Exmoor]
+    (2) [Traversing Northward]
+    (3) [Formation of strata] 
+    (4) [Exmoor Trough as Best Explanation]
+    ----
+    (5) [Trough through Exmoor]
 
 [Exmoor Youngest Devonian strata]: In Devon, among all the strata older than the New Red Sandstone, the strata of Exmoor are the youngest #GRE #chron-hyp
 
-<Trough through Exmoor - GRE.1a>: If originally younger strata rest upon older ones and the strata of Exmoor are sandwiched between older strata, then the strata of Exmoor are located in a trough  #GRE
+<Exmoor and Devonian Strata>: Assuming that, originally, younger strata rest upon older ones, it holds: 
+If the Exmoor strata is not the youngest, then there is no trough through Exmoor  #GRE
 
-    (1) [Exmoor Youngest Devonian strata]
+    (1) Exmoor not the Youngest strata 
+            >< [Exmoor Youngest Devonian strata]
     (2) [Formation of strata] 
-    (3) [Definition Trough]
-    ----
-    (4) [Trough through Exmoor]
+    ---- 
+    (3) There is no trough in Exmoor
+            >< [Trough through Exmoor]
 
 
+/*
+<Exmoor and Devonian Strata>: Assuming that, in Devon, the strata become progessively younger the furhter one traverses northward 
+and that, originally, younger strata rest upon older ones, it holds: If there is a trough through Exmoor, then the Exmoor strata is the youngest #GRE
 
-
-
-
+    (1) [Trough through Exmoor]
+    (2) [Traversing Northward]
+    (3) [Formation of strata] 
+    ---- 
+    (4) [Exmoor Youngest Devonian strata]
+    
+*/
 
 
 
