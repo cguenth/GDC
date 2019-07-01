@@ -26,19 +26,16 @@ dot:
     graphVizSettings: 
       "rankdir": "TB"  
       "ranksep": "1"   
+selection:
+    selectedTags:
+        - "chron-hyp"
 ===
 
-# Rival Hypotheses
 
-[Devonian Strata as CAM]: In Devon, *all* the strata - older than the New Red Sandstone - are Cambrian in age #GRE #chron-hyp
  
-[Culm as CM]: The Devonian Culm strata are Coal Measures in age #COA #chron-hyp
 
 /* The explanations were understood to be rivals: */
 
-[Culm as CM]
-    -> [Devonian Strata as CAM] 
-    - [Devonian Strata as CAM]
 
 // Beides kann zugleich falsch sein
 // Beides kann nicht zugleich wahr sein
@@ -171,8 +168,6 @@ COA.1 Late 1834: MUR and Lyell immediately as response to DLB;
 // ## ORS in Devon {color: 7}
 
 [ORS in Devon]: In Devon, a significant part of strata is equivalent to the Old Red Sandstone #DEV #chron-hyp
-    -> [Devonian Strata as CAM]
-    - [Devonian Strata as CAM]
 
 // Beides kann zugleich falsch sein (z.B. In Devon, all the strata are SIL, ML or CM in age)
 // Beides kann nicht zugleich wahr sein
@@ -238,7 +233,6 @@ COA.1 Late 1834: MUR and Lyell immediately as response to DLB;
 // Alles S ist P -> Einiges S ist P    
 
 [Culm as CAM]: The whole Culm strata of Devonshire are Cambrian in age #GRE #chron-hyp
-    + [Devonian Strata as CAM]
 
 [Main part of the Culm as CAM]: Then main part of the Culm is Cambrian in age #GRE #chron-hyp
     + [Culm as CAM]
@@ -251,7 +245,7 @@ COA.1 Late 1834: MUR and Lyell immediately as response to DLB;
 
 ### Culm as CM {color: 8}
 
-[Culm as CM]
+[Culm as CM]: The Devonian Culm strata are Coal Measures in age #COA #chron-hyp
     -> [Culm as CAM]
     - [Culm as CAM]
 // Beides kann zugleich falsch sein (z.B. Culm strata are ORS in age)
@@ -338,8 +332,6 @@ then the Culm strata encompass the the Silurian and Coal Measures #COA
     - [Culm as CM]
     -> [Culm as CAM]
     - [Culm as CAM]
-    -> [Devonian Strata as CAM]
-    - [Devonian Strata as CAM]
 
 /*
 [Culm as CM and USIL] : B UND C : Ein Teil des Culm ist CM und ein Teil ist USIL ((Einiges S ist P) UND (Einiges S ist Q))
@@ -455,8 +447,6 @@ Jedoch ist F nicht von der Art "Kein BCL ist P"!!!
     - [Culm as CM]
     -> [Culm as CM and USIL]
     - [Culm as CM and USIL]
-    -> [Devonian Strata as CAM]
-    - [Devonian Strata as CAM]
 
 
 /*
@@ -476,7 +466,6 @@ B UND C : [Culm as CM, USIL and ORS]        mit B : Ein Teil des Culm ist CM UND
 // Alles S ist P -> Einiges S ist P
 
 [Non-Culm Strata as CAM]: In Devon, the non-Culm strata are Cambrian in age #COA #chron-hyp
-    + [Devonian Strata as CAM] 
 
 
 [Some part of Non-Culm as CAM]: In Devon, some part of the non-Culm strata is Cambrian in age #COA #chron-hyp
@@ -510,8 +499,6 @@ B UND C : [Culm as CM, USIL and ORS]        mit B : Ein Teil des Culm ist CM UND
 [Non-Culm Strata as SIL and CAM]: In Devon, the non-Culm strata range from Cambrian to Silurian in age #COA #chron-hyp
     -> [Non-Culm Strata as CAM] 
     - [Non-Culm Strata as CAM]
-    -> [Devonian Strata as CAM]
-    - [Devonian Strata as CAM]
 
 // Beides kann zugleich falsch sein (z.B The whole non-Culm strata as ORS)
 // Beides kann nicht zugleich wahr sein 
