@@ -1,0 +1,47 @@
+===
+title: Prelimenary Reconstruction of the GDC 
+author: Corinna Günth-Stiegeler
+date: 28/06/2019  
+color:
+    tagColors:
+        GRE: "#f4a460"
+        COA: "#ffc1c1"
+        DEV: "#eedd82"
+        pri: "#ffe4b5"
+        ev:  "#ffff00"
+    groupColorScheme:
+        - "#ffff00"
+        - "#c6e2ff"
+        - "#9fb6cd"
+        - "#e6e6fa"
+        - "#f0ffff"
+        - "#ffe1ff"
+        - "#eed2ee"
+        - "#d8bfd8"
+group:
+    groupDepth: 3
+dot: 
+    graphVizSettings: 
+      rankdir: "TB"  
+      ranksep: 1
+selection:
+    selectedTags:
+        - chron-hyp 
+    excludeDisconnected: false
+    statementSelectionMode: "all"
+===
+
+[Standard Sequence]:  Given the strata are undisturbed, Cambrian strata are overlain by Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata and New Red Sandstone strata, respectively #pri
+
+[Formation of strata]: Strata are originally formed from sediments that were deposited in flat horizontal sheets - the younger sediments 
+deposited on older ones. #pri
+
+// [Definition Trough]: Iff strata are folded into an archlike form, with the concave side upward, then they form a trough #GRE #pri
+
+/*selection:
+    selectedTags:
+        - GRE
+        - pri
+        - ev 
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/

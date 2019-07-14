@@ -1,0 +1,78 @@
+
+[Yorkshire Limestone as ML]: In Yorkshire, the limestone is Mountain Limestone in age #COA #chron-hyp
+
+[Yorkshire and Culm Limestone]: The black Culm limestone is as old as the Yorkshire limestone #COA #chron-hyp
+
+<Black Culm Limestone and Yorkshire I>: If strata can be identified by means of their embedded fossils and the black Culm limestone is not as old as the Yorkshire limestone, then there are no similarities in fossils between them #COA 
+
+    (1) The black Culm limestone is not as old as the Yorkshire limestone
+            >< [Yorkshire and Culm Limestone] 
+    (2) [Fossil Criterion]
+    ----
+    (3) There are no similarities - in fossils - between the Yorkshire Limestone and the Black Culm Limestone
+            >< [Yorkshire similarities]
+
+<Black Culm Limestone and Yorkshire II>: If the black Culm limestone is as old as the Yorkshire limestone being Mountain Limestone in age, then the Culm limestone is Mountain Limestone in age, too #COA #chron-hyp
+
+    (1) [Yorkshire and Culm Limestone] 
+    (2) [Yorkshire Limestone as ML]
+    ----
+    (3) [BCL as ML]
+
+[BCL as ML]: The black Culm Limestone is nothing but ML in age #COA #chron-hyp 
+
+<Redating the BCL - COA.2.b> #COA #chron-hyp
+
+    (1) No CM BCL strata
+           >< [Some BCL as CM]
+    (2) [Some BCL as ML]
+    (3) No ORS BCL strata
+            ><  [Some BCL as ORS]
+    (4) No SIL BCL strata
+            >< [Some BCL as SIL]
+    (5) No CAM BCL strata
+            >< [Some BCL as CAM]
+    ----
+    (6) [BCL as ML]
+                     
+
+[BCL as ML]
+    -> [BCL as CAM]
+    - [BCL as CAM]
+    -> [BCL as CM]
+    - [BCL as CM]
+    -> [BCL as SIL]
+    - [BCL as SIL]
+    -> [BCL as SIL and ORS]
+    - [BCL as SIL and ORS]
+
+
+[BCL as ORS]: The black Culm Limestone is nothing but ORS in age #DEV #chron-hyp 
+
+<Redating the BCL - DEV.1> #DEV #chron-hyp
+
+    (1) No CM BCL strata
+           >< [Some BCL as CM]
+    (2) No ML BCL strata
+           >< [Some BCL as ML]
+    (3) [Some BCL as ORS]
+    (4) No SIL BCL strata
+            >< [Some BCL as SIL]
+    (5) No CAM BCL strata
+            >< [Some BCL as CAM]
+    ----
+    (6) [BCL as ORS]
+                     
+
+[BCL as ORS]
+    -> [BCL as CAM]
+    - [BCL as CAM]
+    -> [BCL as CM]
+    - [BCL as CM]
+    -> [BCL as SIL]
+    - [BCL as SIL]
+    -> [BCL as SIL and ORS]
+    - [BCL as SIL and ORS]
+    -> [BCL as ML]
+    - [BCL as ML]
+    

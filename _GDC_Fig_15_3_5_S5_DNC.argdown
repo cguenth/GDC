@@ -1,0 +1,40 @@
+
+[ORS in North Devon]: In north Devon, some non-Culm strata are ORS in age #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+
+
+<ORS Non-Culm Strata in North Devon>: If strata can be identified by means of their embedded fossil and 
+some north Devonian non-Culm strata are not Old Red Sandstone in age, 
+then there are no fossils similar to Coal Measures plants in north Devon #DEV
+
+    (1) [Fossil Criterion]
+    (2) In north Devon, there is no ORS non-Culm strata
+        >< [ORS in North Devon]
+    ----
+    (3) In north Devon, there are no fossils similar to Coal Measures plants
+        >< [CM Plants in North Devon]
+
+[Non-Culm as SIL and ORS]: In Devon, the non-Culm strata range from Silurian to Old Red Sandstone in age #COA #chron-hyp
+
+<Extending the Non-Culm Upwards - COA.4> #COA #chron-hyp
+
+    (1) No CM Non-Culm strata
+            >< [Some Non-Culm as CM]
+    (2) No ML Non-Culm strata
+            >< [Some Non-Culm as ML]
+    (3) [Some Non-Culm as ORS]
+    (4) [Some Non-Culm as SIL]
+    (5) No CAM Non-Culm strata
+            >< [Some Non-Culm as CAM]
+    ----
+    (3) [Non-Culm as SIL and ORS]
+
+
+
+[Non-Culm as SIL and ORS]
+    -> [Non-Culm as CAM] 
+    - [Non-Culm as CAM]
+    -> [Non-Culm as SIL and CAM]
+    - [Non-Culm as SIL and CAM]
+
+

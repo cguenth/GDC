@@ -1,0 +1,14 @@
+
+[Coal in Ancient Strata]: There are coal deposits in pre-Old Red Sandstone strata #GRE
+
+[Instances of Ancient Strata]: In Munster and Pennsylvannia, there are pre-Old Red Sandstone strata #GRE #chron-hyp
+
+<Coal in Ancient Strata>: If there are no coal deposits in Pre-Old Red Sandstone strata, then there are no coal deposits in the pre-Old Red Sandstone strata 
+of Munster and Pennsylvannia #GRE
+    
+    (1) [Instances of Ancient Strata]
+    (2) There are no coal deposits in pre-Old Red Sandstone strata
+         >< [Coal in Ancient Strata]
+    ----
+    (3) There are no coal deposits in the pre-Old Red Sandstone strata of Munster and Pennsylvannia 
+        -> [Instances of Coal in Ancient Strata]

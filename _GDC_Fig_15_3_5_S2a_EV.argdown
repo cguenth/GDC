@@ -1,0 +1,14 @@
+
+[Unconformity in Devon]: Between the Devon Culm and the juxtaposed strata, there is at least one formation missing from the standard sequence #ev #E6
+    -> [Unbroken Sequence of Devon Strata] 
+    - [Unbroken Sequence of Devon Strata]
+
+/*
+E1 und E6 können beide zugleich falsch sein (Es gibt eine Lücke, aber nicht zwischen Culm und non-Culm)
+E1 und E6 können nicht beide zugleich wahr sein: If all the strata form an unbroken sequence, then there is no gap in the sequence (E1 -> NOT:E5)
+                                                  If there is a gap in the sequence, then the strata do not form an unbroken sequence (E5 -> NOT:E1)
+[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different but not successive geological periods #GRE #pri
+[Gap in a Sequence of Strata II]: There is a gap in a local sequence of strata, iff certain formations are missing in that particular area from the standard sequence #GRE #pri
+[Unconformity]: A lower set of strata is truncated at an angle and overlain by an upper set lying in a different orientation
+                signalling that certain formations are missing in that particular area from the standard sequence
+*/

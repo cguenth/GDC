@@ -1,0 +1,37 @@
+<Main Culm as CM>: If strata can be identified by means of their embedded fossils and no part of the main Culm strata is Coal Measures in age, 
+then the main Culm strata do not contain Coal Measures plants #COA
+
+    (1) [Fossil Criterion]
+    (2) No part of the main Culm is CM in age
+        >< [Some Main Culm as CM]
+    ----
+    (3) There are no Coal Measures plants in the main part of the Culm strata
+            -> [CM Plants in Devon Culm]  
+
+[Main Culm as CM]: The whole of the main Culm is CM in age #COA #chron-hyp // Alles MC ist CAM       
+
+<Redating the Main Culm - COA.1> #COA #chron-hyp
+
+    (1) [Some Main Culm as CM]
+    (2) No ML Main Culm strata
+        >< [Some Main Culm as ML]
+    (3) No ORS Main Culm strata
+            ><  [Some Main Culm as ORS]
+    (4) No SIL Main Culm strata
+            >< [Some Main Culm as SIL]
+    (5) No CAM Main Culm strata
+            >< [Some Main Culm as CAM]
+    ----
+    (6) [Main Culm as CM]
+                     
+
+[Main Culm as CM]
+    -> [Main Culm as CAM]
+    - [Main Culm as CAM]
+
+// "Alles MC ist CAM" und "Alles MC ist CM" sind konträr, d.h. sie können zugleich falsch, aber nicht wahr sein,
+// unter der Annahme, dass die durch die Eigenschaften "CM-Sein" und "CAM-Sein" generierten Mengen sind disjunkt sind,
+// (Es existiert kein Ding, auf das zugeich "CM-Sein" und "CAM-Sein" zutrifft)
+
+
+

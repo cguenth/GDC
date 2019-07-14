@@ -1,0 +1,5 @@
+argdown compile 'GDC_Fig_15_3_5_S*.argdown' Compiled/
+cd Compiled/
+argdown map 'GDC_Fig_15_3_5_S*.argdown' --format svg
+cd ..
+ 

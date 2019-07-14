@@ -1,0 +1,13 @@
+
+[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different 
+but not successive geological periods #pri
+
+<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata are Cambrian in age, i.e. belonging to the same geological period, then there is no gap in the 
+local sequence. #GRE
+
+    (1) [Gap in a Sequence of Strata]
+    (2) [Main Culm as CAM]
+    (3) [BCL as CAM]
+    (4) [Non-Culm as CAM]
+    ----
+    (5) [Unbroken Sequence of Devon Strata]

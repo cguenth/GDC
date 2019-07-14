@@ -1,0 +1,45 @@
+
+
+[Traversing Northward]: The strata south of Exmoor become progessively younger the furhter one traverses northward #GRE #chron-hyp
+
+[Exmoor Trough as Best Explanation]: Assuming that the strata south of Exmoor become progessively younger the furhter one traverses northward 
+and that, originally, younger strata rest upon older ones, 
+the existence of a trough running trough Exmoor is the best explanation of the strata north of Exmoor being older  #GRE #aux
+
+
+<Trough through Exmoor - GRE.1a>: If the existence of a trough running trough Exmoor is the best explanation of 
+the Exmoor strata being juxtaposed solely with older strata, then there is a trough through Exmoor  #GRE
+
+    (1) [North of Exmoor]
+    (2) [Traversing Northward]
+    (3) [Formation of strata] 
+    (4) [Exmoor Trough as Best Explanation]
+    ----
+    (5) [Trough through Exmoor]
+
+[Exmoor Youngest Devonian strata]: In Devon, among all the strata older than the New Red Sandstone, the strata of Exmoor are the youngest #GRE #chron-hyp
+
+<Exmoor and Devonian Strata>: Assuming that, originally, younger strata rest upon older ones, it holds: 
+If the Exmoor strata is not the youngest, then there is no trough through Exmoor  #GRE
+
+    (1) Exmoor not the Youngest strata 
+            >< [Exmoor Youngest Devonian strata]
+    (2) [Formation of strata] 
+    ---- 
+    (3) There is no trough in Exmoor
+            >< [Trough through Exmoor]
+
+
+/*
+<Exmoor and Devonian Strata>: Assuming that, in Devon, the strata become progessively younger the furhter one traverses northward 
+and that, originally, younger strata rest upon older ones, it holds: If there is a trough through Exmoor, then the Exmoor strata is the youngest #GRE
+
+    (1) [Trough through Exmoor]
+    (2) [Traversing Northward]
+    (3) [Formation of strata] 
+    ---- 
+    (4) [Exmoor Youngest Devonian strata]
+    
+*/
+
+

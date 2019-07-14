@@ -1,0 +1,28 @@
+
+
+[Main Culm as ORS]: The main part of the Culm is nothing but Old Red Sandstone in age #GRE #chron-hyp 
+
+<Redating the Main Culm - GRE.3b> #GRE #chron-hyp
+
+    (1) No CM main Culm strata
+           >< [Some Main Culm as CM]
+    (2) No ML main Culm strata
+           >< [Some Main Culm as ML]
+    (3) [Some Main Culm as ORS]
+    (4) No SIL main Culm strata
+            >< [Some Main Culm as SIL]
+    (5) No CAM main Culm strata
+            >< [Some Main Culm as CAM]
+    ----
+    (6) [Main Culm as ORS]
+
+
+[Main Culm as ORS]
+    -> [Main Culm as CAM]
+    - [Main Culm as CAM]
+    -> [Main Culm as CM]
+    - [Main Culm as CM]
+    -> [Main Culm as ML]
+    - [Main Culm as ML]
+    -> [Main Culm as SIL]
+    - [Main Culm as SIL]

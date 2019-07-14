@@ -1,0 +1,44 @@
+
+[Upper ORS in South Devon]: In south Devon, some limestones are as old as the base of the Mountain 
+Limestone #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+
+<ORS Non-Culm Strata in South Devon>: If strata can be identified by means of their embedded fossil and 
+some south Devonian non-Culm strata are not as old as the base of the Mountain Limestone, 
+then there are no Mountain Limestone fossils in south Devonian strata #DEV
+
+    (1) [Fossil Criterion]
+    (2) In south Devon, some limestones are not as old as the base of the Mountain Limestone
+        >< [Upper ORS in South Devon]
+    ----
+    (3) There are no Mountain Limestone fossils in south Devonian strata
+            -> [ML Fauna in South Devon]
+    
+
+
+[Non-Culm as CAM, SIL and ORS]: In Devon, the non-Culm strata range from Cambrian to Old Red Sandstone in age #COA #chron-hyp
+
+<Extending the Non-Culm Upwards - DEV.2a> #COA #chron-hyp
+
+    (1) No CM Non-Culm strata
+            >< [Some Non-Culm as CM]
+    (2) No ML Non-Culm strata
+            >< [Some Non-Culm as ML]
+    (3) [Some Non-Culm as ORS]
+    (4) [Some Non-Culm as SIL]
+    (5) [Some Non-Culm as CAM]
+    ----
+    (6) [Non-Culm as CAM, SIL and ORS]
+
+
+
+[Non-Culm as CAM, SIL and ORS]
+    -> [Non-Culm as CAM] 
+    - [Non-Culm as CAM]
+    -> [Non-Culm as SIL and CAM]
+    - [Non-Culm as SIL and CAM]
+    -> [Non-Culm as SIL and ORS]
+    - [Non-Culm as SIL and ORS]
+
+
+
