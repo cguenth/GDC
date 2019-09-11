@@ -1,14 +1,17 @@
 
-[Coal in Ancient Strata]: There are coal deposits in pre-Old Red Sandstone strata #GRE
+[Coal in Ancient Strata]: There are coal deposits in pre-ORS strata #GRE
 
-[Instances of Ancient Strata]: In Munster and Pennsylvannia, there are pre-Old Red Sandstone strata #GRE #chron-hyp
+// [Instances of Coal in Ancient Strata]: In Munster, North America and North Devon there are coal deposits in pre-Old Red Sandstone strata #ev #E5
 
-<Coal in Ancient Strata>: If there are no coal deposits in Pre-Old Red Sandstone strata, then there are no coal deposits in the pre-Old Red Sandstone strata 
-of Munster and Pennsylvannia #GRE
+[Instances of Pre-ORS Strata]: In Munster, North America and North Devon, some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
+    + [Main Culm as CAM]
+
+<Coal in Ancient Strata>: If there are no coal deposits in pre-ORS strata, then there are no coal deposits in the pre-ORS strata 
+of Munster, North America or North Devon #GRE
     
-    (1) [Instances of Ancient Strata]
-    (2) There are no coal deposits in pre-Old Red Sandstone strata
+    (1) [Instances of Pre-ORS Strata]
+    (2) There are no coal deposits in pre-ORS strata
          >< [Coal in Ancient Strata]
     ----
-    (3) There are no coal deposits in the pre-Old Red Sandstone strata of Munster and Pennsylvannia 
+    (3) There are no coal deposits in the pre-ORS strata of Munster, North America and North Devon
         -> [Instances of Coal in Ancient Strata]

@@ -1,0 +1,19 @@
+
+
+
+[CFAP - 1]: If two strata are of the same age, then they support the same characteristic fossil assemblages #dat-met
+    + [Characteristic Fossil Assemblage Principle]
+
+[Similarity - Fossil Assemblages]: For three fossil assemblages A, B and C it holds that B is more similar to A than to C iff 
+there are more elements in B which are similar to some element in A than to some element in C #dat-met
+
+[L1 - Continuity]: The more their characteristic fossil assemblages are similar, the more two strata A and B are similar in age #dat-met
+    + [Similarity - Fossil Assemblages]
+    + [Characteristic Fossil Assemblage]
+    + [Lyellian Principle]
+    +> [LP - 1]
+
+// [LP - 2]: If two strata support similar characteristic fossil assemblages, then they are similar in age
+
+[LP - 1]: If two strata are similar in age, then they support similar characteristic fossil assemblages #dat-met
+    

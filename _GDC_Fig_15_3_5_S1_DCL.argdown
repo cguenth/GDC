@@ -12,8 +12,9 @@
 // Also:  Eine Partition einer Menge ist eine Zerlegung dieser Menge in nichtleere paarweise disjunkte Teilmengen. 
 // A_i are exhaustive and exclusive sets
 
+[BCL as Post-Primary and Pre-NRS]: The black Culm Limestone is older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
 
-<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, ORS nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the black Culm Limestone is CM in age
             >< [Some BCL as CM]
@@ -23,10 +24,17 @@
             >< [Some BCL as ORS]
     (4) No part of the black Culm Limestone is SIL in age
             >< [Some BCL as SIL]
+    (5) [Standard Sequence]
+    (6) [BCL as Post-Primary and Pre-NRS]
     ----
-    (5) [Some BCL as CAM]
+    (7) [Some BCL as CAM]
 
 [BCL as CAM]: The black Culm Limestone is nothing but Cambrian in age #GRE #chron-hyp 
+    -> [Some BCL as CM]
+    -> [Some BCL as ML]
+    -> [Some BCL as ORS]
+    -> [Some BCL as SIL]
+    +> [Some BCL as CAM]
 
 <Dating the BCL - GRE.1> #GRE #chron-hyp
 
@@ -41,6 +49,33 @@
     (5) [Some BCL as CAM]
     ----
     (6) [BCL as CAM]
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+<BCL as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the BCL strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) BCL not CAM in age
+            >< [Some BCL as CAM]
+    ----
+    (3)  BCL strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+[Characteristic CAM Appearance of BCL]: The ancient appearance of the BCL is characteristic of the CAM #GRE #roc-hyp
+
+<BCL as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the BCL is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of BCL]
+    ----
+    (4)  [BCL as CAM] */
+
+
     
 
 

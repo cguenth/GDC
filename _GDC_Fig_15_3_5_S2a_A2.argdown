@@ -1,12 +1,12 @@
-[Lyellian Principals]: At the earth's surface, there is a constant but piecemeal change in the composition of the faunas and floras (in correlation with ever-changing physical environments) #COA
 
-[Common Species]: Two formations deposited at widely separated periods have few if any species in common #COA
-        >< [CM Plants in Ancient Strata]
-    
 
-<Assemblages of Species>: From Lyellian principals, it follows that while particular species might have long ranges in time, an assemblage of many species does not remain unchanged for long; therefore, two formations deposited at widely separated periods have few if any species in common #COA
+[CM and pre-ORS Sufficiently Different]: Pre-ORS strata and CM strata are suffienciently different in age #COA #aux
 
-    (1) [Lyellian Principals]
-    ----
-    (2) [Common Species]
+<Lyellian Principles, Pre-ORS and CM>: If CM and pre-ORS strata are suffienciently different in age, then they do not support similar fossil species #COA
 
+        (1) [L2 - Maximal Difference in Fossils]
+        (2) [Standard Sequence]
+        (3) [CM and pre-ORS Sufficiently Different]
+        ----
+        (4) Pre-ORS strata and CM strata do not support similar fossil species
+                -> [CM and Pre-ORS - Similar Fossils]

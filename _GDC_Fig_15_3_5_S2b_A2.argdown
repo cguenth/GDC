@@ -1,11 +1,109 @@
 
-[Ancient French Strata]: In the Bocage, there are pre-Old Red Sandstone strata. #GRE #chron-hyp
 
-<French Ancient Strata and CM Plants>: If there are no Coal Measures plants in pre-Old Red Sandstone strata, then there were no Coal Measures plants in French pre-Old Red Sandstone strata  #GRE
+// Siehe S2b_ A1: [Pre-ORS Strata in northwest France]: In northwest France, 
+// some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
 
-    (1) [Ancient French Strata]
+// [CM Plants in Ancient French Strata]: In northwest France, in pre-ORS strata, associated with seams of coal, there are fossil plants 
+// of which some are referable to species of the CM #ev #E7b 
+
+<French Ancient Strata and CM Plants>: If there are no fossils similar to those of the CM in pre-ORS strata, 
+then there are no CM fossil plants in French pre-ORS strata  #GRE
+
+    (1) [Pre-ORS Strata in northwest France]
     (2) There are no CM plants in ancient strata
-            >< [CM Plants in Ancient Strata]
+            >< [CM and Pre-ORS - Similar Fossils]
     ----
     (3) There are no CM plants in ancient French strata
-            >< [CM Plants in Ancient French Strata]
+            -> [CM Plants in Ancient French Strata]
+
+/*   
+(December 1834) *DLB Springs to His Own Defence 
+
+S.106 "in the French Alps some characteristic Oolitic (or more precisely, Liassic)" fossil belemnites occured in strata 
+sandwiched among some containing fossil plants of CM appearance ... Brogniart, a leading specialist on fossil plants, had confirmed 
+that the plants were indeed of CM species"
+
+Belemnites were interpreted as the internal skeletons of cephalopod mollusks and were only known from the Oolitic and the Cretaceous groups
+
+Die Belemniten (Belemnoidea) sind eine diverse Großgruppe fossiler Kopffüßer (Cephalopoda). 
+Sie existierten vom Unterkarbon (Mississippium) bis zum Ende der Kreidezeit
+Die zoologische Klasse der Kopffüßer (Cephalopoda, von altgriechisch κεφαλή kephalē „Kopf“ und ποδ- pod- „Fuß“) ist eine Tiergruppe, 
+die zu den Weichtieren (Mollusca) gehört und nur im Meer vorkommt. 
+
+S.121 "...discovery of Oolitic (Liassic) belemnites and CM plants in closely associated strata in the French Alps. 
+Judging only from organic remains, this would imply the absurdity of a rock both Lias and CM at the same time" 
+*/
+
+// [CFP - 2]: If two strata support the same characteristic fossils, then they are of the same age
+
+// [French Alps]: In the French Alps, there are some characteristic Liassic fossil belemnites and CM plants in closely associated strata #ev #E7b
+
+[Characteristic CM Fossils in French Alps]: The French alpine fossils, closely associated with Oolitic belemnites, are characteristic of the CM era #COA #fos-hyp
+        - [No Characteristic Fossils]
+
+<Characteristic Fossils and French Alps>: If strata can be identified by their characteristic fossils and no strata are Oolitc and CM at the same time, 
+then there are no strata with characteristic Oolitic fossils and characteristic CM fossils #GRE
+    
+    (1)  There are no strata both Oolitic and CM at the same time
+            + [Standard Sequence]
+    (2) [Characteristic CM Fossils in French Alps]
+    (3) [CFP - 2]
+    ----
+    (5) There are no strata with characteristic Oolitic fossils and characteristic CM fossils
+            -> [French Alps]
+
+
+
+/*
+S. 122/3 February to April 1835
+
+Beispiele
+
+DEVON: "A flora of so-called CM species might have flourished locally in specific ecological conditions during the pre-ORS period, 
+long before it was able to spread widely and become the "characteristic" flora of the CM period"
+
+FRENCH ALPS: "EDB Alpine discovery as evidence that certain districts might really enjoy an immunity from those revolutions of organic life which happend to others...
+trusted the belemnites rather than the plants ... in the region that had since become the Alps the CM flora might have survived much longer than elsewhere, 
+as a result of ecological circumstances"
+
+Allgemeine Hypothese
+
+""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time"
+
+*/
+         
+[LV in Evironments - Pre-ORS]: During the pre-ORS period, there are local environmental variations #GRE #aux
+
+[LV in Evironments as BE]: The best explanation of the existence of CM plants in some non-Carboniferous strata 
+are local variations in environmental conditions, given a bijection between a region's environmental conditions and its fauna and flora  #GRE #aux
+
+<LV in Evironments - Pre-ORS>: If local variations of the environmental conditions are the best explanation 
+of the existence of CM plants in some pre-ORS strata and there are no local environmental variations during the pre-ORS period, 
+then there are no CM plants in some pre-ORS strata. #GRE
+
+    (1) [Environmental Conditions, Fauna and Flora]
+    (2) [LV in Evironments as BE]
+    (3) There are no local environmental variations during the pre-ORS period
+        >< [LV in Evironments - Pre-ORS]
+    ----
+    (4)  There are no CM plants in some pre-ORS strata
+        -> [CM and Pre-ORS - Similar Fossils]
+
+
+[LV in Evironments - Oolitic]: During the Oolitic period, there are local environmental variations #GRE #aux
+
+<LV in Evironments - Oolitic>: If local variations of the environmental conditions during the Oolitic period are the best explanation 
+of the existence of of CM plants in some Oolitic strata and there are no local environmental variations during the Oolitic period, 
+then there are no CM plants in some Oolitic French Alpine strata. #GRE
+
+    (1) [Environmental Conditions, Fauna and Flora]
+    (2) [LV in Evironments as BE]
+    (3) There are no local environmental variations during the Oolitic period
+            >< [LV in Evironments - Oolitic]
+    ----
+    (4) THere are no CM plants in some Oolitic French Alpine strata
+            -> [French Alps]
+
+
+

@@ -1,16 +1,62 @@
 
-[CM Plants in Ancient French Strata]: In the Bocage, the limestones are pre-Old Red Sandstone in age and contain some Coal Measures fossil plants #ev #E7
-
-[Munster Coal as Carboniferous]: In Munster, the limestone and coal seams are pre-Carboniferous in age #ev #E8
-     -> [Instances of Coal in Ancient Strata] 
 
 /*
-[Munster Coal as Carboniferous]: In Munster, there are no coal seams in pre-ORS strata
+DEC 1834
+"Analogous cases of anthracite in the Greywacke of Normandy (in the Bocage)"
 
-<Instances of Coal in Ancient Strata>
-    (1) In Munster, there are coal seams in pre-ORS strata
-    (2) In Pennsylvannia, there are coal seams in pre-ORS strata
-    ----
-    (3) In Munster and Pennsylvannia, there are coal seams in pre-ORS strata
+DEC 1834 and JAN 1835
+"There were indeed analogous cases [to that one in North Devon] in northwest France, where coal seams in the *terrain de transition* 
+were associated with fossil plants, of which some at least were referable to species of the *terrain houiller* or CM ...
+Of 25 grauwacke plant species so far identified from northwest France only 4 were also known from in the Carboniferous...
+... Between the grauwacke flora of northwest France and the one of the true CM, there are enough differences to show that 
+they belong to different formations and enough similarities not to consider the culm plants of North Devon as an anomaly."
 */
-    
+
+// Anthracites of Brittany and Normandy
+[Coal in French Pre-ORS Strata]: In northwest France, there are coal deposits in pre-ORS strata. #ev
+
+[CM Plants in Ancient French Strata]: In northwest France, in pre-ORS strata, associated with seams of coal, there are some CM fossil plants #ev 
+
+
+// [No Characteristic Fossils]: There is no fossil species FS and no time intervall dt such that, during dt, every region supports F
+[French Alps]: In the French Alps, there are some characteristic Oolitic fossil belemnites and CM plants in closely associated strata #ev
+     - [No Characteristic Fossils]
+
+// [Instances of Pre-ORS Strata]: In Munster, North America and North Devon, some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
+
+[Munster Coal in Carboniferous Strata]: In Munster, some strata closely associated with seams of coal are not pre-ORS in age #ev 
+     - [Instances of Pre-ORS Strata]
+
+
+// S.101 GREE and BUCK had long mistaken the true age of some of the CM in Pembrokeshire (southwest Wales), because they were so much like pre-ORS in appearance
+// // [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+
+[Pembrokeshire]: The strata near Pembrokeshire (southwest Wales) are of characteristic pre-ORS appearance and CM in age #ev 
+     + [No Characteristic Rock Type]
+
+
+/*
+S. 122/3 FEB 1835 
+
+DLB "characteristc fossils as a "hasty generalization" [...] utterly at variance with what was known from the present geographical distribution of organsisms"
+
+
+PHIL ""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+     because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time"
+
+     "Lyell's assumption of a uniform rate of organic change was itself questionable, ... a fully ecological point of view would have to allow
+     for the possibility that fossils might charcterize particular environments far more than particular periods."
+
+
+S.220 OCT 1837
+
+"[DLB] attributed all the apparant anomalies that had arisen in [AUS's] region to the diversity of local environmental conditions at 
+     the epoch of the fossil potting there"
+ 
+*/
+
+
+[LV in Fauna and Flora -Today]: Today, there are local variations in fauna and flora #ev
+
+[LV in Evironments - Today]: Today, there are local variations in environmental conditions #ev
+

@@ -19,11 +19,7 @@ GRE.1
 
  */
 
-
-@include(_GDC_Fig_15_3_5_S2a_FC.argdown) 
-
-
-# Evidence
+# Evidence {color: 0}
 
 @include(_GDC_Fig_15_3_5_S1_EV.argdown) 
 @include(_GDC_Fig_15_3_5_S2a_EV.argdown) 
@@ -31,55 +27,63 @@ GRE.1
 @include(_GDC_Fig_15_3_5_S3a_EV.argdown)
 
 
+# Rocks, Fossils and Time - Principles {color: 1}
+
+@include(_GDC_Fig_15_3_5_S1_FC.argdown) 
+@include(_GDC_Fig_15_3_5_S2a_FC.argdown) 
+@include(_GDC_Fig_15_3_5_S2b_FC.argdown) 
 
 
-# Aporia I : Coal in Ancient Strata {color: 1}
+
+# Aporia I : Coal in Ancient Strata {color: 2}
 
 @include(_GDC_Fig_15_3_5_S1_A1.argdown) 
+@include(_GDC_Fig_15_3_5_S2b_A1.argdown) 
 
 
 
-# Aporia II : CM Plants in Ancient Strata {color: 2}
+# Aporia II : CM Plants in non-CM Strata {color: 3}
 
 @include(_GDC_Fig_15_3_5_S1_A2.argdown) 
-@include(_GDC_Fig_15_3_5_S2a_A2.argdown) 
+@include(_GDC_Fig_15_3_5_S2a_A2.argdown)
 @include(_GDC_Fig_15_3_5_S2b_A2.argdown)
 
 
 
-# Gap in the Sequence   {color: 4}
-
-@include(_GDC_Fig_15_3_5_S1_GAP.argdown)
-@include(_GDC_Fig_15_3_5_S2a_GAP.argdown) 
-@include(_GDC_Fig_15_3_5_S3a_GAP.argdown) 
-
-
-
-# Dating of the Main Culm  {color: 5}
+# Dating of the Main Culm  {color: 4}
 
 @include(_GDC_Fig_15_3_5_S1_DMC.argdown) 
 @include(_GDC_Fig_15_3_5_S2a_DMC.argdown) 
 
 
 
-# Dating of the Culm Limestone  {color: 6}
 
-@include(_GDC_Fig_15_3_5_S1_DCL.argdown)
+# Dating of the Culm Limestone  {color: 5}
+
+@include(_GDC_Fig_15_3_5_S1_DCL.argdown) 
 @include(_GDC_Fig_15_3_5_S2a_DCL.argdown) 
 
 
 
-# Dating of the Non-Culm {color: 7}
+# Dating of the Non-Culm {color: 6}
 
 @include(_GDC_Fig_15_3_5_S1_DNC.argdown) 
 @include(_GDC_Fig_15_3_5_S3a_DNC.argdown) 
 
 
 
-# Youngest Devonian Strata {color: 3}
+# Youngest Devonian Strata {color: 7}
 
 @include(_GDC_Fig_15_3_5_S1_YDS.argdown) 
 @include(_GDC_Fig_15_3_5_S2a_YDS.argdown) 
 @include(_GDC_Fig_15_3_5_S3a_YDS.argdown) 
+
+
+
+# Gap in the Sequence   {color: 8}
+
+@include(_GDC_Fig_15_3_5_S1_GAP.argdown) 
+@include(_GDC_Fig_15_3_5_S2a_GAP.argdown)
+@include(_GDC_Fig_15_3_5_S3a_GAP.argdown)  
 
 

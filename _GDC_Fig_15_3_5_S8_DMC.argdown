@@ -1,6 +1,15 @@
 
 
+//[Instances of Pre-ORS Strata]: In Munster, North America and North Devon, some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
+
+
 [Main Culm as ORS]: The main part of the Culm is nothing but Old Red Sandstone in age #GRE #chron-hyp 
+        -> [Some Main Culm as CM]
+        -> [Some Main Culm as ML]
+        +> [Some Main Culm as ORS]
+        -> [Some Main Culm as SIL]
+        -> [Some Main Culm as CAM]
+        -> [Instances of Pre-ORS Strata]
 
 <Redating the Main Culm - GRE.3b> #GRE #chron-hyp
 
@@ -16,7 +25,7 @@
     ----
     (6) [Main Culm as ORS]
 
-
+/*
 [Main Culm as ORS]
     -> [Main Culm as CAM]
     - [Main Culm as CAM]
@@ -25,4 +34,4 @@
     -> [Main Culm as ML]
     - [Main Culm as ML]
     -> [Main Culm as SIL]
-    - [Main Culm as SIL]
+    - [Main Culm as SIL]*/

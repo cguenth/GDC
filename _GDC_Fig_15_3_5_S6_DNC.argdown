@@ -1,22 +1,54 @@
 
-[Upper ORS in South Devon]: In south Devon, some limestones are as old as the base of the Mountain 
-Limestone #DEV #chron-hyp
+
+
+
+[CFA - ORS]: ORS strata support few fossils and most of these are peculiar fish fossils only known from the ORS #GRE #fos-hyp
+    +> [Scottish ORS]
+
+[CFA - ORS - II]: The characteristic fossil assemblage of ORS strata is intermediate in character between those of SIL strata and ML strata #DEV #fos-hyp
+        -> [CFA - ORS]
+        - [CFA - ORS]
+
+//[LP - 1]: If two strata are similar in age, then they support similar characteristic fossil assemblages
+ 
+<ORS CFA - Intermediate>: If ORS strata are intermediate in age between SIL strata and ML strata, then they support a CFA intermediate
+ between those of SIL strata and ML strata #DEV
+        
+        (1) ORS strata are intermediate in age between SIL strata and ML strata
+                + [Standard Sequence]
+        (2) [LP - 1]
+        ----
+        (3) [CFA - ORS - II]
+
+
+[Some South Devon LSTs as Upper ORS]: In south Devon, around Tor Bay and Netwon Abott, the limestones are upper ORS in age #DEV #chron-hyp
     +> [Some Non-Culm as ORS]
 
-<ORS Non-Culm Strata in South Devon>: If strata can be identified by means of their embedded fossil and 
-some south Devonian non-Culm strata are not as old as the base of the Mountain Limestone, 
-then there are no Mountain Limestone fossils in south Devonian strata #DEV
+// [South Devonian Fossil Fauna]: Around Tor Bay and Netwon Abott, the limestones support not one single SIL fossil species, but many ML species of shells
+ // and a great many new species #ev #E15
 
-    (1) [Fossil Criterion]
-    (2) In south Devon, some limestones are not as old as the base of the Mountain Limestone
-        >< [Upper ORS in South Devon]
-    ----
-    (3) There are no Mountain Limestone fossils in south Devonian strata
-            -> [ML Fauna in South Devon]
     
+<South Devon LSTs - CFA >: If strata can be identified by means of their characteristic fossil assemblages and 
+ in south Devon, around Tor Bay and Netwon Abott, the limestones are upper ORS in age, 
+ then their fossil assemblages are more similar to those of ML strata than SIL strata #DEV
+
+        (1) [CFAP - 1] 
+        (2) [Some South Devon LSTs as Upper ORS]
+        (3) [CFA - ORS - II]
+        ----
+        (4) In south Devon, around Tor Bay and Netwon Abott, the limestones support a FA characteristic of the upper ORS, 
+            that is, a FA more similar to the CFAs of ML strata than SIL strata
+                +> [South Devonian Fossil Fauna]
+
+
 
 
 [Non-Culm as CAM, SIL and ORS]: In Devon, the non-Culm strata range from Cambrian to Old Red Sandstone in age #COA #chron-hyp
+    -> [Some Non-Culm as CM]
+    -> [Some Non-Culm as ML]
+    +> [Some Non-Culm as ORS]
+    +> [Some Non-Culm as SIL]
+    +> [Some Non-Culm as CAM]
 
 <Extending the Non-Culm Upwards - DEV.2a> #COA #chron-hyp
 
@@ -31,14 +63,14 @@ then there are no Mountain Limestone fossils in south Devonian strata #DEV
     (6) [Non-Culm as CAM, SIL and ORS]
 
 
-
+/*
 [Non-Culm as CAM, SIL and ORS]
     -> [Non-Culm as CAM] 
     - [Non-Culm as CAM]
     -> [Non-Culm as SIL and CAM]
     - [Non-Culm as SIL and CAM]
     -> [Non-Culm as SIL and ORS]
-    - [Non-Culm as SIL and ORS]
+    - [Non-Culm as SIL and ORS]*/
 
 
 

@@ -5,20 +5,22 @@ author: Corinna Günth-Stiegeler
 date: 28/06/2019  
 color:
     tagColors:
-        GRE: "#f4a460"
-        COA: "#ffc1c1"
-        DEV: "#eedd82"
-        pri: "#ffe4b5"
+        GRE: "#b8860b"
+        COA: "#ff8c00"
+        DEV: "#eead0e"
         ev:  "#ffff00"
+        pri: "#f5f5dc"
+        dat-met: "#c6e2ff"
     groupColorScheme:
         - "#ffff00"
         - "#c6e2ff"
+        - "#b9d3ee"
         - "#9fb6cd"
-        - "#e6e6fa"
-        - "#f0ffff"
-        - "#ffe1ff"
-        - "#eed2ee"
-        - "#d8bfd8"
+        - "#eedfcc"
+        - "#eeb4b4"
+        - "#cd9b9b"
+        - "#8b6969"
+        - "#698b69"
 group:
     groupDepth: 3
 dot: 
@@ -29,12 +31,12 @@ selection:
     selectedTags:
         - COA
         - pri
-        - ev 
+        - ev
     excludeDisconnected: false
     statementSelectionMode: "all"
 ===
 
-[Standard Sequence]:  Given the strata are undisturbed, Cambrian strata are overlain by Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata and New Red Sandstone strata, respectively #pri
+[Standard Sequence]:  Given the strata are undisturbed, the Primary strata are overlain by Cambrian strata, Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata, New Red Sandstone strata and Oolitic stata, respectively #pri
 
 [Formation of strata]: Strata are originally formed from sediments that were deposited in flat horizontal sheets - the younger sediments 
 deposited on older ones. #pri
@@ -45,52 +47,77 @@ deposited on older ones. #pri
     selectedTags:
         - GRE
         - pri
-        - ev 
+        - ev
     excludeDisconnected: false
     statementSelectionMode: "all"*/
- 
+
+/*selection:
+    selectedTags:
+        - chron-hyp 
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+/*selection:
+    selectedTags:
+        - dat-met
+        - roc-hyp
+        - fos-hyp
+        - ev
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/ 
 
 
 /* 
 
 GRE.1
 
-+ COA.1 Late 1834: MUR and Lyell immediately as response to DLB; 
-         denying @[CM Plants in Ancient Strata]
++ COA.1 Late 1834: MUR immediately as response to DLB; 
 
-+ Lyellian Principals
++ Characteristic Fossil Method
 
 + French and Irish Evidence 
+
++ LYE, GREE
 
  */
 
 
-
-[Fossil Criterion]: Strata can be identified by means of their imbedded fossils #COA
-
-<Fossil Criterion and Common Species>: If two formations deposited at widely separated periods have few if any species in common, then strata can be identified by means of their imbedded fossils #COA
-
-    (1) [Common Species]
-    ----
-    (2) [Fossil Criterion] 
-
-
-# Evidence
+# Evidence {color: 0}
 
 
 
-[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev #E1
- 
-[CM Plants in Devon Culm]: In Devon, the Culm strata contain Coal Measures fossil plants #ev #E2
+[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev
 
-[North of Exmoor]: Passing Exmoor northwards, the strata become older #ev #E3
+/*
+S.93 On the west coast of Devon, near Bideford, there are seams of coal (culm or anthracite) 
+and also some fossil plants in strata closely associated with it
+
+culm : British English: Imperfect anthracite of Devon and Cornwall
+        originating during the Carboniferous Period that occur in southwest England
+        They are so called because of the occasional presence of a soft, often lenticular (linsenförmig), sooty (rußig) coal
+        which in Devon is known as Culm
+anthracite: A hard, compact variety of coal (highest carbon content, fewest impurities)
+
+OLD: [CM Plants in Devon Culm]: In Devon, the Culm contain Coal Measures fossil plants #ev #E2
+*/
+
+[CM Plants in Devon Culm]: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata 
+(in close association with seams of imperfect anthracite) #ev
+
+[North of Exmoor]: Passing Exmoor northwards, the strata become older #ev
 
 [Trough through Exmoor]: There is a trough through Exmoor - formed by a band of limestone running out to the north coast at Ilfracombe 
-and south of Barnstaple #ev #E4
+and south of Barnstaple #ev
  
-[Instances of Coal in Ancient Strata]: In Munster and Pennsylvannia, there are coal deposits in pre-Old Red Sandstone strata #ev #E5 
+// S.78
 
-[Unconformity in Devon]: Between the Devon Culm and the juxtaposed strata, there is at least one formation missing from the standard sequence #ev #E6
+[Instances of Coal in Ancient Strata]: In Munster, North America and North Devon there are coal deposits in pre-Old Red Sandstone strata #ev
+
+// S.101?? DLB's rock specimens looked like ordinary pre-ORS strata
+
+[Devonshire - Characteristic CAM Rock Type]: In Devon, *all* the strata - older than the New Red Sandstone - are of carachteristic CAM appearance #ev 
+
+[Unconformity in Devon]: Between the Devon Culm and the juxtaposed strata, there is at least one formation missing from the standard sequence #ev
     -> [Unbroken Sequence of Devon Strata] 
     - [Unbroken Sequence of Devon Strata]
 
@@ -103,130 +130,492 @@ E1 und E6 können nicht beide zugleich wahr sein: If all the strata form an unbr
 [Unconformity]: A lower set of strata is truncated at an angle and overlain by an upper set lying in a different orientation
                 signalling that certain formations are missing in that particular area from the standard sequence
 */
- 
-
-[CM Plants in Ancient French Strata]: In the Bocage, the limestones are pre-Old Red Sandstone in age and contain some Coal Measures fossil plants #ev #E7
-
-[Munster Coal as Carboniferous]: In Munster, the limestone and coal seams are pre-Carboniferous in age #ev #E8
-     -> [Instances of Coal in Ancient Strata] 
 
 /*
-[Munster Coal as Carboniferous]: In Munster, there are no coal seams in pre-ORS strata
+[Swiss Glarus Slate - Rock Type and Fossils]: In an ancient-looking black slate (Glarus slate) in the Swiss Alps, there is some Chalk fossil fish #ev
+*/ 
 
-<Instances of Coal in Ancient Strata>
-    (1) In Munster, there are coal seams in pre-ORS strata
-    (2) In Pennsylvannia, there are coal seams in pre-ORS strata
-    ----
-    (3) In Munster and Pennsylvannia, there are coal seams in pre-ORS strata
+
+/*
+DEC 1834
+"Analogous cases of anthracite in the Greywacke of Normandy (in the Bocage)"
+
+DEC 1834 and JAN 1835
+"There were indeed analogous cases [to that one in North Devon] in northwest France, where coal seams in the *terrain de transition* 
+were associated with fossil plants, of which some at least were referable to species of the *terrain houiller* or CM ...
+Of 25 grauwacke plant species so far identified from northwest France only 4 were also known from in the Carboniferous...
+... Between the grauwacke flora of northwest France and the one of the true CM, there are enough differences to show that 
+they belong to different formations and enough similarities not to consider the culm plants of North Devon as an anomaly."
 */
-     
+
+// Anthracites of Brittany and Normandy
+[Coal in French Pre-ORS Strata]: In northwest France, there are coal deposits in pre-ORS strata. #ev
+
+[CM Plants in Ancient French Strata]: In northwest France, in pre-ORS strata, associated with seams of coal, there are some CM fossil plants #ev 
+
+
+// [No Characteristic Fossils]: There is no fossil species FS and no time intervall dt such that, during dt, every region supports F
+[French Alps]: In the French Alps, there are some characteristic Oolitic fossil belemnites and CM plants in closely associated strata #ev
+     - [No Characteristic Fossils]
+
+// [Instances of Pre-ORS Strata]: In Munster, North America and North Devon, some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
+
+[Munster Coal in Carboniferous Strata]: In Munster, some strata closely associated with seams of coal are not pre-ORS in age #ev 
+     - [Instances of Pre-ORS Strata]
+
+
+// S.101 GREE and BUCK had long mistaken the true age of some of the CM in Pembrokeshire (southwest Wales), because they were so much like pre-ORS in appearance
+// // [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+
+[Pembrokeshire]: The strata near Pembrokeshire (southwest Wales) are of characteristic pre-ORS appearance and CM in age #ev 
+     + [No Characteristic Rock Type]
+
+
+/*
+S. 122/3 FEB 1835 
+
+DLB "characteristc fossils as a "hasty generalization" [...] utterly at variance with what was known from the present geographical distribution of organsisms"
+
+
+PHIL ""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+     because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time"
+
+     "Lyell's assumption of a uniform rate of organic change was itself questionable, ... a fully ecological point of view would have to allow
+     for the possibility that fossils might charcterize particular environments far more than particular periods."
+
+
+S.220 OCT 1837
+
+"[DLB] attributed all the apparant anomalies that had arisen in [AUS's] region to the diversity of local environmental conditions at 
+     the epoch of the fossil potting there"
+ 
+*/
+
+
+[LV in Fauna and Flora -Today]: Today, there are local variations in fauna and flora #ev
+
+[LV in Evironments - Today]: Today, there are local variations in environmental conditions #ev
+
+ 
+
+
+# Rocks, Fossils and Time - Principles {color: 1}
+
+
+// Rock Type Method
+
+[Characteristic Rock Types]: A rock type r is characteristic for some time interval dt iff 
+(i) r only exisits during dt and (ii) during dt, every region supports r #dat-met
+
+[CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age #dat-met
+
+/* Identification of strata, and their succession, by means of their rock types */
+
+[Characteristic Rock Type Principle]: There is a bijection between the age of some strata t and its characteristic rock types #dat-met
+    + [Characteristic Rock Types]
+    +> [CRTP - 2]
+
+/*  
+[CRTP - 1]: If two strata are of the same age, then they support the same characteristic rock types
+    + [Characteristic Rock Type Principle]
+*/
+ 
+
+
+[Characteristic Fossils]: A fossil species f is characteristic for some time interval dt iff 
+(i) f only exisits during dt and (ii) during dt, every region supports f #dat-met
+
+[CFP - 2]: If two strata support the same characteristic fossils, then they are of the same age #dat-met
+
+
+/* 1831 - A father figure for Geology 
+
+William Smith: Identification of strata, and their succession, by means of their imbedded fossils 
+
+S. 122 "... earlier belief that every rock of the oolitic suite had its own peculiar fossils
+It may seem surprising that the nephew and pupil of William Smith should have dismissed as a fantasy 
+Smith's own view of the various formations of the Oolitic sequence, for these were the surpreme example of 
+the use of characteristic fossils."*/
+
+
+[Characteristic Fossils Principle]: There is a bijection between the age of some strata t and its characteristic fossils #dat-met
+    + [Characteristic Fossils]
+    +> [CFP - 2]
+
+
+/*
+1832-33 - Weaver and the Irish Question
+
+<Lyellian Principals>: a theoretical model to acount for constant but piecemal change in 
+the composition of the faunas and floras at the earth's surface,
+ in correlation with ever-changing physical environments; 
+ it followed that while particular species might have had long ranges in time, 
+an assemblage of many species would not remain unchanged for long; 
+two formations deposited at widely separated periods would be expected to have few if any species in common
+*/
+
+[Lyellian Principle]: At the earth's surface, there is a constant but piecemeal change in the composition of the faunas and floras, 
+in correlation with ever-changing physical environments #dat-met
+    +> [L2 - Maximal Difference in Fossils]
+
+
+// Two formations deposited at widely separated periods have few if any species in common
+
+[L2 - Maximal Difference in Fossils]: If two strata are suffienciently different in age, then they do not support similar fossil species #dat-met
 
 
 
-# Aporia I : Coal in Ancient Strata {color: 1}
+// Against Rock Type Principle - Suisse Glarus Slate Analogon  
+
+// S. 102 AGAS mentioned that some well-known fossil fish found in an ancient-looking black slate (Glarus slate) in the Swiss Alps 
+// were of species known elswhere from the Chalk
 
 
-[Coal in Ancient Strata]: There are coal deposits in pre-Old Red Sandstone strata #GRE
+/*
+ [Fossil in Glarus Slate Characteristic of Chalk]: The fossil fish found in the Swiss Glarus slate is characteristic for the Chalk #COA #fos-hyp
 
-[Instances of Ancient Strata]: In Munster and Pennsylvannia, there are pre-Old Red Sandstone strata #GRE #chron-hyp
+<Glarus Slate as Chalk>: If strata can be identified by means of their characteristic fossils and 
+the Swiss Glaurs slate contains a characteristic Chalk fossil, then the Glarus Slate is Chalk in age #COA
 
-<Coal in Ancient Strata>: If there are no coal deposits in Pre-Old Red Sandstone strata, then there are no coal deposits in the pre-Old Red Sandstone strata 
-of Munster and Pennsylvannia #GRE
+    (1) [CFP - 2] 
+    (2) [Swiss Glarus Slate - Rock Type and Fossils]
+    (3) [Fossil in Glarus Slate Characteristic of Chalk]
+    ----
+    (4) [Glarus Slate as Chalk] 
+            -> [Glarus Slate as pre-ORS]
+
+
+[Glarus Slate - characterististic pre-ORS rock type]: The Swiss Glarus slate is of characteristic pre-ORS rock type #GRE #roc-hyp
+
+<Glarus Slate as pre-ORS>: If strata can be identified by means of their characteristic rock types and 
+the Swiss Glaurs slate is of characteristic pre-ORS rock type, then the Glarus Slate is pre-ORS in age #COA
+
+    (1) [CRTP -2] 
+    (2) [Swiss Glarus Slate - Rock Type and Fossils]
+    (3) [Glarus Slate - characterististic pre-ORS rock type]
+    ----
+    (4) [Glarus Slate as pre-ORS]
+    */
+
+ 
+
+
+
+
+/*
+S. 122/3 February to April 1835
+
+""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time"
+
+"Lyell's assumption of a uniform rate of organic change was itself questionable, ... a fully ecological point of view would have to allow
+for the possibility that fossils might charcterize particular environments far more than particular periods."
+*/
+
+// [LV in Evironments - Today]: Today, there are local variations in environmental conditions #ev #E8c
+
+[Local Variations in Evironments - In the Past]: In the past, there are local variations in environmental conditions #dat-met
+
+[Uniformitarianism]: The same natural laws and processes that operate today have always operated in the past and apply everywhere #dat-met
+
+
+[LV in Evironments - In the Past]: In the past, there have been local variations in environmental conditions #dat-met
+        +> [LV in Evironments - Pre-ORS]
+        +> [LV in Evironments - Oolitic]
+
+<Local Environmental Variation>: If today there are local variations in environmental conditions and the past can be inferred from today, 
+in the past, then there have been local variations in environmental conditions #dat-met
+
+        (1) [LV in Evironments - Today]
+        (2) [Uniformitarianism]
+        ----
+        (3) [LV in Evironments - In the Past]
+
+
+[Environmental Conditions, Fauna and Flora]: There is a bijection between environmental conditions, fauna and flora #dat-met
+
+<Local Ecological Variations - FF>: If there are always local environmental variations and a bijection between environmental conditions, fauna and flora, 
+then there are always local variations in the fauna and flora #dat-met
+
+    (1) [LV in Evironments - Today]
+    (2) [LV in Evironments - In the Past]
+    (3) [Environmental Conditions, Fauna and Flora]
+    ----
+    (4) [LV in Fauna and Flora]
+
+// [LV in Fauna and Flora - In the Past]: In the past, there have been local variations in fauna and flora #ev 
+
+
+[LV in Fauna and Flora]: For every time intervall, there are local variations in the fauna and flora #dat-met
+    +> [LV in Fauna and Flora -Today]
+    +> [No Characteristic Fossils]
+         
+// [Characteristic CM fossils in Main Culm]: Near Bideford (North Devon), the CM fossil plants supported by some main Culm strata are characteristic CM fossils #COA #fos-hyp
     
-    (1) [Instances of Ancient Strata]
-    (2) There are no coal deposits in pre-Old Red Sandstone strata
+[No Characteristic Fossils]: There is no fossil species FS and no time intervall dt such that, during dt, every region supports FS #dat-met
+    -> [Characteristic Fossils Principle]
+    -> [Characteristic CM fossils in Main Culm]
+
+   
+[No Characteristic Rock Type]: There is no rock type r and no time intervall dt such that, during dt, every region supports r #dat-met
+    -> [Characteristic Rock Type Principle]
+    -> [Devonshire - Characteristic CAM Rock Type]
+
+
+
+/*
+
+// Ist das so richtig?
+// Es gibt - today and in the past - keine CEC, denn für kein Zeitinterval exisitert eine fossil species, die in jeder Region exisitiert!
+//also exisitiert keine Abbildung zwischen Zeitintervallen dt und CEC, insbesondere keine Bijektion
+
+[Environmental Conditions and Time Principle]: There is a bijection between the age of some strata and its characteristic environmental conditions
+    -> [LV in Evironments - Today]
+    -> [LV in Evironments - In the Past]
+    + [Characteristic Environmental Conditions]
+
+
+[Characteristic Environmental Conditions]: A set of environmental conditions ES is characteristic for some time interval dt iff 
+(i) ES only exisits during dt and (ii) during dt, every region endures ES
+
+
+<Characteristic Environmental Conditions, Fauna and Flora>
+
+    (1) [Environmental Conditions and Time Principle]
+    (2) [Environmental Conditions, Fauna and Flora]
+    ----
+    (3) [Characteristic Fossil Assemblage Principle]
+
+*/
+
+
+
+
+/*
+
+[Lyellian Principle]: At the earth's surface, there is a constant but piecemeal change in the composition of the faunas and floras, 
+in correlation with ever-changing physical environments 
+    +> [Characteristic Fossil Assemblage Principle]
+    +> [L1 - Continuity]
+    +> [L2 - Maximal Difference in Fossils]
+
+
+Hier noch nicht, weil keine Anwendung:
+
+[L1 - Continuity]: The more their characteristic fossil assemblages are similar, the more two strata A and B are similar in age 
+    + [Similarity - fossil assemblages]
+    + [Characteristic Fossil Sets]
+    +> [LP - 2]
+*/
+    
+
+
+
+ 
+
+
+
+# Aporia I : Coal in Ancient Strata {color: 2}
+
+
+[Coal in Ancient Strata]: There are coal deposits in pre-ORS strata #GRE
+
+// [Instances of Coal in Ancient Strata]: In Munster, North America and North Devon there are coal deposits in pre-Old Red Sandstone strata #ev #E5
+
+[Instances of Pre-ORS Strata]: In Munster, North America and North Devon, some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
+    + [Main Culm as CAM]
+
+<Coal in Ancient Strata>: If there are no coal deposits in pre-ORS strata, then there are no coal deposits in the pre-ORS strata 
+of Munster, North America or North Devon #GRE
+    
+    (1) [Instances of Pre-ORS Strata]
+    (2) There are no coal deposits in pre-ORS strata
          >< [Coal in Ancient Strata]
     ----
-    (3) There are no coal deposits in the pre-Old Red Sandstone strata of Munster and Pennsylvannia 
+    (3) There are no coal deposits in the pre-ORS strata of Munster, North America and North Devon
         -> [Instances of Coal in Ancient Strata]
  
 
 
 
-# Aporia II : CM Plants in Ancient Strata {color: 2}
+// S.115 Fig 5.5: A mine producing anthracitic coal from pre-ORS strata near Angers in northwest France
 
-[CM Plants in Ancient Strata]: In pre-Old Red Sandstone strata, there are fossil plants similar to those of the Coal Measures  #GRE
+// S.101: There are cases of anthracite in the pre-ORS strata of Normandy (in the Bocage, departement Calvados)
 
+[Pre-ORS Strata in northwest France]: The whole strata supporting coal seams in northwest France are pre-ORS in age #GRE #chron-hyp
 
-<Culm and CM Plants>: If the Devon Culm strata are pre-Old Red Sandstone in age and there are no Coal Measures plants in pre-Old Red Sandstone strata, 
-then there are no Coal Measures plants in the Devon Culm strata  #GRE
-
-    (1) [Main Culm as CAM]
-    (2) There are no CM plants in CAM strata
-         >< [CM Plants in Ancient Strata]
+<Coal in Ancient French Strata>: If there are no coal deposits in pre-ORS strata, then there are no coal deposits in the pre-ORS strata 
+of northwest France #GRE
+    
+    (1) [Pre-ORS Strata in northwest France]
+    (2) There are no coal deposits in pre-ORS strata
+         >< [Coal in Ancient Strata]
     ----
-    (3) There are no CM Plants in Devon Culm strata
-         -> [CM Plants in Devon Culm]
+    (3) There are no coal deposits in the pre-ORS strata of northwest France
+        -> [Coal in French Pre-ORS Strata]
+
+ 
 
 
-[Flora Similarities as Best Explanation]: The best explanation of the existence of coal in some strata G is the similarity between G's flora 
-and the one of the Coal Measures (the Coal Measures being noted for the great amounts of coal they contain) #GRE #aux
+
+# Aporia II : CM Plants in non-CM Strata {color: 3}
 
 
-<Coal and CM Plants>: If the similarity between the floras of the Coal Measures and pre-Old Red Sandstone formations is the best explanation 
-for the existence of coal deposists in pre-Old Red Sandstone strata, then there are Coal Measures plants in pre-Old Red Sandstone strata. #GRE
+
+[Flora Similarities as Best Explanation]: The best explanation of the existence of coal in some strata G 
+is the similarity between G's flora and the one of the CM (the CM being noted for the great amounts of coal they contain) #GRE #aux
+
+         
+[CM and Pre-ORS - Similar Fossils]: In pre-ORS strata, there are fossils similar to those of the CM #GRE
+
+
+<Coal and CM Plants>: If the similarity between the floras of the Coal Measures and some pre-ORS strata G is the best explanation 
+for the existence of coal deposists in G, then G's flora is similar to the one of the CM. #GRE
 
     (1) [Coal in Ancient Strata]
     (2) [Flora Similarities as Best Explanation]
     ----
-    (3) [CM Plants in Ancient Strata]
+    (3) [CM and Pre-ORS - Similar Fossils]
  
-[Lyellian Principals]: At the earth's surface, there is a constant but piecemeal change in the composition of the faunas and floras (in correlation with ever-changing physical environments) #COA
+     
+<Culm and CM Plants>: If the Devon Culm strata are pre-ORS in age and there are no CM fossil plants in pre-ORS strata, 
+then there are no CM fossil plants in the Devon Culm strata  #GRE
 
-[Common Species]: Two formations deposited at widely separated periods have few if any species in common #COA
-        >< [CM Plants in Ancient Strata]
-    
-
-<Assemblages of Species>: From Lyellian principals, it follows that while particular species might have long ranges in time, an assemblage of many species does not remain unchanged for long; therefore, two formations deposited at widely separated periods have few if any species in common #COA
-
-    (1) [Lyellian Principals]
+    (1) [Main Culm as CAM]
+    (2) [Standard Sequence]
+    (3) There are no CM fossil plants in pre-ORS strata
+         >< [CM and Pre-ORS - Similar Fossils]
     ----
-    (2) [Common Species]
-
+    (4) There are no CM Plants in Devon Culm strata
+         -> [CM Plants in Devon Culm]
  
 
-[Ancient French Strata]: In the Bocage, there are pre-Old Red Sandstone strata. #GRE #chron-hyp
 
-<French Ancient Strata and CM Plants>: If there are no Coal Measures plants in pre-Old Red Sandstone strata, then there were no Coal Measures plants in French pre-Old Red Sandstone strata  #GRE
+[CM and pre-ORS Sufficiently Different]: Pre-ORS strata and CM strata are suffienciently different in age #COA #aux
 
-    (1) [Ancient French Strata]
+<Lyellian Principles, Pre-ORS and CM>: If CM and pre-ORS strata are suffienciently different in age, then they do not support similar fossil species #COA
+
+        (1) [L2 - Maximal Difference in Fossils]
+        (2) [Standard Sequence]
+        (3) [CM and pre-ORS Sufficiently Different]
+        ----
+        (4) Pre-ORS strata and CM strata do not support similar fossil species
+                -> [CM and Pre-ORS - Similar Fossils]
+
+
+
+// Siehe S2b_ A1: [Pre-ORS Strata in northwest France]: In northwest France, 
+// some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
+
+// [CM Plants in Ancient French Strata]: In northwest France, in pre-ORS strata, associated with seams of coal, there are fossil plants 
+// of which some are referable to species of the CM #ev #E7b 
+
+<French Ancient Strata and CM Plants>: If there are no fossils similar to those of the CM in pre-ORS strata, 
+then there are no CM fossil plants in French pre-ORS strata  #GRE
+
+    (1) [Pre-ORS Strata in northwest France]
     (2) There are no CM plants in ancient strata
-            >< [CM Plants in Ancient Strata]
+            >< [CM and Pre-ORS - Similar Fossils]
     ----
     (3) There are no CM plants in ancient French strata
-            >< [CM Plants in Ancient French Strata]
+            -> [CM Plants in Ancient French Strata]
 
+/*   
+(December 1834) *DLB Springs to His Own Defence 
 
+S.106 "in the French Alps some characteristic Oolitic (or more precisely, Liassic)" fossil belemnites occured in strata 
+sandwiched among some containing fossil plants of CM appearance ... Brogniart, a leading specialist on fossil plants, had confirmed 
+that the plants were indeed of CM species"
 
-# Gap in the Sequence   {color: 4}
+Belemnites were interpreted as the internal skeletons of cephalopod mollusks and were only known from the Oolitic and the Cretaceous groups
 
+Die Belemniten (Belemnoidea) sind eine diverse Großgruppe fossiler Kopffüßer (Cephalopoda). 
+Sie existierten vom Unterkarbon (Mississippium) bis zum Ende der Kreidezeit
+Die zoologische Klasse der Kopffüßer (Cephalopoda, von altgriechisch κεφαλή kephalē „Kopf“ und ποδ- pod- „Fuß“) ist eine Tiergruppe, 
+die zu den Weichtieren (Mollusca) gehört und nur im Meer vorkommt. 
 
-[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different 
-but not successive geological periods #pri
+S.121 "...discovery of Oolitic (Liassic) belemnites and CM plants in closely associated strata in the French Alps. 
+Judging only from organic remains, this would imply the absurdity of a rock both Lias and CM at the same time" 
+*/
 
-<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata are Cambrian in age, i.e. belonging to the same geological period, then there is no gap in the 
-local sequence. #GRE
+// [CFP - 2]: If two strata support the same characteristic fossils, then they are of the same age
 
-    (1) [Gap in a Sequence of Strata]
-    (2) [Main Culm as CAM]
-    (3) [BCL as CAM]
-    (4) [Non-Culm as CAM]
+// [French Alps]: In the French Alps, there are some characteristic Liassic fossil belemnites and CM plants in closely associated strata #ev #E7b
+
+[Characteristic CM Fossils in French Alps]: The French alpine fossils, closely associated with Oolitic belemnites, are characteristic of the CM era #COA #fos-hyp
+        - [No Characteristic Fossils]
+
+<Characteristic Fossils and French Alps>: If strata can be identified by their characteristic fossils and no strata are Oolitc and CM at the same time, 
+then there are no strata with characteristic Oolitic fossils and characteristic CM fossils #GRE
+    
+    (1)  There are no strata both Oolitic and CM at the same time
+            + [Standard Sequence]
+    (2) [Characteristic CM Fossils in French Alps]
+    (3) [CFP - 2]
     ----
-    (5) [Unbroken Sequence of Devon Strata]
-   
-<Postulating A Major Gap - COA.1>: If the Culm strata are Coal Measures in age and juxtaposed with Cambrian strata, then there is a major gap in the local sequence #COA
+    (5) There are no strata with characteristic Oolitic fossils and characteristic CM fossils
+            -> [French Alps]
 
-    (1) [Gap in a Sequence of Strata]
-    (2) [Standard Sequence]
-    (3) [Main Culm as CM]
-    (4) [BCL as CM]
-    (5) [Non-Culm as CAM]
+
+
+/*
+S. 122/3 February to April 1835
+
+Beispiele
+
+DEVON: "A flora of so-called CM species might have flourished locally in specific ecological conditions during the pre-ORS period, 
+long before it was able to spread widely and become the "characteristic" flora of the CM period"
+
+FRENCH ALPS: "EDB Alpine discovery as evidence that certain districts might really enjoy an immunity from those revolutions of organic life which happend to others...
+trusted the belemnites rather than the plants ... in the region that had since become the Alps the CM flora might have survived much longer than elsewhere, 
+as a result of ecological circumstances"
+
+Allgemeine Hypothese
+
+""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time"
+
+*/
+         
+[LV in Evironments - Pre-ORS]: During the pre-ORS period, there are local environmental variations #GRE #aux
+
+[LV in Evironments as BE]: The best explanation of the existence of CM plants in some non-Carboniferous strata 
+are local variations in environmental conditions, given a bijection between a region's environmental conditions and its fauna and flora  #GRE #aux
+
+<LV in Evironments - Pre-ORS>: If local variations of the environmental conditions are the best explanation 
+of the existence of CM plants in some pre-ORS strata and there are no local environmental variations during the pre-ORS period, 
+then there are no CM plants in some pre-ORS strata. #GRE
+
+    (1) [Environmental Conditions, Fauna and Flora]
+    (2) [LV in Evironments as BE]
+    (3) There are no local environmental variations during the pre-ORS period
+        >< [LV in Evironments - Pre-ORS]
     ----
-    (5) [Unconformity in Devon] 
+    (4)  There are no CM plants in some pre-ORS strata
+        -> [CM and Pre-ORS - Similar Fossils]
+
+
+[LV in Evironments - Oolitic]: During the Oolitic period, there are local environmental variations #GRE #aux
+
+<LV in Evironments - Oolitic>: If local variations of the environmental conditions during the Oolitic period are the best explanation 
+of the existence of of CM plants in some Oolitic strata and there are no local environmental variations during the Oolitic period, 
+then there are no CM plants in some Oolitic French Alpine strata. #GRE
+
+    (1) [Environmental Conditions, Fauna and Flora]
+    (2) [LV in Evironments as BE]
+    (3) There are no local environmental variations during the Oolitic period
+            >< [LV in Evironments - Oolitic]
+    ----
+    (4) THere are no CM plants in some Oolitic French Alpine strata
+            -> [French Alps]
 
 
 
-# Dating of the Main Culm  {color: 5}
+
+
+
+
+# Dating of the Main Culm  {color: 4}
 
 [Some Main Culm as CM]: Some part of the main Culm is CM in age #pri #chron-hyp
 
@@ -242,8 +631,10 @@ local sequence. #GRE
 // Also:  Eine Partition einer Menge ist eine Zerlegung dieser Menge in nichtleere paarweise disjunkte Teilmengen. 
 // A_i are exhaustive and exclusive sets
 
+[Main Culm as Post-Primary and Pre-NRS]: The main Culm strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
 
-<Standard Sequence as Partition - Main Culm>: If some main Culm strata is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+
+<Standard Sequence as Partition - Main Culm>: If some main Culm strata are neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the main Culm is CM in age
             >< [Some Main Culm as CM]
@@ -253,10 +644,18 @@ local sequence. #GRE
             >< [Some Main Culm as ORS]
     (4) No part of the main Culm is SIL in age
             >< [Some Main Culm as SIL]
+    (5) [Standard Sequence]
+    (6) [Main Culm as Post-Primary and Pre-NRS]
     ----
     (5) [Some Main Culm as CAM]
 
-[Main Culm as CAM]: The whole of the main Culm is CAM in age #GRE #chron-hyp // Alles MC ist CAM  
+
+[Main Culm as CAM]: The whole of the main Culm is CAM in age #GRE #chron-hyp // Alles MC ist CAM 
+        -> [Some Main Culm as CM]
+        -> [Some Main Culm as ML]
+        -> [Some Main Culm as ORS]
+        -> [Some Main Culm as SIL]
+        +> [Some Main Culm as CAM]
 
 <Dating the Main Culm - GRE.1> #GRE #chron-hyp
 
@@ -272,7 +671,38 @@ local sequence. #GRE
     ----
     (6) [Main Culm as CAM]
     
- 
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+// [RTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+// MT: If they are not of the same age, two strata do not support the same characteristic rock types
+
+<Main Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the main Culm strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) Main Culm not CAM in age
+            >< [Some Main Culm as CAM]
+    ----
+    (3)  Main Culm strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+ALTRENATIVE:
+
+[Characteristic CAM Appearance of Main Culm]: The ancient appearance of the main Culm is characteristic of the CAM #GRE #roc-hyp
+
+<Main Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the main Culm strata is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of Main Culm]
+    ----
+    (4)  [Main Culm as CAM]
+
+*/
+
 /*
 ALTERNATIVE:
 
@@ -290,17 +720,38 @@ ALTERNATIVE:
 */
 
  
-<Main Culm as CM>: If strata can be identified by means of their embedded fossils and no part of the main Culm strata is Coal Measures in age, 
-then the main Culm strata do not contain Coal Measures plants #COA
 
-    (1) [Fossil Criterion]
-    (2) No part of the main Culm is CM in age
-        >< [Some Main Culm as CM]
+/*
+[CM Plants in Devon Culm]: Near Bideford (North Devon), in strata closely associated with seams of imperfect anthracite (known in Devon as culm), 
+there are some Coal Measures fossil plants #ev #E2
+
+[CFP - 2]: If two strata support the same characteristic fossils, then they are of the same age
+*/
+
+[Characteristic CM fossils in Main Culm]: Near Bideford (North Devon), the CM fossil plants supported by some main Culm strata are 
+characteristic CM fossils #COA #fos-hyp
+
+<Main Culm as CM - CFP>: If strata can be identified by means of their characteristic fossils and 
+the whole main Culm strata are not CM in age, then there are no characteristic CM fossils in the main Culm strata,
+ especially not near Bideford #COA
+
+    (1) [CFP - 2] 
+    (2) The whole main Culm strata are not CM in age
+        >< [Some Main Culm as CM] 
+    (3) [Characteristic CM fossils in Main Culm]
     ----
-    (3) There are no Coal Measures plants in the main part of the Culm strata
-            -> [CM Plants in Devon Culm]  
+    (4) There are no characteristic CM fossils in the main Culm strata, especially not near Bideford (North Devon)
+        -> [CM Plants in Devon Culm] 
 
-[Main Culm as CM]: The whole of the main Culm is CM in age #COA #chron-hyp // Alles MC ist CAM       
+// [Instances of Pre-ORS Strata]: In Munster, North America and North Devon, some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
+
+[Main Culm as CM]: The whole of the main Culm is CM in age #COA #chron-hyp // Alles MC ist CAM     
+    +> [Some Main Culm as CM]
+    -> [Some Main Culm as ML]
+    -> [Some Main Culm as ORS]
+    -> [Some Main Culm as SIL]
+    -> [Some Main Culm as CAM]
+    -> [Instances of Pre-ORS Strata]
 
 <Redating the Main Culm - COA.1> #COA #chron-hyp
 
@@ -317,9 +768,12 @@ then the main Culm strata do not contain Coal Measures plants #COA
     (6) [Main Culm as CM]
                      
 
-[Main Culm as CM]
-    -> [Main Culm as CAM]
-    - [Main Culm as CAM]
+/*
+[Main Culm as CAM]
+    -> [Main Culm as CM]
+    - [Main Culm as CM]
+*/
+
 
 // "Alles MC ist CAM" und "Alles MC ist CM" sind konträr, d.h. sie können zugleich falsch, aber nicht wahr sein,
 // unter der Annahme, dass die durch die Eigenschaften "CM-Sein" und "CAM-Sein" generierten Mengen sind disjunkt sind,
@@ -331,7 +785,8 @@ then the main Culm strata do not contain Coal Measures plants #COA
 
 
 
-# Dating of the Culm Limestone  {color: 6}
+
+# Dating of the Culm Limestone  {color: 5}
 
 [Some BCL as CM]: Some part of the black Culm Limestone is CM in age #pri #chron-hyp
 
@@ -347,8 +802,9 @@ then the main Culm strata do not contain Coal Measures plants #COA
 // Also:  Eine Partition einer Menge ist eine Zerlegung dieser Menge in nichtleere paarweise disjunkte Teilmengen. 
 // A_i are exhaustive and exclusive sets
 
+[BCL as Post-Primary and Pre-NRS]: The black Culm Limestone is older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
 
-<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, ORS nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the black Culm Limestone is CM in age
             >< [Some BCL as CM]
@@ -358,10 +814,17 @@ then the main Culm strata do not contain Coal Measures plants #COA
             >< [Some BCL as ORS]
     (4) No part of the black Culm Limestone is SIL in age
             >< [Some BCL as SIL]
+    (5) [Standard Sequence]
+    (6) [BCL as Post-Primary and Pre-NRS]
     ----
-    (5) [Some BCL as CAM]
+    (7) [Some BCL as CAM]
 
 [BCL as CAM]: The black Culm Limestone is nothing but Cambrian in age #GRE #chron-hyp 
+    -> [Some BCL as CM]
+    -> [Some BCL as ML]
+    -> [Some BCL as ORS]
+    -> [Some BCL as SIL]
+    +> [Some BCL as CAM]
 
 <Dating the BCL - GRE.1> #GRE #chron-hyp
 
@@ -376,11 +839,43 @@ then the main Culm strata do not contain Coal Measures plants #COA
     (5) [Some BCL as CAM]
     ----
     (6) [BCL as CAM]
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+<BCL as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the BCL strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) BCL not CAM in age
+            >< [Some BCL as CAM]
+    ----
+    (3)  BCL strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+[Characteristic CAM Appearance of BCL]: The ancient appearance of the BCL is characteristic of the CAM #GRE #roc-hyp
+
+<BCL as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the BCL is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of BCL]
+    ----
+    (4)  [BCL as CAM] */
+
+
     
 
 
-
+ 
 [BCL as CM]: The black Culm Limestone is nothing but Coal Mesaures in age #COA #chron-hyp 
+        +> [Some BCL as CM]
+        -> [Some BCL as ML]
+        -> [Some BCL as ORS]
+        -> [Some BCL as SIL]
+        -> [Some BCL as CAM]
 
 <Redating the BCL - COA.1> #COA #chron-hyp
 
@@ -397,16 +892,17 @@ then the main Culm strata do not contain Coal Measures plants #COA
     (6) [BCL as CM]
                      
 
-[BCL as CM]
-    -> [BCL as CAM]
-    - [BCL as CAM]
 
-
+/*
+[BCL as CAM]
+    -> [BCL as CM]
+    - [BCL as CM]
+*/
  
 
 
 
-# Dating of the Non-Culm {color: 7}
+# Dating of the Non-Culm {color: 6}
 
 [Some Non-Culm as CM]: Some part of the non-Culm strata is CM in age #pri #chron-hyp
 
@@ -423,6 +919,8 @@ then the main Culm strata do not contain Coal Measures plants #COA
 // A_i are exhaustive and exclusive sets
 
 
+[Non-Culm as Post-Primary and Pre-NRS]: The non-Culm strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
 <Standard Sequence as Partition - Non-Culm>: If some part of the non-Culm strata is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the non-Culm strata is CM in age
@@ -433,10 +931,17 @@ then the main Culm strata do not contain Coal Measures plants #COA
             >< [Some Non-Culm as ORS]
     (4) No part of the non-Culm strata is SIL in age
             >< [Some Non-Culm as SIL]
+    (5) [Standard Sequence]
+    (6) [Non-Culm as Post-Primary and Pre-NRS]
     ----
-    (5) [Some Non-Culm as CAM]
+    (7) [Some Non-Culm as CAM]
 
 [Non-Culm as CAM]: The non-Culm strata is nothing but Cambrian in age #GRE #chron-hyp 
+        -> [Some Non-Culm as CM]
+        -> [Some Non-Culm as ML]
+        -> [Some Non-Culm as ORS]
+        -> [Some Non-Culm as SIL]
+        +> [Some Non-Culm as CAM]
 
 <Dating the Non-Culm- GRE.1> #GRE #chron-hyp
 
@@ -450,11 +955,42 @@ then the main Culm strata do not contain Coal Measures plants #COA
             >< [Some Non-Culm as SIL]
     (5) [Some Non-Culm as CAM]
     ----
-    (6) [Non-Culm as CAM] 
+    (6) [Non-Culm as CAM]
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+// [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+// MT: If two strata are not of the same age, then they do not support the same characteristic rock type
+<Non-Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the non-Culm strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) Non-Culm not CAM in age
+            >< [Some Non-Culm as CAM]
+    ----
+    (3)  Non-Culm strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+ALTRENATIVE
+
+[Characteristic CAM Appearance of Non-Culm]: The ancient appearance of the nonCulm is characteristic of the CAM #GRE #roc-hyp
+
+<Non-Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the non-Culm strata is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of Non-Culm]
+    ----
+    (4)  [Non-Culm as CAM]
+
+*/ 
 
 
 
-# Youngest Devonian Strata {color: 3}
+# Youngest Devonian Strata {color: 7}
 
 
 
@@ -517,5 +1053,46 @@ and that, originally, younger strata rest upon older ones, it holds: If there is
     (3) [Non-Culm as CAM]
     ----
     (3) [Culm Youngest Devonian Strata] 
+
+
+
+# Gap in the Sequence   {color: 8}
+
+
+[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different 
+but not successive geological periods #pri
+
+<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata are Cambrian in age, i.e. belonging to the same geological period, then there is no gap in the 
+local sequence. #GRE
+
+    (1) [Gap in a Sequence of Strata]
+    (2) [Main Culm as CAM]
+    (3) [BCL as CAM]
+    (4) [Non-Culm as CAM]
+    ----
+    (5) [Unbroken Sequence of Devon Strata] 
+   
+<Postulating A Major Gap - COA.1>: If the Culm strata are Coal Measures in age and juxtaposed with Cambrian strata, then there is a major gap in the local sequence #COA
+
+    (1) [Gap in a Sequence of Strata]
+    (2) [Standard Sequence]
+    (3) [Main Culm as CM]
+    (4) [BCL as CM]
+    (5) [Non-Culm as CAM]
+    ----
+    (5) [Unconformity in Devon] 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

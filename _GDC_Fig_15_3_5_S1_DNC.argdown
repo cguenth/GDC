@@ -13,6 +13,8 @@
 // A_i are exhaustive and exclusive sets
 
 
+[Non-Culm as Post-Primary and Pre-NRS]: The non-Culm strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
 <Standard Sequence as Partition - Non-Culm>: If some part of the non-Culm strata is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the non-Culm strata is CM in age
@@ -23,10 +25,17 @@
             >< [Some Non-Culm as ORS]
     (4) No part of the non-Culm strata is SIL in age
             >< [Some Non-Culm as SIL]
+    (5) [Standard Sequence]
+    (6) [Non-Culm as Post-Primary and Pre-NRS]
     ----
-    (5) [Some Non-Culm as CAM]
+    (7) [Some Non-Culm as CAM]
 
 [Non-Culm as CAM]: The non-Culm strata is nothing but Cambrian in age #GRE #chron-hyp 
+        -> [Some Non-Culm as CM]
+        -> [Some Non-Culm as ML]
+        -> [Some Non-Culm as ORS]
+        -> [Some Non-Culm as SIL]
+        +> [Some Non-Culm as CAM]
 
 <Dating the Non-Culm- GRE.1> #GRE #chron-hyp
 
@@ -41,3 +50,34 @@
     (5) [Some Non-Culm as CAM]
     ----
     (6) [Non-Culm as CAM]
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+// [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+// MT: If two strata are not of the same age, then they do not support the same characteristic rock type
+<Non-Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the non-Culm strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) Non-Culm not CAM in age
+            >< [Some Non-Culm as CAM]
+    ----
+    (3)  Non-Culm strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+ALTRENATIVE
+
+[Characteristic CAM Appearance of Non-Culm]: The ancient appearance of the nonCulm is characteristic of the CAM #GRE #roc-hyp
+
+<Non-Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the non-Culm strata is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of Non-Culm]
+    ----
+    (4)  [Non-Culm as CAM]
+
+*/

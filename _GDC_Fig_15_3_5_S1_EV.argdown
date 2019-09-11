@@ -1,12 +1,32 @@
 
 
-[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev #E1
- 
-[CM Plants in Devon Culm]: In Devon, the Culm strata contain Coal Measures fossil plants #ev #E2
+[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev
 
-[North of Exmoor]: Passing Exmoor northwards, the strata become older #ev #E3
+/*
+S.93 On the west coast of Devon, near Bideford, there are seams of coal (culm or anthracite) 
+and also some fossil plants in strata closely associated with it
+
+culm : British English: Imperfect anthracite of Devon and Cornwall
+        originating during the Carboniferous Period that occur in southwest England
+        They are so called because of the occasional presence of a soft, often lenticular (linsenförmig), sooty (rußig) coal
+        which in Devon is known as Culm
+anthracite: A hard, compact variety of coal (highest carbon content, fewest impurities)
+
+OLD: [CM Plants in Devon Culm]: In Devon, the Culm contain Coal Measures fossil plants #ev #E2
+*/
+
+[CM Plants in Devon Culm]: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata 
+(in close association with seams of imperfect anthracite) #ev
+
+[North of Exmoor]: Passing Exmoor northwards, the strata become older #ev
 
 [Trough through Exmoor]: There is a trough through Exmoor - formed by a band of limestone running out to the north coast at Ilfracombe 
-and south of Barnstaple #ev #E4
+and south of Barnstaple #ev
  
-[Instances of Coal in Ancient Strata]: In Munster and Pennsylvannia, there are coal deposits in pre-Old Red Sandstone strata #ev #E5
+// S.78
+
+[Instances of Coal in Ancient Strata]: In Munster, North America and North Devon there are coal deposits in pre-Old Red Sandstone strata #ev
+
+// S.101?? DLB's rock specimens looked like ordinary pre-ORS strata
+
+[Devonshire - Characteristic CAM Rock Type]: In Devon, *all* the strata - older than the New Red Sandstone - are of carachteristic CAM appearance #ev

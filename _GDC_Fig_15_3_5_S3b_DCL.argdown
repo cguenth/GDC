@@ -1,4 +1,10 @@
+
 [BCL as SIL]: The black Culm Limestone is nothing but SIL in age #COA #chron-hyp 
+    -> [Some BCL as CM]
+    -> [Some BCL as ML]
+    -> [Some BCL as ORS]
+    +> [Some BCL as SIL]
+    -> [Some BCL as CAM]
 
 <Redating the BCL - COA.3.1> #COA
 
@@ -15,14 +21,12 @@
     (6) [BCL as SIL]
                      
 
-[BCL as SIL]
-    -> [BCL as CAM]
-    - [BCL as CAM]
-    -> [BCL as CM]
-    - [BCL as CM]
-
-
 [BCL as SIL and ORS]: The black Culm Limestone ranges from Silurian to Old Red Sandstone in age #COA #chron-hyp 
+    -> [Some BCL as CM]
+    -> [Some BCL as ML]
+    +> [Some BCL as ORS]
+    +> [Some BCL as SIL]
+    -> [Some BCL as CAM]
 
 <Redating the BCL - COA.3.2> #COA #chron-hyp
 
@@ -38,6 +42,13 @@
     (6) [BCL as SIL and ORS]
                      
 
+/*
+[BCL as SIL]
+    -> [BCL as CAM]
+    - [BCL as CAM]
+    -> [BCL as CM]
+    - [BCL as CM]
+
 [BCL as SIL]
     -> [BCL as CAM]
     - [BCL as CAM]
@@ -45,4 +56,5 @@
     - [BCL as CM]
     -> [BCL as SIL]
     - [BCL as SIL]
+    */
 

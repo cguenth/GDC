@@ -1,0 +1,113 @@
+
+
+
+
+/*
+S. 122/3 February to April 1835
+
+""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time"
+
+"Lyell's assumption of a uniform rate of organic change was itself questionable, ... a fully ecological point of view would have to allow
+for the possibility that fossils might charcterize particular environments far more than particular periods."
+*/
+
+// [LV in Evironments - Today]: Today, there are local variations in environmental conditions #ev #E8c
+
+[Local Variations in Evironments - In the Past]: In the past, there are local variations in environmental conditions #dat-met
+
+[Uniformitarianism]: The same natural laws and processes that operate today have always operated in the past and apply everywhere #dat-met
+
+
+[LV in Evironments - In the Past]: In the past, there have been local variations in environmental conditions #dat-met
+        +> [LV in Evironments - Pre-ORS]
+        +> [LV in Evironments - Oolitic]
+
+<Local Environmental Variation>: If today there are local variations in environmental conditions and the past can be inferred from today, 
+in the past, then there have been local variations in environmental conditions #dat-met
+
+        (1) [LV in Evironments - Today]
+        (2) [Uniformitarianism]
+        ----
+        (3) [LV in Evironments - In the Past]
+
+
+[Environmental Conditions, Fauna and Flora]: There is a bijection between environmental conditions, fauna and flora #dat-met
+
+<Local Ecological Variations - FF>: If there are always local environmental variations and a bijection between environmental conditions, fauna and flora, 
+then there are always local variations in the fauna and flora #dat-met
+
+    (1) [LV in Evironments - Today]
+    (2) [LV in Evironments - In the Past]
+    (3) [Environmental Conditions, Fauna and Flora]
+    ----
+    (4) [LV in Fauna and Flora]
+
+// [LV in Fauna and Flora - In the Past]: In the past, there have been local variations in fauna and flora #ev 
+
+
+[LV in Fauna and Flora]: For every time intervall, there are local variations in the fauna and flora #dat-met
+    +> [LV in Fauna and Flora -Today]
+    +> [No Characteristic Fossils]
+         
+// [Characteristic CM fossils in Main Culm]: Near Bideford (North Devon), the CM fossil plants supported by some main Culm strata are characteristic CM fossils #COA #fos-hyp
+    
+[No Characteristic Fossils]: There is no fossil species FS and no time intervall dt such that, during dt, every region supports FS #dat-met
+    -> [Characteristic Fossils Principle]
+    -> [Characteristic CM fossils in Main Culm]
+
+   
+[No Characteristic Rock Type]: There is no rock type r and no time intervall dt such that, during dt, every region supports r #dat-met
+    -> [Characteristic Rock Type Principle]
+    -> [Devonshire - Characteristic CAM Rock Type]
+
+
+
+/*
+
+// Ist das so richtig?
+// Es gibt - today and in the past - keine CEC, denn für kein Zeitinterval exisitert eine fossil species, die in jeder Region exisitiert!
+//also exisitiert keine Abbildung zwischen Zeitintervallen dt und CEC, insbesondere keine Bijektion
+
+[Environmental Conditions and Time Principle]: There is a bijection between the age of some strata and its characteristic environmental conditions
+    -> [LV in Evironments - Today]
+    -> [LV in Evironments - In the Past]
+    + [Characteristic Environmental Conditions]
+
+
+[Characteristic Environmental Conditions]: A set of environmental conditions ES is characteristic for some time interval dt iff 
+(i) ES only exisits during dt and (ii) during dt, every region endures ES
+
+
+<Characteristic Environmental Conditions, Fauna and Flora>
+
+    (1) [Environmental Conditions and Time Principle]
+    (2) [Environmental Conditions, Fauna and Flora]
+    ----
+    (3) [Characteristic Fossil Assemblage Principle]
+
+*/
+
+
+
+
+/*
+
+[Lyellian Principle]: At the earth's surface, there is a constant but piecemeal change in the composition of the faunas and floras, 
+in correlation with ever-changing physical environments 
+    +> [Characteristic Fossil Assemblage Principle]
+    +> [L1 - Continuity]
+    +> [L2 - Maximal Difference in Fossils]
+
+
+Hier noch nicht, weil keine Anwendung:
+
+[L1 - Continuity]: The more their characteristic fossil assemblages are similar, the more two strata A and B are similar in age 
+    + [Similarity - fossil assemblages]
+    + [Characteristic Fossil Sets]
+    +> [LP - 2]
+*/
+    
+
+
+

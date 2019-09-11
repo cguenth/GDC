@@ -1,2 +1,24 @@
 
-[Yorkshire similarities]: The Black Culm limestone in Devon is similar to the Yorkshire limestone - both in fossils and rock type #ev #E13
+/* S.123  FEB 1835 PHIL  "A great many of our Yorkshire ML fossils were in your pre-ORS strata... There are so many novelties in my list of the fossils of the 
+Yorkshire limstone that it ought not to startle us if some of them should be repeated in other rocks ... the report evidently referred to the 
+animal fossils found in the strata associated with the Culm, not the land plants that caused the controversy" 
+
+S.167 AUG 1836 PHIL "The Culm strata contained fossils that he had also found in the ML of his native Yorkshire ... the commonest fossil shells (Posidonia)
+from the BCL were identical to some found in the ML of Yorkshire ... and that they occured there in the same kind of black limestone"
+
+*/
+
+[Yorkshire and Culm Limestone]: The Culm limestone and the Yorkshire limstone support the same charcteristic fossil assemblage 
+as well as the same characteristic rock type #ev 
+    - [No Characteristic Rock Type]
+    - [No Characteristic Fossil Assemblage]
+
+/*
+S.146 February to March 1836
+
+PHIL "detailed study of the ML sequences all over the Pennines, most of them flat-lying, 
+enabled him to trace the remarkable lateral variation in the strata"
+*/
+
+[ML and Pennines]: All over the Pennines, there is a huge lateral variation in the ML strata rock type #ev
+    + [LV in Rock Type]

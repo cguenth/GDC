@@ -1,17 +1,39 @@
 
+
+
 [Non-Culm as ORS]: The Devonian non-Culm strata are nothing but Old Red Sandstone in age #DEV #chron-hyp
+        -> [Some Non-Culm as CM]
+        -> [Some Non-Culm as ML]
+        +> [Some Non-Culm as ORS]
+        -> [Some Non-Culm as SIL]
+        -> [Some Non-Culm as CAM]
 
 
-[Non-Culm Strata between SIL and ML]: The non-Culm strata are intercalated between the Silurian and the Mountain Limestone #DEV #chron-hyp
+[Non-Culm FA as Intermediate]: The FA supported by the Devon non-Culm strata is intermediate in character between SIL and ML #DEV #fos-hyp
+        +> [Non-Culm Fossil Mixture - North Devon]
+        +> [Non-Culm Fossil Mixture - South Devon]
+        +> [South Devonian Fossil Fauna]
 
 
-<DEV and ORS contemporanous>: If both are intercalated between the Silurian and Mountain Limestone, 
-then the Old Red Sandstone and the non-Culm strata are contemporanous #DEV #chron-hyp
+<Non-Culm FA as Intermediate - CFA >: If strata can be identified by means of their characteristic fossil assemblages and 
+the Devon non-Culm strata are ORS in age, then they support fossils intermediate between those of SIL strata and ML strata #DEV
 
-    (1) [Standard Sequence]
-    (2) [Non-Culm Strata between SIL and ML]
-    ----
-    (3) [Non-Culm as ORS]
+        (1) [CFAP - 1] 
+        (2) [Non-Culm as ORS]
+        (3) [CFA - ORS - II]
+        ----
+        (4) The Devon non-Culm strata supports a FA intermediate between those of SIL strata and ML strata
+                +> [Non-Culm FA as Intermediate]
+
+<Non-Culm FA as Peculiar - CFA>: If strata can be identified by means of their characteristic fossil assemblages and 
+the Devon non-Culm strata are ORS in age, then they support few fossils and most of these peculiar fish #GRE
+
+        (1) [CFAP - 1] 
+        (2) [Non-Culm as ORS]
+        (3) [CFA - ORS]
+        ----
+        (4) The Devon non-Culm strata supports a FA with few fossils and most of these are peculiar fish
+                -> [Non-Culm FA as Intermediate]
 
 
 <Extending the Non-Culm Upwards - DEV.3> #COA #chron-hyp
@@ -29,7 +51,7 @@ then the Old Red Sandstone and the non-Culm strata are contemporanous #DEV #chro
     (6) [Non-Culm as ORS]
 
 
-
+/*
 [Non-Culm as ORS]
     -> [Non-Culm as CAM] 
     - [Non-Culm as CAM]
@@ -39,3 +61,4 @@ then the Old Red Sandstone and the non-Culm strata are contemporanous #DEV #chro
     - [Non-Culm as SIL and ORS]
     -> [Non-Culm as CAM, SIL and ORS]
     - [Non-Culm as CAM, SIL and ORS]
+    */

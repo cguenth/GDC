@@ -1,25 +1,43 @@
 
-[Yorkshire Limestone as ML]: In Yorkshire, the limestone is Mountain Limestone in age #COA #chron-hyp
+[Yorkshire Limestone as ML]: In Yorkshire, the limestone is ML in age #COA #chron-hyp
 
-[Yorkshire and Culm Limestone]: The black Culm limestone is as old as the Yorkshire limestone #COA #chron-hyp
+// [CFAP - 2]: If two strata support the same characteristic fossil assemblages, then they are of the same age
 
-<Black Culm Limestone and Yorkshire I>: If strata can be identified by means of their embedded fossils and the black Culm limestone is not as old as the Yorkshire limestone, then there are no similarities in fossils between them #COA 
 
-    (1) The black Culm limestone is not as old as the Yorkshire limestone
-            >< [Yorkshire and Culm Limestone] 
-    (2) [Fossil Criterion]
-    ----
-    (3) There are no similarities - in fossils - between the Yorkshire Limestone and the Black Culm Limestone
-            >< [Yorkshire similarities]
+<BCL as ML - Yorkshire - CFA>: If strata can be identified by means of their characteristic fossil assemblages and 
+the BCL is not as old as the Yorkshire limestone, namely ML, then the two limestones do not support 
+the same characteristic fossil assemblages #COA
 
-<Black Culm Limestone and Yorkshire II>: If the black Culm limestone is as old as the Yorkshire limestone being Mountain Limestone in age, then the Culm limestone is Mountain Limestone in age, too #COA #chron-hyp
+        (1) [CFAP - 2] 
+        (2) The BCL is not ML in age
+                >< [Some BCL as ML]
+        (3) [Yorkshire Limestone as ML]
+        ----
+        (4) BCL and Yorkshire limestone do not support the same characteristic fossil assemblages
+                -> [Yorkshire and Culm Limestone]
 
-    (1) [Yorkshire and Culm Limestone] 
-    (2) [Yorkshire Limestone as ML]
-    ----
-    (3) [BCL as ML]
+// [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+
+<BCL as ML - Yorkshire - RTC>: If strata can be identified by means of their characteristic rock types and 
+the BCL is not as old as the Yorkshire limestone, namely ML, then the two limestones do not support 
+the same characteristic rock types #COA
+
+        (1) [CRTP - 2] 
+        (2) The BCL is not ML in age
+                >< [Some BCL as ML]
+        (3) [Yorkshire Limestone as ML]
+        ----
+        (4)  BCL and Yorkshire limestone do not support the same characteristic rock type
+                -> [Yorkshire and Culm Limestone]
+
+
 
 [BCL as ML]: The black Culm Limestone is nothing but ML in age #COA #chron-hyp 
+        -> [Some BCL as CM]
+        +> [Some BCL as ML]
+        -> [Some BCL as ORS]
+        -> [Some BCL as SIL]
+        -> [Some BCL as CAM]
 
 <Redating the BCL - COA.2.b> #COA #chron-hyp
 
@@ -36,18 +54,12 @@
     (6) [BCL as ML]
                      
 
-[BCL as ML]
-    -> [BCL as CAM]
-    - [BCL as CAM]
-    -> [BCL as CM]
-    - [BCL as CM]
-    -> [BCL as SIL]
-    - [BCL as SIL]
-    -> [BCL as SIL and ORS]
-    - [BCL as SIL and ORS]
-
-
 [BCL as ORS]: The black Culm Limestone is nothing but ORS in age #DEV #chron-hyp 
+        -> [Some BCL as CM]
+        -> [Some BCL as ML]
+        +> [Some BCL as ORS]
+        -> [Some BCL as SIL]
+        -> [Some BCL as CAM]
 
 <Redating the BCL - DEV.1> #DEV #chron-hyp
 
@@ -63,7 +75,7 @@
     ----
     (6) [BCL as ORS]
                      
-
+/*
 [BCL as ORS]
     -> [BCL as CAM]
     - [BCL as CAM]
@@ -74,5 +86,16 @@
     -> [BCL as SIL and ORS]
     - [BCL as SIL and ORS]
     -> [BCL as ML]
-    - [BCL as ML]
+    - [BCL as ML]*/
+
+/*
+[BCL as ML]
+    -> [BCL as CAM]
+    - [BCL as CAM]
+    -> [BCL as CM]
+    - [BCL as CM]
+    -> [BCL as SIL]
+    - [BCL as SIL]
+    -> [BCL as SIL and ORS]
+    - [BCL as SIL and ORS]*/
     

@@ -1,5 +1,10 @@
 
 [Non-Culm as SIL and CAM]: In Devon, the non-Culm strata range from Cambrian to Silurian in age #COA #chron-hyp
+        -> [Some Non-Culm as CM]
+        -> [Some Non-Culm as ML]
+        -> [Some Non-Culm as ORS]
+        +> [Some Non-Culm as SIL]
+        +> [Some Non-Culm as CAM]
 
 <Extending the Non-Culm Upwards - COA.2a> #COA #chron-hyp
 
@@ -16,10 +21,11 @@
     (3) [Non-Culm as SIL and CAM]
 
 
-
+/*
 [Non-Culm as SIL and CAM]
     -> [Non-Culm as CAM] 
     - [Non-Culm as CAM]
+*/
 
 
 

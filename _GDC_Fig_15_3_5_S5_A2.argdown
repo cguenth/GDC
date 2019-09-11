@@ -3,16 +3,46 @@
 // [CM Plants in North Devon]: In north Devon, the non-Culm strata contain fossils similar to Coal Measures plants #ev
 // [CM Plants in Ancient Strata]: In pre-Old Red Sandstone strata, there are fossil plants similar to those of the Coal Measures  #GRE
 
+[CM and ORS Sufficiently Similar]: ORS strata and CM strata are suffienciently similar in age  #COA #aux
 
-<North Devon and CM Plants>: If the non-Culm strata are pre-Old Red Sandstone in age and 
-there are no Coal Measures plants in pre-Old Red Sandstone strata, 
-then there are no Coal Measures plants in the north Devonian non-Culm strata  #GRE
+[CM and ORS - Similar Fossils]: In ORS strata, there are fossils similar to those of the CM #COA
+
+// [L2 - Maximal Difference in Fossils]: If two strata are suffienciently different in age, then they do not support similar fossil species 
+
+<Lyellian Principles, ORS and CM>: If CM and ORS strata support similar fossil species, then they are suffienciently similar in age  #COA
+
+        (1) [L2 - Maximal Difference in Fossils]
+        (2) CM strata and ORS strata are sufficiently different in age
+                >< [CM and ORS Sufficiently Similar] 
+        ----
+        (3) CM strata and ORS strata do not support similar fossil species 
+                -> [CM and ORS - Similar Fossils]
+
+// HIER NICHT: [LP - 2]: If two strata support similar characteristic fossil assemblages, then they are similar in age
+// Da MUR nicht mit fossil assemblages argumentiert!
+
+
+[Some ORS in North Devon]: In north Devon, some non-Culm strata are ORS in age #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+
+<North Devon and CM Plants I>: If, CM and ORS strata support similar fossil species and some north Devonian non-Culm strata are ORS in age, 
+then there are fossils similar to those of the CM in some north Devonian non-Culm strata #COA
+
+    (1) [Some ORS in North Devon]
+    (2) [CM and ORS - Similar Fossils]
+    ----
+    (4) [CM Plants in North Devon]
+
+
+<North Devon and CM Plants II>: If the non-Culm strata are pre-ORS in age and 
+there are no fossils similar tho those of the CM in pre-ORS strata, 
+then there are no CM fossil plants in the north Devonian non-Culm strata  #GRE
 
     (1) [Non-Culm as SIL and CAM]
     (2) There are no fossil plants similar to those of the CM in SIL and CAM strata
-         >< [CM Plants in Ancient Strata]
+         >< [CM and Pre-ORS - Similar Fossils]
     ----
-    (3) There are no fossils similar to Coal Measures plants in north Devonian non-Culm strata
+    (3) There are no fossils similar to CM plants in north Devonian non-Culm strata
          -> [CM Plants in North Devon]
 
    

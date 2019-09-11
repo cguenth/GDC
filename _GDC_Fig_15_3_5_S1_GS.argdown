@@ -4,20 +4,22 @@ author: Corinna Günth-Stiegeler
 date: 28/06/2019  
 color:
     tagColors:
-        GRE: "#f4a460"
-        COA: "#ffc1c1"
-        DEV: "#eedd82"
-        pri: "#ffe4b5"
+        GRE: "#b8860b"
+        COA: "#ff8c00"
+        DEV: "#eead0e"
         ev:  "#ffff00"
+        pri: "#f5f5dc"
+        dat-met: "#c6e2ff"
     groupColorScheme:
         - "#ffff00"
         - "#c6e2ff"
+        - "#b9d3ee"
         - "#9fb6cd"
-        - "#e6e6fa"
-        - "#f0ffff"
-        - "#ffe1ff"
-        - "#eed2ee"
-        - "#d8bfd8"
+        - "#eedfcc"
+        - "#eeb4b4"
+        - "#cd9b9b"
+        - "#8b6969"
+        - "#698b69"
 group:
     groupDepth: 3
 dot: 
@@ -26,12 +28,14 @@ dot:
       ranksep: 1
 selection:
     selectedTags:
-        - chron-hyp 
+        - DEV
+        - pri
+        - ev
     excludeDisconnected: false
     statementSelectionMode: "all"
 ===
 
-[Standard Sequence]:  Given the strata are undisturbed, Cambrian strata are overlain by Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata and New Red Sandstone strata, respectively #pri
+[Standard Sequence]:  Given the strata are undisturbed, the Primary strata are overlain by Cambrian strata, Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata, New Red Sandstone strata and Oolitic stata, respectively #pri
 
 [Formation of strata]: Strata are originally formed from sediments that were deposited in flat horizontal sheets - the younger sediments 
 deposited on older ones. #pri
@@ -42,6 +46,21 @@ deposited on older ones. #pri
     selectedTags:
         - GRE
         - pri
-        - ev 
+        - ev
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+/*selection:
+    selectedTags:
+        - chron-hyp 
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+/*selection:
+    selectedTags:
+        - dat-met
+        - roc-hyp
+        - fos-hyp
+        - ev
     excludeDisconnected: false
     statementSelectionMode: "all"*/

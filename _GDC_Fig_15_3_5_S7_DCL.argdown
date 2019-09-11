@@ -1,4 +1,10 @@
+
 [BCL as SIL, ORS, ML]: The Culm limestone ranges from the upper part of the Silurian to the Mountain Limestone in age #DEV #chron-hyp
+    -> [Some BCL as CM]
+    +> [Some BCL as ML]
+    +> [Some BCL as ORS]
+    +> [Some BCL as SIL]
+    -> [Some BCL as CAM]
 
 
 <Redating the BCL - DEV.2b> #DEV #chron-hyp
@@ -13,7 +19,7 @@
     ----
     (6) [BCL as SIL, ORS, ML]
                      
-
+/*
 [BCL as SIL, ORS, ML]
     -> [BCL as CAM]
     - [BCL as CAM]
@@ -26,7 +32,7 @@
     -> [BCL as ML]
     - [BCL as ML]
     -> [BCL as ORS]
-    - [BCL as ORS]
+    - [BCL as ORS] */
     
 
   

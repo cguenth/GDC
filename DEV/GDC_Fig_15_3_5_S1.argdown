@@ -6,20 +6,22 @@ author: Corinna Günth-Stiegeler
 date: 28/06/2019  
 color:
     tagColors:
-        GRE: "#f4a460"
-        COA: "#ffc1c1"
-        DEV: "#eedd82"
-        pri: "#ffe4b5"
+        GRE: "#b8860b"
+        COA: "#ff8c00"
+        DEV: "#eead0e"
         ev:  "#ffff00"
+        pri: "#f5f5dc"
+        dat-met: "#c6e2ff"
     groupColorScheme:
         - "#ffff00"
         - "#c6e2ff"
+        - "#b9d3ee"
         - "#9fb6cd"
-        - "#e6e6fa"
-        - "#f0ffff"
-        - "#ffe1ff"
-        - "#eed2ee"
-        - "#d8bfd8"
+        - "#eedfcc"
+        - "#eeb4b4"
+        - "#cd9b9b"
+        - "#8b6969"
+        - "#698b69"
 group:
     groupDepth: 3
 dot: 
@@ -30,12 +32,12 @@ selection:
     selectedTags:
         - DEV
         - pri
-        - ev 
+        - ev
     excludeDisconnected: false
     statementSelectionMode: "all"
 ===
 
-[Standard Sequence]:  Given the strata are undisturbed, Cambrian strata are overlain by Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata and New Red Sandstone strata, respectively #pri
+[Standard Sequence]:  Given the strata are undisturbed, the Primary strata are overlain by Cambrian strata, Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata, New Red Sandstone strata and Oolitic stata, respectively #pri
 
 [Formation of strata]: Strata are originally formed from sediments that were deposited in flat horizontal sheets - the younger sediments 
 deposited on older ones. #pri
@@ -46,99 +48,146 @@ deposited on older ones. #pri
     selectedTags:
         - GRE
         - pri
-        - ev 
+        - ev
     excludeDisconnected: false
     statementSelectionMode: "all"*/
- 
+
+/*selection:
+    selectedTags:
+        - chron-hyp 
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+/*selection:
+    selectedTags:
+        - dat-met
+        - roc-hyp
+        - fos-hyp
+        - ev
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/ 
 
 
-# Evidence
+
+# Evidence {color: 0}
 
 
 
-[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev #E1
- 
-[CM Plants in Devon Culm]: In Devon, the Culm strata contain Coal Measures fossil plants #ev #E2
+[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev
 
-[North of Exmoor]: Passing Exmoor northwards, the strata become older #ev #E3
+/*
+S.93 On the west coast of Devon, near Bideford, there are seams of coal (culm or anthracite) 
+and also some fossil plants in strata closely associated with it
+
+culm : British English: Imperfect anthracite of Devon and Cornwall
+        originating during the Carboniferous Period that occur in southwest England
+        They are so called because of the occasional presence of a soft, often lenticular (linsenförmig), sooty (rußig) coal
+        which in Devon is known as Culm
+anthracite: A hard, compact variety of coal (highest carbon content, fewest impurities)
+
+OLD: [CM Plants in Devon Culm]: In Devon, the Culm contain Coal Measures fossil plants #ev #E2
+*/
+
+[CM Plants in Devon Culm]: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata 
+(in close association with seams of imperfect anthracite) #ev
+
+[North of Exmoor]: Passing Exmoor northwards, the strata become older #ev
 
 [Trough through Exmoor]: There is a trough through Exmoor - formed by a band of limestone running out to the north coast at Ilfracombe 
-and south of Barnstaple #ev #E4
+and south of Barnstaple #ev
  
-[Instances of Coal in Ancient Strata]: In Munster and Pennsylvannia, there are coal deposits in pre-Old Red Sandstone strata #ev #E5 
+// S.78
+
+[Instances of Coal in Ancient Strata]: In Munster, North America and North Devon there are coal deposits in pre-Old Red Sandstone strata #ev
+
+// S.101?? DLB's rock specimens looked like ordinary pre-ORS strata
+
+[Devonshire - Characteristic CAM Rock Type]: In Devon, *all* the strata - older than the New Red Sandstone - are of carachteristic CAM appearance #ev 
 
 
 
-# Aporia I : Coal in Ancient Strata {color: 1}
+# Rocks, Fossils and Time - Principles {color: 1}
 
 
-[Coal in Ancient Strata]: There are coal deposits in pre-Old Red Sandstone strata #GRE
+// Rock Type Method
 
-[Instances of Ancient Strata]: In Munster and Pennsylvannia, there are pre-Old Red Sandstone strata #GRE #chron-hyp
+[Characteristic Rock Types]: A rock type r is characteristic for some time interval dt iff 
+(i) r only exisits during dt and (ii) during dt, every region supports r #dat-met
 
-<Coal in Ancient Strata>: If there are no coal deposits in Pre-Old Red Sandstone strata, then there are no coal deposits in the pre-Old Red Sandstone strata 
-of Munster and Pennsylvannia #GRE
+[CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age #dat-met
+
+/* Identification of strata, and their succession, by means of their rock types */
+
+[Characteristic Rock Type Principle]: There is a bijection between the age of some strata t and its characteristic rock types #dat-met
+    + [Characteristic Rock Types]
+    +> [CRTP - 2]
+
+/*  
+[CRTP - 1]: If two strata are of the same age, then they support the same characteristic rock types
+    + [Characteristic Rock Type Principle]
+*/
+ 
+
+
+
+# Aporia I : Coal in Ancient Strata {color: 2}
+
+
+[Coal in Ancient Strata]: There are coal deposits in pre-ORS strata #GRE
+
+// [Instances of Coal in Ancient Strata]: In Munster, North America and North Devon there are coal deposits in pre-Old Red Sandstone strata #ev #E5
+
+[Instances of Pre-ORS Strata]: In Munster, North America and North Devon, some strata closely associated with seams of coal are pre-ORS in age #GRE #chron-hyp
+    + [Main Culm as CAM]
+
+<Coal in Ancient Strata>: If there are no coal deposits in pre-ORS strata, then there are no coal deposits in the pre-ORS strata 
+of Munster, North America or North Devon #GRE
     
-    (1) [Instances of Ancient Strata]
-    (2) There are no coal deposits in pre-Old Red Sandstone strata
+    (1) [Instances of Pre-ORS Strata]
+    (2) There are no coal deposits in pre-ORS strata
          >< [Coal in Ancient Strata]
     ----
-    (3) There are no coal deposits in the pre-Old Red Sandstone strata of Munster and Pennsylvannia 
+    (3) There are no coal deposits in the pre-ORS strata of Munster, North America and North Devon
         -> [Instances of Coal in Ancient Strata]
  
 
 
 
-# Aporia II : CM Plants in Ancient Strata {color: 2}
-
-[CM Plants in Ancient Strata]: In pre-Old Red Sandstone strata, there are fossil plants similar to those of the Coal Measures  #GRE
+# Aporia II : CM Plants in Non-CM Strata {color: 3}
 
 
-<Culm and CM Plants>: If the Devon Culm strata are pre-Old Red Sandstone in age and there are no Coal Measures plants in pre-Old Red Sandstone strata, 
-then there are no Coal Measures plants in the Devon Culm strata  #GRE
 
-    (1) [Main Culm as CAM]
-    (2) There are no CM plants in CAM strata
-         >< [CM Plants in Ancient Strata]
-    ----
-    (3) There are no CM Plants in Devon Culm strata
-         -> [CM Plants in Devon Culm]
+[Flora Similarities as Best Explanation]: The best explanation of the existence of coal in some strata G 
+is the similarity between G's flora and the one of the CM (the CM being noted for the great amounts of coal they contain) #GRE #aux
+
+         
+[CM and Pre-ORS - Similar Fossils]: In pre-ORS strata, there are fossils similar to those of the CM #GRE
 
 
-[Flora Similarities as Best Explanation]: The best explanation of the existence of coal in some strata G is the similarity between G's flora 
-and the one of the Coal Measures (the Coal Measures being noted for the great amounts of coal they contain) #GRE #aux
-
-
-<Coal and CM Plants>: If the similarity between the floras of the Coal Measures and pre-Old Red Sandstone formations is the best explanation 
-for the existence of coal deposists in pre-Old Red Sandstone strata, then there are Coal Measures plants in pre-Old Red Sandstone strata. #GRE
+<Coal and CM Plants>: If the similarity between the floras of the Coal Measures and some pre-ORS strata G is the best explanation 
+for the existence of coal deposists in G, then G's flora is similar to the one of the CM. #GRE
 
     (1) [Coal in Ancient Strata]
     (2) [Flora Similarities as Best Explanation]
     ----
-    (3) [CM Plants in Ancient Strata]
+    (3) [CM and Pre-ORS - Similar Fossils]
+ 
+     
+<Culm and CM Plants>: If the Devon Culm strata are pre-ORS in age and there are no CM fossil plants in pre-ORS strata, 
+then there are no CM fossil plants in the Devon Culm strata  #GRE
+
+    (1) [Main Culm as CAM]
+    (2) [Standard Sequence]
+    (3) There are no CM fossil plants in pre-ORS strata
+         >< [CM and Pre-ORS - Similar Fossils]
+    ----
+    (4) There are no CM Plants in Devon Culm strata
+         -> [CM Plants in Devon Culm]
  
 
 
 
-# Gap in the Sequence   {color: 4}
-
-
-[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different 
-but not successive geological periods #pri
-
-<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata are Cambrian in age, i.e. belonging to the same geological period, then there is no gap in the 
-local sequence. #GRE
-
-    (1) [Gap in a Sequence of Strata]
-    (2) [Main Culm as CAM]
-    (3) [BCL as CAM]
-    (4) [Non-Culm as CAM]
-    ----
-    (5) [Unbroken Sequence of Devon Strata] 
-
-
-
-# Dating of the Main Culm  {color: 5}
+# Dating of the Main Culm  {color: 4}
 
 [Some Main Culm as CM]: Some part of the main Culm is CM in age #pri #chron-hyp
 
@@ -154,8 +203,10 @@ local sequence. #GRE
 // Also:  Eine Partition einer Menge ist eine Zerlegung dieser Menge in nichtleere paarweise disjunkte Teilmengen. 
 // A_i are exhaustive and exclusive sets
 
+[Main Culm as Post-Primary and Pre-NRS]: The main Culm strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
 
-<Standard Sequence as Partition - Main Culm>: If some main Culm strata is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+
+<Standard Sequence as Partition - Main Culm>: If some main Culm strata are neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the main Culm is CM in age
             >< [Some Main Culm as CM]
@@ -165,10 +216,18 @@ local sequence. #GRE
             >< [Some Main Culm as ORS]
     (4) No part of the main Culm is SIL in age
             >< [Some Main Culm as SIL]
+    (5) [Standard Sequence]
+    (6) [Main Culm as Post-Primary and Pre-NRS]
     ----
     (5) [Some Main Culm as CAM]
 
-[Main Culm as CAM]: The whole of the main Culm is CAM in age #GRE #chron-hyp // Alles MC ist CAM  
+
+[Main Culm as CAM]: The whole of the main Culm is CAM in age #GRE #chron-hyp // Alles MC ist CAM 
+        -> [Some Main Culm as CM]
+        -> [Some Main Culm as ML]
+        -> [Some Main Culm as ORS]
+        -> [Some Main Culm as SIL]
+        +> [Some Main Culm as CAM]
 
 <Dating the Main Culm - GRE.1> #GRE #chron-hyp
 
@@ -184,7 +243,38 @@ local sequence. #GRE
     ----
     (6) [Main Culm as CAM]
     
- 
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+// [RTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+// MT: If they are not of the same age, two strata do not support the same characteristic rock types
+
+<Main Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the main Culm strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) Main Culm not CAM in age
+            >< [Some Main Culm as CAM]
+    ----
+    (3)  Main Culm strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+ALTRENATIVE:
+
+[Characteristic CAM Appearance of Main Culm]: The ancient appearance of the main Culm is characteristic of the CAM #GRE #roc-hyp
+
+<Main Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the main Culm strata is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of Main Culm]
+    ----
+    (4)  [Main Culm as CAM]
+
+*/
+
 /*
 ALTERNATIVE:
 
@@ -205,7 +295,7 @@ ALTERNATIVE:
 
 
 
-# Dating of the Culm Limestone  {color: 6}
+# Dating of the Culm Limestone  {color: 5}
 
 [Some BCL as CM]: Some part of the black Culm Limestone is CM in age #pri #chron-hyp
 
@@ -221,8 +311,9 @@ ALTERNATIVE:
 // Also:  Eine Partition einer Menge ist eine Zerlegung dieser Menge in nichtleere paarweise disjunkte Teilmengen. 
 // A_i are exhaustive and exclusive sets
 
+[BCL as Post-Primary and Pre-NRS]: The black Culm Limestone is older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
 
-<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, ORS nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the black Culm Limestone is CM in age
             >< [Some BCL as CM]
@@ -232,10 +323,17 @@ ALTERNATIVE:
             >< [Some BCL as ORS]
     (4) No part of the black Culm Limestone is SIL in age
             >< [Some BCL as SIL]
+    (5) [Standard Sequence]
+    (6) [BCL as Post-Primary and Pre-NRS]
     ----
-    (5) [Some BCL as CAM]
+    (7) [Some BCL as CAM]
 
 [BCL as CAM]: The black Culm Limestone is nothing but Cambrian in age #GRE #chron-hyp 
+    -> [Some BCL as CM]
+    -> [Some BCL as ML]
+    -> [Some BCL as ORS]
+    -> [Some BCL as SIL]
+    +> [Some BCL as CAM]
 
 <Dating the BCL - GRE.1> #GRE #chron-hyp
 
@@ -250,6 +348,33 @@ ALTERNATIVE:
     (5) [Some BCL as CAM]
     ----
     (6) [BCL as CAM]
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+<BCL as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the BCL strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) BCL not CAM in age
+            >< [Some BCL as CAM]
+    ----
+    (3)  BCL strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+[Characteristic CAM Appearance of BCL]: The ancient appearance of the BCL is characteristic of the CAM #GRE #roc-hyp
+
+<BCL as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the BCL is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of BCL]
+    ----
+    (4)  [BCL as CAM] */
+
+
     
 
 
@@ -257,7 +382,7 @@ ALTERNATIVE:
 
 
 
-# Dating of the Non-Culm {color: 7}
+# Dating of the Non-Culm {color: 6}
 
 [Some Non-Culm as CM]: Some part of the non-Culm strata is CM in age #pri #chron-hyp
 
@@ -274,6 +399,8 @@ ALTERNATIVE:
 // A_i are exhaustive and exclusive sets
 
 
+[Non-Culm as Post-Primary and Pre-NRS]: The non-Culm strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
 <Standard Sequence as Partition - Non-Culm>: If some part of the non-Culm strata is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the non-Culm strata is CM in age
@@ -284,10 +411,17 @@ ALTERNATIVE:
             >< [Some Non-Culm as ORS]
     (4) No part of the non-Culm strata is SIL in age
             >< [Some Non-Culm as SIL]
+    (5) [Standard Sequence]
+    (6) [Non-Culm as Post-Primary and Pre-NRS]
     ----
-    (5) [Some Non-Culm as CAM]
+    (7) [Some Non-Culm as CAM]
 
 [Non-Culm as CAM]: The non-Culm strata is nothing but Cambrian in age #GRE #chron-hyp 
+        -> [Some Non-Culm as CM]
+        -> [Some Non-Culm as ML]
+        -> [Some Non-Culm as ORS]
+        -> [Some Non-Culm as SIL]
+        +> [Some Non-Culm as CAM]
 
 <Dating the Non-Culm- GRE.1> #GRE #chron-hyp
 
@@ -301,11 +435,42 @@ ALTERNATIVE:
             >< [Some Non-Culm as SIL]
     (5) [Some Non-Culm as CAM]
     ----
-    (6) [Non-Culm as CAM] 
+    (6) [Non-Culm as CAM]
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+// [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+// MT: If two strata are not of the same age, then they do not support the same characteristic rock type
+<Non-Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the non-Culm strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) Non-Culm not CAM in age
+            >< [Some Non-Culm as CAM]
+    ----
+    (3)  Non-Culm strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+ALTRENATIVE
+
+[Characteristic CAM Appearance of Non-Culm]: The ancient appearance of the nonCulm is characteristic of the CAM #GRE #roc-hyp
+
+<Non-Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the non-Culm strata is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of Non-Culm]
+    ----
+    (4)  [Non-Culm as CAM]
+
+*/ 
 
 
 
-# Youngest Devonian Strata {color: 3}
+# Youngest Devonian Strata {color: 7}
 
 
 
@@ -354,5 +519,22 @@ and that, originally, younger strata rest upon older ones, it holds: If there is
 
  
 
+
+
+# Gap in the Sequence   {color: 8}
+
+
+[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different 
+but not successive geological periods #pri
+
+<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata are Cambrian in age, i.e. belonging to the same geological period, then there is no gap in the 
+local sequence. #GRE
+
+    (1) [Gap in a Sequence of Strata]
+    (2) [Main Culm as CAM]
+    (3) [BCL as CAM]
+    (4) [Non-Culm as CAM]
+    ----
+    (5) [Unbroken Sequence of Devon Strata] 
 
 

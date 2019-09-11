@@ -1,31 +1,78 @@
 
-<DEV and ORS contemporanous II>: If strata can be identified by means of their embedded fossils and 
-the non-Culm strata in Devon are not Old Red Sandstone in age, then 
-there is no strata containing distinct Old Red Sandstone fish as well as Devonian corals and shells #DEV
+/* [Valday Hills]:  In the Valday Hills (Russia), sandwiched between undisturbed SIL strata and ML strata, there are 
+both limestones with south Devonian shells and sandstones and with Scottish ORS fish #ev */
 
-    (1) [Fossil Criterion]
-    (2) The Devonian non-Culm strata are not as old as Old Red Sandstone
-        >< [Non-Culm as ORS]
+// [CFA - ORS - II]: The CFA of ORS strata is intermediate in character between the CFAs of SIL strata and ML strata #DEV #fos-hyp
+// [CFA - ORS]: ORS strata support few fossils and most of these are peculiar fish fossils only known from the ORS #GRE #fos-hyp
+
+[CFA - ORS - III]: The CFA of ORS strata is intermediate in character between the CFAs of SIL strata and ML strata and support distinct ORS fish #DEV #fos-hyp
+    +> [CFA - ORS - II]
+    - [No Characteristic Fossil Assemblage]
+
+
+// [LV in Fauna and Flora]: For every time intervall, there are local variations in the fauna and flora
+
+<Ecological Variations and ORS>: If, there are always local variations in the fauna and flora, then, during ORS, 
+there is a region which do not support a fossil assemblage intermediate between those of the SIL and ML as well as distinct ORS fish fossils #DEV
+
+    (1) [LV in Fauna and Flora]
+    (2) [CFA - ORS - III]
     ----
-    (3) There is no strata containing distinct Old Red Sandstone fish as well as Devonian corals and shells
-        -> [Russian ORS fish and DEV shells]
+    (3) During the ORS period, there is a region which do not support a FA intermediate between the SIL and ML (distinct ORS fish)
+        +> [Scottish ORS]
 
-    
-[Devon and Russia]: Certain Russian strata - sandwiched between Silurian and Mountain Limestone strata - are as old as the non-Culm strata in Devon #DEV #chron-hyp
+[Some Valday Hills Strata as ORS]: In the Valday Hills (Russia), some undisturbed strata -  sandwiched between SIL strata and ML strata and supporting both 
+limestones with south Devon fossils as well as sandstones with Scottish ORS fish - are ORS in age #DEV #chron-hyp
 
-<Devon and Russia - Superposition I>: If strata can be identified by means of their embedded fossils and the Russian strata - sandwiched between Silurian and Mountain Limestone strata - are not as old as the non-Culm strata, then there are no similarities in fossils between them #DEV
+<Russian FA as Intermediate - CFA>: If strata can be identified by means of their characteristic fossil assemblages and 
+some strata in the Valday Hills are ORS in age, then they support fossils intermediate between those of SIL strata and ML 
+strata as well as distinct ORS fish #DEV
 
-    (1) Certain Russian strata - sandwiched between Silurian and Mountain Limestone strata - are not as old as the non-Culm strata
-         >< [Devon and Russia] 
-    (2) [Fossil Criterion]
+        (1) [CFAP - 1] 
+        (2) [Some Valday Hills Strata as ORS]
+        (3) [CFA - ORS - III]
+        ----
+        (4) [Valday Hills]
+
+<Russian Strata as ORS>: If some undisturbed Russian strata are not ORS in age, than they are not sandwiched between ML strata and SIL strata #DEV
+
+    (1) [Formation of strata]
+    (2) [Standard Sequence]
+    (3) Some undisturbed Russian strata are not ORS in age
+            >< [Some Valday Hills Strata as ORS]
     ----
-    (3) There are no similarities - in fossils - between certain Russian strata and the non-Culm strata
-         -> [Russian Superposition]
+    (4) Some undisturbed Russian strata are not sandwiched between ML strata and SIL strata
+            ->  [Valday Hills]
 
-<Devon and Russia - Superposition II>: If the non-Culm strata are as old as certain Russian strata sandwiched between Silurian and Mountain Limestone strata, 
-then the non-Culm strata are sandwiched between the Silurian and Mountain Limestone, too  #DEV #chron-hyp
-    
-    (1) [Devon and Russia]
+
+
+<Devon Non-Culm and Russia - CFA>: If strata can be identified by means of their characteristic fossil assemblages and some non-Culm are 
+not as old as some strata in the Valday Hills, namely ORS, then these two strata do not support the same characteristic fossil assemblages #DEV
+
+    (1) [CFAP - 2] 
+    (2) The whole non-Culm strata are not ORS in age
+                >< [Some Non-Culm as ORS]
+    (3) [Some Valday Hills Strata as ORS]
     ----
-    (2) [Non-Culm Strata between SIL and ML]
+    (4) The Devon non-Culm and some strata in the Valday Hills sandwiched between ML and SIL strata do not support the same characteristic fossil assemblages
+                -> [Valday Hills]
 
+
+
+// [CRT - ORS]: ORS strata support one single characteristic rock typ, namely red sandstone #GRE #roc-hyp
+
+[CRT - ORS - II]: The characeristic rock types of the ORS period are limestone and red sandstone #DEV #roc-hyp
+    +> [CRT - ORS]
+    - [No Characteristic Rock Type]
+
+// [LV in Rock Type]: For every time intervall, there are local variations in the rock type
+
+<Rock Type Variations and ORS>: If, there are always local variations in rock type, then, during ORS, 
+there is a region which do not support limestone #DEV
+
+    (1) [LV in Rock Type]
+    (2) [CRT - ORS - II]
+    ----
+    (3) During the ORS period, there is a region which do not support limestone
+        +> [Scottish ORS]
+        

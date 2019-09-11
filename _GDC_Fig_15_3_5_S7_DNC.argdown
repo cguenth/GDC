@@ -1,0 +1,50 @@
+
+
+/*
+
+[CFA - ORS]: ORS strata support few fossils and most of these are peculiar fish fossils only known from the ORS #GRE #fos-hyp
+    +> [Scottish ORS]
+
+[CFA - ORS - II]: The CFA of ORS strata is intermediate in character between the CFAs of SIL strata and ML strata #DEV #fos-hyp
+
+[Reddish Strata in South Devon]: Above the Plymouth limestone but below the Great Limestone, there is a distinctive formation of reddish strata 
+containing everywhere abundance of fossils (but no peculiar ORS fish fossils) #ev
+
+*/
+
+
+[CRT - ORS]: ORS strata support a characteristic rock typ, namely red sandstone #GRE #roc-hyp
+    +> [Scottish ORS]
+    - [No Characteristic Rock Type]
+
+[Some ORS betwen LSTs in South Devon]: In south Devon, above the Plymouth limestone but below the Great Limestone, the non-Culm strata are ORS in age #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+
+<Some South Devonian Strata as ORS - CRTP>: If strata can be identified by means of their characteristic rock type and 
+some south Devonian non-Culm strata are ORS in age, then there is some red sandstone strata in south Devon #GRE
+
+    (1) [CRTP - 1]
+    (2) [Some ORS betwen LSTs in South Devon] 
+    (3) [CRT - ORS]
+    ----
+    (4) Above the Plymouth limestone but below the Great Limestone, the non-Culm strata support red sandstone
+            +> [Reddish Strata in South Devon]
+
+
+
+<Some South Devonian Strata as ORS - CFAP>: If strata can be identified by means of their characteristic fossil assemblages and 
+some south Devonian non-Culm strata are ORS in age, then these strata support few fossils (most of them peculiar fish) #GRE
+
+    (1) [CFAP - 1]
+    (3) [Some ORS betwen LSTs in South Devon]
+    (2) [CFA - ORS]
+    ----
+    (3)  Above the Plymouth limestone but below the Great Limestone, the non-Culm strata support few fossils 
+        and most of these are peculiar fish fossils only known from the ORS
+            -> [Reddish Strata in South Devon]
+
+        
+
+    
+
+

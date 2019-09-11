@@ -12,8 +12,10 @@
 // Also:  Eine Partition einer Menge ist eine Zerlegung dieser Menge in nichtleere paarweise disjunkte Teilmengen. 
 // A_i are exhaustive and exclusive sets
 
+[Main Culm as Post-Primary and Pre-NRS]: The main Culm strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
 
-<Standard Sequence as Partition - Main Culm>: If some main Culm strata is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+
+<Standard Sequence as Partition - Main Culm>: If some main Culm strata are neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
     
     (1) No part of the main Culm is CM in age
             >< [Some Main Culm as CM]
@@ -23,10 +25,18 @@
             >< [Some Main Culm as ORS]
     (4) No part of the main Culm is SIL in age
             >< [Some Main Culm as SIL]
+    (5) [Standard Sequence]
+    (6) [Main Culm as Post-Primary and Pre-NRS]
     ----
     (5) [Some Main Culm as CAM]
 
-[Main Culm as CAM]: The whole of the main Culm is CAM in age #GRE #chron-hyp // Alles MC ist CAM  
+
+[Main Culm as CAM]: The whole of the main Culm is CAM in age #GRE #chron-hyp // Alles MC ist CAM 
+        -> [Some Main Culm as CM]
+        -> [Some Main Culm as ML]
+        -> [Some Main Culm as ORS]
+        -> [Some Main Culm as SIL]
+        +> [Some Main Culm as CAM]
 
 <Dating the Main Culm - GRE.1> #GRE #chron-hyp
 
@@ -42,7 +52,38 @@
     ----
     (6) [Main Culm as CAM]
     
- 
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+// [RTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
+// MT: If they are not of the same age, two strata do not support the same characteristic rock types
+
+<Main Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the main Culm strata are not CAM in age, then they are not of characteristic CAM appearance #GRE
+
+    (1) [CRTP - 2]
+    (2) Main Culm not CAM in age
+            >< [Some Main Culm as CAM]
+    ----
+    (3)  Main Culm strata are not of characteristic CAM appearance
+        -> [Devonshire - Characteristic CAM Rock Type]
+
+/*
+ALTRENATIVE:
+
+[Characteristic CAM Appearance of Main Culm]: The ancient appearance of the main Culm is characteristic of the CAM #GRE #roc-hyp
+
+<Main Culm as CAM - CRTP>: If strata can be identified by means of their characteristic rock type and 
+the appearance of the main Culm strata is characteristic of the CAM, then they are CAM in age #GRE
+
+    (1) [RTP - 2]
+    (2) [Devonshire - Rock Type]
+    (3) [Characteristic CAM Appearance of Main Culm]
+    ----
+    (4)  [Main Culm as CAM]
+
+*/
+
 /*
 ALTERNATIVE:
 

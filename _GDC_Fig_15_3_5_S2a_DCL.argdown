@@ -1,4 +1,9 @@
 [BCL as CM]: The black Culm Limestone is nothing but Coal Mesaures in age #COA #chron-hyp 
+        +> [Some BCL as CM]
+        -> [Some BCL as ML]
+        -> [Some BCL as ORS]
+        -> [Some BCL as SIL]
+        -> [Some BCL as CAM]
 
 <Redating the BCL - COA.1> #COA #chron-hyp
 
@@ -15,8 +20,9 @@
     (6) [BCL as CM]
                      
 
-[BCL as CM]
-    -> [BCL as CAM]
-    - [BCL as CAM]
 
-
+/*
+[BCL as CAM]
+    -> [BCL as CM]
+    - [BCL as CM]
+*/
