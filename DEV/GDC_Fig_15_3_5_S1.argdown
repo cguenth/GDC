@@ -26,8 +26,10 @@ group:
     groupDepth: 3
 dot: 
     graphVizSettings: 
-      rankdir: "TB"  
+      rankdir: TB  
       ranksep: 1
+model:
+    mode: strict
 selection:
     selectedTags:
         - DEV
@@ -102,7 +104,7 @@ and south of Barnstaple #ev
 
 // S.101?? DLB's rock specimens looked like ordinary pre-ORS strata
 
-[Devonshire - Characteristic CAM Rock Type]: In Devon, *all* the strata - older than the New Red Sandstone - are of carachteristic CAM appearance #ev 
+[Devonshire - Characteristic CAM Rock Type]: In Devon, *all* the strata - older than the New Red Sandstone - are of caracteristic CAM appearance #ev 
 
 
 
@@ -114,12 +116,15 @@ and south of Barnstaple #ev
 [Characteristic Rock Types]: A rock type r is characteristic for some time interval dt iff 
 (i) r only exisits during dt and (ii) during dt, every region supports r #dat-met
 
+[Existence of Characteristic Rock Types]: For every time intervall dt, there is some charactersitic rock type r #dat-met
+
 [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age #dat-met
 
 /* Identification of strata, and their succession, by means of their rock types */
 
 [Characteristic Rock Type Principle]: There is a bijection between the age of some strata t and its characteristic rock types #dat-met
     + [Characteristic Rock Types]
+    + [Existence of Characteristic Rock Types]
     +> [CRTP - 2]
 
 /*  

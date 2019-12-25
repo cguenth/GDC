@@ -25,8 +25,10 @@ group:
     groupDepth: 3
 dot: 
     graphVizSettings: 
-      rankdir: "TB"  
+      rankdir: TB  
       ranksep: 1
+model:
+    mode: strict
 selection:
     selectedTags:
         - chron-hyp 
@@ -59,7 +61,8 @@ deposited on older ones. #pri
     selectedTags:
         - dat-met
         - roc-hyp
-        - fos-hyp 
+        - fos-hyp
+        - ev
     excludeDisconnected: false
     statementSelectionMode: "all"*/
 
@@ -119,7 +122,7 @@ and south of Barnstaple #ev
 
 // S.101?? DLB's rock specimens looked like ordinary pre-ORS strata
 
-[Devonshire - Characteristic CAM Rock Type]: In Devon, *all* the strata - older than the New Red Sandstone - are of carachteristic CAM appearance #ev 
+[Devonshire - Characteristic CAM Rock Type]: In Devon, *all* the strata - older than the New Red Sandstone - are of caracteristic CAM appearance #ev 
 
 [Unconformity in Devon]: Between the Devon Culm and the juxtaposed strata, there is at least one formation missing from the standard sequence #ev
     -> [Unbroken Sequence of Devon Strata] 
@@ -238,12 +241,15 @@ E12 und E6 können beide zugleich falsch sein (Es gibt keine Lücke innerhalb de
 [Characteristic Rock Types]: A rock type r is characteristic for some time interval dt iff 
 (i) r only exisits during dt and (ii) during dt, every region supports r #dat-met
 
+[Existence of Characteristic Rock Types]: For every time intervall dt, there is some charactersitic rock type r #dat-met
+
 [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age #dat-met
 
 /* Identification of strata, and their succession, by means of their rock types */
 
 [Characteristic Rock Type Principle]: There is a bijection between the age of some strata t and its characteristic rock types #dat-met
     + [Characteristic Rock Types]
+    + [Existence of Characteristic Rock Types]
     +> [CRTP - 2]
 
 /*  
@@ -255,6 +261,8 @@ E12 und E6 können beide zugleich falsch sein (Es gibt keine Lücke innerhalb de
 
 [Characteristic Fossils]: A fossil species f is characteristic for some time interval dt iff 
 (i) f only exisits during dt and (ii) during dt, every region supports f #dat-met
+
+[Existence of Characteristic Fossils]: For every time intervall dt, there is some charactersitic fossil species f #dat-met
 
 [CFP - 2]: If two strata support the same characteristic fossils, then they are of the same age #dat-met
 
@@ -271,6 +279,7 @@ the use of characteristic fossils."*/
 
 [Characteristic Fossils Principle]: There is a bijection between the age of some strata t and its characteristic fossils #dat-met
     + [Characteristic Fossils]
+    + [Existence of Characteristic Fossils]
     +> [CFP - 2]
 
 
@@ -382,14 +391,16 @@ then there are always local variations in the fauna and flora #dat-met
     +> [No Characteristic Fossils]
          
 // [Characteristic CM fossils in Main Culm]: Near Bideford (North Devon), the CM fossil plants supported by some main Culm strata are characteristic CM fossils #COA #fos-hyp
-    
-[No Characteristic Fossils]: There is no fossil species FS and no time intervall dt such that, during dt, every region supports FS #dat-met
-    -> [Characteristic Fossils Principle]
+
+[No Characteristic Fossils]: For no time intervall dt, there is some characteristic fossil species #dat-met
+    -> [Existence of Characteristic Fossils]
+    - [Existence of Characteristic Fossils]
     -> [Characteristic CM fossils in Main Culm]
 
    
-[No Characteristic Rock Type]: There is no rock type r and no time intervall dt such that, during dt, every region supports r #dat-met
-    -> [Characteristic Rock Type Principle]
+[No Characteristic Rock Type]: For no time intervall dt, there is some characteristic rock type #dat-met
+    -> [Existence of Characteristic Rock Types]
+    - [Existence of Characteristic Rock Types]
     -> [Devonshire - Characteristic CAM Rock Type]
 
 
