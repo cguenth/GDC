@@ -1,45 +1,214 @@
 
+[Main Culm Youngest Devonian Strata]: In Devon, among all the strata older than the New Red Sandstone, the main part of the Culm strata are the youngest #COA #chron-hyp
+    -> [Exmoor Youngest Devonian Strata]
 
-[Traversing Northward]: The strata south of Exmoor become progessively younger the furhter one traverses northward #GRE #chron-hyp
+///// Temporal Order 2 ---  MC, BCL, NC 
 
-[Exmoor Trough as Best Explanation]: Assuming that the strata south of Exmoor become progessively younger the furhter one traverses northward 
-and that, originally, younger strata rest upon older ones, 
-the existence of a trough running trough Exmoor is the best explanation of the strata north of Exmoor being older  #GRE #aux
+[Devon Strata - Temporal Order - 2]: NC strata are older than BCL strata and BCL strata are older than MC strata #COA #pri #chron-hyp
+        -> [Devon Strata - Temporal Order - 1]
+        +> [BCL Older Than MC]
+        +> [Main Culm Youngest Devonian Strata]
+
+<MC and NC - YDS and ODS>: If BCL strata constitute the oldest part of the Culm series, then it holds:
+ If MC strata are the youngest strata in Devon, then NC strata are the oldest strata #COA #pri #chron-hyp
+
+        (1) [BCL Older Than MC]
+        (2) [Main Culm Youngest Devonian Strata]
+        ----
+        (3) [Devon Strata - Temporal Order - 2] 
 
 
-<Trough through Exmoor - GRE.1a>: If the existence of a trough running trough Exmoor is the best explanation of 
-the Exmoor strata being juxtaposed solely with older strata, then there is a trough through Exmoor  #GRE
+///// MC as Youngest Devonian Strata --- Consequences
 
-    (1) [North of Exmoor]
-    (2) [Traversing Northward]
-    (3) [Formation of strata] 
-    (4) [Exmoor Trough as Best Explanation]
+<MC as Youngest Strata - MC at Oldest CAM>: If MC are the youngest Devonian strata and some MC are CAM in age, then 
+ NC strata are CAM in age, too #GRE 
+
+    (1) [Standard Sequence]
+    (2) [Devon Strata - Temporal Order - 2] 
+    (3) [Some Main Culm as CAM]
+    (4) [Non-Culm as Post-Primary and Pre-NRS]
     ----
-    (5) [Trough through Exmoor]
-
-[Exmoor Youngest Devonian strata]: In Devon, among all the strata older than the New Red Sandstone, the strata of Exmoor are the youngest #GRE #chron-hyp
-
-<Exmoor and Devonian Strata>: Assuming that, originally, younger strata rest upon older ones, it holds: 
-If the Exmoor strata is not the youngest, then there is no trough through Exmoor  #GRE
-
-    (1) Exmoor not the Youngest strata 
-            >< [Exmoor Youngest Devonian strata]
-    (2) [Formation of strata] 
-    ---- 
-    (3) There is no trough in Exmoor
-            >< [Trough through Exmoor]
+    (5) [Non-Culm as CAM]
 
 
-/*
-<Exmoor and Devonian Strata>: Assuming that, in Devon, the strata become progessively younger the furhter one traverses northward 
-and that, originally, younger strata rest upon older ones, it holds: If there is a trough through Exmoor, then the Exmoor strata is the youngest #GRE
+//// NC Older Than BCL ---- Consequences
 
-    (1) [Trough through Exmoor]
-    (2) [Traversing Northward]
-    (3) [Formation of strata] 
-    ---- 
-    (4) [Exmoor Youngest Devonian strata]
-    
-*/
+<NC Older Than BCL - NC as CM>: If NC strata are older than BCL strata, and at youngest CM in age, 
+ then BCL strata are CM in age  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some Non-Culm as CM]
+        ----
+        (6) [Some BCL as CM]
+
+//// EIGENTLICH [BCL as CM]
+
+<NC Older Than BCL - NC as CAM>: If BCL strata are older then MC strata, being at oldest CAM in age, 
+then BCL strata are CAM in age, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some BCL as CAM]
+        ----
+        (5) [Non-Culm as CAM]
+
+<NC Older Than BCL - NC at Youngest ML - 1>:If NC strata are older than BCL strata, being at oldest ML in age, 
+ then there are no CM NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [No BCL as CM]
+        ----
+        (6) [No Non-Culm as CM]
+
+<NC Older Than BCL - NC at Youngest ML - 2>:If NC strata are older than BCL strata, and some BCL strata are ML in age, 
+ then there are no CM NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some BCL as ML]
+        ----
+        (6) [No Non-Culm as CM]
 
 
+<NC Older Than BCL - NC at Youngest ORS - 1>:If NC strata are older than BCL strata, being at oldest ORS in age, 
+ then there are no CM or ML NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [BCL at Youngest ORS]
+        ----
+        (6) [NC at Youngest ORS]
+
+<NC Older Than BCL - NC at Youngest ORS - 2>:If NC strata are older than BCL strata, and some BCL strata are ORS in age, 
+ then there are no CM or ML NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some BCL as ORS]
+        ----
+        (6) [NC at Youngest ORS]
+
+
+<NC Older Than BCL - NC at Youngest SIL - 1>:If NC strata are older than BCL strata, being at oldest SIL in age, 
+ then there are no CM or ML or ORS NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [BCL at Youngest SIL]
+        ----
+        (5) [NC at Youngest SIL]
+
+<NC Older Than BCL - NC at Youngest SIL - 2>:If NC strata are older than BCL strata, and some strata are SIL in age, 
+ then there are no CM or ML or ORS NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some BCL as SIL]
+        ----
+        (5) [NC at Youngest SIL]
+
+
+
+//// NC - Conformable Formation
+
+
+<NC as Conformable Formation - ML Missing 1>: If NC strata are the oldest Devonian strata and there are some CM but no ML NC strata,  
+ then there are no ORS NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as CM]
+        (4) [No Non-Culm as ML]
+        ----
+        (5) [No Non-Culm as ORS]
+
+<NC as Conformable Formation - ML Missing 2>: If NC strata are the oldest Devonian strata and there are some ORS but no ML NC strata, 
+ then there are no CM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as ORS]
+        (4) [No Non-Culm as ML]
+        ----
+        (5) [No Non-Culm as CM]
+
+
+<NC as Conformable Formation - ORS Missing 1>: If NC strata are the oldest Devonian strata and there are some ML but no ORS NC strata, 
+ then there are no SIL NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as ML]
+        (4) [No Non-Culm as ORS]
+        ----
+        (5) [No Non-Culm as SIL]
+
+<NC as Conformable Formation - ORS Missing 2>: If NC strata are the oldest Devonian strata and there are some SIL but no ORS NC strata, 
+ then there are no ML NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as SIL]
+        (4) [No Non-Culm as ORS]
+        ----
+        (5) [No Non-Culm as ML]
+
+
+<NC as Conformable Formation - SIL Missing 1>: If NC strata are the oldest Devonian strata and there are some CAM but no SIL NC strata, 
+ then there are no ORS NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as CAM]
+        (4) [No Non-Culm as SIL]
+        ----
+        (5) [No Non-Culm as ORS]
+
+<NC as Conformable Formation - SIL Missing 2>: If NC strata are the oldest Devonian strata and there are some ORS but no SIL NC strata, 
+ then there are no CAM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as ORS]
+        (4) [No Non-Culm as SIL]
+        ----
+        (5) [No Non-Culm as CAM]
+
+
+
+/*WEGGELASSEN, da dieses Arg keine vernünftige einschränkende Wirkung hat: Zum Beispiel
+ !6 verbietet CM - BCL as CM - NC as CAM (d.h. 6), jedoch
+ !6 verträglich mit MC as CM - BCL as CM - NC as SIL&CAM (d.h. 6)
+
+<MC as Youngest Devonian Strata>: If (i) BCL are older than MC and (ii) MC are CM in age and (iii) NC stata are CAM in age, 
+  then MC are the youngest Devonian strata #COA
+
+    (1) [Standard Sequence]
+    (2) [BCL Older Than MC]
+    (3) [Some Main Culm as CM]
+    (4) [No Non-Culm as SIL]
+    (5) [Some Non-Culm as CAM]
+    ----
+    (6) [Main Culm Youngest Devonian Strata]*/
+
+/* WEGGELASSEN, da [Non-Culm as CM] eingeführt werden müsste
+
+<NC Older Than BCL - NC at Youngest CM>:If NC strata are older than BCL strata, and at youngest CM in age, then it holds 
+ that the BCL strata are CM in age #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some Non-Culm as CM]
+        ----
+        (5) [Non-Culm as CM] */

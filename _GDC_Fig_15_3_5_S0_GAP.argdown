@@ -1,0 +1,203 @@
+
+
+
+<Unbroken Sequence - All Strata CM>: If, in Devon, all strata are CM in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [Main Culm as CM]
+        (2) [No BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [No BCL as CAM]
+        (6) [No Non-Culm as ML]
+        (7) [No Non-Culm as ORS]
+        (8) [No Non-Culm as SIL]
+        (9) [No Non-Culm as CAM]
+        ----
+        (10) [Unbroken Sequence of Devon Strata]
+
+<Unbroken Sequence - All Strata ML>: If, in Devon, all strata are ML in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [No Main Culm as CM]
+        (2) [No Main Culm as ORS]
+        (3) [No Main Culm as SIL]
+        (4) [No Main Culm as CAM]
+        (5) [BCL as ML]
+        (6) [No Non-Culm as CM]
+        (7) [No Non-Culm as ORS]
+        (8) [No Non-Culm as SIL]
+        (9) [No Non-Culm as CAM]
+        ----
+        (10) [Unbroken Sequence of Devon Strata]
+
+<Unbroken Sequence - All Strata ORS>: If, in Devon, all strata are ORS in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [No Main Culm as CM]
+        (2) [No Main Culm as ML]
+        (3) [No Main Culm as SIL]
+        (4) [No Main Culm as CAM]
+        (5) [No BCL as CM]
+        (6) [No BCL as ML]
+        (7) [No BCL as SIL]
+        (8) [No BCL as CAM]
+        (9) [Non-Culm as ORS]
+        ----
+        (10) [Unbroken Sequence of Devon Strata]
+
+<Unbroken Sequence - All Strata SIL>: If, in Devon, all strata are SIL in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [No Main Culm as CM]
+        (2) [No Main Culm as ML]
+        (3) [No Main Culm as ORS]
+        (4) [No Main Culm as CAM]
+        (5) [No BCL as CM]
+        (6) [No BCL as ML]
+        (7) [No BCL as ORS]
+        (8) [No BCL as CAM]
+        (9) [No Non-Culm as CM]
+        (10) [No Non-Culm as ML]
+        (11) [No Non-Culm as ORS]
+        (12) [No Non-Culm as CAM]
+        ----
+        (13) [Unbroken Sequence of Devon Strata]
+
+<Unbroken Sequence - All Strata CAM>: If, in Devon, all strata are CAM in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [Main Culm as CAM]
+        (2) [BCL as CAM]
+        (3) [Non-Culm as CAM]
+        ----
+        (4) [Unbroken Sequence of Devon Strata]
+
+//// A <=> B & C UND A => D
+
+[Conformable Passage - MC and BCL]: The passage between MC and BCL strata is conformable #GRE #struc-hyp #pri
+
+[Conformable Passages - 1]: The following passages are conformable: Exmoor and MC, MC and BCL, BCL and South Devon NC #struc-hyp
+        +> [Unbroken Sequence of Devon Strata]
+        +> [Devon Strata - Temporal Order - 1]
+        +> [Conformable Passage - MC and BCL]
+        
+
+<Unbroken Sequence - Exmoor YDS>: If South Devon NC strata are older than BCL strata and BCL strata are older than MC strata
+ and MC strata are older than Exmoor strata, and, in Devon, the sequence is unbroken, then all passages between them are conformable #GRE #pri
+
+    (1) [Unbroken Sequence of Devon Strata]
+    (2) [Devon Strata - Temporal Order - 1]
+    ----
+    (3) [Conformable Passages - 1]
+
+
+//// Conformable Passage Between Exmoor/MC, MC/BCL, BCL/S.DEV.NC -----
+
+<Conformable Passages - 1 - NC at Youngest SIL>: If, in Devon, some NC strata are the youngest and not younger than SIL, then all passages are conformable #GRE #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 1]
+        (3) [NC at Youngest SIL]
+        ----
+        (4) [Conformable Passages - 1]
+
+/// HIER FEHLEND aufgrund von Schwierigkeiten: Andere CH (nicht: All X), die zu [Conformable Passages - 1] führen!
+
+
+///// Conformable Passage Between MC and BCL ---- BCL Older Than MC ----- Consequences
+
+
+<BCL Older Than MC - MC at Oldest CM - 1>: If BCL strata are older than MC strata, being at oldest CM in age, 
+ and there are no CM BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ML BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [No Main Culm as ML]
+        (6) [No BCL as CM]
+        ----
+        (7) [Some BCL as ML]
+
+<BCL Older Than MC - MC at Oldest CM - 2>: If BCL strata are older than MC strata, being at oldest CM in age, 
+ and there are no ML BCL strata, then, given that MC and BCL are passing conformably into one antoher, BCL strata are CM in age, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [No Main Culm as ML]
+        (6) [No BCL as ML]
+        ----
+        (7) [Some BCL as CM]
+
+<BCL Older Than MC - MC at Oldest ML - 1>:If BCL strata are older than MC strata, being at oldest ML in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ORS BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [No Main Culm as ORS]
+        (6) [No BCL as ML]
+        ----
+        (7) [Some BCL as ORS]
+
+<BCL Older Than MC - MC at Oldest ML - 2>:If BCL strata are older than MC strata, being at oldest ML in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ML BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [No Main Culm as ORS]
+        (6) [No BCL as ORS]
+        ----
+        (7) [Some BCL as ML]
+
+<BCL Older Than MC - MC at Oldest ORS - 1>:If BCL strata are older than MC strata, being at oldest ORS in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some SIL BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [No Main Culm as SIL]
+        (6) [No BCL as ORS]
+        ----
+        (7) [Some BCL as SIL]
+
+<BCL Older Than MC - MC at Oldest ORS - 2>:If BCL strata are older than MC strata, being at oldest ORS in age, 
+ and there are no SIL BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ORS BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [No Main Culm as SIL]
+        (6) [No BCL as SIL]
+        ----
+        (7) [Some BCL as ORS]
+
+
+<BCL Older Than MC - MC at Oldest SIL - 2.1>:If BCL strata are older than MC strata, being at oldest SIL in age, 
+ and there are no SIL BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some CAM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as SIL]
+        (5) [No Main Culm as CAM]
+        (6) [No BCL as SIL]
+        ----
+        (7) [Some BCL as CAM]
+
+
+<BCL Older Than MC - MC at Oldest SIL - 2.2>:If BCL strata are older than MC strata, being at oldest SIL in age, 
+ and there are no CAM BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some SIL BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as SIL]
+        (5) [No Main Culm as CAM]
+        (6) [No BCL as CAM]
+        ----
+        (7) [Some BCL as SIL]
+

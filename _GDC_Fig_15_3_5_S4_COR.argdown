@@ -1,0 +1,81 @@
+
+///// Scottish ORS
+
+[Scottland - Body of Evidence - Fossils]: Concerning Scottish ORS strata, the amount of fossils under study is sufficiently large #cor
+
+[Scottland - Body of Evidence - Rock Specimens]: Concerning Scottish ORS strata, the amount of rock specimens under study is sufficiently large #cor
+
+[Scottland - Body of Evidence - Region]: Concerning Scottish ORS strata, the region under study is sufficiently large #cor
+
+// CFA - ORS - V2
+<Scottland - CFAP - V2 - 1>: If strata can be identified by means of their CFAs and and the FA characteristic of the ORS period 
+encompasses only a few peculiar fish fossils, then Scottish ORS strata support such a FA #cor
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Scottland - Body of Evidence - Fossils]
+    (3) [Scottland - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    ----
+    (5) [Scottish ORS - Fossils]
+
+<Scottland - CFAP - V2 - 2>: If strata can be identified by means of their CFAs and the Scottish ORS strata support 
+ only a few peculiar fish fossils, then such a FA is characteristic of the ORS period #cor
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Scottland - Body of Evidence - Fossils]
+    (3) [Scottland - Body of Evidence - Region]
+    (4) [Scottish ORS - Fossils]
+    ----
+    (5) [CFA - ORS - V2]
+ 
+//CRT - ORS - V2
+<Scottish ORS - CRTP - V2 - 1>: If strata can be identified by means of their CRTs and the RT characteristic of the ORS period 
+is red sandstone, then Scottish ORS strata support red sandstone #cor
+
+    (1) [Characteristic Rock Type Principle - V2] 
+    (2) [Scottland - Body of Evidence - Rock Specimens]
+    (3) [Scottland - Body of Evidence - Region]
+    (4) [CRT - ORS - V2]
+    ----
+    (5) [Scottish ORS - Rocks]
+
+<Scottish ORS - CRTP - V2 - 2>: If strata can be identified by means of their CRTs and Scottish ORS strata support red sandstone, 
+ then such a RT is characteristic of the ORS period #cor
+
+    (1) [Characteristic Rock Type Principle - V2] 
+    (2) [Scottland - Body of Evidence - Rock Specimens]
+    (3) [Scottland - Body of Evidence - Region]
+    (4) [Scottish ORS - Rocks]
+    ----
+    (6) [CRT - ORS - V2]
+
+
+//// Scottland as LV
+
+/* Es wird nicht behauptet, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden, sondern,
+dass die Region selbst nicht ausreichend groß ist */
+
+[Scottish ORS as LV - Fauna and Flora]: Scottish ORS fauna and flora is a local variation #cor
+    +> [LV in Fauna and Flora - ORS]
+
+[Scottish ORS as LV - Sedimentation]: Scottish ORS rock type is a local variation #cor
+    +> [LV in Sedimentation - ORS]
+
+
+<LV in Fauna and Flora - Scottland>: If, concering Scottish ORS strata, the region as well as the amount of fossils under study is sufficiently large, 
+then Scottish ORS fauna and flora is no LV #cor
+
+    (1) [Scottland - Body of Evidence - Fossils]
+    (2) [Scottland - Body of Evidence - Region]
+    ----
+    (3) Scottish ORS fauna and flora is no local variation
+            >< [Scottish ORS as LV - Fauna and Flora]
+
+<LV in Sedimentation - Scottland>: If, concering Scottish ORS strata, the region as well as the amount of rock specimens under study is sufficiently large, 
+then Scottish ORS rock type is no LV #cor
+
+    (1) [Scottland - Body of Evidence - Rock Specimens]
+    (2) [Scottland - Body of Evidence - Region]
+    ----
+    (3) Scottish ORS rock type is no local variation
+            >< [Scottish ORS as LV - Sedimentation]

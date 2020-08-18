@@ -1,71 +1,16 @@
 
-@include(_GDC_Fig_15_3_5_S1_GS.argdown)
 
 
-/* 
+@include(_GDC_Fig_15_3_5_S0_GS.argdown)
 
-GRE.1
-
-+ COA.1 Late 1834: MUR and Lyell immediately as response to DLB; 
-         denying @[CM Plants in Ancient Strata]
-
-+ Lyellian Principals
-
-+ French and Irish Evidence 
-
-+ COA.2a At the Bristol meeting: Devon Campaign: Official summary
-
-        LSIL fossil dating of non-Culm strata
-        Culm trough
-
-
-+ COA.3 ( bzw. COA.3' + COA.3'') 1836: Devon Campaign: MUR as response of conformable passage between Culm and the older strata
-    and  Culm trough in central Devon
-
-+ COA.2b At Bristol: Phillips identified Mountain Limestone fossils from the older part of the Culm
-
-+  DEV.1 At Bristol meeting: Buckland
-
-rausgefallen an dieser Stelle :  GRE.1b   At Bristol: DLB conceded his critics' structural interpretation and reversed the sequence
-
-+ GRE.2    After the Bristol meeting: DLB accepted MUR's LSIL dating for the youngest non-Culm strata;
-           this constituted a shift of the Culm to USIL
-
-+ COA.4 MUR as response to Harding's report of fossil plants in the putative SIL strata 
-
-
-+ DEV.2a Austen: Fossil from the younger non-Culm strata in south Devon were ML species
-        Displaying them in public, late in 1837: South Devonian fossils dated to somewhere near the base of the ML
-
-
-+ GRE.3a   DLB adopted Austen's ORS(ML) dating of the south Devonian fossils
-           claimed to find evidence structural evidence that the Culm strata were older than south Devonien strata; Culm in the middle of the sequence
-
-+ DEV.2b SED: Determined to retain older strata for his Cambrian;
-              Unease about the elusive unconformity
-
-
-+ DEV 3 MUR: Unease about plants in older north Devonian strata and elusive unconformity
-            Enlarging ORS into a system; its equivalents might contain an intermediate fossil fauna effacing the elsuive sharp distinction between SIL and ML
-            Devonian fauna intermediate between SIL and ML and Devon; 
-            Devon as a major system, contemporary and representative of ORS; ORS local variety
-            Evidence found 1839 in the Rhineland and 1840 in Russia
-
-+ GRE.3b   Williams' partial concession to DEV
-
-+ French Similarities
-
-
- */
 
 
 # Evidence {color: 0}
 
+@include(_GDC_Fig_15_3_5_S0_EV.argdown) 
 @include(_GDC_Fig_15_3_5_S1_EV.argdown) 
-@include(_GDC_Fig_15_3_5_S2a_EV.argdown) 
-@include(_GDC_Fig_15_3_5_S2b_EV.argdown) 
-@include(_GDC_Fig_15_3_5_S3a_EV.argdown)
-@include(_GDC_Fig_15_3_5_S3b_EV.argdown)
+@include(_GDC_Fig_15_3_5_S2_EV.argdown) 
+@include(_GDC_Fig_15_3_5_S3_EV.argdown)
 @include(_GDC_Fig_15_3_5_S4_EV.argdown)
 @include(_GDC_Fig_15_3_5_S5_EV.argdown)
 @include(_GDC_Fig_15_3_5_S6_EV.argdown)
@@ -73,97 +18,80 @@ rausgefallen an dieser Stelle :  GRE.1b   At Bristol: DLB conceded his critics' 
 @include(_GDC_Fig_15_3_5_S8_EV.argdown)
 
 
+
 # Rocks, Fossils and Time - Principles {color: 1}
 
+@include(_GDC_Fig_15_3_5_S0_FC.argdown) 
 @include(_GDC_Fig_15_3_5_S1_FC.argdown) 
-@include(_GDC_Fig_15_3_5_S2a_FC.argdown) 
-@include(_GDC_Fig_15_3_5_S2b_FC.argdown) 
+@include(_GDC_Fig_15_3_5_S2_FC.argdown) 
 @include(_GDC_Fig_15_3_5_S4_FC.argdown) 
-@include(_GDC_Fig_15_3_5_S6_FC.argdown) 
-@include(_GDC_Fig_15_3_5_S7_FC.argdown)
-@include(_GDC_Fig_15_3_5_S8_FC.argdown)
+ 
 
 
+# Characteristica {color: 2}
+
+@include(_GDC_Fig_15_3_5_S1_CHA.argdown) 
+@include(_GDC_Fig_15_3_5_S4_CHA.argdown) 
+@include(_GDC_Fig_15_3_5_S8_CHA.argdown) 
 
 
-# Aporia I : Coal in Ancient Strata {color: 2}
+# CM Plants in Non-CM Strata {color: 3}
 
-@include(_GDC_Fig_15_3_5_S1_A1.argdown) 
-@include(_GDC_Fig_15_3_5_S2b_A1.argdown) 
-@include(_GDC_Fig_15_3_5_S8_A1.argdown)
-
-
-
-# Aporia II : CM Plants in non-CM Strata {color: 3}
-
-@include(_GDC_Fig_15_3_5_S1_A2.argdown) 
-@include(_GDC_Fig_15_3_5_S2a_A2.argdown)
-@include(_GDC_Fig_15_3_5_S2b_A2.argdown)
+@include(_GDC_Fig_15_3_5_S0_A2.argdown) 
+@include(_GDC_Fig_15_3_5_S1_A2.argdown)
 @include(_GDC_Fig_15_3_5_S5_A2.argdown)
 @include(_GDC_Fig_15_3_5_S6_A2.argdown)
 
 
+# Correlations {color: 9}
 
+@include(_GDC_Fig_15_3_5_S1_COR.argdown) 
+@include(_GDC_Fig_15_3_5_S2_COR.argdown) 
+@include(_GDC_Fig_15_3_5_S4_COR.argdown)
+@include(_GDC_Fig_15_3_5_S8_COR.argdown)
+
+ 
 
 # Dating of the Main Culm  {color: 4}
 
+@include(_GDC_Fig_15_3_5_S0_DMC.argdown) 
 @include(_GDC_Fig_15_3_5_S1_DMC.argdown) 
-@include(_GDC_Fig_15_3_5_S2a_DMC.argdown) 
-@include(_GDC_Fig_15_3_5_S4_DMC.argdown)
-@include(_GDC_Fig_15_3_5_S5_DMC.argdown)
-@include(_GDC_Fig_15_3_5_S8_DMC.argdown)
-
+@include(_GDC_Fig_15_3_5_S7_DMC.argdown) 
 
 
 
 # Dating of the Culm Limestone  {color: 5}
 
-@include(_GDC_Fig_15_3_5_S1_DCL.argdown) 
-@include(_GDC_Fig_15_3_5_S2a_DCL.argdown) 
-@include(_GDC_Fig_15_3_5_S3b_DCL.argdown) 
+@include(_GDC_Fig_15_3_5_S0_DCL.argdown) 
 @include(_GDC_Fig_15_3_5_S4_DCL.argdown) 
-@include(_GDC_Fig_15_3_5_S7_DCL.argdown) 
 
 
 
 # Dating of the Non-Culm {color: 6}
 
-@include(_GDC_Fig_15_3_5_S1_DNC.argdown) 
-@include(_GDC_Fig_15_3_5_S3a_DNC.argdown) 
-@include(_GDC_Fig_15_3_5_S5_DNC.argdown)
+@include(_GDC_Fig_15_3_5_S0_DNC.argdown) 
+@include(_GDC_Fig_15_3_5_S3_DNC.argdown) 
+@include(_GDC_Fig_15_3_5_S5_DNC.argdown) 
 @include(_GDC_Fig_15_3_5_S6_DNC.argdown) 
 @include(_GDC_Fig_15_3_5_S7_DNC.argdown) 
-@include(_GDC_Fig_15_3_5_S8_DNC.argdown) 
 
 
 
 # Youngest Devonian Strata {color: 7}
 
+@include(_GDC_Fig_15_3_5_S0_YDS.argdown) 
 @include(_GDC_Fig_15_3_5_S1_YDS.argdown) 
-@include(_GDC_Fig_15_3_5_S2a_YDS.argdown) 
-@include(_GDC_Fig_15_3_5_S3a_YDS.argdown) 
+@include(_GDC_Fig_15_3_5_S3_YDS.argdown) 
+@include(_GDC_Fig_15_3_5_S6_YDS.argdown) 
 @include(_GDC_Fig_15_3_5_S7_YDS.argdown) 
-
 
 
 
 # Gap in the Sequence   {color: 8}
 
+@include(_GDC_Fig_15_3_5_S0_GAP.argdown) 
 @include(_GDC_Fig_15_3_5_S1_GAP.argdown) 
-@include(_GDC_Fig_15_3_5_S2a_GAP.argdown) 
-@include(_GDC_Fig_15_3_5_S3a_GAP.argdown) 
-@include(_GDC_Fig_15_3_5_S3b_GAP.argdown) 
-@include(_GDC_Fig_15_3_5_S4_GAP.argdown)
-@include(_GDC_Fig_15_3_5_S5_GAP.argdown)
-@include(_GDC_Fig_15_3_5_S6_GAP.argdown)
-@include(_GDC_Fig_15_3_5_S7_GAP.argdown)
-@include(_GDC_Fig_15_3_5_S8_GAP.argdown)
-
-OLD 
-
-
-
-
+@include(_GDC_Fig_15_3_5_S6_GAP.argdown) 
 
 
 

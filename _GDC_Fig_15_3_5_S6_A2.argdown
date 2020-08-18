@@ -1,36 +1,62 @@
 
-// [CM and Pre-ORS - Similar Fossils]: In pre-ORS strata, there are fossils similar to those of the CM #GRE
+// ====== Carb Fossils in Pre-ORS strata ==== Some Non-Culm in South Devon ============
 
+//[South Devonian Fossil Fauna]: Around Tor Bay and Netwon Abott, the limestones support not one single SIL fossil 
+// (and no peculiar fish fossil like for example the **Holoptychius**), but many ML shells and a great many new species #ev 
+// [Some South Devon LSTs as ORS]: In south Devon, around Tor Bay and Netwon Abott, the limestones are (upper) ORS in age #DEV #chron-hyp
 
-<South Devon and CM Plants>: If the non-Culm strata are pre-ORS in age and there are no fossils similar to those of the CM in pre-ORS strata, 
-then -  given that ML fossils are similar to CM fossils - the non-Culm strata do not support ML fossils #COA
+[Some South Devon LSTs at Oldest ORS]: In South Devon, some LSTs supporting Carboniferous fossils are at oldest ORS in age #chron-hyp #COA
 
-    (1) [Non-Culm as SIL and CAM]
-    (2) [CM and ML - Similar Fossils]
-    (3) There are no fossils similar to those of the CM in SIL and CAM strata
-         >< [CM and Pre-ORS - Similar Fossils]
+[Some South Devon LSTs at Oldest ML]: In South Devon, some LSTs supporting Carboniferous fossils are at oldest ML in age #chron-hyp 
+        +> [Some South Devon LSTs at Oldest ORS]
+
+[Some South Devon LSTs as ML]: In South Devon, some LSTs supporting Carboniferous fossils are ML in age #chron-hyp
+        +> [Some Non-Culm as ML]
+        -> [Some South Devon LSTs as ORS]
+
+[Some South Devon LSTs as CM]:  In South Devon, some LSTs supporting Carboniferous fossils are CM in age #chron-hyp
+        +> [Some Non-Culm as CM]
+        -> [Some South Devon LSTs as ML]
+        -> [Some South Devon LSTs as ORS]
+
+<NC as Pre-ORS - Carb Fossils - South Devon>: If, in South Devon, some LSTs support Carboniferous fossils and there are no 
+        such fossils in pre-ORS strata, then these strata are at oldest ORS in age #COA
+
+    (1) [Non-Culm as Post-Primary and Pre-NRS]
+    (2) [South Devonian Fossil Fauna]
+    (3) In Pre-ORS strata, there are no Carboniferous fossils
+                 >< [Carb Fossils in Pre-ORS strata]
     ----
-    (4)  There are no Mountain Limestone fossils in south Devonian non-Culm strata
-            -> [South Devonian Fossil Fauna]
+    (4) [Some South Devon LSTs at Oldest ORS]
+                 
+<Some NC at Oldest ML in South Devon - 1>: If, in South Devon, some NC strata, supporting Carboniferous fossils, are at oldest ORS in age, 
+ and are not ORS in age, then these strata are at oldest ML in age #chron-hyp
 
-
-
-//  ML fossils are similar to CM fossils. WIrd das begründet oder ist das eine Evidenz? Es lässt sich begründen...
-
-[CM and ML - Similar Fossils]: In ML strata, there are fossils similar to those of the CM #COA
-
-
-[CM and ML Sufficiently Similar]: ML strata and CM strata are suffienciently similar in age  #COA #aux
-
-
-<Lyellian Principles, ML and CM>: If CM and ML strata are suffienciently similar in age, then they do support similar fossil species #COA
-
-        (1) [L2 - Maximal Difference in Fossils]
-        (2) [Standard Sequence]
-        (3) [CM and ML Sufficiently Similar]
+        (1) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Some South Devon LSTs at Oldest ORS]
+        (3) In South Devon, around Tor Bay and Netwon Abott, the limestones are not ORS in age
+                 >< [Some South Devon LSTs as ORS]
         ----
-        (4) [CM and ML - Similar Fossils]
+        (4) [Some South Devon LSTs at Oldest ML]
+
+<Some NC at Oldest ML in South Devon - 2>: If, in South Devon, some NC strata, supporting Carboniferous fossils, are at oldest ML in age, 
+ and are not ML in age, then these strata are CM in age #chron-hyp
 
 
+        (1) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Some South Devon LSTs at Oldest ML]
+        (3) In South Devon, some NC strata supporting Carboniferous fossils are not ML in age
+                 >< [Some South Devon LSTs as ML]
+        ----
+        (4) [Some South Devon LSTs as CM]
 
-   
+<Some NC at Oldest ML in South Devon - 3>: If, in South Devon, some NC strata, supporting Carboniferous fossils, are at oldest ML in age, 
+ and are not CM in age, then these strata are ML in age #chron-hyp
+
+
+        (1) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Some South Devon LSTs at Oldest ML]
+        (3) In South Devon, some NC strata supporting Carboniferous fossils are not CM in age
+                 >< [Some South Devon LSTs as CM]
+        ----
+        (4) [Some South Devon LSTs as ML]

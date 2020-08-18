@@ -1,0 +1,54 @@
+
+///// Scottish ORS
+//// CFP  
+<Scottland - CFP - 1>: If strata can be identified by means of their CFs and fossils characteristic of the ORS period 
+are some peculiar fossil fish species, then Scottish ORS strata support such species #cor
+
+    (1) [Characteristic Fossil Principle] 
+    (2) [CF - ORS]
+    ----
+    (3) [Scottish ORS - Fossils]
+
+<Scottland - CFP - 2>: If strata can be identified by means of their CFs and Scottish ORS strata support only peculiar fish fossil species,
+ then some of these are characteristic of the ORS period #cor
+
+    (1) [Characteristic Fossil Principle] 
+    (2) [Scottish ORS - Fossils]
+    ----
+    (3)  [CF - ORS]
+
+
+///// CFAP
+<Scottland - CFAP - 1>: If strata can be identified by means of their CFAs and the FA characteristic of the ORS period 
+encompasses only a few peculiar fish fossils, then Scottish ORS strata support such a FA #cor
+
+    (1) [Characteristic Fossil Assemblage Principle] 
+    (2) [CFA - ORS]
+    ----
+    (3) [Scottish ORS - Fossils]
+
+<Scottland - CFAP - 2>: If strata can be identified by means of their CFAs and the Scottish ORS strata support 
+ only a few peculiar fish fossils, then such a FA is characteristic of the ORS period #cor
+
+    (1) [Characteristic Fossil Assemblage Principle] 
+    (2) [Scottish ORS - Fossils]
+    ----
+    (3)  [CFA - ORS]
+
+
+//// CRTP
+<Scottland - CRTP - 1>: If strata can be identified by means of their CRTs and the RT characteristic of the ORS period 
+is red sandstone, then Scottish ORS strata support red sandstone #cor
+
+    (1) [Characteristic Rock Type Principle] 
+    (2) [CRT - ORS]
+    ----
+    (3) [Scottish ORS - Rocks]
+
+<Scottland - CRTP - 2>: If strata can be identified by means of their CRTs and Scottish ORS strata support red sandstone, 
+ then such a RT is characteristic of the ORS period  #cor
+
+    (1) [Characteristic Rock Type Principle] 
+    (2) [Scottish ORS - Rocks]
+    ----
+    (3) [CRT - ORS]

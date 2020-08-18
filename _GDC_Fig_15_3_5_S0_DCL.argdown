@@ -1,0 +1,149 @@
+
+[Some BCL as CM]: Some part of the black Culm Limestone is CM in age #pri #chron-hyp
+
+[Some BCL as ML]: Some part of the black Culm Limestone is ML in age #pri #chron-hyp
+
+[Some BCL as ORS]: Some part of the black Culm Limestone is ORS in age #pri #chron-hyp
+
+[Some BCL as SIL]: Some part of the black Culm Limestone is SIL in age #pri #chron-hyp
+
+[Some BCL as CAM]: Some part of the black Culm Limestone is CAM in age #pri #chron-hyp
+
+[No BCL as CM]: No part of the black Culm Limestone is CM in age #pri #chron-hyp
+        >< [Some BCL as CM]
+
+[No BCL as ML]: No part of the black Culm Limestone is ML in age #pri #chron-hyp
+        >< [Some BCL as ML]
+
+[No BCL as ORS]: No part of the black Culm Limestone is ORS in age #pri #chron-hyp
+        >< [Some BCL as ORS]
+
+[No BCL as SIL]: No part of the black Culm Limestone is SIL in age #pri #chron-hyp
+        >< [Some BCL as SIL]
+
+[No BCL as CAM]: No part of the black Culm Limestone is CAM in age #pri #chron-hyp
+        >< [Some BCL as CAM]
+
+
+
+
+[BCL as Post-Primary and Pre-NRS]: The black Culm Limestone is older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
+<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, ORS nor SIL in age, then it is CAM in age #pri #chron-hyp
+    
+    (1) [No BCL as CM]  
+    (2) [No BCL as ML] 
+    (3) [No BCL as ORS] 
+    (4) [No BCL as SIL]
+    (5) [Standard Sequence]
+    (6) [BCL as Post-Primary and Pre-NRS]
+    ----
+    (7) [Some BCL as CAM]
+
+
+
+<BCL as Conformable Formation - ML Missing 1>: If there are some CM but no ML BCL strata, then there are no ORS BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CM]
+        (3) [No BCL as ML]
+        ----
+        (4) [No BCL as ORS]
+
+<BCL as Conformable Formation - ML Missing 2>: If there are some ORS but no ML BCL strata, then there are no CM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [No BCL as ML]
+        ----
+        (4) [No BCL as CM]
+
+<BCL as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS BCL strata, then there are no SIL BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ML]
+        (3) [No BCL as ORS]
+        ----
+        (4) [No BCL as SIL]
+
+<BCL as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS BCL strata, then there are no ML BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as SIL]
+        (3) [No BCL as ORS]
+        ----
+        (4) [No BCL as ML]
+
+<BCL as Conformable Formation - SIL Missing 1>: If there are some ORS but no SIL BCL strata, then there are no CAM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [No BCL as SIL]
+        ----
+        (4) [No BCL as CAM]
+
+<BCL as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL BCL strata, then there are no ORS BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CAM]
+        (3) [No BCL as SIL]
+        ----
+        (4) [No BCL as ORS]
+
+
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+[BCL as CAM]: The whole BCL strata are CAM in age #chron-hyp
+        +> [No BCL as CM]  
+        +> [No BCL as ML] 
+        +> [No BCL as ORS] 
+        +> [No BCL as SIL]
+        +> [Some BCL as CAM]   
+
+<BCL as CAM> #chron-hyp
+
+        (1) [No BCL as CM]
+        (2) [No BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [Some BCL as CAM]
+        ----
+        (6) [BCL as CAM]
+
+
+<BCL as CAM - CRTP - Devon>: If strata can be identified by means of their characteristic rock type and 
+the BCL strata are CAM in age, then they are of characteristic CAM rock type #GRE
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [BCL as CAM]
+    ----
+    (3)  [BCL CRT - CAM]
+        
+
+<BCL as CAM - CRTP - Devon - 2>: If strata can be identified by means of their characteristic rock type and 
+the BCL strata are of characteristic CAM rock type, then they are CAM in age #GRE
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [BCL CRT - CAM]
+    ----
+    (3)  [BCL as CAM]
+
+
+[BCL as ML]: The BCL strata are ML in age #chron-hyp
+            +> [No BCL as CM]
+            +> [Some BCL as ML]
+            +> [No BCL as ORS]
+            +> [No BCL as SIL]
+            +> [No BCL as CAM]
+
+<BCL as ML> #chron-hyp
+
+        (1) [No BCL as CM]
+        (2) [Some BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [No BCL as CAM]
+        ----
+        (6) [BCL as ML]

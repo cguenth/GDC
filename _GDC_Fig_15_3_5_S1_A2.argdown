@@ -1,28 +1,24 @@
 
+// ====== Carboniferous Fossils in Pre-ORS strata ============
 
-[Flora Similarities as Best Explanation]: The best explanation of the existence of coal in some strata G 
-is the similarity between G's flora and the one of the CM (the CM being noted for the great amounts of coal they contain) #GRE #aux
+[Carb and Pre-ORS - Sufficiently Different]: Carboniferous strata and pre-ORS strata are sufficiently different #COA
 
-         
-[CM and Pre-ORS - Similar Fossils]: In pre-ORS strata, there are fossils similar to those of the CM #GRE
+// LP- ib : If A and B are sufficiently unsimilar in age, then they have no fossil species in common
+<LP, Pre-ORS and Carb - 1>: If Carboniferous and pre-ORS strata are sufficiently different in age, then 
+ there are no Carboniferous fossils in pre-ORS strata #COA
 
+        (1) [Lyellian Principle]
+        (2) [Carb and Pre-ORS - Sufficiently Different]
+        ----
+        (3) In pre-ORS strata, there are no Carboniferous fossils
+                 >< [Carb Fossils in Pre-ORS strata]
 
-<Coal and CM Plants>: If the similarity between the floras of the Coal Measures and some pre-ORS strata G is the best explanation 
-for the existence of coal deposists in G, then G's flora is similar to the one of the CM. #GRE
+<LP, Pre-ORS and Carb - 2>: If there are no Carboniferous fossils in pre-ORS strata, then 
+ Carboniferous and pre-ORS strata are sufficiently different in age #COA
 
-    (1) [Coal in Ancient Strata]
-    (2) [Flora Similarities as Best Explanation]
-    ----
-    (3) [CM and Pre-ORS - Similar Fossils]
- 
-     
-<Culm and CM Plants>: If the Devon Culm strata are pre-ORS in age and there are no CM fossil plants in pre-ORS strata, 
-then there are no CM fossil plants in the Devon Culm strata  #GRE
+        (1) [Lyellian Principle]
+        (2) In pre-ORS strata, there are no Carboniferous fossils
+                 >< [Carb Fossils in Pre-ORS strata]
+        ----
+        (3) [Carb and Pre-ORS - Sufficiently Different]
 
-    (1) [Main Culm as CAM]
-    (2) [Standard Sequence]
-    (3) There are no CM fossil plants in pre-ORS strata
-         >< [CM and Pre-ORS - Similar Fossils]
-    ----
-    (4) There are no CM Plants in Devon Culm strata
-         -> [CM Plants in Devon Culm]

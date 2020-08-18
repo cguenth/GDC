@@ -1,0 +1,49 @@
+
+
+[CFA - ORS - V2]:  **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+ ORS strata encompasses only a few fossils, most of them peculiar fish fossils only known from the ORS #cha
+    -> [CFA - ORS - II - V2]
+    <+ [CFA - ORS]
+    +> [CFA - ORS - I - V2]
+
+[CFA - ORS - I - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+ the CFA of ORS strata includes peculiar fish fossils only known from the ORS #cha
+
+[CFA - ORS - II - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+ ORS strata support a FSA intermediate in character between those of SIL strata and ML strata #cha
+    <+ [CFA - ORS - II]
+
+
+[CRT - ORS - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+ the CRT supported by ORS strata is red sandstone #cha
+    <+ [CRT - ORS]
+
+/*
+[Lyellian Principle - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, for two strata A and B, it holds: 
+(ia) The more A and B are similar in their FSAs, the more they are similar in age, 
+ (ib) if A and B are sufficiently unsimilar in age, then they have no fossil species in common, and (iia) the more A and B are similar in age, 
+  the more they are similar in their FSAs #dat-met
+
+[ORS as Intermediate]: ORS strata are intermediate in age between SIL strata and ML strata #cha
+                <+ [Standard Sequence]
+*/
+
+<LP - CFA ORS - V2 - 1>: Given a revised Lyellian Principle and ORS intermediate in age between SIL and ML, then it holds: 
+ **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+  ORS strata support a FSA intermediate in character between those of SIL strata and ML strata #cha
+        
+        (1) [Lyellian Principle - V2]
+        (2) [ORS as Intermediate]
+        ----
+        (3) [CFA - ORS - II - V2]
+
+<LP - CFA ORS - V2 - 2>:  If, **given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+  ORS strata support a FSA intermediate in character between those of SIL strata and ML strata and a revised LP holds, then 
+  ORS is intermediate in age between SIL and ML #cha
+        
+        (1) [Lyellian Principle - V2] 
+        (2) [CFA - ORS - II - V2]
+        ----
+        (3) [ORS as Intermediate]
+
+

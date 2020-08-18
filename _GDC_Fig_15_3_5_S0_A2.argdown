@@ -1,0 +1,19 @@
+
+
+ // ====== Carboniferous Fossils in Pre-ORS strata ============
+
+[Carb Fossils in Pre-ORS strata]: In pre-ORS strata, there are Carboniferous fossils #GRE
+
+
+// [CM Plants in Devon Culm]: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata (in close association with seams of imperfect anthracite) #ev
+<MC as Pre-ORS - Carb Fossils>:  If the MC strata are pre-ORS in age and there are no Carboniferous fossils in pre-ORS strata, 
+then there are no Carboniferous fossils in MC strata #GRE
+
+    (1) [Standard Sequence]
+    (2) [MC at Youngest SIL]
+    (3) In pre-ORS strata, there are no Carboniferous fossils
+         >< [Carb Fossils in Pre-ORS strata]
+    ----
+    (4) In MC strata, there are no Carboniferous fossils
+          >< [CM Plants in Devon Culm]
+

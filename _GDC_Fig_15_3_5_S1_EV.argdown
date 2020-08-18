@@ -1,32 +1,23 @@
 
-
-[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev
-
 /*
-S.93 On the west coast of Devon, near Bideford, there are seams of coal (culm or anthracite) 
-and also some fossil plants in strata closely associated with it
+S. 83 OKT 1834 
+"[...] the ORS was divided into three parts, icluding a middle part with fossil fish. MUR insisted on the virtual absence of any plant fossils [...]
+The lowest part of the of the ORS, according to MUR, contained a few fossil shells and passed conformably downward into the UGRE series"
 
-culm : British English: Imperfect anthracite of Devon and Cornwall
-        originating during the Carboniferous Period that occur in southwest England
-        They are so called because of the occasional presence of a soft, often lenticular (linsenförmig), sooty (rußig) coal
-        which in Devon is known as Culm
-anthracite: A hard, compact variety of coal (highest carbon content, fewest impurities)
+S.263 JAN 39
+"[The SIL region] contained a "true zoological transition" between the UCAM & LSIL, LSIL & USIL, USIL & LORS, ML & CM, CM & NRS. [...] 
+There was no faunal graduation between LORS (which contained a few residual fossil like those of the USIL) and the ML. Between those fomrations 
+lay the middle part of the ORS, with a peculiar fauna consisting mainly of the bizarre fish that Agassiz had described for him [Holoptychius] 
+and the UORS with virtually no fossis at all."
 
-OLD: [CM Plants in Devon Culm]: In Devon, the Culm contain Coal Measures fossil plants #ev #E2
+S.277 FEB 39
+"[MUR] thought the ORS probably of marine origin, since in Siluria its lowest part contained fossils similar to those of the 
+underlying SIL. [...] the rest of the ORS in Siluria, and the wholeof it in the Scottish Highlands, contained little else than fossil fish, and was 
+conspicuously lackin gin any ordinary marine fossils, such as the mollusks, brachiopods, and corals that characterized the SIL below and ML above."
+
 */
 
-[CM Plants in Devon Culm]: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata 
-(in close association with seams of imperfect anthracite) #ev
+[Scottish ORS - Rocks]: Scottish ORS strata support a distinct RT, namely red sandstone #ev
 
-[North of Exmoor]: Passing Exmoor northwards, the strata become older #ev
 
-[Trough through Exmoor]: There is a trough through Exmoor - formed by a band of limestone running out to the north coast at Ilfracombe 
-and south of Barnstaple #ev
- 
-// S.78
-
-[Instances of Coal in Ancient Strata]: In Munster, North America and North Devon there are coal deposits in pre-Old Red Sandstone strata #ev
-
-// S.101?? DLB's rock specimens looked like ordinary pre-ORS strata
-
-[Devonshire - Characteristic CAM Rock Type]: In Devon, *all* the strata - older than the New Red Sandstone - are of carachteristic CAM appearance #ev
+[Scottish ORS - Fossils]: Scottish ORS strata support only a few peculiar fish fossils not known from other strata (e.g **Holoptychius**), lacking in any ordinary marine fossils (such as mollusks, brachiopods and corals) #ev

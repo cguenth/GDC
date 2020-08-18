@@ -1,101 +1,69 @@
 
-[Yorkshire Limestone as ML]: In Yorkshire, the limestone is ML in age #COA #chron-hyp
 
-// [CFAP - 2]: If two strata support the same characteristic fossil assemblages, then they are of the same age
+/// ========== BCL as ML ===========
+
+//// CFAP V2
+
+/* Zu Beginn der Debatte wird zunächst von manchen behauptet, dass zu wenig Fossilien des BCL in Betracht gezogen wurden. 
+(z.B von DLB? Vielleicht auch MUR?) Später, spätestens zum Zeitpunkt S9 nach Einführung von PHIL's Sammlung, ist dies nicht mehr der Fall. 
+(Theorietisch könnte noch jemand behaupten dass die Region selbst nicht aussreichend groß ist)*/
+
+[BCL - FA - No LV]: BCL FA is no local variation that is (i) the region under study as well as (ii) the amount 
+ of fossil species is sufficiently large #cha
+
+/* Yorkshire gilt zu jedem Zeitpunkt als Referenz für ML FA */
+
+[Yorkshire ML - FA - No LV]: Yorkshire ML FA is no local variation that is (i) the region under study as well as (ii) the amount 
+ of fossil species is sufficiently large #cha
 
 
-<BCL as ML - Yorkshire - CFA>: If strata can be identified by means of their characteristic fossil assemblages and 
-the BCL is not as old as the Yorkshire limestone, namely ML, then the two limestones do not support 
-the same characteristic fossil assemblages #COA
+<BCL as ML - CFAP V2 - 1>: If strata can be identified by means of their CFAs and 
+the BCL strata are ML in age, then most of their fossil species are known from Yorkshire ML strata #DEV
 
-        (1) [CFAP - 2] 
-        (2) The BCL is not ML in age
-                >< [Some BCL as ML]
-        (3) [Yorkshire Limestone as ML]
+        (1) [BCL - FA - No LV]
+        (2) [Yorkshire ML - FA - No LV]
+        (3) [Characteristic Fossil Assemblage Principle - V2] 
+        (4) [BCL as ML]
         ----
-        (4) BCL and Yorkshire limestone do not support the same characteristic fossil assemblages
-                -> [Yorkshire and Culm Limestone]
+        (5) [BCL - FA]
+                 
+<BCL as ML - CFAP V2 - 2>: If strata can be identified by means of their CFAs and 
+most of the fossil species supported by BCL strata are known from Yorkshire ML strata, then they are are ML in age #DEV
 
-// [CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age
-
-<BCL as ML - Yorkshire - RTC>: If strata can be identified by means of their characteristic rock types and 
-the BCL is not as old as the Yorkshire limestone, namely ML, then the two limestones do not support 
-the same characteristic rock types #COA
-
-        (1) [CRTP - 2] 
-        (2) The BCL is not ML in age
-                >< [Some BCL as ML]
-        (3) [Yorkshire Limestone as ML]
+        (1) [BCL - FA - No LV]
+        (2) [Yorkshire ML - FA - No LV]
+        (3) [Characteristic Fossil Assemblage Principle - V2] 
+        (4) [BCL - FA]
         ----
-        (4)  BCL and Yorkshire limestone do not support the same characteristic rock type
-                -> [Yorkshire and Culm Limestone]
+        (5) [BCL as ML]
 
 
+/* HIER WEGGELASSEN, weil aufgrund von 
+[ML and Pennines]: All over the Pennines, there is a huge lateral variation in the ML strata RT #ev
+folgendes nicht behauptet werden kann: [Yorkshire ML RT - No LV]
 
-[BCL as ML]: The black Culm Limestone is nothing but ML in age #COA #chron-hyp 
-        -> [Some BCL as CM]
-        +> [Some BCL as ML]
-        -> [Some BCL as ORS]
-        -> [Some BCL as SIL]
-        -> [Some BCL as CAM]
+//// CRTP V2
 
-<Redating the BCL - COA.2.b> #COA #chron-hyp
+//[BCL - RT]: The rock type supported by BCL strata are known from Yorkshire ML strata #ev
+<BCL as ML - CRTP V2 - 1>: If strata can be identified by means of their CRTs and 
+BCL strata are ML in age, then their RT is known from Yorkshire ML strata #COA
 
-    (1) No CM BCL strata
-           >< [Some BCL as CM]
-    (2) [Some BCL as ML]
-    (3) No ORS BCL strata
-            ><  [Some BCL as ORS]
-    (4) No SIL BCL strata
-            >< [Some BCL as SIL]
-    (5) No CAM BCL strata
-            >< [Some BCL as CAM]
-    ----
-    (6) [BCL as ML]
-                     
+        (1) [Characteristic Rock Type Principle - V2]
+        (2) [Devon ML - Body of Evidence - Rocks]
+        (3) [Devon ML - Body of Evidence - Region]
+        (4) [BCL as ML]
+        (5) [Yorkshire ML RT - No LV]
+        ----
+        (6) [BCL - RT]
 
-[BCL as ORS]: The black Culm Limestone is nothing but ORS in age #DEV #chron-hyp 
-        -> [Some BCL as CM]
-        -> [Some BCL as ML]
-        +> [Some BCL as ORS]
-        -> [Some BCL as SIL]
-        -> [Some BCL as CAM]
+<BCL as ML - CRTP V2 - 2>: If strata can be identified by means of their CRTs and 
+ the RT supported by BCL strata is known from Yorkshire ML strata, then they are ML in age #COA
 
-<Redating the BCL - DEV.1> #DEV #chron-hyp
-
-    (1) No CM BCL strata
-           >< [Some BCL as CM]
-    (2) No ML BCL strata
-           >< [Some BCL as ML]
-    (3) [Some BCL as ORS]
-    (4) No SIL BCL strata
-            >< [Some BCL as SIL]
-    (5) No CAM BCL strata
-            >< [Some BCL as CAM]
-    ----
-    (6) [BCL as ORS]
-                     
-/*
-[BCL as ORS]
-    -> [BCL as CAM]
-    - [BCL as CAM]
-    -> [BCL as CM]
-    - [BCL as CM]
-    -> [BCL as SIL]
-    - [BCL as SIL]
-    -> [BCL as SIL and ORS]
-    - [BCL as SIL and ORS]
-    -> [BCL as ML]
-    - [BCL as ML]*/
-
-/*
-[BCL as ML]
-    -> [BCL as CAM]
-    - [BCL as CAM]
-    -> [BCL as CM]
-    - [BCL as CM]
-    -> [BCL as SIL]
-    - [BCL as SIL]
-    -> [BCL as SIL and ORS]
-    - [BCL as SIL and ORS]*/
-    
+        (1) [Characteristic Rock Type Principle - V2]
+        (2) [Devon ML - Body of Evidence - Rocks]
+        (3) [Devon ML - Body of Evidence - Region]
+        (4) [BCL - RT]
+        (5) [Yorkshire ML RT - No LV]
+        ----
+        (6) [BCL as ML]
+*/

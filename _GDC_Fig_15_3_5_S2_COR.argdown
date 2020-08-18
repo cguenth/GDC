@@ -1,0 +1,69 @@
+
+
+[Pembrokeshire - Characteristic CAM Rock Type]: Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are of charactersitic CAM rock type #cor
+    +> [CRT - CAM]
+    +> [Pembrokeshire - Appearance]
+
+[Pembrokeshire - CM in Age]: Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are CM in age #cor
+
+
+<Pembrokeshire - CRTP>: If some strata near Pembrokeshire are of characteristic CAM rock type, then they are CAM in age #cor
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [Pembrokeshire - Characteristic CAM Rock Type]
+    ----
+    (3)  Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are CAM in age
+            -> [Pembrokeshire - CM in Age]
+
+
+<Pembrokeshire - LV in Sedimentation>: If some strata are CM in age and pre-ORS in appearance, then there are LV in sedimentation during the CM era #cor
+
+    (1) [Pembrokeshire - Appearance]
+    (2) [Pembrokeshire - CM in Age]
+    ----
+    (3) [LV in Sedimentation - CM]
+
+
+
+/*   
+WEGGELASSEN
+
+(December 1834) *DLB Springs to His Own Defence 
+
+S.106 "in the French Alps some characteristic Oolitic (or more precisely, Liassic)" fossil belemnites occured in strata 
+sandwiched among some containing fossil plants of CM appearance ... Brogniart, a leading specialist on fossil plants, had confirmed 
+that the plants were indeed of CM species"
+
+Belemnites were interpreted as the internal skeletons of cephalopod mollusks and were only known from the Oolitic and the Cretaceous groups
+
+Die Belemniten (Belemnoidea) sind eine diverse Großgruppe fossiler Kopffüßer (Cephalopoda). 
+Sie existierten vom Unterkarbon (Mississippium) bis zum Ende der Kreidezeit
+Die zoologische Klasse der Kopffüßer (Cephalopoda, von altgriechisch κεφαλή kephalē „Kopf“ und ποδ- pod- „Fuß“) ist eine Tiergruppe, 
+die zu den Weichtieren (Mollusca) gehört und nur im Meer vorkommt. 
+
+S.121 "...discovery of Oolitic (Liassic) belemnites and CM plants in closely associated strata in the French Alps. 
+Judging only from organic remains, this would imply the absurdity of a rock both Lias and CM at the same time" 
+
+
+// [French Alps]: In the French Alps, there are some characteristic Liassic fossil belemnites and CM plants in closely associated strata #ev #E7b
+
+[Characteristic CM Fossils in French Alps]: The French alpine plant fossils, closely associated with Oolitic belemnites, are characteristic of the CM era #COA #fos-hyp
+             >< [No Characteristic Fossil]
+
+[Characteristic Oolitc Fossils in French Alps]: The French alpine belemnites, closely associated with CM plant fossils, are characteristic of the Oolitic period #COA #fos-hyp
+            >< [No Characteristic Fossil]
+
+<Characteristic Fossils and French Alps - CFP>: If strata can be identified by their characteristic fossils and no strata are Oolitc and CM at the same time, 
+then there are no strata with characteristic Oolitic fossils and characteristic CM fossils #COA
+    
+    (1)  There are no strata both Oolitic and CM at the same time
+            <+ [Standard Sequence]
+    (2) [Characteristic CM Fossils in French Alps]
+    (3) [Characteristic Oolitc Fossils in French Alps]
+    (4) [Characteristic Fossil Principle]
+    ----
+    (5) There are no strata with both characteristic Oolitic fossils and characteristic CM fossils
+              >< [French Alps]
+
+*/
+

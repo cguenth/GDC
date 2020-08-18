@@ -1,0 +1,32 @@
+
+
+//// MC FA - No LV
+
+/* Zu Beginn der Debatte wird zunächst von manchen behauptet, dass zu wenig Fossilien des MC in Betracht gezogen wurden. 
+(z.B von DLB) Später, spätestens zum Zeitpunkt S9 nach Einführung von PHIL's Sammlung, ist dies nicht mehr der Fall. 
+(Theorietisch könnte noch jemand behaupten dass die Region selbst nicht aussreichend groß ist)*/
+
+[MC - FA - No LV]: MC FA is no local variation that is (i) the region under study as well as (ii) the amount 
+ of fossil species is sufficiently large #cha
+
+/* Hier (S.239/240 LIN) lediglich folgendes behauptet: ""a few species only" from the Culm were the same as those in the ordinary CM, while "the bulk" 
+of the specimens belonged to species he could not match from elsewhere" */
+
+
+<No Main Culm as CM - CFAP V2 - Devon - 1>: If strata can be identified by means of their CFAs and 
+ MC strata are CM in age, then most of their fossil species are known from other CM strata #GRE
+
+        (1) [Characteristic Fossil Assemblage Principle - V2] 
+        (2) [MC - FA - No LV]
+        (4) [Main Culm as CM]
+        ----
+        (5) [MC - FA]
+
+<No Main Culm as CM - CFAP V2 - Devon - 2>: If strata can be identified by means of their CFAs and 
+most of fossil species supported by MC strata are known from CM strata, then they are CM in age #GRE
+
+        (1) [Characteristic Fossil Assemblage Principle - V2] 
+        (2) [MC - FA - No LV]
+        (4) [MC - FA]
+        ----
+        (5) [Main Culm as CM]

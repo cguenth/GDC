@@ -1,0 +1,63 @@
+===
+title: Reconstruction of the GDC 
+author: Corinna Günth-Stiegeler
+date: 24/01/2020  
+color:
+    tagColors:
+        GRE: "#b8860b"
+        COA: "#ff8c00"
+        DEV: "#eead0e"
+        ev:  "#ffff00"
+        pri: "#f5f5dc"
+        dat-met: "#c6e2ff"
+        cha: "#b9d3ee"
+        cor: "#9acd32"
+    groupColorScheme:
+        - "#ffff00"
+        - "#c6e2ff"
+        - "#b9d3ee"
+        - "#9fb6cd"
+        - "#eedfcc"
+        - "#eeb4b4"
+        - "#cd9b9b"
+        - "#8b6969"
+        - "#698b69"
+        - "#9acd32"
+group:
+    groupDepth: 3
+dot: 
+    graphVizSettings: 
+      rankdir: TB  
+      ranksep: 1
+model:
+    mode: strict
+===
+
+[Standard Sequence]:  Given the strata are undisturbed, the Primary strata are overlain by Cambrian strata, Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata, New Red Sandstone strata and Oolitic stata, respectively #pri
+
+[Formation of strata]: Strata are originally formed from sediments that were deposited in flat horizontal sheets - the younger sediments 
+deposited on older ones. #pri
+
+
+/*selection:
+    selectedTags:
+        - GRE
+        - pri
+        - ev
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+/*selection:
+    selectedTags:
+        - chron-hyp 
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+/*selection:
+    selectedTags:
+        - dat-met
+        - roc-hyp
+        - fos-hyp
+        - ev
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/

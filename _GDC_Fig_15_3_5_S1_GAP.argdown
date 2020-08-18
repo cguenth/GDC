@@ -1,13 +1,185 @@
 
-[Gap in a Sequence of Strata]: There is a gap in a local sequence of strata, iff there are strata juxtaposed belonging to different 
-but not successive geological periods #pri
 
-<Unbroken Sequence - GRE.1a>: If, in Devon, all the strata are Cambrian in age, i.e. belonging to the same geological period, then there is no gap in the 
-local sequence. #GRE
+//// A UND B <=> E  & C UND D <=> E : Macht das Sinn????
+[Conformable Passages - 2]: The following passages are conformable: MC and BCL, BCL and NC #struc-hyp
+    +> [Unbroken Sequence of Devon Strata]
+    +> [Devon Strata - Temporal Order - 2]
+    +> [Conformable Passage - MC and BCL]
+    +> [Conformable Passage - BCL and NC]
 
-    (1) [Gap in a Sequence of Strata]
-    (2) [Main Culm as CAM]
-    (3) [BCL as CAM]
-    (4) [Non-Culm as CAM]
+[Conformable Passage - BCL and NC]: The passage between BCL and NC strata is conformable #struc-hyp
+
+<Conformable Passages - 2.2> #pri
+
+       (1) [Conformable Passage - MC and BCL]
+       (2) [Conformable Passage - BCL and NC]
+       ----
+       (3) [Conformable Passages - 2]
+
+<Unbroken Sequence - MC YDS - 2>: If NC strata are older than BCL strata and BCL strata are older than MC strata, 
+ and in Devon, the sequence is unbroken, then, all passages between them are conformable #DEV #pri
+
+    (1)  [Unbroken Sequence of Devon Strata]
+    (2)  [Devon Strata - Temporal Order - 2]
     ----
-    (5) [Unbroken Sequence of Devon Strata]
+    (3) [Conformable Passages - 2]
+
+
+///// Conformable Passage Between BCL and NC ---- NC Older Than BCL ----- Consequences
+
+<NC Older Than BCL - BCL at Oldest CM - 1>: If BCL strata, passing conformably into NC strata, are at oldest CM in age and 
+ there are no CM NC strata, then there are some ML NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as CM]
+        (5) [No BCL as ML]
+        (6) [No Non-Culm as CM]
+        ----
+        (7) [Some Non-Culm as ML]
+
+
+
+<NC Older Than BCL - BCL at Oldest CM - 2>: If BCL strata, passing conformably into NC strata, are at oldest CM in age and 
+ there are no ML NC strata, then there are some CM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as CM]
+        (5) [No BCL as ML]
+        (6) [No Non-Culm as ML]
+        ----
+        (7) [Some Non-Culm as CM]
+
+<NC Older Than BCL - BCL at Oldest ML - 1>:  If BCL strata, passing conformably into NC strata, are at oldest ML in age and 
+ there are no ML NC strata, then there are some ORS NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as ML]
+        (5) [No BCL as ORS]
+        (6) [No Non-Culm as ML]
+        ----
+        (7) [Some Non-Culm as ORS]
+
+<NC Older Than BCL - BCL at Oldest ML - 2>: If BCL strata, passing conformably into NC strata, are at oldest ML in age and 
+ there are no ORS NC strata, then there are some ML NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as ML]
+        (5) [No BCL as ORS]
+        (6) [No Non-Culm as ORS]
+        ----
+        (7) [Some Non-Culm as ML]
+
+
+
+<NC Older Than BCL - BCL at Oldest ORS - 1>: If BCL strata, passing conformably into NC strata, are at oldest ORS in age and 
+ there are no ORS NC strata, then there are some SIL NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as ORS]
+        (5) [No BCL as SIL]
+        (6) [No Non-Culm as ORS]
+        ----
+        (7) [Some Non-Culm as SIL]
+
+<NC Older Than BCL - BCL at Oldest ORS - 2>: If BCL strata, passing conformably into NC strata, are at oldest ORS in age and 
+ there are no SIL NC strata, then there are some ORS NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as ORS]
+        (5) [No BCL as SIL]
+        (6) [No Non-Culm as SIL]
+        ----
+        (7) [Some Non-Culm as ORS]
+
+<NC Older Than BCL - BCL at Oldest SIL - 2.1>: If BCL strata, passing conformably into NC strata, are at oldest SIL in age and 
+ there are no SIL NC strata, then there are some CAM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as SIL]
+        (5) [No BCL as CAM]
+        (6) [No Non-Culm as SIL]
+        ----
+        (7) [Some Non-Culm as CAM]
+
+<NC Older Than BCL - BCL at Oldest SIL - 2.2>: If BCL strata, passing conformably into NC strata, are at oldest SIL in age and 
+ there are no CAM NC strata, then there are some SIL NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as SIL]
+        (5) [No BCL as CAM]
+        (6) [No Non-Culm as CAM]
+        ----
+        (7) [Some Non-Culm as SIL]
+
+//// THe other way around
+
+<Conformable Passage Between BCL and NC - Some NC as ML>: If BCL strata are younger than NC strata and  
+ there are some ML NC strata, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [BCL as Post-Primary and Pre-NRS]
+        (4) [Some Non-Culm as ML]
+        ----
+        (5) [Conformable Passage - BCL and NC]
+
+
+<Conformable Passage Between BCL and NC - Some NC as ORS - 1>: If NC strata are older than BCL strata 
+ and some BCL as well as NC strata are ORS in age, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Some BCL as ORS]
+       (5) [Some Non-Culm as ORS]
+        ----
+       (6) [Conformable Passage - BCL and NC]
+
+<Conformable Passage Between BCL and NC - Some NC as ORS - 2>: If NC strata are older than BCL strata 
+ and some BCL and NC strata are ML and ORS in age, respectively, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Some BCL as ML]
+       (5) [Some Non-Culm as ORS]
+        ----
+       (6) [Conformable Passage - BCL and NC]
+
+
+<Conformable Passage Between BCL and NC - Some NC as SIL - 1>: If NC strata are older than BCL strata 
+ and some BCL as well as NC strata are SIL in age, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Some BCL as SIL]
+       (5) [Some Non-Culm as SIL]
+        ----
+       (6) [Conformable Passage - BCL and NC]
+
+<Conformable Passage Between BCL and NC - Some NC as SIL - 2>: If NC strata are older than BCL strata 
+ and some BCL and NC strata are ORS and SIL in age, respectively, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Some BCL as ORS]
+       (5) [Some Non-Culm as SIL]
+        ----
+       (6) [Conformable Passage - BCL and NC]
+
+
+<Conformable Passage Between BCL and NC - Some BCL as CAM >: If NC strata are older than BCL strata 
+ and BCL strata are at oldest CAM in age, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Non-Culm as Post-Primary and Pre-NRS]
+       (4) [Some BCL as CAM]
+        ----
+       (5) [Conformable Passage - BCL and NC]

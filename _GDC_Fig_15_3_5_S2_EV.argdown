@@ -1,0 +1,71 @@
+
+
+/*
+DEC 1834
+"Analogous cases of anthracite in the Greywacke of Normandy (in the Bocage)"
+
+DEC 1834 and JAN 1835
+"There were indeed analogous cases [to that one in North Devon] in northwest France, where coal seams in the *terrain de transition* 
+were associated with fossil plants, of which some at least were referable to species of the *terrain houiller* or CM ...
+Of 25 grauwacke plant species so far identified from northwest France only 4 were also known from in the Carboniferous...
+... Between the grauwacke flora of northwest France and the one of the true CM, there are enough differences to show that 
+they belong to different formations and enough similarities not to consider the culm plants of North Devon as an anomaly."
+*/
+
+
+//[Carb Fossils in Pre-ORS strata]: In pre-ORS strata, there are Carboniferous fossils #GRE
+[Northwest France]: In northwest France, in pre-ORS strata, associated with seams of coal, there are some CM fossil plants #ev 
+     +> [Carb Fossils in Pre-ORS strata]
+
+
+// S.101 GREE and BUCK had long mistaken the true age of some of the CM in Pembrokeshire (southwest Wales), because they were so much like pre-ORS in appearance
+// OLD: [Pembrokeshire]: Near Pembrokeshire (southwest Wales), some strata are CM in age, but pre-ORS in appearance  #ev  
+[Pembrokeshire - Appearance]: Near Pembrokeshire (southwest Wales), some strata are pre-ORS in appearance #ev
+
+/*
+S. 122/3 FEB 1835 
+
+DLB "characteristc fossils as a "hasty generalization" [...] utterly at variance with what was known from the present geographical distribution of organsisms"
+
+
+PHIL ""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+     because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time"
+
+     "Lyell's assumption of a uniform rate of organic change was itself questionable, ... a fully ecological point of view would have to allow
+     for the possibility that fossils might charcterize particular environments far more than particular periods."
+
+Vergleiche auch Späteres:
+
+S.220 OCT 1837
+
+"[DLB] attributed all the apparant anomalies that had arisen in [AUS's] region to the diversity of local environmental conditions at 
+     the epoch of the fossil potting there"
+ 
+*/
+
+
+[LV in Fauna and Flora -Today]: Today, there are local variations in fauna and flora #ev
+
+/*   
+WEGGELASSEN
+
+DEC 1834  -  DLB Springs to His Own Defence 
+
+S.106 "in the French Alps some characteristic Oolitic (or more precisely, Liassic)" fossil belemnites occured in strata 
+sandwiched among some containing fossil plants of CM appearance ... Brogniart, a leading specialist on fossil plants, had confirmed 
+that the plants were indeed of CM species"
+
+Belemnites were interpreted as the internal skeletons of cephalopod mollusks and were only known from the Oolitic and the Cretaceous groups
+
+Die Belemniten (Belemnoidea) sind eine diverse Großgruppe fossiler Kopffüßer (Cephalopoda). 
+Sie existierten vom Unterkarbon (Mississippium) bis zum Ende der Kreidezeit
+Die zoologische Klasse der Kopffüßer (Cephalopoda, von altgriechisch κεφαλή kephalē „Kopf“ und ποδ- pod- „Fuß“) ist eine Tiergruppe, 
+die zu den Weichtieren (Mollusca) gehört und nur im Meer vorkommt. 
+
+S.121 "...discovery of Oolitic (Liassic) belemnites and CM plants in closely associated strata in the French Alps. 
+Judging only from organic remains, this would imply the absurdity of a rock both Lias and CM at the same time" 
+
+
+[French Alps]: In the French Alps, there are some Oolitic fossil belemnites and CM plants in closely associated strata #ev
+
+*/

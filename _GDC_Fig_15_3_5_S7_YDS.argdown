@@ -1,22 +1,21 @@
 
 
-
-<Non-Culm as Youngest Strata -  GRE.3a>: If, the Culm strata are SIL and some south Devonian limestones upper ORS in age, 
- then the youngest Devonian strata are some south Devonian limestones #GRE #chron-hyp
-
-    (1) [Main Culm as SIL]
-    (2) [BCL as SIL]
-    (3) [Non-Culm as CAM, SIL and ORS]
-    (4) [Some South Devon LSTs as Upper ORS]
+/* [Sequence of Strata - Tor Bay and Newton Abott]: Around Tor Bay and Newton Abott, (i) strata are undisturbed and (ii) some LSTs 
+ overlay MC strata, BCL strata and the main part of NC strata, respectively #ev */
+<Tor Bay and Newton Abott - TO3 - 1>: If (i) originally, the younger sediments rest on older ones and
+ (ii) some LSTs overlay MC strata, BCL strata and the main part of NC strata, respectively, then, given these strata are undisturbed, 
+  these LSTs are younger than MC strata, BCL strata and the main part of the NC strata, respectively  #GRE 
+    
+    (1) [Formation of strata] 
+    (2) [Sequence of Strata - Tor Bay and Newton Abott]
     ----
-    (5) [Youngest Devonian Strata in South Devon]
+    (3) [Devon Strata - Temporal Order - 3] 
 
-[Youngest Devonian Strata in South Devon]: In Devon, among all the strata older than the New Red Sandstone, 
- the youngest strata are some limestones in south Devon #COA #chron-hyp
-    -> [Culm Youngest Devonian Strata]
-    - [Culm Youngest Devonian Strata]
-    -> [Exmoor Youngest Devonian strata]
-    - [Exmoor Youngest Devonian strata]
-
-
-
+<Tor Bay and Newton Abott - TO3 - 2>: If (i) originally, the younger sediments rest on older ones and
+ (ii) some LSTs are younger than MC strata, BCL strata and the main part of the NC strata, respectively, then, given these strata are undisturbed, 
+  these LSTs overlay MC strata, BCL strata and the main part of NC strata, respectively #GRE 
+    
+    (1) [Formation of strata] 
+    (2) [Devon Strata - Temporal Order - 3] 
+    ----
+    (3) [Sequence of Strata - Tor Bay and Newton Abott]

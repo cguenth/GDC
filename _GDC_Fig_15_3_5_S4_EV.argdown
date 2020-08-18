@@ -5,14 +5,16 @@ animal fossils found in the strata associated with the Culm, not the land plants
 
 S.167 AUG 1836 PHIL "The Culm strata contained fossils that he had also found in the ML of his native Yorkshire ... the commonest fossil shells (Posidonia)
 from the BCL were identical to some found in the ML of Yorkshire ... and that they occured there in the same kind of black limestone"
-
 */
 
-[Yorkshire and Culm Limestone]: The Culm limestone and the Yorkshire limstone support the same charcteristic fossil assemblage 
-as well as the same characteristic rock type #ev 
-    - [No Characteristic Rock Type]
-    - [No Characteristic Fossil Assemblage]
+[BCL - FA]: Most of the fossil species supported by BCL strata are known from Yorkshire ML strata #ev
 
+
+/* HIER WEGGELASSEN siehe DCL
+[BCL - RT]: The rock type supported by BCL strata are known from Yorkshire ML strata #ev
+        -> [BCL CRT - CAM]
+*/
+ 
 /*
 S.146 February to March 1836
 
@@ -20,5 +22,7 @@ PHIL "detailed study of the ML sequences all over the Pennines, most of them fla
 enabled him to trace the remarkable lateral variation in the strata"
 */
 
-[ML and Pennines]: All over the Pennines, there is a huge lateral variation in the ML strata rock type #ev
-    + [LV in Rock Type]
+[ML and Pennines]: All over the Pennines, there is a huge lateral variation in the ML strata RT #ev
+    +> [LV in Sedimentation - ML]
+
+ 

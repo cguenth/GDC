@@ -1,0 +1,41 @@
+
+
+[CF - ORS]: Some peculiar fish fossils are characteristic of the ORS period #cha
+
+[CFA - ORS]: The CFA of ORS strata supports only a few fossils, most of them peculiar fish fossils not known from other strata #cha
+    +> [CFA - ORS - I]
+
+[CFA - ORS - I]: The CFA of ORS strata supports peculiar fish fossils not known from other strata #cha
+
+[CRT - ORS]: ORS strata support a characteristic rock typ, namely red sandstone #cha
+
+
+
+//// LP
+
+[CFA - ORS - II]: The CFA of ORS strata is intermediate in character between those of SIL strata and ML strata #cha
+        -> [CFA - ORS]
+
+[ORS as Intermediate]: ORS strata are intermediate in age between SIL strata and ML strata #cha
+                <+ [Standard Sequence]
+
+// If two strata are similar in age, then they support similar CFA
+<LP - CFA ORS - 1>: Given the Lyellian Principle and some ORS strata, it holds: 
+ The strata support a FSA intermediate in character between those of SIL strata and ML strata #cha
+        
+        (1) [Lyellian Principle]
+        (2) [ORS as Intermediate]
+        ----
+        (3) [CFA - ORS - II]
+
+<LP - CFA ORS - 2>: Given the Lyellian Principle, and some strata supporting a FSA intermediate in character between those of SIL strata 
+ and ML strata, then these strata are ORS in age #cha
+        
+        (1) [Lyellian Principle]
+        (2) [CFA - ORS - II]
+        ----
+        (3) [ORS as Intermediate]
+
+
+
+

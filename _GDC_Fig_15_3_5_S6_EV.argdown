@@ -16,21 +16,9 @@ Do you see any objection to the Great Limestone of this district being the equiv
 [ML Fossils in South Devon]: Around Tor Bay (south Devon), the great limestone support many ML fossil shells #ev ????
 
 S.222/223
-DLB:  "Like AUS, but in a different area, he was finding fossil plants in - according to SED - CAM rocks [...] He found particularly the distinctive 
-chambered shell Goniatites, which was generally regarded as a Carboniferous genius, in the - according to SED - CAM rocks of South Petherwin"
 
-[Carboniferous Fossil Shell in Cornwall]: At South Petherwin (Cornwall), CAM rocks support a Carboniferous fossil shell (Goniatites) #ev ????
-
-DLB: After seeing AUS's collection: "Fossil shells ressembling those of the ML were mixed with those found in pre-ORS elsewhere in Devon and Cornwall ... 
+DLB after seeing AUS's collection: "Fossil shells ressembling those of the ML were mixed with those found in pre-ORS elsewhere in Devon and Cornwall ... 
 attributed all the anomalies to the diversity of local environmental conditions at the epoch of the fossil potting there"
-PHIL "DLB's fossil shells were strangely analogous to Carboniferous limestone fossils"
-
-S.224 §9.3 DEC 1837
-AUS: "The "Great Limestone" (at Netwon Abott and around Torbay) near the top was separated by a thick sequence of reddish strata from some 
-much lower limestones (at Ashburton and Chudleigh)... judging by its fossils, it might be equivalent to the ML..."
-
-[Reddish Strata in South Devon]: The Great Limestone (at Netwon Abott and around Torbay) near the top 
-was separated by a thick sequence of reddish strata from some much lower limestones (at Ashburton and Chudleigh) #ev
 
 S.227 
 AUS: [He] diplayed on the table no fewer than thirty-six species of "shells" characteristic of the ML 
@@ -48,21 +36,70 @@ LON on AUS' collection:  Dated by its fossils, strata younger than SIL ... .
 SOW on AUS' collection: Examined 43 species of shells, all of which he pronounced to be well known ML shells
                         Dated by its fossils, strata must be Carboniferous [Limestone] (= ML?)
                         Insbesondere: Corals were ML
-
-
-
-
-
-
-
 */
 
-// OLD : [ML Fauna in South Devon]: Around Tor Bay (south Devon), the great limestone support many fossil corals and shells dated at the base of the ML #ev
+[South Devonian Fossil Fauna]: Around Tor Bay and Netwon Abott, the limestones support not one single SIL fossil 
+(and no peculiar fish fossil like for example the **Holoptychius**), but many ML shells and a great many new species #ev 
+  -> [No Carb Fossils in NC Strata]
 
-[South Devonian Fossil Fauna]: Around Tor Bay and Netwon Abott, the limestones support not one single SIL fossil, 
- but many ML shells and a great many new species #ev 
+ /*
+ WEGGELASSEN
+
+ S.222/223
+DLB:  "Like AUS, but in a different area, he was finding fossil plants in - according to SED - CAM rocks [...] He found particularly the distinctive 
+chambered shell Goniatites, which was generally regarded as a Carboniferous genius, in the - according to SED - CAM rocks of South Petherwin"
+
+[Carboniferous Fossil Shell in Cornwall]: At South Petherwin (Cornwall), CAM rocks support a Carboniferous fossil shell (Goniatites) #ev ????
+
+PHIL: "DLB's fossil shells were strangely analogous to Carboniferous limestone fossils"
+ */
 
 
-[Scottish ORS]: In Scotland, the ORS strata support a distinct rock type, namely red sandstone, and only few fossils 
- (most of them peculiar fish not known from other periods) #ev
+/*
+S.224 §9.3 DEC 1837
 
+AUS: "The "Great Limestone" (at Netwon Abott and around Torbay) near the top was separated by a thick sequence of reddish strata from some 
+much lower limestones (at Ashburton and Chudleigh)... judging by its fossils, it might be equivalent to the ML..."
+
+S.237/8  §9.6 JAN 1838
+
+AUS: "a disitnctive formation of reddish strata lay above the Plymouth limestone but below the Great Limestone in his home area... 
+    my notion is that our limestones and the red shales and sandstones which dip under them, are about the age of the ML and ORS...
+    I find my ORS containing everywhere abundance of fossils. Undeterred by the knowledge that that formation elsewhere contained few fossls 
+     and most of these peculiar"
+*/
+
+[Reddish Strata in South Devon]: Above the Plymouth limestone but below the Great Limestone, there is a distinctive formation of reddish strata 
+  containing everywhere abundance of fossils (but no peculiar ORS fish fossils) #ev
+
+
+
+
+
+/* 
+WEGGELASSEN
+
+Culm base lower than ML
+
+§8.2 JAN 1837
+
+S.188/87 "...eastward past Launceston, [SED] had found instead a thick series of coarse sandstones and shales,
+lying conformably below the distinctive Culm limestone"
+
+"Annexing these thick [series] to the Culm, thereby tacitly displacing the anticipated [...] unconformity between the Culm 
+and the Cambrian to a still lower [...] part of the sequence ... The BCL [do] not form the actual base of the culm series ...
+There is an enormous development of the lower members [of the culm series] (many 1000 feet in thickness) under the BCL, 
+- especially on the south demarcation [of the Culm trough] ...
+SED conjectured that the Culm sequence [...] might even encompass the equivalents of the "transition group" [...] lying between 
+the ML proper and the ORS "
+
+
+S.243 §9.8 May 1938
+
+"[SED] now stated publicly that in his opinion the base of the Culm was "lower than the base of the ordinary English carboniferous series"...
+"the lowest part of the culmiferous series" of Devon was there listed, albeit with a question mark, at the end of his list of examples of the SIL system ...
+By conjecturing that the Culm represented the whole of the Carboniferous group, and even some SIL too, SED could hope to preserve almost all the older strata 
+for his CAM...This defensive maneuver had become the more necessary since SED had evidently concluded that the major unconformity he and MUR had claimed 
+betwen the Culm and the older strata had to be abandonded "
+
+*/

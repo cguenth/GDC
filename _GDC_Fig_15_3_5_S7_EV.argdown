@@ -1,58 +1,121 @@
 
 /*
-S.237/8  §9.6 JAN 1838
+S.239/240 §9.7 MAR 1838
 
-AUS: "a disitnctive formation of reddish strata lay above the Plymouth limestone but below the Great Limestone in his home area... 
-    my notion is that our limestones and the red shales and sandstones which dip under them, are about the age of the ML and ORS...
-    I find my ORS containing everywhere abundance of fossils. Undeterred by the knowledge that that formation elsewhere contained few fossls 
-     and most of these peculiar"
-
+LIN had changed his mind about the fossil plants that had precipitated the whole controversy [...] Having had more more extensive collections 
+to study [...] LIN now considered that "a few species only" from the Culm were the same as those in the ordinary CM, while "the bulk" 
+of the specimens belonged to species he could not match from elsewhere.
 */
 
-[Reddish Strata in South Devon]: Above the Plymouth limestone but below the Great Limestone, there is a distinctive formation of reddish strata 
-containing everywhere abundance of fossils (but no peculiar ORS fish fossils) #ev
+[MC - FA]: Most of the fossil species supported by MC strata are known from CM strata #ev
+
 
 /*
-S.236 §9.6 JAN 1838
+S.240 §9.7 MAR 1838
 
-AUS: "The difference between his "Devon shells" and those from the ML were well within the range of variation of living molluscan species...
-By criticizing LON as too great a splitter in fossil taxonomy, AUS brought into the open the issue that underlay any use of "statistical" estimates
-of the affinities (Ähnlichkeiten) of fossil faunas. For as LYE had already discovered in his analysis of Tertiary faunas, such estimates were of little use 
-unless relaistic allowances were made for the range of variation within any biological species" 
+DLB considered that the "so called culmiferous rocks" underlay AUS's LSTs
+
+WEGGELASSEN
+
+AUS was critical of DLB relying on the evidence of dip and strike in isolated exposures of the respective strata; by contrast,
+AUS considered that "one good instance of super position is sufficient to settle the question, and there are several"
+
 */
 
-/* OLD
-[Taxonomic Differences]:  For each taxonomy, there are differences between lumpers and splitters #ev
+[Sequence of Strata - Tor Bay and Newton Abott]: Around Tor Bay and Newton Abott, (i) strata are undisturbed and (ii) some LSTs 
+ overlay MC strata, BCL strata and the main part of NC strata, respectively #ev
+
+
+/* DEVON
+
+S.283  §11.2  APR 1839 
+"[MUR] summarized the fossils from the whole [north Devonian] sequence of thick formations as a mixture of [ML] [...] shells; [USIL] [...] corals; 
+and even a [ORS] mollusk [...] trilobites some entirely new, some appoaching USIL types; ... plants discovered by WIL and HARD accepted on LIN's account 
+as Carboniferous ... "As for south Devon, [...] LON had considered that few could be strictly considered as ML; many were new and undescribed ...
+HEN's collection from Plymouth, studied by PHIL and SOW, proved to have the same curiously mixed character"
+
+S.295/8 §11.5 APR 1839
+"Having studied WIL's fossils with LON, MUR reported that "as far as we can yet see they confirm better than ever the new view" ...
+ some fossils were different from any known from the CM .. HEN reported that the fossil plants from the lower strata in north Devon 
+ were "quite distinct from any known CM remains", thus confirming that the Devonian flora, like the fauna was distinct"
+
 */
 
-[Variation Within Species - Today]: Today, there is a range of variation within any biological species #ev
 
-/* 
-IN S5 WEGGELASSEN
+[Non-Culm Fossil Mixture - Devon]: In north Devon, the non-Culm fossils are a mixture of ML shells, USIL corals, 
+one ORS mollusk and Carboniferous plants; some trilobites similar to USIL ones and some totally new fossils; 
+in south Devon, few non-Culm fossils are strictly ML fossils; many fossils are new #ev
 
-§8.2 JAN 1837
+   
 
-S.188/87 "...eastward past Launceston, [SED] had found instead a thick series of coarse sandstones and shales,
-lying conformably below the distinctive Culm limestone"
+/*
+WEGGELASSEN
 
-[Sandstone in Devon]: East of Launceston, there is a thick series of coarse sandstones and shales,
-lying conformably below the BCL #ev #E14
+NW FRANCE
 
-"Annexing these thick [series] to the Culm, thereby tacitly displacing the anticipated [...] unconformity between the Culm 
-and the Cambrian to a still lower [...] part of the sequence ... The BCL [do] not form the actual base of the culm series ...
-There is an enormous development of the lower members [of the culm series] (many 1000 feet in thickness) under the BCL, 
-- especially on the south demarcation [of the Culm trough] ...
-SED conjectured that the Culm sequence [...] might even encompass the equivalents of the "transition group" [...] lying between 
-the ML proper and the ORS "
+MAY 1839 §12.2 S.302
+MUR: "Studying the fossils from Brittany in the Paris museums, [MUR] concluded that the strata with coal seams 
+in the *terrrain de transistion superieur* were either Devonian or Carboniferous, but definitely not Silurian
 
-Vergleiche:
+AUG 1839 §12.4 S.324
+"[DeVER] claimed that the anthracites of Brittany and Normandy - so long emphasized by DLB - were in the USIL, directly above "
+Caradoc sandstone" with large SIL trilobites... MUR claimed instead that the fossils he had seen in Paris earlier in the year 
+implied that the anthracites were more probably Devonian or Carboniferous ($12.1)"
 
-S.243 §9.8 May 1938
+[Breton and Norman Fossils as ORS]: In the Paris museums, the fossils from northwest France are charcteristic of the ORS (or a younger formation) #ev
 
-"[SED] now stated publicly that in his opinion the base of the Culm was "lower than the base of the ordinary English carboniferous series"...
-"the lowest part of the culmiferous series" of Devon was there listed, albeit with a question mark, at the end of his list of examples of the SIL system ...
-By conjecturing that the Culm represented the whole of the Carboniferous group, and even some SIL too, SED could hope to preserve almost all the older strata 
-for his CAM...This defensive maneuver had become the more necessary since SED had evidently concluded that the major unconformity he and MUR had claimed 
-betwen the Culm and the older strata had to be abandonded "
+[Breton and Norman LSIL Fossils]: In Brittany and Normandy, the strata supporting coal seams are directly above strata supporting characteristic LSIL fossils #ev
+    
 
+
+DEVON & EIFEL
+
+SEP 1838 §10.2
+AUS: "[DeVER] showed him his collection of the distinctive fossils of the Eifel, and AUS was immediately struck by their close ressemblance 
+to those from the Devon limestones near his home... His perception of a faunal similarity between Devon and the Eifel, did not lessen the 
+puzzles of Devonshire; for AUS was convinced that the Devon limestones were "of about the age of the ML, whereas DeVER regarded the Eifel LST as 
+unquestionably SIL"
+
+FEB 1839 § 11.1 S.276
+""[PHIL] seems to think [the Eifel and south Devon fossils] are of the same zoological epoch." That comment suggests that [...]
+[PHIL] considered that both the Eifel and the South Devon fossils were disinct from either the SIL and ML faunas" 
+
+JUN 1839 §12.2 S.308
+"MUR found so many Wenlock friends among GOL's fossils from the Eifel that he was convinced that DeVER were right to equate the Eifel 
+with his USIL"
+
+AUG 1839 §12.4 S.324
+"following DeVER's opinion, MUR marked the Eifel limestone as "Wenlock LST" [...]  interpreted the Eifel as a whole as 
+"showing CAM and SIL all in their propre places""
+
+DEC 1839 §12.8 S.338
+"... nor were [the Eifelian] fossils quite the same as those of the south Devon limestone or of the newly "Devonian" limestones of 
+Belgium and Westphalia. "It is Devonian (Lowest) plus SIL or in other words a member of transition from one system to the other, in which 
+there are many more DEV than SIL fossils, but not exclusively DEV [...]
+
+
+DEVON & RHINELAND & NW FRANCE
+
+JUN-AUG 1839 §12.3 S.308
+"So AUS made a point of emphasizing the similarity of the Devon fossils with those of the Rhineland [...] ($10.2, $11.5)
+AUS attributed these LST (and similar ones in northwest France) to a position a litlle below the [ML]; as on the ocassion 
+when his fossils were first discussed"
+
+EIFEL & RHINELAND
+
+OCT-DEC 1839 §12.6 S.331
+"[SED] doubted if MUR could persuade anyone else that the Eifel limestone was SIL but the Strygocephalus limestone Devonian, 
+because the two faunas were so similar"
+
+BELGIUM
+
+DEC 1839 §12.8 S.342
+"SOW and LON had now identified the "SIL" fossils BUCK had collected on his traverse of the Meuse in 1835 (§6.3). "The charactersitic Corals are 
+pure Devonian and the "shells" were just the kinds they had anticipated as "filling up the intervalls" between SIL and Carboniferous"
+
+DEVON & BELGIUM & RHINELAND
+
+DEC 1839 §12.8 S.340
+"[MUR] claimed that "the sequence and passage" from SIL through DEV to Carboniferous was the same in Brittany - which in the event 
+they had failed to visit - as in Belgium and the Rhineland... 
 */

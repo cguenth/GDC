@@ -1,40 +1,93 @@
 
 
-// S.135 JUL 1835 PHIL "All such groups of formations needed to be identified by by their distinctive assemblages, not by single "characteristic" fossils"
+// S.135 JUL 1835 PHIL "All such groups of formations needed to be identified by their distinctive assemblages, not by single "characteristic" fossils"
 
 
-[Characteristic Fossil Assemblage]: An assemblage of fossil species AS is characteristic for some time interval dt iff 
-(i) AS only exisits during dt and (ii) during dt, every region supports AS #dat-met
+[Lyellian Principle - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, for two strata A and B, it holds: 
+(ia) The more A and B are similar in their FSAs, the more they are similar in age, 
+ (ib) if A and B are sufficiently unsimilar in age, then they have no fossil species in common, and (iia) the more A and B are similar in age, 
+  the more they are similar in their FSAs #dat-met
+        <+ [Lyellian Principle]
 
-[Characteristic Fossil Assemblage Principle]: There is a bijection between the age of some strata and its characteristic fossil assemblages #dat-met
-    + [Lyellian Principle]
-    + [Characteristic Fossil Assemblage]
-    - [No Characteristic Fossil Assemblage]
-    +> [CFAP - 2]
-
-
-[CFAP - 2]: If two strata support the same characteristic fossil assemblages, then they are of the same age #dat-met
-
-[No Characteristic Fossil Assemblage]: There is no fossil species assemblage FSA and no time intervall dt such that, during dt, every region supports FSA #dat-met
-    + [LV in Fauna and Flora]
+[Characteristic Fossil Assemblage Principle - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, it holds: 
+There is a bijection between the age of some strata and its characteristic fossil species assemblages #dat-met
+    <+ [Lyellian Principle - V2]
+    <+ [Characteristic Fossil Assemblage Principle]
 
 
+[Characteristic Rock Type Principle - V2]: **Given a sufficiently large (i) amount of rock specimens and (ii) region under study**, for two strata A and B, 
+ it holds: There is a bijection between the age of some strata and its characteristic rock types #dat-met
+    <+ [Characteristic Rock Type Principle]
 
 
 
-[Environmental Conditions and Rock Type]: There is a bijection between rock type and the environmental conditions during rock formation #dat-met
+     
+/*
+Vorbedingung schließt aus, dass LP/CFAP/CRTP fälschlicherweise angewendet werden, nämlich falls es 
+sich bei dem betrachteten Gestein, seiner Gesteinsart oder seinem Fossiliengehalt um eine lokale Variation handelt
 
-<Local Ecological Variations - RT>: If there are always local environmental variations and a bijection betweenrock type and 
-    the environmental conditions during rock formation, then there are always local variations in the rock type #dat-met
 
-    (1) [LV in Evironments - Today]
-    (2) [LV in Evironments - In the Past]
-    (3) [Environmental Conditions and Rock Type]
+Bsp. 1: LV ---- Scottish ORS strata
+
+LP/CFAP/CRTP können hier nicht angewendet werden, da Vorbedingung nicht erfüllt!
+
+Es wird nicht behauptet, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden, sondern,
+dass die Region selbst nicht ausreichend groß ist
+
+Bsp. 1: LV ---- Devon NC strata
+
+LP/CFAP/CRTP können hier nicht angewendet werden, da Vorbedingung nicht erfüllt!
+
+Im Verlauf der Debatte wird zunächst beides, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden.
+
+Später, spätestens zum Zeitpunkt S9 nach Einführung von PHIL's Sammlung, wird dies nicht mehr behauptet, jedoch, 
+ dass die Region Devon nicht ausreichend groß ist
+*/
+
+
+//// LV in F&F ===== ORS
+
+[LV in Fauna and Flora - ORS]: There are local variations in the fauna and flora during the ORS period #dat-met
+     <+ [LV in Fauna and Flora]
+
+<CFs - LV in Fauna and Flora - ORS>: If there are local variations in fauna and flora and 
+some fossil species f is characteristic for some time interval dt iff, during dt, every region supports f,
+ then, during ORS, there is no characteristic fossils species #dat-met
+
+    (1) [Characteristic Fossil]
+    (2) [LV in Fauna and Flora - ORS]
     ----
-    (4) [LV in Rock Type]
+    (3) During ORS, there is no characteristic fossils species
+            >< [Characteristic Fossil - Every Time]
 
-// [LV in Fauna and Flora - In the Past]: In the past, there have been local variations in fauna and flora #ev 
+<CFAs - LV in Fauna and Flora - ORS>: If there are local variations in fauna and flora and 
+some fossil species assemblage FA is characteristic for some time interval dt iff, during dt, every region supports FA,
+ then, during ORS, there is no characteristic FA #dat-met
+
+    (1) [Characteristic Fossil]
+    (2) [LV in Fauna and Flora - ORS]
+    ----
+    (3) During ORS, there is no characteristic FA
+            >< [Characteristic Fossil Assemblage - Every Time]
 
 
-[LV in Rock Type]: For every time intervall, there are local variations in the rock type #dat-met
-    +> [No Characteristic Rock Type]
+/// LV in RT === ORS 
+
+[LV in Sedimentation - ORS]: There are local variations in sedimentation during the ORS period #dat-met
+            <+ [LV in Sedimentation]
+
+<CRTs - LV in Sedimentation - ORS>: If there are local variations in sedimentation and 
+some rock type is characteristic for some time interval dt iff, during dt, every region supports f,
+ then, during ORS, there is no characteristic rock type #dat-met
+
+    (1) [Characteristic Rock Type]
+    (2) [LV in Sedimentation - ORS]
+    ----
+    (3) During ORS, there is no characteristic fossils species
+            >< [Characteristic Rock Type - Every Time]
+
+
+//// LV in Sedimentation ===== ML
+
+[LV in Sedimentation - ML]: There are local variations in sedimentation during the ML period #dat-met
+     <+ [LV in Sedimentation]

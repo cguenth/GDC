@@ -1,50 +1,60 @@
 
 
-/*
-
-[CFA - ORS]: ORS strata support few fossils and most of these are peculiar fish fossils only known from the ORS #GRE #fos-hyp
-    +> [Scottish ORS]
-
-[CFA - ORS - II]: The CFA of ORS strata is intermediate in character between the CFAs of SIL strata and ML strata #DEV #fos-hyp
-
-[Reddish Strata in South Devon]: Above the Plymouth limestone but below the Great Limestone, there is a distinctive formation of reddish strata 
-containing everywhere abundance of fossils (but no peculiar ORS fish fossils) #ev
-
-*/
 
 
-[CRT - ORS]: ORS strata support a characteristic rock typ, namely red sandstone #GRE #roc-hyp
-    +> [Scottish ORS]
-    - [No Characteristic Rock Type]
+[NC - FA - 1]: NC strata support few fossils and most of these are peculiar fish fossils only known from the ORS #fos-hyp
 
-[Some ORS betwen LSTs in South Devon]: In south Devon, above the Plymouth limestone but below the Great Limestone, the non-Culm strata are ORS in age #DEV #chron-hyp
-    +> [Some Non-Culm as ORS]
+[NC - FA - 2]: NC strata support fossils intermediate in character between SIL and ML #fos-hyp
+   +> [Non-Culm Fossil Mixture - Devon]
+   +> [South Devon LSTs - FA - 2]
+   +> [Between South Devonian LSTs - FA - 2]
+   +> [Some North Devonian Strata - FA - 2]
+   -> [NC - FA - 1]
 
-<Some South Devonian Strata as ORS - CRTP>: If strata can be identified by means of their characteristic rock type and 
-some south Devonian non-Culm strata are ORS in age, then there is some red sandstone strata in south Devon #GRE
 
-    (1) [CRTP - 1]
-    (2) [Some ORS betwen LSTs in South Devon] 
-    (3) [CRT - ORS]
+<NC as ORS - CFA ORS II V2 - 1>: If strata can be identified by means of their CFAs and 
+NC strata are ORS in age, then these strata support a FA in character between those of ML strata than SIL strata #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Devon ORS - Body of Evidence - Fossils]
+    (3) [Devon ORS - Body of Evidence - Region]
+    (4) [CFA - ORS - II - V2]
+    (5) [Non-Culm as ORS]
     ----
-    (4) Above the Plymouth limestone but below the Great Limestone, the non-Culm strata support red sandstone
-            +> [Reddish Strata in South Devon]
+    (6) [NC - FA - 2]
+           
 
+<NC as ORS - CFA ORS II V2 - 2>: If strata can be identified by means of their CFAs and 
+NC strata support a FA in character between those of ML strata than SIL strata, then these strata are ORS in age #DEV
 
-
-<Some South Devonian Strata as ORS - CFAP>: If strata can be identified by means of their characteristic fossil assemblages and 
-some south Devonian non-Culm strata are ORS in age, then these strata support few fossils (most of them peculiar fish) #GRE
-
-    (1) [CFAP - 1]
-    (3) [Some ORS betwen LSTs in South Devon]
-    (2) [CFA - ORS]
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Devon ORS - Body of Evidence - Fossils]
+    (3) [Devon ORS - Body of Evidence - Region]
+    (4) [CFA - ORS - II - V2]
+    (5) [NC - FA - 2]
     ----
-    (3)  Above the Plymouth limestone but below the Great Limestone, the non-Culm strata support few fossils 
-        and most of these are peculiar fish fossils only known from the ORS
-            -> [Reddish Strata in South Devon]
-
-        
-
-    
+    (6) [Non-Culm as ORS]
 
 
+<NC as ORS - CFA ORS V2 - 1>: If strata can be identified by means of their CFAs and 
+NC strata are ORS in age, then these strata support few fossils and most of these are peculiar fish fossils only known from the ORS #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Devon ORS - Body of Evidence - Fossils]
+    (3) [Devon ORS - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [Non-Culm as ORS]
+    ----
+    (6) [NC - FA - 1]
+           
+
+<NC as ORS - CFA ORS V2 - 2>: If strata can be identified by means of their CFAs and 
+NC strata support support few fossils and most of these are peculiar fish fossils only known from the ORS, then these strata are ORS in age #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Devon ORS - Body of Evidence - Fossils]
+    (3) [Devon ORS - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [NC - FA - 1]
+    ----
+    (6) [Non-Culm as ORS]

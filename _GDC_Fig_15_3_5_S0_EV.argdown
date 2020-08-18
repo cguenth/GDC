@@ -1,0 +1,45 @@
+
+
+[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev
+
+/*
+S.93 On the west coast of Devon, near Bideford, there are seams of coal (culm or anthracite) 
+and also some fossil plants in strata closely associated with it
+
+culm : British English: Imperfect anthracite of Devon and Cornwall
+        originating during the Carboniferous Period that occur in southwest England
+        They are so called because of the occasional presence of a soft, often lenticular (linsenförmig), sooty (rußig) coal
+        which in Devon is known as Culm
+anthracite: A hard, compact variety of coal (highest carbon content, fewest impurities)
+*/
+
+[CM Plants in Devon Culm]: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata 
+(in close association with seams of imperfect anthracite) #ev
+
+/* S.94 "DLB reported in effect that the whole of Devon was quite simply a sequence of strata ranging from the oldest near the south coast 
+to the youngest near the north coast"
+S.96 "As I went north I expected to find some newer beds come in, but in this I was disappointed, for the whole series got turned up with a southern dip
+and the lst again came to the surface, and beneath it the arched mass of arenaceous Grauwacke, which seems nothing but a continuation of c"
+*/
+
+[Passing Devon Northwards]: Passing Devon from south to north, the strata become younger, except the strata north of Exmoor which are 
+of the same age as the strata south of Exmoor #ev
+
+[Trough through Exmoor]: There is a trough through Exmoor - formed by a band of limestone running out to the north coast at Ilfracombe 
+and south of Barnstaple #ev
+ 
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+// S.101 [TURNER] accepted that DLB's rock specimens looked just like ordinary pre-ORS strata, though he felt he had to admit 
+//       "the possibility of deception by mere mineralogical character"
+
+[NC CRT - CAM]: Non-Culm strata are of characteristic CAM rock type #ev
+
+
+[MC CRT - CAM]:  Main Culm strata are of characteristic CAM rock type #ev
+
+
+[BCL CRT - CAM]: BCL strata are of characteristic CAM RT #ev
+
+

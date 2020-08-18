@@ -1,18 +1,35 @@
 
-// Rock Type Method
+/* 1831 - A father figure for Geology 
 
-[Characteristic Rock Types]: A rock type r is characteristic for some time interval dt iff 
-(i) r only exisits during dt and (ii) during dt, every region supports r #dat-met
+William Smith: Identification of strata, and their succession, by means of their imbedded fossils 
 
-[CRTP - 2]: If two strata support the same characteristic rock types, then they are of the same age #dat-met
+S. 122 "... earlier belief that every rock of the oolitic suite had its own peculiar fossils
+It may seem surprising that the nephew and pupil of William Smith should have dismissed as a fantasy 
+Smith's own view of the various formations of the Oolitic sequence, for these were the surpreme example of 
+the use of characteristic fossils."*/
 
-/* Identification of strata, and their succession, by means of their rock types */
+[Characteristic Fossil Principle]: There is a bijection between the age of some strata t and its characteristic fossils #dat-met
 
-[Characteristic Rock Type Principle]: There is a bijection between the age of some strata t and its characteristic rock types #dat-met
-    + [Characteristic Rock Types]
-    +> [CRTP - 2]
 
-/*  
-[CRTP - 1]: If two strata are of the same age, then they support the same characteristic rock types
-    + [Characteristic Rock Type Principle]
+
+/*
+1832-33 - Weaver and the Irish Question
+
+Lyellian Principals: a theoretical model to acount for constant but piecemal change in 
+the composition of the faunas and floras at the earth's surface,
+ in correlation with ever-changing physical environments; 
+ it followed that while particular species might have had long ranges in time, 
+an assemblage of many species would not remain unchanged for long; 
+two formations deposited at widely separated periods would be expected to have few if any species in common
 */
+
+[Lyellian Principle]: For two strata A and B it holds: (i) The more A and B are similar in their FSAs, the more they are similar in age, 
+(ii) the more A and B are similar in age, the more they are similar in their FSAs and 
+ (iii) if A and B are sufficiently unsimilar in age, then they have no species in common #dat-met
+    +> [Characteristic Fossil Assemblage Principle]
+
+[Characteristic Fossil Assemblage Principle]: There is a bijection between the age of some strata and its characteristic fossil assemblages #dat-met
+
+
+
+

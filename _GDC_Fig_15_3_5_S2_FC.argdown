@@ -1,0 +1,167 @@
+/*
+S. 122/3 February to April 1835
+
+DEVON: "A flora of so-called CM species might have flourished locally in specific ecological conditions during the pre-ORS period, 
+long before it was able to spread widely and become the "characteristic" flora of the CM period"
+
+FRENCH ALPS: "EDB Alpine discovery as evidence that certain districts might really enjoy an immunity from those revolutions of organic life which happend to others...
+trusted the belemnites rather than the plants ... in the region that had since become the Alps the CM flora might have survived much longer than elsewhere, 
+as a result of ecological circumstances"
+
+""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time" */
+
+[LV in Fauna and Flora]: For every time intervall, there are local variations in the fauna and flora #dat-met
+    +> [LV in Fauna and Flora -Today]  
+    +> [Carb Fossils in Pre-ORS strata]
+
+
+/*CF*/
+
+[Characteristic Fossil]: A fossil species f is characteristic for some time interval dt iff 
+(i) f only exisits during dt and (ii) during dt, every region supports f #dat-met
+
+[No Characteristic Fossil]: For no time intervall dt, there is (at least) one characteristic fossil species #dat-met
+
+[Characteristic Fossil - Every Time]: For each time intervall dt, there is (at least) one characteristic fossil species #dat-met
+    -> [No Characteristic Fossil]
+
+[Characteristic Fossil - Some Time]: For some time intervall dt, there is (at least) one characteristic fossil species #dat-met
+    <+ [Characteristic CM Fossils in Main Culm]
+    <+ [CF - ORS]
+    <+ [Characteristic Fossil - Every Time]
+    >< [No Characteristic Fossil]
+
+
+<CFP and CF - 1>: Given a certain definition of CF, it holds: 
+If, for each time intervall dt, there is at least one CF, then there is a bijection between the age of some strata and 
+ its CFs #dat-met
+    
+    (1) [Characteristic Fossil]
+    (2) [Characteristic Fossil - Every Time]
+    ----
+    (3) [Characteristic Fossil Principle] 
+
+<CFP and CF - 2>: Given a certain definition of CF and the CF Principle, it holds: For each time intervall dt, there is at least one CF #dat-met
+    
+    (1) [Characteristic Fossil]
+    (2) [Characteristic Fossil Principle] 
+    ----
+    (3) [Characteristic Fossil - Every Time]
+
+
+
+<CFs - LV in Fauna and Flora>: If there are always local variations in fauna and flora and 
+some fossil species f is characteristic for some time interval dt iff, during dt, every region supports f,
+ then there are no characteristic fossils #dat-met
+
+    (1) [Characteristic Fossil]
+    (2) [LV in Fauna and Flora]
+    ----
+    (3) [No Characteristic Fossil]
+
+/*CFA*/
+
+[Characteristic Fossil Assemblage]: An assemblage of fossil species AS is characteristic for some time interval dt iff 
+(i) AS only exisits during dt and (ii) during dt, every region supports AS #dat-met
+
+[No Characteristic Fossil Assemblage]: For every time intervall dt, there is not one CFA #dat-met
+
+[Characteristic Fossil Assemblage - Every Time]: For each time intervall dt, there is (at least) one CFA #dat-met
+    -> [No Characteristic Fossil Assemblage]
+
+
+[Characteristic Fossil Asseblage - Some Time]: For some time intervall dt, there is (at least) one characteristic assemblage of fossil species #dat-met
+    <+ [CFA - ORS]
+    <+ [CFA - ORS - II]
+    <+ [Characteristic Fossil Assemblage - Every Time]
+    >< [No Characteristic Fossil Assemblage]
+
+
+
+<CFAP and CFA - 1>: Given a certain definition of CFA, it holds: 
+If, for each time intervall dt, there is at least one CFA, then there is a bijection between the age of some strata and 
+ its CFAs #dat-met
+    
+    (1) [Characteristic Fossil Assemblage]
+    (2) [Characteristic Fossil Assemblage - Every Time]
+    ----
+    (3) [Characteristic Fossil Assemblage Principle] 
+
+<CFAP and CFA - 2>: Given a certain definition of CFA and the CFA Principle, it holds: For each time intervall dt, there is at least one CFA #dat-met
+    
+    (1) [Characteristic Fossil Assemblage]
+    (2) [Characteristic Fossil Assemblage Principle] 
+    ----
+    (3) [Characteristic Fossil Assemblage - Every Time]
+   
+
+<LV in Fauna and Flora and CFAs>:If there are always local variations in fauna and flora and 
+some assemblage of fossil species AS is characteristic for some time interval dt iff, during dt, every region supports AS, 
+then there are no characteristic fossil species assemblages #dat-met
+
+    (1) [Characteristic Fossil Assemblage]
+    (2) [LV in Fauna and Flora]
+    ----
+    (3) [No Characteristic Fossil Assemblage]
+
+
+
+/*CRT*/
+
+
+[LV in Sedimentation - CM]: During the CM period, there are local variations in sedimentation #dat-met
+    <+ [LV in Sedimentation]
+
+
+[LV in Sedimentation]: For every time intervall, there are local variations in sedimentation #dat-met
+        
+[Characteristic Rock Type]: A rock type r is characteristic for some time interval dt iff 
+ (i) r have been formated only during dt and (ii) during dt, in every region, r have been formated #dat-met
+
+[No Characteristic Rock Type]: For every time intervall dt, there is not one characteristic rock type #dat-met
+
+[Characteristic Rock Type - Every Time]: For each time intervall dt, there is (at least) one CRT #dat-met
+    -> [No Characteristic Rock Type]
+
+[Characteristic Rock Type - Some Time]: For some time intervall dt, there is (at least) one characteristic rock type #dat-met
+    <+ [CRT - ORS]
+    <+ [CRT - CAM]
+    <+ [Characteristic Rock Type - Every Time]
+    >< [No Characteristic Rock Type]
+
+[CRT - CAM]: For the CAM period, there is (at least) one characteristic rock type #dat-met
+    <+ [MC CRT - CAM]
+    <+ [BCL CRT - CAM]
+    <+ [NC CRT - CAM]
+
+
+
+
+<CRTP and CRT - 1>: Given a certain definition of CRT, it holds: 
+If, for each time intervall dt, there is at least one CRT, then there is a bijection between the age of some strata and 
+ its CRTs #dat-met
+    
+    (1) [Characteristic Rock Type]
+    (2) [Characteristic Rock Type - Every Time]
+    ----
+    (3) [Characteristic Rock Type Principle] 
+
+<CRTP and CRT - 2>: Given a certain definition of CRT and the CRT Principle, it holds: For each time intervall dt, there is at least one CRT #dat-met
+    
+    (1) [Characteristic Rock Type]
+    (2) [Characteristic Rock Type Principle] 
+    ----
+    (3) [Characteristic Rock Type - Every Time]
+   
+
+<CRTs - LV in Sedimentation>:If there are always local variations in rock types, 
+and some rock type r is characteristic for some time interval dt iff, during dt, every region supports r, 
+then there are no characteristic characteristic rock types #dat-met
+
+    (1) [Characteristic Rock Type]
+    (2) [LV in Sedimentation]
+    ----
+    (3) [No Characteristic Rock Type]
+
+
