@@ -1,0 +1,10 @@
+{{{0.004739336492890996, 305, 64355}, {0.004611340242340276, 
+   0.004739336492890996, 0.00012858921919191058}, 
+  {0.9474059994262019, 0.004739336492890996, 1.231987956831141*^-7, 
+   0.00012858921919191058}}, 
+ {{}, {11, {"BCL - FA", "CFA - ORS - II - V2", "CFA - ORS - I - V2", 
+    "CFA - ORS - V2", "Characteristic Fossil Assemblage Principle - V2", 
+    "Characteristic Rock Type Principle - V2", "CRT - ORS - V2", 
+    "Lyellian Principle - V2", "Scottish ORS as LV - Fauna and Flora", 
+    "Scottish ORS as LV - Sedimentation", 
+    "Scottland - Body of Evidence - Region"}}}}

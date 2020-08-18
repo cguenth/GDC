@@ -1,0 +1,10 @@
+{{{0.0015381831342743395, 85, 55260}, {0.0015352493110145017, 
+   0.0015381831342743395, 2.938334335602014*^-6}, 
+  {0.9961926014174395, 0.0015381831342743395, 1.623750175854831*^-12, 
+   2.938334335602014*^-6}}, 
+ {{}, {9, {"Between South Devonian LSTs - FA - 1", 
+    "Between South Devonian LSTs - FA - 2", "Between South Devon LSTs - CRT", 
+    "Devon ORS as LV - Sedimentation", 
+    "Devon ORS - Body of Evidence - Rock Specimens", 
+    "Reddish Strata in South Devon", "South Devonian Fossil Fauna", 
+    "South Devon LSTs - FA - 1", "South Devon LSTs - FA - 2"}}}}
