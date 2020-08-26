@@ -90,10 +90,9 @@
    "BK" -> {"Carb Fossils in Pre-ORS strata", "Exmoor Trough as Best Explanation",
           "Characteristic Rock Type Principle",
           !"Characteristic Fossil Principle", !"Characteristic CM Fossils in Main Culm", 
-          "Characteristic Fossil Assemblage Principle", 
-          "CRT - ORS"},
-    "EV" -> {"Scottish ORS - Rocks", 
-            "Unbroken Sequence of Devon Strata",
+          !"Characteristic Fossil Assemblage Principle", !"CFA - ORS", !"CFA - ORS - II"},
+    "EV" -> {"Scottish ORS - Fossils",
+             "Unbroken Sequence of Devon Strata",
             "Passing Devon Northwards", "Trough through Exmoor", 
              "BCL CRT - CAM", "MC CRT - CAM", "NC CRT - CAM"}|>,
 

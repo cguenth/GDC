@@ -11,15 +11,15 @@
 <polygon fill="#ffff00" stroke="#ffff00" points="14106,-1012 14106,-1150.4 17106,-1150.4 17106,-1012 14106,-1012"/>
 <text text-anchor="start" x="15581.3256" y="-1135.6" font-family="arial" font-size="12.00" fill="#000000">Evidence</text>
 </g>
+<g id="clust2" class="cluster">
+<title>cluster_2</title>
+<polygon fill="#9fb6cd" stroke="#9fb6cd" points="13646,-674 13646,-1326.4 14098,-1326.4 14098,-674 13646,-674"/>
+<text text-anchor="start" x="13788.6642" y="-1311.6" font-family="arial" font-size="12.00" fill="#000000">Carb Fossils in Pre&#45;ORS Strata</text>
+</g>
 <g id="clust3" class="cluster">
 <title>cluster_3</title>
 <polygon fill="#c6e2ff" stroke="#c6e2ff" points="11320,-680 11320,-1538.4 13638,-1538.4 13638,-680 11320,-680"/>
 <text text-anchor="start" x="12382.3328" y="-1523.6" font-family="arial" font-size="12.00" fill="#000000">Rocks, Fossils and Time &#45; Principles</text>
-</g>
-<g id="clust2" class="cluster">
-<title>cluster_2</title>
-<polygon fill="#9fb6cd" stroke="#9fb6cd" points="13646,-674 13646,-1326.4 14098,-1326.4 14098,-674 13646,-674"/>
-<text text-anchor="start" x="13796.331" y="-1311.6" font-family="arial" font-size="12.00" fill="#000000">CM Plants in Non&#45;CM Strata</text>
 </g>
 <g id="clust4" class="cluster">
 <title>cluster_4</title>
@@ -29,7 +29,7 @@
 <g id="clust5" class="cluster">
 <title>cluster_5</title>
 <polygon fill="#b9d3ee" stroke="#b9d3ee" points="20438,-834 20438,-1526.4 21078,-1526.4 21078,-834 20438,-834"/>
-<text text-anchor="start" x="20717.9992" y="-1511.6" font-family="arial" font-size="12.00" fill="#000000">Characteristica</text>
+<text text-anchor="start" x="20703.3316" y="-1511.6" font-family="arial" font-size="12.00" fill="#000000">ORS Characteristica</text>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_6</title>
@@ -39,7 +39,7 @@
 <g id="clust7" class="cluster">
 <title>cluster_7</title>
 <polygon fill="#9acd32" stroke="#9acd32" points="17638,-674 17638,-1350.4 19146,-1350.4 19146,-674 17638,-674"/>
-<text text-anchor="start" x="18359.6666" y="-1335.6" font-family="arial" font-size="12.00" fill="#000000">Correlations</text>
+<text text-anchor="start" x="18318.9812" y="-1335.6" font-family="arial" font-size="12.00" fill="#000000">Other Regions Than Devon</text>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_8</title>

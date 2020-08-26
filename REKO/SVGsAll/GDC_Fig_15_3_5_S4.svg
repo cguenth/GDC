@@ -14,7 +14,7 @@
 <g id="clust2" class="cluster">
 <title>cluster_2</title>
 <polygon fill="#9fb6cd" stroke="#9fb6cd" points="16504,-870 16504,-1546.4 16956,-1546.4 16956,-870 16504,-870"/>
-<text text-anchor="start" x="16654.331" y="-1531.6" font-family="arial" font-size="12.00" fill="#000000">CM Plants in Non&#45;CM Strata</text>
+<text text-anchor="start" x="16646.6642" y="-1531.6" font-family="arial" font-size="12.00" fill="#000000">Carb Fossils in Pre&#45;ORS Strata</text>
 </g>
 <g id="clust3" class="cluster">
 <title>cluster_3</title>
@@ -29,7 +29,7 @@
 <g id="clust5" class="cluster">
 <title>cluster_5</title>
 <polygon fill="#b9d3ee" stroke="#b9d3ee" points="19158,-324 19158,-1776.4 19830,-1776.4 19830,-324 19158,-324"/>
-<text text-anchor="start" x="19453.9992" y="-1761.6" font-family="arial" font-size="12.00" fill="#000000">Characteristica</text>
+<text text-anchor="start" x="19439.3316" y="-1761.6" font-family="arial" font-size="12.00" fill="#000000">ORS Characteristica</text>
 </g>
 <g id="clust6" class="cluster">
 <title>cluster_6</title>
@@ -39,7 +39,7 @@
 <g id="clust7" class="cluster">
 <title>cluster_7</title>
 <polygon fill="#9acd32" stroke="#9acd32" points="14316,-870 14316,-1570.4 16466,-1570.4 16466,-870 14316,-870"/>
-<text text-anchor="start" x="15358.6666" y="-1555.6" font-family="arial" font-size="12.00" fill="#000000">Correlations</text>
+<text text-anchor="start" x="15317.9812" y="-1555.6" font-family="arial" font-size="12.00" fill="#000000">Other Regions Than Devon</text>
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_8</title>

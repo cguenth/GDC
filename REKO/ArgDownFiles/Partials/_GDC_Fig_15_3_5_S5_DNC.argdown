@@ -31,19 +31,19 @@ some north Devonian non-Culm strata support characteristic ORS fish fossils, the
 //// ORS in North Devon ===== CFAP - V2
 
 
-[Devon ORS - Body of Evidence - Fossils]: Concerning Devon ORS strata, the amount of fossils under study is sufficiently large #DEV
+[Non-Culm - Body of Evidence - Fossils]:Concerning Devon Non-Culm strata, the amount of fossils under study is sufficiently large
 
-[Devon ORS - Body of Evidence - Region]: Concerning Devon ORS strata, the region under study is sufficiently large #DEV
+[Non-Culm - Body of Evidence - Region]:Concerning Devon Non-Culm strata, the region under study is sufficiently large
 
 //// NC as LV
 [Devon ORS as LV - Fauna and Flora]: Devon ORS fauna and flora is a local variation #DEV
     +> [LV in Fauna and Flora - ORS]
 
 <LV in Fauna and Flora - Devon ORS>: If, concering Devon ORS strata, the region as well as the amount of fossils under study is sufficiently large, 
-then Scottish ORS fauna and flora is no LV #DEV
+then Devon ORS fauna and flora is no LV #DEV
 
-    (1) [Devon ORS - Body of Evidence - Fossils]
-    (2) [Devon ORS - Body of Evidence - Region]
+    (1) [Non-Culm - Body of Evidence - Fossils]
+    (2) [Non-Culm - Body of Evidence - Region]
     ----
     (3) Devon ORS fauna and flora is no local variation
             >< [Devon ORS as LV - Fauna and Flora]
@@ -67,8 +67,8 @@ of fossils (but no peculiar ORS fish fossils) #cha
  only known from the ORS #DEV
 
     (1) [Characteristic Fossil Assemblage Principle - V2] 
-    (2) [Devon ORS - Body of Evidence - Fossils]
-    (3) [Devon ORS - Body of Evidence - Region]
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
     (4) [CFA - ORS - V2]
     (5) [Some ORS in North Devon]
     ----
@@ -80,8 +80,8 @@ of fossils (but no peculiar ORS fish fossils) #cha
  then these strata are ORS in age #DEV
 
     (1) [Characteristic Fossil Assemblage Principle - V2] 
-    (2) [Devon ORS - Body of Evidence - Fossils]
-    (3) [Devon ORS - Body of Evidence - Region]
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
     (4) [CFA - ORS - V2]
     (5) [Some North Devonian Strata - FA - 1]
     ----
@@ -93,8 +93,8 @@ of fossils (but no peculiar ORS fish fossils) #cha
 some north Devonian NC strata are ORS in age, then these strata support a FA intermediate in character between those of SIL and ML strata #DEV
 
     (1) [Characteristic Fossil Assemblage Principle - V2] 
-    (2) [Devon ORS - Body of Evidence - Fossils]
-    (3) [Devon ORS - Body of Evidence - Region]
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
     (4) [CFA - ORS - II - V2]
     (5) [Some ORS in North Devon]
     ----
@@ -106,8 +106,8 @@ some north Devonian NC strata are ORS in age, then these strata support a FA int
  then these strata are ORS in age #DEV
 
     (1) [Characteristic Fossil Assemblage Principle - V2] 
-    (2) [Devon ORS - Body of Evidence - Fossils]
-    (3) [Devon ORS - Body of Evidence - Region]
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
     (4) [CFA - ORS - II - V2]
     (5) [Some North Devonian Strata - FA - 2]
     ----
