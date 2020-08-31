@@ -1,8 +1,0 @@
-{{{1., 27, 27}, {0.9999999999999999, 1., 0.000013030934337723514}, 
-  {1, 1., 5.837610486007679*^-17, 0.000013030934337723514}}, 
- {{6, {"CFA - ORS - II", "Characteristic Fossil Asseblage - Some Time", 
-    "CRT - ORS - II - V2", "CRT - ORS - V2", "LV in Fauna and Flora - ORS", 
-    "Scottish ORS as LV - Fauna and Flora"}}, 
-  {6, {"CFA - ORS - II", "Characteristic Fossil Asseblage - Some Time", 
-    "CRT - ORS - II - V2", "CRT - ORS - V2", "LV in Fauna and Flora - ORS", 
-    "Scottish ORS as LV - Fauna and Flora"}}}}

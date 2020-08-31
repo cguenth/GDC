@@ -1,0 +1,80 @@
+
+
+@include(_GDC_Fig_15_3_5_S0_GS.argdown) 
+
+
+
+# Evidence {color: 0}
+
+@include(_GDC_Fig_15_3_5_S0_EV.argdown) 
+@include(_GDC_Fig_15_3_5_S1_EV.argdown) 
+@include(_GDC_Fig_15_3_5_S2_EV.argdown) 
+@include(_GDC_Fig_15_3_5_S3_EV.argdown)
+@include(_GDC_Fig_15_3_5_S4_EV.argdown)
+
+
+
+# Rocks, Fossils and Time - Principles {color: 1}
+
+@include(_GDC_Fig_15_3_5_S0_FC.argdown) 
+@include(_GDC_Fig_15_3_5_S1_FC.argdown) 
+@include(_GDC_Fig_15_3_5_S2_FC.argdown) 
+@include(_GDC_Fig_15_3_5_S4_FC.argdown) 
+
+
+
+# ORS Characteristica {color: 2}
+
+@include(_GDC_Fig_15_3_5_S1_CHA.argdown) 
+@include(_GDC_Fig_15_3_5_S4_CHA.argdown) 
+
+
+
+# Carb Fossils in Pre-ORS Strata {color: 3}
+
+@include(_GDC_Fig_15_3_5_S0_A2.argdown) 
+@include(_GDC_Fig_15_3_5_S1_A2.argdown)
+
+
+
+# Other Regions Than Devon {color: 9}
+
+@include(_GDC_Fig_15_3_5_S1_COR.argdown) 
+@include(_GDC_Fig_15_3_5_S2_COR.argdown) 
+@include(_GDC_Fig_15_3_5_S4_COR.argdown)
+
+
+
+# Dating of the Main Culm  {color: 4}
+
+@include(_GDC_Fig_15_3_5_S0_DMC.argdown) 
+@include(_GDC_Fig_15_3_5_S1_DMC.argdown) 
+
+
+
+# Dating of the Culm Limestone  {color: 5}
+
+@include(_GDC_Fig_15_3_5_S0_DCL.argdown) 
+@include(_GDC_Fig_15_3_5_S4_DCL.argdown) 
+
+
+
+# Dating of the Non-Culm {color: 6}
+
+@include(_GDC_Fig_15_3_5_S0_DNC.argdown) 
+@include(_GDC_Fig_15_3_5_S3_DNC.argdown) 
+
+
+
+# Youngest Devonian Strata {color: 7}
+
+@include(_GDC_Fig_15_3_5_S0_YDS.argdown) 
+@include(_GDC_Fig_15_3_5_S1_YDS.argdown) 
+@include(_GDC_Fig_15_3_5_S3_YDS.argdown) 
+
+
+
+# Gap in the Sequence   {color: 8}
+
+@include(_GDC_Fig_15_3_5_S0_GAP.argdown) 
+@include(_GDC_Fig_15_3_5_S1_GAP.argdown) 

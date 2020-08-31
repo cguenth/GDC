@@ -1,0 +1,5 @@
+{{0.08333333333333333, 1, 12}, 
+ {{8, {"CFA - ORS - II", "Characteristic Fossil Asseblage - Some Time", 
+    "Conformable Passage - BCL and NC", "Conformable Passages - 2", 
+    "No BCL as CM", "No BCL as ML", "No BCL as ORS", 
+    "Unbroken Sequence of Devon Strata"}}, {}}}

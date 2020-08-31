@@ -1,0 +1,10 @@
+{{0.02564102564102564, 9, 351}, 
+ {{16, {"BCL as CAM", "BCL at Youngest SIL", "CRT - ORS - V2", 
+    "MC at Youngest SIL", "No BCL as CAM", "No BCL as ORS", "No BCL as SIL", 
+    "No Main Culm as CAM", "No Main Culm as ORS", "No Main Culm as SIL", 
+    "No Non-Culm as CAM", "No Non-Culm as SIL", 
+    "ORS Between South Devonian LSTs", "Some North Devonian Strata - FA - 2", 
+    "Some North Devon NC at Oldest ORS", "Some ORS in North Devon"}}, 
+  {5, {"CRT - ORS - V2", "ORS Between South Devonian LSTs", 
+    "Some North Devonian Strata - FA - 2", 
+    "Some North Devon NC at Oldest ORS", "Some ORS in North Devon"}}}}

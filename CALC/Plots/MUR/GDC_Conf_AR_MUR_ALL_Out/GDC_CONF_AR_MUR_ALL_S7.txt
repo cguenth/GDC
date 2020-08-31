@@ -1,7 +1,0 @@
-{{{0.08333333333333333, 1, 12}, {0.08332137497976601, 0.08333333333333333, 
-   0.000013045306436650748}, {0.9997130406931146, 0.08333333333333333, 
-   5.482664816324867*^-17, 0.000013045306436650748}}, 
- {{8, {"Conformable Passage - BCL and NC", "Conformable Passages - 2", 
-    "LV in Fauna and Flora - ORS", "No BCL as CM", "No BCL as ML", 
-    "No BCL as ORS", "Scottish ORS as LV - Fauna and Flora", 
-    "Unbroken Sequence of Devon Strata"}}, {}}}

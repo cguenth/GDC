@@ -137,8 +137,7 @@
 "CH" -> {"Some Main Culm as CM",!"Some Main Culm as ML",!"Some Main Culm as ORS",!"Some Main Culm as SIL",!"Some Main Culm as CAM",
         "Some BCL as CM",!"Some BCL as ML",!"Some BCL as ORS",!"Some BCL as SIL",!"Some BCL as CAM",
         !"Some Non-Culm as CM",!"Some Non-Culm as ML",!"Some Non-Culm as ORS","Some Non-Culm as SIL","Some Non-Culm as CAM"}, 
-"BK" -> {!"Carb Fossils in Pre-ORS strata", 
-        !"Characteristic Fossil - Some Time",
+"BK" -> {!"Characteristic Fossil - Some Time",
         "Lyellian Principle", "Carb and Pre-ORS - Sufficiently Different",
         !"LV in Fauna and Flora", "LV in Sedimentation",
         "Culm Trough as Best Explanation", "Main Culm Youngest Devonian Strata"}, 
@@ -185,7 +184,7 @@
         !"Some Non-Culm as CM",!"Some Non-Culm as ML",!"Some Non-Culm as ORS","Some Non-Culm as SIL","Some Non-Culm as CAM"}, 
 "BK" -> {"Carb Fossils in Pre-ORS strata", 
         "LV in Fauna and Flora", "LV in Sedimentation", 
-       "Culm Trough as Best Explanation", "Main Culm Youngest Devonian Strata"}, 
+        "Culm Trough as Best Explanation", "Main Culm Youngest Devonian Strata"}, 
 "EV" -> {!"Trough through Exmoor", !"SIL Fossils in North Devon", 
         "Northwest France", "Scottish ORS - Fossils",
         !"Passing Devon Northwards"}|>}

@@ -77,20 +77,6 @@
             <+ [Reddish Strata in South Devon]
             -> [NC CRT - CAM]
 
-[Non-Culm - Body of Evidence - Rock Specimens]: Concerning Devon ORS strata, the amount of rock specimens under study is sufficiently large #DEV
-
-[Devon ORS as LV - Sedimentation]: Devon ORS rock type is a local variation #DEV
-    +> [LV in Sedimentation - ORS]
-
-<LV in Sedimentation - Devon ORS>: If, concering Devon ORS strata, the region as well as the amount of rock specimens under study is sufficiently large, 
-then Scottish ORS fauna and flora is no LV  #DEV
-
-    (1) [Non-Culm - Body of Evidence - Rock Specimens]
-    (2) [Non-Culm - Body of Evidence - Region]
-    ----
-    (3) Devon ORS rock type is no local variation
-            >< [Devon ORS as LV - Sedimentation]
-
 <ORS Between South Devon LSTs - CRT ORS V2 - 1>: If strata can be identified by means of their CRTs and some south Devonian NC strat support red sandstone, 
  then they are ORS in age #GRE
 
@@ -112,6 +98,27 @@ then Scottish ORS fauna and flora is no LV  #DEV
     (5)  [ORS Between South Devonian LSTs]
     ----
     (6) [Between South Devon LSTs - CRT]
+
+//// NC as LV ----- Sedimentation
+
+[Non-Culm - Body of Evidence - Rock Specimens]: Concerning Devon Non-Culm strata, the amount of rock specimens under study is sufficiently large
+
+[Devon NC as LV - Sedimentation]: Devon NC rock type is a local variation #DEV
+    +> [LV in Sedimentation - Some Time]
+
+[Devon NC No LV - Sedimentation]: Devon NC rock type is no local variation
+    >< [Devon NC as LV - Sedimentation]
+    +> [Non-Culm - Body of Evidence - Rock Specimens]
+    +> [Non-Culm - Body of Evidence - Region]
+
+
+<LV in Sedimentation - Devon NC>: If, concering Devon Non-Culm strata, the region as well as the amount of rock specimens under study is sufficiently large, 
+then Devon NC rock type is no LV 
+
+    (1) [Non-Culm - Body of Evidence - Rock Specimens]
+    (2) [Non-Culm - Body of Evidence - Region]
+    ----
+    (3) [Devon NC No LV - Sedimentation]
 
 
 //// ORS in South Devon ===== CFAP - V2

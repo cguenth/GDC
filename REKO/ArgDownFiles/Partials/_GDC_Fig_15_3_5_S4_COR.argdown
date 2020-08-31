@@ -56,10 +56,23 @@ is red sandstone, then Scottish ORS strata support red sandstone #cor
 dass die Region selbst nicht ausreichend groß ist */
 
 [Scottish ORS as LV - Fauna and Flora]: Scottish ORS fauna and flora is a local variation #cor
-    +> [LV in Fauna and Flora - ORS]
+    +> [LV in Fauna and Flora - Some Time]
+
+[Scottish ORS No LV - Fauna and Flora]: Scottish ORS fauna and flora is no local variation #cor
+    >< [Scottish ORS as LV - Fauna and Flora]
+    +> [Scottland - Body of Evidence - Fossils]
+    +> [Scottland - Body of Evidence - Region]
+
 
 [Scottish ORS as LV - Sedimentation]: Scottish ORS rock type is a local variation #cor
-    +> [LV in Sedimentation - ORS]
+    +> [LV in Sedimentation - Some Time]
+
+[Scottish ORS No LV - Sedimentation]: Scottish ORS rock type is no local variation #cor
+    >< [Scottish ORS as LV - Sedimentation]
+    +> [Scottland - Body of Evidence - Rock Specimens]
+    +> [Scottland - Body of Evidence - Region]
+
+
 
 
 <LV in Fauna and Flora - Scottland>: If, concering Scottish ORS strata, the region as well as the amount of fossils under study is sufficiently large, 

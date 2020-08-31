@@ -40,54 +40,49 @@ LP/CFAP/CRTP können hier nicht angewendet werden, da Vorbedingung nicht erfüll
 
 Im Verlauf der Debatte wird zunächst beides, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden.
 
-Später, spätestens zum Zeitpunkt S9 nach Einführung von PHIL's Sammlung, wird dies nicht mehr behauptet, jedoch, 
+Später, spätestens zum Zeitpunkt S8 nach Einführung von PHIL's Sammlung, wird dies nicht mehr behauptet, jedoch, 
  dass die Region Devon nicht ausreichend groß ist
 */
 
 
 //// LV in F&F ===== ORS
 
-[LV in Fauna and Flora - ORS]: There are local variations in the fauna and flora during the ORS period #dat-met
+[LV in Fauna and Flora - Some Time]: There are local variations in the fauna and flora during some period #dat-met
      <+ [LV in Fauna and Flora]
 
-<CFs - LV in Fauna and Flora - ORS>: If there are local variations in fauna and flora and 
+<CFs - LV in Fauna and Flora - Some Time>: If, during some period p, there are local variations in fauna and flora and 
 some fossil species f is characteristic for some time interval dt iff, during dt, every region supports f,
- then, during ORS, there is no characteristic fossils species #dat-met
+ then, during p, there is no characteristic fossils species #dat-met
 
     (1) [Characteristic Fossil]
-    (2) [LV in Fauna and Flora - ORS]
+    (2) [LV in Fauna and Flora - Some Time]
     ----
-    (3) During ORS, there is no characteristic fossils species
+    (3) During some time interval, there is no characteristic fossils species
             >< [Characteristic Fossil - Every Time]
 
-<CFAs - LV in Fauna and Flora - ORS>: If there are local variations in fauna and flora and 
+<CFAs - LV in Fauna and Flora - Some Time>: If, during some period p, there are local variations in fauna and flora and 
 some fossil species assemblage FA is characteristic for some time interval dt iff, during dt, every region supports FA,
- then, during ORS, there is no characteristic FA #dat-met
+ then, during p, there is no characteristic FA #dat-met
 
     (1) [Characteristic Fossil]
-    (2) [LV in Fauna and Flora - ORS]
+    (2) [LV in Fauna and Flora - Some Time]
     ----
-    (3) During ORS, there is no characteristic FA
+    (3) During some time interval, there is no characteristic FA
             >< [Characteristic Fossil Assemblage - Every Time]
 
 
 /// LV in RT === ORS 
 
-[LV in Sedimentation - ORS]: There are local variations in sedimentation during the ORS period #dat-met
+[LV in Sedimentation - Some Time]: There are local variations in sedimentation during some period #dat-met
             <+ [LV in Sedimentation]
 
-<CRTs - LV in Sedimentation - ORS>: If there are local variations in sedimentation and 
+<CRTs - LV in Sedimentation - Some Time>: If, during some period p, there are local variations in sedimentation and 
 some rock type is characteristic for some time interval dt iff, during dt, every region supports f,
- then, during ORS, there is no characteristic rock type #dat-met
+ then, during p, there is no characteristic rock type #dat-met
 
     (1) [Characteristic Rock Type]
-    (2) [LV in Sedimentation - ORS]
+    (2) [LV in Sedimentation - Some Time]
     ----
-    (3) During ORS, there is no characteristic fossils species
+    (3) During some time interval, there is no characteristic fossils species
             >< [Characteristic Rock Type - Every Time]
 
-
-//// LV in Sedimentation ===== ML
-
-[LV in Sedimentation - ML]: There are local variations in sedimentation during the ML period #dat-met
-     <+ [LV in Sedimentation]

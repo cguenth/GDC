@@ -25170,12 +25170,12 @@
           "role": "top-level-statement",
           "isTopLevel": true,
           "title": "LV in Fauna and Flora",
-          "text": "For every time intervall, there are local variations in the fauna and flora #dat-met",
+          "text": "For every time intervall, there are local variations in fauna and flora #dat-met",
           "ranges": [
             {
               "type": "tag",
-              "start": 76,
-              "stop": 83,
+              "start": 72,
+              "stop": 79,
               "tag": "dat-met"
             }
           ],

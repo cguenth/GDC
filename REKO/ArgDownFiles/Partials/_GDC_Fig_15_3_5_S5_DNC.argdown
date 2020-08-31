@@ -30,26 +30,6 @@ some north Devonian non-Culm strata support characteristic ORS fish fossils, the
 
 //// ORS in North Devon ===== CFAP - V2
 
-
-[Non-Culm - Body of Evidence - Fossils]:Concerning Devon Non-Culm strata, the amount of fossils under study is sufficiently large
-
-[Non-Culm - Body of Evidence - Region]:Concerning Devon Non-Culm strata, the region under study is sufficiently large
-
-//// NC as LV
-[Devon ORS as LV - Fauna and Flora]: Devon ORS fauna and flora is a local variation #DEV
-    +> [LV in Fauna and Flora - ORS]
-
-<LV in Fauna and Flora - Devon ORS>: If, concering Devon ORS strata, the region as well as the amount of fossils under study is sufficiently large, 
-then Devon ORS fauna and flora is no LV #DEV
-
-    (1) [Non-Culm - Body of Evidence - Fossils]
-    (2) [Non-Culm - Body of Evidence - Region]
-    ----
-    (3) Devon ORS fauna and flora is no local variation
-            >< [Devon ORS as LV - Fauna and Flora]
-
-
-
 /// [No Holoptychius in North Devon]: In north Devon, the whole non-Culm strata do not support peculiar fish fossils like for example the **Holoptychius** #ev
 [Some North Devonian Strata - FA - 1]: Some north Devonian NC strata support few fossils and most of these are peculiar fish fossils only known from the ORS #DEV
         >< [No Holoptychius in North Devon]
@@ -112,3 +92,26 @@ some north Devonian NC strata are ORS in age, then these strata support a FA int
     (5) [Some North Devonian Strata - FA - 2]
     ----
     (6) [Some ORS in North Devon]
+
+
+//// NC as LV ----- Fossils
+
+[Non-Culm - Body of Evidence - Fossils]:Concerning Devon Non-Culm strata, the amount of fossils under study is sufficiently large
+
+[Non-Culm - Body of Evidence - Region]:Concerning Devon Non-Culm strata, the region under study is sufficiently large
+
+[Devon NC as LV - Fauna and Flora]: Devon NC fauna and flora is a local variation #DEV
+    +> [LV in Fauna and Flora - Some Time]
+   
+[Devon NC No LV - Fauna and Flora]: Devon NC fauna and flora is no local variation
+    >< [Devon NC as LV - Fauna and Flora]
+    +> [Non-Culm - Body of Evidence - Fossils]
+    +> [Non-Culm - Body of Evidence - Region]
+
+<LV in Fauna and Flora - Devon NC>: If, concerning Devon NC strata, the region as well as the amount of fossils under study is sufficiently large, 
+then Devon NC  fauna and flora is no LV 
+
+    (1) [Non-Culm - Body of Evidence - Fossils]
+    (2) [Non-Culm - Body of Evidence - Region]
+    ----
+    (3) [Devon NC No LV - Fauna and Flora]

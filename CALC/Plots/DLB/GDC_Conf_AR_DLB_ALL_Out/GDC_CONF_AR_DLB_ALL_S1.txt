@@ -1,8 +1,0 @@
-{{{1., 12, 12}, {1., 1., 0.0001990894973653823}, 
-  {1, 1., 5.855573451923009*^-8, 0.0001990894973653823}}, 
- {{6, {"Carb and Pre-ORS - Sufficiently Different", "CFA - ORS", 
-    "CFA - ORS - I", "CFA - ORS - II", "Lyellian Principle", 
-    "Scottish ORS - Fossils"}}, 
-  {6, {"Carb and Pre-ORS - Sufficiently Different", "CFA - ORS", 
-    "CFA - ORS - I", "CFA - ORS - II", "Lyellian Principle", 
-    "Scottish ORS - Fossils"}}}}

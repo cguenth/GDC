@@ -1,0 +1,9 @@
+{{0.0015659348932454001, 1300, 830175}, 
+ {{}, {14, {"Between South Devonian LSTs - FA - 1", 
+    "Between South Devonian LSTs - FA - 2", "Between South Devon LSTs - CRT", 
+    "CFA - ORS - II - V2", "CFA - ORS - I - V2", "CFA - ORS - V2", 
+    "CRT - ORS - V2", "Devon NC as LV - Sedimentation", 
+    "Non-Culm - Body of Evidence - Region", 
+    "Non-Culm - Body of Evidence - Rock Specimens", 
+    "Reddish Strata in South Devon", "South Devonian Fossil Fauna", 
+    "South Devon LSTs - FA - 1", "South Devon LSTs - FA - 2"}}}}

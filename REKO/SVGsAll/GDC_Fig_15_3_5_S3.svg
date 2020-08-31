@@ -893,8 +893,8 @@
 <path fill="#ffffff" stroke="#c6e2ff" stroke-width="2" d="M13077,-1496C13077,-1496 12905,-1496 12905,-1496 12899,-1496 12893,-1490 12893,-1484 12893,-1484 12893,-1444 12893,-1444 12893,-1438 12899,-1432 12905,-1432 12905,-1432 13077,-1432 13077,-1432 13083,-1432 13089,-1438 13089,-1444 13089,-1444 13089,-1484 13089,-1484 13089,-1490 13083,-1496 13077,-1496"/>
 <text text-anchor="start" x="12941.5405" y="-1482" font-family="arial" font-weight="bold" font-size="10.00" fill="#000000">LV in Fauna and Flora</text>
 <text text-anchor="start" x="12917.661" y="-1465" font-family="arial" font-size="10.00" fill="#000000">For every time intervall, there are</text>
-<text text-anchor="start" x="12919.3105" y="-1453" font-family="arial" font-size="10.00" fill="#000000"> local variations in the fauna and</text>
-<text text-anchor="start" x="12958.7725" y="-1441" font-family="arial" font-size="10.00" fill="#000000"> flora #dat&#45;met</text>
+<text text-anchor="start" x="12916.5365" y="-1453" font-family="arial" font-size="10.00" fill="#000000"> local variations in fauna and flora</text>
+<text text-anchor="start" x="12969.8845" y="-1441" font-family="arial" font-size="10.00" fill="#000000"> #dat&#45;met</text>
 </g>
 <!-- n22&#45;&gt;n14 -->
 <g id="edge4" class="edge">
