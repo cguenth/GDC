@@ -3,8 +3,6 @@
 
 [Scottland - Body of Evidence - Fossils]: Concerning Scottish ORS strata, the amount of fossils under study is sufficiently large #cor
 
-[Scottland - Body of Evidence - Rock Specimens]: Concerning Scottish ORS strata, the amount of rock specimens under study is sufficiently large #cor
-
 [Scottland - Body of Evidence - Region]: Concerning Scottish ORS strata, the region under study is sufficiently large #cor
 
 // CFA - ORS - V2
@@ -27,7 +25,32 @@ encompasses only a few peculiar fish fossils, then Scottish ORS strata support s
     (4) [Scottish ORS - Fossils]
     ----
     (5) [CFA - ORS - V2]
- 
+
+
+//// Scottland as LV
+
+/* Es wird nicht behauptet, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden, sondern,
+dass die Region selbst nicht ausreichend groß ist */
+
+[Scottish ORS as LV - Fauna and Flora]: Scottish ORS fauna and flora is a local variation #cor
+    +> [LV in Fauna and Flora - Some Time]
+
+[Scottish ORS No LV - Fauna and Flora]: Scottish ORS fauna and flora is no local variation #cor
+    >< [Scottish ORS as LV - Fauna and Flora]
+    +> [Scottland - Body of Evidence - Fossils]
+    +> [Scottland - Body of Evidence - Region]
+
+<LV in Fauna and Flora - Scottland>: If, concering Scottish ORS strata, the region as well as the amount of fossils under study is sufficiently large, 
+then Scottish ORS fauna and flora is no LV #cor
+
+    (1) [Scottland - Body of Evidence - Fossils]
+    (2) [Scottland - Body of Evidence - Region]
+    ----
+    (3) [Scottish ORS No LV - Fauna and Flora]
+
+
+/* WEGGELASSEN wegen Satzlimit:
+
 //CRT - ORS - V2
 <Scottish ORS - CRTP - V2 - 1>: If strata can be identified by means of their CRTs and the RT characteristic of the ORS period 
 is red sandstone, then Scottish ORS strata support red sandstone #cor
@@ -52,20 +75,11 @@ is red sandstone, then Scottish ORS strata support red sandstone #cor
 
 //// Scottland as LV
 
-/* Es wird nicht behauptet, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden, sondern,
-dass die Region selbst nicht ausreichend groß ist */
-
-[Scottish ORS as LV - Fauna and Flora]: Scottish ORS fauna and flora is a local variation #cor
-    +> [LV in Fauna and Flora - Some Time]
-
-[Scottish ORS No LV - Fauna and Flora]: Scottish ORS fauna and flora is no local variation #cor
-    >< [Scottish ORS as LV - Fauna and Flora]
-    +> [Scottland - Body of Evidence - Fossils]
-    +> [Scottland - Body of Evidence - Region]
-
-
 [Scottish ORS as LV - Sedimentation]: Scottish ORS rock type is a local variation #cor
     +> [LV in Sedimentation - Some Time]
+
+
+[Scottland - Body of Evidence - Rock Specimens]: Concerning Scottish ORS strata, the amount of rock specimens under study is sufficiently large #cor
 
 [Scottish ORS No LV - Sedimentation]: Scottish ORS rock type is no local variation #cor
     >< [Scottish ORS as LV - Sedimentation]
@@ -73,22 +87,12 @@ dass die Region selbst nicht ausreichend groß ist */
     +> [Scottland - Body of Evidence - Region]
 
 
-
-
-<LV in Fauna and Flora - Scottland>: If, concering Scottish ORS strata, the region as well as the amount of fossils under study is sufficiently large, 
-then Scottish ORS fauna and flora is no LV #cor
-
-    (1) [Scottland - Body of Evidence - Fossils]
-    (2) [Scottland - Body of Evidence - Region]
-    ----
-    (3) Scottish ORS fauna and flora is no local variation
-            >< [Scottish ORS as LV - Fauna and Flora]
-
 <LV in Sedimentation - Scottland>: If, concering Scottish ORS strata, the region as well as the amount of rock specimens under study is sufficiently large, 
 then Scottish ORS rock type is no LV #cor
 
     (1) [Scottland - Body of Evidence - Rock Specimens]
     (2) [Scottland - Body of Evidence - Region]
     ----
-    (3) Scottish ORS rock type is no local variation
-            >< [Scottish ORS as LV - Sedimentation]
+    (3) [Scottish ORS No LV - Fauna and Flora]
+
+*/

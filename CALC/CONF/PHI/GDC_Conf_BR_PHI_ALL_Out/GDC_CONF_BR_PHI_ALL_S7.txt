@@ -1,0 +1,13 @@
+{{{0.013333333333333334, 5, 375}, {0.012999444708220688, 
+   0.013333333333333334, 0.0003382861573101561}, 
+  {0.951140235209788, 0.013333333333333334, 8.04663030416556*^-11, 
+   0.0003382861573101561}}, 
+ {{21, {"CFA - ORS - II - V2", "CFA - ORS - I - V2", "CFA - ORS - V2", 
+    "Conformable Passage - BCL and NC", "Conformable Passages - 2", 
+    "Main Culm as CM", "MC - FA", "NC at Oldest ML", "NC at Youngest ORS", 
+    "NC at Youngest SIL", "No Main Culm as CM", "No Main Culm as ML", 
+    "Non-Culm as CAM", "Non-Culm as ORS", "No Non-Culm as CAM", 
+    "No Non-Culm as ML", "No Non-Culm as ORS", "No Non-Culm as SIL", 
+    "Some ORS in North Devon", "Some South Devon LSTs as ORS", 
+    "Unbroken Sequence of Devon Strata"}}, 
+  {3, {"CFA - ORS - II - V2", "CFA - ORS - I - V2", "CFA - ORS - V2"}}}}

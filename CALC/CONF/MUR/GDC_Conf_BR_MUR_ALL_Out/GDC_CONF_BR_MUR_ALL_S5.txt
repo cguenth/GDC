@@ -1,0 +1,11 @@
+{{{0.023255813953488372, 1, 43}, {0.022657618382847536, 0.023255813953488372, 
+   0.0006120634711973034}, {0.9498452811435547, 0.023255813953488372, 
+   6.182982178780458*^-10, 0.0006120634711973034}}, 
+ {{18, {"BCL as CM", "BCL as ML", "BCL at Oldest ML", 
+    "Carboniferous Plants in North Devon", 
+    "Conformable Passage - BCL and NC", "Conformable Passages - 2", 
+    "NC at Youngest ORS", "NC at Youngest SIL", "No BCL as CM", 
+    "No BCL as ML", "No BCL as ORS", "No BCL as SIL", 
+    "No Carb Fossils in NC Strata", "No Non-Culm as CM", "No Non-Culm as ML", 
+    "No Non-Culm as ORS", "Some North Devonian Strata - FA - 2", 
+    "Unbroken Sequence of Devon Strata"}}, {}}}

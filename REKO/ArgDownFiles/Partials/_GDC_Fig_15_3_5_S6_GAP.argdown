@@ -16,8 +16,8 @@
 
 //// Conformable Passage Between SE DEV LSTs/MC, MC/BCL, BCL/RNC -----
 
-<Conformable Passages - 3 - All CAM>: If, in Devon, some southeast Devon strata are the youngest, being CAM in age, 
- then all passages are conformable #GRE #pri #chron-hyp
+/// Vergeleiche S0/GAP: <Conformable Passages - 1 - NC at Youngest SIL>
+<Conformable Passages - 3 - NC at Youngest SIL>:If, in Devon, some NC strata are the youngest and not younger than SIL, then all passages are conformable #GRE #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Devon Strata - Temporal Order - 3]
@@ -25,7 +25,9 @@
         ----
         (4) [Conformable Passages - 3]
 
-/// HIER FEHLEND aufgrund von Schwierigkeiten: Andere CH (nicht: All X), die zu [Conformable Passages - 3] führen!
+/* HIER FEHLEND wegen Satzlimit: Andere CH, die zu [Conformable Passages - 3] führen!
+Insbesondere FEHLEND: [Some Main NC at Youngest SIL] bzw. [Some Main NC as SIL] usw. ----> Neue Gruppe nötig, neue atomare Sätze
+Deshalb:[Conformable Passage - BCL and Main NC] nicht zu begründen */
 
 
 //// Conformable Passage Between SE Devon LSTs and MC --- Consequences
@@ -52,64 +54,8 @@
         (5) [Some Main Culm as ORS]
 
 
-/* FEHLEND aufrgund Anzahl Sätze, nämlich [Some South Devon LSTs as CM] usw
-
-<MC Older Than SE Devon LSTs - SE Devon LSTs as CM>: If SE Devon LSTs, being CM in age, and MC strata are passing conformably into one another, 
- and there are no CM MC strata, then there are some ML MC strata #pri #chron-hyp
-
-        (1) [Standard Sequence]
-        (2) [Conformable Passages - 3]
-        (3) [Some South Devon LSTs as CM]
-        (4) [No Main Culm as CM]
-        ----
-        (5) [Some Main Culm as ML]
-
-Analog [Some South Devon LSTs as ML] usw
-*/
+/* FEHLEND wegen Satzlimit: Analoge Args mit [Some South Devon LSTs as CM] usw */
 
 
-/* FEHLEND aufgrund von Schwierigkeiten, letztlich Anzahl Sätze
-
-[Some MNC at Youngest SIL] bzw. [Some MNC as SIL] ----> Neue Gruppe nötig, neue atomare Sätze
-
-<BCL and MNC- Conformable Passage - BCL at Oldest ORS>: If some BCL, being at oldest SIL in age, 
- pass conformably into the main part of NC (MNC) strata, then some MNC strata SIL in age #GRE #pri #chron-hyp
-
-        (1) [Standard Sequence]
-        (2) [Conformable Passages - 3]
-        (3) [Some BCL as SIL]
-        (4) [No BCL as CAM]
-        ----
-        (5) [Some MNC at Youngest SIL]
-
-Analog [Some MNC at Youngest ORS] usw
-*/
 
 
-/*
-FEHLEND, da lediglich die Conformability einzelner Übergänge begründet werden kann:
-        - [Conformable Passage - SE Devon LSTs and MC]
-        - [Conformable Passage - BCL and MNC]
-Jedoch lässt sich [Conformable Passage - BCL and MNC] nicht begründen, da atomare Sätze [Some MNC as X] fehlen!
-
-<Conformable Passage Between SE Devon LSTs and MC - LSTs as ORS - 1>: If MC strata are older than some southeast Devon LSTs, 
- and these LSTs as well as some MC strata are ORS in age, then they are passing conformably into one another #pri #chron-hyp
-       
-       (1) [Standard Sequence]
-       (2) [Devon Strata - Temporal Order - 3]
-       (3) [Some South Devon LSTs as ORS]
-       (4) [Some Main Culm as ORS]
-        ----
-       (5) [Conformable Passage - SE Devon LSTs and MC]
-
-<Conformable Passage Between SE Devon LSTs and MC - LSTs as ORS - 2>: If MC strata are older than some southeast Devon LSTs, 
- and these LSTs are ORS and MC strata at youngest SIL in age, then they are passing conformably into one another #pri #chron-hyp
-       
-       (1) [Standard Sequence]
-       (2) [Devon Strata - Temporal Order - 3]
-       (3) [Some South Devon LSTs as ORS]
-       (4) [Some Main Culm as SIL]
-        ----
-       (5) [Conformable Passage - SE Devon LSTs and MC]
-
-*/

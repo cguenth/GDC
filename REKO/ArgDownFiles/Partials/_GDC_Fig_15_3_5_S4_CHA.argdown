@@ -13,10 +13,10 @@
  ORS strata support a FSA intermediate in character between those of SIL strata and ML strata #cha
     <+ [CFA - ORS - II]
 
-
-[CRT - ORS - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+/* WEGGELASSEN wegen Satzlimit
+[CRT - ORS - V2]: **Given a sufficiently large (i) amount of rock specimens and (ii) region under study**, 
  the CRT supported by ORS strata is red sandstone #cha
-    <+ [CRT - ORS]
+    <+ [CRT - ORS] */
 
 /*
 [Lyellian Principle - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, for two strata A and B, it holds: 
@@ -36,14 +36,4 @@
         (2) [ORS as Intermediate]
         ----
         (3) [CFA - ORS - II - V2]
-
-<LP - CFA ORS - V2 - 2>:  If, **given a sufficiently large (i) amount of fossils and (ii) region under study**, 
-  ORS strata support a FSA intermediate in character between those of SIL strata and ML strata and a revised LP holds, then 
-  ORS is intermediate in age between SIL and ML #cha
-        
-        (1) [Lyellian Principle - V2] 
-        (2) [CFA - ORS - II - V2]
-        ----
-        (3) [ORS as Intermediate]
-
 

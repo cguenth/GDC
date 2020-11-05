@@ -1,0 +1,1735 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     62452,       1727]
+NotebookOptionsPosition[     60407,       1657]
+NotebookOutlinePosition[     60745,       1672]
+CellTagsIndexPosition[     60702,       1669]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"CROSS", " ", 
+     RowBox[{"CHECK", " ", "--"}]}], "-", " ", 
+    RowBox[{"S0", " ", "--"}], "-", " ", "DLB"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "jsonFileIn", "=", 
+     "\"\</home/carla/GDC/CH_Pool/ArgumentMaps/JSON/CH_Pool.json\>\""}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{"posString", "=", 
+    RowBox[{
+    "Get", "[", "\"\</home/carla/GDC/CH_Pool/gdc_pos_CH_Pool.txt\>\"", 
+     "]"}]}], "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.7915357761613913`*^9, 3.791535823303565*^9}, {
+   3.7915361233375607`*^9, 3.791536125309719*^9}, {3.7915366131432543`*^9, 
+   3.791536658872569*^9}, {3.7915367475867043`*^9, 3.791536786139393*^9}, {
+   3.791537250927796*^9, 3.791537262447126*^9}, {3.794627570928207*^9, 
+   3.794627577416119*^9}, {3.7946277391227713`*^9, 3.794627745967449*^9}, {
+   3.794631467373664*^9, 3.794631480699417*^9}, 3.794631703505134*^9, {
+   3.795940019116007*^9, 3.7959400558341007`*^9}, 3.795940154353279*^9, {
+   3.7959403395916777`*^9, 3.7959403622373857`*^9}, {3.7964540053110657`*^9, 
+   3.796454021558189*^9}, {3.796454054490687*^9, 3.796454054492634*^9}, {
+   3.796549954126589*^9, 3.7965499541299334`*^9}, {3.797480172965414*^9, 
+   3.797480185629871*^9}, {3.7974806432836123`*^9, 3.797480658412484*^9}, {
+   3.7984380875442333`*^9, 3.7984380917524548`*^9}, {3.798438180581357*^9, 
+   3.798438205440874*^9}, 3.803712634344139*^9, 3.808738593367321*^9, {
+   3.808738728736287*^9, 3.808738735922984*^9}, {3.808738819828218*^9, 
+   3.8087388416573143`*^9}, {3.80873891560244*^9, 3.808738922315323*^9}, {
+   3.808738990051059*^9, 3.808739008829517*^9}, {3.808739045934636*^9, 
+   3.80873904705645*^9}, {3.8088856556415043`*^9, 3.808885659691155*^9}, {
+   3.80890268626868*^9, 3.808902715886269*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Standard Sequence\"\>", 
+   ",", "\<\"Main Culm as Post-Primary and Pre-NRS\"\>", 
+   ",", "\<\"BCL as Post-Primary and Pre-NRS\"\>", 
+   ",", "\<\"Non-Culm as Post-Primary and Pre-NRS\"\>", 
+   ",", "\<\"BCL Older Than MC\"\>", 
+   ",", "\<\"Conformable Passage - MC and BCL\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.808738990423451*^9, 3.80873900940704*^9}, 
+   3.808739047836564*^9, 3.8088855847611837`*^9, 3.808885660233733*^9, {
+   3.8089026914745207`*^9, 3.8089027165212097`*^9}, 3.808903973019986*^9, 
+   3.808908788894453*^9, 3.808909277573228*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"$Path", ",", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+      "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+       "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"!", 
+     RowBox[{"MemberQ", "[", 
+      RowBox[{"$Path", ",", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+          "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}]}], ",", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"$Path", ",", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+         "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", 
+    RowBox[{"FindFile", "[", "\"\<Argdown`\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", 
+    RowBox[{"FindFile", "[", "\"\<GDCDOJCalc4`\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{"<<", "Argdown`"}], "\n", 
+ RowBox[{"<<", "GDCDOJCalc4`"}]}], "Input",
+ CellChangeTimes->{{3.808738784875812*^9, 3.808738808832004*^9}, {
+  3.808738958023944*^9, 3.808738961460699*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/home/carla/GDC/DialecticalStructures/Argdown.m\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/Argdown.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.797423519122836*^9, 3.7974239154223824`*^9, 3.797424003841148*^9, 
+   3.7974246046557703`*^9, 3.7974795796216097`*^9, 3.797479786816327*^9, 
+   3.79748067631153*^9, 3.7974814008362713`*^9, 3.797481443079574*^9, 
+   3.7976635180901613`*^9, 3.797663615689074*^9, 3.7984381039100037`*^9, 
+   3.798438165404354*^9, 3.798444511584567*^9, 3.799155152344458*^9, 
+   3.8015605382705*^9, 3.801560608772995*^9, 3.801629075133451*^9, 
+   3.802418077948634*^9, 3.803018335237619*^9, 3.8030184921146917`*^9, 
+   3.803018549528922*^9, 3.80309933960964*^9, 3.803103808316852*^9, 
+   3.803108117877487*^9, {3.803712610029327*^9, 3.803712638850876*^9}, 
+   3.805611391368887*^9, 3.805611469408551*^9, 3.808738924595416*^9, 
+   3.8087389620364656`*^9, 3.808885587540793*^9, {3.808902695481909*^9, 
+   3.808902718394239*^9}, 3.808903973255509*^9, 3.808908789117827*^9, 
+   3.808909277794786*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/home/carla/GDC/DialecticalStructures/GDCDOJCalc4.m\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/GDCDOJCalc4.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.797423519122836*^9, 3.7974239154223824`*^9, 3.797424003841148*^9, 
+   3.7974246046557703`*^9, 3.7974795796216097`*^9, 3.797479786816327*^9, 
+   3.79748067631153*^9, 3.7974814008362713`*^9, 3.797481443079574*^9, 
+   3.7976635180901613`*^9, 3.797663615689074*^9, 3.7984381039100037`*^9, 
+   3.798438165404354*^9, 3.798444511584567*^9, 3.799155152344458*^9, 
+   3.8015605382705*^9, 3.801560608772995*^9, 3.801629075133451*^9, 
+   3.802418077948634*^9, 3.803018335237619*^9, 3.8030184921146917`*^9, 
+   3.803018549528922*^9, 3.80309933960964*^9, 3.803103808316852*^9, 
+   3.803108117877487*^9, {3.803712610029327*^9, 3.803712638850876*^9}, 
+   3.805611391368887*^9, 3.805611469408551*^9, 3.808738924595416*^9, 
+   3.8087389620364656`*^9, 3.808885587540793*^9, {3.808902695481909*^9, 
+   3.808902718394239*^9}, 3.808903973255509*^9, 3.808908789117827*^9, 
+   3.8089092777964582`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"argdown", "=", 
+   RowBox[{"Import", "[", "jsonFileIn", "]"}]}], ";"}], "\n", 
+ RowBox[{"idMap", "=", 
+  RowBox[{"IdMap", "[", "argdown", "]"}]}], "\n", 
+ RowBox[{
+  RowBox[{"tau", "=", 
+   RowBox[{
+    RowBox[{"DeductiveConstraints", "[", "argdown", "]"}], "/.", "idMap"}]}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"senIDs", "=", 
+   RowBox[{"Values", "[", "idMap", "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.808738714083424*^9, 3.808738714083995*^9}, 
+   3.808738969578977*^9, {3.8088856342833557`*^9, 3.808885637900605*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"\<\"BCL as CAM\"\>", "\[Rule]", "1"}], ",", 
+   RowBox[{"\<\"BCL as Post-Primary and Pre-NRS\"\>", "\[Rule]", "2"}], ",", 
+   RowBox[{"\<\"BCL at Oldest ML\"\>", "\[Rule]", "3"}], ",", 
+   RowBox[{"\<\"BCL at Youngest ORS\"\>", "\[Rule]", "4"}], ",", 
+   RowBox[{"\<\"BCL at Youngest SIL\"\>", "\[Rule]", "5"}], ",", 
+   RowBox[{"\<\"BCL Older Than MC\"\>", "\[Rule]", "6"}], ",", 
+   RowBox[{"\<\"Conformable Passage - MC and BCL\"\>", "\[Rule]", "7"}], ",", 
+   
+   RowBox[{"\<\"Main Culm as CAM\"\>", "\[Rule]", "8"}], ",", 
+   RowBox[{"\<\"Main Culm as CM\"\>", "\[Rule]", "9"}], ",", 
+   RowBox[{"\<\"Main Culm as Post-Primary and Pre-NRS\"\>", "\[Rule]", "10"}],
+    ",", 
+   RowBox[{"\<\"MC at Oldest ML\"\>", "\[Rule]", "11"}], ",", 
+   RowBox[{"\<\"MC at Youngest ORS\"\>", "\[Rule]", "12"}], ",", 
+   RowBox[{"\<\"MC at Youngest SIL\"\>", "\[Rule]", "13"}], ",", 
+   RowBox[{"\<\"No BCL as CAM\"\>", "\[Rule]", "14"}], ",", 
+   RowBox[{"\<\"No BCL as CM\"\>", "\[Rule]", "15"}], ",", 
+   RowBox[{"\<\"No BCL as ML\"\>", "\[Rule]", "16"}], ",", 
+   RowBox[{"\<\"No BCL as ORS\"\>", "\[Rule]", "17"}], ",", 
+   RowBox[{"\<\"No BCL as SIL\"\>", "\[Rule]", "18"}], ",", 
+   RowBox[{"\<\"No Main Culm as CAM\"\>", "\[Rule]", "19"}], ",", 
+   RowBox[{"\<\"No Main Culm as CM\"\>", "\[Rule]", "20"}], ",", 
+   RowBox[{"\<\"No Main Culm as ML\"\>", "\[Rule]", "21"}], ",", 
+   RowBox[{"\<\"No Main Culm as ORS\"\>", "\[Rule]", "22"}], ",", 
+   RowBox[{"\<\"No Main Culm as SIL\"\>", "\[Rule]", "23"}], ",", 
+   RowBox[{"\<\"Non-Culm as Post-Primary and Pre-NRS\"\>", "\[Rule]", "24"}], 
+   ",", 
+   RowBox[{"\<\"No Non-Culm as CAM\"\>", "\[Rule]", "25"}], ",", 
+   RowBox[{"\<\"No Non-Culm as CM\"\>", "\[Rule]", "26"}], ",", 
+   RowBox[{"\<\"No Non-Culm as ML\"\>", "\[Rule]", "27"}], ",", 
+   RowBox[{"\<\"No Non-Culm as ORS\"\>", "\[Rule]", "28"}], ",", 
+   RowBox[{"\<\"No Non-Culm as SIL\"\>", "\[Rule]", "29"}], ",", 
+   RowBox[{"\<\"Some BCL as CAM\"\>", "\[Rule]", "30"}], ",", 
+   RowBox[{"\<\"Some BCL as CM\"\>", "\[Rule]", "31"}], ",", 
+   RowBox[{"\<\"Some BCL as ML\"\>", "\[Rule]", "32"}], ",", 
+   RowBox[{"\<\"Some BCL as ORS\"\>", "\[Rule]", "33"}], ",", 
+   RowBox[{"\<\"Some BCL as SIL\"\>", "\[Rule]", "34"}], ",", 
+   RowBox[{"\<\"Some Main Culm as CAM\"\>", "\[Rule]", "35"}], ",", 
+   RowBox[{"\<\"Some Main Culm as CM\"\>", "\[Rule]", "36"}], ",", 
+   RowBox[{"\<\"Some Main Culm as ML\"\>", "\[Rule]", "37"}], ",", 
+   RowBox[{"\<\"Some Main Culm as ORS\"\>", "\[Rule]", "38"}], ",", 
+   RowBox[{"\<\"Some Main Culm as SIL\"\>", "\[Rule]", "39"}], ",", 
+   RowBox[{"\<\"Some Non-Culm as CAM\"\>", "\[Rule]", "40"}], ",", 
+   RowBox[{"\<\"Some Non-Culm as CM\"\>", "\[Rule]", "41"}], ",", 
+   RowBox[{"\<\"Some Non-Culm as ML\"\>", "\[Rule]", "42"}], ",", 
+   RowBox[{"\<\"Some Non-Culm as ORS\"\>", "\[Rule]", "43"}], ",", 
+   RowBox[{"\<\"Some Non-Culm as SIL\"\>", "\[Rule]", "44"}], ",", 
+   RowBox[{"\<\"Standard Sequence\"\>", "\[Rule]", "45"}]}], "}"}]], "Output",\
+
+ CellChangeTimes->{
+  3.808738970323658*^9, 3.8088855941653137`*^9, 3.80888563873243*^9, {
+   3.808902698064283*^9, 3.8089027221092577`*^9}, 3.808903973494812*^9, 
+   3.8089087893787613`*^9, 3.808909278054039*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"turnToNumbers", "[", 
+    RowBox[{"ins_", ",", " ", "boolV_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "}"}], ",", 
+     RowBox[{"Map", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"ins", "[", 
+           RowBox[{"[", "#", "]"}], "]"}], ",", 
+          RowBox[{"boolV", "[", 
+           RowBox[{"[", "#", "]"}], "]"}], ",", 
+          RowBox[{"!", 
+           RowBox[{"boolV", "[", 
+            RowBox[{"[", "#", "]"}], "]"}]}]}], " ", "]"}], "&"}], ",", 
+       RowBox[{"Range", "[", 
+        RowBox[{"Length", "[", "boolV", "]"}], "]"}]}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"turnToStrings", "[", 
+    RowBox[{"nums_", ",", " ", "idMAP_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "}"}], ",", 
+     RowBox[{"Map", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"IntegerQ", "[", "#", "]"}], ",", 
+          RowBox[{"idMAP", "[", 
+           RowBox[{"[", 
+            RowBox[{"#", ",", "1"}], "]"}], "]"}], ",", 
+          RowBox[{"!", 
+           RowBox[{"idMAP", "[", 
+            RowBox[{"[", 
+             RowBox[{
+              RowBox[{"First", "[", "#", "]"}], ",", "1"}], "]"}], "]"}]}]}], 
+         "]"}], "&"}], ",", "nums"}], "]"}]}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.808888488529893*^9, 3.808888535763336*^9}, 
+   3.808888978224107*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"pos", "=", 
+   RowBox[{"posString", "/.", "idMap"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"posRules", "=", 
+  RowBox[{"Map", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"#", "\[Rule]", "True"}], "&"}], ",", "pos"}], 
+   "]"}]}], "\[IndentingNewLine]", "tau", "\[IndentingNewLine]", 
+ RowBox[{"tau2", "=", 
+  RowBox[{"tau", "/.", "posRules"}]}]}], "Input",
+ CellChangeTimes->{{3.808885643425501*^9, 3.808885673622272*^9}, {
+  3.8088857882429028`*^9, 3.8088858075283127`*^9}, {3.808886214660954*^9, 
+  3.808886216175317*^9}, {3.808888636113762*^9, 3.808888644826597*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"45", "\[Rule]", "True"}], ",", 
+   RowBox[{"10", "\[Rule]", "True"}], ",", 
+   RowBox[{"2", "\[Rule]", "True"}], ",", 
+   RowBox[{"24", "\[Rule]", "True"}], ",", 
+   RowBox[{"6", "\[Rule]", "True"}], ",", 
+   RowBox[{"7", "\[Rule]", "True"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.808885802744458*^9, 3.808885809610056*^9}, 
+   3.80888621737954*^9, {3.808888637528294*^9, 3.8088886452206717`*^9}, 
+   3.808902728774733*^9, 3.808903973605044*^9, 3.808908789549244*^9, 
+   3.80890927821714*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "38", "&&", "23"}], "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "2", "&&", "6", "&&", "37"}], "\[Implies]", "15"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"22", "&&", "23", "&&", "19"}], "\[Implies]", "11"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"36", "&&", "21", "&&", "22", "&&", "23", "&&", "19"}], 
+    "\[Implies]", "9"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "2", "&&", "6", "&&", "35"}], "\[Implies]", "1"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17"}], "\[Implies]", "5"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "33", "&&", "16"}], "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "38", "&&", "30"}], 
+    "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "37", "&&", "39"}], "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "37", "&&", "22"}], "\[Implies]", "11"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "38", "&&", "21"}], "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "33", "&&", "18"}], "\[Implies]", "14"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "36", "&&", "38"}], "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+    "20", "&&", "21", "&&", "22", "&&", "23", "&&", "45", "&&", "10"}], 
+    "\[Implies]", "35"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17", "&&", "18", "&&", "45", "&&", "2"}],
+     "\[Implies]", "30"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21", "&&", "22", "&&", "23", "&&", "35"}], 
+    "\[Implies]", "8"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "31", "&&", "16"}], "\[Implies]", "3"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "36", "&&", "21"}], "\[Implies]", "9"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "39", "&&", "22"}], "\[Implies]", "13"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "32", "&&", "17"}], "\[Implies]", "3"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21", "&&", "22"}], "\[Implies]", "13"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "35", "&&", "23"}], "\[Implies]", "8"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "10", "&&", "6", "&&", "31"}], "\[Implies]", "9"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "38", "&&", "35"}], "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"17", "&&", "18", "&&", "14"}], "\[Implies]", "3"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "2", "&&", "6", "&&", "12"}], "\[Implies]", "4"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "34", "&&", "17"}], "\[Implies]", "5"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "30", "&&", "18"}], "\[Implies]", "1"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "31", "&&", "33"}], "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "32", "&&", "34"}], "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "36", "&&", "21", "&&", "16"}], 
+    "\[Implies]", "31"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "33", "&&", "30"}], "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17", "&&", "18", "&&", "30"}], 
+    "\[Implies]", "1"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "37", "&&", "34"}], 
+    "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+    "26", "&&", "27", "&&", "28", "&&", "29", "&&", "45", "&&", "24"}], 
+    "\[Implies]", "40"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "2", "&&", "6", "&&", "20"}], "\[Implies]", "15"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16"}], "\[Implies]", "4"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "36", "&&", "21", "&&", "15"}], 
+    "\[Implies]", "32"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "2", "&&", "6", "&&", "38"}], "\[Implies]", "4"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "2", "&&", "6", "&&", "13"}], "\[Implies]", "5"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "2", "&&", "6", "&&", "39"}], "\[Implies]", "5"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21"}], "\[Implies]", "12"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "37", "&&", "22", "&&", "16"}], 
+    "\[Implies]", "33"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "37", "&&", "22", "&&", "17"}], 
+    "\[Implies]", "32"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "38", "&&", "23", "&&", "17"}], 
+    "\[Implies]", "34"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "38", "&&", "23", "&&", "18"}], 
+    "\[Implies]", "33"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "39", "&&", "19", "&&", "18"}], 
+    "\[Implies]", "30"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "36", "&&", "33"}], 
+    "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"45", "&&", "6", "&&", "7", "&&", "39", "&&", "19", "&&", "14"}], 
+    "\[Implies]", "34"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "35"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "36"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "18"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "14"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "18"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "30"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"4", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"4", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"12", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"12", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"20", "\[Xor]", "36"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"21", "\[Xor]", "37"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"22", "\[Xor]", "38"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"23", "\[Xor]", "39"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"19", "\[Xor]", "35"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"15", "\[Xor]", "31"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"16", "\[Xor]", "32"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"17", "\[Xor]", "33"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"18", "\[Xor]", "34"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"14", "\[Xor]", "30"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"26", "\[Xor]", "41"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"27", "\[Xor]", "42"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"28", "\[Xor]", "43"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"29", "\[Xor]", "44"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"25", "\[Xor]", "40"}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.808885802744458*^9, 3.808885809610056*^9}, 
+   3.80888621737954*^9, {3.808888637528294*^9, 3.8088886452206717`*^9}, 
+   3.808902728774733*^9, 3.808903973605044*^9, 3.808908789549244*^9, 
+   3.808909278220252*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"38", "&&", "23"}], "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"37", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"22", "&&", "23", "&&", "19"}], "\[Implies]", "11"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"36", "&&", "21", "&&", "22", "&&", "23", "&&", "19"}], 
+    "\[Implies]", "9"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"35", "\[Implies]", "1"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17"}], "\[Implies]", "5"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"33", "&&", "16"}], "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"38", "&&", "30"}], "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"37", "&&", "39"}], "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"37", "&&", "22"}], "\[Implies]", "11"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"38", "&&", "21"}], "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"33", "&&", "18"}], "\[Implies]", "14"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"36", "&&", "38"}], "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21", "&&", "22", "&&", "23"}], "\[Implies]", "35"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17", "&&", "18"}], "\[Implies]", "30"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21", "&&", "22", "&&", "23", "&&", "35"}], 
+    "\[Implies]", "8"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"31", "&&", "16"}], "\[Implies]", "3"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"36", "&&", "21"}], "\[Implies]", "9"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"39", "&&", "22"}], "\[Implies]", "13"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"32", "&&", "17"}], "\[Implies]", "3"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21", "&&", "22"}], "\[Implies]", "13"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"35", "&&", "23"}], "\[Implies]", "8"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"31", "\[Implies]", "9"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"38", "&&", "35"}], "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"17", "&&", "18", "&&", "14"}], "\[Implies]", "3"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{"12", "\[Implies]", "4"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"34", "&&", "17"}], "\[Implies]", "5"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"30", "&&", "18"}], "\[Implies]", "1"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"31", "&&", "33"}], "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"32", "&&", "34"}], "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"36", "&&", "21", "&&", "16"}], "\[Implies]", "31"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"33", "&&", "30"}], "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17", "&&", "18", "&&", "30"}], 
+    "\[Implies]", "1"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"37", "&&", "34"}], "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"26", "&&", "27", "&&", "28", "&&", "29"}], "\[Implies]", "40"}], 
+   ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"20", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16"}], "\[Implies]", "4"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"36", "&&", "21", "&&", "15"}], "\[Implies]", "32"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"38", "\[Implies]", "4"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "5"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"39", "\[Implies]", "5"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21"}], "\[Implies]", "12"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"37", "&&", "22", "&&", "16"}], "\[Implies]", "33"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"37", "&&", "22", "&&", "17"}], "\[Implies]", "32"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"38", "&&", "23", "&&", "17"}], "\[Implies]", "34"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"38", "&&", "23", "&&", "18"}], "\[Implies]", "33"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"39", "&&", "19", "&&", "18"}], "\[Implies]", "30"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"36", "&&", "33"}], "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"39", "&&", "19", "&&", "14"}], "\[Implies]", "34"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "35"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "36"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "18"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "14"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "18"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "30"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"4", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"4", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"12", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"12", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"20", "\[Xor]", "36"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"21", "\[Xor]", "37"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"22", "\[Xor]", "38"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"23", "\[Xor]", "39"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"19", "\[Xor]", "35"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"15", "\[Xor]", "31"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"16", "\[Xor]", "32"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"17", "\[Xor]", "33"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"18", "\[Xor]", "34"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"14", "\[Xor]", "30"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"26", "\[Xor]", "41"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"27", "\[Xor]", "42"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"28", "\[Xor]", "43"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"29", "\[Xor]", "44"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"25", "\[Xor]", "40"}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.808885802744458*^9, 3.808885809610056*^9}, 
+   3.80888621737954*^9, {3.808888637528294*^9, 3.8088886452206717`*^9}, 
+   3.808902728774733*^9, 3.808903973605044*^9, 3.808908789549244*^9, 
+   3.808909278224042*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"conpairs", "=", 
+   RowBox[{"Sort", "[", 
+    RowBox[{"Map", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"#", "[", 
+          RowBox[{"[", "1", "]"}], "]"}], ",", 
+         RowBox[{"#", "[", 
+          RowBox[{"[", "2", "]"}], "]"}]}], "}"}], "&"}], ",", 
+      RowBox[{"Cases", "[", 
+       RowBox[{"tau2", ",", 
+        RowBox[{"(", 
+         RowBox[{"a_", "\[Xor]", "b_"}], ")"}]}], "]"}]}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"erules", "=", 
+   RowBox[{"RuleOutEquivalences", "[", 
+    RowBox[{"conpairs", ",", "senIDs"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tauAndCrules", "=", 
+   RowBox[{"TauWithoutContradictions", "[", 
+    RowBox[{"erules", ",", "conpairs", ",", 
+     RowBox[{"DeleteCases", "[", 
+      RowBox[{"tau2", ",", 
+       RowBox[{"(", 
+        RowBox[{"a_", "\[Xor]", "b_"}], ")"}]}], "]"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"tau3", "=", " ", 
+  RowBox[{"tauAndCrules", "[", 
+   RowBox[{"[", "1", "]"}], "]"}]}], "\n", 
+ RowBox[{"crules", "=", 
+  RowBox[{"tauAndCrules", "[", 
+   RowBox[{"[", "2", "]"}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.808886127234763*^9, 3.808886141112175*^9}, {
+   3.808886182935432*^9, 3.808886183690044*^9}, {3.808886220205612*^9, 
+   3.80888627029172*^9}, {3.808886312365221*^9, 3.808886316669924*^9}, 
+   3.808888680405964*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Equivalences \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["Equivalences ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.808886141597801*^9, 3.808886184961873*^9, 3.808886222064753*^9, {
+   3.808886260449073*^9, 3.808886270992016*^9}, 3.808886317230966*^9, 
+   3.8088886835788383`*^9, 3.808902735472952*^9, 3.8089039737073593`*^9, 
+   3.8089087897209*^9, 3.808909278349424*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Partition \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", "}"}]}],
+  SequenceForm["Partition ", {}],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.808886141597801*^9, 3.808886184961873*^9, 3.808886222064753*^9, {
+   3.808886260449073*^9, 3.808886270992016*^9}, 3.808886317230966*^9, 
+   3.8088886835788383`*^9, 3.808902735472952*^9, 3.8089039737073593`*^9, 
+   3.8089087897209*^9, 3.808909278350865*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Kontradiktorische Gegens\[ADoubleDot]tze \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"14", ",", "30"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"15", ",", "31"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "32"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", "33"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", "34"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", "35"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", "36"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", "37"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", "38"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", "39"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", "40"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", "41"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", "42"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", "43"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", "44"}], "}"}]}], "}"}]}],
+  SequenceForm[
+  "Kontradiktorische Gegens\[ADoubleDot]tze ", {{14, 30}, {15, 31}, {16, 
+   32}, {17, 33}, {18, 34}, {19, 35}, {20, 36}, {21, 37}, {22, 38}, {23, 
+   39}, {25, 40}, {26, 41}, {27, 42}, {28, 43}, {29, 44}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.808886141597801*^9, 3.808886184961873*^9, 3.808886222064753*^9, {
+   3.808886260449073*^9, 3.808886270992016*^9}, 3.808886317230966*^9, 
+   3.8088886835788383`*^9, 3.808902735472952*^9, 3.8089039737073593`*^9, 
+   3.8089087897209*^9, 3.8089092783524427`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Reduzierte Kontradiktorische Gegens\[ADoubleDot]tze \"\>", 
+   "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"14", ",", "30"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"15", ",", "31"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "32"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", "33"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", "34"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", "35"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", "36"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", "37"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", "38"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", "39"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", "40"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", "41"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", "42"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", "43"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", "44"}], "}"}]}], "}"}]}],
+  SequenceForm[
+  "Reduzierte Kontradiktorische Gegens\[ADoubleDot]tze ", {{14, 30}, {15, 
+   31}, {16, 32}, {17, 33}, {18, 34}, {19, 35}, {20, 36}, {21, 37}, {22, 
+   38}, {23, 39}, {25, 40}, {26, 41}, {27, 42}, {28, 43}, {29, 44}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.808886141597801*^9, 3.808886184961873*^9, 3.808886222064753*^9, {
+   3.808886260449073*^9, 3.808886270992016*^9}, 3.808886317230966*^9, 
+   3.8088886835788383`*^9, 3.808902735472952*^9, 3.8089039737073593`*^9, 
+   3.8089087897209*^9, 3.8089092783540688`*^9}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Nochmals Reduzierte Kontradiktorische Gegens\[ADoubleDot]tze \
+\"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"14", ",", "30"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"15", ",", "31"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"16", ",", "32"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"17", ",", "33"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"18", ",", "34"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"19", ",", "35"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"20", ",", "36"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"21", ",", "37"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"22", ",", "38"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"23", ",", "39"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"25", ",", "40"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"26", ",", "41"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"27", ",", "42"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"28", ",", "43"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"29", ",", "44"}], "}"}]}], "}"}]}],
+  SequenceForm[
+  "Nochmals Reduzierte Kontradiktorische Gegens\[ADoubleDot]tze ", {{14, 
+   30}, {15, 31}, {16, 32}, {17, 33}, {18, 34}, {19, 35}, {20, 36}, {21, 
+   37}, {22, 38}, {23, 39}, {25, 40}, {26, 41}, {27, 42}, {28, 43}, {29, 44}}],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.808886141597801*^9, 3.808886184961873*^9, 3.808886222064753*^9, {
+   3.808886260449073*^9, 3.808886270992016*^9}, 3.808886317230966*^9, 
+   3.8088886835788383`*^9, 3.808902735472952*^9, 3.8089039737073593`*^9, 
+   3.8089087897209*^9, 3.808909278356094*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "22"}], "&&", "23"}], "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"!", "21"}], "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"22", "&&", "23", "&&", "19"}], "\[Implies]", "11"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "20"}], "&&", "21", "&&", "22", "&&", "23", "&&", "19"}], 
+    "\[Implies]", "9"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"!", "19"}], "\[Implies]", "1"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17"}], "\[Implies]", "5"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "17"}], "&&", "16"}], "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "22"}], "&&", 
+     RowBox[{"!", "14"}]}], "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "21"}], "&&", 
+     RowBox[{"!", "23"}]}], "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "21"}], "&&", "22"}], "\[Implies]", "11"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "22"}], "&&", "21"}], "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "17"}], "&&", "18"}], "\[Implies]", "14"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "20"}], "&&", 
+     RowBox[{"!", "22"}]}], "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21", "&&", "22", "&&", "23"}], "\[Implies]", 
+    RowBox[{"!", "19"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17", "&&", "18"}], "\[Implies]", 
+    RowBox[{"!", "14"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21", "&&", "22", "&&", "23", "&&", 
+     RowBox[{"!", "19"}]}], "\[Implies]", "8"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "15"}], "&&", "16"}], "\[Implies]", "3"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "20"}], "&&", "21"}], "\[Implies]", "9"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "23"}], "&&", "22"}], "\[Implies]", "13"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "16"}], "&&", "17"}], "\[Implies]", "3"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21", "&&", "22"}], "\[Implies]", "13"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "19"}], "&&", "23"}], "\[Implies]", "8"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"!", "15"}], "\[Implies]", "9"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "22"}], "&&", 
+     RowBox[{"!", "19"}]}], "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"17", "&&", "18", "&&", "14"}], "\[Implies]", "3"}], ")"}], "&&", 
+  
+  RowBox[{"(", 
+   RowBox[{"12", "\[Implies]", "4"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "18"}], "&&", "17"}], "\[Implies]", "5"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "14"}], "&&", "18"}], "\[Implies]", "1"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "15"}], "&&", 
+     RowBox[{"!", "17"}]}], "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "16"}], "&&", 
+     RowBox[{"!", "18"}]}], "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "20"}], "&&", "21", "&&", "16"}], "\[Implies]", 
+    RowBox[{"!", "15"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "17"}], "&&", 
+     RowBox[{"!", "14"}]}], "\[Implies]", "29"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16", "&&", "17", "&&", "18", "&&", 
+     RowBox[{"!", "14"}]}], "\[Implies]", "1"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "21"}], "&&", 
+     RowBox[{"!", "18"}]}], "\[Implies]", "28"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"26", "&&", "27", "&&", "28", "&&", "29"}], "\[Implies]", 
+    RowBox[{"!", "25"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"20", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"15", "&&", "16"}], "\[Implies]", "4"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "20"}], "&&", "21", "&&", "15"}], "\[Implies]", 
+    RowBox[{"!", "16"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"!", "22"}], "\[Implies]", "4"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "5"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"!", "23"}], "\[Implies]", "5"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{"20", "&&", "21"}], "\[Implies]", "12"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "21"}], "&&", "22", "&&", "16"}], "\[Implies]", 
+    RowBox[{"!", "17"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "21"}], "&&", "22", "&&", "17"}], "\[Implies]", 
+    RowBox[{"!", "16"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "22"}], "&&", "23", "&&", "17"}], "\[Implies]", 
+    RowBox[{"!", "18"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "22"}], "&&", "23", "&&", "18"}], "\[Implies]", 
+    RowBox[{"!", "17"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "23"}], "&&", "19", "&&", "18"}], "\[Implies]", 
+    RowBox[{"!", "14"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "20"}], "&&", 
+     RowBox[{"!", "17"}]}], "\[Implies]", "27"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"!", "23"}], "&&", "19", "&&", "14"}], "\[Implies]", 
+    RowBox[{"!", "18"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"11", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"8", "\[Implies]", 
+    RowBox[{"!", "19"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", 
+    RowBox[{"!", "20"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "23"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"9", "\[Implies]", "19"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "21"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"13", "\[Implies]", "22"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "18"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"3", "\[Implies]", "14"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", "18"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"1", "\[Implies]", 
+    RowBox[{"!", "14"}]}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"5", "\[Implies]", "17"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"4", "\[Implies]", "15"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"4", "\[Implies]", "16"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"12", "\[Implies]", "20"}], ")"}], "&&", 
+  RowBox[{"(", 
+   RowBox[{"12", "\[Implies]", "21"}], ")"}]}]], "Output",
+ CellChangeTimes->{{3.808886127622856*^9, 3.808886141595084*^9}, 
+   3.808886184959861*^9, 3.80888622206285*^9, {3.808886260446022*^9, 
+   3.808886270989978*^9}, 3.8088863172384233`*^9, 3.808888683592647*^9, 
+   3.808902735481352*^9, 3.808903973717661*^9, 3.8089087897315474`*^9, 
+   3.8089092783589773`*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"30", "\[Rule]", 
+    RowBox[{"!", "14"}]}], ",", 
+   RowBox[{"31", "\[Rule]", 
+    RowBox[{"!", "15"}]}], ",", 
+   RowBox[{"32", "\[Rule]", 
+    RowBox[{"!", "16"}]}], ",", 
+   RowBox[{"33", "\[Rule]", 
+    RowBox[{"!", "17"}]}], ",", 
+   RowBox[{"34", "\[Rule]", 
+    RowBox[{"!", "18"}]}], ",", 
+   RowBox[{"35", "\[Rule]", 
+    RowBox[{"!", "19"}]}], ",", 
+   RowBox[{"36", "\[Rule]", 
+    RowBox[{"!", "20"}]}], ",", 
+   RowBox[{"37", "\[Rule]", 
+    RowBox[{"!", "21"}]}], ",", 
+   RowBox[{"38", "\[Rule]", 
+    RowBox[{"!", "22"}]}], ",", 
+   RowBox[{"39", "\[Rule]", 
+    RowBox[{"!", "23"}]}], ",", 
+   RowBox[{"40", "\[Rule]", 
+    RowBox[{"!", "25"}]}], ",", 
+   RowBox[{"41", "\[Rule]", 
+    RowBox[{"!", "26"}]}], ",", 
+   RowBox[{"42", "\[Rule]", 
+    RowBox[{"!", "27"}]}], ",", 
+   RowBox[{"43", "\[Rule]", 
+    RowBox[{"!", "28"}]}], ",", 
+   RowBox[{"44", "\[Rule]", 
+    RowBox[{"!", "29"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.808886127622856*^9, 3.808886141595084*^9}, 
+   3.808886184959861*^9, 3.80888622206285*^9, {3.808886260446022*^9, 
+   3.808886270989978*^9}, 3.8088863172384233`*^9, 3.808888683592647*^9, 
+   3.808902735481352*^9, 3.808903973717661*^9, 3.8089087897315474`*^9, 
+   3.8089092783613577`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"bv", "=", 
+  RowBox[{"BooleanVariables", "[", "tau3", "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"turnToStrings", "[", 
+  RowBox[{"bv", ",", " ", "idMap"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.808886329175591*^9, 3.808886336955001*^9}, {
+  3.808886544241994*^9, 3.8088865456986523`*^9}, {3.808888753403448*^9, 
+  3.808888764949997*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "3", ",", "4", ",", "5", ",", "8", ",", "9", ",", "11", ",", "12",
+    ",", "13", ",", "14", ",", "15", ",", "16", ",", "17", ",", "18", ",", 
+   "19", ",", "20", ",", "21", ",", "22", ",", "23", ",", "25", ",", "26", 
+   ",", "27", ",", "28", ",", "29"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.808886337389595*^9, {3.808886546191901*^9, 3.808886566135367*^9}, {
+   3.808888691990651*^9, 3.8088887165010366`*^9}, 3.808888765240488*^9, 
+   3.8088889877892942`*^9, 3.8089027464320917`*^9, 3.8089039738112*^9, 
+   3.80890878985672*^9, 3.808909278503686*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+   ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>", 
+   ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+   ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+   ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"No BCL as CAM\"\>", 
+   ",", "\<\"No BCL as CM\"\>", ",", "\<\"No BCL as ML\"\>", 
+   ",", "\<\"No BCL as ORS\"\>", ",", "\<\"No BCL as SIL\"\>", 
+   ",", "\<\"No Main Culm as CAM\"\>", ",", "\<\"No Main Culm as CM\"\>", 
+   ",", "\<\"No Main Culm as ML\"\>", ",", "\<\"No Main Culm as ORS\"\>", 
+   ",", "\<\"No Main Culm as SIL\"\>", ",", "\<\"No Non-Culm as CAM\"\>", 
+   ",", "\<\"No Non-Culm as CM\"\>", ",", "\<\"No Non-Culm as ML\"\>", 
+   ",", "\<\"No Non-Culm as ORS\"\>", ",", "\<\"No Non-Culm as SIL\"\>"}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.808886337389595*^9, {3.808886546191901*^9, 3.808886566135367*^9}, {
+   3.808888691990651*^9, 3.8088887165010366`*^9}, 3.808888765240488*^9, 
+   3.8088889877892942`*^9, 3.8089027464320917`*^9, 3.8089039738112*^9, 
+   3.80890878985672*^9, 3.8089092785064*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"chData", "=", 
+   RowBox[{"SatisfiabilityInstances", "[", 
+    RowBox[{"tau3", ",", "bv", ",", "All"}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8088863416299753`*^9, 3.808886431291587*^9}, {
+  3.8088864712265873`*^9, 3.808886490794784*^9}, {3.8088865521778717`*^9, 
+  3.80888655262638*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Length", "[", "chData", "]"}]], "Input",
+ CellChangeTimes->{{3.808886515123644*^9, 3.808886526065867*^9}}],
+
+Cell[BoxData["877"], "Output",
+ CellChangeTimes->{3.808886526387019*^9, 3.808888725057238*^9, 
+  3.808902772046267*^9, 3.8089039742621813`*^9, 3.808908790358953*^9, 
+  3.808909279018441*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"chData2", "=", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"turnToNumbers", "[", 
+       RowBox[{"#", ",", "bv"}], "]"}], "&"}], ",", "chData"}], "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{3.808888789961022*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"chData2", "[", 
+  RowBox[{"[", 
+   RowBox[{"1", ";;", "3"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Map", "[", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"turnToStrings", "[", 
+     RowBox[{"#", ",", " ", "idMap"}], "]"}], "&"}], ",", 
+   RowBox[{"chData2", "[", 
+    RowBox[{"[", 
+     RowBox[{"1", ";;", "3"}], "]"}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.808888797039875*^9, 3.808888803371821*^9}, {
+  3.80888885389902*^9, 3.8088888542462587`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     RowBox[{"!", "3"}], ",", "4", ",", "5", ",", "8", ",", 
+     RowBox[{"!", "9"}], ",", 
+     RowBox[{"!", "11"}], ",", "12", ",", "13", ",", 
+     RowBox[{"!", "14"}], ",", "15", ",", "16", ",", "17", ",", "18", ",", 
+     RowBox[{"!", "19"}], ",", "20", ",", "21", ",", "22", ",", "23", ",", 
+     "25", ",", "26", ",", "27", ",", "28", ",", 
+     RowBox[{"!", "29"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     RowBox[{"!", "3"}], ",", "4", ",", "5", ",", "8", ",", 
+     RowBox[{"!", "9"}], ",", 
+     RowBox[{"!", "11"}], ",", "12", ",", "13", ",", 
+     RowBox[{"!", "14"}], ",", "15", ",", "16", ",", "17", ",", "18", ",", 
+     RowBox[{"!", "19"}], ",", "20", ",", "21", ",", "22", ",", "23", ",", 
+     "25", ",", "26", ",", "27", ",", 
+     RowBox[{"!", "28"}], ",", "29"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", 
+     RowBox[{"!", "3"}], ",", "4", ",", "5", ",", "8", ",", 
+     RowBox[{"!", "9"}], ",", 
+     RowBox[{"!", "11"}], ",", "12", ",", "13", ",", 
+     RowBox[{"!", "14"}], ",", "15", ",", "16", ",", "17", ",", "18", ",", 
+     RowBox[{"!", "19"}], ",", "20", ",", "21", ",", "22", ",", "23", ",", 
+     "25", ",", "26", ",", "27", ",", 
+     RowBox[{"!", "28"}], ",", 
+     RowBox[{"!", "29"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.8088888037609787`*^9, 3.808888854660529*^9, 
+  3.80888899547684*^9, 3.808902792075077*^9, 3.8089039745151377`*^9, 
+  3.808908790598625*^9, 3.808909279246862*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"BCL as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"BCL at Oldest ML\"\>"}], 
+     ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>", 
+     ",", "\<\"Main Culm as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"Main Culm as CM\"\>"}], ",", 
+     RowBox[{"!", "\<\"MC at Oldest ML\"\>"}], 
+     ",", "\<\"MC at Youngest ORS\"\>", ",", "\<\"MC at Youngest SIL\"\>", 
+     ",", 
+     RowBox[{"!", "\<\"No BCL as CAM\"\>"}], ",", "\<\"No BCL as CM\"\>", 
+     ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+     ",", "\<\"No BCL as SIL\"\>", ",", 
+     RowBox[{"!", "\<\"No Main Culm as CAM\"\>"}], 
+     ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+     ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>", 
+     ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+     ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", ",", 
+     RowBox[{"!", "\<\"No Non-Culm as SIL\"\>"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"BCL as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"BCL at Oldest ML\"\>"}], 
+     ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>", 
+     ",", "\<\"Main Culm as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"Main Culm as CM\"\>"}], ",", 
+     RowBox[{"!", "\<\"MC at Oldest ML\"\>"}], 
+     ",", "\<\"MC at Youngest ORS\"\>", ",", "\<\"MC at Youngest SIL\"\>", 
+     ",", 
+     RowBox[{"!", "\<\"No BCL as CAM\"\>"}], ",", "\<\"No BCL as CM\"\>", 
+     ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+     ",", "\<\"No BCL as SIL\"\>", ",", 
+     RowBox[{"!", "\<\"No Main Culm as CAM\"\>"}], 
+     ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+     ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>", 
+     ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+     ",", "\<\"No Non-Culm as ML\"\>", ",", 
+     RowBox[{"!", "\<\"No Non-Culm as ORS\"\>"}], 
+     ",", "\<\"No Non-Culm as SIL\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"BCL as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"BCL at Oldest ML\"\>"}], 
+     ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>", 
+     ",", "\<\"Main Culm as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"Main Culm as CM\"\>"}], ",", 
+     RowBox[{"!", "\<\"MC at Oldest ML\"\>"}], 
+     ",", "\<\"MC at Youngest ORS\"\>", ",", "\<\"MC at Youngest SIL\"\>", 
+     ",", 
+     RowBox[{"!", "\<\"No BCL as CAM\"\>"}], ",", "\<\"No BCL as CM\"\>", 
+     ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+     ",", "\<\"No BCL as SIL\"\>", ",", 
+     RowBox[{"!", "\<\"No Main Culm as CAM\"\>"}], 
+     ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+     ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>", 
+     ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+     ",", "\<\"No Non-Culm as ML\"\>", ",", 
+     RowBox[{"!", "\<\"No Non-Culm as ORS\"\>"}], ",", 
+     RowBox[{"!", "\<\"No Non-Culm as SIL\"\>"}]}], "}"}]}], "}"}]], "Output",\
+
+ CellChangeTimes->{3.8088888037609787`*^9, 3.808888854660529*^9, 
+  3.80888899547684*^9, 3.808902792075077*^9, 3.8089039745151377`*^9, 
+  3.808908790598625*^9, 3.808909279249271*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"dataCH3", "=", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"turnToStrings", "[", 
+       RowBox[{"#", ",", " ", "idMap"}], "]"}], "&"}], ",", "chData2"}], 
+    "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.808888865054762*^9, 3.808888883076212*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"dataCH3", "[", 
+  RowBox[{"[", 
+   RowBox[{"6", ";;", "7"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.808888886052104*^9, 3.808888894360372*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"\<\"BCL as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"BCL at Oldest ML\"\>"}], 
+     ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>", 
+     ",", "\<\"Main Culm as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"Main Culm as CM\"\>"}], ",", 
+     RowBox[{"!", "\<\"MC at Oldest ML\"\>"}], 
+     ",", "\<\"MC at Youngest ORS\"\>", ",", "\<\"MC at Youngest SIL\"\>", 
+     ",", 
+     RowBox[{"!", "\<\"No BCL as CAM\"\>"}], ",", "\<\"No BCL as CM\"\>", 
+     ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+     ",", "\<\"No BCL as SIL\"\>", ",", 
+     RowBox[{"!", "\<\"No Main Culm as CAM\"\>"}], 
+     ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+     ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>", 
+     ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", ",", 
+     RowBox[{"!", "\<\"No Non-Culm as ML\"\>"}], ",", 
+     RowBox[{"!", "\<\"No Non-Culm as ORS\"\>"}], 
+     ",", "\<\"No Non-Culm as SIL\"\>"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"\<\"BCL as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"BCL at Oldest ML\"\>"}], 
+     ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>", 
+     ",", "\<\"Main Culm as CAM\"\>", ",", 
+     RowBox[{"!", "\<\"Main Culm as CM\"\>"}], ",", 
+     RowBox[{"!", "\<\"MC at Oldest ML\"\>"}], 
+     ",", "\<\"MC at Youngest ORS\"\>", ",", "\<\"MC at Youngest SIL\"\>", 
+     ",", 
+     RowBox[{"!", "\<\"No BCL as CAM\"\>"}], ",", "\<\"No BCL as CM\"\>", 
+     ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+     ",", "\<\"No BCL as SIL\"\>", ",", 
+     RowBox[{"!", "\<\"No Main Culm as CAM\"\>"}], 
+     ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+     ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>", 
+     ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", ",", 
+     RowBox[{"!", "\<\"No Non-Culm as ML\"\>"}], ",", 
+     RowBox[{"!", "\<\"No Non-Culm as ORS\"\>"}], ",", 
+     RowBox[{"!", "\<\"No Non-Culm as SIL\"\>"}]}], "}"}]}], "}"}]], "Output",\
+
+ CellChangeTimes->{3.808888894910262*^9, 3.8088890180243397`*^9, 
+  3.8089029191562843`*^9, 3.808903974776394*^9, 3.80890879084487*^9, 
+  3.808909279468707*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.808888394742804*^9, 3.808888482292316*^9}, {
+   3.808888605333383*^9, 3.808888608136812*^9}, 3.8088887923682013`*^9}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.80888658599233*^9, 3.808886626842654*^9}, 
+   3.808888611938534*^9}],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"SetDirectory", "[", "\"\</home/carla/GDC/CH_Pool/\>\"", "]"}], 
+  ";"}], "\n", 
+ RowBox[{"Put", "[", 
+  RowBox[{"dataCH3", ",", "\"\<CH_Pool.txt\>\""}], "]"}]}], "Input",
+ CellChangeTimes->{{3.808888613902919*^9, 3.808888615761183*^9}, {
+  3.808889046260456*^9, 3.808889062111134*^9}}]
+},
+WindowSize->{1366, 703},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1864, 35, 105, "Input"],
+Cell[2447, 59, 606, 11, 59, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3090, 75, 1399, 42, 182, "Input"],
+Cell[CellGroupData[{
+Cell[4514, 121, 1174, 21, 25, "Print"],
+Cell[5691, 144, 1184, 21, 25, "Print"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6924, 171, 567, 15, 106, "Input"],
+Cell[7494, 188, 3266, 55, 227, "Output"]
+}, Open  ]],
+Cell[10775, 246, 1535, 46, 59, "Input"],
+Cell[CellGroupData[{
+Cell[12335, 296, 610, 14, 105, "Input"],
+Cell[12948, 312, 548, 12, 35, "Output"],
+Cell[13499, 326, 9354, 279, 333, "Output"],
+Cell[22856, 607, 8182, 244, 264, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31075, 856, 1448, 41, 129, "Input"],
+Cell[CellGroupData[{
+Cell[32548, 901, 463, 10, 25, "Print"],
+Cell[33014, 913, 457, 10, 25, "Print"],
+Cell[33474, 925, 1669, 45, 49, "Print"],
+Cell[35146, 972, 1691, 45, 49, "Print"],
+Cell[36840, 1019, 1705, 45, 49, "Print"]
+}, Open  ]],
+Cell[38560, 1067, 8500, 270, 241, "Output"],
+Cell[47063, 1339, 1292, 37, 35, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48392, 1381, 364, 7, 58, "Input"],
+Cell[48759, 1390, 610, 11, 35, "Output"],
+Cell[49372, 1403, 1180, 19, 107, "Output"]
+}, Open  ]],
+Cell[50567, 1425, 333, 7, 35, "Input"],
+Cell[CellGroupData[{
+Cell[50925, 1436, 130, 2, 33, "Input"],
+Cell[51058, 1440, 190, 3, 33, "Output"]
+}, Open  ]],
+Cell[51263, 1446, 273, 9, 35, "Input"],
+Cell[CellGroupData[{
+Cell[51561, 1459, 489, 13, 59, "Input"],
+Cell[52053, 1474, 1544, 33, 83, "Output"],
+Cell[53600, 1509, 3334, 62, 299, "Output"]
+}, Open  ]],
+Cell[56949, 1574, 308, 9, 35, "Input"],
+Cell[CellGroupData[{
+Cell[57282, 1587, 174, 4, 35, "Input"],
+Cell[57459, 1593, 2319, 44, 203, "Output"]
+}, Open  ]],
+Cell[59793, 1640, 166, 2, 33, "Input"],
+Cell[59962, 1644, 117, 2, 33, "Input"],
+Cell[60082, 1648, 321, 7, 116, "Input"]
+}
+]
+*)
+

@@ -1,0 +1,9 @@
+{{{0.022222222222222223, 1, 45}, {0.02188736170369733, 0.022222222222222223, 
+   0.0003423537386329627}, {0.9703099445638865, 0.022222222222222223, 
+   6.587311267135917*^-11, 0.0003423537386329627}}, 
+ {{15, {"Conformable Passage - BCL and NC", "Conformable Passages - 2", 
+    "Main Culm as CM", "NC at Oldest ML", "NC at Youngest ORS", 
+    "NC at Youngest SIL", "No Carb Fossils in NC Strata", 
+    "No Main Culm as CM", "No Main Culm as ML", "Non-Culm as CAM", 
+    "No Non-Culm as CAM", "No Non-Culm as ML", "No Non-Culm as ORS", 
+    "No Non-Culm as SIL", "Unbroken Sequence of Devon Strata"}}, {}}}

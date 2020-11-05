@@ -40,6 +40,10 @@ of fossils (but no peculiar ORS fish fossils) #cha
     -> [Some North Devonian Strata - FA - 1]
     +> [Carboniferous Plants in North Devon]
 
+[Some ORS in North Devon]: In north Devon, some NC strata are ORS in age #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+    <+ [Non-Culm as ORS]
+
 /// CFA - ORS - V2
 
 <ORS in North Devon - CFA ORS V2 - 1>: If strata can be identified by means of their CFAs and 
@@ -54,7 +58,7 @@ of fossils (but no peculiar ORS fish fossils) #cha
     ----
     (6) [Some North Devonian Strata - FA - 1]
            
-
+/* UNNÖTIG
 <ORS in North Devon - CFA ORS V2 - 2>: If strata can be identified by means of their CFAs and 
  some north Devonian NC strata support few fossils and most of these are peculiar fish fossils only known from the ORS, 
  then these strata are ORS in age #DEV
@@ -65,7 +69,7 @@ of fossils (but no peculiar ORS fish fossils) #cha
     (4) [CFA - ORS - V2]
     (5) [Some North Devonian Strata - FA - 1]
     ----
-    (6) [Some ORS in North Devon]
+    (6) [Some ORS in North Devon]*/
 
 
 /// CFA - ORS - II - V2           

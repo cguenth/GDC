@@ -1,0 +1,56 @@
+Mathematica File /home/cguenth/GDC/GDC_CONF.m
+REV AR
+PERS DLB
+CONF ALL
+Eingabe - Datei - TAU 2 /home/cguenth/GDC/TAU2/GDC_Tau_Simplified_S0.txt
+Eingabe - Datei - POS /home/cguenth/GDC/POS/gdc_pos_S0.txt
+Eingabe - Datei - SIG /home/cguenth/GDC/SIG2/GDC_Sigma_2_S0.txt
+Ausgabe - Ordner /home/cguenth/GDC/GDC_Conf_AR_DLB_ALL_Out
+Ausgabe - Datei GDC_CONF_AR_DLB_ALL_S0.txt
+Package path /home/cguenth/GDC/DialecticalStructures/Argdown.m
+Package path /home/cguenth/GDC/DialecticalStructures/GDCAnalysis3.m
+Package path /home/cguenth/GDC/DialecticalStructures/GDCTools.m
+Positions - Indexe {3, 3, 3}
+ posTot {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 39, 45, 61, 62}
+posNeu {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 39, 45, 61, 62}
+TAU vor Vereinfachung Implies[33 && 34 && 35 && 36,  !32] && Implies[35 && 36 && 32, 20] && Implies[ !33 && 34, 18] && Implies[ !35 && 34, 33] && Implies[ !34 && 35, 20] && Implies[ !36 && 35, 22] && Implies[ !35 && 36, 32] && Implies[ !32 && 36, 17] && Implies[ !33 &&  !35, 42] && Implies[ !34 &&  !36, 43] && Implies[ !35 &&  !32, 44] && Implies[33 && 34 && 35 && 36 &&  !32, 17] && 17 && Implies[ !33 && 34 && 35 && 36 && 32, 18] && Implies[28 && 29 && 30 && 31,  !27] && Implies[30 && 31 && 27, 4] && Implies[ !28 && 29, 4] && Implies[ !30 && 29, 28] && Implies[ !29 && 30, 4] && Implies[ !31 && 30, 6] && Implies[ !30 && 31, 27] && Implies[ !27 && 31, 1] && Implies[ !28 &&  !30, 42] && Implies[ !29 &&  !31, 43] && Implies[ !30 &&  !27, 44] && Implies[28 && 29 && 30 && 31 &&  !27, 1] && 1 && Implies[28 &&  !29 && 30 && 31 && 27, 2] && Implies[41 && 42 && 43 && 44,  !40] && Implies[41 && 42 && 43 && 44 &&  !40, 37] && 37 && Implies[41 && 42 &&  !43 && 44 && 40, 38] && 14 && Implies[14 && 18,  !41] && Implies[14 && 37, 17] && Implies[14 && 41, 33] && Implies[33 && 34, 21] && Implies[41 && 42, 24] && Implies[14 && 24, 21] && Implies[33 && 34 && 35, 22] && Implies[41 && 42 && 43, 25] && Implies[14 && 25, 22] && Implies[ !28, 18] && Implies[ !32, 1] && Implies[33, 28] && Implies[ !34, 28] && Implies[28 && 29, 5] && Implies[21, 5] && Implies[ !35, 5] && Implies[28 && 29 && 30, 6] && Implies[22, 6] && Implies[ !36, 6] && Implies[14, 13] && Implies[14 && 25, 13] && Implies[ !33 && 34 && 28,  !29] && Implies[ !33 && 34 && 29,  !28] && Implies[ !34 && 35 && 29,  !30] && Implies[ !34 && 35 && 30,  !29] && Implies[ !35 && 36 && 30,  !31] && Implies[ !35 && 36 && 31,  !30] && Implies[ !36 && 32 && 31,  !27] && Implies[ !36 && 32 && 27,  !31] && Implies[ !33 &&  !30, 42] && Implies[ !34 &&  !31, 43] && Implies[ !35 &&  !27, 44] && Implies[20, 36] && Implies[20, 32] && Implies[20, 35] && Implies[17, 33] && Implies[17, 34] && Implies[17, 35] && Implies[17, 36] && Implies[17,  !32] && Implies[18,  !33] && Implies[18, 34] && Implies[18, 35] && Implies[18, 36] && Implies[18, 32] && Implies[4, 30] && Implies[4, 31] && Implies[4, 27] && Implies[1, 28] && Implies[1, 29] && Implies[1, 30] && Implies[1, 31] && Implies[1,  !27] && Implies[2, 28] && Implies[2,  !29] && Implies[2, 30] && Implies[2, 31] && Implies[2, 27] && Implies[37, 41] && Implies[37, 42] && Implies[37, 43] && Implies[37, 44] && Implies[37,  !40] && Implies[38, 41] && Implies[38, 42] && Implies[38,  !43] && Implies[38, 44] && Implies[38, 40] && 15 && Implies[21, 33] && Implies[21, 34] && Implies[24, 41] && Implies[24, 42] && Implies[22, 33] && Implies[22, 34] && Implies[22, 35] && Implies[25, 41] && Implies[25, 42] && Implies[25, 43] && Implies[5, 28] && Implies[5, 29] && Implies[6, 28] && Implies[6, 29] && Implies[6, 30] && Implies[13, 14]
+l {1, 14, 15, 17, 37}
+l {13, 28, 29, 30, 31, 33, 34, 35, 36, 41, 42, 43, 44,  !27,  !32,  !40}
+l {5, 6, 21, 22, 24, 25,  !2,  !4,  !18,  !20,  !38}
+TAU nach Vereinfachung (EVBK) : True
+ posTot {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 28, 29, 30, 31, 33, 34, 35, 36, 39, 41, 42, 43, 44, 45, 61, 62,  !27,  !32,  !40}
+posNeu {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 28, 29, 30, 31, 33, 34, 35, 36, 39, 41, 42, 43, 44, 45, 61, 62,  !27,  !32,  !40}
+TAU vor Vereinfachung 17 && 17 && 17 && 1 && 1 && 1 && 37 && 37 && 14 &&  !(14 && 18) && Implies[14 && 37, 17] && 21 && 24 && Implies[14 && 24, 21] && 22 && 25 && Implies[14 && 25, 22] && 1 && 5 && Implies[21, 5] && 6 && Implies[22, 6] && Implies[14, 13] && Implies[14 && 25, 13] &&  !20 &&  !18 &&  !18 &&  !4 &&  !2 &&  !2 &&  !38 &&  !38 && 15 && Implies[13, 14]
+l {1, 5, 6, 14, 15, 17, 21, 22, 24, 25, 37,  !2,  !4,  !18,  !20,  !38}
+l {13}
+TAU nach Vereinfachung (CHEVBK) : True
+ posTot {3, 8, 11, 12, 16, 19, 28, 29, 30, 31, 33, 34, 35, 36, 39, 41, 42, 43, 44, 61,  !27,  !32,  !40}
+posNeu {3, 8, 11, 12, 16, 19, 28, 29, 30, 31, 33, 34, 35, 36, 39, 41, 42, 43, 44, 61,  !27,  !32,  !40}
+TAU vor Vereinfachung  !(22 &&  !9) && 17 && 17 && Implies[10 && 17, 23] && Implies[10 && 23, 17] && 1 && 1 && Implies[10 && 1, 7] && Implies[10 && 7, 1] && 37 && Implies[10 && 37, 26] && Implies[10 && 26, 37] && Implies[45, 14] &&  !(14 && 18) && Implies[14 && 37, 17] && 21 && 24 && Implies[14 && 24, 21] && 22 && 25 && Implies[14 && 25, 22] && 1 && 5 && Implies[21, 5] && 6 && Implies[22, 6] && Implies[17 && 1 && 37, 62] && Implies[62 && 14, 13] && Implies[14 && 25, 13] &&  !20 &&  !18 &&  !18 &&  !4 &&  !2 &&  !2 &&  !38 &&  !38 && Implies[45, 15] && Implies[14, 45] && Implies[13, 62] && Implies[13, 14]
+l {1, 5, 6, 17, 21, 22, 24, 25, 37,  !2,  !4,  !18,  !20,  !38}
+l {9, 62}
+l {}
+TAU nach Vereinfachung (CH) : Implies[10, 23] && Implies[10, 7] && Implies[10, 26] && Implies[45, 14] && Implies[14, 13] && Implies[14, 13] && Implies[45, 15] && Implies[14, 45] && Implies[13, 14]
+sigmaH 27
+sigma 79065
+ dojH {0.0003414911781445646, 27, 79065}
+ z {0.9999999999999999, 1., 0.0003414911781445646}
+ dojEK {0.000012647821412761652, 1, 79065}
+ f {1, 1., 0.000012647821412761652, 0.0003414911781445646}
+ posTot {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 39, 45, 61, 62}
+posNeu {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 39, 45, 61, 62}
+TAU vor Vereinfachung Implies[33 && 34 && 35 && 36,  !32] && Implies[35 && 36 && 32, 20] && Implies[ !33 && 34, 18] && Implies[ !35 && 34, 33] && Implies[ !34 && 35, 20] && Implies[ !36 && 35, 22] && Implies[ !35 && 36, 32] && Implies[ !32 && 36, 17] && Implies[ !33 &&  !35, 42] && Implies[ !34 &&  !36, 43] && Implies[ !35 &&  !32, 44] && Implies[33 && 34 && 35 && 36 &&  !32, 17] && 17 && Implies[ !33 && 34 && 35 && 36 && 32, 18] && Implies[28 && 29 && 30 && 31,  !27] && Implies[30 && 31 && 27, 4] && Implies[ !28 && 29, 4] && Implies[ !30 && 29, 28] && Implies[ !29 && 30, 4] && Implies[ !31 && 30, 6] && Implies[ !30 && 31, 27] && Implies[ !27 && 31, 1] && Implies[ !28 &&  !30, 42] && Implies[ !29 &&  !31, 43] && Implies[ !30 &&  !27, 44] && Implies[28 && 29 && 30 && 31 &&  !27, 1] && 1 && Implies[28 &&  !29 && 30 && 31 && 27, 2] && Implies[41 && 42 && 43 && 44,  !40] && Implies[41 && 42 && 43 && 44 &&  !40, 37] && 37 && Implies[41 && 42 &&  !43 && 44 && 40, 38] && 14 && Implies[14 && 18,  !41] && Implies[14 && 37, 17] && Implies[14 && 41, 33] && Implies[33 && 34, 21] && Implies[41 && 42, 24] && Implies[14 && 24, 21] && Implies[33 && 34 && 35, 22] && Implies[41 && 42 && 43, 25] && Implies[14 && 25, 22] && Implies[ !28, 18] && Implies[ !32, 1] && Implies[33, 28] && Implies[ !34, 28] && Implies[28 && 29, 5] && Implies[21, 5] && Implies[ !35, 5] && Implies[28 && 29 && 30, 6] && Implies[22, 6] && Implies[ !36, 6] && Implies[14, 13] && Implies[14 && 25, 13] && Implies[ !33 && 34 && 28,  !29] && Implies[ !33 && 34 && 29,  !28] && Implies[ !34 && 35 && 29,  !30] && Implies[ !34 && 35 && 30,  !29] && Implies[ !35 && 36 && 30,  !31] && Implies[ !35 && 36 && 31,  !30] && Implies[ !36 && 32 && 31,  !27] && Implies[ !36 && 32 && 27,  !31] && Implies[ !33 &&  !30, 42] && Implies[ !34 &&  !31, 43] && Implies[ !35 &&  !27, 44] && Implies[20, 36] && Implies[20, 32] && Implies[20, 35] && Implies[17, 33] && Implies[17, 34] && Implies[17, 35] && Implies[17, 36] && Implies[17,  !32] && Implies[18,  !33] && Implies[18, 34] && Implies[18, 35] && Implies[18, 36] && Implies[18, 32] && Implies[4, 30] && Implies[4, 31] && Implies[4, 27] && Implies[1, 28] && Implies[1, 29] && Implies[1, 30] && Implies[1, 31] && Implies[1,  !27] && Implies[2, 28] && Implies[2,  !29] && Implies[2, 30] && Implies[2, 31] && Implies[2, 27] && Implies[37, 41] && Implies[37, 42] && Implies[37, 43] && Implies[37, 44] && Implies[37,  !40] && Implies[38, 41] && Implies[38, 42] && Implies[38,  !43] && Implies[38, 44] && Implies[38, 40] && 15 && Implies[21, 33] && Implies[21, 34] && Implies[24, 41] && Implies[24, 42] && Implies[22, 33] && Implies[22, 34] && Implies[22, 35] && Implies[25, 41] && Implies[25, 42] && Implies[25, 43] && Implies[5, 28] && Implies[5, 29] && Implies[6, 28] && Implies[6, 29] && Implies[6, 30] && Implies[13, 14]
+l {1, 14, 15, 17, 37}
+l {13, 28, 29, 30, 31, 33, 34, 35, 36, 41, 42, 43, 44,  !27,  !32,  !40}
+l {5, 6, 21, 22, 24, 25,  !2,  !4,  !18,  !20,  !38}
+tau True
+Anzahl Instanzen 1
+Es gibt nur eine Instanz, da TAU True
+ posTot {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 28, 29, 30, 31, 33, 34, 35, 36, 39, 41, 42, 43, 44, 45, 61, 62,  !27,  !32,  !40}
+posNeu {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 28, 29, 30, 31, 33, 34, 35, 36, 39, 41, 42, 43, 44, 45, 61, 62,  !27,  !32,  !40}
+TAU vor Vereinfachung 17 && 17 && 17 && 1 && 1 && 1 && 37 && 37 && 14 &&  !(14 && 18) && Implies[14 && 37, 17] && 21 && 24 && Implies[14 && 24, 21] && 22 && 25 && Implies[14 && 25, 22] && 1 && 5 && Implies[21, 5] && 6 && Implies[22, 6] && Implies[14, 13] && Implies[14 && 25, 13] &&  !20 &&  !18 &&  !18 &&  !4 &&  !2 &&  !2 &&  !38 &&  !38 && 15 && Implies[13, 14]
+l {1, 5, 6, 14, 15, 17, 21, 22, 24, 25, 37,  !2,  !4,  !18,  !20,  !38}
+l {13}
+tau True
+Anzahl Instanzen 1
+Es gibt nur eine Instanz, da TAU True

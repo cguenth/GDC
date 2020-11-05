@@ -33,20 +33,38 @@
 
 //// NC Older Than BCL ---- Consequences
 
-<NC Older Than BCL - NC as CM>: If NC strata are older than BCL strata, and at youngest CM in age, 
+[BCL as CM]: The whole BCL strata are CAM in age #chron-hyp
+        +> [Some BCL as CM] 
+        +> [No BCL as ML] 
+        +> [No BCL as ORS] 
+        +> [No BCL as SIL]
+        +> [No BCL as CAM]   
+
+<BCL as CM> #chron-hyp
+
+        (1) [Some BCL as CM]
+        (2) [No BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [No BCL as CAM]
+        ----
+        (6) [BCL as CM]
+
+<NC Older Than BCL - BCL as CM>: If NC strata are older than BCL strata, and at youngest CM in age, 
  then BCL strata are CM in age  #pri #chron-hyp
 
         (1) [Standard Sequence]
-        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [BCL as Post-Primary and Pre-NRS]
         (3) [Devon Strata - Temporal Order - 2]
         (4) [Some Non-Culm as CM]
         ----
-        (6) [Some BCL as CM]
+        (5) [BCL as CM]
 
-//// EIGENTLICH [BCL as CM]
+//// Eigentlich [BCL as CM]
 
-<NC Older Than BCL - NC as CAM>: If BCL strata are older then MC strata, being at oldest CAM in age, 
-then BCL strata are CAM in age, too #pri #chron-hyp
+
+<NC Older Than BCL - NC as CAM>: If NC strata are older then BCL strata, being at oldest CAM in age, 
+then NC strata are CAM in age, too #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Non-Culm as Post-Primary and Pre-NRS]
@@ -76,7 +94,7 @@ then BCL strata are CAM in age, too #pri #chron-hyp
         (6) [No Non-Culm as CM]
 
 
-<NC Older Than BCL - NC at Youngest ORS - 1>:If NC strata are older than BCL strata, being at oldest ORS in age, 
+<NC Older Than BCL - NC at Youngest ORS - 1>:If NC strata are older than BCL strata, being at youngest ORS in age, 
  then there are no CM or ML NC strata  #pri #chron-hyp
 
         (1) [Standard Sequence]
@@ -121,16 +139,30 @@ then BCL strata are CAM in age, too #pri #chron-hyp
 
 //// NC - Conformable Formation
 
+[NC at Oldest ML]: Non-Culm strata are at oldest ML in age #chron-hyp
+        +> [No Non-Culm as ORS]
+        +> [No Non-Culm as SIL]
+        +> [No Non-Culm as CAM]
+
+ <NC at Oldest ML> #chron-hyp
+       
+       (1) [No Non-Culm as ORS]
+       (2) [No Non-Culm as SIL]
+       (3) [No Non-Culm as CAM]
+       ----
+       (4) [NC at Oldest ML]
+
+
 
 <NC as Conformable Formation - ML Missing 1>: If NC strata are the oldest Devonian strata and there are some CM but no ML NC strata,  
- then there are no ORS NC strata #pri #chron-hyp
+ then there are no ORS, SIL or CAM NC strata #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Devon Strata - Temporal Order - 2]
         (3) [Some Non-Culm as CM]
         (4) [No Non-Culm as ML]
         ----
-        (5) [No Non-Culm as ORS]
+        (5) [NC at Oldest ML]
 
 <NC as Conformable Formation - ML Missing 2>: If NC strata are the oldest Devonian strata and there are some ORS but no ML NC strata, 
  then there are no CM NC strata #pri #chron-hyp
@@ -144,35 +176,35 @@ then BCL strata are CAM in age, too #pri #chron-hyp
 
 
 <NC as Conformable Formation - ORS Missing 1>: If NC strata are the oldest Devonian strata and there are some ML but no ORS NC strata, 
- then there are no SIL NC strata #pri #chron-hyp
+ then there are no SIL or CAM NC strata, too #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Devon Strata - Temporal Order - 2]
         (3) [Some Non-Culm as ML]
         (4) [No Non-Culm as ORS]
         ----
-        (5) [No Non-Culm as SIL]
+        (5) [NC at Oldest ML]
 
 <NC as Conformable Formation - ORS Missing 2>: If NC strata are the oldest Devonian strata and there are some SIL but no ORS NC strata, 
- then there are no ML NC strata #pri #chron-hyp
+ then there are no ML or CM NC strata, too #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Devon Strata - Temporal Order - 2]
         (3) [Some Non-Culm as SIL]
         (4) [No Non-Culm as ORS]
         ----
-        (5) [No Non-Culm as ML]
+        (5) [NC at Youngest SIL]
 
 
 <NC as Conformable Formation - SIL Missing 1>: If NC strata are the oldest Devonian strata and there are some CAM but no SIL NC strata, 
- then there are no ORS NC strata #pri #chron-hyp
+ then there are no ORS, ML or CM NC strata #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Devon Strata - Temporal Order - 2]
         (3) [Some Non-Culm as CAM]
         (4) [No Non-Culm as SIL]
         ----
-        (5) [No Non-Culm as ORS]
+        (5) [Non-Culm as CAM]
 
 <NC as Conformable Formation - SIL Missing 2>: If NC strata are the oldest Devonian strata and there are some ORS but no SIL NC strata, 
  then there are no CAM NC strata #pri #chron-hyp
@@ -201,14 +233,3 @@ then BCL strata are CAM in age, too #pri #chron-hyp
     ----
     (6) [Main Culm Youngest Devonian Strata]*/
 
-/* WEGGELASSEN, da [Non-Culm as CM] eingeführt werden müsste
-
-<NC Older Than BCL - NC at Youngest CM>:If NC strata are older than BCL strata, and at youngest CM in age, then it holds 
- that the BCL strata are CM in age #pri #chron-hyp
-
-        (1) [Standard Sequence]
-        (2) [BCL as Post-Primary and Pre-NRS]
-        (3) [Devon Strata - Temporal Order - 2]
-        (4) [Some Non-Culm as CM]
-        ----
-        (5) [Non-Culm as CM] */

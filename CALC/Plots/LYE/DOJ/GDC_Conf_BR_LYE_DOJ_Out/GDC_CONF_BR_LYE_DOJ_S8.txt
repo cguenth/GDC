@@ -1,9 +1,0 @@
-{{0., 0, 132}, {{17, {"CRT - ORS - II - V2", "CRT - ORS - V2", 
-    "NC at Youngest ORS", "No Non-Culm as CAM", "No Non-Culm as ML", 
-    "No Non-Culm as ORS", "No Non-Culm as SIL", 
-    "ORS Between South Devonian LSTs", "Some ML in North Devon", 
-    "Some North Devonian Strata - FA - 2", 
-    "Some North Devon NC at Oldest ML", "Some ORS in North Devon", 
-    "Some South Devon LSTs as ML", "Some South Devon LSTs as ORS", 
-    "Some South Devon LSTs at Oldest ML", "South Devon LSTs - FA - 1", 
-    "South Devon LSTs - FA - 2"}}, Null}}

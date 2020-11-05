@@ -46,17 +46,7 @@
         ----
         (5) [Some Non-Culm as CM]
 
-/*  EIGENTLICH, ANDERS wegen Satzlimit
-<MC Older Than SE Devon LSTs - LSTs as CM>: If MC strata, being CM in age, are older than some southeast Devon LSTs, 
- then these LSTs are CM in age, too #pri #chron-hyp
-
-        (1) [Standard Sequence]
-        (2) [Non-Culm as Post-Primary and Pre-NRS]
-        (3) [Devon Strata - Temporal Order - 3] 
-        (4) [Some Main Culm as CM]
-        ----
-        (5) [Some South Devon LSTs as CM]
-*/
+/* EIGENTLICH, (5) [Some South Devon LSTs as CM] */
 
 <MC Older Than SE DEV LSTs - All CAM>: If MC strata are older than some southeast Devon LSTs, being CAM in age, 
  then they are CAM in age, too #GRE #chron-hyp
@@ -79,17 +69,7 @@
         ----
         (5) [No Main Culm as CM]
 
-/* HIER FEHLEND wegen Satzlimit
-
-<MC Older Than SE DEV LSTs - MC at Youngest ML - 2>: If MC strata are older than some southeast Devon LSTs, being ML in age, 
- then there are no CM MC strata #pri #chron-hyp
-
-        (1) [Standard Sequence]
-        (2) [Main Culm as Post-Primary and Pre-NRS]
-        (3) [Devon Strata - Temporal Order - 3]
-        (4) [Some South Devon LSTs as ML]
-        ----
-        (5) [No Main Culm as CM]*/
+/* EIGENLICH (4) [Some South Devon LSTs as ML] */
 
 
 <MC Older Than SE DEV LSTs - MC at Youngest ORS>: If MC strata are older than some southeast Devon LSTs, being at youngest ORS in age, 
@@ -97,10 +77,11 @@
 
         (1) [Standard Sequence]
         (2) [Main Culm as Post-Primary and Pre-NRS]
-        (3) [Devon Strata - Temporal Order - 3]
-        (4) [NC at Youngest ORS]
+        (3) [Non-Culm as Post-Primary and Pre-NRS]
+        (4) [Devon Strata - Temporal Order - 3]
+        (5) [Some South Devon LSTs as ORS]
         ----
-        (6) [MC at Youngest ORS]
+        (7) [MC at Youngest ORS]
 
 
 <MC Older Than SE DEV LSTs - MC at Youngest SIL>: If MC strata are older than some southeast Devon LSTs, being at youngest SIL in age, 
@@ -111,57 +92,8 @@
         (3) [Devon Strata - Temporal Order - 3]
         (4) [NC at Youngest SIL]
         ----
-        (6) [MC at Youngest SIL]
-
-/* HIER FEHLEND wegen Satzlimit
-
-<MC Older Than SE DEV LSTs - MC at Youngest ML - 2>: If MC strata are older than some southeast Devon LSTs, being SIL in age, 
- then there are no CM or ML or ORS MC strata #pri #chron-hyp
-
-        (1) [Standard Sequence]
-        (2) [Main Culm as Post-Primary and Pre-NRS]
-        (3) [Devon Strata - Temporal Order - 3]
-        (4) [Some South Devon LSTs as SIL]
-        ----
         (5) [MC at Youngest SIL]
-*/
+
+/* EIGENTLCIH (4) [Some South Devon LSTs as SIL] */
 
 
-
-
-/* FEHLEND aufgrund von Schwierigkeiten, letztlich Anzahl Sätze
-
-[Some MNC at Youngest ORS] bzw. [Some MNC as ORS] ----> Neue Gruppe nötig, neue atomare Sätze
-
-<MNC Older Than BCL - MNC at Youngest ORS>: If MNC strata are older than BCL, being at oldest ORS in age, 
- then there are no CM or ML MNC strata #pri #chron-hyp
-
-        (1) [Standard Sequence]
-        (2) [Non-Culm as Post-Primary and Pre-NRS]
-        (3) [Devon Strata - Temporal Order - 3] 
-        (4) [Some BCL as ORS]
-        (5) [No BCL as SIL]
-        ----
-        (5) [MNC at Youngest ORS]
-
-ANALOG [MNC at Youngest SIL] usw
-*/
-
-
-
-/* WEGGELASSEN da dieses Arg keine vernünftige einschränkende Wirkung hat: Zum Beispiel
- !6 verbietet S.DEV LSTs as ORS - MC as SIL (d.h. 6), jedoch
- !6 verträglich mit S.DEV LSTs as ORS - MC as CAM (d.h. 6)
-
-<South Devon LSTs as Youngest Strata - 1>: If, Culm strata are at youngest SIL in age and some south Devonian LSTs are ORS in age,
-  then the youngest Devonian strata are these south Devonian LSTs #GRE #chron-hyp
-
-    (1) [Standard Sequence]
-    (2) [BCL Older Than MC]
-    (3) [No Main Culm as ORS]
-    (4) [Some Main Culm as SIL]
-    (5) [Some South Devon LSTs as ORS]
-    ----
-    (6) [Youngest Devonian Strata in South Devon]
-
-*/

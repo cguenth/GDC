@@ -1,6 +1,0 @@
-{{0.00013893906132770166, 40, 287896}, 
- {{}, {9, {"Characteristic Rock Type - Some Time", "CRT - CAM", "CRT - ORS", 
-    "Devon Strata - Temporal Order - 2", "Exmoor Youngest Devonian Strata", 
-    "LV in Sedimentation", "Main Culm Youngest Devonian Strata", 
-    "Pembrokeshire - Characteristic CAM Rock Type", 
-    "Unbroken Sequence of Devon Strata"}}}}

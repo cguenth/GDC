@@ -1,0 +1,10 @@
+{{{0.016260162601626018, 2, 123}, {0.014436235096921447, 
+   0.016260162601626018, 0.0018506438341753958}, 
+  {0.798283740682526, 0.016260162601626018, 2.6392947397663034*^-11, 
+   0.0018506438341753958}}, 
+ {{14, {"Main Culm as CM", "MC - FA", "NC at Youngest ORS", "NC - FA - 1", 
+    "NC - FA - 2", "No Main Culm as CM", "No Main Culm as ML", 
+    "Non-Culm as ORS", "Non-Culm Fossil Mixture - Devon", 
+    "No Non-Culm as CAM", "No Non-Culm as ML", "No Non-Culm as SIL", 
+    "Some North Devonian Strata - FA - 2", "Some ORS in North Devon"}}, 
+  {2, {"Some North Devonian Strata - FA - 2", "Some ORS in North Devon"}}}}

@@ -1,0 +1,9 @@
+{{{0.034482758620689655, 2, 58}, {0.03362034983931438, 0.034482758620689655, 
+   0.0008924119844947784}, {0.9512007527611888, 0.034482758620689655, 
+   1.2445454870442731*^-11, 0.0008924119844947784}}, 
+ {{13, {"BCL as CAM", "BCL at Youngest SIL", "MC at Youngest SIL", 
+    "No BCL as CAM", "No BCL as ORS", "No BCL as SIL", "No Main Culm as CAM", 
+    "No Main Culm as ORS", "No Main Culm as SIL", "No Non-Culm as CAM", 
+    "No Non-Culm as SIL", "Some North Devonian Strata - FA - 2", 
+    "Some ORS in North Devon"}}, {2, {"Some North Devonian Strata - FA - 2", 
+    "Some ORS in North Devon"}}}}

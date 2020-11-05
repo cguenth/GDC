@@ -42,13 +42,30 @@
 
 
 
-<BCL as Conformable Formation - ML Missing 1>: If there are some CM but no ML BCL strata, then there are no ORS BCL strata #pri #chron-hyp
+/// BCL as Conformable Formation
+
+
+[BCL at Oldest ML]: BCL strata are at oldest ML in age #chron-hyp
+        +> [No BCL as ORS]
+        +> [No BCL as SIL]
+        +> [No BCL as CAM]
+
+ <BCL at Oldest ML> #chron-hyp
+       
+       (1) [No BCL as ORS]
+       (2) [No BCL as SIL]
+       (3) [No BCL as CAM]
+       ----
+       (4) [BCL at Oldest ML]
+
+
+<BCL as Conformable Formation - ML Missing 1>: If there are some CM but no ML BCL strata, then there are no ORS, SIL or CAM BCL strata #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Some BCL as CM]
         (3) [No BCL as ML]
         ----
-        (4) [No BCL as ORS]
+        (4) [BCL at Oldest ML]
 
 <BCL as Conformable Formation - ML Missing 2>: If there are some ORS but no ML BCL strata, then there are no CM BCL strata #pri #chron-hyp
 
@@ -58,21 +75,21 @@
         ----
         (4) [No BCL as CM]
 
-<BCL as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS BCL strata, then there are no SIL BCL strata #pri #chron-hyp
+<BCL as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS BCL strata, then there are no SIL or CAM BCL strata, too #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Some BCL as ML]
         (3) [No BCL as ORS]
         ----
-        (4) [No BCL as SIL]
+        (4) [BCL at Oldest ML]
 
-<BCL as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS BCL strata, then there are no ML BCL strata #pri #chron-hyp
+<BCL as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS BCL strata, then there are no ML or CM BCL strata, too #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Some BCL as SIL]
         (3) [No BCL as ORS]
         ----
-        (4) [No BCL as ML]
+        (4) [BCL at Youngest SIL]
 
 <BCL as Conformable Formation - SIL Missing 1>: If there are some ORS but no SIL BCL strata, then there are no CAM BCL strata #pri #chron-hyp
 
@@ -82,15 +99,40 @@
         ----
         (4) [No BCL as CAM]
 
-<BCL as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL BCL strata, then there are no ORS BCL strata #pri #chron-hyp
+<BCL as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL BCL strata, then BCL strata are CAM in age #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Some BCL as CAM]
         (3) [No BCL as SIL]
         ----
-        (4) [No BCL as ORS]
+        (4) [BCL as CAM]
+
+///// BCL strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - BCL>: If the BCL strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CM]
+        (3) [Some BCL as ORS]
+        ----
+        (4) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - BCL>: If the BCL strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ML]
+        (3) [Some BCL as SIL]
+        ----
+        (4) [No Non-Culm as ORS]
 
 
+<Culm Not Intercalated - No NC as SIL - BCL>: If the BCL strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [Some BCL as CAM]
+        ----
+        (4) [No Non-Culm as SIL]
 
 // S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
 // implicitely made by DLB, and explicitely by GREE

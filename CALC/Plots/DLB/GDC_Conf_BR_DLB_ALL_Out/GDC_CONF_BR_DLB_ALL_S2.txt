@@ -1,6 +1,0 @@
-{{{1., 7, 7}, {1., 1., 0.00012919391183921594}, 
-  {1, 1., 6.570454685226036*^-9, 0.00012919391183921594}}, 
- {{4, {"CF - ORS", "Characteristic Fossil Asseblage - Some Time", 
-    "Characteristic Fossil - Some Time", "LV in Fauna and Flora"}}, 
-  {4, {"CF - ORS", "Characteristic Fossil Asseblage - Some Time", 
-    "Characteristic Fossil - Some Time", "LV in Fauna and Flora"}}}}

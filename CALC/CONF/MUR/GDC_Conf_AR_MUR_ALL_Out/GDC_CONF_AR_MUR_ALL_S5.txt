@@ -1,0 +1,13 @@
+{{{0.008849557522123894, 1, 113}, {0.007299839552586966, 
+   0.008849557522123894, 0.0015611138501664646}, 
+  {0.7019565505732304, 0.008849557522123894, 1.6248302004702134*^-9, 
+   0.0015611138501664646}}, 
+ {{25, {"BCL as CM", "BCL as ML", "BCL at Oldest ML", "BCL at Youngest ORS", 
+    "Conformable Passage - BCL and NC", "Conformable Passages - 2", 
+    "Main Culm as CM", "MC at Oldest ML", "MC at Youngest ORS", 
+    "NC at Oldest ML", "NC at Youngest ORS", "No BCL as CM", "No BCL as ML", 
+    "No BCL as ORS", "No Main Culm as CM", "No Main Culm as ML", 
+    "No Main Culm as ORS", "Non-Culm as ORS", "No Non-Culm as CAM", 
+    "No Non-Culm as CM", "No Non-Culm as ML", "No Non-Culm as ORS", 
+    "No Non-Culm as SIL", "Some ORS in North Devon", 
+    "Unbroken Sequence of Devon Strata"}}, {}}}

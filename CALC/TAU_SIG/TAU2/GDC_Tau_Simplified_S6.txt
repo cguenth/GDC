@@ -1,0 +1,230 @@
+{Implies[23 && 29, 30] && Implies[23 && 30, 29] && Implies[23 && 54,  !31] && 
+  Implies[25 && 26, 27] && Implies[25 && 27, 26] && 
+  Implies[25 && 54,  !24] && Implies[32 && 33, 34] && 
+  Implies[32 && 34, 33] && Implies[32 && 57,  !35] && 
+  Implies[23 && 55,  !29] && Implies[23 && 55,  !26] && 
+  Implies[32 && 59,  !33] && Implies[60 && 101, 17] && 
+  Implies[60 && 17, 101] && Implies[61 && 101, 18] && 
+  Implies[61 && 18, 101] && Implies[136 && 68 &&  !13,  !36] && 
+  Implies[60 && 12,  !13] && Implies[60 &&  !13, 12] && 
+  Implies[73 &&  !13, 80] && Implies[30 && 21, 108] && 
+  Implies[30 && 108, 21] && Implies[27 && 15, 108] && 
+  Implies[27 && 108, 15] && Implies[34 && 43, 110] && 
+  Implies[34 && 110, 43] && Implies[34 && 105, 104] && 
+  Implies[103 && 106, 58] && Implies[28 && 111 && 112 && 20, 108] && 
+  Implies[28 && 111 && 112 && 108, 20] && Implies[111 && 112,  !107] && 
+  Implies[86 && 87 && 88 && 89 && 136 && 64,  !85] && 
+  Implies[88 && 89 && 85, 66] && Implies[136 &&  !86 && 87, 63] && 
+  Implies[136 &&  !88 && 87, 86] && Implies[136 &&  !87 && 88, 66] && 
+  Implies[136 &&  !89 && 88, 68] && Implies[136 &&  !88 && 89, 85] && 
+  Implies[136 &&  !85 && 89, 62] && Implies[136 &&  !86 &&  !88, 97] && 
+  Implies[136 &&  !87 &&  !89, 98] && Implies[136 &&  !88 &&  !85, 99] && 
+  Implies[86 && 87 && 88 && 89 &&  !85, 62] && Implies[34 && 62, 69] && 
+  Implies[34 && 69, 62] && Implies[ !86 && 87 && 88 && 89 && 85, 63] && 
+  Implies[30 && 22, 63] && Implies[30 && 63, 22] && 
+  Implies[76 && 77 && 78 && 79 && 136 && 4,  !75] && 
+  Implies[78 && 79 && 75, 5] && Implies[136 &&  !76 && 77, 5] && 
+  Implies[136 &&  !78 && 77, 76] && Implies[136 &&  !77 && 78, 5] && 
+  Implies[136 &&  !79 && 78, 7] && Implies[136 &&  !78 && 79, 75] && 
+  Implies[136 &&  !75 && 79, 1] && Implies[136 &&  !76 &&  !78, 97] && 
+  Implies[136 &&  !77 &&  !79, 98] && Implies[136 &&  !78 &&  !75, 99] && 
+  Implies[76 && 77 && 78 && 79 &&  !75, 1] && Implies[34 && 1, 8] && 
+  Implies[34 && 8, 1] && Implies[76 &&  !77 && 78 && 79 && 75, 3] && 
+  Implies[10 && 146 && 28 && 3, 9] && Implies[10 && 146 && 28 && 9, 3] && 
+  Implies[96 && 97 && 98 && 99 && 136 && 92,  !95] && 
+  Implies[96 && 97 && 98 && 99 &&  !95, 90] && Implies[34 && 90, 74] && 
+  Implies[34 && 74, 90] && Implies[96 && 97 &&  !98 && 99 && 95, 91] && 
+  Implies[30 && 113,  !99] && Implies[30 && 21 && 131, 53] && 
+  Implies[30 && 21 && 53, 131] && Implies[28 && 93 && 94 && 20 && 131, 53] && 
+  Implies[28 && 93 && 94 && 18 && 131, 130] && 
+  Implies[28 && 93 && 94 && 18 && 130, 131] && Implies[93 && 94,  !46] && 
+  Implies[28 && 93 && 94 && 18 && 132, 135] && 
+  Implies[28 && 93 && 94 && 18 && 135, 132] && 
+  Implies[28 && 93 && 94 && 20 && 132, 134] && 
+  Implies[28 && 93 && 94 && 20 && 134, 132] && Implies[11 && 102, 48] && 
+  Implies[136 && 92 && 48 && 63,  !96] && Implies[136 && 64 && 48 && 90, 
+   62] && Implies[136 && 64 && 48 && 96, 86] && Implies[86 && 87, 67] && 
+  Implies[96 && 97, 72] && Implies[136 && 64 && 48 && 72, 67] && 
+  Implies[86 && 87 && 88, 68] && Implies[96 && 97 && 98, 73] && 
+  Implies[136 && 64 && 48 && 73, 68] && Implies[136 && 64 && 11 &&  !76, 
+   63] && Implies[136 && 4 && 11 &&  !85, 1] && 
+  Implies[136 && 4 && 11 && 86, 76] && Implies[136 && 4 && 11 &&  !87, 76] && 
+  Implies[76 && 77, 6] && Implies[136 && 4 && 11 && 67, 6] && 
+  Implies[136 && 4 && 11 &&  !88, 6] && Implies[76 && 77 && 78, 7] && 
+  Implies[136 && 4 && 11 && 68, 7] && Implies[136 && 4 && 11 &&  !89, 7] && 
+  Implies[11 && 65, 49] && Implies[136 && 49 &&  !85 && 92, 90] && 
+  Implies[ !76 && 77 && 78 && 79 && 75, 2] && Implies[136 && 4 && 49 &&  !96, 
+   2] && Implies[136 && 92 && 49 &&  !75, 90] && 
+  Implies[136 && 92 && 49 && 76, 96] && Implies[136 && 92 && 49 &&  !77, 
+   96] && Implies[136 && 92 && 49 && 6, 72] && 
+  Implies[136 && 92 && 49 &&  !78, 72] && Implies[136 && 92 && 49 && 7, 
+   73] && Implies[136 && 92 && 49 &&  !79, 73] && 
+  Implies[98 && 99 && 95, 71] && Implies[136 && 49 &&  !96 && 97, 71] && 
+  Implies[136 && 49 &&  !98 && 97, 96] && Implies[136 && 49 &&  !97 && 98, 
+   71] && Implies[136 && 49 &&  !99 && 98, 73] && 
+  Implies[136 && 49 &&  !95 && 99, 90] && Implies[136 && 49 &&  !98 && 99, 
+   95] && Implies[52 && 44 && 49, 45] && Implies[136 && 92 && 50 && 132, 
+   72] && Implies[136 && 64 && 50 && 132, 67] && 
+  Implies[136 && 92 && 50 &&  !86,  !96] && Implies[136 && 64 && 50 && 90, 
+   62] && Implies[136 && 64 && 50 && 96, 86] && 
+  Implies[136 && 64 && 92 && 50 && 132, 67] && Implies[136 && 64 && 50 && 73, 
+   68] && Implies[63 && 77 && 78 && 79 && 75 && 97 && 98 && 99 && 95, 137] && 
+  Implies[86 && 88 && 89 && 85 && 3 && 96 && 98 && 99 && 95, 137] && 
+  Implies[86 && 87 && 89 && 85 && 76 && 77 && 79 && 75 && 91, 137] && 
+  Implies[86 && 87 && 88 && 85 && 76 && 77 && 78 && 75 && 96 && 97 && 98 && 
+    95, 137] && Implies[62 && 1 && 90, 137] && Implies[137 && 48, 39] && 
+  Implies[136 && 48 && 73, 39] && Implies[136 && 11 && 38 &&  !86 && 87 && 
+    76,  !77] && Implies[136 && 11 && 38 &&  !86 && 87 && 77,  !76] && 
+  Implies[136 && 11 && 38 &&  !87 && 88 && 77,  !78] && 
+  Implies[136 && 11 && 38 &&  !87 && 88 && 78,  !77] && 
+  Implies[136 && 11 && 38 &&  !88 && 89 && 78,  !79] && 
+  Implies[136 && 11 && 38 &&  !88 && 89 && 79,  !78] && 
+  Implies[136 && 11 && 38 &&  !89 && 85 && 79,  !75] && 
+  Implies[136 && 11 && 38 &&  !89 && 85 && 75,  !79] && 
+  Implies[136 && 11 && 38 &&  !86 &&  !78, 97] && 
+  Implies[136 && 11 && 38 &&  !87 &&  !79, 98] && 
+  Implies[136 && 11 && 38 &&  !88 &&  !75, 99] && Implies[38 && 37, 40] && 
+  Implies[137 && 49, 40] && Implies[136 && 40 &&  !76 && 77 && 96,  !97] && 
+  Implies[136 && 40 &&  !76 && 77 && 97,  !96] && 
+  Implies[136 && 40 &&  !77 && 78 && 97,  !98] && 
+  Implies[136 && 40 &&  !77 && 78 && 98,  !97] && 
+  Implies[136 && 40 &&  !78 && 79 && 98,  !99] && 
+  Implies[136 && 40 &&  !78 && 79 && 99,  !98] && 
+  Implies[136 && 40 &&  !79 && 75 && 99,  !95] && 
+  Implies[136 && 40 &&  !79 && 75 && 95,  !99] && 
+  Implies[136 && 49 && 4 &&  !97, 37] && Implies[136 && 49 &&  !78 &&  !98, 
+   37] && Implies[136 && 49 &&  !77 &&  !98, 37] && 
+  Implies[136 && 49 &&  !79 &&  !99, 37] && 
+  Implies[136 && 49 &&  !78 &&  !99, 37] && Implies[136 && 49 && 92 &&  !75, 
+   37] && Implies[137 && 50, 41] && Implies[136 && 50 && 73, 41] && 
+  Implies[136 && 41 && 132 && 88,  !89] && Implies[136 && 41 && 132 && 89, 
+    !88] && Implies[100, 13] && Implies[113, 31] && Implies[70, 59] && 
+  Implies[60, 27] && Implies[54, 56] && Implies[54, 13] && Implies[22, 31] && 
+  Implies[21, 31] && Implies[29, 31] && Implies[15, 24] && Implies[17, 24] && 
+  Implies[26, 24] && Implies[57, 58] && Implies[43, 35] && Implies[42, 35] && 
+  Implies[33, 35] && Implies[69, 42] && Implies[8, 42] && Implies[74, 42] && 
+  Implies[60, 61] && Implies[61, 28] && Implies[27, 28] && Implies[54, 55] && 
+  Implies[57, 59] && Implies[15, 16] && Implies[136, 101] && 
+  Implies[15, 20] && Implies[20, 19] && Implies[17, 18] && 
+  Implies[105, 42] && Implies[105, 103] && Implies[107, 55] && 
+  Implies[ !107, 111] && Implies[ !107, 112] && Implies[66, 89] && 
+  Implies[66, 85] && Implies[66, 88] && Implies[62, 86] && Implies[62, 87] && 
+  Implies[62, 88] && Implies[62, 89] && Implies[62,  !85] && 
+  Implies[63,  !86] && Implies[63, 87] && Implies[63, 88] && 
+  Implies[63, 89] && Implies[63, 85] && Implies[22, 36] && Implies[5, 78] && 
+  Implies[5, 79] && Implies[5, 75] && Implies[1, 76] && Implies[1, 77] && 
+  Implies[1, 78] && Implies[1, 79] && Implies[1,  !75] && Implies[3, 76] && 
+  Implies[3,  !77] && Implies[3, 78] && Implies[3, 79] && Implies[3, 75] && 
+  Implies[90, 96] && Implies[90, 97] && Implies[90, 98] && Implies[90, 99] && 
+  Implies[90,  !95] && Implies[91, 96] && Implies[91, 97] && 
+  Implies[91,  !98] && Implies[91, 99] && Implies[91, 95] && 
+  Implies[130, 14] && Implies[131,  !98] && Implies[91, 131] && 
+  Implies[46, 55] && Implies[ !46, 93] && Implies[ !46, 94] && 
+  Implies[132,  !98] && Implies[91, 132] && Implies[135, 133] && 
+  Implies[102, 51] && Implies[48, 102] && Implies[48, 11] && 
+  Implies[67, 86] && Implies[67, 87] && Implies[72, 96] && Implies[72, 97] && 
+  Implies[68, 86] && Implies[68, 87] && Implies[68, 88] && Implies[73, 96] && 
+  Implies[73, 97] && Implies[73, 98] && Implies[6, 76] && Implies[6, 77] && 
+  Implies[7, 76] && Implies[7, 77] && Implies[7, 78] && Implies[49, 11] && 
+  Implies[49, 65] && Implies[2,  !76] && Implies[2, 77] && Implies[2, 78] && 
+  Implies[2, 79] && Implies[2, 75] && Implies[71, 98] && Implies[71, 99] && 
+  Implies[71, 95] && Implies[50, 147] && Implies[50, 11] && 
+  Implies[39, 137] && Implies[39, 48] && Implies[39, 38] && 
+  Implies[40, 137] && Implies[40, 49] && Implies[40, 38] && 
+  Implies[40, 37] && Implies[41, 137] && Implies[41, 50] && 
+  Implies[41, 38] && Implies[14,  !80] && Implies[17,  !15] && 
+  Implies[20,  !18] && Implies[26, 24] && Implies[29, 31] && 
+  Implies[33, 35] && Implies[49,  !48] && Implies[50,  !48] && 
+  Implies[50,  !49] && Implies[65,  !51] && Implies[104,  !106] && 
+  Implies[130,  !53] && Implies[133,  !80] && Implies[134,  !135] && 
+  Implies[147,  !51] && Implies[147,  !65], 
+ {"BCL as CAM" -> 1, "BCL as CM" -> 2, "BCL as ML" -> 3, 
+  "BCL as Post-Primary and Pre-NRS" -> 4, "BCL at Oldest ML" -> 5, 
+  "BCL at Youngest ORS" -> 6, "BCL at Youngest SIL" -> 7, 
+  "BCL CRT - CAM" -> 8, "BCL - FA" -> 9, "BCL - FA - No LV" -> 10, 
+  "BCL Older Than MC" -> 11, "Carb and Pre-ORS - Sufficiently Different" -> 
+   12, "Carb Fossils in Pre-ORS strata" -> 13, 
+  "Carboniferous Plants in North Devon" -> 14, "CFA - ORS" -> 15, 
+  "CFA - ORS - I" -> 16, "CFA - ORS - II" -> 17, "CFA - ORS - II - V2" -> 18, 
+  "CFA - ORS - I - V2" -> 19, "CFA - ORS - V2" -> 20, "CF - ORS" -> 21, 
+  "Characteristic CM Fossils in Main Culm" -> 22, 
+  "Characteristic Fossil" -> 23, 
+  "Characteristic Fossil Asseblage - Some Time" -> 24, 
+  "Characteristic Fossil Assemblage" -> 25, 
+  "Characteristic Fossil Assemblage - Every Time" -> 26, 
+  "Characteristic Fossil Assemblage Principle" -> 27, 
+  "Characteristic Fossil Assemblage Principle - V2" -> 28, 
+  "Characteristic Fossil - Every Time" -> 29, 
+  "Characteristic Fossil Principle" -> 30, 
+  "Characteristic Fossil - Some Time" -> 31, "Characteristic Rock Type" -> 
+   32, "Characteristic Rock Type - Every Time" -> 33, 
+  "Characteristic Rock Type Principle" -> 34, 
+  "Characteristic Rock Type - Some Time" -> 35, 
+  "CM Plants in Devon Culm" -> 36, "Conformable Passage - BCL and NC" -> 37, 
+  "Conformable Passage - MC and BCL" -> 38, "Conformable Passages - 1" -> 39, 
+  "Conformable Passages - 2" -> 40, "Conformable Passages - 3" -> 41, 
+  "CRT - CAM" -> 42, "CRT - ORS" -> 43, "Culm Trough as Best Explanation" -> 
+   44, "Culm trough in Central Devon" -> 45, 
+  "Devon NC as LV - Fauna and Flora" -> 46, 
+  "Devon NC No LV - Fauna and Flora" -> 47, 
+  "Devon Strata - Temporal Order - 1" -> 48, 
+  "Devon Strata - Temporal Order - 2" -> 49, 
+  "Devon Strata - Temporal Order - 3" -> 50, 
+  "Exmoor Youngest Devonian Strata" -> 51, "Formation of strata" -> 52, 
+  "Holoptychius in North Devon" -> 53, "LV in Fauna and Flora" -> 54, 
+  "LV in Fauna and Flora - Some Time" -> 55, 
+  "LV in Fauna and Flora -Today" -> 56, "LV in Sedimentation" -> 57, 
+  "LV in Sedimentation - CM" -> 58, "LV in Sedimentation - Some Time" -> 59, 
+  "Lyellian Principle" -> 60, "Lyellian Principle - V2" -> 61, 
+  "Main Culm as CAM" -> 62, "Main Culm as CM" -> 63, 
+  "Main Culm as Post-Primary and Pre-NRS" -> 64, 
+  "Main Culm Youngest Devonian Strata" -> 65, "MC at Oldest ML" -> 66, 
+  "MC at Youngest ORS" -> 67, "MC at Youngest SIL" -> 68, 
+  "MC CRT - CAM" -> 69, "ML and Pennines" -> 70, "NC at Oldest ML" -> 71, 
+  "NC at Youngest ORS" -> 72, "NC at Youngest SIL" -> 73, 
+  "NC CRT - CAM" -> 74, "No BCL as CAM" -> 75, "No BCL as CM" -> 76, 
+  "No BCL as ML" -> 77, "No BCL as ORS" -> 78, "No BCL as SIL" -> 79, 
+  "No Carb Fossils in NC Strata" -> 80, "No Characteristic Fossil" -> 81, 
+  "No Characteristic Fossil Assemblage" -> 82, 
+  "No Characteristic Rock Type" -> 83, "No Holoptychius in North Devon" -> 
+   84, "No Main Culm as CAM" -> 85, "No Main Culm as CM" -> 86, 
+  "No Main Culm as ML" -> 87, "No Main Culm as ORS" -> 88, 
+  "No Main Culm as SIL" -> 89, "Non-Culm as CAM" -> 90, 
+  "Non-Culm as ORS" -> 91, "Non-Culm as Post-Primary and Pre-NRS" -> 92, 
+  "Non-Culm - Body of Evidence - Fossils" -> 93, 
+  "Non-Culm - Body of Evidence - Region" -> 94, "No Non-Culm as CAM" -> 95, 
+  "No Non-Culm as CM" -> 96, "No Non-Culm as ML" -> 97, 
+  "No Non-Culm as ORS" -> 98, "No Non-Culm as SIL" -> 99, 
+  "Northwest France" -> 100, "ORS as Intermediate" -> 101, 
+  "Passing Devon Northwards" -> 102, "Pembrokeshire - Appearance" -> 103, 
+  "Pembrokeshire - CAM in Age" -> 104, 
+  "Pembrokeshire - Characteristic CAM Rock Type" -> 105, 
+  "Pembrokeshire - CM in Age" -> 106, 
+  "Scottish ORS as LV - Fauna and Flora" -> 107, 
+  "Scottish ORS - Fossils" -> 108, "Scottish ORS No LV - Fauna and Flora" -> 
+   109, "Scottish ORS - Rocks" -> 110, 
+  "Scottland - Body of Evidence - Fossils" -> 111, 
+  "Scottland - Body of Evidence - Region" -> 112, 
+  "SIL Fossils in North Devon" -> 113, "Some BCL as CAM" -> 114, 
+  "Some BCL as CM" -> 115, "Some BCL as ML" -> 116, "Some BCL as ORS" -> 117, 
+  "Some BCL as SIL" -> 118, "Some Main Culm as CAM" -> 119, 
+  "Some Main Culm as CM" -> 120, "Some Main Culm as ML" -> 121, 
+  "Some Main Culm as ORS" -> 122, "Some Main Culm as SIL" -> 123, 
+  "Some Non-Culm as CAM" -> 124, "Some Non-Culm as CM" -> 125, 
+  "Some Non-Culm as ML" -> 126, "Some Non-Culm as ORS" -> 127, 
+  "Some Non-Culm as SIL" -> 128, "Some North Devonian Strata - FA - 1" -> 
+   129, "Some North Devonian Strata - FA - 2" -> 130, 
+  "Some ORS in North Devon" -> 131, "Some South Devon LSTs as ORS" -> 132, 
+  "South Devonian Fossil Fauna" -> 133, "South Devon LSTs - FA - 1" -> 134, 
+  "South Devon LSTs - FA - 2" -> 135, "Standard Sequence" -> 136, 
+  "Unbroken Sequence of Devon Strata" -> 137, "Untitled 1" -> 138, 
+  "Untitled 2" -> 139, "Untitled 3" -> 140, "Untitled 4" -> 141, 
+  "Untitled 5" -> 142, "Untitled 6" -> 143, "Untitled 7" -> 144, 
+  "Untitled 8" -> 145, "Yorkshire ML - FA - No LV" -> 146, 
+  "Youngest Devonian Strata in South Devon" -> 147}, 
+ {129 -> 53, 143 -> 141, 144 -> 141, 145 -> 141}, 
+ {141 ->  !13, 82 ->  !24, 139 ->  !26, 138 ->  !29, 81 ->  !31, 140 ->  !33, 
+  83 ->  !35, 142 ->  !36, 47 ->  !46, 84 ->  !53, 114 ->  !75, 115 ->  !76, 
+  116 ->  !77, 117 ->  !78, 118 ->  !79, 119 ->  !85, 120 ->  !86, 
+  121 ->  !87, 122 ->  !88, 123 ->  !89, 124 ->  !95, 125 ->  !96, 
+  126 ->  !97, 127 ->  !98, 128 ->  !99, 109 ->  !107}}

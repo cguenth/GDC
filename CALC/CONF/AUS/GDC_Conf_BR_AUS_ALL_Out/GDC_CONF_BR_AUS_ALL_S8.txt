@@ -1,0 +1,6 @@
+{{{0.2, 2, 10}, {0.19851017249955705, 0.2, 0.0018588227190470682}, 
+  {0.985211883707234, 0.2, 9.986500096583706*^-13, 0.0018588227190470682}}, 
+ {{6, {"NC at Youngest ORS", "No Non-Culm as CAM", "No Non-Culm as ML", 
+    "No Non-Culm as SIL", "Some North Devonian Strata - FA - 2", 
+    "Some ORS in North Devon"}}, {2, {"Some North Devonian Strata - FA - 2", 
+    "Some ORS in North Devon"}}}}

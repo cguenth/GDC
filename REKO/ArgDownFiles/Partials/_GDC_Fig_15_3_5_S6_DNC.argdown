@@ -66,12 +66,41 @@
     (6) [Some South Devon LSTs as ORS]
 
 
-//// ORS in South Devon II
+
+
+
+/* WEGGELASSEN WEGEN SATZLIMIT
+
+//// NC as LV ----- Sedimentation
+
+[Non-Culm - Body of Evidence - Rock Specimens]: Concerning Devon Non-Culm strata, the amount of rock specimens under study is sufficiently large
+
+[Devon NC as LV - Sedimentation]: Devon NC rock type is a local variation #DEV
+    +> [LV in Sedimentation - Some Time]
+
+[Devon NC No LV - Sedimentation]: Devon NC rock type is no local variation
+    >< [Devon NC as LV - Sedimentation]
+    +> [Non-Culm - Body of Evidence - Rock Specimens]
+    +> [Non-Culm - Body of Evidence - Region]
+
+
+<LV in Sedimentation - Devon NC>: If, concering Devon Non-Culm strata, the region as well as the amount of rock specimens under study is sufficiently large, 
+then Devon NC rock type is no LV 
+
+    (1) [Non-Culm - Body of Evidence - Rock Specimens]
+    (2) [Non-Culm - Body of Evidence - Region]
+    ----
+    (3) [Devon NC No LV - Sedimentation]
+
+
+
+//// ORS Between South Devon LSTs
+
  [ORS Between South Devonian LSTs]: In south Devon, above the Plymouth limestone but below the Great Limestone, the non-Culm strata are ORS in age #DEV #chron-hyp
     +> [Some Non-Culm as ORS]
     <+ [Non-Culm as ORS]
 
-/// ====== ORS Between South Devon LSTs ==== CRTP - V2 ======  
+/// ===== CRT - ORS - V2 ======  
 
 [Between South Devon LSTs - CRT]: NC strata above the Plymouth but below the Great Limestone support red sandstone #roc-hyp
             <+ [Reddish Strata in South Devon]
@@ -99,29 +128,7 @@
     ----
     (6) [Between South Devon LSTs - CRT]
 
-//// NC as LV ----- Sedimentation
-
-[Non-Culm - Body of Evidence - Rock Specimens]: Concerning Devon Non-Culm strata, the amount of rock specimens under study is sufficiently large
-
-[Devon NC as LV - Sedimentation]: Devon NC rock type is a local variation #DEV
-    +> [LV in Sedimentation - Some Time]
-
-[Devon NC No LV - Sedimentation]: Devon NC rock type is no local variation
-    >< [Devon NC as LV - Sedimentation]
-    +> [Non-Culm - Body of Evidence - Rock Specimens]
-    +> [Non-Culm - Body of Evidence - Region]
-
-
-<LV in Sedimentation - Devon NC>: If, concering Devon Non-Culm strata, the region as well as the amount of rock specimens under study is sufficiently large, 
-then Devon NC rock type is no LV 
-
-    (1) [Non-Culm - Body of Evidence - Rock Specimens]
-    (2) [Non-Culm - Body of Evidence - Region]
-    ----
-    (3) [Devon NC No LV - Sedimentation]
-
-
-//// ORS in South Devon ===== CFAP - V2
+//// ===== CFA - ORS - V2 ======  
 
 [Between South Devonian LSTs - FA - 1]: NC strata above the Plymouth but below the Great Limestone support few fossils 
  and most of these are peculiar fish fossils only known from the ORS #fos-hyp
@@ -130,9 +137,6 @@ then Devon NC rock type is no LV
 of fossils (but no peculiar ORS fish fossils) #fos-hyp
     <+ [Reddish Strata in South Devon]
     -> [Between South Devonian LSTs - FA - 1]
-
-
-/// CFA - ORS - V2
 
 <ORS Between South Devon LSTs - CFA ORS V2 - 1>: If strata can be identified by means of their CFAs and 
 some south Devonian NC strata are ORS in age, then these strata support few fossils (most of them peculiar fish) #DEV
@@ -157,6 +161,6 @@ some south Devonian NC strata support few fossils (most of them peculiar fish), 
     ----
     (6) [ORS Between South Devonian LSTs] 
 
-
+*/
 
  

@@ -97,7 +97,7 @@
         ----
         (4) [Conformable Passages - 1]
 
-/// HIER FEHLEND aufgrund von Schwierigkeiten: Andere CH (nicht: All X), die zu [Conformable Passages - 1] führen!
+/// HIER FEHLEND wegen Satzlimit: Andere CH, die zu [Conformable Passages - 1] führen!
 
 
 ///// Conformable Passage Between MC and BCL ---- BCL Older Than MC ----- Consequences
@@ -201,3 +201,34 @@
         ----
         (7) [Some BCL as SIL]
 
+///// Culm strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - MC and BCL>: If the Culm strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [Some BCL as ORS]
+        ----
+        (6) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - MC and BCL>: If the Culm strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [Some BCL as SIL]
+        ----
+        (6) [No Non-Culm as ORS]
+
+<Culm Not Intercalated - No NC as SIL - MC and BCL>: If the Culm strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [Some BCL as CAM]
+        ----
+        (6) [No Non-Culm as SIL]

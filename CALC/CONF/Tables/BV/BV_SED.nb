@@ -1,0 +1,1241 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     55788,       1233]
+NotebookOptionsPosition[     49798,       1129]
+NotebookOutlinePosition[     50131,       1144]
+CellTagsIndexPosition[     50088,       1141]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell["\<\
+Betrachtung Boolean Variables!
+SX-> SX+1:
+DOJ(CH|EVBK) bleibt gleich, falls eine Menge A existiert, sodass gilt:
+{BV(EVBK)}|SX + A = {BV(EVBK)}|SX+1
+{BV(CHEVBK)}|SX + A = {BV(CHEVBK)}|SX+1
+In Worten: DOJ(CH|EVBK) bleibt gleich, falls die Mengen der Boolschen \
+Variablen von EVBK und CHEVBK um dieselbe Menge erweitert werden!\
+\>", "Text",
+ CellChangeTimes->{{3.8124389025341787`*^9, 3.812438939062379*^9}, {
+  3.812440471779361*^9, 3.812440633664682*^9}, {3.812440761239146*^9, 
+  3.812440923098806*^9}},ExpressionUUID->"4b661121-388e-4bb7-b0dc-\
+4a7f58f87acf"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"$Path", ",", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+      "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+       "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"!", 
+     RowBox[{"MemberQ", "[", 
+      RowBox[{"$Path", ",", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+          "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}]}], ",", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"$Path", ",", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+         "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", 
+    RowBox[{"FindFile", "[", "\"\<GDCComparisons`\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{"<<", "GDCComparisons`"}]}], "Input",
+ CellChangeTimes->{{3.8126983804003057`*^9, 3.8126985580916653`*^9}, {
+   3.812698920495617*^9, 3.812698933530616*^9}, {3.812698971542581*^9, 
+   3.812699049183362*^9}, {3.812699236257236*^9, 3.812699239862575*^9}, 
+   3.8132945427323923`*^9, {3.8132947078806887`*^9, 3.813294741118815*^9}, {
+   3.813294980110736*^9, 3.813294980354659*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"8fd5d044-1148-48df-a571-3fe19f9514a8"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/home/carla/GDC/DialecticalStructures/GDCComparisons.m\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/GDCComparisons.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.813294741960333*^9, 3.813294981609078*^9, 3.813295066298189*^9, 
+   3.813298948112668*^9, {3.8133234438326817`*^9, 3.813323452584272*^9}, 
+   3.813387499236813*^9, 3.813394145111511*^9, 3.813468210316902*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"da374f58-5d24-4760-8159-54366949c8b1"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"datHYP", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<BCL as CAM\>\"", ",", "\"\<BCL as CM\>\"", ",", "\"\<BCL as ML\>\"", 
+     ",", "\"\<BCL at Oldest ML\>\"", ",", "\"\<BCL at Youngest ORS\>\"", 
+     ",", "\"\<BCL at Youngest SIL\>\"", ",", "\"\<Main Culm as CAM\>\"", 
+     ",", "\"\<Main Culm as CM\>\"", ",", "\"\<MC at Oldest ML\>\"", ",", 
+     "\"\<MC at Youngest ORS\>\"", ",", "\"\<MC at Youngest SIL\>\"", ",", 
+     "\"\<NC at Oldest ML\>\"", ",", "\"\<NC at Youngest ORS\>\"", ",", 
+     "\"\<NC at Youngest SIL\>\"", ",", "\"\<No BCL as CAM\>\"", ",", 
+     "\"\<No BCL as CM\>\"", ",", "\"\<No BCL as ML\>\"", ",", 
+     "\"\<No BCL as ORS\>\"", ",", "\"\<No BCL as SIL\>\"", ",", 
+     "\"\<No Main Culm as CAM\>\"", ",", "\"\<No Main Culm as CM\>\"", ",", 
+     "\"\<No Main Culm as ML\>\"", ",", "\"\<No Main Culm as ORS\>\"", ",", 
+     "\"\<No Main Culm as SIL\>\"", ",", "\"\<Non-Culm as CAM\>\"", ",", 
+     "\"\<Non-Culm as ORS\>\"", ",", "\"\<No Non-Culm as CAM\>\"", ",", 
+     "\"\<No Non-Culm as CM\>\"", ",", "\"\<No Non-Culm as ML\>\"", ",", 
+     "\"\<No Non-Culm as ORS\>\"", ",", "\"\<No Non-Culm as SIL\>\""}], 
+    "}"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.8124389695781603`*^9, 3.8124389771020393`*^9}},
+ CellLabel->"In[5]:=",ExpressionUUID->"1469631a-635f-49e3-ba7f-ba7dcc0229bd"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"bvSEDS3", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"fileNameFunc", "[", 
+     RowBox[{"\"\<SED\>\"", ",", "3"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"bvSEDS35", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"fileNameFunc", "[", 
+     RowBox[{"\"\<SED\>\"", ",", "3.5"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS3", "[", 
+  RowBox[{"[", "2", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS35", "[", 
+  RowBox[{"[", "2", "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8130633198476343`*^9, 3.813063340931625*^9}, {
+  3.8133234343128233`*^9, 3.8133234362135963`*^9}, {3.8133941390817947`*^9, 
+  3.813394139119701*^9}},
+ CellLabel->"In[6]:=",ExpressionUUID->"f4754bc7-5324-4eed-bf92-5cd127a65111"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"34", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8130633358702707`*^9, 3.813063341321044*^9}, 
+   3.813295066710042*^9, 3.813298948357045*^9, {3.8133234405835*^9, 
+   3.813323452691489*^9}, 3.813387500787709*^9, 3.813394145823827*^9, 
+   3.813468211554427*^9},
+ CellLabel->"Out[8]=",ExpressionUUID->"cd29f2ca-7f58-4076-acf9-cff32a207f78"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"42", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"BCL - FA\"\>", ",", "\<\"CFA - ORS - II - V2\"\>", 
+       ",", "\<\"CFA - ORS - I - V2\"\>", ",", "\<\"CFA - ORS - V2\"\>", 
+       ",", "\<\"Characteristic Fossil Assemblage Principle - V2\"\>", 
+       ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Lyellian Principle - V2\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Scottish ORS as LV - Fauna and Flora\"\>", 
+       ",", "\<\"Scottland - Body of Evidence - Region\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"8", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL - FA\"\>", ",", "\<\"CFA - ORS - II - V2\"\>", 
+       ",", "\<\"CFA - ORS - I - V2\"\>", ",", "\<\"CFA - ORS - V2\"\>", 
+       ",", "\<\"Characteristic Fossil Assemblage Principle - V2\"\>", 
+       ",", "\<\"Lyellian Principle - V2\"\>", 
+       ",", "\<\"Scottish ORS as LV - Fauna and Flora\"\>", 
+       ",", "\<\"Scottland - Body of Evidence - Region\"\>"}], "}"}]}], 
+    "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8130633358702707`*^9, 3.813063341321044*^9}, 
+   3.813295066710042*^9, 3.813298948357045*^9, {3.8133234405835*^9, 
+   3.813323452691489*^9}, 3.813387500787709*^9, 3.813394145823827*^9, 
+   3.8134682115594587`*^9},
+ CellLabel->"Out[9]=",ExpressionUUID->"ead4abff-90e8-4662-ad63-cb1523469f96"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS35", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS3", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS35", "[", 
+  RowBox[{"[", 
+   RowBox[{"2", ",", "2", ",", "2"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Length", "[", 
+  RowBox[{"bvSEDS35", "[", 
+   RowBox[{"[", 
+    RowBox[{"2", ",", "2", ",", "2"}], "]"}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.813063370337191*^9, 3.813063415942527*^9}, {
+  3.813323434325095*^9, 3.813323434327128*^9}, {3.8133234703729057`*^9, 
+  3.81332350046628*^9}, {3.813394139137639*^9, 3.813394139158461*^9}},
+ CellLabel->"In[10]:=",ExpressionUUID->"1f11e1b4-c58c-45b8-a802-978cf1400373"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"BCL - FA\"\>", ",", "\<\"CFA - ORS - II - V2\"\>", 
+   ",", "\<\"CFA - ORS - I - V2\"\>", ",", "\<\"CFA - ORS - V2\"\>", 
+   ",", "\<\"Characteristic Fossil Assemblage Principle - V2\"\>", 
+   ",", "\<\"Lyellian Principle - V2\"\>", 
+   ",", "\<\"Scottish ORS as LV - Fauna and Flora\"\>", 
+   ",", "\<\"Scottland - Body of Evidence - Region\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813063393579236*^9, 3.813063416463928*^9}, 
+   3.81329506676672*^9, 3.8132989483997*^9, {3.813323444173231*^9, 
+   3.813323500840351*^9}, 3.8133875009203253`*^9, 3.8133941458809137`*^9, 
+   3.8134682116239853`*^9},
+ CellLabel->"Out[10]=",ExpressionUUID->"fd8f9bb2-a079-443d-a719-3aac33fe6494"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"BCL - FA\"\>", ",", "\<\"CFA - ORS - II - V2\"\>", 
+   ",", "\<\"CFA - ORS - I - V2\"\>", ",", "\<\"CFA - ORS - V2\"\>", 
+   ",", "\<\"Characteristic Fossil Assemblage Principle - V2\"\>", 
+   ",", "\<\"Lyellian Principle - V2\"\>", 
+   ",", "\<\"Scottish ORS as LV - Fauna and Flora\"\>", 
+   ",", "\<\"Scottland - Body of Evidence - Region\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813063393579236*^9, 3.813063416463928*^9}, 
+   3.81329506676672*^9, 3.8132989483997*^9, {3.813323444173231*^9, 
+   3.813323500840351*^9}, 3.8133875009203253`*^9, 3.8133941458809137`*^9, 
+   3.81346821162746*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"5cd20f82-0a5e-4af5-ba54-a4068c413c58"],
+
+Cell[BoxData["8"], "Output",
+ CellChangeTimes->{{3.813063393579236*^9, 3.813063416463928*^9}, 
+   3.81329506676672*^9, 3.8132989483997*^9, {3.813323444173231*^9, 
+   3.813323500840351*^9}, 3.8133875009203253`*^9, 3.8133941458809137`*^9, 
+   3.813468211630391*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"65c5ab01-d43c-4115-bb7d-476f2fdddda2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"bvSEDS4", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"fileNameFunc", "[", 
+     RowBox[{"\"\<SED\>\"", ",", "4"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS4", "[", 
+  RowBox[{"[", "2", "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.813396088970599*^9, 3.813396089118483*^9}},
+ CellLabel->"In[13]:=",ExpressionUUID->"7861564b-0e7e-4114-ae06-17c84db92728"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"34", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.813396089644112*^9, 3.81346821170823*^9},
+ CellLabel->"Out[14]=",ExpressionUUID->"38d464e9-2941-4680-b0fe-771c508a1bd5"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS4", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS35", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS35", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS4", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8133960911896276`*^9, 3.813396109969659*^9}, {
+  3.813396157903112*^9, 3.813396163749537*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"0c1b95f9-04a2-4e7f-88f8-e6944d634934"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.8133961105804787`*^9, 3.813396164205529*^9, 
+  3.813468211774803*^9},
+ CellLabel->"Out[15]=",ExpressionUUID->"cafeb472-b24b-4078-b58d-de4747ec7283"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"BCL - FA\"\>", ",", "\<\"CFA - ORS - II - V2\"\>", 
+   ",", "\<\"CFA - ORS - I - V2\"\>", ",", "\<\"CFA - ORS - V2\"\>", 
+   ",", "\<\"Characteristic Fossil Assemblage Principle - V2\"\>", 
+   ",", "\<\"Lyellian Principle - V2\"\>", 
+   ",", "\<\"Scottish ORS as LV - Fauna and Flora\"\>", 
+   ",", "\<\"Scottland - Body of Evidence - Region\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.8133961105804787`*^9, 3.813396164205529*^9, 
+  3.813468211778512*^9},
+ CellLabel->"Out[16]=",ExpressionUUID->"4bf16fb1-40a3-4980-b7d0-eb07fb693f89"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"bvSEDS4", "[", 
+  RowBox[{"[", 
+   RowBox[{"2", ",", "2"}], "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS35", "[", 
+  RowBox[{"[", 
+   RowBox[{"2", ",", "2", ",", "2"}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.813396174353766*^9, 3.8133962076937857`*^9}},
+ CellLabel->"In[17]:=",ExpressionUUID->"10f37713-652e-49be-b205-bcc3b0bb4511"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.813396180378932*^9, 3.813396208045038*^9}, 
+   3.813468211834832*^9},
+ CellLabel->"Out[17]=",ExpressionUUID->"043397e0-f91c-4199-954e-29f1d99befd2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"BCL - FA\"\>", ",", "\<\"CFA - ORS - II - V2\"\>", 
+   ",", "\<\"CFA - ORS - I - V2\"\>", ",", "\<\"CFA - ORS - V2\"\>", 
+   ",", "\<\"Characteristic Fossil Assemblage Principle - V2\"\>", 
+   ",", "\<\"Lyellian Principle - V2\"\>", 
+   ",", "\<\"Scottish ORS as LV - Fauna and Flora\"\>", 
+   ",", "\<\"Scottland - Body of Evidence - Region\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813396180378932*^9, 3.813396208045038*^9}, 
+   3.81346821183741*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"c3883a40-af7a-4228-98f0-0d13458a8266"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"bvSEDS45", "=", 
+     RowBox[{"Get", "[", 
+      RowBox[{"fileNameFunc", "[", 
+       RowBox[{"\"\<SED\>\"", ",", "4.5"}], "]"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"bvSEDS45", "[", 
+    RowBox[{"[", "2", "]"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.813067814745256*^9, 3.813067824077533*^9}, {
+  3.813323434330583*^9, 3.813323434335534*^9}, {3.8133941391811028`*^9, 
+  3.813394139201548*^9}, {3.813396079229451*^9, 3.813396087238961*^9}},
+ CellLabel->"In[19]:=",ExpressionUUID->"f985a6fc-88be-46cc-bc63-82958eceddf2"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"41", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Carboniferous Plants in North Devon\"\>", 
+       ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Devon NC as LV - Fauna and Flora\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", 
+       ",", "\<\"No Carb Fossils in NC Strata\"\>", 
+       ",", "\<\"No Main Culm as CAM\"\>", ",", "\<\"No Main Culm as CM\"\>", 
+       ",", "\<\"No Main Culm as ML\"\>", ",", "\<\"No Main Culm as ORS\"\>", 
+       ",", "\<\"No Main Culm as SIL\"\>", ",", "\<\"Non-Culm as CAM\"\>", 
+       ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"Non-Culm - Body of Evidence - Fossils\"\>", 
+       ",", "\<\"Non-Culm - Body of Evidence - Region\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Some North Devonian Strata - FA - 2\"\>", 
+       ",", "\<\"Some ORS in North Devon\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"6", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"Carboniferous Plants in North Devon\"\>", 
+       ",", "\<\"Devon NC as LV - Fauna and Flora\"\>", 
+       ",", "\<\"No Carb Fossils in NC Strata\"\>", 
+       ",", "\<\"Non-Culm - Body of Evidence - Fossils\"\>", 
+       ",", "\<\"Non-Culm - Body of Evidence - Region\"\>", 
+       ",", "\<\"Some North Devonian Strata - FA - 2\"\>"}], "}"}]}], "}"}]}],
+   "}"}]], "Output",
+ CellChangeTimes->{
+  3.8130678267654753`*^9, 3.81329506682001*^9, 3.813298948445249*^9, {
+   3.81332344423589*^9, 3.813323452820333*^9}, 3.813324012571027*^9, 
+   3.8133875010362387`*^9, 3.813394145935031*^9, 3.813399836707473*^9, 
+   3.8134682118940487`*^9},
+ CellLabel->"Out[20]=",ExpressionUUID->"32e253ac-934d-4ed3-9c02-b3adec5d17ab"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS45", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS4", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS45", "[", 
+  RowBox[{"[", 
+   RowBox[{"2", ",", "2", ",", "2"}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8130678459383297`*^9, 3.813067861390519*^9}, {
+  3.813323434339711*^9, 3.8133234343404827`*^9}, {3.813324024912878*^9, 
+  3.81332402977402*^9}, {3.8133240628243103`*^9, 3.813324067718412*^9}, {
+  3.813394139213469*^9, 3.813394139237784*^9}, {3.8133998579654427`*^9, 
+  3.813399865208699*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"1011640f-75c0-48a4-92d2-f2110ca3321a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Carboniferous Plants in North Devon\"\>", 
+   ",", "\<\"Devon NC as LV - Fauna and Flora\"\>", 
+   ",", "\<\"No Carb Fossils in NC Strata\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Fossils\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Region\"\>", 
+   ",", "\<\"Some North Devonian Strata - FA - 2\"\>", 
+   ",", "\<\"Some ORS in North Devon\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813067854742745*^9, 3.813067861969575*^9}, 
+   3.8132950668326406`*^9, 3.813298948496335*^9, {3.813323444300396*^9, 
+   3.813323452840563*^9}, {3.813324018673944*^9, 3.813324030254594*^9}, 
+   3.813324068140768*^9, 3.813387501150139*^9, 3.8133941459912367`*^9, {
+   3.813399841384173*^9, 3.813399865894383*^9}, 3.8134682119543753`*^9},
+ CellLabel->"Out[21]=",ExpressionUUID->"9f77e72a-ea09-4214-8a5b-5625b58544d4"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Carboniferous Plants in North Devon\"\>", 
+   ",", "\<\"Devon NC as LV - Fauna and Flora\"\>", 
+   ",", "\<\"No Carb Fossils in NC Strata\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Fossils\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Region\"\>", 
+   ",", "\<\"Some North Devonian Strata - FA - 2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813067854742745*^9, 3.813067861969575*^9}, 
+   3.8132950668326406`*^9, 3.813298948496335*^9, {3.813323444300396*^9, 
+   3.813323452840563*^9}, {3.813324018673944*^9, 3.813324030254594*^9}, 
+   3.813324068140768*^9, 3.813387501150139*^9, 3.8133941459912367`*^9, {
+   3.813399841384173*^9, 3.813399865894383*^9}, 3.81346821195823*^9},
+ CellLabel->"Out[22]=",ExpressionUUID->"7ca465c4-ee62-479a-be85-ae756d159ec3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"bvSEDS5", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"fileNameFunc", "[", 
+     RowBox[{"\"\<SED\>\"", ",", "5"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"bvSEDS55", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"fileNameFunc", "[", 
+     RowBox[{"\"\<SED\>\"", ",", "5.5"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS5", "[", 
+  RowBox[{"[", "2", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS55", "[", 
+  RowBox[{"[", "2", "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8132991087751226`*^9, 3.8132991193239737`*^9}, {
+  3.813323434344761*^9, 3.8133234343493567`*^9}, {3.813394139258506*^9, 
+  3.813394139267511*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"94d779f7-5a6c-4c86-845b-1948ff988762"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"35", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Some ORS in North Devon\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8132991199700003`*^9, {3.813323444362137*^9, 3.813323452896824*^9}, 
+   3.813387501270978*^9, 3.813394146214044*^9, 3.813468212017811*^9},
+ CellLabel->"Out[25]=",ExpressionUUID->"7a016a0a-13c6-48d0-a30d-7ccb62d8b8cd"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"39", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Some ORS in North Devon\"\>", 
+       ",", "\<\"Some South Devon LSTs as ORS\"\>", 
+       ",", "\<\"South Devonian Fossil Fauna\"\>", 
+       ",", "\<\"South Devon LSTs - FA - 1\"\>", 
+       ",", "\<\"South Devon LSTs - FA - 2\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"South Devonian Fossil Fauna\"\>", 
+       ",", "\<\"South Devon LSTs - FA - 1\"\>", 
+       ",", "\<\"South Devon LSTs - FA - 2\"\>"}], "}"}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.8132991199700003`*^9, {3.813323444362137*^9, 3.813323452896824*^9}, 
+   3.813387501270978*^9, 3.813394146214044*^9, 3.813468212023033*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"1eda2b00-8ec5-4005-ba6c-abfb69b83e5d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS45", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS5", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS45", "[", 
+  RowBox[{"[", 
+   RowBox[{"2", ",", "2", ",", "2"}], "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.813324292732847*^9, 3.813324318185081*^9}, {
+  3.813324636866973*^9, 3.813324643242354*^9}, {3.813324797780426*^9, 
+  3.813324803415154*^9}, {3.813394139279941*^9, 3.813394139293919*^9}, {
+  3.813407865105535*^9, 3.8134078899430647`*^9}},
+ CellLabel->"In[27]:=",ExpressionUUID->"93b33419-b1c4-4edb-9866-b54eed81d12f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Carboniferous Plants in North Devon\"\>", 
+   ",", "\<\"Devon NC as LV - Fauna and Flora\"\>", 
+   ",", "\<\"No Carb Fossils in NC Strata\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Fossils\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Region\"\>", 
+   ",", "\<\"Some North Devonian Strata - FA - 2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813324296432845*^9, 3.813324318670784*^9}, 
+   3.813324643728159*^9, 3.813324803877825*^9, 3.8133875013452797`*^9, 
+   3.813394146270262*^9, {3.813407839933948*^9, 3.813407890428277*^9}, 
+   3.8134682120834627`*^9},
+ CellLabel->"Out[27]=",ExpressionUUID->"63520181-ddeb-4ee7-9148-6975c0a2101a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Carboniferous Plants in North Devon\"\>", 
+   ",", "\<\"Devon NC as LV - Fauna and Flora\"\>", 
+   ",", "\<\"No Carb Fossils in NC Strata\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Fossils\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Region\"\>", 
+   ",", "\<\"Some North Devonian Strata - FA - 2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813324296432845*^9, 3.813324318670784*^9}, 
+   3.813324643728159*^9, 3.813324803877825*^9, 3.8133875013452797`*^9, 
+   3.813394146270262*^9, {3.813407839933948*^9, 3.813407890428277*^9}, 
+   3.813468212086774*^9},
+ CellLabel->"Out[28]=",ExpressionUUID->"d419a36e-99a5-42fa-a514-1ca396284180"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS55", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS5", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.813299138810335*^9, 3.813299142020159*^9}, {
+  3.8133234343559093`*^9, 3.813323434356934*^9}, {3.813394139304585*^9, 
+  3.8133941393062763`*^9}},
+ CellLabel->"In[29]:=",ExpressionUUID->"73657ed1-a56f-42bd-9ca7-073c702d6a13"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Some South Devon LSTs as ORS\"\>", 
+   ",", "\<\"South Devonian Fossil Fauna\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 1\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.813299155700101*^9, {3.8133234444248667`*^9, 3.813323452951191*^9}, 
+   3.813387501418581*^9, 3.813394146363763*^9, 3.81346821209754*^9},
+ CellLabel->"Out[29]=",ExpressionUUID->"cf53f2a6-d290-42f7-87fb-ab86722a505d"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"bvSEDS55", "[", 
+  RowBox[{"[", 
+   RowBox[{"2", ",", "2", ",", "2"}], "]"}], "]"}]], "Input",
+ CellChangeTimes->{{3.8132991512808332`*^9, 3.8132991520230103`*^9}, 
+   3.813323434361557*^9, {3.8133250970577927`*^9, 3.8133251139701223`*^9}, {
+   3.813394139315669*^9, 3.813394139317589*^9}, {3.813408218453821*^9, 
+   3.813408221501463*^9}},
+ CellLabel->"In[30]:=",ExpressionUUID->"6a34ad6c-2f30-4685-9d82-a1b289e2a45f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"South Devonian Fossil Fauna\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 1\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8132991524411983`*^9, {3.813323444481998*^9, 3.813323453002129*^9}, {
+   3.8133251106327133`*^9, 3.813325114406557*^9}, 3.813387501429905*^9, 
+   3.81339414643112*^9, 3.813408222248253*^9, 3.813468212158125*^9},
+ CellLabel->"Out[30]=",ExpressionUUID->"21b84aff-fe93-4c3a-b8f5-b5b45a4a054b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"bvSEDS6", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"fileNameFunc", "[", 
+     RowBox[{"\"\<SED\>\"", ",", "6"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"bvSEDS65", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"fileNameFunc", "[", 
+     RowBox[{"\"\<SED\>\"", ",", "6.5"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS55", "[", 
+  RowBox[{"[", "2", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS6", "[", 
+  RowBox[{"[", "2", "]"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS65", "[", 
+  RowBox[{"[", "2", "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.813300385322871*^9, 3.813300392774605*^9}, {
+  3.81332343436684*^9, 3.813323434371467*^9}, {3.81332664494446*^9, 
+  3.8133266561287317`*^9}, {3.813394139326874*^9, 3.8133941393371162`*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"402dee9b-bb81-4105-9dd2-cae1c078e4f0"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"39", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Some ORS in North Devon\"\>", 
+       ",", "\<\"Some South Devon LSTs as ORS\"\>", 
+       ",", "\<\"South Devonian Fossil Fauna\"\>", 
+       ",", "\<\"South Devon LSTs - FA - 1\"\>", 
+       ",", "\<\"South Devon LSTs - FA - 2\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", 
+    RowBox[{"3", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"South Devonian Fossil Fauna\"\>", 
+       ",", "\<\"South Devon LSTs - FA - 1\"\>", 
+       ",", "\<\"South Devon LSTs - FA - 2\"\>"}], "}"}]}], "}"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{
+  3.813300397209589*^9, 3.813306065988262*^9, {3.813323444543447*^9, 
+   3.813323453056488*^9}, {3.8133266504496937`*^9, 3.813326656541698*^9}, 
+   3.8133875015215483`*^9, 3.813394146483427*^9, 3.8134682122331057`*^9},
+ CellLabel->"Out[33]=",ExpressionUUID->"172463cd-d20b-4956-9ad4-24dee1479687"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"36", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Some ORS in North Devon\"\>", 
+       ",", "\<\"Some South Devon LSTs as ORS\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.813300397209589*^9, 3.813306065988262*^9, {3.813323444543447*^9, 
+   3.813323453056488*^9}, {3.8133266504496937`*^9, 3.813326656541698*^9}, 
+   3.8133875015215483`*^9, 3.813394146483427*^9, 3.813468212239196*^9},
+ CellLabel->"Out[34]=",ExpressionUUID->"201355e0-3b78-4760-91b8-d933e50a9c90"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"36", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+       ",", "\<\"Conformable Passages - 2\"\>", 
+       ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Some ORS in North Devon\"\>", 
+       ",", "\<\"Some South Devon LSTs as ORS\"\>", 
+       ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]}], "}"}], 
+   ",", 
+   RowBox[{"{", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.813300397209589*^9, 3.813306065988262*^9, {3.813323444543447*^9, 
+   3.813323453056488*^9}, {3.8133266504496937`*^9, 3.813326656541698*^9}, 
+   3.8133875015215483`*^9, 3.813394146483427*^9, 3.8134682122457533`*^9},
+ CellLabel->"Out[35]=",ExpressionUUID->"6d7d6681-655d-4344-944c-40491d2d96c2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS55", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS6", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS55", "[", 
+  RowBox[{"[", 
+   RowBox[{"2", ",", "2", ",", "2"}], "]"}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.813408508226574*^9, 3.8134085225889072`*^9}},
+ CellLabel->"In[36]:=",ExpressionUUID->"5e019766-eff1-436c-ba95-2d565fd0220a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"South Devonian Fossil Fauna\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 1\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813408502007029*^9, 3.813408523606653*^9}, 
+   3.8134682123286343`*^9},
+ CellLabel->"Out[36]=",ExpressionUUID->"1324ee33-c6ed-4487-826a-7271def6f751"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"South Devonian Fossil Fauna\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 1\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 2\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{{3.813408502007029*^9, 3.813408523606653*^9}, 
+   3.813468212331627*^9},
+ CellLabel->"Out[37]=",ExpressionUUID->"e1a075cd-fab8-42a5-9e82-c315de0bf56a"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS65", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS6", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS6", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS65", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8133004078806343`*^9, 3.813300412743011*^9}, {
+  3.8133234343768587`*^9, 3.813323434377727*^9}, {3.813387575720421*^9, 
+  3.813387580744318*^9}, {3.813394139376753*^9, 3.813394139382225*^9}, {
+  3.8134682368765917`*^9, 3.813468237968873*^9}, {3.8134693828095093`*^9, 
+  3.813469388646903*^9}},
+ CellLabel->"In[53]:=",ExpressionUUID->"085d82be-3d1b-4c0d-a077-10209d79ffb4"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{
+  3.813300413422594*^9, 3.8133060715538054`*^9, {3.813323444609953*^9, 
+   3.813323453114603*^9}, 3.813387501672378*^9, 3.8133875812587957`*^9, 
+   3.8133941466614532`*^9, {3.813468212504416*^9, 3.813468238537509*^9}, 
+   3.813469389034349*^9},
+ CellLabel->"Out[53]=",ExpressionUUID->"36822937-a5f9-434a-b54a-f3e82c37657f"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{
+  3.813300413422594*^9, 3.8133060715538054`*^9, {3.813323444609953*^9, 
+   3.813323453114603*^9}, 3.813387501672378*^9, 3.8133875812587957`*^9, 
+   3.8133941466614532`*^9, {3.813468212504416*^9, 3.813468238537509*^9}, 
+   3.8134693890376587`*^9},
+ CellLabel->"Out[54]=",ExpressionUUID->"a9b0a6d5-8eee-4550-a13d-a72e70050d69"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"bvSEDS7", "=", 
+   RowBox[{"Get", "[", 
+    RowBox[{"fileNameFunc", "[", 
+     RowBox[{"\"\<SED\>\"", ",", "7"}], "]"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"bvSEDS7", "[", 
+  RowBox[{"[", "2", "]"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.8134692339662724`*^9, 3.813469234164571*^9}},
+ CellLabel->"In[48]:=",ExpressionUUID->"9149e671-305f-4cd6-ab39-52190c41014f"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"33", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Some ORS in North Devon\"\>", 
+       ",", "\<\"Some South Devon LSTs as ORS\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.813469235188592*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"dc205944-05d4-454d-8a2c-9f041eec90cc"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS7", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS65", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS65", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS7", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.813469245923462*^9, 3.813469249848665*^9}, {
+  3.81346935842835*^9, 3.813469365361084*^9}},
+ CellLabel->"In[51]:=",ExpressionUUID->"79f9a474-9550-4353-9bcd-7128d19ba52b"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{3.813469250528143*^9, 3.813469365897656*^9},
+ CellLabel->"Out[51]=",ExpressionUUID->"f1d59d49-a464-4e3c-932c-cc29675b8a1b"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Conformable Passage - BCL and NC\"\>", 
+   ",", "\<\"Conformable Passages - 2\"\>", 
+   ",", "\<\"Unbroken Sequence of Devon Strata\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{3.813469250528143*^9, 3.813469365901156*^9},
+ CellLabel->"Out[52]=",ExpressionUUID->"d9c8f21b-1775-4854-85ba-24b1fd77b057"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"bvSEDS75", "=", 
+     RowBox[{"Get", "[", 
+      RowBox[{"fileNameFunc", "[", 
+       RowBox[{"\"\<SED\>\"", ",", "7.5"}], "]"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"bvSEDS75", "[", 
+    RowBox[{"[", "2", "]"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.813301559128272*^9, 3.81330156752582*^9}, {
+  3.8133234343828506`*^9, 3.813323434386786*^9}, {3.813394139393053*^9, 
+  3.813394139402711*^9}, {3.81346922759017*^9, 3.813469232005602*^9}},
+ CellLabel->"In[55]:=",ExpressionUUID->"f1b68e93-f009-4a86-bc6e-9593073547e9"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"33", ",", 
+     RowBox[{"{", 
+      RowBox[{"\<\"BCL as CAM\"\>", ",", "\<\"BCL as CM\"\>", 
+       ",", "\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+       ",", "\<\"BCL at Youngest ORS\"\>", ",", "\<\"BCL at Youngest SIL\"\>",
+        ",", "\<\"Main Culm as CAM\"\>", ",", "\<\"Main Culm as CM\"\>", 
+       ",", "\<\"MC at Oldest ML\"\>", ",", "\<\"MC at Youngest ORS\"\>", 
+       ",", "\<\"MC at Youngest SIL\"\>", ",", "\<\"NC at Oldest ML\"\>", 
+       ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC at Youngest SIL\"\>", 
+       ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+       ",", "\<\"No BCL as ML\"\>", ",", "\<\"No BCL as ORS\"\>", 
+       ",", "\<\"No BCL as SIL\"\>", ",", "\<\"No Main Culm as CAM\"\>", 
+       ",", "\<\"No Main Culm as CM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+       ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>",
+        ",", "\<\"Non-Culm as CAM\"\>", ",", "\<\"Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+       ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as ORS\"\>", 
+       ",", "\<\"No Non-Culm as SIL\"\>", 
+       ",", "\<\"Some ORS in North Devon\"\>", 
+       ",", "\<\"Some South Devon LSTs as ORS\"\>"}], "}"}]}], "}"}], ",", 
+   RowBox[{"{", "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.8133015682699842`*^9, 3.813306056629731*^9, {3.813323444671278*^9, 
+   3.813323453172985*^9}, 3.813387501731503*^9, {3.813388322227231*^9, 
+   3.813388355537944*^9}, 3.8133941467206907`*^9, 3.813468212746583*^9, 
+   3.813470068556398*^9},
+ CellLabel->"Out[56]=",ExpressionUUID->"266c8274-fe7f-4521-abcc-bf1ffbc7ee6f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS7", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS75", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Complement", "[", 
+  RowBox[{
+   RowBox[{"bvSEDS75", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}], ",", 
+   RowBox[{"bvSEDS7", "[", 
+    RowBox[{"[", 
+     RowBox[{"2", ",", "1", ",", "2"}], "]"}], "]"}]}], 
+  "]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.813388279154191*^9, 3.8133883808874817`*^9}, {
+  3.813390499467561*^9, 3.813390587348227*^9}, {3.81339413941446*^9, 
+  3.81339413942312*^9}, {3.8134700772731667`*^9, 3.813470077596959*^9}},
+ CellLabel->"In[57]:=",ExpressionUUID->"b45bafc8-d67d-423d-950d-c22442025653"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.813388286557025*^9, 3.8133883813690577`*^9}, 
+   3.8133905105535192`*^9, {3.813390552560768*^9, 3.813390587902372*^9}, 
+   3.8133941467899027`*^9, 3.813468212876775*^9, 3.813470078121546*^9},
+ CellLabel->"Out[57]=",ExpressionUUID->"1fe74b41-8a1e-4972-997d-f6a5304b6149"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.813388286557025*^9, 3.8133883813690577`*^9}, 
+   3.8133905105535192`*^9, {3.813390552560768*^9, 3.813390587902372*^9}, 
+   3.8133941467899027`*^9, 3.813468212876775*^9, 3.8134700781241503`*^9},
+ CellLabel->"Out[58]=",ExpressionUUID->"620fa71b-a5b7-4e58-b739-323020810b7d"]
+}, Open  ]]
+},
+WindowSize->{1366, 703},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 573, 12, 156, "Text",ExpressionUUID->"4b661121-388e-4bb7-b0dc-4a7f58f87acf"],
+Cell[CellGroupData[{
+Cell[1156, 36, 1515, 40, 126, "Input",ExpressionUUID->"8fd5d044-1148-48df-a571-3fe19f9514a8"],
+Cell[2674, 78, 624, 14, 25, "Print",ExpressionUUID->"da374f58-5d24-4760-8159-54366949c8b1"]
+}, Open  ]],
+Cell[3313, 95, 1359, 22, 124, "Input",ExpressionUUID->"1469631a-635f-49e3-ba7f-ba7dcc0229bd"],
+Cell[CellGroupData[{
+Cell[4697, 121, 793, 20, 101, "Input",ExpressionUUID->"f4754bc7-5324-4eed-bf92-5cd127a65111"],
+Cell[5493, 143, 1791, 31, 128, "Output",ExpressionUUID->"cd29f2ca-7f58-4076-acf9-cff32a207f78"],
+Cell[7287, 176, 2625, 46, 220, "Output",ExpressionUUID->"ead4abff-90e8-4662-ad63-cb1523469f96"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9949, 227, 847, 20, 78, "Input",ExpressionUUID->"1f11e1b4-c58c-45b8-a802-978cf1400373"],
+Cell[10799, 249, 727, 12, 59, "Output",ExpressionUUID->"fd8f9bb2-a079-443d-a719-3aac33fe6494"],
+Cell[11529, 263, 724, 12, 59, "Output",ExpressionUUID->"5cd20f82-0a5e-4af5-ba54-a4068c413c58"],
+Cell[12256, 277, 342, 5, 35, "Output",ExpressionUUID->"65c5ab01-d43c-4115-bb7d-476f2fdddda2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[12635, 287, 415, 10, 55, "Input",ExpressionUUID->"7861564b-0e7e-4114-ae06-17c84db92728"],
+Cell[13053, 299, 1621, 28, 128, "Output",ExpressionUUID->"38d464e9-2941-4680-b0fe-771c508a1bd5"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[14711, 332, 760, 20, 55, "Input",ExpressionUUID->"0c1b95f9-04a2-4e7f-88f8-e6944d634934"],
+Cell[15474, 354, 215, 4, 35, "Output",ExpressionUUID->"cafeb472-b24b-4078-b58d-de4747ec7283"],
+Cell[15692, 360, 581, 10, 59, "Output",ExpressionUUID->"4bf16fb1-40a3-4980-b7d0-eb07fb693f89"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16310, 375, 375, 8, 55, "Input",ExpressionUUID->"10f37713-652e-49be-b205-bcc3b0bb4511"],
+Cell[16688, 385, 216, 4, 35, "Output",ExpressionUUID->"043397e0-f91c-4199-954e-29f1d99befd2"],
+Cell[16907, 391, 581, 10, 59, "Output",ExpressionUUID->"c3883a40-af7a-4228-98f0-0d13458a8266"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17525, 406, 626, 14, 78, "Input",ExpressionUUID->"f985a6fc-88be-46cc-bc63-82958eceddf2"],
+Cell[18154, 422, 2639, 49, 220, "Output",ExpressionUUID->"32e253ac-934d-4ed3-9c02-b3adec5d17ab"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20830, 476, 797, 18, 55, "Input",ExpressionUUID->"1011640f-75c0-48a4-92d2-f2110ca3321a"],
+Cell[21630, 496, 859, 14, 59, "Output",ExpressionUUID->"9f77e72a-ea09-4214-8a5b-5625b58544d4"],
+Cell[22492, 512, 812, 13, 59, "Output",ExpressionUUID->"7ca465c4-ee62-479a-be85-ae756d159ec3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23341, 530, 792, 20, 101, "Input",ExpressionUUID->"94d779f7-5a6c-4c86-845b-1948ff988762"],
+Cell[24136, 552, 1769, 31, 128, "Output",ExpressionUUID->"7a016a0a-13c6-48d0-a30d-7ccb62d8b8cd"],
+Cell[25908, 585, 2184, 41, 174, "Output",ExpressionUUID->"1eda2b00-8ec5-4005-ba6c-abfb69b83e5d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28129, 631, 743, 17, 55, "Input",ExpressionUUID->"93b33419-b1c4-4edb-9866-b54eed81d12f"],
+Cell[28875, 650, 695, 12, 59, "Output",ExpressionUUID->"63520181-ddeb-4ee7-9148-6975c0a2101a"],
+Cell[29573, 664, 693, 12, 59, "Output",ExpressionUUID->"d419a36e-99a5-42fa-a514-1ca396284180"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30303, 681, 526, 12, 31, "Input",ExpressionUUID->"73657ed1-a56f-42bd-9ca7-073c702d6a13"],
+Cell[30832, 695, 479, 9, 35, "Output",ExpressionUUID->"cf53f2a6-d290-42f7-87fb-ab86722a505d"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[31348, 709, 443, 8, 31, "Input",ExpressionUUID->"6a34ad6c-2f30-4685-9d82-a1b289e2a45f"],
+Cell[31794, 719, 504, 9, 35, "Output",ExpressionUUID->"21b84aff-fe93-4c3a-b8f5-b5b45a4a054b"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[32335, 733, 919, 22, 124, "Input",ExpressionUUID->"402dee9b-bb81-4105-9dd2-cae1c078e4f0"],
+Cell[33257, 757, 2260, 42, 174, "Output",ExpressionUUID->"172463cd-d20b-4956-9ad4-24dee1479687"],
+Cell[35520, 801, 1896, 33, 151, "Output",ExpressionUUID->"201355e0-3b78-4760-91b8-d933e50a9c90"],
+Cell[37419, 836, 1898, 33, 151, "Output",ExpressionUUID->"6d7d6681-655d-4344-944c-40491d2d96c2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39354, 874, 576, 15, 78, "Input",ExpressionUUID->"5e019766-eff1-436c-ba95-2d565fd0220a"],
+Cell[39933, 891, 362, 7, 35, "Output",ExpressionUUID->"1324ee33-c6ed-4487-826a-7271def6f751"],
+Cell[40298, 900, 360, 7, 35, "Output",ExpressionUUID->"e1a075cd-fab8-42a5-9e82-c315de0bf56a"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[40695, 912, 959, 23, 55, "Input",ExpressionUUID->"085d82be-3d1b-4c0d-a077-10209d79ffb4"],
+Cell[41657, 937, 389, 7, 35, "Output",ExpressionUUID->"36822937-a5f9-434a-b54a-f3e82c37657f"],
+Cell[42049, 946, 391, 7, 35, "Output",ExpressionUUID->"a9b0a6d5-8eee-4550-a13d-a72e70050d69"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[42477, 958, 417, 10, 55, "Input",ExpressionUUID->"9149e671-305f-4cd6-ab39-52190c41014f"],
+Cell[42897, 970, 1533, 26, 128, "Output",ExpressionUUID->"dc205944-05d4-454d-8a2c-9f041eec90cc"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44467, 1001, 757, 20, 55, "Input",ExpressionUUID->"79f9a474-9550-4353-9bcd-7128d19ba52b"],
+Cell[45227, 1023, 188, 3, 35, "Output",ExpressionUUID->"f1d59d49-a464-4e3c-932c-cc29675b8a1b"],
+Cell[45418, 1028, 344, 6, 35, "Output",ExpressionUUID->"d9c8f21b-1775-4854-85ba-24b1fd77b057"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[45799, 1039, 624, 14, 78, "Input",ExpressionUUID->"f1b68e93-f009-4a86-bc6e-9593073547e9"],
+Cell[46426, 1055, 1754, 30, 128, "Output",ExpressionUUID->"266c8274-fe7f-4521-abcc-bf1ffbc7ee6f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[48217, 1090, 881, 22, 78, "Input",ExpressionUUID->"b45bafc8-d67d-423d-950d-c22442025653"],
+Cell[49101, 1114, 338, 5, 35, "Output",ExpressionUUID->"1fe74b41-8a1e-4972-997d-f6a5304b6149"],
+Cell[49442, 1121, 340, 5, 67, "Output",ExpressionUUID->"620fa71b-a5b7-4e58-b739-323020810b7d"]
+}, Open  ]]
+}
+]
+*)
+

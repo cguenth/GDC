@@ -42,13 +42,26 @@
 
 /// MC as Conformable Formation
 
-<MC as Conformable Formation - ML Missing 1>: If there are some CM but no ML MC strata, then there are no ORS MC strata #pri #chron-hyp
+[MC at Oldest ML]: MC strata are at oldest ML in age #chron-hyp
+        +> [No Main Culm as SIL]
+        +> [No Main Culm as CAM]
+        +> [No Main Culm as ORS]
+
+ <MC at Oldest ML> #chron-hyp
+       
+       (1) [No Main Culm as ORS]
+       (2) [No Main Culm as SIL]
+       (3) [No Main Culm as CAM]
+       ----
+       (4) [MC at Oldest ML]
+
+<MC as Conformable Formation - ML Missing 1>: If there are some CM but no ML MC strata, then MC strata are CM in age #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Some Main Culm as CM]
         (3) [No Main Culm as ML]
         ----
-        (4) [No Main Culm as ORS]
+        (4) [Main Culm as CM]
 
 <MC as Conformable Formation - ML Missing 2>: If there are some ORS but no ML MC strata, then there are no CM MC strata #pri #chron-hyp
 
@@ -58,21 +71,22 @@
         ----
         (4) [No Main Culm as CM]
 
-<MC as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS MC strata, then there are no SIL MC strata #pri #chron-hyp
+<MC as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS MC strata, then there are no SIL or CAM MC strata, too #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Some Main Culm as ML]
         (3) [No Main Culm as ORS]
         ----
-        (4) [No Main Culm as SIL]
+        (4) [MC at Oldest ML]
 
-<MC as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS MC strata, then there are no ML MC strata #pri #chron-hyp
+
+<MC as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS MC strata, then there are no ML or CM MC strata #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Some Main Culm as SIL]
         (3) [No Main Culm as ORS]
         ----
-        (4) [No Main Culm as ML]
+        (4) [MC at Youngest SIL]
 
 <MC as Conformable Formation - SIL Missing 1>: If there are some ORS but no SIL MC strata, then there are no CAM MC strata #pri #chron-hyp
 
@@ -82,13 +96,39 @@
         ----
         (4) [No Main Culm as CAM]
 
-<MC as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL MC strata, then there are no ORS MC strata #pri #chron-hyp
+<MC as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL MC strata, then there are no ORS, ML or CM MC strata #pri #chron-hyp
 
         (1) [Standard Sequence]
         (2) [Some Main Culm as CAM]
         (3) [No Main Culm as SIL]
         ----
-        (4) [No Main Culm as ORS]
+        (4) [Main Culm as CAM]
+
+///// MC strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - MC>: If the MC strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as CM]
+        (3) [Some Main Culm as ORS]
+        ----
+        (4) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - MC>: If the MC strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ML]
+        (3) [Some Main Culm as SIL]
+        ----
+        (4) [No Non-Culm as ORS]
+
+<Culm Not Intercalated - No NC as SIL - MC>: If the MC strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ORS]
+        (3) [Some Main Culm as CAM]
+        ----
+        (4) [No Non-Culm as SIL]
 
 
 /// MC as CAM CRTP       

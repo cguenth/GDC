@@ -14,13 +14,6 @@ There is a bijection between the age of some strata and its characteristic fossi
     <+ [Lyellian Principle - V2]
     <+ [Characteristic Fossil Assemblage Principle]
 
-
-[Characteristic Rock Type Principle - V2]: **Given a sufficiently large (i) amount of rock specimens and (ii) region under study**, for two strata A and B, 
- it holds: There is a bijection between the age of some strata and its characteristic rock types #dat-met
-    <+ [Characteristic Rock Type Principle]
-
-
-
      
 /*
 Vorbedingung schließt aus, dass LP/CFAP/CRTP fälschlicherweise angewendet werden, nämlich falls es 
@@ -85,4 +78,13 @@ some rock type is characteristic for some time interval dt iff, during dt, every
     ----
     (3) During some time interval, there is no characteristic fossils species
             >< [Characteristic Rock Type - Every Time]
+
+
+
+
+/* WEGGELASSEN wegen Satzlimit
+
+[Characteristic Rock Type Principle - V2]: **Given a sufficiently large (i) amount of rock specimens and (ii) region under study**, for two strata A and B, 
+ it holds: There is a bijection between the age of some strata and its characteristic rock types #dat-met
+    <+ [Characteristic Rock Type Principle]*/
 

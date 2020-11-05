@@ -6,14 +6,16 @@
 
 [Pembrokeshire - CM in Age]: Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are CM in age #cor
 
+[Pembrokeshire - CAM in Age]:  Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are CAM in age #cor
+            -> [Pembrokeshire - CM in Age]
+
 
 <Pembrokeshire - CRTP>: If some strata near Pembrokeshire are of characteristic CAM rock type, then they are CAM in age #cor
 
     (1) [Characteristic Rock Type Principle]
     (2) [Pembrokeshire - Characteristic CAM Rock Type]
     ----
-    (3)  Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are CAM in age
-            -> [Pembrokeshire - CM in Age]
+    (3) [Pembrokeshire - CAM in Age]
 
 
 <Pembrokeshire - LV in Sedimentation>: If some strata are CM in age and pre-ORS in appearance, then there are LV in sedimentation during the CM era #cor

@@ -1,0 +1,691 @@
+
+
+===
+title: GDC CH-Pool
+author: Corinna Günth-Stiegeler
+date: 10/09/2020  
+color:
+    tagColors:
+        GRE: "#b8860b"
+        COA: "#ff8c00"
+        DEV: "#eead0e"
+        ev:  "#ffff00"
+        pri: "#f5f5dc"
+        dat-met: "#c6e2ff"
+        cha: "#b9d3ee"
+        cor: "#9acd32"
+    groupColorScheme:
+        - "#ffff00"
+        - "#c6e2ff"
+        - "#b9d3ee"
+        - "#9fb6cd"
+        - "#eedfcc"
+        - "#eeb4b4"
+        - "#cd9b9b"
+        - "#8b6969"
+        - "#698b69"
+        - "#9acd32"
+group:
+    groupDepth: 3
+dot: 
+    graphVizSettings: 
+      rankdir: TB  
+      ranksep: 1
+model:
+    mode: strict
+===
+
+[Standard Sequence]:  Given the strata are undisturbed, the Primary strata are overlain by Cambrian strata, Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata, New Red Sandstone strata and Oolitic stata, respectively #pri
+
+
+# Dating of the Main Culm  {color: 4}
+
+[Some Main Culm as CM]: Some part of the main Culm is CM in age #pri #chron-hyp
+
+[Some Main Culm as ML]: Some part of the main Culm is ML in age #pri #chron-hyp
+
+[Some Main Culm as ORS]: Some part of the main Culm is ORS in age #pri #chron-hyp
+
+[Some Main Culm as SIL]: Some part of the main Culm is SIL in age #pri #chron-hyp
+
+[Some Main Culm as CAM]: Some part of the main Culm is CAM in age #pri #chron-hyp
+
+[No Main Culm as CM]: No part of the main Culm is CM in age #pri #chron-hyp
+        >< [Some Main Culm as CM]
+
+[No Main Culm as ML]: No part of the main Culm is ML in age #pri #chron-hyp
+        >< [Some Main Culm as ML]
+
+[No Main Culm as ORS]: No part of the main Culm is ORS in age #pri #chron-hyp
+        >< [Some Main Culm as ORS]
+
+[No Main Culm as SIL]: No part of the main Culm is SIL in age #pri #chron-hyp
+        >< [Some Main Culm as SIL]
+
+[No Main Culm as CAM]: No part of the main Culm is CAM in age #pri #chron-hyp
+        >< [Some Main Culm as CAM]
+
+
+
+[Main Culm as Post-Primary and Pre-NRS]: The MC strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
+
+<Standard Sequence as Partition - Main Culm>: If some MC strata are neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+    
+    (1) [No Main Culm as CM]        
+    (2) [No Main Culm as ML]
+    (3) [No Main Culm as ORS]
+    (4) [No Main Culm as SIL]
+    (5) [Standard Sequence]
+    (6) [Main Culm as Post-Primary and Pre-NRS]
+    ----
+    (7) [Some Main Culm as CAM]
+
+
+/// MC as Conformable Formation
+
+[MC at Oldest ML]: MC strata are at oldest ML in age #chron-hyp
+        +> [No Main Culm as SIL]
+        +> [No Main Culm as CAM]
+        +> [No Main Culm as ORS]
+
+ <MC at Oldest ML> #chron-hyp
+       
+       (1) [No Main Culm as ORS]
+       (2) [No Main Culm as SIL]
+       (3) [No Main Culm as CAM]
+       ----
+       (4) [MC at Oldest ML]
+
+<MC as Conformable Formation - ML Missing 1>: If there are some CM but no ML MC strata, then MC strata are CM in age #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as CM]
+        (3) [No Main Culm as ML]
+        ----
+        (4) [Main Culm as CM]
+
+<MC as Conformable Formation - ML Missing 2>: If there are some ORS but no ML MC strata, then there are no CM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ORS]
+        (3) [No Main Culm as ML]
+        ----
+        (4) [No Main Culm as CM]
+
+<MC as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS MC strata, then there are no SIL or CAM MC strata, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ML]
+        (3) [No Main Culm as ORS]
+        ----
+        (4) [MC at Oldest ML]
+
+
+<MC as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS MC strata, then there are no ML or CM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as SIL]
+        (3) [No Main Culm as ORS]
+        ----
+        (4) [MC at Youngest SIL]
+
+<MC as Conformable Formation - SIL Missing 1>: If there are some ORS but no SIL MC strata, then there are no CAM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ORS]
+        (3) [No Main Culm as SIL]
+        ----
+        (4) [No Main Culm as CAM]
+
+<MC as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL MC strata, then there are no ORS, ML or CM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as CAM]
+        (3) [No Main Culm as SIL]
+        ----
+        (4) [Main Culm as CAM]
+
+///// MC strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - MC>: If the MC strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as CM]
+        (3) [Some Main Culm as ORS]
+        ----
+        (4) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - MC>: If the MC strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ML]
+        (3) [Some Main Culm as SIL]
+        ----
+        (4) [No Non-Culm as ORS]
+
+<Culm Not Intercalated - No NC as SIL - MC>: If the MC strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ORS]
+        (3) [Some Main Culm as CAM]
+        ----
+        (4) [No Non-Culm as SIL]
+
+
+[Main Culm as CAM]: The whole MC strata are CAM in age #chron-hyp
+        +> [No Main Culm as CM]
+        +> [No Main Culm as ML]
+        +> [No Main Culm as ORS]
+        +> [No Main Culm as SIL]
+        +> [Some Main Culm as CAM]
+
+<Main Culm as CAM> #chron-hyp
+
+        (1) [No Main Culm as CM]
+        (2) [No Main Culm as ML]
+        (3) [No Main Culm as ORS]
+        (4) [No Main Culm as SIL]
+        (5) [Some Main Culm as CAM]
+        ----
+        (6) [Main Culm as CAM]
+
+
+[Main Culm as CM]: The whole Main Culm strata are CM in age #chron-hyp
+        +> [Some Main Culm as CM]
+        +> [No Main Culm as ML]
+        +> [No Main Culm as ORS]
+        +> [No Main Culm as SIL]
+        +> [No Main Culm as CAM]
+
+<Main Culm as CM> #chron-hyp
+
+        (1) [Some Main Culm as CM]
+        (2) [No Main Culm as ML]
+        (3) [No Main Culm as ORS]
+        (4) [No Main Culm as SIL]
+        (5) [No Main Culm as CAM]
+        ----
+        (6) [Main Culm as CM]
+ 
+
+[MC at Youngest SIL]: MC strata are at youngest SIL in age #chron-hyp
+        +> [No Main Culm as CM]
+        +> [No Main Culm as ML]
+        +> [No Main Culm as ORS]
+
+<MC at Youngest SIL> #chron-hyp
+       
+       (1) [No Main Culm as CM]
+       (2) [No Main Culm as ML]
+       (3) [No Main Culm as ORS]
+       ----
+       (4) [MC at Youngest SIL]
+
+# Dating of the Culm Limestone  {color: 5}
+
+
+[Some BCL as CM]: Some part of the black Culm Limestone is CM in age #pri #chron-hyp
+
+[Some BCL as ML]: Some part of the black Culm Limestone is ML in age #pri #chron-hyp
+
+[Some BCL as ORS]: Some part of the black Culm Limestone is ORS in age #pri #chron-hyp
+
+[Some BCL as SIL]: Some part of the black Culm Limestone is SIL in age #pri #chron-hyp
+
+[Some BCL as CAM]: Some part of the black Culm Limestone is CAM in age #pri #chron-hyp
+
+[No BCL as CM]: No part of the black Culm Limestone is CM in age #pri #chron-hyp
+        >< [Some BCL as CM]
+
+[No BCL as ML]: No part of the black Culm Limestone is ML in age #pri #chron-hyp
+        >< [Some BCL as ML]
+
+[No BCL as ORS]: No part of the black Culm Limestone is ORS in age #pri #chron-hyp
+        >< [Some BCL as ORS]
+
+[No BCL as SIL]: No part of the black Culm Limestone is SIL in age #pri #chron-hyp
+        >< [Some BCL as SIL]
+
+[No BCL as CAM]: No part of the black Culm Limestone is CAM in age #pri #chron-hyp
+        >< [Some BCL as CAM]
+
+
+
+
+[BCL as Post-Primary and Pre-NRS]: The black Culm Limestone is older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
+<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, ORS nor SIL in age, then it is CAM in age #pri #chron-hyp
+    
+    (1) [No BCL as CM]  
+    (2) [No BCL as ML] 
+    (3) [No BCL as ORS] 
+    (4) [No BCL as SIL]
+    (5) [Standard Sequence]
+    (6) [BCL as Post-Primary and Pre-NRS]
+    ----
+    (7) [Some BCL as CAM]
+
+
+/// BCL as Conformable Formation
+
+
+[BCL at Oldest ML]: BCL strata are at oldest ML in age #chron-hyp
+        +> [No BCL as ORS]
+        +> [No BCL as SIL]
+        +> [No BCL as CAM]
+
+ <BCL at Oldest ML> #chron-hyp
+       
+       (1) [No BCL as ORS]
+       (2) [No BCL as SIL]
+       (3) [No BCL as CAM]
+       ----
+       (4) [BCL at Oldest ML]
+
+
+<BCL as Conformable Formation - ML Missing 1>: If there are some CM but no ML BCL strata, then there are no ORS, SIL or CAM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CM]
+        (3) [No BCL as ML]
+        ----
+        (4) [BCL at Oldest ML]
+
+<BCL as Conformable Formation - ML Missing 2>: If there are some ORS but no ML BCL strata, then there are no CM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [No BCL as ML]
+        ----
+        (4) [No BCL as CM]
+
+<BCL as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS BCL strata, then there are no SIL or CAM BCL strata, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ML]
+        (3) [No BCL as ORS]
+        ----
+        (4) [BCL at Oldest ML]
+
+<BCL as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS BCL strata, then there are no ML or CM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as SIL]
+        (3) [No BCL as ORS]
+        ----
+        (4) [BCL at Youngest SIL]
+
+<BCL as Conformable Formation - SIL Missing 1>: If there are some ORS but no SIL BCL strata, then there are no CAM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [No BCL as SIL]
+        ----
+        (4) [No BCL as CAM]
+
+<BCL as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL BCL strata, then BCL strata are CAM in age #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CAM]
+        (3) [No BCL as SIL]
+        ----
+        (4) [BCL as CAM]
+
+
+///// BCL strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - BCL>: If the BCL strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CM]
+        (3) [Some BCL as ORS]
+        ----
+        (4) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - BCL>: If the BCL strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ML]
+        (3) [Some BCL as SIL]
+        ----
+        (4) [No Non-Culm as ORS]
+
+
+<Culm Not Intercalated - No NC as SIL - BCL>: If the BCL strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [Some BCL as CAM]
+        ----
+        (4) [No Non-Culm as SIL]
+
+
+[BCL as CAM]: The whole BCL strata are CAM in age #chron-hyp
+        +> [No BCL as CM]  
+        +> [No BCL as ML] 
+        +> [No BCL as ORS] 
+        +> [No BCL as SIL]
+        +> [Some BCL as CAM]   
+
+<BCL as CAM> #chron-hyp
+
+        (1) [No BCL as CM]
+        (2) [No BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [Some BCL as CAM]
+        ----
+        (6) [BCL as CAM]
+
+
+
+ [BCL at Youngest SIL]: BCL strata are at youngest SIL in age #chron-hyp
+        +> [No BCL as CM]
+        +> [No BCL as ML]
+        +> [No BCL as ORS]
+
+ <BCL at Youngest SIL> #chron-hyp
+       
+       (1) [No BCL as CM]
+       (2) [No BCL as ML]
+       (3) [No BCL as ORS]
+       ----
+       (4) [BCL at Youngest SIL]
+
+
+
+# Dating of the Non-Culm {color: 6}
+
+[Some Non-Culm as CM]: Some part of the non-Culm strata is CM in age #pri #chron-hyp
+
+[Some Non-Culm as ML]: Some part of the non-Culm strata is ML in age #pri #chron-hyp
+
+[Some Non-Culm as ORS]: Some part of the non-Culm strata is ORS in age #pri #chron-hyp
+
+[Some Non-Culm as SIL]: Some part of the non-Culm strata is SIL in age #pri #chron-hyp
+
+[Some Non-Culm as CAM]: Some part of the non-Culm strata is CAM in age #pri #chron-hyp
+
+[No Non-Culm as CM]: No part of the non-Culm strata is CM in age #pri #chron-hyp
+        >< [Some Non-Culm as CM]
+
+[No Non-Culm as ML]: No part of the non-Culm strata is ML in age #pri #chron-hyp
+         >< [Some Non-Culm as ML]
+
+[No Non-Culm as ORS]: No part of the non-Culm strata is ORS in age #pri #chron-hyp
+         >< [Some Non-Culm as ORS]
+
+[No Non-Culm as SIL]: No part of the non-Culm strata is SIL in age #pri #chron-hyp
+         >< [Some Non-Culm as SIL]
+
+[No Non-Culm as CAM]: No part of the non-Culm strata is CAM in age #pri #chron-hyp
+         >< [Some Non-Culm as CAM]
+
+
+[Non-Culm as Post-Primary and Pre-NRS]: The non-Culm strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
+<Standard Sequence as Partition - Non-Culm>: If some part of the non-Culm strata is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+    
+    (1) [No Non-Culm as CM]            
+    (2) [No Non-Culm as ML]           
+    (3) [No Non-Culm as ORS]           
+    (4) [No Non-Culm as SIL]           
+    (5) [Standard Sequence]
+    (6) [Non-Culm as Post-Primary and Pre-NRS]
+    ----
+    (7) [Some Non-Culm as CAM]
+
+# Youngest Devonian Strata {color: 7}
+
+//// A <=> B & C UND A => D
+
+///// BCL Older Than MC ---- Consequences
+
+<BCL Older Than MC - MC as CM>:If BCL strata are older than MC strata, and at youngest CM in age, 
+ then MC strata are CM in age #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some BCL as CM]
+        ----
+        (5) [Main Culm as CM]
+
+
+<BCL Older Than MC - BCL as CAM>: If BCL strata are older then MC strata, being at oldest CAM in age, 
+then BCL strata are CAM in age, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some Main Culm as CAM]
+        ----
+        (5) [BCL as CAM]
+
+
+<BCL Older Than MC - BCL at Youngest ML - 1>: If BCL strata are older than MC strata, being at youngest ML in age, 
+ then there are no CM BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [No Main Culm as CM]
+        ----
+        (5) [No BCL as CM]
+
+<BCL Older Than MC -  BCL at Youngest ML - 2>: If BCL strata are older than MC strata, and some MC strata are ML in age, 
+ then there are no CM BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some Main Culm as ML]
+        ----
+        (5) [No BCL as CM]
+
+
+ [BCL at Youngest ORS]: BCL strata are at youngest ORS in age #chron-hyp
+        +> [No BCL as CM]
+        +> [No BCL as ML]
+
+<BCL at Youngest ORS> #chron-hyp
+       
+       (1) [No BCL as CM]
+       (2) [No BCL as ML]
+       ----
+       (3) [BCL at Youngest ORS]
+
+<BCL Older Than MC - BCL at Youngest ORS - 1>:If BCL strata are older than MC strata, being at youngest ORS in age, 
+ then there are no CM or ML BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [MC at Youngest ORS]
+        ----
+        (5) [BCL at Youngest ORS]
+
+<BCL Older Than MC - BCL at Youngest ORS - 2>:If BCL strata are older than MC strata, and some MC strata are ORS in age, 
+ then there are no CM or ML BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some Main Culm as ORS]
+        ----
+        (5) [BCL at Youngest ORS]
+
+
+<BCL Older Than MC - BCL at Youngest SIL - 1>:If BCL strata are older than MC strata, being at youngest SIL in age, 
+ then there are no CM or ML or ORS BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [MC at Youngest SIL]
+        ----
+        (5) [BCL at Youngest SIL]
+
+<BCL Older Than MC - BCL at Youngest SIL - 2>:If BCL strata are older than MC strata, and some MC strata are SIL in age, 
+ then there are no CM or ML or ORS BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some Main Culm as SIL]
+        ----
+        (5) [BCL at Youngest SIL]
+
+
+
+[MC at Youngest ORS]: MC strata are at youngest ORS in age #chron-hyp
+        +> [No Main Culm as CM]
+        +> [No Main Culm as ML]
+
+<MC at Youngest ORS> #chron-hyp
+       
+       (1) [No Main Culm as CM]
+       (2) [No Main Culm as ML]
+       ----
+       (3) [MC at Youngest ORS]
+
+[BCL Older Than MC]: The Black Culm Limestone is the lowest part of the Culm series #struc-hyp
+
+
+
+# Gap in the Sequence   {color: 8}
+
+///// Conformable Passage Between MC and BCL ---- BCL Older Than MC ----- Consequences
+
+[Conformable Passage - MC and BCL]: The passage between MC and BCL strata is conformable #GRE #struc-hyp #pri
+
+<BCL Older Than MC - MC at Oldest CM - 1>: If BCL strata are older than MC strata, being at oldest CM in age, 
+ and there are no CM BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ML BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [No Main Culm as ML]
+        (6) [No BCL as CM]
+        ----
+        (7) [Some BCL as ML]
+
+<BCL Older Than MC - MC at Oldest CM - 2>: If BCL strata are older than MC strata, being at oldest CM in age, 
+ and there are no ML BCL strata, then, given that MC and BCL are passing conformably into one antoher, BCL strata are CM in age, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [No Main Culm as ML]
+        (6) [No BCL as ML]
+        ----
+        (7) [Some BCL as CM]
+
+<BCL Older Than MC - MC at Oldest ML - 1>:If BCL strata are older than MC strata, being at oldest ML in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ORS BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [No Main Culm as ORS]
+        (6) [No BCL as ML]
+        ----
+        (7) [Some BCL as ORS]
+
+<BCL Older Than MC - MC at Oldest ML - 2>:If BCL strata are older than MC strata, being at oldest ML in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ML BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [No Main Culm as ORS]
+        (6) [No BCL as ORS]
+        ----
+        (7) [Some BCL as ML]
+
+<BCL Older Than MC - MC at Oldest ORS - 1>:If BCL strata are older than MC strata, being at oldest ORS in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some SIL BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [No Main Culm as SIL]
+        (6) [No BCL as ORS]
+        ----
+        (7) [Some BCL as SIL]
+
+<BCL Older Than MC - MC at Oldest ORS - 2>:If BCL strata are older than MC strata, being at oldest ORS in age, 
+ and there are no SIL BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ORS BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [No Main Culm as SIL]
+        (6) [No BCL as SIL]
+        ----
+        (7) [Some BCL as ORS]
+
+
+<BCL Older Than MC - MC at Oldest SIL - 2.1>:If BCL strata are older than MC strata, being at oldest SIL in age, 
+ and there are no SIL BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some CAM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as SIL]
+        (5) [No Main Culm as CAM]
+        (6) [No BCL as SIL]
+        ----
+        (7) [Some BCL as CAM]
+
+
+<BCL Older Than MC - MC at Oldest SIL - 2.2>:If BCL strata are older than MC strata, being at oldest SIL in age, 
+ and there are no CAM BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some SIL BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as SIL]
+        (5) [No Main Culm as CAM]
+        (6) [No BCL as CAM]
+        ----
+        (7) [Some BCL as SIL]
+
+ ///// Culm strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - MC and BCL>: If the Culm strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [Some BCL as ORS]
+        ----
+        (6) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - MC and BCL>: If the Culm strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [Some BCL as SIL]
+        ----
+        (6) [No Non-Culm as ORS]
+
+<Culm Not Intercalated - No NC as SIL - MC and BCL>: If the Culm strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [Some BCL as CAM]
+        ----
+        (6) [No Non-Culm as SIL]

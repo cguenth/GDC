@@ -1,0 +1,95 @@
+{Implies[61 && 22 &&  !9,  !11] && Implies[33 && 34 && 35 && 36 && 61 && 19, 
+    !32] && Implies[35 && 36 && 32, 20] && Implies[61 &&  !33 && 34, 18] && 
+  Implies[61 &&  !35 && 34, 33] && Implies[61 &&  !34 && 35, 20] && 
+  Implies[61 &&  !36 && 35, 22] && Implies[61 &&  !35 && 36, 32] && 
+  Implies[61 &&  !32 && 36, 17] && Implies[61 &&  !33 &&  !35, 42] && 
+  Implies[61 &&  !34 &&  !36, 43] && Implies[61 &&  !35 &&  !32, 44] && 
+  Implies[33 && 34 && 35 && 36 &&  !32, 17] && Implies[10 && 17, 23] && 
+  Implies[10 && 23, 17] && Implies[ !33 && 34 && 35 && 36 && 32, 18] && 
+  Implies[28 && 29 && 30 && 31 && 61 && 3,  !27] && 
+  Implies[30 && 31 && 27, 4] && Implies[61 &&  !28 && 29, 4] && 
+  Implies[61 &&  !30 && 29, 28] && Implies[61 &&  !29 && 30, 4] && 
+  Implies[61 &&  !31 && 30, 6] && Implies[61 &&  !30 && 31, 27] && 
+  Implies[61 &&  !27 && 31, 1] && Implies[61 &&  !28 &&  !30, 42] && 
+  Implies[61 &&  !29 &&  !31, 43] && Implies[61 &&  !30 &&  !27, 44] && 
+  Implies[28 && 29 && 30 && 31 &&  !27, 1] && Implies[10 && 1, 7] && 
+  Implies[10 && 7, 1] && Implies[28 &&  !29 && 30 && 31 && 27, 2] && 
+  Implies[41 && 42 && 43 && 44 && 61 && 39,  !40] && 
+  Implies[41 && 42 && 43 && 44 &&  !40, 37] && Implies[10 && 37, 26] && 
+  Implies[10 && 26, 37] && Implies[41 && 42 &&  !43 && 44 && 40, 38] && 
+  Implies[8 && 45, 14] && Implies[61 && 39 && 14 && 18,  !41] && 
+  Implies[61 && 19 && 14 && 37, 17] && Implies[61 && 19 && 14 && 41, 33] && 
+  Implies[33 && 34, 21] && Implies[41 && 42, 24] && 
+  Implies[61 && 19 && 14 && 24, 21] && Implies[33 && 34 && 35, 22] && 
+  Implies[41 && 42 && 43, 25] && Implies[61 && 19 && 14 && 25, 22] && 
+  Implies[61 && 19 && 8 &&  !28, 18] && Implies[61 && 3 && 8 &&  !32, 1] && 
+  Implies[61 && 3 && 8 && 33, 28] && Implies[61 && 3 && 8 &&  !34, 28] && 
+  Implies[28 && 29, 5] && Implies[61 && 3 && 8 && 21, 5] && 
+  Implies[61 && 3 && 8 &&  !35, 5] && Implies[28 && 29 && 30, 6] && 
+  Implies[61 && 3 && 8 && 22, 6] && Implies[61 && 3 && 8 &&  !36, 6] && 
+  Implies[18 && 29 && 30 && 31 && 27 && 42 && 43 && 44 && 40, 62] && 
+  Implies[33 && 35 && 36 && 32 && 2 && 41 && 43 && 44 && 40, 62] && 
+  Implies[33 && 34 && 36 && 32 && 28 && 29 && 31 && 27 && 38, 62] && 
+  Implies[33 && 34 && 35 && 32 && 28 && 29 && 30 && 27 && 41 && 42 && 43 && 
+    40, 62] && Implies[17 && 1 && 37, 62] && Implies[62 && 14, 13] && 
+  Implies[61 && 14 && 25, 13] && Implies[61 && 8 && 12 &&  !33 && 34 && 28, 
+    !29] && Implies[61 && 8 && 12 &&  !33 && 34 && 29,  !28] && 
+  Implies[61 && 8 && 12 &&  !34 && 35 && 29,  !30] && 
+  Implies[61 && 8 && 12 &&  !34 && 35 && 30,  !29] && 
+  Implies[61 && 8 && 12 &&  !35 && 36 && 30,  !31] && 
+  Implies[61 && 8 && 12 &&  !35 && 36 && 31,  !30] && 
+  Implies[61 && 8 && 12 &&  !36 && 32 && 31,  !27] && 
+  Implies[61 && 8 && 12 &&  !36 && 32 && 27,  !31] && 
+  Implies[61 && 8 && 12 &&  !33 &&  !30, 42] && 
+  Implies[61 && 8 && 12 &&  !34 &&  !31, 43] && 
+  Implies[61 && 8 && 12 &&  !35 &&  !27, 44] && Implies[20, 36] && 
+  Implies[20, 32] && Implies[20, 35] && Implies[17, 33] && Implies[17, 34] && 
+  Implies[17, 35] && Implies[17, 36] && Implies[17,  !32] && 
+  Implies[18,  !33] && Implies[18, 34] && Implies[18, 35] && 
+  Implies[18, 36] && Implies[18, 32] && Implies[4, 30] && Implies[4, 31] && 
+  Implies[4, 27] && Implies[1, 28] && Implies[1, 29] && Implies[1, 30] && 
+  Implies[1, 31] && Implies[1,  !27] && Implies[2, 28] && Implies[2,  !29] && 
+  Implies[2, 30] && Implies[2, 31] && Implies[2, 27] && Implies[37, 41] && 
+  Implies[37, 42] && Implies[37, 43] && Implies[37, 44] && 
+  Implies[37,  !40] && Implies[38, 41] && Implies[38, 42] && 
+  Implies[38,  !43] && Implies[38, 44] && Implies[38, 40] && 
+  Implies[45, 15] && Implies[14, 45] && Implies[14, 8] && Implies[21, 33] && 
+  Implies[21, 34] && Implies[24, 41] && Implies[24, 42] && Implies[22, 33] && 
+  Implies[22, 34] && Implies[22, 35] && Implies[25, 41] && Implies[25, 42] && 
+  Implies[25, 43] && Implies[5, 28] && Implies[5, 29] && Implies[6, 28] && 
+  Implies[6, 29] && Implies[6, 30] && Implies[13, 62] && Implies[13, 14] && 
+  Implies[13, 12], {"BCL as CAM" -> 1, "BCL as ML" -> 2, 
+  "BCL as Post-Primary and Pre-NRS" -> 3, "BCL at Oldest ML" -> 4, 
+  "BCL at Youngest ORS" -> 5, "BCL at Youngest SIL" -> 6, 
+  "BCL CRT - CAM" -> 7, "BCL Older Than MC" -> 8, 
+  "Carb Fossils in Pre-ORS strata" -> 9, 
+  "Characteristic Rock Type Principle" -> 10, "CM Plants in Devon Culm" -> 
+   11, "Conformable Passage - MC and BCL" -> 12, 
+  "Conformable Passages - 1" -> 13, "Devon Strata - Temporal Order - 1" -> 
+   14, "Exmoor Youngest Devonian Strata" -> 15, "Formation of strata" -> 16, 
+  "Main Culm as CAM" -> 17, "Main Culm as CM" -> 18, 
+  "Main Culm as Post-Primary and Pre-NRS" -> 19, "MC at Oldest ML" -> 20, 
+  "MC at Youngest ORS" -> 21, "MC at Youngest SIL" -> 22, 
+  "MC CRT - CAM" -> 23, "NC at Youngest ORS" -> 24, 
+  "NC at Youngest SIL" -> 25, "NC CRT - CAM" -> 26, "No BCL as CAM" -> 27, 
+  "No BCL as CM" -> 28, "No BCL as ML" -> 29, "No BCL as ORS" -> 30, 
+  "No BCL as SIL" -> 31, "No Main Culm as CAM" -> 32, 
+  "No Main Culm as CM" -> 33, "No Main Culm as ML" -> 34, 
+  "No Main Culm as ORS" -> 35, "No Main Culm as SIL" -> 36, 
+  "Non-Culm as CAM" -> 37, "Non-Culm as ORS" -> 38, 
+  "Non-Culm as Post-Primary and Pre-NRS" -> 39, "No Non-Culm as CAM" -> 40, 
+  "No Non-Culm as CM" -> 41, "No Non-Culm as ML" -> 42, 
+  "No Non-Culm as ORS" -> 43, "No Non-Culm as SIL" -> 44, 
+  "Passing Devon Northwards" -> 45, "Some BCL as CAM" -> 46, 
+  "Some BCL as CM" -> 47, "Some BCL as ML" -> 48, "Some BCL as ORS" -> 49, 
+  "Some BCL as SIL" -> 50, "Some Main Culm as CAM" -> 51, 
+  "Some Main Culm as CM" -> 52, "Some Main Culm as ML" -> 53, 
+  "Some Main Culm as ORS" -> 54, "Some Main Culm as SIL" -> 55, 
+  "Some Non-Culm as CAM" -> 56, "Some Non-Culm as CM" -> 57, 
+  "Some Non-Culm as ML" -> 58, "Some Non-Culm as ORS" -> 59, 
+  "Some Non-Culm as SIL" -> 60, "Standard Sequence" -> 61, 
+  "Unbroken Sequence of Devon Strata" -> 62, "Untitled 1" -> 63, 
+  "Untitled 2" -> 64}, {}, {63 ->  !9, 64 ->  !11, 46 ->  !27, 47 ->  !28, 
+  48 ->  !29, 49 ->  !30, 50 ->  !31, 51 ->  !32, 52 ->  !33, 53 ->  !34, 
+  54 ->  !35, 55 ->  !36, 56 ->  !40, 57 ->  !41, 58 ->  !42, 59 ->  !43, 
+  60 ->  !44}}
