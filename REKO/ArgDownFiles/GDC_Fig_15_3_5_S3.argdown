@@ -1512,6 +1512,56 @@ then BCL strata are CAM in age, too #pri #chron-hyp
     (5) [Non-Culm as CAM]
 
 
+
+/*WEGGELASSEN, da dieses Arg keine vernünftige einschränkende Wirkung hat: Zum Beispiel
+ ![Main Culm Youngest Devonian Strata] verträglich mit MC as CM - BCL as CM - NC as SIL&CAM. Unsinnig!!!!
+
+<MC as Youngest Devonian Strata>: If (i) BCL are older than MC and (ii) MC are CM in age and (iii) NC stata are CAM in age, 
+  then MC are the youngest Devonian strata #COA
+
+    (1) [Standard Sequence]
+    (2) [BCL Older Than MC]
+    (3) [Some Main Culm as CM]
+    (4) [No Non-Culm as SIL]
+    (5) [Some Non-Culm as CAM]
+    ----
+    (6) [Main Culm Youngest Devonian Strata]*/
+
+<MC as Youngest Strata - Some MC as CM>: If (i) BCL are older than MC and (ii) some MC are CM in age and (iii) NC stata are at youngest ML in age, 
+  then MC are the youngest Devonian strata #COA
+
+    (1) [Standard Sequence]
+    (2) [BCL Older Than MC]
+    (3) [Some Main Culm as CM]
+    (4) [No Non-Culm as CM] 
+    ----
+    (6) [Main Culm Youngest Devonian Strata]
+
+/* Foglendes unsinnig, da ![Main Culm Youngest Devonian Strata] verträglich mit CM/CM/SIL&CAM. Das ist Unsinn!!!
+
+<MC as Youngest Strata - Some MC as ML>: If (i) BCL are older than MC and (ii) MC are ML in age and (iii) NC stata are at youngest ORS in age, 
+  then MC are the youngest Devonian strata #COA
+
+    (1) [Standard Sequence]
+    (2) [BCL Older Than MC]
+    (3) [Some Main Culm as ML]
+    (4) [NC at Youngest ORS]
+    ----
+    (6) [Main Culm Youngest Devonian Strata]
+    
+ABER folgendes nicht unsinnig. Satzlimit??? ODER-Verknüpfung???
+
+<MC as Youngest Strata - Some MC as CM or ML>: If (i) BCL are older than MC and (ii) MC are CM or ML in age and (iii) NC stata are at youngest ORS in age,
+then MC are the youngest Devonian strata 
+
+(1) [Standard Sequence]
+(2) [BCL Older Than MC]
+(3) [Some Main Culm as CM] ODER [Some Main Culm as ML]
+(4) [NC at Youngest ORS]
+----
+(6) [Main Culm Youngest Devonian Strata]*/
+
+
 //// NC Older Than BCL ---- Consequences
 
 [BCL as CM]: The whole BCL strata are CAM in age #chron-hyp
@@ -1698,21 +1748,6 @@ then NC strata are CAM in age, too #pri #chron-hyp
         (5) [No Non-Culm as CAM]
 
 
-
-/*WEGGELASSEN, da dieses Arg keine vernünftige einschränkende Wirkung hat: Zum Beispiel
- !6 verbietet CM - BCL as CM - NC as CAM (d.h. 6), jedoch
- !6 verträglich mit MC as CM - BCL as CM - NC as SIL&CAM (d.h. 6)
-
-<MC as Youngest Devonian Strata>: If (i) BCL are older than MC and (ii) MC are CM in age and (iii) NC stata are CAM in age, 
-  then MC are the youngest Devonian strata #COA
-
-    (1) [Standard Sequence]
-    (2) [BCL Older Than MC]
-    (3) [Some Main Culm as CM]
-    (4) [No Non-Culm as SIL]
-    (5) [Some Non-Culm as CAM]
-    ----
-    (6) [Main Culm Youngest Devonian Strata]*/
 
  
 

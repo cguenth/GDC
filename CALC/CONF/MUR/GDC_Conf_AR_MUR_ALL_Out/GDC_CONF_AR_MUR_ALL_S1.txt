@@ -1,7 +1,6 @@
-{{{0.006426735218508998, 5, 778}, {0.005342403378738736, 
-   0.006426735218508998, 0.0010901558922925979}, 
-  {0.7112708936408627, 0.006426735218508998, 0.00003118166486042798, 
-   0.0010901558922925979}}, 
+{{{0.00196078431372549, 1, 510}, {0.0017164961688995756, 0.00196078431372549, 
+   0.0002447081854888046}, {0.7784307323974317, 0.00196078431372549, 
+   0.00002294139238957543, 0.0002447081854888046}}, 
  {{27, {"BCL as CM", "BCL as ML", "BCL at Oldest ML", 
     "Conformable Passage - BCL and NC", "Conformable Passages - 1", 
     "Conformable Passages - 2", "Devon Strata - Temporal Order - 1", 
@@ -12,7 +11,4 @@
     "Non-Culm as CAM", "Non-Culm as ORS", "No Non-Culm as CAM", 
     "No Non-Culm as CM", "No Non-Culm as ML", "No Non-Culm as ORS", 
     "No Non-Culm as SIL", "Passing Devon Northwards", 
-    "Unbroken Sequence of Devon Strata"}}, 
-  {4, {"Devon Strata - Temporal Order - 2", 
-    "Exmoor Youngest Devonian Strata", "Main Culm Youngest Devonian Strata", 
-    "Unbroken Sequence of Devon Strata"}}}}
+    "Unbroken Sequence of Devon Strata"}}, {}}}

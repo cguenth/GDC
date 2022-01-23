@@ -1,0 +1,3491 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[    147457,       3483]
+NotebookOptionsPosition[    144506,       3431]
+NotebookOutlinePosition[    144839,       3446]
+CellTagsIndexPosition[    144796,       3443]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"$Path", ",", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+      "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+       "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"!", 
+     RowBox[{"MemberQ", "[", 
+      RowBox[{"$Path", ",", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+          "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}]}], ",", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"$Path", ",", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "$HomeDirectory", ",", "\"\<GDC\>\"", ",", 
+         "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", 
+    RowBox[{"FindFile", "[", "\"\<GDCAnalysis3`\>\"", "]"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", 
+    RowBox[{"FindFile", "[", "\"\<GDCComparisons`\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{"<<", "GDCAnalysis3`"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "GDCComparisons`"}]}], "Input",
+ CellChangeTimes->{
+  3.811396783148799*^9, {3.823760101466756*^9, 3.823760103200211*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"fbddbd8c-6d95-4bc3-a537-7cb99131c105"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/home/carla/GDC/DialecticalStructures/GDCAnalysis3.m\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/GDCAnalysis3.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.809317362394536*^9, 3.809323094603178*^9, 3.809337657949881*^9, {
+   3.809400001185224*^9, 3.8094000034370947`*^9}, 3.809402762561379*^9, 
+   3.809403726015785*^9, 3.809404117860113*^9, 3.809404607745913*^9, {
+   3.809404647873966*^9, 3.809404675087545*^9}, {3.809415101176627*^9, 
+   3.809415128025464*^9}, 3.809415319853723*^9, 3.809415439880602*^9, 
+   3.809415493596479*^9, 3.809415536500375*^9, {3.8094164146112623`*^9, 
+   3.809416419288065*^9}, 3.809417823645349*^9, 3.809660473684382*^9, 
+   3.8096657155495*^9, 3.809666293973467*^9, 3.8096700588416767`*^9, 
+   3.811396715619266*^9, 3.8113967838947153`*^9, 3.811397292064869*^9, 
+   3.811475235325296*^9, 3.811484077202175*^9, 3.811653476148334*^9, 
+   3.8116540357091713`*^9, 3.811654136118656*^9, 3.811654214792783*^9, 
+   3.8134799534058743`*^9, 3.813482039259201*^9, 3.819529843304735*^9, 
+   3.819531894184266*^9, {3.8206423327880774`*^9, 3.820642334750148*^9}, {
+   3.8237600972804317`*^9, 3.823760103698428*^9}, 3.823761258127451*^9, {
+   3.823840899072103*^9, 3.823840901883863*^9}, 3.82979331016961*^9, 
+   3.832051845483429*^9, 3.83230663603955*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"74dbe11c-e101-41b0-840e-63fc957c92eb"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/home/carla/GDC/DialecticalStructures/GDCComparisons.m\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/GDCComparisons.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.809317362394536*^9, 3.809323094603178*^9, 3.809337657949881*^9, {
+   3.809400001185224*^9, 3.8094000034370947`*^9}, 3.809402762561379*^9, 
+   3.809403726015785*^9, 3.809404117860113*^9, 3.809404607745913*^9, {
+   3.809404647873966*^9, 3.809404675087545*^9}, {3.809415101176627*^9, 
+   3.809415128025464*^9}, 3.809415319853723*^9, 3.809415439880602*^9, 
+   3.809415493596479*^9, 3.809415536500375*^9, {3.8094164146112623`*^9, 
+   3.809416419288065*^9}, 3.809417823645349*^9, 3.809660473684382*^9, 
+   3.8096657155495*^9, 3.809666293973467*^9, 3.8096700588416767`*^9, 
+   3.811396715619266*^9, 3.8113967838947153`*^9, 3.811397292064869*^9, 
+   3.811475235325296*^9, 3.811484077202175*^9, 3.811653476148334*^9, 
+   3.8116540357091713`*^9, 3.811654136118656*^9, 3.811654214792783*^9, 
+   3.8134799534058743`*^9, 3.813482039259201*^9, 3.819529843304735*^9, 
+   3.819531894184266*^9, {3.8206423327880774`*^9, 3.820642334750148*^9}, {
+   3.8237600972804317`*^9, 3.823760103698428*^9}, 3.823761258127451*^9, {
+   3.823840899072103*^9, 3.823840901883863*^9}, 3.82979331016961*^9, 
+   3.832051845483429*^9, 3.832306636043213*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"cdce9444-1b43-4e9f-92fb-f959c7b84b5b"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"ge\[ADoubleDot]ndert", " ", 
+       RowBox[{
+        RowBox[{"12", "/", "05"}], "/", "21"}]}], ":", " ", 
+      "\[IndentingNewLine]", "valNeu"}], "=", 
+     RowBox[{"Which", "[", 
+      RowBox[{
+       RowBox[{"BooleanQ", "[", 
+        RowBox[{"val", "==", 
+         InterpretationBox[
+          ButtonBox[
+           TooltipBox[
+            GraphicsBox[{
+              {GrayLevel[0], RectangleBox[{0, 0}]}, 
+              {GrayLevel[0], RectangleBox[{1, -1}]}, 
+              {GrayLevel[1], RectangleBox[{0, -1}, {2, 1}]}},
+             AspectRatio->1,
+             DefaultBaseStyle->"ColorSwatchGraphics",
+             Frame->True,
+             FrameStyle->GrayLevel[0.6666666666666666],
+             FrameTicks->None,
+             
+             ImageSize->
+              Dynamic[{
+               Automatic, 
+                1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                 Magnification])}],
+             PlotRangePadding->None],
+            StyleBox[
+             RowBox[{"GrayLevel", "[", "1", "]"}], NumberMarks -> False]],
+           Appearance->None,
+           BaseStyle->{},
+           BaselinePosition->Baseline,
+           ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+             If[
+              Not[
+               AbsoluteCurrentValue["Deployed"]], 
+              SelectionMove[Typeset`box$, All, Expression]; 
+              FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+              FrontEnd`Private`$ColorSelectorInitialColor = GrayLevel[1]; 
+              FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+              MathLink`CallFrontEnd[
+                FrontEnd`AttachCell[Typeset`box$, 
+                 FrontEndResource["GrayLevelColorValueSelector"], {
+                 0, {Left, Bottom}}, {Left, Top}, 
+                 "ClosingActions" -> {
+                  "SelectionDeparture", "ParentChanged", "EvaluatorQuit"}]]]],
+           
+           DefaultBaseStyle->{},
+           Evaluator->Automatic,
+           Method->"Preemptive"],
+          GrayLevel[1],
+          Editable->False,
+          Selectable->False]}], "]"}], ",", "\[IndentingNewLine]", "val", ",",
+        "\[IndentingNewLine]", 
+       RowBox[{"val", ">", "thre"}], ",", "\[IndentingNewLine]", "col1", ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{"val", "\[LessEqual]", "thre"}], ",", "\[IndentingNewLine]", 
+       "col2"}], "]"}]}], ";"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"groupingFunc", "[", 
+      RowBox[{"val_", ",", "col1_", ",", "col2_", ",", " ", "thre_"}], "]"}], 
+     ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", "valNeu", "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"valNeu", "=", 
+         RowBox[{"Which", "[", 
+          RowBox[{
+           RowBox[{"BooleanQ", "[", 
+            RowBox[{"val", "==", 
+             InterpretationBox[
+              ButtonBox[
+               TooltipBox[
+                GraphicsBox[{
+                  {GrayLevel[0], RectangleBox[{0, 0}]}, 
+                  {GrayLevel[0], RectangleBox[{1, -1}]}, 
+                  {GrayLevel[1], RectangleBox[{0, -1}, {2, 1}]}},
+                 AspectRatio->1,
+                 DefaultBaseStyle->"ColorSwatchGraphics",
+                 Frame->True,
+                 FrameStyle->GrayLevel[0.6666666666666666],
+                 FrameTicks->None,
+                 
+                 ImageSize->
+                  Dynamic[{
+                   Automatic, 
+                    1.35 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])}],
+                 PlotRangePadding->None],
+                StyleBox[
+                 RowBox[{"GrayLevel", "[", "1", "]"}], NumberMarks -> False]],
+               
+               Appearance->None,
+               BaseStyle->{},
+               BaselinePosition->Baseline,
+               ButtonFunction:>With[{Typeset`box$ = EvaluationBox[]}, 
+                 If[
+                  Not[
+                   AbsoluteCurrentValue["Deployed"]], 
+                  SelectionMove[Typeset`box$, All, Expression]; 
+                  FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                  FrontEnd`Private`$ColorSelectorInitialColor = GrayLevel[1]; 
+                  FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                  MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["GrayLevelColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]],
+               DefaultBaseStyle->{},
+               Evaluator->Automatic,
+               Method->"Preemptive"],
+              GrayLevel[1],
+              Editable->False,
+              Selectable->False]}], "]"}], ",", "\[IndentingNewLine]", "val", 
+           ",", "\[IndentingNewLine]", 
+           RowBox[{"val", "\[GreaterEqual]", " ", "thre"}], ",", 
+           "\[IndentingNewLine]", "col1", ",", "\[IndentingNewLine]", 
+           RowBox[{"val", "<", "thre"}], ",", "\[IndentingNewLine]", "col2"}],
+           "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"Return", "[", "valNeu", "]"}], ";"}]}], 
+      "\[IndentingNewLine]", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"headMapGroupsEndo", "[", 
+      RowBox[{
+      "dataH_", ",", "dataE_", ",", "tInd_", ",", " ", "col1_", ",", "col2_", 
+       ",", "thre_"}], "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+        "dataEInd", ",", "dataHInd", ",", "names", ",", "\[IndentingNewLine]",
+          "DLBe", ",", "MURe", ",", "LYEe", ",", "PHIe", ",", "SEDe", ",", 
+         "AUSe", ",", "DLBh", ",", "MURh", ",", "LYEh", ",", "PHIh", ",", 
+         "SEDh", ",", "AUSh", ",", "dataOut"}], "}"}], ",", 
+       "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"names", "=", 
+         RowBox[{"Keys", "[", "dataE", "]"}]}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"dataEInd", "=", 
+         RowBox[{"Map", "[", 
+          RowBox[{
+           RowBox[{"Function", "[", 
+            RowBox[{"z", ",", 
+             RowBox[{"Map", "[", 
+              RowBox[{
+               RowBox[{"Function", "[", 
+                RowBox[{"y", ",", 
+                 RowBox[{"Map", "[", 
+                  RowBox[{
+                   RowBox[{"Function", "[", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"groupingFunc", "[", 
+                    RowBox[{"x", ",", "col1", ",", 
+                    RowBox[{"Lighter", "[", 
+                    RowBox[{"col1", ",", "0.8"}], "]"}], ",", "thre"}], 
+                    "]"}]}], "]"}], ",", 
+                   RowBox[{
+                    RowBox[{"dataE", "[", "z", "]"}], "[", 
+                    RowBox[{"[", "y", "]"}], "]"}]}], "]"}]}], "]"}], ",", 
+               RowBox[{"Range", "[", 
+                RowBox[{"Length", "[", 
+                 RowBox[{"dataE", "[", "z", "]"}], "]"}], "]"}]}], "]"}]}], 
+            "]"}], ",", "names"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"dataHInd", "=", 
+         RowBox[{"Map", "[", 
+          RowBox[{
+           RowBox[{"Function", "[", 
+            RowBox[{"z", ",", 
+             RowBox[{"Map", "[", 
+              RowBox[{
+               RowBox[{"Function", "[", 
+                RowBox[{"y", ",", 
+                 RowBox[{"Map", "[", 
+                  RowBox[{
+                   RowBox[{"Function", "[", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"groupingFunc", "[", 
+                    RowBox[{"x", ",", "col2", ",", 
+                    RowBox[{"Lighter", "[", 
+                    RowBox[{"col2", ",", "0.8"}], "]"}], ",", "thre"}], 
+                    "]"}]}], "]"}], ",", 
+                   RowBox[{
+                    RowBox[{"dataH", "[", "z", "]"}], "[", 
+                    RowBox[{"[", "y", "]"}], "]"}]}], "]"}]}], "]"}], ",", 
+               RowBox[{"Range", "[", 
+                RowBox[{"Length", "[", 
+                 RowBox[{"dataH", "[", "z", "]"}], "]"}], "]"}]}], "]"}]}], 
+            "]"}], ",", "names"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"DLBe", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataEInd", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"MURe", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataEInd", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "2"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"LYEe", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataEInd", "[", 
+             RowBox[{"[", "3", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "3"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"PHIe", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataEInd", "[", 
+             RowBox[{"[", "4", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "4"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"SEDe", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataEInd", "[", 
+             RowBox[{"[", "5", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "5"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"AUSe", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataEInd", "[", 
+             RowBox[{"[", "6", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "6"}], "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        
+        RowBox[{"DLBh", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataHInd", "[", 
+             RowBox[{"[", "1", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "1"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"MURh", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataHInd", "[", 
+             RowBox[{"[", "2", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "2"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"LYEh", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataHInd", "[", 
+             RowBox[{"[", "3", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "3"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"PHIh", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataHInd", "[", 
+             RowBox[{"[", "4", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "4"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"SEDh", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataHInd", "[", 
+             RowBox[{"[", "5", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "5"}], "]"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"AUSh", "=", 
+         RowBox[{"Insert", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dataHInd", "[", 
+             RowBox[{"[", "6", "]"}], "]"}], "[", 
+            RowBox[{"[", 
+             RowBox[{"All", ",", "tInd"}], "]"}], "]"}], ",", "White", ",", 
+           "6"}], "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        
+        RowBox[{"dataOut", "=", 
+         RowBox[{"{", 
+          RowBox[{"DLBh", ",", "\[IndentingNewLine]", 
+           RowBox[{"Catenate", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"MURe", "[", 
+               RowBox[{"[", 
+                RowBox[{"1", ";;", "2"}], "]"}], "]"}], ",", 
+              RowBox[{"MURh", "[", 
+               RowBox[{"[", 
+                RowBox[{"3", ";;"}], "]"}], "]"}]}], "}"}], "]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Catenate", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"LYEe", "[", 
+               RowBox[{"[", 
+                RowBox[{"1", ";;", "3"}], "]"}], "]"}], ",", 
+              RowBox[{"LYEh", "[", 
+               RowBox[{"[", 
+                RowBox[{"4", ";;"}], "]"}], "]"}]}], "}"}], "]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Catenate", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"PHIe", "[", 
+               RowBox[{"[", 
+                RowBox[{"1", ";;", "4"}], "]"}], "]"}], ",", 
+              RowBox[{"PHIh", "[", 
+               RowBox[{"[", 
+                RowBox[{"5", ";;"}], "]"}], "]"}]}], "}"}], "]"}], ",", 
+           "\[IndentingNewLine]", 
+           RowBox[{"Catenate", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"SEDe", "[", 
+               RowBox[{"[", 
+                RowBox[{"1", ";;", "5"}], "]"}], "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"SEDh", "[", 
+                RowBox[{"[", "6", "]"}], "]"}], "}"}]}], "}"}], "]"}], ",", 
+           "\[IndentingNewLine]", "AUSe"}], "}"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Return", "[", "dataOut", "]"}], ";"}]}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"insetFunc", "[", "data_", "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", "box", "}"}], ",", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"box", "=", 
+         RowBox[{"Text", "@", 
+          RowBox[{"Grid", "[", 
+           RowBox[{
+            RowBox[{"Prepend", "[", 
+             RowBox[{"data", ",", 
+              RowBox[{"{", 
+               RowBox[{
+                RowBox[{"Style", "[", 
+                 RowBox[{"\"\<SIM PERS\>\"", ",", "15"}], "]"}], ",", 
+                "\"\< \>\""}], "}"}]}], "]"}], ",", 
+            RowBox[{"Background", "->", 
+             RowBox[{"{", 
+              RowBox[{"None", ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Lighter", "[", 
+                  RowBox[{"Yellow", ",", ".9"}], "]"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"White", ",", 
+                   RowBox[{"Lighter", "[", 
+                    RowBox[{"Black", ",", ".9"}], "]"}]}], "}"}]}], "}"}]}], 
+              "}"}]}], ",", 
+            RowBox[{"Dividers", "->", 
+             RowBox[{"{", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Darker", "[", 
+                  RowBox[{"Gray", ",", ".6"}], "]"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{"Lighter", "[", 
+                   RowBox[{"Gray", ",", ".5"}], "]"}], "}"}], ",", 
+                 RowBox[{"Darker", "[", 
+                  RowBox[{"Gray", ",", ".6"}], "]"}]}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"Darker", "[", 
+                  RowBox[{"Gray", ",", ".6"}], "]"}], ",", 
+                 RowBox[{"Darker", "[", 
+                  RowBox[{"Gray", ",", ".6"}], "]"}], ",", 
+                 RowBox[{"{", "False", "}"}], ",", 
+                 RowBox[{"Darker", "[", 
+                  RowBox[{"Gray", ",", ".6"}], "]"}]}], "}"}]}], "}"}]}], ",", 
+            RowBox[{"Alignment", "->", 
+             RowBox[{"{", 
+              RowBox[{"{", 
+               RowBox[{"Left", ",", "Center"}], "}"}], "}"}]}], ",", 
+            RowBox[{"ItemSize", "->", 
+             RowBox[{"{", 
+              RowBox[{"{", 
+               RowBox[{"15", ",", "4"}], "}"}], "}"}]}], ",", 
+            RowBox[{"Frame", "->", 
+             RowBox[{"Darker", "[", 
+              RowBox[{"Gray", ",", ".6"}], "]"}]}], ",", 
+            RowBox[{"ItemStyle", "\[Rule]", "10"}], ",", 
+            RowBox[{"Spacings", "->", 
+             RowBox[{"{", 
+              RowBox[{"Automatic", ",", ".8"}], "}"}]}]}], "]"}]}]}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"Return", "[", "box", "]"}], ";"}]}], "\n", "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{
+    "dataH", ",", "dataE", ",", "names", ",", " ", "len", ",", " ", "dataMin",
+      ",", " ", "dataMax"}], "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"groupingEndoTot", "[", 
+      RowBox[{
+      "dH_", ",", "dE_", ",", " ", "l_", ",", "nams_", ",", " ", "dMin_", ",",
+        "dMax_", ",", " ", "thre_"}], "]"}], ":=", 
+     RowBox[{"Module", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"data", ",", "plotsI", ",", "plotsF"}], "}"}], ",", 
+       "\[IndentingNewLine]", "\[IndentingNewLine]", 
+       RowBox[{
+        RowBox[{"data", "=", 
+         RowBox[{"Map", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"headMapGroupsEndo", "[", 
+             RowBox[{
+             "dH", ",", "dE", ",", "#", ",", "Orange", ",", "Blue", ",", 
+              "thre"}], "]"}], "&"}], ",", 
+           RowBox[{"Range", "[", "l", "]"}]}], "]"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"plotsI", "=", "\[IndentingNewLine]", 
+         RowBox[{"Map", "[", 
+          RowBox[{
+           RowBox[{"Function", "[", 
+            RowBox[{"y", ",", 
+             RowBox[{"ArrayPlot", "[", 
+              RowBox[{
+               RowBox[{"data", "[", 
+                RowBox[{"[", "y", "]"}], "]"}], ",", " ", 
+               RowBox[{"ColorFunction", "\[Rule]", "\"\<TemperatureMap\>\""}],
+                ",", 
+               RowBox[{"ImageSize", "\[Rule]", "400"}], ",", 
+               RowBox[{"PlotLegends", "\[Rule]", "Automatic"}], ",", 
+               RowBox[{"ImageMargins", "\[Rule]", "10"}], ",", 
+               RowBox[{"PlotRange", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{"dMin", ",", "dMax"}], "}"}]}], ",", 
+               RowBox[{"Frame", "\[Rule]", "True"}], ",", 
+               "\[IndentingNewLine]", 
+               RowBox[{"FrameTicks", "\[Rule]", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"Map", "[", 
+                    RowBox[{
+                    RowBox[{"Function", "[", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"nams", "[", 
+                    RowBox[{"[", "x", "]"}], "]"}]}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Range", "[", "6", "]"}]}], "]"}], ",", "None"}], 
+                   "}"}], ",", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"Map", "[", 
+                    RowBox[{
+                    RowBox[{"Function", "[", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"{", 
+                    RowBox[{"x", ",", 
+                    RowBox[{"nams", "[", 
+                    RowBox[{"[", "x", "]"}], "]"}]}], "}"}]}], "]"}], ",", 
+                    RowBox[{"Range", "[", "6", "]"}]}], "]"}], ",", "None"}], 
+                   "}"}]}], "}"}]}]}], "]"}]}], "]"}], ",", 
+           RowBox[{"Range", "[", "l", "]"}]}], "]"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"(*", 
+         RowBox[{"{", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"Style", "[", 
+             RowBox[{"\"\<TIME\>\"", ",", "20"}], "]"}], ",", 
+            RowBox[{"Style", "[", 
+             RowBox[{
+              RowBox[{"ToString", "[", 
+               RowBox[{"tsAll", "[", 
+                RowBox[{"[", "#", "]"}], "]"}], "]"}], ",", "20"}], "]"}]}], 
+           "}"}], "}"}], "*)"}], "\[IndentingNewLine]", 
+        RowBox[{"plotsF", "=", 
+         RowBox[{"Map", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"Show", "[", 
+             RowBox[{
+              RowBox[{"plotsI", "[", 
+               RowBox[{"[", "#", "]"}], "]"}], ",", 
+              RowBox[{"Graphics", "@", 
+               RowBox[{"Text", "[", 
+                RowBox[{
+                 RowBox[{"insetFunc", "[", 
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<THRE\>\"", ",", "15"}], "]"}], ",", 
+                    RowBox[{"Style", "[", 
+                    RowBox[{
+                    RowBox[{"ToString", "[", "thre", "]"}], ",", "15"}], 
+                    "]"}]}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"Style", "[", 
+                    RowBox[{"\"\<TIME\>\"", ",", "20"}], "]"}], ",", 
+                    RowBox[{"Style", "[", 
+                    RowBox[{
+                    RowBox[{"ToString", "[", 
+                    RowBox[{"tsStr", "[", 
+                    RowBox[{"[", "#", "]"}], "]"}], "]"}], ",", "20"}], 
+                    "]"}]}], "}"}]}], "}"}], "]"}], ",", 
+                 RowBox[{"Offset", "[", 
+                  RowBox[{
+                   RowBox[{"{", 
+                    RowBox[{"150", ",", "10"}], "}"}], ",", 
+                   RowBox[{"Scaled", "[", 
+                    RowBox[{"{", 
+                    RowBox[{"0", ",", "1"}], "}"}], "]"}]}], "]"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], ",", 
+                   RowBox[{"-", "1"}]}], "}"}]}], "]"}]}], ",", 
+              RowBox[{"PlotRangeClipping", "\[Rule]", "False"}]}], "]"}], 
+            "&"}], ",", 
+           RowBox[{"Range", "[", "l", "]"}]}], "]"}]}], ";", 
+        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        RowBox[{"Return", "[", "plotsF", "]"}], ";"}]}], "]"}]}], 
+    ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.8238407657058687`*^9, 3.823840819988615*^9}, {
+  3.823841862699999*^9, 3.8238418792806387`*^9}, {3.823841910491949*^9, 
+  3.8238419242316103`*^9}, {3.823842102760573*^9, 3.823842145572815*^9}, {
+  3.8238421794989157`*^9, 3.823842296107635*^9}, {3.823842964708417*^9, 
+  3.8238430095098124`*^9}, {3.823843147406344*^9, 3.823843172911715*^9}, {
+  3.823847750907044*^9, 3.82384803936238*^9}, {3.8238480734042473`*^9, 
+  3.823848079979787*^9}, {3.825239174436399*^9, 3.825239179762568*^9}, {
+  3.82979352407841*^9, 3.829793566487804*^9}, {3.832051729668387*^9, 
+  3.832051749380558*^9}, {3.8320517839059753`*^9, 3.8320518414545937`*^9}, {
+  3.832051886126436*^9, 3.8320519103004208`*^9}, {3.832051951965639*^9, 
+  3.832051957644685*^9}},
+ CellLabel->"In[7]:=",ExpressionUUID->"307665f2-1502-4f12-81c2-27e3629e0959"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"tsAR", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "0", ",", "1", ",", "2", ",", "3", ",", "4", ",", "5", ",", "6", ",", "7",
+      ",", "8"}], "}"}]}], ";", 
+  RowBox[{"tsBR", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "0.5", ",", "1.5", ",", "2.5", ",", "3.5", ",", "4.5", ",", "5.5", ",", 
+     "6.5", ",", "7.5"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"tsALLRed", "=", 
+  RowBox[{"Drop", "[", 
+   RowBox[{
+    RowBox[{"Union", "[", 
+     RowBox[{"tsAR", ",", "tsBR"}], "]"}], ",", "2"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"tsStr", "=", 
+  RowBox[{"{", 
+   RowBox[{
+   "\"\<1b\>\"", ",", "\"\<2a\>\"", ",", "\"\<2b\>\"", ",", "\"\<3a\>\"", 
+    ",", "\"\<3b\>\"", ",", "\"\<4a\>\"", ",", "\"\<4b\>\"", ",", 
+    "\"\<5a\>\"", ",", "\"\<5b\>\"", ",", "\"\<6a\>\"", ",", "\"\<6b\>\"", 
+    ",", "\"\<7a\>\"", ",", "\"\<7b\>\"", ",", "\"\<8a\>\"", ",", 
+    "\"\<8b\>\""}], "}"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"tatCH", "=", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Get", "[", "#", "]"}], "&"}], ",", 
+     RowBox[{"FileNames", "[", "\"\</home/carla/GDC/POS/*.txt\>\"", "]"}]}], 
+    "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.809323537000629*^9, 3.809323552390305*^9}, {
+   3.80940280738867*^9, 3.809402809603668*^9}, {3.809403690181149*^9, 
+   3.8094037104162617`*^9}, 3.809404594985528*^9, 3.811396722589406*^9, {
+   3.811653487636841*^9, 3.811653540702587*^9}, 3.8206452218441153`*^9, {
+   3.8206453323625793`*^9, 3.820645336331345*^9}, {3.820645389850711*^9, 
+   3.820645393188711*^9}},
+ CellLabel->"In[11]:=",ExpressionUUID->"65230b72-4ad8-4a48-811b-ed20cc526f8a"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "1.5`", ",", "2", ",", "2.5`", ",", "3", ",", "3.5`", ",", "4", 
+   ",", "4.5`", ",", "5", ",", "5.5`", ",", "6", ",", "6.5`", ",", "7", ",", 
+   "7.5`", ",", "8"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.820645222241189*^9, {3.820645333188624*^9, 3.820645336710643*^9}, 
+   3.8206453935824633`*^9, 3.823760111907127*^9, 3.823761258377285*^9, 
+   3.82384085325602*^9, 3.829793318879527*^9, 3.832051851379204*^9, 
+   3.8323066462771482`*^9},
+ CellLabel->"Out[12]=",ExpressionUUID->"38fe0606-3dfc-4e7d-92b5-58d4368fd291"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"1b\"\>", ",", "\<\"2a\"\>", ",", "\<\"2b\"\>", 
+   ",", "\<\"3a\"\>", ",", "\<\"3b\"\>", ",", "\<\"4a\"\>", ",", "\<\"4b\"\>",
+    ",", "\<\"5a\"\>", ",", "\<\"5b\"\>", ",", "\<\"6a\"\>", 
+   ",", "\<\"6b\"\>", ",", "\<\"7a\"\>", ",", "\<\"7b\"\>", ",", "\<\"8a\"\>",
+    ",", "\<\"8b\"\>"}], "}"}]], "Output",
+ CellChangeTimes->{
+  3.820645222241189*^9, {3.820645333188624*^9, 3.820645336710643*^9}, 
+   3.8206453935824633`*^9, 3.823760111907127*^9, 3.823761258377285*^9, 
+   3.82384085325602*^9, 3.829793318879527*^9, 3.832051851379204*^9, 
+   3.832306646279644*^9},
+ CellLabel->"Out[13]=",ExpressionUUID->"14052516-c759-48d7-b542-b3bf638b99cd"]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.8206452323071947`*^9, 3.820645329331492*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"a72278f3-a6aa-4f48-8ad8-e57b412e56f5"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"First", "[", 
+     RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", "0", ",", 
+    "tsAR", ","}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"eDLBMUR", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", "0", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eDLBLYE", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", "0", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eDLBPHI", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", "2", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eDLBSED", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", "4", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eDLBAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eMURLYE", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", "0", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eMURPHI", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", "2", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eMURSED", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", "4", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eMURAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eLYEPHI", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", "2", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eLYESED", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", "4", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eLYEAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ePHISED", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", "4", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ePHIAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"eSEDAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<EVBK\>\"", ",", 
+       " ", "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dataE", "=", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<DLB\>\"", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+         "eDLBMUR", ",", "eDLBLYE", ",", "eDLBPHI", ",", "eDLBSED", ",", 
+          "eDLBAUS"}], "}"}]}], ",", " ", 
+       RowBox[{"\"\<MUR\>\"", "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+         "eDLBMUR", ",", "eMURLYE", ",", "eMURPHI", ",", "eMURSED", ",", 
+          "eMURAUS"}], "}"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"\"\<LYE\>\"", "\[Rule]", "  ", 
+        RowBox[{"{", 
+         RowBox[{
+         "eDLBLYE", ",", "eMURLYE", ",", "eLYEPHI", ",", "eLYESED", ",", 
+          "eLYEAUS"}], "}"}]}], ",", 
+       RowBox[{"\"\<PHI\>\"", "\[Rule]", "  ", 
+        RowBox[{"{", 
+         RowBox[{
+         "eDLBPHI", ",", "eMURPHI", ",", "eLYEPHI", ",", "ePHISED", ",", 
+          "ePHIAUS"}], "}"}]}], ",", " ", 
+       RowBox[{"\"\<SED\>\"", "\[Rule]", "  ", 
+        RowBox[{"{", 
+         RowBox[{
+         "eDLBSED", ",", "eMURSED", ",", "eLYESED", ",", "ePHISED", ",", 
+          "eSEDAUS"}], "}"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"\"\<AUS\>\"", "\[Rule]", "  ", 
+        RowBox[{"{", 
+         RowBox[{
+         "eDLBAUS", ",", "eMURAUS", ",", "eLYEAUS", ",", " ", "ePHIAUS", ",", 
+          "eSEDAUS"}], "}"}]}]}], "|>"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hDLBMUR", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", "0", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hDLBLYE", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", "0", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hDLBPHI", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", "2", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hDLBSED", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", "4", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hDLBAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<DLB\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hMURLYE", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", "0", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hMURPHI", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", "2", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hMURSED", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", "4", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hMURAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<MUR\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hLYEPHI", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", "2", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hLYESED", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", "4", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hLYEAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<LYE\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hPHISED", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", "4", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hPHIAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<PHI\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"hSEDAUS", "=", 
+     RowBox[{"arrayFunc", "[", 
+      RowBox[{
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<SED\>\"", "]"}], "]"}], ",", 
+       RowBox[{"First", "[", 
+        RowBox[{"persMixFunc", "[", "\"\<AUS\>\"", "]"}], "]"}], ",", "10", 
+       ",", "tsALLRed", ",", " ", "tatCH", ",", " ", "\"\<CH\>\"", ",", " ", 
+       "\"\<PEN\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dataH", "=", 
+     RowBox[{"<|", 
+      RowBox[{
+       RowBox[{"\"\<DLB\>\"", "\[Rule]", 
+        RowBox[{"{", 
+         RowBox[{
+         "hDLBMUR", ",", "hDLBLYE", ",", "hDLBPHI", ",", "hDLBSED", ",", 
+          "hDLBAUS"}], "}"}]}], ",", " ", 
+       RowBox[{"\"\<MUR\>\"", "\[Rule]", " ", 
+        RowBox[{"{", 
+         RowBox[{
+         "hDLBMUR", ",", "hMURLYE", ",", "hMURPHI", ",", "hMURSED", ",", 
+          "hMURAUS"}], "}"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"\"\<LYE\>\"", "\[Rule]", "  ", 
+        RowBox[{"{", 
+         RowBox[{
+         "hDLBLYE", ",", "hMURLYE", ",", "hLYEPHI", ",", "hLYESED", ",", 
+          "hLYEAUS"}], "}"}]}], ",", 
+       RowBox[{"\"\<PHI\>\"", "\[Rule]", "  ", 
+        RowBox[{"{", 
+         RowBox[{
+         "hDLBPHI", ",", "hMURPHI", ",", "hLYEPHI", ",", "hPHISED", ",", 
+          "hPHIAUS"}], "}"}]}], ",", " ", 
+       RowBox[{"\"\<SED\>\"", "\[Rule]", "  ", 
+        RowBox[{"{", 
+         RowBox[{
+         "hDLBSED", ",", "hMURSED", ",", "hLYESED", ",", "hPHISED", ",", 
+          "hSEDAUS"}], "}"}]}], ",", "\[IndentingNewLine]", 
+       RowBox[{"\"\<AUS\>\"", "\[Rule]", "  ", 
+        RowBox[{"{", 
+         RowBox[{
+         "hDLBAUS", ",", "hMURAUS", ",", "hLYEAUS", ",", " ", "hPHIAUS", ",", 
+          "hSEDAUS"}], "}"}]}]}], "|>"}]}], ";"}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.809322314264285*^9, 3.809322321278418*^9}, {
+   3.8093223836715527`*^9, 3.809322386545966*^9}, {3.809322723577116*^9, 
+   3.8093227259327*^9}, {3.809323480322003*^9, 3.80932348814603*^9}, {
+   3.809323550225814*^9, 3.8093235826899433`*^9}, {3.809323757739205*^9, 
+   3.8093238002926073`*^9}, {3.8093239507221107`*^9, 3.809324024408854*^9}, {
+   3.8093250189852457`*^9, 3.8093250315381327`*^9}, 3.809400048697934*^9, {
+   3.809400168629513*^9, 3.809400199955882*^9}, {3.8094003090812817`*^9, 
+   3.8094003987223253`*^9}, {3.809400455673607*^9, 3.809400456090906*^9}, {
+   3.80940058172544*^9, 3.809400582214642*^9}, {3.809400677754311*^9, 
+   3.80940070648536*^9}, {3.809403969492393*^9, 3.8094039937704477`*^9}, {
+   3.8094040387277727`*^9, 3.809404066839511*^9}, {3.809415548732648*^9, 
+   3.8094156074301043`*^9}, {3.809660447209446*^9, 3.8096604499516277`*^9}, {
+   3.809670040668518*^9, 3.809670040703047*^9}, {3.811396815041306*^9, 
+   3.811396867004547*^9}, {3.811396916000264*^9, 3.811397063171915*^9}, {
+   3.811653666095934*^9, 3.8116537214366493`*^9}, {3.820644715751066*^9, 
+   3.8206447549104033`*^9}, {3.820644796168295*^9, 3.820644995177363*^9}},
+ CellLabel->"In[15]:=",ExpressionUUID->"4e34038e-df11-4ef7-9ff1-5bdf520db7c0"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.823841029323422*^9, 3.823841031473127*^9}, {
+  3.823841349096376*^9, 3.823841521737357*^9}, {3.823841569621621*^9, 
+  3.823841587515757*^9}, {3.823841641296609*^9, 3.823841672428164*^9}, {
+  3.823841731136752*^9, 3.8238417972376347`*^9}, {3.823841843910017*^9, 
+  3.823841855980159*^9}},ExpressionUUID->"ea4727c8-3b57-496d-91be-\
+c852a270d24d"],
+
+Cell[BoxData[
+ RowBox[{"(*", 
+  RowBox[{"Map", "[", 
+   RowBox[{
+    RowBox[{"Function", "[", 
+     RowBox[{"z", ",", 
+      RowBox[{"Map", "[", 
+       RowBox[{
+        RowBox[{"Function", "[", 
+         RowBox[{"y", ",", 
+          RowBox[{"Map", "[", 
+           RowBox[{
+            RowBox[{"Function", "[", 
+             RowBox[{"x", ",", 
+              RowBox[{"groupingFunc", "[", 
+               RowBox[{"x", ",", "Orange", ",", "LightOrange", ",", "0.9"}], 
+               "]"}]}], "]"}], ",", 
+            RowBox[{
+             RowBox[{"dataE", "[", "z", "]"}], "[", 
+             RowBox[{"[", "y", "]"}], "]"}]}], "]"}]}], "]"}], ",", 
+        RowBox[{"Range", "[", 
+         RowBox[{"Length", "[", 
+          RowBox[{"dataE", "[", "z", "]"}], "]"}], "]"}]}], "]"}]}], "]"}], 
+    ",", "names"}], "]"}], "*)"}]], "Input",
+ CellChangeTimes->{{3.823841525252695*^9, 3.823841535556365*^9}, {
+  3.8238418011118927`*^9, 3.82384181087084*^9}, {3.823841887187787*^9, 
+  3.823841896828169*^9}, {3.823841932673793*^9, 3.82384206719639*^9}, {
+  3.823843189025106*^9, 3.823843192238414*^9}},
+ CellLabel->
+  "In[211]:=",ExpressionUUID->"315490d3-04da-4f84-a8ef-e21e837a29ee"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"dataHMax", "=", 
+  RowBox[{"First", "[", 
+   RowBox[{"Max", "[", 
+    RowBox[{"Flatten", "[", 
+     RowBox[{"Values", "[", "dataH", "]"}], "]"}], "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"dataHMin", "=", 
+  RowBox[{"First", "[", 
+   RowBox[{"Min", "[", 
+    RowBox[{"Flatten", "[", 
+     RowBox[{"Values", "[", "dataH", "]"}], "]"}], "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"dataEMax", "=", 
+  RowBox[{"First", "[", 
+   RowBox[{"Max", "[", 
+    RowBox[{"Flatten", "[", 
+     RowBox[{"Values", "[", "dataE", "]"}], "]"}], "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"dataEMin", "=", 
+  RowBox[{"First", "[", 
+   RowBox[{"Min", "[", 
+    RowBox[{"Flatten", "[", 
+     RowBox[{"Values", "[", "dataE", "]"}], "]"}], "]"}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"dataMin", "=", 
+  RowBox[{"Min", "[", 
+   RowBox[{"dataHMin", ",", "dataEMin"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"dataMax", "=", 
+  RowBox[{"Max", "[", 
+   RowBox[{"dataHMax", ",", "dataEMax"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"names", "=", 
+  RowBox[{"Map", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Style", "[", 
+      RowBox[{"#", ",", "20"}], "]"}], "&"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+     "\"\<DLB\>\"", ",", "\"\<MUR\>\"", ",", "\"\<LYE\>\"", ",", 
+      "\"\<PHI\>\"", ",", "\"\<SED\>\"", ",", "\"\<AUS\>\""}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"len", "=", 
+  RowBox[{"Length", "[", 
+   RowBox[{"First", "@", 
+    RowBox[{"dataE", "[", 
+     RowBox[{"[", "\"\<DLB\>\"", "]"}], "]"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.809400722554842*^9, 3.809400723741118*^9}, 
+   3.8094157264661713`*^9, {3.809415806256115*^9, 3.809415811557057*^9}, {
+   3.809415862835971*^9, 3.8094158890762243`*^9}, {3.809417810934231*^9, 
+   3.809417856558432*^9}, {3.809665589791791*^9, 3.809665593235993*^9}, {
+   3.809665755785902*^9, 3.809665763835968*^9}, {3.811475280865897*^9, 
+   3.8114753040055437`*^9}, {3.820645016025325*^9, 3.820645018889008*^9}, {
+   3.820645560591223*^9, 3.820645680270721*^9}, {3.82384770754707*^9, 
+   3.823847719965563*^9}, 3.832051677669566*^9},
+ CellLabel->"In[47]:=",ExpressionUUID->"475117d5-6c7e-47be-937d-aa6b23ef970b"],
+
+Cell[BoxData["1.`"], "Output",
+ CellChangeTimes->{{3.8094007168355637`*^9, 3.809400724210474*^9}, 
+   3.8094027627374153`*^9, 3.809403731664798*^9, 3.80940411810252*^9, 
+   3.809404608502524*^9, 3.809404676031638*^9, 3.8094156225562887`*^9, 
+   3.809415726852337*^9, 3.8094158119673758`*^9, {3.8094158717639093`*^9, 
+   3.809415889374691*^9}, 3.809416419450037*^9, 3.809417819733965*^9, 
+   3.809417857132421*^9, 3.8096604742690496`*^9, {3.809665750991387*^9, 
+   3.809665764243022*^9}, 3.809666294383898*^9, 3.809670058976756*^9, 
+   3.811397093205167*^9, 3.8114752524061403`*^9, 3.811475304941716*^9, 
+   3.8114840773275833`*^9, 3.811654056571134*^9, 3.8134799538424883`*^9, 
+   3.813482039835471*^9, 3.819529843783257*^9, 3.819531894453948*^9, 
+   3.8206423571939993`*^9, 3.82064501979039*^9, {3.8206456563886347`*^9, 
+   3.820645680631926*^9}, 3.8237601219445457`*^9, 3.823761258578786*^9, 
+   3.823840867294959*^9, 3.823840926479599*^9, {3.823847708385728*^9, 
+   3.823847720425811*^9}, 3.8297933752655783`*^9, 3.832051858857792*^9, 
+   3.832306654655954*^9},
+ CellLabel->"Out[47]=",ExpressionUUID->"3f3973c6-bea6-456b-97d2-7f6650961cdf"],
+
+Cell[BoxData["0.6`"], "Output",
+ CellChangeTimes->{{3.8094007168355637`*^9, 3.809400724210474*^9}, 
+   3.8094027627374153`*^9, 3.809403731664798*^9, 3.80940411810252*^9, 
+   3.809404608502524*^9, 3.809404676031638*^9, 3.8094156225562887`*^9, 
+   3.809415726852337*^9, 3.8094158119673758`*^9, {3.8094158717639093`*^9, 
+   3.809415889374691*^9}, 3.809416419450037*^9, 3.809417819733965*^9, 
+   3.809417857132421*^9, 3.8096604742690496`*^9, {3.809665750991387*^9, 
+   3.809665764243022*^9}, 3.809666294383898*^9, 3.809670058976756*^9, 
+   3.811397093205167*^9, 3.8114752524061403`*^9, 3.811475304941716*^9, 
+   3.8114840773275833`*^9, 3.811654056571134*^9, 3.8134799538424883`*^9, 
+   3.813482039835471*^9, 3.819529843783257*^9, 3.819531894453948*^9, 
+   3.8206423571939993`*^9, 3.82064501979039*^9, {3.8206456563886347`*^9, 
+   3.820645680631926*^9}, 3.8237601219445457`*^9, 3.823761258578786*^9, 
+   3.823840867294959*^9, 3.823840926479599*^9, {3.823847708385728*^9, 
+   3.823847720425811*^9}, 3.8297933752655783`*^9, 3.832051858857792*^9, 
+   3.832306654658373*^9},
+ CellLabel->"Out[48]=",ExpressionUUID->"6c789758-a695-462b-ae63-e10302733add"],
+
+Cell[BoxData["0.9882352941176471`"], "Output",
+ CellChangeTimes->{{3.8094007168355637`*^9, 3.809400724210474*^9}, 
+   3.8094027627374153`*^9, 3.809403731664798*^9, 3.80940411810252*^9, 
+   3.809404608502524*^9, 3.809404676031638*^9, 3.8094156225562887`*^9, 
+   3.809415726852337*^9, 3.8094158119673758`*^9, {3.8094158717639093`*^9, 
+   3.809415889374691*^9}, 3.809416419450037*^9, 3.809417819733965*^9, 
+   3.809417857132421*^9, 3.8096604742690496`*^9, {3.809665750991387*^9, 
+   3.809665764243022*^9}, 3.809666294383898*^9, 3.809670058976756*^9, 
+   3.811397093205167*^9, 3.8114752524061403`*^9, 3.811475304941716*^9, 
+   3.8114840773275833`*^9, 3.811654056571134*^9, 3.8134799538424883`*^9, 
+   3.813482039835471*^9, 3.819529843783257*^9, 3.819531894453948*^9, 
+   3.8206423571939993`*^9, 3.82064501979039*^9, {3.8206456563886347`*^9, 
+   3.820645680631926*^9}, 3.8237601219445457`*^9, 3.823761258578786*^9, 
+   3.823840867294959*^9, 3.823840926479599*^9, {3.823847708385728*^9, 
+   3.823847720425811*^9}, 3.8297933752655783`*^9, 3.832051858857792*^9, 
+   3.8323066546605263`*^9},
+ CellLabel->"Out[49]=",ExpressionUUID->"50eab53b-a8b3-43d5-95a8-db152dba380c"],
+
+Cell[BoxData["0.540983606557377`"], "Output",
+ CellChangeTimes->{{3.8094007168355637`*^9, 3.809400724210474*^9}, 
+   3.8094027627374153`*^9, 3.809403731664798*^9, 3.80940411810252*^9, 
+   3.809404608502524*^9, 3.809404676031638*^9, 3.8094156225562887`*^9, 
+   3.809415726852337*^9, 3.8094158119673758`*^9, {3.8094158717639093`*^9, 
+   3.809415889374691*^9}, 3.809416419450037*^9, 3.809417819733965*^9, 
+   3.809417857132421*^9, 3.8096604742690496`*^9, {3.809665750991387*^9, 
+   3.809665764243022*^9}, 3.809666294383898*^9, 3.809670058976756*^9, 
+   3.811397093205167*^9, 3.8114752524061403`*^9, 3.811475304941716*^9, 
+   3.8114840773275833`*^9, 3.811654056571134*^9, 3.8134799538424883`*^9, 
+   3.813482039835471*^9, 3.819529843783257*^9, 3.819531894453948*^9, 
+   3.8206423571939993`*^9, 3.82064501979039*^9, {3.8206456563886347`*^9, 
+   3.820645680631926*^9}, 3.8237601219445457`*^9, 3.823761258578786*^9, 
+   3.823840867294959*^9, 3.823840926479599*^9, {3.823847708385728*^9, 
+   3.823847720425811*^9}, 3.8297933752655783`*^9, 3.832051858857792*^9, 
+   3.8323066546626787`*^9},
+ CellLabel->"Out[50]=",ExpressionUUID->"c8c191c8-e3f7-41be-8d83-aa69823b4cb5"],
+
+Cell[BoxData["0.540983606557377`"], "Output",
+ CellChangeTimes->{{3.8094007168355637`*^9, 3.809400724210474*^9}, 
+   3.8094027627374153`*^9, 3.809403731664798*^9, 3.80940411810252*^9, 
+   3.809404608502524*^9, 3.809404676031638*^9, 3.8094156225562887`*^9, 
+   3.809415726852337*^9, 3.8094158119673758`*^9, {3.8094158717639093`*^9, 
+   3.809415889374691*^9}, 3.809416419450037*^9, 3.809417819733965*^9, 
+   3.809417857132421*^9, 3.8096604742690496`*^9, {3.809665750991387*^9, 
+   3.809665764243022*^9}, 3.809666294383898*^9, 3.809670058976756*^9, 
+   3.811397093205167*^9, 3.8114752524061403`*^9, 3.811475304941716*^9, 
+   3.8114840773275833`*^9, 3.811654056571134*^9, 3.8134799538424883`*^9, 
+   3.813482039835471*^9, 3.819529843783257*^9, 3.819531894453948*^9, 
+   3.8206423571939993`*^9, 3.82064501979039*^9, {3.8206456563886347`*^9, 
+   3.820645680631926*^9}, 3.8237601219445457`*^9, 3.823761258578786*^9, 
+   3.823840867294959*^9, 3.823840926479599*^9, {3.823847708385728*^9, 
+   3.823847720425811*^9}, 3.8297933752655783`*^9, 3.832051858857792*^9, 
+   3.832306654665469*^9},
+ CellLabel->"Out[51]=",ExpressionUUID->"a3fba2b1-abb9-4f24-b528-c16373ff43ed"],
+
+Cell[BoxData["1.`"], "Output",
+ CellChangeTimes->{{3.8094007168355637`*^9, 3.809400724210474*^9}, 
+   3.8094027627374153`*^9, 3.809403731664798*^9, 3.80940411810252*^9, 
+   3.809404608502524*^9, 3.809404676031638*^9, 3.8094156225562887`*^9, 
+   3.809415726852337*^9, 3.8094158119673758`*^9, {3.8094158717639093`*^9, 
+   3.809415889374691*^9}, 3.809416419450037*^9, 3.809417819733965*^9, 
+   3.809417857132421*^9, 3.8096604742690496`*^9, {3.809665750991387*^9, 
+   3.809665764243022*^9}, 3.809666294383898*^9, 3.809670058976756*^9, 
+   3.811397093205167*^9, 3.8114752524061403`*^9, 3.811475304941716*^9, 
+   3.8114840773275833`*^9, 3.811654056571134*^9, 3.8134799538424883`*^9, 
+   3.813482039835471*^9, 3.819529843783257*^9, 3.819531894453948*^9, 
+   3.8206423571939993`*^9, 3.82064501979039*^9, {3.8206456563886347`*^9, 
+   3.820645680631926*^9}, 3.8237601219445457`*^9, 3.823761258578786*^9, 
+   3.823840867294959*^9, 3.823840926479599*^9, {3.823847708385728*^9, 
+   3.823847720425811*^9}, 3.8297933752655783`*^9, 3.832051858857792*^9, 
+   3.8323066546684732`*^9},
+ CellLabel->"Out[52]=",ExpressionUUID->"d72ae200-6d0e-454c-bacb-e7e5c5303c81"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   StyleBox["\<\"DLB\"\>",
+    StripOnInput->False,
+    FontSize->20], ",", 
+   StyleBox["\<\"MUR\"\>",
+    StripOnInput->False,
+    FontSize->20], ",", 
+   StyleBox["\<\"LYE\"\>",
+    StripOnInput->False,
+    FontSize->20], ",", 
+   StyleBox["\<\"PHI\"\>",
+    StripOnInput->False,
+    FontSize->20], ",", 
+   StyleBox["\<\"SED\"\>",
+    StripOnInput->False,
+    FontSize->20], ",", 
+   StyleBox["\<\"AUS\"\>",
+    StripOnInput->False,
+    FontSize->20]}], "}"}]], "Output",
+ CellChangeTimes->{{3.8094007168355637`*^9, 3.809400724210474*^9}, 
+   3.8094027627374153`*^9, 3.809403731664798*^9, 3.80940411810252*^9, 
+   3.809404608502524*^9, 3.809404676031638*^9, 3.8094156225562887`*^9, 
+   3.809415726852337*^9, 3.8094158119673758`*^9, {3.8094158717639093`*^9, 
+   3.809415889374691*^9}, 3.809416419450037*^9, 3.809417819733965*^9, 
+   3.809417857132421*^9, 3.8096604742690496`*^9, {3.809665750991387*^9, 
+   3.809665764243022*^9}, 3.809666294383898*^9, 3.809670058976756*^9, 
+   3.811397093205167*^9, 3.8114752524061403`*^9, 3.811475304941716*^9, 
+   3.8114840773275833`*^9, 3.811654056571134*^9, 3.8134799538424883`*^9, 
+   3.813482039835471*^9, 3.819529843783257*^9, 3.819531894453948*^9, 
+   3.8206423571939993`*^9, 3.82064501979039*^9, {3.8206456563886347`*^9, 
+   3.820645680631926*^9}, 3.8237601219445457`*^9, 3.823761258578786*^9, 
+   3.823840867294959*^9, 3.823840926479599*^9, {3.823847708385728*^9, 
+   3.823847720425811*^9}, 3.8297933752655783`*^9, 3.832051858857792*^9, 
+   3.832306654671253*^9},
+ CellLabel->"Out[53]=",ExpressionUUID->"adeb3193-0b50-4bd6-b27c-8a1135b03c88"],
+
+Cell[BoxData["15"], "Output",
+ CellChangeTimes->{{3.8094007168355637`*^9, 3.809400724210474*^9}, 
+   3.8094027627374153`*^9, 3.809403731664798*^9, 3.80940411810252*^9, 
+   3.809404608502524*^9, 3.809404676031638*^9, 3.8094156225562887`*^9, 
+   3.809415726852337*^9, 3.8094158119673758`*^9, {3.8094158717639093`*^9, 
+   3.809415889374691*^9}, 3.809416419450037*^9, 3.809417819733965*^9, 
+   3.809417857132421*^9, 3.8096604742690496`*^9, {3.809665750991387*^9, 
+   3.809665764243022*^9}, 3.809666294383898*^9, 3.809670058976756*^9, 
+   3.811397093205167*^9, 3.8114752524061403`*^9, 3.811475304941716*^9, 
+   3.8114840773275833`*^9, 3.811654056571134*^9, 3.8134799538424883`*^9, 
+   3.813482039835471*^9, 3.819529843783257*^9, 3.819531894453948*^9, 
+   3.8206423571939993`*^9, 3.82064501979039*^9, {3.8206456563886347`*^9, 
+   3.820645680631926*^9}, 3.8237601219445457`*^9, 3.823761258578786*^9, 
+   3.823840867294959*^9, 3.823840926479599*^9, {3.823847708385728*^9, 
+   3.823847720425811*^9}, 3.8297933752655783`*^9, 3.832051858857792*^9, 
+   3.832306654674746*^9},
+ CellLabel->"Out[54]=",ExpressionUUID->"12de1599-da9b-4615-af64-1b02c42d55d3"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+   "dataH", ",", "dataE", ",", "names", ",", " ", "len", ",", " ", "dataMin", 
+    ",", " ", "dataMax"}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"threshold", "=", "0.95"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"plotsS", "=", 
+     RowBox[{"groupingEndoTot", "[", 
+      RowBox[{
+      "dataH", ",", "dataE", ",", " ", "len", ",", "names", ",", " ", 
+       "dataMin", ",", "dataMax", ",", " ", "threshold"}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"plotsGrid", "=", 
+    RowBox[{"Grid", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"plotsS", "[", 
+         RowBox[{"[", 
+          RowBox[{"1", ";;", "3"}], "]"}], "]"}], ",", 
+        RowBox[{"plotsS", "[", 
+         RowBox[{"[", 
+          RowBox[{"4", ";;", "6"}], "]"}], "]"}], ",", 
+        RowBox[{"plotsS", "[", 
+         RowBox[{"[", 
+          RowBox[{"7", ";;", "9"}], "]"}], "]"}], ",", 
+        RowBox[{"plotsS", "[", 
+         RowBox[{"[", 
+          RowBox[{"10", ";;", "12"}], "]"}], "]"}], ",", 
+        RowBox[{"plotsS", "[", 
+         RowBox[{"[", 
+          RowBox[{"13", ";;", "15"}], "]"}], "]"}]}], "}"}], ",", 
+      RowBox[{"ItemSize", "\[Rule]", "35"}]}], "]"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8238481185396423`*^9, 3.82384824800701*^9}, {
+   3.823848900077949*^9, 3.823848902064933*^9}, 3.823848949064845*^9, {
+   3.829793396452413*^9, 3.829793399179228*^9}, {3.829794335303969*^9, 
+   3.8297943374683437`*^9}, {3.829794383382666*^9, 3.829794414534964*^9}, 
+   3.829794480692251*^9, 3.832051703949795*^9, {3.832052070748858*^9, 
+   3.832052072059148*^9}, {3.832052112192013*^9, 3.832052115352067*^9}, {
+   3.832306661935368*^9, 3.83230666968764*^9}, {3.832306768246121*^9, 
+   3.832306769193565*^9}, 3.8323068454023457`*^9},
+ CellLabel->"In[65]:=",ExpressionUUID->"7ee8356c-ce71-4228-a7fd-4f3cfbb790d5"],
+
+Cell[BoxData[
+ TagBox[GridBox[{
+    {
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2I/SQ4s+ewYE3tjPmgkCLwmKD5R7sNPogPbu
+g7kL3X24xKlFAwCG+KZx
+        "], {{0, 0}, {6, 6}}, {0, 1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"1b\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "41872da1-0e88-4b9c-afaf-a85898f3abe2"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["1b", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2I/SQ4s+ewYE3tjPmgkCLwmKD5R7sNPogPbu
+g7kL3X24xKlFAwCG+KZx
+        "], {{0, 0}, {6, 6}}, {0, 1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"2a\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "7c2722d3-6a4a-4a0a-abd2-7ed8e4a25db9"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["2a", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2I/SxNAPoDQMfLA/ewYE3tjPmgkCL+0JiVOL
+ptRemDy13Eeaf9EB9d1DrH/x24vpTlJpAC+ewb4=
+        "], {{0, 0}, {6, 6}}, {0, 
+        1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"2b\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "b1335469-1869-4f4d-9ded-3eff798649d0"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["2b", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False]},
+    {
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2I/SxNAPoDQMfLA/ewYE3tjPmgkCL+0JiVOL
+ptRemDy13Eeaf9EB9d1DrH/x24vpTlJpAC+ewb4=
+        "], {{0, 0}, {6, 6}}, {0, 
+        1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"3a\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "1bb3c0e4-84f4-4954-8008-4c09473b8940"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["3a", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2A9O+oE9Awr4YH/2DAi8sZ81EwRe2hMSx2XO
+wLoHQcPkCalDp2lrLzog3z3YaUzzqe0eYv1Lqr2kxhcAAt/Zbg==
+        "], {{0, 0}, {6, 
+        6}}, {0, 1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"3b\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "14d54179-027b-4ac6-a857-e6704328a086"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["3b", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2A9O+oE9Awr4YH/2DAi8sZ81EwRe2hMSx2XO
+wLoHQcPkCalDp2lrLzog3z3YaUzzqe0eYv1Lqr2kxhcAAt/Zbg==
+        "], {{0, 0}, {6, 
+        6}}, {0, 1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"4a\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "a4120822-b98e-4cb0-8d24-3c1d1f53aaf5"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["4a", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False]},
+    {
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2A82+uwZEHhjP2smCLykujh59AN7BhRALXvR
+AfXDB52GyaOrwyVOrnuI9S+13UOpf6nlHgD9bv+S
+        "], {{0, 0}, {6, 6}}, {0, 
+        1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"4b\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "698bb5b1-1854-4af6-8e4d-c369334220a6"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["4b", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2A82+uwZEHhjP2smCLykujh59AN7BhRALXvR
+AfXDB52GyaOrwyVOrnuI9S+13UOpf6nlHgD9bv+S
+        "], {{0, 0}, {6, 6}}, {0, 
+        1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"5a\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "3a0142d0-4df6-45ef-9fce-660b548b6c51"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["5a", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2A82+uwZEHhjP2smCLykujh59AN7BhRALXvR
+AfXDB52GyaOrwyVOrnsotZdc99DKXlLdAwCd0Qkf
+        "], {{0, 0}, {6, 6}}, {0, 
+        1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"5b\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "8ae4281f-3c47-4313-997d-8ba5e590176d"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["5b", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False]},
+    {
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2A82+uwZEHhjP2smCLykujh59AN7BhRALXvR
+AfXDB52GyaOrwyVOrnsotZdc99DKXlLdAwCd0Qkf
+        "], {{0, 0}, {6, 6}}, {0, 
+        1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"6a\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "ff861e88-478a-47e6-b18d-0e3c5751f1dd"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["6a", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2J89AwJv7GfNBIGX9vQSx0XT216YPC519LaX
+2u7BTqMD6ruHWHup7R50mlRzqCUOAMnCTQA=
+        "], {{0, 0}, {6, 6}}, {0, 1}], 
+       InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"6b\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "83a9a552-8ef5-4596-9721-e2b0fe454a84"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["6b", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2EPoB/YMKOCD/dkzIPDGftZMEHhpT21xXDS9
+7YXJ41JHb3up7R7sNDqgvnuItZfa7kGnSTWHWuIAA2tDbA==
+        "], {{0, 0}, {6, 
+        6}}, {0, 1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"7a\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "d99f0071-b5eb-4add-9b9e-010fb13dfd25"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["7a", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False]},
+    {
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2J89AwJv7GfNBIGX9vQSx0XT216YPC519LaX
+2u6h1F5y3YOdRgfUdw+t/EuqOACZ9V/8
+        "], {{0, 0}, {6, 6}}, {0, 1}], 
+       InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"7b\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "f18c8693-8f0c-4470-93e8-f5ea1ebbaf37"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["7b", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2J89AwJv7GfNBIGX9vQSx0XT216YPC519LaX
+2u6h1F5y3YOdRgfUdw+t/EuqOACZ9V/8
+        "], {{0, 0}, {6, 6}}, {0, 1}], 
+       InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"8a\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "15f89213-c4cc-4e75-9201-47f763f4bc0a"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["8a", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False], 
+     GraphicsBox[{RasterBox[CompressedData["
+1:eJxTTMoPSmVmYGBgg2IQGwI+2EPoB/YMKOCD/dkzIPDGftZMEHhpT0gclzn4
+xXHRtHYPOo0OPhA0nzz3EGsv6e6hjn+p7R5a2YvbPQNjL6Y4AI5AoZE=
+        "], {{0, 
+        0}, {6, 6}}, {0, 1}], InsetBox[
+        InterpretationBox[Cell[BoxData[
+          FormBox[
+           TagBox[GridBox[{
+              {
+               StyleBox["\<\"SIM PERS\"\>",
+                StripOnInput->False,
+                FontSize->15], "\<\" \"\>"},
+              {
+               StyleBox["\<\"THRE\"\>",
+                StripOnInput->False,
+                FontSize->15], 
+               StyleBox["\<\"0.95\"\>",
+                StripOnInput->False,
+                FontSize->15]},
+              {
+               StyleBox["\<\"TIME\"\>",
+                StripOnInput->False,
+                FontSize->20], 
+               StyleBox["\<\"8b\"\>",
+                StripOnInput->False,
+                FontSize->20]}
+             },
+             AutoDelete->False,
+             GridBoxAlignment->{"Columns" -> {Left, Center}},
+             GridBoxBackground->{"Columns" -> {{None}}, "Rows" -> {
+                 RGBColor[1., 1., 0.9], {
+                  GrayLevel[1], 
+                  RGBColor[0.9, 0.9, 0.9]}}},
+             GridBoxDividers->{"Columns" -> {
+                 RGBColor[0.2, 0.2, 0.2], {
+                  RGBColor[0.75, 0.75, 0.75]}, 
+                 RGBColor[0.2, 0.2, 0.2]}, "Rows" -> {
+                 RGBColor[0.2, 0.2, 0.2], 
+                 RGBColor[0.2, 0.2, 0.2], {False}, 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             
+             GridBoxFrame->{
+              "ColumnsIndexed" -> {{{1, -1}, {1, -1}} -> 
+                 RGBColor[0.2, 0.2, 0.2]}},
+             GridBoxItemSize->{"Columns" -> {15, 4}},
+             GridBoxItemStyle->{"Columns" -> {{10}}, "Rows" -> {{10}}},
+             GridBoxSpacings->{"Columns" -> {{Automatic}}, "Rows" -> {{0.8}}}],
+            "Grid"], TextForm]], "InlineText",ExpressionUUID->
+          "a881e8ad-884f-4267-a509-77a0c221f4b7"],
+         Text[
+          Grid[{{
+             Style["SIM PERS", 15], " "}, {
+             Style["THRE", 15], 
+             Style["0.95", 15]}, {
+             Style["TIME", 20], 
+             Style["8b", 20]}}, Background -> {None, {
+              RGBColor[1., 1., 0.9], {
+               GrayLevel[1], 
+               RGBColor[0.9, 0.9, 0.9]}}}, Dividers -> {{
+              RGBColor[0.2, 0.2, 0.2], {
+               RGBColor[0.75, 0.75, 0.75]}, 
+              RGBColor[0.2, 0.2, 0.2]}, {
+              RGBColor[0.2, 0.2, 0.2], 
+              RGBColor[0.2, 0.2, 0.2], {False}, 
+              RGBColor[0.2, 0.2, 0.2]}}, Alignment -> {{Left, Center}}, 
+           ItemSize -> {{15, 4}}, Frame -> RGBColor[0.2, 0.2, 0.2], ItemStyle -> 
+           10, Spacings -> {Automatic, 0.8}]]], Offset[{150, 10}, 
+        Scaled[{0, 1}]], {-1, -1}]},
+      Frame->True,
+      FrameLabel->{None, None},
+      FrameTicks->{{{{5.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {0.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}, {{{0.5, 
+           FormBox[
+            StyleBox["\"DLB\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {1.5, 
+           FormBox[
+            StyleBox["\"MUR\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {2.5, 
+           FormBox[
+            StyleBox["\"LYE\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {3.5, 
+           FormBox[
+            StyleBox["\"PHI\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {4.5, 
+           FormBox[
+            StyleBox["\"SED\"", 20, StripOnInput -> False], 
+            TraditionalForm]}, {5.5, 
+           FormBox[
+            StyleBox["\"AUS\"", 20, StripOnInput -> False], 
+            TraditionalForm]}}, None}},
+      GridLinesStyle->Directive[
+        GrayLevel[0.5, 0.4]],
+      ImageMargins->10,
+      ImageSize->400,
+      Method->{
+       "DefaultBoundaryStyle" -> Automatic, 
+        "DefaultGraphicsInteraction" -> {
+         "Version" -> 1.2, "TrackMousePosition" -> {True, False}, 
+          "Effects" -> {
+           "Highlight" -> {"ratio" -> 2}, "HighlightPoint" -> {"ratio" -> 2}, 
+            "Droplines" -> {
+             "freeformCursorMode" -> True, 
+              "placement" -> {"x" -> "All", "y" -> "None"}}}}, 
+        "DefaultPlotStyle" -> Automatic},
+      PlotRangeClipping->False]}
+   },
+   AutoDelete->False,
+   GridBoxItemSize->{"Columns" -> {{35}}}],
+  "Grid"]], "Output",
+ CellChangeTimes->{
+  3.823848161498229*^9, {3.82384819190411*^9, 3.82384821868519*^9}, 
+   3.823848251181357*^9, 3.823848591333665*^9, 3.8238489047616158`*^9, 
+   3.82384894969549*^9, 3.829793400279604*^9, 3.829793600417142*^9, 
+   3.829794340359929*^9, 3.829794386464179*^9, 3.829794416502092*^9, 
+   3.8297944814512033`*^9, 3.832051864773189*^9, 3.832051933222293*^9, 
+   3.832051963974894*^9, 3.8320520727416563`*^9, 3.8320521162394114`*^9, 
+   3.832306671443119*^9, 3.832306770679434*^9, 3.832306846845255*^9},
+ CellLabel->"Out[67]=",ExpressionUUID->"251499c5-bfc3-4575-8adf-1f42c9cbe429"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"SetDirectory", "[", 
+  RowBox[{
+  "\"\</home/carla/GDC/Comparisons/New_REKO_19_02_21/Persons/Groups_ENDO/\
+Threshold_\>\"", "<>", 
+   RowBox[{"StringReplace", "[", 
+    RowBox[{
+     RowBox[{"ToString", "[", "threshold", "]"}], ",", 
+     RowBox[{"\"\<.\>\"", "->", "\"\<_\>\""}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.829794234730301*^9, 3.829794245454064*^9}},
+ CellLabel->"In[68]:=",ExpressionUUID->"6250db88-226a-4b96-a27d-3766ffffefdf"],
+
+Cell[BoxData["\<\"/home/carla/GDC/Comparisons/New_REKO_19_02_21/Persons/\
+Groups_ENDO/Threshold_0_95\"\>"], "Output",
+ CellChangeTimes->{3.8297941478597193`*^9, 3.829794245956884*^9, 
+  3.8297943443613997`*^9, 3.829794389217451*^9, 3.829794421695141*^9, 
+  3.829794454650865*^9, 3.829794484987855*^9, 3.832052009633236*^9, 
+  3.832052080788148*^9, 3.832052126702829*^9, 3.832306679773223*^9, 
+  3.832306777574172*^9, 3.832306856269178*^9},
+ CellLabel->"Out[68]=",ExpressionUUID->"ee1ed2bc-e9fa-45fc-b856-01ef45ff2ad2"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{
+     RowBox[{"\"\<gdc_GROUPS_PERS_ENDO_\>\"", "<>", 
+      RowBox[{"StringReplace", "[", 
+       RowBox[{
+        RowBox[{"ToString", "[", "threshold", "]"}], ",", 
+        RowBox[{"\"\<.\>\"", "->", "\"\<_\>\""}]}], "]"}], "<>", 
+      "\"\<_grid.jpeg\>\""}], ",", "plotsGrid", ",", 
+     RowBox[{"ImageResolution", "\[Rule]", "200"}]}], "]"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"Map", "[", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"Export", "[", 
+        RowBox[{
+         RowBox[{"\"\<gdc_GROUPS_PERS_ENDO_\>\"", "<>", 
+          RowBox[{"StringReplace", "[", 
+           RowBox[{
+            RowBox[{"ToString", "[", "threshold", "]"}], ",", 
+            RowBox[{"\"\<.\>\"", "->", "\"\<_\>\""}]}], "]"}], "<>", 
+          "\"\<_S\>\"", "<>", 
+          RowBox[{"ToString", "[", 
+           RowBox[{"tsStr", "[", 
+            RowBox[{"[", "#", "]"}], "]"}], "]"}], "<>", "\"\<.jpeg\>\""}], 
+         ",", 
+         RowBox[{"plotsS", "[", 
+          RowBox[{"[", "#", "]"}], "]"}], ",", 
+         RowBox[{"ImageResolution", "\[Rule]", "200"}]}], "]"}], "&"}], ",", 
+      RowBox[{"Range", "[", 
+       RowBox[{"Length", "[", "tsStr", "]"}], "]"}]}], "]"}], "*)"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.809403383157186*^9, 3.8094034908972692`*^9}, {
+   3.809404233489118*^9, 3.809404234528623*^9}, {3.809416071823422*^9, 
+   3.8094160774292927`*^9}, {3.809416304258706*^9, 3.809416304744348*^9}, {
+   3.8114803148912477`*^9, 3.811480385860099*^9}, {3.8114809439079847`*^9, 
+   3.811480976884061*^9}, {3.8114811732060947`*^9, 3.811481231136653*^9}, {
+   3.811481283950233*^9, 3.8114812943978977`*^9}, {3.811481958765177*^9, 
+   3.811481983903*^9}, {3.811482026223085*^9, 3.81148203067682*^9}, {
+   3.81148212425688*^9, 3.811482127910603*^9}, {3.811482191785297*^9, 
+   3.8114821998409557`*^9}, {3.811482313152131*^9, 3.811482319014317*^9}, {
+   3.811482406466319*^9, 3.811482430647937*^9}, {3.811482577895383*^9, 
+   3.8114825937845993`*^9}, {3.811483589934091*^9, 3.8114836161893253`*^9}, {
+   3.811656348321516*^9, 3.811656369872652*^9}, 3.811656550945895*^9, {
+   3.819529814254702*^9, 3.8195298386373653`*^9}, {3.820641972491435*^9, 
+   3.820641987327003*^9}, {3.820642031130356*^9, 3.820642052862072*^9}, {
+   3.82064209607521*^9, 3.820642123706826*^9}, 3.823760575412607*^9, {
+   3.823761095140008*^9, 3.8237610998528*^9}, {3.8237611470985937`*^9, 
+   3.823761217429139*^9}, {3.823761251308406*^9, 3.8237612540299063`*^9}, {
+   3.8238484702058067`*^9, 3.823848583990652*^9}, {3.823848878184133*^9, 
+   3.823848880933475*^9}, 3.829794145372061*^9, {3.83205171359441*^9, 
+   3.832051716159775*^9}},
+ CellLabel->"In[69]:=",ExpressionUUID->"7bfd6f92-5b55-4764-9bf5-fdb2b7e8e151"],
+
+Cell[BoxData["\<\"gdc_GROUPS_PERS_ENDO_0_95_grid.jpeg\"\>"], "Output",
+ CellChangeTimes->{3.829794352865037*^9, 3.829794397402776*^9, 
+  3.829794463048316*^9, 3.8297944937874727`*^9, 3.832052018126439*^9, 
+  3.832052086822721*^9, 3.832052132984375*^9, 3.8323067008906717`*^9, 
+  3.8323067856053743`*^9, 3.832306864129682*^9},
+ CellLabel->"Out[69]=",ExpressionUUID->"ed549363-397a-46d0-ae5b-97c9da1498b5"]
+}, Open  ]]
+},
+WindowSize->{1366, 703},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1503, 43, 174, "Input",ExpressionUUID->"fbddbd8c-6d95-4bc3-a537-7cb99131c105"],
+Cell[CellGroupData[{
+Cell[2108, 69, 1530, 27, 25, "Print",ExpressionUUID->"74dbe11c-e101-41b0-840e-63fc957c92eb"],
+Cell[3641, 98, 1535, 27, 25, "Print",ExpressionUUID->"cdce9444-1b43-4e9f-92fb-f959c7b84b5b"]
+}, Open  ]]
+}, Open  ]],
+Cell[5203, 129, 23927, 574, 1711, "Input",ExpressionUUID->"307665f2-1502-4f12-81c2-27e3629e0959"],
+Cell[CellGroupData[{
+Cell[29155, 707, 1671, 40, 101, "Input",ExpressionUUID->"65230b72-4ad8-4a48-811b-ed20cc526f8a"],
+Cell[30829, 749, 574, 11, 35, "Output",ExpressionUUID->"38fe0606-3dfc-4e7d-92b5-58d4368fd291"],
+Cell[31406, 762, 691, 12, 35, "Output",ExpressionUUID->"14052516-c759-48d7-b542-b3bf638b99cd"]
+}, Open  ]],
+Cell[32112, 777, 173, 2, 31, "Input",ExpressionUUID->"a72278f3-a6aa-4f48-8ad8-e57b412e56f5"],
+Cell[32288, 781, 17405, 394, 952, "Input",ExpressionUUID->"4e34038e-df11-4ef7-9ff1-5bdf520db7c0"],
+Cell[49696, 1177, 393, 6, 31, "Input",ExpressionUUID->"ea4727c8-3b57-496d-91be-c852a270d24d"],
+Cell[50092, 1185, 1174, 29, 55, "Input",ExpressionUUID->"315490d3-04da-4f84-a8ef-e21e837a29ee"],
+Cell[CellGroupData[{
+Cell[51291, 1218, 2227, 55, 193, "Input",ExpressionUUID->"475117d5-6c7e-47be-937d-aa6b23ef970b"],
+Cell[53521, 1275, 1143, 16, 35, "Output",ExpressionUUID->"3f3973c6-bea6-456b-97d2-7f6650961cdf"],
+Cell[54667, 1293, 1144, 16, 35, "Output",ExpressionUUID->"6c789758-a695-462b-ae63-e10302733add"],
+Cell[55814, 1311, 1161, 16, 35, "Output",ExpressionUUID->"50eab53b-a8b3-43d5-95a8-db152dba380c"],
+Cell[56978, 1329, 1160, 16, 35, "Output",ExpressionUUID->"c8c191c8-e3f7-41be-8d83-aa69823b4cb5"],
+Cell[58141, 1347, 1158, 16, 35, "Output",ExpressionUUID->"a3fba2b1-abb9-4f24-b528-c16373ff43ed"],
+Cell[59302, 1365, 1145, 16, 35, "Output",ExpressionUUID->"d72ae200-6d0e-454c-bacb-e7e5c5303c81"],
+Cell[60450, 1383, 1628, 36, 40, "Output",ExpressionUUID->"adeb3193-0b50-4bd6-b27c-8a1135b03c88"],
+Cell[62081, 1421, 1142, 16, 35, "Output",ExpressionUUID->"12de1599-da9b-4615-af64-1b02c42d55d3"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[63260, 1442, 1928, 45, 101, "Input",ExpressionUUID->"7ee8356c-ce71-4228-a7fd-4f3cfbb790d5"],
+Cell[65191, 1489, 74936, 1847, 2454, "Output",ExpressionUUID->"251499c5-bfc3-4575-8adf-1f42c9cbe429"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[140164, 3341, 477, 10, 31, "Input",ExpressionUUID->"6250db88-226a-4b96-a27d-3766ffffefdf"],
+Cell[140644, 3353, 518, 7, 35, "Output",ExpressionUUID->"ee1ed2bc-e9fa-45fc-b856-01ef45ff2ad2"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[141199, 3365, 2884, 56, 170, "Input",ExpressionUUID->"7bfd6f92-5b55-4764-9bf5-fdb2b7e8e151"],
+Cell[144086, 3423, 404, 5, 91, "Output",ExpressionUUID->"ed549363-397a-46d0-ae5b-97c9da1498b5"]
+}, Open  ]]
+}
+]
+*)
+

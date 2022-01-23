@@ -1,6 +1,6 @@
 {{{"DOJ ist nicht definiert! Division durch Null! ", 0, 0}, 
   {" z ist nicht definiert ", 
-   "DOJ ist nicht definiert! Division durch Null! ", 0.0004359637143897112}, 
+   "DOJ ist nicht definiert! Division durch Null! ", 0.00006877028854189569}, 
   {" f ist nicht definiert ", 
    "DOJ ist nicht definiert! Division durch Null! ", 0., 
-   0.0004359637143897112}}, {Null, Null}}
+   0.00006877028854189569}}, {Null, Null}}

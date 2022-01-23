@@ -1,0 +1,3706 @@
+
+
+
+===
+title: Reconstruction of the GDC 
+author: Corinna Günth-Stiegeler
+date: 24/01/2020  
+color:
+    tagColors:
+        GRE: "#b8860b"
+        COA: "#ff8c00"
+        DEV: "#eead0e"
+        ev:  "#ffff00"
+        pri: "#f5f5dc"
+        dat-met: "#c6e2ff"
+        cha: "#b9d3ee"
+        cor: "#9acd32"
+    groupColorScheme:
+        - "#ffff00"
+        - "#c6e2ff"
+        - "#b9d3ee"
+        - "#9fb6cd"
+        - "#eedfcc"
+        - "#eeb4b4"
+        - "#cd9b9b"
+        - "#8b6969"
+        - "#698b69"
+        - "#9acd32"
+group:
+    groupDepth: 3
+dot: 
+    graphVizSettings: 
+      rankdir: TB  
+      ranksep: 1
+model:
+    mode: strict
+===
+
+[Standard Sequence]:  Given the strata are undisturbed, the Primary strata are overlain by Cambrian strata, Silurian strata, Old Red Sandstone strata, Mountain Limestone strata, Coal Measures strata, New Red Sandstone strata and Oolitic stata, respectively #pri
+
+[Formation of strata]: Strata are originally formed from sediments that were deposited in flat horizontal sheets - the younger sediments 
+deposited on older ones. #pri
+
+
+/*selection:
+    selectedTags:
+        - GRE
+        - pri
+        - ev
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+/*selection:
+    selectedTags:
+        - chron-hyp 
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+/*selection:
+    selectedTags:
+        - dat-met
+        - roc-hyp
+        - fos-hyp
+        - ev
+    excludeDisconnected: false
+    statementSelectionMode: "all"*/
+
+
+
+# Evidence {color: 0}
+
+
+
+[Unbroken Sequence of Devon Strata]: In Devon, *all* the strata - older than the New Red Sandstone - form an unbroken sequence of strata #ev
+
+/*
+S.93 On the west coast of Devon, near Bideford, there are seams of coal (culm or anthracite) 
+and also some fossil plants in strata closely associated with it
+
+culm : British English: Imperfect anthracite of Devon and Cornwall
+        originating during the Carboniferous Period that occur in southwest England
+        They are so called because of the occasional presence of a soft, often lenticular (linsenförmig), sooty (rußig) coal
+        which in Devon is known as Culm
+anthracite: A hard, compact variety of coal (highest carbon content, fewest impurities)
+*/
+
+[CM Plants in Devon Culm]: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata 
+(in close association with seams of imperfect anthracite) #ev
+
+/* S.94 "DLB reported in effect that the whole of Devon was quite simply a sequence of strata ranging from the oldest near the south coast 
+to the youngest near the north coast"
+S.96 "As I went north I expected to find some newer beds come in, but in this I was disappointed, for the whole series got turned up with a southern dip
+and the lst again came to the surface, and beneath it the arched mass of arenaceous Grauwacke, which seems nothing but a continuation of c"
+
+WEGGELASSEN wegen Satzlimit
+
+[Trough through Exmoor]: There is a trough through Exmoor - formed by a band of limestone running out to the north coast at Ilfracombe 
+and south of Barnstaple #ev
+*/
+
+[Passing Devon Northwards]: Passing Devon from south to north, the strata become younger, except the strata north of Exmoor which are 
+of the same age as the strata south of Exmoor #ev
+
+ 
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+// S.101 [TURNER] accepted that DLB's rock specimens looked just like ordinary pre-ORS strata, though he felt he had to admit 
+//       "the possibility of deception by mere mineralogical character"
+
+[NC CRT - CAM]: Non-Culm strata are of characteristic CAM rock type #ev
+
+
+[MC CRT - CAM]:  Main Culm strata are of characteristic CAM rock type #ev
+
+
+[BCL CRT - CAM]: BCL strata are of characteristic CAM RT #ev
+
+
+ 
+
+/*
+S. 83 OKT 1834 
+"[...] the ORS was divided into three parts, icluding a middle part with fossil fish. MUR insisted on the virtual absence of any plant fossils [...]
+The lowest part of the of the ORS, according to MUR, contained a few fossil shells and passed conformably downward into the UGRE series"
+
+S.263 JAN 39
+"[The SIL region] contained a "true zoological transition" between the UCAM & LSIL, LSIL & USIL, USIL & LORS, ML & CM, CM & NRS. [...] 
+There was no faunal graduation between LORS (which contained a few residual fossil like those of the USIL) and the ML. Between those fomrations 
+lay the middle part of the ORS, with a peculiar fauna consisting mainly of the bizarre fish that Agassiz had described for him [Holoptychius] 
+and the UORS with virtually no fossis at all."
+
+S.277 FEB 39
+"[MUR] thought the ORS probably of marine origin, since in Siluria its lowest part contained fossils similar to those of the 
+underlying SIL. [...] the rest of the ORS in Siluria, and the wholeof it in the Scottish Highlands, contained little else than fossil fish, and was 
+conspicuously lackin gin any ordinary marine fossils, such as the mollusks, brachiopods, and corals that characterized the SIL below and ML above."
+
+*/
+
+[Scottish ORS - Rocks]: Scottish ORS strata support a distinct RT, namely red sandstone #ev
+
+
+[Scottish ORS - Fossils]: Scottish ORS strata support only a few peculiar fish fossils not known from other strata (e.g **Holoptychius**), lacking in any ordinary marine fossils (such as mollusks, brachiopods and corals) #ev
+ 
+
+
+/*
+
+DEC 1834
+"Analogous cases of anthracite in the Greywacke of Normandy (in the Bocage)"
+
+DEC 1834 and JAN 1835
+"There were indeed analogous cases [to that one in North Devon] in northwest France, where coal seams in the *terrain de transition* 
+were associated with fossil plants, of which some at least were referable to species of the *terrain houiller* or CM ...
+Of 25 grauwacke plant species so far identified from northwest France only 4 were also known from in the Carboniferous...
+... Between the grauwacke flora of northwest France and the one of the true CM, there are enough differences to show that 
+they belong to different formations and enough similarities not to consider the culm plants of North Devon as an anomaly."
+*/
+
+
+//[Carb Fossils in Pre-ORS strata]: In pre-ORS strata, there are Carboniferous fossils #GRE
+[Northwest France]: In northwest France, in pre-ORS strata, associated with seams of coal, there are some CM fossil plants #ev 
+     +> [Carb Fossils in Pre-ORS strata]
+
+
+// S.101 GREE and BUCK had long mistaken the true age of some of the CM in Pembrokeshire (southwest Wales), because they were so much like pre-ORS in appearance
+// OLD: [Pembrokeshire]: Near Pembrokeshire (southwest Wales), some strata are CM in age, but pre-ORS in appearance  #ev  
+[Pembrokeshire - Appearance]: Near Pembrokeshire (southwest Wales), some strata are pre-ORS in appearance #ev
+
+/*
+S. 122/3 FEB 1835 
+
+DLB "characteristc fossils as a "hasty generalization" [...] utterly at variance with what was known from the present geographical distribution of organsisms"
+
+
+PHIL ""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+     because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time"
+
+     "Lyell's assumption of a uniform rate of organic change was itself questionable, ... a fully ecological point of view would have to allow
+     for the possibility that fossils might charcterize particular environments far more than particular periods."
+
+Vergleiche auch Späteres:
+
+S.220 OCT 1837
+
+"[DLB] attributed all the apparant anomalies that had arisen in [AUS's] region to the diversity of local environmental conditions at 
+     the epoch of the fossil potting there"
+ 
+*/
+
+
+[LV in Fauna and Flora -Today]: Today, there are local variations in fauna and flora #ev
+
+/*   
+WEGGELASSEN
+
+1832 § 4.4 S.78
+"In his Manual, DLB had mentioned that seams of anthracite had long been known in the Greywacke of north Devonshire, and that an even clearer example 
+had been reported the previous year from Ireland. He also mentioned a recent paper by the American geologist Amos Eaton, summarizing the North American 
+coal deposits. He accepted Eaton's report that , while many may be equivalent to the CM of Europe, some at least were defenitelyin the Greywacke"
+
+SUMMER 1833 §4.5 S.82
+"DLB had added [to the new edition of its Manual] a whole series of reports of antrathitic coal in the Greywacke of Normandy, Brittany, the Vosges,
+and Baden"
+
+DEC 1834  -  DLB Springs to His Own Defence 
+
+S.106 "in the French Alps some characteristic Oolitic (or more precisely, Liassic)" fossil belemnites occured in strata 
+sandwiched among some containing fossil plants of CM appearance ... Brogniart, a leading specialist on fossil plants, had confirmed 
+that the plants were indeed of CM species"
+
+Belemnites were interpreted as the internal skeletons of cephalopod mollusks and were only known from the Oolitic and the Cretaceous groups
+
+Die Belemniten (Belemnoidea) sind eine diverse Großgruppe fossiler Kopffüßer (Cephalopoda). 
+Sie existierten vom Unterkarbon (Mississippium) bis zum Ende der Kreidezeit
+Die zoologische Klasse der Kopffüßer (Cephalopoda, von altgriechisch κεφαλή kephalē „Kopf“ und ποδ- pod- „Fuß“) ist eine Tiergruppe, 
+die zu den Weichtieren (Mollusca) gehört und nur im Meer vorkommt. 
+
+S.121 "...discovery of Oolitic (Liassic) belemnites and CM plants in closely associated strata in the French Alps. 
+Judging only from organic remains, this would imply the absurdity of a rock both Lias and CM at the same time" 
+
+
+[French Alps]: In the French Alps, there are some Oolitic fossil belemnites and CM plants in closely associated strata #ev
+
+*/ 
+
+/* S.153 
+"Before reaching Barnstaple, MUR noted that they had found "the base of the true SIL system", implying perhaps that 
+the strata further north had seemed to them neither CAM nor "true" SIL in character. The SIL identification,
+made initally on grounds of rock type, was then confirmed on the outskirts of the town (at Pilton) where they discovered 
+what MUR regarded as "the LSIL fossils". He termed the strata there "a very good representative of the Llandeilo Flags",
+even though they failed to find the fossil most characteristic of that division of his SIL in Wales (Asaphus buchii),
+and he noted no other species by name"*/
+
+[SIL Fossils in North Devon]: In north Devon, near Barnstaple, there are characteristic SIL fossils in the non-Culm strata #ev 
+    +> [Characteristic Fossil - Some Time]
+
+[Culm trough in Central Devon]: In central Devon, there is a Culm trough - formed by a band of black limestone outcropping south of Barnstaple and north of Dartmoor #ev
+
+
+/* S.123  FEB 1835 PHIL  "A great many of our Yorkshire ML fossils were in your pre-ORS strata... There are so many novelties in my list of the fossils of the 
+Yorkshire limstone that it ought not to startle us if some of them should be repeated in other rocks ... the report evidently referred to the 
+animal fossils found in the strata associated with the Culm, not the land plants that caused the controversy" 
+
+S.167 AUG 1836 PHIL "The Culm strata contained fossils that he had also found in the ML of his native Yorkshire ... the commonest fossil shells (Posidonia)
+from the BCL were identical to some found in the ML of Yorkshire ... and that they occured there in the same kind of black limestone"
+*/
+
+[BCL - FA]: Most of the fossil species supported by BCL strata are known from Yorkshire ML strata #ev
+
+
+/* HIER WEGGELASSEN siehe DCL
+[BCL - RT]: The rock type supported by BCL strata are known from Yorkshire ML strata #ev
+        -> [BCL CRT - CAM]
+*/
+ 
+/*
+S.146 February to March 1836
+
+PHIL "detailed study of the ML sequences all over the Pennines, most of them flat-lying, 
+enabled him to trace the remarkable lateral variation in the strata"
+*/
+
+[ML and Pennines]: All over the Pennines, there is a huge lateral variation in the ML strata RT #ev
+    +> [LV in Sedimentation - Some Time]
+
+ 
+
+
+/* §8.2 JAN 1837
+
+S.187 "HARD apparently reported finding fossil plants in this alleged Green Sand near Barnstaple... 
+HARD must have mentioned that these plants looked to him like those of the Culm...
+SED: "I don't believe a word of the Major's greensand, it is no doubt part of the Caradoc [LSIL]""
+*/
+
+/* §8.6 MAR 1837
+
+S.205 "WIL had found more of these akward fossil plants --- WIL had "a most succesful and satisfactory day"
+in north Devon, finding "an abundance, & great variety of fossil wood and plants" in the sandstones underlying 
+what he called "Trilobite Slates" "
+
+S.210 "WIL had now brought his fossils to London, where the plants had been identified by LIN as distinct from those of the Culm,
+altough belonging to genera also well known in the CM"
+
+*/
+
+[Carboniferous Plants in North Devon]: In north Devon, some NC strata support Carboniferous plant fossils #ev 
+   -> [No Carb Fossils in NC Strata]
+
+[No Holoptychius in North Devon]: In north Devon, the whole NC strata do not support peculiar fish fossils like for example the **Holoptychius** #ev
+
+
+            
+
+
+
+/* 
+HIER WEGGELASSEN
+
+03/05 37 [Taw Estuary]: In north Devon, near Barnstaple, on the Taw estuary, BCL strata and Non-Culm strata fade with one another #ev 
+
+§8.2 JAN 1837
+
+S.188/87 "...eastward past Launceston, [SED] had found instead a thick series of coarse sandstones and shales,
+lying conformably below the distinctive Culm limestone"
+
+[Sandstone East of Launceston]: East of Launceston, there is a thick series of coarse sandstones and shales,
+lying conformably below the BCL #ev #E14
+
+"Annexing these thick [series] to the Culm, thereby tacitly displacing the anticipated [...] unconformity between the Culm 
+and the Cambrian to a still lower [...] part of the sequence ... The BCL [do] not form the actual base of the culm series ...
+There is an enormous development of the lower members [of the culm series] (many 1000 feet in thickness) under the BCL, 
+- especially on the south demarcation [of the Culm trough] ...
+SED conjectured that the Culm sequence [...] might even encompass the equivalents of the "transition group" [...] lying between 
+the ML proper and the ORS "
+*/
+
+/*
+S.89 §4.6 1834
+
+"DLB had assigned the patches [of limestone] around Tor Bay to the ML, mantaining that they formed outliers overlying the pre-ORS strata unconformably ...
+GREE doubted the field evidence for an unconformity and objected that the fossils (at least those from the limestone around Newton Abott) were 
+"either such as are found no where else, or such as are common both to the pre-ORS and ML""
+
+S.222 §9.2 OCT 1837
+"a similar [to ML] affinity was being claimed for the fossils from [...] the limestones of south Devon and Cornwall...
+GREE had commented to DLB a decade earlier, they seemed to be a mixture of ML and pre-ORS types (§4.6) ..."
+
+AUS: "Commenting on the fossils from the from what he considered as the uppermost limestone (around Tor Bay) he had asked SED, "can it be ML? [...] 
+Do you see any objection to the Great Limestone of this district being the equivalent of the ML ? So many fossils are the same"
+
+[ML Fossils in South Devon]: Around Tor Bay (south Devon), the great limestone support many ML fossil shells #ev ????
+
+S.222/223
+
+DLB after seeing AUS's collection: "Fossil shells ressembling those of the ML were mixed with those found in pre-ORS elsewhere in Devon and Cornwall ... 
+attributed all the anomalies to the diversity of local environmental conditions at the epoch of the fossil potting there"
+
+S.227 
+AUS: [He] diplayed on the table no fewer than thirty-six species of "shells" characteristic of the ML 
+
+S.228/9
+LON and SOW on AUS's collection: There were also a great many new species
+LON on AUS' collection:  Dated by its fossils, strata younger than SIL ... . 
+                            not one single fossil in common... total contrast to the SIL fauna.. some affinity to Carboniferous
+                        
+                        Corals were not ML ... "looking at the shells, they (Corals????) could not be of much greater age then ML
+
+                        Sufficient Difference from the ML fauna, might be equivalent with PHIL's transition group
+                        (Strong Difference from the ORS fauna/rock type: ORS: Few and peculiar fossils, distinctive rock type (reddish))
+
+SOW on AUS' collection: Examined 43 species of shells, all of which he pronounced to be well known ML shells
+                        Dated by its fossils, strata must be Carboniferous [Limestone] (= ML?)
+                        Insbesondere: Corals were ML
+*/
+
+[South Devonian Fossil Fauna]: Around Tor Bay and Netwon Abott, the limestones support not one single SIL fossil 
+(and no peculiar fish fossil like for example the **Holoptychius**), but many ML shells and a great many new species #ev 
+  -> [No Carb Fossils in NC Strata]
+
+ /*
+ WEGGELASSEN
+
+ S.222/223
+DLB:  "Like AUS, but in a different area, he was finding fossil plants in - according to SED - CAM rocks [...] He found particularly the distinctive 
+chambered shell Goniatites, which was generally regarded as a Carboniferous genius, in the - according to SED - CAM rocks of South Petherwin"
+
+[Carboniferous Fossil Shell in Cornwall]: At South Petherwin (Cornwall), CAM rocks support a Carboniferous fossil shell (Goniatites) #ev ????
+
+PHIL: "DLB's fossil shells were strangely analogous to Carboniferous limestone fossils"
+ */
+
+
+/*
+WEGELASSEN wegen Satzlimit
+
+S.224 §9.3 DEC 1837
+
+AUS: "The "Great Limestone" (at Netwon Abott and around Torbay) near the top was separated by a thick sequence of reddish strata from some 
+much lower limestones (at Ashburton and Chudleigh)... judging by its fossils, it might be equivalent to the ML..."
+
+S.237/8  §9.6 JAN 1838
+
+AUS: "a disitnctive formation of reddish strata lay above the Plymouth limestone but below the Great Limestone in his home area... 
+    my notion is that our limestones and the red shales and sandstones which dip under them, are about the age of the ML and ORS...
+    I find my ORS containing everywhere abundance of fossils. Undeterred by the knowledge that that formation elsewhere contained few fossls 
+     and most of these peculiar"
+
+
+[Reddish Strata in South Devon]: Above the Plymouth limestone but below the Great Limestone, there is a distinctive formation of reddish strata 
+  containing everywhere abundance of fossils (but no peculiar ORS fish fossils) #ev
+
+
+*/
+
+
+
+
+/* 
+WEGGELASSEN
+
+Culm base lower than ML
+
+§8.2 JAN 1837
+
+S.188/87 "...eastward past Launceston, [SED] had found instead a thick series of coarse sandstones and shales,
+lying conformably below the distinctive Culm limestone"
+
+"Annexing these thick [series] to the Culm, thereby tacitly displacing the anticipated [...] unconformity between the Culm 
+and the Cambrian to a still lower [...] part of the sequence ... The BCL [do] not form the actual base of the culm series ...
+There is an enormous development of the lower members [of the culm series] (many 1000 feet in thickness) under the BCL, 
+- especially on the south demarcation [of the Culm trough] ...
+SED conjectured that the Culm sequence [...] might even encompass the equivalents of the "transition group" [...] lying between 
+the ML proper and the ORS "
+
+
+S.243 §9.8 May 1938
+
+"[SED] now stated publicly that in his opinion the base of the Culm was "lower than the base of the ordinary English carboniferous series"...
+"the lowest part of the culmiferous series" of Devon was there listed, albeit with a question mark, at the end of his list of examples of the SIL system ...
+By conjecturing that the Culm represented the whole of the Carboniferous group, and even some SIL too, SED could hope to preserve almost all the older strata 
+for his CAM...This defensive maneuver had become the more necessary since SED had evidently concluded that the major unconformity he and MUR had claimed 
+betwen the Culm and the older strata had to be abandonded "
+
+*/
+
+/*
+S.239/240 §9.7 MAR 1838
+
+LIN had changed his mind about the fossil plants that had precipitated the whole controversy [...] Having had more more extensive collections 
+to study [...] LIN now considered that "a few species only" from the Culm were the same as those in the ordinary CM, while "the bulk" 
+of the specimens belonged to species he could not match from elsewhere.
+*/
+
+[MC - FA]: Most of the fossil species supported by MC strata are known from CM strata #ev
+
+
+/*
+S.240 §9.7 MAR 1838
+
+DLB considered that the "so called culmiferous rocks" underlay AUS's LSTs
+
+WEGGELASSEN
+
+AUS was critical of DLB relying on the evidence of dip and strike in isolated exposures of the respective strata; by contrast,
+AUS considered that "one good instance of super position is sufficient to settle the question, and there are several"
+
+*/
+
+[Sequence of Strata - Tor Bay and Newton Abott]: Around Tor Bay and Newton Abott, (i) strata are undisturbed and (ii) some LSTs 
+ overlay MC strata, BCL strata and the main part of NC strata, respectively #ev
+
+
+/* DEVON
+
+S.283  §11.2  APR 1839 
+"[MUR] summarized the fossils from the whole [north Devonian] sequence of thick formations as a mixture of [ML] [...] shells; [USIL] [...] corals; 
+and even a [ORS] mollusk [...] trilobites some entirely new, some appoaching USIL types; ... plants discovered by WIL and HARD accepted on LIN's account 
+as Carboniferous ... "As for south Devon, [...] LON had considered that few could be strictly considered as ML; many were new and undescribed ...
+HEN's collection from Plymouth, studied by PHIL and SOW, proved to have the same curiously mixed character"
+
+S.295/8 §11.5 APR 1839
+"Having studied WIL's fossils with LON, MUR reported that "as far as we can yet see they confirm better than ever the new view" ...
+ some fossils were different from any known from the CM .. HEN reported that the fossil plants from the lower strata in north Devon 
+ were "quite distinct from any known CM remains", thus confirming that the Devonian flora, like the fauna was distinct"
+
+*/
+
+
+[Non-Culm Fossil Mixture - Devon]: In north Devon, the non-Culm fossils are a mixture of ML shells, USIL corals, 
+one ORS mollusk and Carboniferous plants; some trilobites similar to USIL ones and some totally new fossils; 
+in south Devon, few non-Culm fossils are strictly ML fossils; many fossils are new #ev
+
+   
+
+/*
+WEGGELASSEN
+
+NW FRANCE
+
+MAY 1839 §12.2 S.302
+MUR: "Studying the fossils from Brittany in the Paris museums, [MUR] concluded that the strata with coal seams 
+in the *terrrain de transistion superieur* were either Devonian or Carboniferous, but definitely not Silurian
+
+AUG 1839 §12.4 S.324
+"[DeVER] claimed that the anthracites of Brittany and Normandy - so long emphasized by DLB - were in the USIL, directly above "
+Caradoc sandstone" with large SIL trilobites... MUR claimed instead that the fossils he had seen in Paris earlier in the year 
+implied that the anthracites were more probably Devonian or Carboniferous ($12.1)"
+
+[Breton and Norman Fossils as ORS]: In the Paris museums, the fossils from northwest France are charcteristic of the ORS (or a younger formation) #ev
+
+[Breton and Norman LSIL Fossils]: In Brittany and Normandy, the strata supporting coal seams are directly above strata supporting characteristic LSIL fossils #ev
+    
+
+
+DEVON & EIFEL
+
+SEP 1838 §10.2
+AUS: "[DeVER] showed him his collection of the distinctive fossils of the Eifel, and AUS was immediately struck by their close ressemblance 
+to those from the Devon limestones near his home... His perception of a faunal similarity between Devon and the Eifel, did not lessen the 
+puzzles of Devonshire; for AUS was convinced that the Devon limestones were "of about the age of the ML, whereas DeVER regarded the Eifel LST as 
+unquestionably SIL"
+
+FEB 1839 § 11.1 S.276
+""[PHIL] seems to think [the Eifel and south Devon fossils] are of the same zoological epoch." That comment suggests that [...]
+[PHIL] considered that both the Eifel and the South Devon fossils were disinct from either the SIL and ML faunas" 
+
+JUN 1839 §12.2 S.308
+"MUR found so many Wenlock friends among GOL's fossils from the Eifel that he was convinced that DeVER were right to equate the Eifel 
+with his USIL"
+
+AUG 1839 §12.4 S.324
+"following DeVER's opinion, MUR marked the Eifel limestone as "Wenlock LST" [...]  interpreted the Eifel as a whole as 
+"showing CAM and SIL all in their propre places""
+
+DEC 1839 §12.8 S.338
+"... nor were [the Eifelian] fossils quite the same as those of the south Devon limestone or of the newly "Devonian" limestones of 
+Belgium and Westphalia. "It is Devonian (Lowest) plus SIL or in other words a member of transition from one system to the other, in which 
+there are many more DEV than SIL fossils, but not exclusively DEV [...]
+
+
+DEVON & RHINELAND & NW FRANCE
+
+JUN-AUG 1839 §12.3 S.308
+"So AUS made a point of emphasizing the similarity of the Devon fossils with those of the Rhineland [...] ($10.2, $11.5)
+AUS attributed these LST (and similar ones in northwest France) to a position a litlle below the [ML]; as on the ocassion 
+when his fossils were first discussed"
+
+EIFEL & RHINELAND
+
+OCT-DEC 1839 §12.6 S.331
+"[SED] doubted if MUR could persuade anyone else that the Eifel limestone was SIL but the Strygocephalus limestone Devonian, 
+because the two faunas were so similar"
+
+BELGIUM
+
+DEC 1839 §12.8 S.342
+"SOW and LON had now identified the "SIL" fossils BUCK had collected on his traverse of the Meuse in 1835 (§6.3). "The charactersitic Corals are 
+pure Devonian and the "shells" were just the kinds they had anticipated as "filling up the intervalls" between SIL and Carboniferous"
+
+DEVON & BELGIUM & RHINELAND
+
+DEC 1839 §12.8 S.340
+"[MUR] claimed that "the sequence and passage" from SIL through DEV to Carboniferous was the same in Brittany - which in the event 
+they had failed to visit - as in Belgium and the Rhineland... 
+*/
+
+/*
+MAY 1840 §13.5 S.362/3
+"[PHIL] had quickly amassed larger collections of Devon fossils than any he had yet seen... PHIL showed by his fossil identifications 
+that he continued to regard the Culm as unquestionably Carboniferous, its BCL having many unmistakably ML fossils .. north and south Devon 
+were broadly similar in their fossils, which had at least some Carboniferous affinities...
+PHIL suggested that the "Paleozoic Series" [i.e "one system of life" recorded as a broadly similar assemblage of fossils 
+extending from CAM to the base of the ORS] need to be extended up through the Carboniferous as far as the New Red Sandstone"
+
+APR 1841 §14.1  S.373
+"[PHIL] was well aware that taxonomic lumoers and splitters  might identify different numbers of "species"  in any given collection ...
+got round [this] problem by relying throughout on his own identifications...
+To compare with his 275 species from Devon and Cornwall, he had 336 species from the SIL and 420 from the Carboniferous. 
+Not only did his detailed tabular analysis show that the Devon fossils as a whole were clearly intermediate between SIL and Carboniferous, 
+as LON had demonstrated the previous year from much smaller collections (§13.3). 
+Further than that, PHIL divided the fossils of Devon and Cornwall into three subordinate groups on the basis of a gradually changing 
+faunal composition. In inferred chronological order, the fauna of the south Devon limestones (e.g. around Tor Bay and Plymouth)
+was nearest to that of the SIL; then came the faunas of the upper part of the north Devon sequence (e.g. Barnstaple); and 
+finally those of the Cornish strata (e.g. South Petherwin), which had the strongest affinities to the true Carboniferous faunas ...
+[He] regarded the Devonian rocks a series of faunas that reflected an imperceptibly gradual process of piecemeal faunal change.
+Only by the analysis of large numbers of species could the distorting effects of local ecological variations been ironed out, as it were, 
+to reveal the overall effects of temporal change"
+*/
+
+// [MC - FA]: Most of the fossil species supported by MC strata are known from CM strata #ev
+//[BCL - FA]: Most of the fossil species supported by BCL strata are known from Yorkshire ML strata #ev
+//[NC - FA - 2]: NC strata support fossils intermediate in character between SIL and ML #fos-hyp
+[Philipps' Collection]: Most of the fossil species supported by MC and BCL strata are known from CM and ML strata, respectively, 
+  NC strata support a FA intermediate in character between the SIL and ML #ev
+    +> [MC - FA]
+    +> [BCL - FA] 
+    +> [NC - FA - 2]
+    +> [No ORS Fish in Devon Non-Culm]
+
+
+
+/*
+MAY 1840 §13.4 S.359/60
+MUR "On the banks of the Volkov near Lake Lagoda they found a section of almost horizontal strata that enabled [him] to connect the SIL most clearly with the 
+DEV ... This Russian DEV was found to be uniting within a very small compass the fishes of the ORS of Scotland and the shells of Devon ...
+In the Valday Hills, [they] found some expores that fully confirmed the sequence they had inferred at the start [Carboniferous, DEV and SIL] ...
+sandwiched between strata with SIL fossils and those with Carboniferous fossils were both limestones with DEV shells and sandstones and marls 
+with ORS fish" 
+*/
+
+[Valday Hills]: In the Valday Hills (Russia), some strata, sandwiched between undisturbed SIL and ML strata, support
+ both limestones fossils intermediate in character between SIL and ML and sandstones with peculiar ORS fish #ev
+
+
+
+/*
+WEGGELASSEN
+
+DEVON
+
+S.236 §9.6 JAN 1838
+AUS: "The difference between his "Devon shells" and those from the ML were well within the range of variation of living molluscan species...
+By criticizing LON as too great a splitter in fossil taxonomy, AUS brought into the open the issue that underlay any use of "statistical" estimates
+of the affinities (Ähnlichkeiten) of fossil faunas. For as LYE had already discovered in his analysis of Tertiary faunas, such estimates were of little use 
+unless relaistic allowances were made for the range of variation within any biological species" 
+
+[Variation Within Species - Today]: Today, there is a range of variation within any biological species #ev
+
+
+MAR 1840 §13.3 S.353
+"LON did give an important and up-to-date list of the south Devon fauna. He cited 62 species (in 35 genera) in categories that 
+displayed their mixed character: 13 species (in 6 genera) were also known from the SIL; 38 species (in 24 genera) were known - within Britain -
+only from the Devonian rocks themselves; and 11 species (in 5 genera) were also known from the Carboniferous"
+
+NW FRANCE
+
+MAR 1840 §13.3 S.356
+
+"MUR did some fieldwork at long last on the older rocks of northwest France ... three days in one corner of Normandy ...
+MUR idetified SIL rocks near Caen, underlain by "CAM" rocks without fossils; he may also found them overlain by what he 
+regarded as DEV strata.  But in any case [...]  the region was too complex in its structure and too obscure to be worth a
+more thorough study. The reports of anthracite in the pre-ORS strata of northwest France, which DLB had invoked repeatedly (§5.3), 
+were not be refuted after all. They could safely be ignored, for MUR was now more confident han ever that the anthracites 
+lay either among the DEV strata or in the Carboniferous, certainly not in the SIL or CAM"
+*/
+
+
+
+
+
+# Rocks, Fossils and Time - Principles {color: 1}
+
+
+// Rock Type Method - Identification of strata, and their succession, by means of their rock types
+
+[Characteristic Rock Type Principle]: There is a bijection between the age of some strata t and its characteristic rock types #dat-met
+ 
+
+/* 1831 - A father figure for Geology 
+
+William Smith: Identification of strata, and their succession, by means of their imbedded fossils 
+
+S. 122 "... earlier belief that every rock of the oolitic suite had its own peculiar fossils
+It may seem surprising that the nephew and pupil of William Smith should have dismissed as a fantasy 
+Smith's own view of the various formations of the Oolitic sequence, for these were the surpreme example of 
+the use of characteristic fossils."*/
+
+[Characteristic Fossil Principle]: There is a bijection between the age of some strata t and its characteristic fossils #dat-met
+
+
+
+/*
+1832-33 - Weaver and the Irish Question
+
+Lyellian Principals: a theoretical model to acount for constant but piecemal change in 
+the composition of the faunas and floras at the earth's surface,
+ in correlation with ever-changing physical environments; 
+ it followed that while particular species might have had long ranges in time, 
+an assemblage of many species would not remain unchanged for long; 
+two formations deposited at widely separated periods would be expected to have few if any species in common
+*/
+
+[Lyellian Principle]: For two strata A and B it holds: (i) The more A and B are similar in their FSAs, the more they are similar in age, 
+(ii) the more A and B are similar in age, the more they are similar in their FSAs and 
+ (iii) if A and B are sufficiently unsimilar in age, then they have no species in common #dat-met
+    +> [Characteristic Fossil Assemblage Principle]
+
+[Characteristic Fossil Assemblage Principle]: There is a bijection between the age of some strata and its characteristic fossil assemblages #dat-met
+
+
+
+
+ 
+/*
+S. 122/3 FEB 1835 PHI
+
+DEVON: "A flora of so-called CM species might have flourished locally in specific ecological conditions during the pre-ORS period, 
+long before it was able to spread widely and become the "characteristic" flora of the CM period"
+
+FRENCH ALPS: "EDB Alpine discovery as evidence that certain districts might really enjoy an immunity from those revolutions of organic life which happend to others...
+trusted the belemnites rather than the plants ... in the region that had since become the Alps the CM flora might have survived much longer than elsewhere, 
+as a result of ecological circumstances"
+
+""ages" of particular races of oragnic beings (especially terrestrial) not exactly syncronous in all districts; 
+because the forms of organic life are probably not functions of the time but of the physical conditions, which no doubt vary with time" 
+
+Vergleiche auch:
+S.266 FEB 1839 DLB
+[...] a belief that detrital matter has been strewed in exactly the same manner, enveloping exactly the same organic remains, over all parts of the world, 
+where deposits were taking place at the same time. Nothing could be more improbable, DLB implied, in view of the heterogenous spread of deposits and organisms 
+at hte present day
+*/
+
+[LV in Fauna and Flora]: For every time intervall, there are local variations in fauna and flora #dat-met
+    +> [LV in Fauna and Flora -Today]  
+    +> [Carb Fossils in Pre-ORS strata]
+
+
+/*CF*/
+
+[Characteristic Fossil]: A fossil species f is characteristic for some time interval dt iff 
+(i) f only exisits during dt and (ii) during dt, every region supports f #dat-met
+
+[No Characteristic Fossil]: For no time intervall dt, there is (at least) one characteristic fossil species #dat-met
+
+[Characteristic Fossil - Every Time]: For each time intervall dt, there is (at least) one characteristic fossil species #dat-met
+    -> [No Characteristic Fossil]
+
+[Characteristic Fossil - Some Time]: For some time intervall dt, there is (at least) one characteristic fossil species #dat-met
+    <+ [Characteristic CM Fossils in Main Culm]
+    <+ [CF - ORS]
+    <+ [Characteristic Fossil - Every Time]
+    >< [No Characteristic Fossil]
+
+
+<CFP and CF - 1>: Given a certain definition of CF, it holds: 
+If, for each time intervall dt, there is at least one CF, then there is a bijection between the age of some strata and 
+ its CFs #dat-met
+    
+    (1) [Characteristic Fossil]
+    (2) [Characteristic Fossil - Every Time]
+    ----
+    (3) [Characteristic Fossil Principle] 
+
+<CFP and CF - 2>: Given a certain definition of CF and the CF Principle, it holds: For each time intervall dt, there is at least one CF #dat-met
+    
+    (1) [Characteristic Fossil]
+    (2) [Characteristic Fossil Principle] 
+    ----
+    (3) [Characteristic Fossil - Every Time]
+
+
+
+<CFs - LV in Fauna and Flora>: If there are always local variations in fauna and flora and 
+some fossil species f is characteristic for some time interval dt iff, during dt, every region supports f,
+ then there are no characteristic fossils #dat-met
+
+    (1) [Characteristic Fossil]
+    (2) [LV in Fauna and Flora]
+    ----
+    (3) [No Characteristic Fossil]
+
+/*CFA*/
+
+[Characteristic Fossil Assemblage]: An assemblage of fossil species AS is characteristic for some time interval dt iff 
+(i) AS only exisits during dt and (ii) during dt, every region supports AS #dat-met
+
+[No Characteristic Fossil Assemblage]: For every time intervall dt, there is not one CFA #dat-met
+
+[Characteristic Fossil Assemblage - Every Time]: For each time intervall dt, there is (at least) one CFA #dat-met
+    -> [No Characteristic Fossil Assemblage]
+
+
+[Characteristic Fossil Asseblage - Some Time]: For some time intervall dt, there is (at least) one characteristic assemblage of fossil species #dat-met
+    <+ [CFA - ORS]
+    <+ [CFA - ORS - II]
+    <+ [Characteristic Fossil Assemblage - Every Time]
+    >< [No Characteristic Fossil Assemblage]
+
+
+
+<CFAP and CFA - 1>: Given a certain definition of CFA, it holds: 
+If, for each time intervall dt, there is at least one CFA, then there is a bijection between the age of some strata and 
+ its CFAs #dat-met
+    
+    (1) [Characteristic Fossil Assemblage]
+    (2) [Characteristic Fossil Assemblage - Every Time]
+    ----
+    (3) [Characteristic Fossil Assemblage Principle] 
+
+<CFAP and CFA - 2>: Given a certain definition of CFA and the CFA Principle, it holds: For each time intervall dt, there is at least one CFA #dat-met
+    
+    (1) [Characteristic Fossil Assemblage]
+    (2) [Characteristic Fossil Assemblage Principle] 
+    ----
+    (3) [Characteristic Fossil Assemblage - Every Time]
+   
+
+<LV in Fauna and Flora and CFAs>:If there are always local variations in fauna and flora and 
+some assemblage of fossil species AS is characteristic for some time interval dt iff, during dt, every region supports AS, 
+then there are no characteristic fossil species assemblages #dat-met
+
+    (1) [Characteristic Fossil Assemblage]
+    (2) [LV in Fauna and Flora]
+    ----
+    (3) [No Characteristic Fossil Assemblage]
+
+
+
+/*CRT*/
+
+
+[LV in Sedimentation - CM]: During the CM period, there are local variations in sedimentation #dat-met
+    <+ [LV in Sedimentation]
+
+
+[LV in Sedimentation]: For every time intervall, there are local variations in sedimentation #dat-met
+        
+[Characteristic Rock Type]: A rock type r is characteristic for some time interval dt iff 
+ (i) r have been formated only during dt and (ii) during dt, in every region, r have been formated #dat-met
+
+[No Characteristic Rock Type]: For every time intervall dt, there is not one characteristic rock type #dat-met
+
+[Characteristic Rock Type - Every Time]: For each time intervall dt, there is (at least) one CRT #dat-met
+    -> [No Characteristic Rock Type]
+
+[Characteristic Rock Type - Some Time]: For some time intervall dt, there is (at least) one characteristic rock type #dat-met
+    <+ [CRT - ORS]
+    <+ [CRT - CAM]
+    <+ [Characteristic Rock Type - Every Time]
+    >< [No Characteristic Rock Type]
+
+[CRT - CAM]: For the CAM period, there is (at least) one characteristic rock type #dat-met
+    <+ [MC CRT - CAM]
+    <+ [BCL CRT - CAM]
+    <+ [NC CRT - CAM]
+
+
+
+
+<CRTP and CRT - 1>: Given a certain definition of CRT, it holds: 
+If, for each time intervall dt, there is at least one CRT, then there is a bijection between the age of some strata and 
+ its CRTs #dat-met
+    
+    (1) [Characteristic Rock Type]
+    (2) [Characteristic Rock Type - Every Time]
+    ----
+    (3) [Characteristic Rock Type Principle] 
+
+<CRTP and CRT - 2>: Given a certain definition of CRT and the CRT Principle, it holds: For each time intervall dt, there is at least one CRT #dat-met
+    
+    (1) [Characteristic Rock Type]
+    (2) [Characteristic Rock Type Principle] 
+    ----
+    (3) [Characteristic Rock Type - Every Time]
+   
+
+<CRTs - LV in Sedimentation>:If there are always local variations in rock types, 
+and some rock type r is characteristic for some time interval dt iff, during dt, every region supports r, 
+then there are no characteristic characteristic rock types #dat-met
+
+    (1) [Characteristic Rock Type]
+    (2) [LV in Sedimentation]
+    ----
+    (3) [No Characteristic Rock Type]
+
+
+ 
+
+
+// S.135 JUL 1835 PHIL "All such groups of formations needed to be identified by their distinctive assemblages, not by single "characteristic" fossils"
+
+
+[Lyellian Principle - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, for two strata A and B, it holds: 
+(ia) The more A and B are similar in their FSAs, the more they are similar in age, 
+ (ib) if A and B are sufficiently unsimilar in age, then they have no fossil species in common, and (iia) the more A and B are similar in age, 
+  the more they are similar in their FSAs #dat-met
+        <+ [Lyellian Principle]
+
+[Characteristic Fossil Assemblage Principle - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, it holds: 
+There is a bijection between the age of some strata and its characteristic fossil species assemblages #dat-met
+    <+ [Lyellian Principle - V2]
+    <+ [Characteristic Fossil Assemblage Principle]
+
+     
+/*
+Vorbedingung schließt aus, dass LP/CFAP/CRTP fälschlicherweise angewendet werden, nämlich falls es 
+sich bei dem betrachteten Gestein, seiner Gesteinsart oder seinem Fossiliengehalt um eine lokale Variation handelt
+
+
+Bsp. 1: LV ---- Scottish ORS strata
+
+LP/CFAP/CRTP können hier nicht angewendet werden, da Vorbedingung nicht erfüllt!
+
+Es wird nicht behauptet, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden, sondern,
+dass die Region selbst nicht ausreichend groß ist
+
+Bsp. 1: LV ---- Devon NC strata
+
+LP/CFAP/CRTP können hier nicht angewendet werden, da Vorbedingung nicht erfüllt!
+
+Im Verlauf der Debatte wird zunächst beides, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden.
+
+Später, spätestens zum Zeitpunkt S8 nach Einführung von PHIL's Sammlung, wird dies nicht mehr behauptet, jedoch, 
+ dass die Region Devon nicht ausreichend groß ist
+*/
+
+
+//// LV in F&F ===== ORS
+
+[LV in Fauna and Flora - Some Time]: There are local variations in the fauna and flora during some period #dat-met
+     <+ [LV in Fauna and Flora]
+
+<CFs - LV in Fauna and Flora - Some Time>: If, during some period p, there are local variations in fauna and flora and 
+some fossil species f is characteristic for some time interval dt iff, during dt, every region supports f,
+ then, during p, there is no characteristic fossils species #dat-met
+
+    (1) [Characteristic Fossil]
+    (2) [LV in Fauna and Flora - Some Time]
+    ----
+    (3) During some time interval, there is no characteristic fossils species
+            >< [Characteristic Fossil - Every Time]
+
+<CFAs - LV in Fauna and Flora - Some Time>: If, during some period p, there are local variations in fauna and flora and 
+some fossil species assemblage FA is characteristic for some time interval dt iff, during dt, every region supports FA,
+ then, during p, there is no characteristic FA #dat-met
+
+    (1) [Characteristic Fossil]
+    (2) [LV in Fauna and Flora - Some Time]
+    ----
+    (3) During some time interval, there is no characteristic FA
+            >< [Characteristic Fossil Assemblage - Every Time]
+
+
+/// LV in RT === ORS 
+
+[LV in Sedimentation - Some Time]: There are local variations in sedimentation during some period #dat-met
+            <+ [LV in Sedimentation]
+
+<CRTs - LV in Sedimentation - Some Time>: If, during some period p, there are local variations in sedimentation and 
+some rock type is characteristic for some time interval dt iff, during dt, every region supports f,
+ then, during p, there is no characteristic rock type #dat-met
+
+    (1) [Characteristic Rock Type]
+    (2) [LV in Sedimentation - Some Time]
+    ----
+    (3) During some time interval, there is no characteristic fossils species
+            >< [Characteristic Rock Type - Every Time]
+
+
+
+
+/* WEGGELASSEN wegen Satzlimit
+
+[Characteristic Rock Type Principle - V2]: **Given a sufficiently large (i) amount of rock specimens and (ii) region under study**, for two strata A and B, 
+ it holds: There is a bijection between the age of some strata and its characteristic rock types #dat-met
+    <+ [Characteristic Rock Type Principle]*/
+
+ 
+ 
+
+
+# ORS Characteristica {color: 2}
+
+
+
+[CF - ORS]: Some peculiar fish fossils are characteristic of the ORS period #cha
+
+[CFA - ORS]: The CFA of ORS strata supports only a few fossils, most of them peculiar fish fossils not known from other strata #cha
+    +> [CFA - ORS - I]
+
+[CFA - ORS - I]: The CFA of ORS strata supports peculiar fish fossils not known from other strata #cha
+
+[CRT - ORS]: ORS strata support a characteristic rock typ, namely red sandstone #cha
+
+
+
+//// LP
+
+[CFA - ORS - II]: The CFA of ORS strata is intermediate in character between those of SIL strata and ML strata #cha
+        -> [CFA - ORS]
+
+[ORS as Intermediate]: ORS strata are intermediate in age between SIL strata and ML strata #cha
+                <+ [Standard Sequence]
+
+// If two strata are similar in age, then they support similar CFA
+<LP - CFA ORS - 1>: Given the Lyellian Principle and some ORS strata, it holds: 
+ The strata support a FSA intermediate in character between those of SIL strata and ML strata #cha
+        
+        (1) [Lyellian Principle]
+        (2) [ORS as Intermediate]
+        ----
+        (3) [CFA - ORS - II]
+
+<LP - CFA ORS - 2>: Given the Lyellian Principle, and some strata supporting a FSA intermediate in character between those of SIL strata 
+ and ML strata, then these strata are ORS in age #cha
+        
+        (1) [Lyellian Principle]
+        (2) [CFA - ORS - II]
+        ----
+        (3) [ORS as Intermediate]
+
+
+
+
+ 
+
+
+[CFA - ORS - V2]:  **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+ ORS strata encompasses only a few fossils, most of them peculiar fish fossils only known from the ORS #cha
+    -> [CFA - ORS - II - V2]
+    <+ [CFA - ORS]
+    +> [CFA - ORS - I - V2]
+
+[CFA - ORS - I - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+ the CFA of ORS strata includes peculiar fish fossils only known from the ORS #cha
+
+[CFA - ORS - II - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+ ORS strata support a FSA intermediate in character between those of SIL strata and ML strata #cha
+    <+ [CFA - ORS - II]
+
+/* WEGGELASSEN wegen Satzlimit
+[CRT - ORS - V2]: **Given a sufficiently large (i) amount of rock specimens and (ii) region under study**, 
+ the CRT supported by ORS strata is red sandstone #cha
+    <+ [CRT - ORS] */
+
+/*
+[Lyellian Principle - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, for two strata A and B, it holds: 
+(ia) The more A and B are similar in their FSAs, the more they are similar in age, 
+ (ib) if A and B are sufficiently unsimilar in age, then they have no fossil species in common, and (iia) the more A and B are similar in age, 
+  the more they are similar in their FSAs #dat-met
+
+[ORS as Intermediate]: ORS strata are intermediate in age between SIL strata and ML strata #cha
+                <+ [Standard Sequence]
+*/
+
+<LP - CFA ORS - V2 - 1>: Given a revised Lyellian Principle and ORS intermediate in age between SIL and ML, then it holds: 
+ **Given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+  ORS strata support a FSA intermediate in character between those of SIL strata and ML strata #cha
+        
+        (1) [Lyellian Principle - V2]
+        (2) [ORS as Intermediate]
+        ----
+        (3) [CFA - ORS - II - V2]
+
+<LP - CFA ORS - V2 - 2>:  If, **given a sufficiently large (i) amount of fossils and (ii) region under study**, 
+  ORS strata support a FSA intermediate in character between those of SIL strata and ML strata and a revised LP holds, then 
+  ORS is intermediate in age between SIL and ML #cha
+        
+        (1) [Lyellian Principle - V2] 
+        (2) [CFA - ORS - II - V2]
+        ----
+        (3) [ORS as Intermediate]
+
+
+ 
+
+[CFA - ORS - III - V2]: **Given a sufficiently large (i) amount of fossils and (ii) region under study**, it holds: 
+    ORS strata support a CFA intermediate in character between the CFAs of SIL strata and ML strata as well as
+    peculiar fish fossils only known from the ORS #cha
+    +> [CFA - ORS - II - V2]
+    +> [CFA - ORS - I - V2]
+
+/* WEGGELASSEN wegen Satzlimit
+[CRT - ORS - II - V2]:  **Given a sufficiently large (i) amount of rock specimens and (ii) region under study**, it holds: 
+  The CRTs of the ORS period are limestone and red sandstone #cha
+    +> [CRT - ORS - V2]*/
+
+ 
+
+
+# Carb Fossils in Pre-ORS Strata {color: 3}
+
+
+
+ // ====== Carboniferous Fossils in Pre-ORS strata ============
+
+[Carb Fossils in Pre-ORS strata]: In pre-ORS strata, there are Carboniferous fossils #GRE
+
+
+// [CM Plants in Devon Culm]: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata (in close association with seams of imperfect anthracite) #ev
+<MC as Pre-ORS - Carb Fossils>:  If the MC strata are pre-ORS in age and there are no Carboniferous fossils in pre-ORS strata, 
+then there are no Carboniferous fossils in MC strata #GRE
+
+    (1) [Standard Sequence]
+    (2) [MC at Youngest SIL]
+    (3) In pre-ORS strata, there are no Carboniferous fossils
+         >< [Carb Fossils in Pre-ORS strata]
+    ----
+    (4) In MC strata, there are no Carboniferous fossils
+          >< [CM Plants in Devon Culm]
+
+ 
+
+// ====== Carboniferous Fossils in Pre-ORS strata ============
+
+[Carb and Pre-ORS - Sufficiently Different]: Carboniferous strata and pre-ORS strata are sufficiently different #COA
+
+// Vergleiche S.196
+
+// LP- ib : If A and B are sufficiently unsimilar in age, then they have no fossil species in common
+<LP, Pre-ORS and Carb - 1>: If Carboniferous and pre-ORS strata are sufficiently different in age, then 
+ there are no Carboniferous fossils in pre-ORS strata #COA
+
+        (1) [Lyellian Principle]
+        (2) [Carb and Pre-ORS - Sufficiently Different]
+        ----
+        (3) In pre-ORS strata, there are no Carboniferous fossils
+                 >< [Carb Fossils in Pre-ORS strata]
+
+<LP, Pre-ORS and Carb - 2>: If there are no Carboniferous fossils in pre-ORS strata, then 
+ Carboniferous and pre-ORS strata are sufficiently different in age #COA
+
+        (1) [Lyellian Principle]
+        (2) In pre-ORS strata, there are no Carboniferous fossils
+                 >< [Carb Fossils in Pre-ORS strata]
+        ----
+        (3) [Carb and Pre-ORS - Sufficiently Different]
+
+
+
+
+
+
+// ====== Carb Fossils in Pre-ORS strata ====  Non-Culm ============
+
+
+[No Carb Fossils in NC Strata]: There are no Carboniferous fossils in NC strata #COA
+
+<NC as ORS - Carb Fossils - North Devon>: If NC strata are ORS in age and there are no Carboniferous fossils in ORS strata, 
+then there are no Carboniferous fossils in NC strata #GRE
+
+    (1) [NC at Youngest SIL]
+    (2) In pre-ORS strata, there are no Carboniferous fossils
+                 >< [Carb Fossils in Pre-ORS strata]
+    ----
+    (3) [No Carb Fossils in NC Strata]
+
+
+/*
+
+// ====== Carb Fossils in Pre-ORS strata ==== Some Non-Culm in North Devon ============
+
+//[Carboniferous Plants in North Devon]: In north Devon, some NC strata support Carboniferous plant fossils #ev 
+
+[Some North Devon NC at Oldest ORS]: In north Devon, some NC strata supporting Carboniferous fossils are at oldest ORS in age #chron-hyp 
+
+[Some North Devon NC at Oldest ML]: In north Devon, some NC strata supporting Carboniferous fossils are at oldest ML in age #chron-hyp 
+        +> [Some North Devon NC at Oldest ORS]
+
+[Some ML in North Devon]: In north Devon, some NC strata supporting Carboniferous fossils are ML in age #chron-hyp
+        +> [Some Non-Culm as ML]
+        -> [Some ORS in North Devon]
+
+[Some CM in North Devon]:  In north Devon, some NC strata supporting Carboniferous fossils are CM in age #chron-hyp
+        +> [Some Non-Culm as CM]
+        -> [Some ML in North Devon]
+        -> [Some ORS in North Devon]
+
+[Some ORS in North Devon]: In north Devon, some NC strata are ORS in age #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+    <+ [Non-Culm as ORS]
+
+<NC as Pre-ORS - Carb Fossils - North Devon>: If, in north Devon, some NC strata support Carboniferous fossil plants and there are no 
+        such fossils in pre-ORS strata, then these strata are at oldest ORS in age #COA
+
+    (1) [Non-Culm as Post-Primary and Pre-NRS]
+    (2) [Carboniferous Plants in North Devon]
+    (3) In Pre-ORS strata, there are no Carboniferous fossils
+                 >< [Carb Fossils in Pre-ORS strata]
+    ----
+    (4) [Some North Devon NC at Oldest ORS]
+                 
+<Some NC at Oldest ML in North Devon - 1>: If, in north Devon, some NC strata, supporting Carboniferous fossil plants, are at oldest ORS in age, 
+ and are not ORS in age, then these strata are at oldest ML in age #chron-hyp
+
+        (1) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Some North Devon NC at Oldest ORS]
+        (3) In north Devon, some NC strata supporting Carboniferous fossils are not ORS in age
+                 >< [Some ORS in North Devon]
+        ----
+        (4) [Some North Devon NC at Oldest ML]
+
+<Some NC at Oldest ML in North Devon - 2>: If, in north Devon, some NC strata, supporting Carboniferous fossil plants, are at oldest ML in age, 
+ and are not ML in age, then these strata are CM in age #chron-hyp
+
+
+        (1) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Some North Devon NC at Oldest ML]
+        (3) In north Devon, some NC strata supporting Carboniferous fossils are not ML in age
+                 >< [Some ML in North Devon]
+        ----
+        (4) [Some CM in North Devon]
+
+<Some NC at Oldest ML in North Devon - 3>: If, in north Devon, some NC strata, supporting Carboniferous fossil plants, are at oldest ML in age, 
+ and are not CM in age, then these strata are ML in age #chron-hyp
+
+
+        (1) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Some North Devon NC at Oldest ML]
+        (3) In north Devon, some NC strata supporting Carboniferous fossils are not CM in age
+                 >< [Some CM in North Devon]
+        ----
+        (4) [Some ML in North Devon]
+
+*/
+          
+
+
+
+
+
+
+
+
+# Other Regions Than Devon {color: 9}
+
+
+///// Scottish ORS
+//// CFP  
+<Scottland - CFP - 1>: If strata can be identified by means of their CFs and fossils characteristic of the ORS period 
+are some peculiar fossil fish species, then Scottish ORS strata support such species #cor
+
+    (1) [Characteristic Fossil Principle] 
+    (2) [CF - ORS]
+    ----
+    (3) [Scottish ORS - Fossils]
+
+<Scottland - CFP - 2>: If strata can be identified by means of their CFs and Scottish ORS strata support only peculiar fish fossil species,
+ then some of these are characteristic of the ORS period #cor
+
+    (1) [Characteristic Fossil Principle] 
+    (2) [Scottish ORS - Fossils]
+    ----
+    (3)  [CF - ORS]
+
+
+///// CFAP
+<Scottland - CFAP - 1>: If strata can be identified by means of their CFAs and the FA characteristic of the ORS period 
+encompasses only a few peculiar fish fossils, then Scottish ORS strata support such a FA #cor
+
+    (1) [Characteristic Fossil Assemblage Principle] 
+    (2) [CFA - ORS]
+    ----
+    (3) [Scottish ORS - Fossils]
+
+<Scottland - CFAP - 2>: If strata can be identified by means of their CFAs and the Scottish ORS strata support 
+ only a few peculiar fish fossils, then such a FA is characteristic of the ORS period #cor
+
+    (1) [Characteristic Fossil Assemblage Principle] 
+    (2) [Scottish ORS - Fossils]
+    ----
+    (3)  [CFA - ORS]
+
+
+//// CRTP
+<Scottland - CRTP - 1>: If strata can be identified by means of their CRTs and the RT characteristic of the ORS period 
+is red sandstone, then Scottish ORS strata support red sandstone #cor
+
+    (1) [Characteristic Rock Type Principle] 
+    (2) [CRT - ORS]
+    ----
+    (3) [Scottish ORS - Rocks]
+
+<Scottland - CRTP - 2>: If strata can be identified by means of their CRTs and Scottish ORS strata support red sandstone, 
+ then such a RT is characteristic of the ORS period  #cor
+
+    (1) [Characteristic Rock Type Principle] 
+    (2) [Scottish ORS - Rocks]
+    ----
+    (3) [CRT - ORS] 
+
+
+[Pembrokeshire - Characteristic CAM Rock Type]: Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are of charactersitic CAM rock type #cor
+    +> [CRT - CAM]
+    +> [Pembrokeshire - Appearance]
+
+[Pembrokeshire - CM in Age]: Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are CM in age #cor
+
+[Pembrokeshire - CAM in Age]:  Near Pembrokeshire (southwest Wales), strata which are pre-ORS in appearance are CAM in age #cor
+            -> [Pembrokeshire - CM in Age]
+
+
+<Pembrokeshire - CRTP>: If some strata near Pembrokeshire are of characteristic CAM rock type, then they are CAM in age #cor
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [Pembrokeshire - Characteristic CAM Rock Type]
+    ----
+    (3) [Pembrokeshire - CAM in Age]
+
+
+<Pembrokeshire - LV in Sedimentation>: If some strata are CM in age and pre-ORS in appearance, then there are LV in sedimentation during the CM era #cor
+
+    (1) [Pembrokeshire - Appearance]
+    (2) [Pembrokeshire - CM in Age]
+    ----
+    (3) [LV in Sedimentation - CM]
+
+
+
+/*   
+WEGGELASSEN
+
+(December 1834) *DLB Springs to His Own Defence 
+
+S.106 "in the French Alps some characteristic Oolitic (or more precisely, Liassic)" fossil belemnites occured in strata 
+sandwiched among some containing fossil plants of CM appearance ... Brogniart, a leading specialist on fossil plants, had confirmed 
+that the plants were indeed of CM species"
+
+Belemnites were interpreted as the internal skeletons of cephalopod mollusks and were only known from the Oolitic and the Cretaceous groups
+
+Die Belemniten (Belemnoidea) sind eine diverse Großgruppe fossiler Kopffüßer (Cephalopoda). 
+Sie existierten vom Unterkarbon (Mississippium) bis zum Ende der Kreidezeit
+Die zoologische Klasse der Kopffüßer (Cephalopoda, von altgriechisch κεφαλή kephalē „Kopf“ und ποδ- pod- „Fuß“) ist eine Tiergruppe, 
+die zu den Weichtieren (Mollusca) gehört und nur im Meer vorkommt. 
+
+S.121 "...discovery of Oolitic (Liassic) belemnites and CM plants in closely associated strata in the French Alps. 
+Judging only from organic remains, this would imply the absurdity of a rock both Lias and CM at the same time" 
+
+
+// [French Alps]: In the French Alps, there are some characteristic Liassic fossil belemnites and CM plants in closely associated strata #ev #E7b
+
+[Characteristic CM Fossils in French Alps]: The French alpine plant fossils, closely associated with Oolitic belemnites, are characteristic of the CM era #COA #fos-hyp
+             >< [No Characteristic Fossil]
+
+[Characteristic Oolitc Fossils in French Alps]: The French alpine belemnites, closely associated with CM plant fossils, are characteristic of the Oolitic period #COA #fos-hyp
+            >< [No Characteristic Fossil]
+
+<Characteristic Fossils and French Alps - CFP>: If strata can be identified by their characteristic fossils and no strata are Oolitc and CM at the same time, 
+then there are no strata with characteristic Oolitic fossils and characteristic CM fossils #COA
+    
+    (1)  There are no strata both Oolitic and CM at the same time
+            <+ [Standard Sequence]
+    (2) [Characteristic CM Fossils in French Alps]
+    (3) [Characteristic Oolitc Fossils in French Alps]
+    (4) [Characteristic Fossil Principle]
+    ----
+    (5) There are no strata with both characteristic Oolitic fossils and characteristic CM fossils
+              >< [French Alps]
+
+*/
+
+ 
+
+///// Scottish ORS
+
+[Scottland - Body of Evidence - Fossils]: Concerning Scottish ORS strata, the amount of fossils under study is sufficiently large #cor
+
+[Scottland - Body of Evidence - Region]: Concerning Scottish ORS strata, the region under study is sufficiently large #cor
+
+// CFA - ORS - V2
+<Scottland - CFAP - V2 - 1>: If strata can be identified by means of their CFAs and and the FA characteristic of the ORS period 
+encompasses only a few peculiar fish fossils, then Scottish ORS strata support such a FA #cor
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Scottland - Body of Evidence - Fossils]
+    (3) [Scottland - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    ----
+    (5) [Scottish ORS - Fossils]
+
+<Scottland - CFAP - V2 - 2>: If strata can be identified by means of their CFAs and the Scottish ORS strata support 
+ only a few peculiar fish fossils, then such a FA is characteristic of the ORS period #cor
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Scottland - Body of Evidence - Fossils]
+    (3) [Scottland - Body of Evidence - Region]
+    (4) [Scottish ORS - Fossils]
+    ----
+    (5) [CFA - ORS - V2]
+
+
+//// Scottland as LV
+
+/* Es wird nicht behauptet, dass zu wenig Fossilien oder Gesteinsproben dieser Region in Betracht gezogen wurden, sondern,
+dass die Region selbst nicht ausreichend groß ist */
+
+[Scottish ORS as LV - Fauna and Flora]: Scottish ORS fauna and flora is a local variation #cor
+    +> [LV in Fauna and Flora - Some Time]
+
+[Scottish ORS No LV - Fauna and Flora]: Scottish ORS fauna and flora is no local variation #cor
+    >< [Scottish ORS as LV - Fauna and Flora]
+    +> [Scottland - Body of Evidence - Fossils]
+    +> [Scottland - Body of Evidence - Region]
+
+<LV in Fauna and Flora - Scottland>: If, concering Scottish ORS strata, the region as well as the amount of fossils under study is sufficiently large, 
+then Scottish ORS fauna and flora is no LV #cor
+
+    (1) [Scottland - Body of Evidence - Fossils]
+    (2) [Scottland - Body of Evidence - Region]
+    ----
+    (3) [Scottish ORS No LV - Fauna and Flora]
+
+
+/* WEGGELASSEN wegen Satzlimit:
+
+//CRT - ORS - V2
+<Scottish ORS - CRTP - V2 - 1>: If strata can be identified by means of their CRTs and the RT characteristic of the ORS period 
+is red sandstone, then Scottish ORS strata support red sandstone #cor
+
+    (1) [Characteristic Rock Type Principle - V2] 
+    (2) [Scottland - Body of Evidence - Rock Specimens]
+    (3) [Scottland - Body of Evidence - Region]
+    (4) [CRT - ORS - V2]
+    ----
+    (5) [Scottish ORS - Rocks]
+
+<Scottish ORS - CRTP - V2 - 2>: If strata can be identified by means of their CRTs and Scottish ORS strata support red sandstone, 
+ then such a RT is characteristic of the ORS period #cor
+
+    (1) [Characteristic Rock Type Principle - V2] 
+    (2) [Scottland - Body of Evidence - Rock Specimens]
+    (3) [Scottland - Body of Evidence - Region]
+    (4) [Scottish ORS - Rocks]
+    ----
+    (6) [CRT - ORS - V2]
+
+
+//// Scottland as LV
+
+[Scottish ORS as LV - Sedimentation]: Scottish ORS rock type is a local variation #cor
+    +> [LV in Sedimentation - Some Time]
+
+
+[Scottland - Body of Evidence - Rock Specimens]: Concerning Scottish ORS strata, the amount of rock specimens under study is sufficiently large #cor
+
+[Scottish ORS No LV - Sedimentation]: Scottish ORS rock type is no local variation #cor
+    >< [Scottish ORS as LV - Sedimentation]
+    +> [Scottland - Body of Evidence - Rock Specimens]
+    +> [Scottland - Body of Evidence - Region]
+
+
+<LV in Sedimentation - Scottland>: If, concering Scottish ORS strata, the region as well as the amount of rock specimens under study is sufficiently large, 
+then Scottish ORS rock type is no LV #cor
+
+    (1) [Scottland - Body of Evidence - Rock Specimens]
+    (2) [Scottland - Body of Evidence - Region]
+    ----
+    (3) [Scottish ORS No LV - Fauna and Flora]
+
+*/
+
+
+[Some Valday Hills Strata as ORS]: In the Valday Hills (Russia), some undisturbed strata -  sandwiched between SIL strata and ML strata and supporting both 
+limestones with south Devon fossils as well as sandstones with Scottish ORS fish - are ORS in age #DEV
+
+<Russian Strata as ORS - Superposition>: If, in the Valday Hills (Russia), some undisturbed strata are not ORS in age, 
+than they are not sandwiched between SIL and ML strata #DEV
+
+    (1) [Formation of strata]
+    (2) [Standard Sequence]
+    (3) In the Valday Hills (Russia), some undisturbed strata are not ORS in age
+            >< [Some Valday Hills Strata as ORS]
+    ----
+    (4) In the Valday Hills (Russia), some undisturbed strata are not sandwiched between SIL strata and ML strata
+              ><  [Valday Hills]
+
+
+
+//// Russian ORS as LV
+
+[Russian ORS - Body of Evidence]: Concerning Russian ORS strata, the amount of fossils and rock specimens as well as the region under study is sufficiently large #cha
+ 
+////// CFAP - ORS - II - V2
+
+/*[Valday Hills]: **Based on a sufficiently large amount of fossil species and rock specimens**, it holds:
+ In the Valday Hills (Russia), some strata, sandwiched between undisturbed SIL and ML strata, support
+ both limestones with south Devonian non-Culm fossils and sandstones with peculiar ORS fish #ev*/
+
+<Russian Strata as ORS - CFAP V2 - 1>: If strata can be identified by means of their CFAs and 
+  some strata in the Valday Hills are ORS in age, then those strata support fossils intermediate in character between SIL and ML 
+  as well as peculiar ORS fish. #DEV
+
+        (1) [Characteristic Fossil Assemblage Principle - V2] 
+        (2) [Russian ORS - Body of Evidence]
+        (3) [Some Valday Hills Strata as ORS]
+        (4) [CFA - ORS - III - V2]
+        ----
+        (5) [Valday Hills]
+
+<Russian Strata as ORS - CFAP V2 - 2>: If strata can be identified by means of their characteristic fossil assemblages and 
+  some ORS strata support fossils intermediate in character between SIL and ML 
+  as well as peculiar ORS fish, then such a FA is characteristic of the ORS period #DEV
+
+        (1) [Characteristic Fossil Assemblage Principle - V2] 
+        (2) [Russian ORS - Body of Evidence]
+        (3) [Some Valday Hills Strata as ORS]
+        (4) [Valday Hills]
+        ----
+        (5)  [CFA - ORS - III - V2]
+
+/* WEGGELASSEN wegen Satzlimit
+
+////// CRT - ORS - II - V2
+
+<Russian Strata as ORS - CRTP V2 - 1>: If strata can be identified by means of their characteristic rock types and 
+  some strata in the Valday Hills are ORS in age, then those strata support limestones as well as red sandstone. #DEV
+
+        (1) [Characteristic Rock Type Principle - V2] 
+        (2) [Russian ORS - Body of Evidence]
+        (3) [Some Valday Hills Strata as ORS] 
+        (4) [CRT - ORS - II - V2]
+        ----
+        (5) [Valday Hills]
+
+<Russian Strata as ORS - CRTP V2 - 2>: If strata can be identified by means of their characteristic rock types and 
+  some ORS strata support limestones as well as red sandstone, then such rock types are characteristic of the ORS period. #DEV
+
+        (1) [Characteristic Rock Type Principle - V2] 
+        (2) [Russian ORS - Body of Evidence]
+        (3) [Some Valday Hills Strata as ORS] 
+        (4) [Valday Hills]
+        ----
+        (5) [CRT - ORS - II - V2]
+*/
+
+ 
+
+# Dating of the Main Culm  {color: 4}
+
+[Some Main Culm as CM]: Some part of the main Culm is CM in age #pri #chron-hyp
+
+[Some Main Culm as ML]: Some part of the main Culm is ML in age #pri #chron-hyp
+
+[Some Main Culm as ORS]: Some part of the main Culm is ORS in age #pri #chron-hyp
+
+[Some Main Culm as SIL]: Some part of the main Culm is SIL in age #pri #chron-hyp
+
+[Some Main Culm as CAM]: Some part of the main Culm is CAM in age #pri #chron-hyp
+
+[No Main Culm as CM]: No part of the main Culm is CM in age #pri #chron-hyp
+        >< [Some Main Culm as CM]
+
+[No Main Culm as ML]: No part of the main Culm is ML in age #pri #chron-hyp
+        >< [Some Main Culm as ML]
+
+[No Main Culm as ORS]: No part of the main Culm is ORS in age #pri #chron-hyp
+        >< [Some Main Culm as ORS]
+
+[No Main Culm as SIL]: No part of the main Culm is SIL in age #pri #chron-hyp
+        >< [Some Main Culm as SIL]
+
+[No Main Culm as CAM]: No part of the main Culm is CAM in age #pri #chron-hyp
+        >< [Some Main Culm as CAM]
+
+
+
+[Main Culm as Post-Primary and Pre-NRS]: The MC strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
+
+<Standard Sequence as Partition - Main Culm>: If some MC strata are neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+    
+    (1) [No Main Culm as CM]        
+    (2) [No Main Culm as ML]
+    (3) [No Main Culm as ORS]
+    (4) [No Main Culm as SIL]
+    (5) [Standard Sequence]
+    (6) [Main Culm as Post-Primary and Pre-NRS]
+    ----
+    (7) [Some Main Culm as CAM]
+
+
+/// MC as Conformable Formation
+
+[MC at Oldest ML]: MC strata are at oldest ML in age #chron-hyp
+        +> [No Main Culm as SIL]
+        +> [No Main Culm as CAM]
+        +> [No Main Culm as ORS]
+
+ <MC at Oldest ML> #chron-hyp
+       
+       (1) [No Main Culm as ORS]
+       (2) [No Main Culm as SIL]
+       (3) [No Main Culm as CAM]
+       ----
+       (4) [MC at Oldest ML]
+
+<MC as Conformable Formation - ML Missing 1>: If there are some CM but no ML MC strata, then MC strata are CM in age #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as CM]
+        (3) [No Main Culm as ML]
+        ----
+        (4) [Main Culm as CM]
+
+<MC as Conformable Formation - ML Missing 2>: If there are some ORS but no ML MC strata, then there are no CM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ORS]
+        (3) [No Main Culm as ML]
+        ----
+        (4) [No Main Culm as CM]
+
+<MC as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS MC strata, then there are no SIL or CAM MC strata, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ML]
+        (3) [No Main Culm as ORS]
+        ----
+        (4) [MC at Oldest ML]
+
+
+<MC as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS MC strata, then there are no ML or CM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as SIL]
+        (3) [No Main Culm as ORS]
+        ----
+        (4) [MC at Youngest SIL]
+
+<MC as Conformable Formation - SIL Missing 1>: If there are some ORS but no SIL MC strata, then there are no CAM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ORS]
+        (3) [No Main Culm as SIL]
+        ----
+        (4) [No Main Culm as CAM]
+
+<MC as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL MC strata, then there are no ORS, ML or CM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as CAM]
+        (3) [No Main Culm as SIL]
+        ----
+        (4) [Main Culm as CAM]
+
+///// MC strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - MC>: If the MC strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as CM]
+        (3) [Some Main Culm as ORS]
+        ----
+        (4) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - MC>: If the MC strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ML]
+        (3) [Some Main Culm as SIL]
+        ----
+        (4) [No Non-Culm as ORS]
+
+<Culm Not Intercalated - No NC as SIL - MC>: If the MC strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some Main Culm as ORS]
+        (3) [Some Main Culm as CAM]
+        ----
+        (4) [No Non-Culm as SIL]
+
+
+/// MC as CAM CRTP       
+[Main Culm as CAM]: The whole MC strata are CAM in age #chron-hyp
+        +> [No Main Culm as CM]
+        +> [No Main Culm as ML]
+        +> [No Main Culm as ORS]
+        +> [No Main Culm as SIL]
+        +> [Some Main Culm as CAM]
+
+<Main Culm as CAM> #chron-hyp
+
+        (1) [No Main Culm as CM]
+        (2) [No Main Culm as ML]
+        (3) [No Main Culm as ORS]
+        (4) [No Main Culm as SIL]
+        (5) [Some Main Culm as CAM]
+        ----
+        (6) [Main Culm as CAM]
+
+<Main Culm as CAM - CRTP - Devon>: If strata can be identified by means of their characteristic rock type and 
+the MC strata are CAM in age, then they are of characteristic CAM rock type #GRE
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [Main Culm as CAM]
+    ----
+    (3) [MC CRT - CAM]
+ 
+<Main Culm as CAM - CRTP - Devon - 2>: If strata can be identified by means of their characteristic rock type and 
+the MC strata are of characteristic CAM rock type, then they are are CAM in age #GRE
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [MC CRT - CAM]
+    ----
+    (3) [Main Culm as CAM]
+
+[Main Culm as CM]: The whole Main Culm strata are CM in age #chron-hyp
+        +> [Some Main Culm as CM]
+        +> [No Main Culm as ML]
+        +> [No Main Culm as ORS]
+        +> [No Main Culm as SIL]
+        +> [No Main Culm as CAM]
+
+<Main Culm as CM> #chron-hyp
+
+        (1) [Some Main Culm as CM]
+        (2) [No Main Culm as ML]
+        (3) [No Main Culm as ORS]
+        (4) [No Main Culm as SIL]
+        (5) [No Main Culm as CAM]
+        ----
+        (6) [Main Culm as CM]
+    
+ 
+
+// CM Plants in Devon Culm: Near Bideford (North Devon), there are CM fossil plants in the main part of the Culm strata 
+
+[Characteristic CM Fossils in Main Culm]: MC strata support fossil plants which are characteristic of the CM era (near Bideford, North Devon) #COA #fos-hyp
+    +> [CM Plants in Devon Culm]
+
+<Main Culm as CM - CFP>:If strata can be identified by means of their characteristic fossils and 
+the MC strata support characteristic CM fossils, then they are CM in age #COA
+
+    (1) [Characteristic Fossil Principle] 
+    (2) [Characteristic CM Fossils in Main Culm]
+    ----
+    (3) [Main Culm as CM]
+
+<Main Culm as CM - CFP -2>:If strata can be identified by means of their characteristic fossils and 
+the MC strata are CM in age, then they support characteristic CM fossils #COA
+
+    (1) [Characteristic Fossil Principle] 
+    (3) [Main Culm as CM]
+    ----
+    (4) [Characteristic CM Fossils in Main Culm]
+
+ 
+
+
+//// MC FA - No LV
+
+/* Zu Beginn der Debatte wird zunächst von manchen behauptet, dass zu wenig Fossilien des MC in Betracht gezogen wurden. 
+(z.B von DLB) Später, spätestens zum Zeitpunkt S9 nach Einführung von PHIL's Sammlung, ist dies nicht mehr der Fall. 
+(Theorietisch könnte noch jemand behaupten dass die Region selbst nicht aussreichend groß ist)*/
+
+[MC - FA - No LV]: MC FA is no local variation that is (i) the region under study as well as (ii) the amount 
+ of fossil species is sufficiently large #cha
+
+/* Hier (S.239/240 LIN) lediglich folgendes behauptet: ""a few species only" from the Culm were the same as those in the ordinary CM, while "the bulk" 
+of the specimens belonged to species he could not match from elsewhere" */
+
+
+<No Main Culm as CM - CFAP V2 - Devon - 1>: If strata can be identified by means of their CFAs and 
+ MC strata are CM in age, then most of their fossil species are known from other CM strata #GRE
+
+        (1) [Characteristic Fossil Assemblage Principle - V2] 
+        (2) [MC - FA - No LV]
+        (4) [Main Culm as CM]
+        ----
+        (5) [MC - FA]
+
+<No Main Culm as CM - CFAP V2 - Devon - 2>: If strata can be identified by means of their CFAs and 
+most of fossil species supported by MC strata are known from CM strata, then they are CM in age #GRE
+
+        (1) [Characteristic Fossil Assemblage Principle - V2] 
+        (2) [MC - FA - No LV]
+        (4) [MC - FA]
+        ----
+        (5) [Main Culm as CM]
+ 
+
+
+
+# Dating of the Culm Limestone  {color: 5}
+
+
+[Some BCL as CM]: Some part of the black Culm Limestone is CM in age #pri #chron-hyp
+
+[Some BCL as ML]: Some part of the black Culm Limestone is ML in age #pri #chron-hyp
+
+[Some BCL as ORS]: Some part of the black Culm Limestone is ORS in age #pri #chron-hyp
+
+[Some BCL as SIL]: Some part of the black Culm Limestone is SIL in age #pri #chron-hyp
+
+[Some BCL as CAM]: Some part of the black Culm Limestone is CAM in age #pri #chron-hyp
+
+[No BCL as CM]: No part of the black Culm Limestone is CM in age #pri #chron-hyp
+        >< [Some BCL as CM]
+
+[No BCL as ML]: No part of the black Culm Limestone is ML in age #pri #chron-hyp
+        >< [Some BCL as ML]
+
+[No BCL as ORS]: No part of the black Culm Limestone is ORS in age #pri #chron-hyp
+        >< [Some BCL as ORS]
+
+[No BCL as SIL]: No part of the black Culm Limestone is SIL in age #pri #chron-hyp
+        >< [Some BCL as SIL]
+
+[No BCL as CAM]: No part of the black Culm Limestone is CAM in age #pri #chron-hyp
+        >< [Some BCL as CAM]
+
+
+
+
+[BCL as Post-Primary and Pre-NRS]: The black Culm Limestone is older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
+<Standard Sequence as Partition - BCL>: If some part of the black Culm Limestone is neiter CM, ML, ORS nor SIL in age, then it is CAM in age #pri #chron-hyp
+    
+    (1) [No BCL as CM]  
+    (2) [No BCL as ML] 
+    (3) [No BCL as ORS] 
+    (4) [No BCL as SIL]
+    (5) [Standard Sequence]
+    (6) [BCL as Post-Primary and Pre-NRS]
+    ----
+    (7) [Some BCL as CAM]
+
+
+
+/// BCL as Conformable Formation
+
+
+[BCL at Oldest ML]: BCL strata are at oldest ML in age #chron-hyp
+        +> [No BCL as ORS]
+        +> [No BCL as SIL]
+        +> [No BCL as CAM]
+
+ <BCL at Oldest ML> #chron-hyp
+       
+       (1) [No BCL as ORS]
+       (2) [No BCL as SIL]
+       (3) [No BCL as CAM]
+       ----
+       (4) [BCL at Oldest ML]
+
+
+<BCL as Conformable Formation - ML Missing 1>: If there are some CM but no ML BCL strata, then there are no ORS, SIL or CAM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CM]
+        (3) [No BCL as ML]
+        ----
+        (4) [BCL at Oldest ML]
+
+<BCL as Conformable Formation - ML Missing 2>: If there are some ORS but no ML BCL strata, then there are no CM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [No BCL as ML]
+        ----
+        (4) [No BCL as CM]
+
+<BCL as Conformable Formation - ORS Missing 1>: If there are some ML but no ORS BCL strata, then there are no SIL or CAM BCL strata, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ML]
+        (3) [No BCL as ORS]
+        ----
+        (4) [BCL at Oldest ML]
+
+<BCL as Conformable Formation - ORS Missing 2>: If there are some SIL but no ORS BCL strata, then there are no ML or CM BCL strata, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as SIL]
+        (3) [No BCL as ORS]
+        ----
+        (4) [BCL at Youngest SIL]
+
+<BCL as Conformable Formation - SIL Missing 1>: If there are some ORS but no SIL BCL strata, then there are no CAM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [No BCL as SIL]
+        ----
+        (4) [No BCL as CAM]
+
+<BCL as Conformable Formation - SIL Missing 2>: If there are some CAM but no SIL BCL strata, then BCL strata are CAM in age #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CAM]
+        (3) [No BCL as SIL]
+        ----
+        (4) [BCL as CAM]
+
+///// BCL strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - BCL>: If the BCL strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as CM]
+        (3) [Some BCL as ORS]
+        ----
+        (4) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - BCL>: If the BCL strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ML]
+        (3) [Some BCL as SIL]
+        ----
+        (4) [No Non-Culm as ORS]
+
+
+<Culm Not Intercalated - No NC as SIL - BCL>: If the BCL strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Some BCL as ORS]
+        (3) [Some BCL as CAM]
+        ----
+        (4) [No Non-Culm as SIL]
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+[BCL as CAM]: The whole BCL strata are CAM in age #chron-hyp
+        +> [No BCL as CM]  
+        +> [No BCL as ML] 
+        +> [No BCL as ORS] 
+        +> [No BCL as SIL]
+        +> [Some BCL as CAM]   
+
+<BCL as CAM> #chron-hyp
+
+        (1) [No BCL as CM]
+        (2) [No BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [Some BCL as CAM]
+        ----
+        (6) [BCL as CAM]
+
+
+<BCL as CAM - CRTP - Devon>: If strata can be identified by means of their characteristic rock type and 
+the BCL strata are CAM in age, then they are of characteristic CAM rock type #GRE
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [BCL as CAM]
+    ----
+    (3)  [BCL CRT - CAM]
+        
+
+<BCL as CAM - CRTP - Devon - 2>: If strata can be identified by means of their characteristic rock type and 
+the BCL strata are of characteristic CAM rock type, then they are CAM in age #GRE
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [BCL CRT - CAM]
+    ----
+    (3)  [BCL as CAM]
+
+
+[BCL as ML]: The BCL strata are ML in age #chron-hyp
+            +> [No BCL as CM]
+            +> [Some BCL as ML]
+            +> [No BCL as ORS]
+            +> [No BCL as SIL]
+            +> [No BCL as CAM]
+
+<BCL as ML> #chron-hyp
+
+        (1) [No BCL as CM]
+        (2) [Some BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [No BCL as CAM]
+        ----
+        (6) [BCL as ML] 
+
+
+/// ========== BCL as ML ===========
+
+//// CFAP V2
+
+/* Zu Beginn der Debatte wird zunächst von manchen behauptet, dass zu wenig Fossilien des BCL in Betracht gezogen wurden. 
+(z.B von DLB? Vielleicht auch MUR?) Später, spätestens zum Zeitpunkt S9 nach Einführung von PHIL's Sammlung, ist dies nicht mehr der Fall. 
+(Theorietisch könnte noch jemand behaupten dass die Region selbst nicht aussreichend groß ist)*/
+
+[BCL - FA - No LV]: BCL FA is no local variation that is (i) the region under study as well as (ii) the amount 
+ of fossil species is sufficiently large #cha
+
+/* Yorkshire gilt zu jedem Zeitpunkt als Referenz für ML FA */
+
+[Yorkshire ML - FA - No LV]: Yorkshire ML FA is no local variation that is (i) the region under study as well as (ii) the amount 
+ of fossil species is sufficiently large #cha
+
+
+<BCL as ML - CFAP V2 - 1>: If strata can be identified by means of their CFAs and 
+the BCL strata are ML in age, then most of their fossil species are known from Yorkshire ML strata #DEV
+
+        (1) [BCL - FA - No LV]
+        (2) [Yorkshire ML - FA - No LV]
+        (3) [Characteristic Fossil Assemblage Principle - V2] 
+        (4) [BCL as ML]
+        ----
+        (5) [BCL - FA]
+                 
+<BCL as ML - CFAP V2 - 2>: If strata can be identified by means of their CFAs and 
+most of the fossil species supported by BCL strata are known from Yorkshire ML strata, then they are are ML in age #DEV
+
+        (1) [BCL - FA - No LV]
+        (2) [Yorkshire ML - FA - No LV]
+        (3) [Characteristic Fossil Assemblage Principle - V2] 
+        (4) [BCL - FA]
+        ----
+        (5) [BCL as ML]
+
+
+/* HIER WEGGELASSEN, weil aufgrund von 
+[ML and Pennines]: All over the Pennines, there is a huge lateral variation in the ML strata RT #ev
+folgendes nicht behauptet werden kann: [Yorkshire ML RT - No LV]
+
+//// CRTP V2
+
+//[BCL - RT]: The rock type supported by BCL strata are known from Yorkshire ML strata #ev
+<BCL as ML - CRTP V2 - 1>: If strata can be identified by means of their CRTs and 
+BCL strata are ML in age, then their RT is known from Yorkshire ML strata #COA
+
+        (1) [Characteristic Rock Type Principle - V2]
+        (2) [Devon ML - Body of Evidence - Rocks]
+        (3) [Devon ML - Body of Evidence - Region]
+        (4) [BCL as ML]
+        (5) [Yorkshire ML RT - No LV]
+        ----
+        (6) [BCL - RT]
+
+<BCL as ML - CRTP V2 - 2>: If strata can be identified by means of their CRTs and 
+ the RT supported by BCL strata is known from Yorkshire ML strata, then they are ML in age #COA
+
+        (1) [Characteristic Rock Type Principle - V2]
+        (2) [Devon ML - Body of Evidence - Rocks]
+        (3) [Devon ML - Body of Evidence - Region]
+        (4) [BCL - RT]
+        (5) [Yorkshire ML RT - No LV]
+        ----
+        (6) [BCL as ML]
+*/ 
+
+
+
+# Dating of the Non-Culm {color: 6}
+
+[Some Non-Culm as CM]: Some part of the non-Culm strata is CM in age #pri #chron-hyp
+
+[Some Non-Culm as ML]: Some part of the non-Culm strata is ML in age #pri #chron-hyp
+
+[Some Non-Culm as ORS]: Some part of the non-Culm strata is ORS in age #pri #chron-hyp
+
+[Some Non-Culm as SIL]: Some part of the non-Culm strata is SIL in age #pri #chron-hyp
+
+[Some Non-Culm as CAM]: Some part of the non-Culm strata is CAM in age #pri #chron-hyp
+
+[No Non-Culm as CM]: No part of the non-Culm strata is CM in age #pri #chron-hyp
+        >< [Some Non-Culm as CM]
+
+[No Non-Culm as ML]: No part of the non-Culm strata is ML in age #pri #chron-hyp
+         >< [Some Non-Culm as ML]
+
+[No Non-Culm as ORS]: No part of the non-Culm strata is ORS in age #pri #chron-hyp
+         >< [Some Non-Culm as ORS]
+
+[No Non-Culm as SIL]: No part of the non-Culm strata is SIL in age #pri #chron-hyp
+         >< [Some Non-Culm as SIL]
+
+[No Non-Culm as CAM]: No part of the non-Culm strata is CAM in age #pri #chron-hyp
+         >< [Some Non-Culm as CAM]
+
+
+[Non-Culm as Post-Primary and Pre-NRS]: The non-Culm strata are older than Primary strata and younger than New Red Sandstone strata #pri #chron-hyp
+
+<Standard Sequence as Partition - Non-Culm>: If some part of the non-Culm strata is neiter CM, ML, OR nor SIL in age, then it is CAM in age #pri #chron-hyp
+    
+    (1) [No Non-Culm as CM]            
+    (2) [No Non-Culm as ML]           
+    (3) [No Non-Culm as ORS]           
+    (4) [No Non-Culm as SIL]           
+    (5) [Standard Sequence]
+    (6) [Non-Culm as Post-Primary and Pre-NRS]
+    ----
+    (7) [Some Non-Culm as CAM]
+
+
+
+// S.101 The reliance on rock type or "mineralogical character" above fossil content as a crieterion of relative age,
+// implicitely made by DLB, and explicitely by GREE
+
+
+[Non-Culm as CAM]: The whole Non-Culm strata are CAM in age #chron-hyp
+        +> [No Non-Culm as CM]  
+        +> [No Non-Culm as ML] 
+        +> [No Non-Culm as ORS] 
+        +> [No Non-Culm as SIL]
+        +> [Some Non-Culm as CAM]   
+
+<Non-Culm as CAM> #chron-hyp
+
+        (1) [No Non-Culm as CM]
+        (2) [No Non-Culm as ML]
+        (3) [No Non-Culm as ORS]
+        (4) [No Non-Culm as SIL]
+        (5) [Some Non-Culm as CAM]
+        ----
+        (6) [Non-Culm as CAM]
+
+<Non-Culm as CAM - CRTP - Devon>: If strata can be identified by means of their characteristic rock type and 
+the non-Culm strata are CAM in age, then they are of characteristic CAM rock type #GRE
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [Non-Culm as CAM]  
+    ----
+    (3)  [NC CRT - CAM]
+
+
+<Non-Culm as CAM - CRTP - Devon - 2>: If strata can be identified by means of their characteristic rock type and 
+the non-Culm strata are of characteristic CAM rock type, then they are CAM in age  #GRE
+
+    (1) [Characteristic Rock Type Principle]
+    (2) [NC CRT - CAM]
+    ----
+    (3) [Non-Culm as CAM]
+
+
+[Non-Culm as ORS]: The whole Non-Culm strata are ORS in age #chron-hyp
+        +> [No Non-Culm as CM]  
+        +> [No Non-Culm as ML] 
+        +> [Some Non-Culm as ORS] 
+        +> [No Non-Culm as SIL]
+        +> [No Non-Culm as CAM]   
+
+<Non-Culm as ORS> #chron-hyp
+
+        (1) [No Non-Culm as CM]
+        (2) [No Non-Culm as ML]
+        (3) [Some Non-Culm as ORS]
+        (4) [No Non-Culm as SIL]
+        (5) [No Non-Culm as CAM]
+        ----
+        (6) [Non-Culm as ORS]
+         
+
+
+<Some Non-Culm as SIL - CFP >: If strata can be identified by means of their characteristic fossils and 
+the non-Culm strata around Pilton support characteristic SIL fossils, then they are SIL in age #COA
+
+    (1) [Characteristic Fossil Principle] 
+    (2) [SIL Fossils in North Devon] 
+    ----
+    (3) [Some Non-Culm as SIL]
+
+ 
+
+
+
+[Holoptychius in North Devon]: In north Devon, some non-Culm strata support peculiar fish fossils known from Scottish ORS strata
+        >< [No Holoptychius in North Devon]
+
+
+//// ORS in North Devon === CFP
+
+//[CF - ORS]: Some peculiar fish fossils are characteristic of the ORS period #cha
+<No ORS Non-Culm in North Devon - CFP - 1>: If strata can be identified by means of their CFs and 
+ some north Devonian non-Culm strata are ORS in age, then they support characteristic ORS fish fossils #COA
+
+    (1) [Characteristic Fossil Principle] 
+    (2) [CF - ORS]
+    (3) [Some ORS in North Devon]
+    ----
+    (4) [Holoptychius in North Devon]
+    
+
+<No ORS Non-Culm in North Devon - CFP - 2>: If strata can be identified by means of their CFs and 
+some north Devonian non-Culm strata support characteristic ORS fish fossils, then they are ORS in age #COA
+
+    (1) [Characteristic Fossil Principle] 
+    (2) [CF - ORS]
+    (3) [Holoptychius in North Devon]
+    ----
+    (4) [Some ORS in North Devon]
+
+
+//// ORS in North Devon ===== CFAP - V2
+
+/// [No Holoptychius in North Devon]: In north Devon, the whole non-Culm strata do not support peculiar fish fossils like for example the **Holoptychius** #ev
+[Some North Devonian Strata - FA - 1]: Some north Devonian NC strata support few fossils and most of these are peculiar fish fossils only known from the ORS #DEV
+        >< [No Holoptychius in North Devon]
+
+/// [Carboniferous Plants in North Devon]: In north Devon, some NC strata support Carboniferous plant fossils #ev 
+[Some North Devonian Strata - FA - 2]: Some north Devonian NC strata support a FA intermediate in character between those of SIL and ML strata #DEV
+of fossils (but no peculiar ORS fish fossils) #cha
+    -> [Some North Devonian Strata - FA - 1]
+    +> [Carboniferous Plants in North Devon]
+
+[Some ORS in North Devon]: In north Devon, some NC strata are ORS in age #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+    <+ [Non-Culm as ORS]
+
+/// CFA - ORS - V2
+
+<ORS in North Devon - CFA ORS V2 - 1>: If strata can be identified by means of their CFAs and 
+ some north Devonian NC strata are ORS in age, then these strata support few fossils and most of these are peculiar fish fossils 
+ only known from the ORS #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [Some ORS in North Devon]
+    ----
+    (6) [Some North Devonian Strata - FA - 1]
+           
+/* UNNÖTIG
+<ORS in North Devon - CFA ORS V2 - 2>: If strata can be identified by means of their CFAs and 
+ some north Devonian NC strata support few fossils and most of these are peculiar fish fossils only known from the ORS, 
+ then these strata are ORS in age #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [Some North Devonian Strata - FA - 1]
+    ----
+    (6) [Some ORS in North Devon]*/
+
+
+/// CFA - ORS - II - V2           
+<ORS in North Devon - CFA ORS II V2 - 1>: If strata can be identified by means of their CFAs and 
+some north Devonian NC strata are ORS in age, then these strata support a FA intermediate in character between those of SIL and ML strata #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - II - V2]
+    (5) [Some ORS in North Devon]
+    ----
+    (6) [Some North Devonian Strata - FA - 2]
+           
+
+<ORS in North Devon - CFA ORS II V2 - 2>: If strata can be identified by means of their CFAs and 
+ some north Devonian NC strata support a FA intermediate in character between those of SIL and ML strata, 
+ then these strata are ORS in age #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - II - V2]
+    (5) [Some North Devonian Strata - FA - 2]
+    ----
+    (6) [Some ORS in North Devon]
+
+
+//// NC as LV ----- Fossils
+
+[Non-Culm - Body of Evidence - Fossils]:Concerning Devon Non-Culm strata, the amount of fossils under study is sufficiently large
+
+[Non-Culm - Body of Evidence - Region]:Concerning Devon Non-Culm strata, the region under study is sufficiently large
+
+[Devon NC as LV - Fauna and Flora]: Devon NC fauna and flora is a local variation #DEV
+    +> [LV in Fauna and Flora - Some Time]
+   
+[Devon NC No LV - Fauna and Flora]: Devon NC fauna and flora is no local variation
+    >< [Devon NC as LV - Fauna and Flora]
+    +> [Non-Culm - Body of Evidence - Fossils]
+    +> [Non-Culm - Body of Evidence - Region]
+
+<LV in Fauna and Flora - Devon NC>: If, concerning Devon NC strata, the region as well as the amount of fossils under study is sufficiently large, 
+then Devon NC  fauna and flora is no LV 
+
+    (1) [Non-Culm - Body of Evidence - Fossils]
+    (2) [Non-Culm - Body of Evidence - Region]
+    ----
+    (3) [Devon NC No LV - Fauna and Flora]
+ 
+
+//// ORS in South Devon
+[Some South Devon LSTs as ORS]: In south Devon, around Tor Bay and Netwon Abott, the limestones are (upper) ORS in age #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+    <+ [Non-Culm as ORS]
+
+[South Devon LSTs - FA - 1]: South Devon LSTs around Tor Bay and Netwon Abott support a FA 
+ encompassing only a few fossils, most of them fish fossils only known from the ORS #fos-hyp
+    -> [South Devon LSTs - FA - 2]
+
+[South Devon LSTs - FA - 2]: South Devon limestones, around Tor Bay and Netwon Abott, support a FA 
+ more similar to that of ML strata than that of SIL strata #fos-hyp
+     +> [South Devonian Fossil Fauna]
+
+
+//// ORS in South Devon ===== CFAP - V2
+/// CFA - ORS - II - V2
+<South Devon LSTs as ORS - CFA ORS II V2 - 1>: If strata can be identified by means of their CFAs and 
+ in south Devon, around Tor Bay and Netwon Abott, the limestones are upper ORS in age, 
+ then their CFA are more similar to those of ML strata than SIL strata #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - II - V2]
+    (5) [Some South Devon LSTs as ORS]
+    ----
+    (6) [South Devon LSTs - FA - 2]
+           
+
+<South Devon LSTs as ORS - CFA ORS II V2 - 2>: If strata can be identified by means of their CFAs and 
+ in south Devon, around Tor Bay and Netwon Abott, the limestones support a CFA more similar to those of ML strata than SIL strata,
+ then these are upper ORS in age #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2)  [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - II - V2]
+    (5) [South Devon LSTs - FA - 2]
+    ----
+    (6) [Some South Devon LSTs as ORS]
+
+/// CFA - ORS - V2
+<South Devon LSTs as ORS - CFA ORS V2 - 1>: If strata can be identified by means of their CFAs and 
+ in south Devon, around Tor Bay and Netwon Abott, the limestones are ORS in age, 
+ then their FAs encompass only a few fossils, most of them fish fossils only known from the ORS #GRE
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2)  [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [Some South Devon LSTs as ORS]
+    ----
+    (6) [South Devon LSTs - FA - 1]
+
+<South Devon LSTs as ORS - CFA ORS V2 - 2>: If strata can be identified by means of their CFAs and 
+  in south Devon, around Tor Bay and Netwon Abott, the limestones support a CFA encompassing only a few fossils,
+  most of them fish fossils only known from the ORS, then they are ORS in age #GRE
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [South Devon LSTs - FA - 1]
+    ----
+    (6) [Some South Devon LSTs as ORS]
+
+
+
+
+
+/* WEGGELASSEN WEGEN SATZLIMIT
+
+//// NC as LV ----- Sedimentation
+
+[Non-Culm - Body of Evidence - Rock Specimens]: Concerning Devon Non-Culm strata, the amount of rock specimens under study is sufficiently large
+
+[Devon NC as LV - Sedimentation]: Devon NC rock type is a local variation #DEV
+    +> [LV in Sedimentation - Some Time]
+
+[Devon NC No LV - Sedimentation]: Devon NC rock type is no local variation
+    >< [Devon NC as LV - Sedimentation]
+    +> [Non-Culm - Body of Evidence - Rock Specimens]
+    +> [Non-Culm - Body of Evidence - Region]
+
+
+<LV in Sedimentation - Devon NC>: If, concering Devon Non-Culm strata, the region as well as the amount of rock specimens under study is sufficiently large, 
+then Devon NC rock type is no LV 
+
+    (1) [Non-Culm - Body of Evidence - Rock Specimens]
+    (2) [Non-Culm - Body of Evidence - Region]
+    ----
+    (3) [Devon NC No LV - Sedimentation]
+
+
+
+//// ORS Between South Devon LSTs
+
+ [ORS Between South Devonian LSTs]: In south Devon, above the Plymouth limestone but below the Great Limestone, the non-Culm strata are ORS in age #DEV #chron-hyp
+    +> [Some Non-Culm as ORS]
+    <+ [Non-Culm as ORS]
+
+/// ===== CRT - ORS - V2 ======  
+
+[Between South Devon LSTs - CRT]: NC strata above the Plymouth but below the Great Limestone support red sandstone #roc-hyp
+            <+ [Reddish Strata in South Devon]
+            -> [NC CRT - CAM]
+
+<ORS Between South Devon LSTs - CRT ORS V2 - 1>: If strata can be identified by means of their CRTs and some south Devonian NC strat support red sandstone, 
+ then they are ORS in age #GRE
+
+    (1) [Characteristic Rock Type Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Rock Specimens]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CRT - ORS - V2]
+    (5) [Between South Devon LSTs - CRT]
+    ----
+    (6) [ORS Between South Devonian LSTs]
+
+<ORS Between South Devon LSTs - CRT ORS V2 - 2>: If strata can be identified by means of their CRTs and some south Devonian NC strata are ORS in age, 
+ then they support such red sandstone #GRE
+
+    (1) [Characteristic Rock Type Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Rock Specimens]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CRT - ORS - V2]
+    (5)  [ORS Between South Devonian LSTs]
+    ----
+    (6) [Between South Devon LSTs - CRT]
+
+//// ===== CFA - ORS - V2 ======  
+
+[Between South Devonian LSTs - FA - 1]: NC strata above the Plymouth but below the Great Limestone support few fossils 
+ and most of these are peculiar fish fossils only known from the ORS #fos-hyp
+    
+[Between South Devonian LSTs - FA - 2]: NC strata above the Plymouth but below the Great Limestone contain everywhere abundance 
+of fossils (but no peculiar ORS fish fossils) #fos-hyp
+    <+ [Reddish Strata in South Devon]
+    -> [Between South Devonian LSTs - FA - 1]
+
+<ORS Between South Devon LSTs - CFA ORS V2 - 1>: If strata can be identified by means of their CFAs and 
+some south Devonian NC strata are ORS in age, then these strata support few fossils (most of them peculiar fish) #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [ORS Between South Devonian LSTs]
+    ----
+    (6) [Between South Devonian LSTs - FA - 1]
+           
+
+<ORS Between South Devon LSTs - CFA ORS V2 - 2>: If strata can be identified by means of their CFAs and 
+some south Devonian NC strata support few fossils (most of them peculiar fish), then these strata are ORS in age #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [Between South Devonian LSTs - FA - 1]
+    ----
+    (6) [ORS Between South Devonian LSTs] 
+
+*/
+
+  
+
+
+
+
+[NC - FA - 1]: NC strata support few fossils and most of these are peculiar fish fossils only known from the ORS #fos-hyp
+
+[NC - FA - 2]: NC strata support fossils intermediate in character between SIL and ML #fos-hyp
+   +> [Non-Culm Fossil Mixture - Devon]
+   +> [South Devon LSTs - FA - 2]
+   +> [Some North Devonian Strata - FA - 2]
+   -> [NC - FA - 1]
+
+
+<NC as ORS - CFA ORS II V2 - 1>: If strata can be identified by means of their CFAs and 
+NC strata are ORS in age, then these strata support a FA in character between those of ML strata than SIL strata #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - II - V2]
+    (5) [Non-Culm as ORS]
+    ----
+    (6) [NC - FA - 2]
+           
+
+<NC as ORS - CFA ORS II V2 - 2>: If strata can be identified by means of their CFAs and 
+NC strata support a FA in character between those of ML strata than SIL strata, then these strata are ORS in age #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - II - V2]
+    (5) [NC - FA - 2]
+    ----
+    (6) [Non-Culm as ORS]
+
+
+<NC as ORS - CFA ORS V2 - 1>: If strata can be identified by means of their CFAs and 
+NC strata are ORS in age, then these strata support few fossils and most of these are peculiar fish fossils only known from the ORS #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [Non-Culm as ORS]
+    ----
+    (6) [NC - FA - 1]
+           
+
+<NC as ORS - CFA ORS V2 - 2>: If strata can be identified by means of their CFAs and 
+NC strata support support few fossils and most of these are peculiar fish fossils only known from the ORS, then these strata are ORS in age #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - V2]
+    (5) [NC - FA - 1]
+    ----
+    (6) [Non-Culm as ORS]
+
+
+//// Verneinung von NC-BoE-R/F
+
+[No ORS Fish in Devon Non-Culm]: In Devon Non-Culm strata, there are no peculiar fish fossils known from Scottish ORS strata
+
+[ORS Fish in Devon Non-Culm]: In Devon, some Non-Culm strata support peculiar fish fossils known from Scottish ORS strata
+    >< [No ORS Fish in Devon Non-Culm]
+
+[NC - FA - 3]: NC strata support fossils intermediate in character between SIL and ML and peculiar fish fossils only known from the ORS #fos-hyp
+    +> [NC - FA - 2]
+    +> [ORS Fish in Devon Non-Culm]
+
+
+<NC as ORS - CFA ORS III V2>: If strata can be identified by means of their CFAs and 
+NC strata are ORS in age, then these strata support a FA intermediate in character between those of ML strata than SIL strata 
+and peculiar fish fossils only known from the ORS #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Fossils]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CFA - ORS - III - V2]
+    (5) [Non-Culm as ORS]
+    ----
+    (6) [NC - FA - 3]
+
+
+
+//// Scottland and Non-Culm as ORS
+
+[NC and Scottish Strata - FA]: NC and Scottish strata support together fossils intermediate in character between SIL and ML 
+and peculiar fish fossils only known from the ORS #fos-hyp
+    +> [NC - FA - 2]
+    +> [Scottish ORS - Fossils]
+
+<NC and Scottish Strata - FA>
+
+    (1) [NC - FA - 2]
+    (2) [Scottish ORS - Fossils]
+    ----
+    (3) [NC and Scottish Strata - FA]
+
+
+[NC and Scottish Strata - Body of Evidence]: Considering NC and Scottish strata, the amount of fossils and rock specimens as well as 
+the region under study are sufficiently large
+
+<NC and Scottish Strata as ORS - CFA ORS III V2 - 1>: If strata can be identified by means of their CFAs and 
+NC are ORS in age, then NC strata and Scottish ORS strata support together a FA intermediate in character between those of ML strata than SIL strata 
+as well as peculiar fish fossils only known from the ORS #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [NC and Scottish Strata - Body of Evidence]
+    (4) [CFA - ORS - III - V2]
+    (5) [Non-Culm as ORS]
+    ----
+    (6) [NC and Scottish Strata - FA]
+           
+
+<NC and Scottish Strata as ORS - CFA ORS III V2 - 2>: If strata can be identified by means of their CFAs and 
+NC strata support a FA intermediate in character between those of ML strata than SIL strata and Scottish ORS strata peculiar fish fossils only known from the ORS, 
+then NC strata are ORS in age #DEV
+
+    (1) [Characteristic Fossil Assemblage Principle - V2] 
+    (2) [NC and Scottish Strata - Body of Evidence]
+    (4) [CFA - ORS - III - V2]
+    (5) [NC and Scottish Strata - FA]
+    ----
+    (6) [Non-Culm as ORS]
+
+
+
+/*
+UNGENAU, wegen Satzlimit: [Non-Culm - Body of Evidence - Region] steht stellvertretend für 2 Sätze.
+
+Die REgion ist was den RT angeht hinreichend groß, jedoch nicht was FA angeht!
+
+
+[NC - RT - 1]: NC strata support support limestone and red sandstone #roc-hyp
+    +> [Reddish Strata in South Devon]
+
+
+<NC as ORS - CRT ORS II V2 - 1>: If strata can be identified by means of their CRTs and 
+NC strata are ORS in age, then these strata support limestone and red sandstone #DEV
+
+    (1) [Characteristic Rock Type Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Rock Specimens]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CRT - ORS - II - V2]
+    (5) [Non-Culm as ORS]
+    ----
+    (6) [NC - RT - 1]
+           
+
+<NC as ORS - CRT ORS II V2 - 2>: If strata can be identified by means of their CRTs and 
+NC strata support limestone and red sandstone, then these strata are ORS in age #DEV
+
+    (1) [Characteristic Rock Type Principle - V2] 
+    (2) [Non-Culm - Body of Evidence - Rock Specimens]
+    (3) [Non-Culm - Body of Evidence - Region]
+    (4) [CRT - ORS - II - V2]
+    (5) [NC - RT - 1]
+    ----
+    (6) [Non-Culm as ORS]
+*/ 
+
+
+
+# Youngest Devonian Strata {color: 7}
+
+
+
+/* WEGGELASSEN wegen Satzlimit
+
+[Exmoor Trough as Best Explanation]: Assuming that originally, younger strata rest upon older ones, 
+the existence of a trough running trough Exmoor is the best explanation of the Exmoor strata being juxtaposed solely with older strata  #GRE #aux
+
+
+// [Passing Devon Northwards]: Passing Devon from south to north, the strata become younger, except the strata north of Exmoor which are of the same age as the strata south of Exmoor #ev 
+<Trough through Exmoor - GRE.1a>: If the existence of a trough running trough Exmoor is the best explanation of 
+the Exmoor strata being juxtaposed solely with older strata, then there is a trough through Exmoor  #GRE
+
+    (1) [Formation of strata]
+    (2) [Passing Devon Northwards]
+    (3) [Exmoor Trough as Best Explanation]
+    ----
+    (4) [Trough through Exmoor]
+   
+   */
+
+
+[BCL Older Than MC]: The Black Culm Limestone is the lowest part of the Culm series #struc-hyp
+
+//// Exmoor and South Devon - YDS and ODS
+
+[Exmoor Youngest Devonian Strata]: In Devon, the strata of Exmoor are the youngest #GRE #chron-hyp
+
+[Devon Strata - Temporal Order - 1]: South Devon NC strata are older than BCL strata, BCL strata are older than MC strata, 
+ MC strata are older than Exmoor strata (and as old as the strata north of Exmoor) #GRE #chron-hyp
+       +> [Passing Devon Northwards]
+              +> [Exmoor Youngest Devonian Strata]
+       +> [BCL Older Than MC]
+
+<Exmoor and South Devon - YDS and ODS>: If BCL strata constitute the oldest part of the Culm series and, 
+ northwards, strata become younger, except the strata north of Exmoor which are of the same age as the strata south of Exmoor,
+ then temporal order of Devon is as follows: Exmoor, MC, BCL, South Devon NC #pri #chron-hyp
+
+        (1) [BCL Older Than MC]
+        (2) [Passing Devon Northwards]
+        ----
+        (3) [Devon Strata - Temporal Order - 1]
+
+
+//// MC Older Than Exmoor Strata ---- Consequences
+
+
+<MC Older Than Exmoor Strata - Some NC as CM>: If, in Devon, South Devon NC strata are older than BCL strata, 
+  BCL strata are older than MC strata, MC strata are older than Exmoor strata, and MC strata are CM in age, 
+  then some NC strata, namely the strata around Exmoor, are CM in age, too #GRE #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 1]
+        (4) [Main Culm as CM]
+        ----
+        (5) [Some Non-Culm as CM]
+
+
+<MC Older Than Exmoor Strata - All CAM>: If MC strata are older than Exmoor strata, being CAM in age, 
+ then they are CAM in age, too #GRE #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 1]
+        (4) [Non-Culm as CAM]
+        ----
+        (5) [Main Culm as CAM]
+
+<MC Older Than Exmoor Strata - MC at Youngest ML>: If MC strata are older than Exmoor strata, being at youngest ML in age, 
+ then they are no CM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 1]
+        (4) [No Non-Culm as CM]
+        ----
+        (5) [No Main Culm as CM]
+
+
+[MC at Youngest ORS]: MC strata are at youngest ORS in age #chron-hyp
+        +> [No Main Culm as CM]
+        +> [No Main Culm as ML]
+
+<MC at Youngest ORS> #chron-hyp
+       
+       (1) [No Main Culm as CM]
+       (2) [No Main Culm as ML]
+       ----
+       (3) [MC at Youngest ORS]
+
+
+[NC at Youngest ORS]: NC strata are at youngest ORS in age #chron-hyp
+        +> [No Non-Culm as CM]
+        +> [No Non-Culm as ML]
+
+<NC at Youngest ORS> #chron-hyp
+       
+       (1) [No Non-Culm as CM]
+       (2) [No Non-Culm as ML]
+       ----
+       (3) [NC at Youngest ORS]
+
+<MC Older Than Exmoor Strata - MC at Youngest ORS>: If MC strata are older than Exmoor strata, being at youngest ORS in age, 
+ then MC strata are at youngest ORS #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 1]
+        (4) [NC at Youngest ORS]
+        ----
+        (6) [MC at Youngest ORS]
+
+
+[MC at Youngest SIL]: MC strata are at youngest SIL in age #chron-hyp
+        +> [No Main Culm as CM]
+        +> [No Main Culm as ML]
+        +> [No Main Culm as ORS]
+
+<MC at Youngest SIL> #chron-hyp
+       
+       (1) [No Main Culm as CM]
+       (2) [No Main Culm as ML]
+       (3) [No Main Culm as ORS]
+       ----
+       (4) [MC at Youngest SIL]
+
+
+[NC at Youngest SIL]: NC strata are at youngest SIL in age #chron-hyp
+        +> [No Non-Culm as CM]
+        +> [No Non-Culm as ML]
+        +> [No Non-Culm as ORS]
+
+<NC at Youngest SIL> #chron-hyp
+       
+       (1) [No Non-Culm as CM]
+       (2) [No Non-Culm as ML]
+       (3) [No Non-Culm as ORS]
+       ----
+       (4) [NC at Youngest SIL]
+
+<MC Older Than Exmoor Strata - MC at Youngest SIL>: If MC strata are older than Exmoor strata, being at youngest SIL in age, 
+  then MC strata are at youngest SIL #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 1]
+        (4) [NC at Youngest SIL]
+        ----
+        (6) [MC at Youngest SIL]
+
+
+
+///// BCL Older Than MC ---- Consequences
+
+<BCL Older Than MC - MC as CM>:If BCL strata are older than MC strata, and at youngest CM in age, 
+ then MC strata are CM in age #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some BCL as CM]
+        ----
+        (5) [Main Culm as CM]
+
+
+<BCL Older Than MC - BCL as CAM>: If BCL strata are older then MC strata, being at oldest CAM in age, 
+then BCL strata are CAM in age, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some Main Culm as CAM]
+        ----
+        (5) [BCL as CAM]
+
+
+<BCL Older Than MC - BCL at Youngest ML - 1>: If BCL strata are older than MC strata, being at youngest ML in age, 
+ then there are no CM BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [No Main Culm as CM]
+        ----
+        (5) [No BCL as CM]
+
+<BCL Older Than MC -  BCL at Youngest ML - 2>: If BCL strata are older than MC strata, and some MC strata are ML in age, 
+ then there are no CM BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some Main Culm as ML]
+        ----
+        (5) [No BCL as CM]
+
+
+ [BCL at Youngest ORS]: BCL strata are at youngest ORS in age #chron-hyp
+        +> [No BCL as CM]
+        +> [No BCL as ML]
+
+<BCL at Youngest ORS> #chron-hyp
+       
+       (1) [No BCL as CM]
+       (2) [No BCL as ML]
+       ----
+       (3) [BCL at Youngest ORS]
+
+<BCL Older Than MC - BCL at Youngest ORS - 1>:If BCL strata are older than MC strata, being at youngest ORS in age, 
+ then there are no CM or ML BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [MC at Youngest ORS]
+        ----
+        (5) [BCL at Youngest ORS]
+
+<BCL Older Than MC - BCL at Youngest ORS - 2>:If BCL strata are older than MC strata, and some MC strata are ORS in age, 
+ then there are no CM or ML BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some Main Culm as ORS]
+        ----
+        (5) [BCL at Youngest ORS]
+
+
+ [BCL at Youngest SIL]: BCL strata are at youngest SIL in age #chron-hyp
+        +> [No BCL as CM]
+        +> [No BCL as ML]
+        +> [No BCL as ORS]
+
+ <BCL at Youngest SIL> #chron-hyp
+       
+       (1) [No BCL as CM]
+       (2) [No BCL as ML]
+       (3) [No BCL as ORS]
+       ----
+       (4) [BCL at Youngest SIL]
+
+<BCL Older Than MC - BCL at Youngest SIL - 1>:If BCL strata are older than MC strata, being at youngest SIL in age, 
+ then there are no CM or ML or ORS BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [MC at Youngest SIL]
+        ----
+        (5) [BCL at Youngest SIL]
+
+<BCL Older Than MC - BCL at Youngest SIL - 2>:If BCL strata are older than MC strata, and some MC strata are SIL in age, 
+ then there are no CM or ML or ORS BCL strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [BCL Older Than MC]
+        (4) [Some Main Culm as SIL]
+        ----
+        (5) [BCL at Youngest SIL]
+
+
+
+
+ 
+
+[Main Culm Youngest Devonian Strata]: In Devon, among all the strata older than the New Red Sandstone, the main part of the Culm strata are the youngest #COA #chron-hyp
+    -> [Exmoor Youngest Devonian Strata]
+
+///// Temporal Order 2 ---  MC, BCL, NC 
+
+[Devon Strata - Temporal Order - 2]: NC strata are older than BCL strata and BCL strata are older than MC strata #COA #pri #chron-hyp
+        -> [Devon Strata - Temporal Order - 1]
+        +> [BCL Older Than MC]
+        +> [Main Culm Youngest Devonian Strata]
+
+<MC and NC - YDS and ODS>: If BCL strata constitute the oldest part of the Culm series, then it holds:
+ If MC strata are the youngest strata in Devon, then NC strata are the oldest strata #COA #pri #chron-hyp
+
+        (1) [BCL Older Than MC]
+        (2) [Main Culm Youngest Devonian Strata]
+        ----
+        (3) [Devon Strata - Temporal Order - 2] 
+
+
+///// MC as Youngest Devonian Strata --- Consequences
+
+<MC as Youngest Strata - MC at Oldest CAM>: If MC are the youngest Devonian strata and some MC are CAM in age, then 
+ NC strata are CAM in age, too #GRE 
+
+    (1) [Standard Sequence]
+    (2) [Devon Strata - Temporal Order - 2] 
+    (3) [Some Main Culm as CAM]
+    (4) [Non-Culm as Post-Primary and Pre-NRS]
+    ----
+    (5) [Non-Culm as CAM]
+
+
+//// NC Older Than BCL ---- Consequences
+
+[BCL as CM]: The whole BCL strata are CAM in age #chron-hyp
+        +> [Some BCL as CM] 
+        +> [No BCL as ML] 
+        +> [No BCL as ORS] 
+        +> [No BCL as SIL]
+        +> [No BCL as CAM]   
+
+<BCL as CM> #chron-hyp
+
+        (1) [Some BCL as CM]
+        (2) [No BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [No BCL as CAM]
+        ----
+        (6) [BCL as CM]
+
+<NC Older Than BCL - BCL as CM>: If NC strata are older than BCL strata, and at youngest CM in age, 
+ then BCL strata are CM in age  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some Non-Culm as CM]
+        ----
+        (5) [BCL as CM]
+
+//// Eigentlich [BCL as CM]
+
+
+<NC Older Than BCL - NC as CAM>: If NC strata are older then BCL strata, being at oldest CAM in age, 
+then NC strata are CAM in age, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some BCL as CAM]
+        ----
+        (5) [Non-Culm as CAM]
+
+<NC Older Than BCL - NC at Youngest ML - 1>:If NC strata are older than BCL strata, being at oldest ML in age, 
+ then there are no CM NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [No BCL as CM]
+        ----
+        (6) [No Non-Culm as CM]
+
+<NC Older Than BCL - NC at Youngest ML - 2>:If NC strata are older than BCL strata, and some BCL strata are ML in age, 
+ then there are no CM NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some BCL as ML]
+        ----
+        (6) [No Non-Culm as CM]
+
+
+<NC Older Than BCL - NC at Youngest ORS - 1>:If NC strata are older than BCL strata, being at youngest ORS in age, 
+ then there are no CM or ML NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [BCL at Youngest ORS]
+        ----
+        (6) [NC at Youngest ORS]
+
+<NC Older Than BCL - NC at Youngest ORS - 2>:If NC strata are older than BCL strata, and some BCL strata are ORS in age, 
+ then there are no CM or ML NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 2]
+        (4) [Some BCL as ORS]
+        ----
+        (6) [NC at Youngest ORS]
+
+
+<NC Older Than BCL - NC at Youngest SIL - 1>:If NC strata are older than BCL strata, being at oldest SIL in age, 
+ then there are no CM or ML or ORS NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [BCL at Youngest SIL]
+        ----
+        (5) [NC at Youngest SIL]
+
+<NC Older Than BCL - NC at Youngest SIL - 2>:If NC strata are older than BCL strata, and some strata are SIL in age, 
+ then there are no CM or ML or ORS NC strata  #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some BCL as SIL]
+        ----
+        (5) [NC at Youngest SIL]
+
+
+
+//// NC - Conformable Formation
+
+[NC at Oldest ML]: Non-Culm strata are at oldest ML in age #chron-hyp
+        +> [No Non-Culm as ORS]
+        +> [No Non-Culm as SIL]
+        +> [No Non-Culm as CAM]
+
+ <NC at Oldest ML> #chron-hyp
+       
+       (1) [No Non-Culm as ORS]
+       (2) [No Non-Culm as SIL]
+       (3) [No Non-Culm as CAM]
+       ----
+       (4) [NC at Oldest ML]
+
+
+
+<NC as Conformable Formation - ML Missing 1>: If NC strata are the oldest Devonian strata and there are some CM but no ML NC strata,  
+ then there are no ORS, SIL or CAM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as CM]
+        (4) [No Non-Culm as ML]
+        ----
+        (5) [NC at Oldest ML]
+
+<NC as Conformable Formation - ML Missing 2>: If NC strata are the oldest Devonian strata and there are some ORS but no ML NC strata, 
+ then there are no CM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as ORS]
+        (4) [No Non-Culm as ML]
+        ----
+        (5) [No Non-Culm as CM]
+
+
+<NC as Conformable Formation - ORS Missing 1>: If NC strata are the oldest Devonian strata and there are some ML but no ORS NC strata, 
+ then there are no SIL or CAM NC strata, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as ML]
+        (4) [No Non-Culm as ORS]
+        ----
+        (5) [NC at Oldest ML]
+
+<NC as Conformable Formation - ORS Missing 2>: If NC strata are the oldest Devonian strata and there are some SIL but no ORS NC strata, 
+ then there are no ML or CM NC strata, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as SIL]
+        (4) [No Non-Culm as ORS]
+        ----
+        (5) [NC at Youngest SIL]
+
+
+<NC as Conformable Formation - SIL Missing 1>: If NC strata are the oldest Devonian strata and there are some CAM but no SIL NC strata, 
+ then there are no ORS, ML or CM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as CAM]
+        (4) [No Non-Culm as SIL]
+        ----
+        (5) [Non-Culm as CAM]
+
+<NC as Conformable Formation - SIL Missing 2>: If NC strata are the oldest Devonian strata and there are some ORS but no SIL NC strata, 
+ then there are no CAM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [Some Non-Culm as ORS]
+        (4) [No Non-Culm as SIL]
+        ----
+        (5) [No Non-Culm as CAM]
+
+
+
+/*WEGGELASSEN, da dieses Arg keine vernünftige einschränkende Wirkung hat: Zum Beispiel
+ !6 verbietet CM - BCL as CM - NC as CAM (d.h. 6), jedoch
+ !6 verträglich mit MC as CM - BCL as CM - NC as SIL&CAM (d.h. 6)
+
+<MC as Youngest Devonian Strata>: If (i) BCL are older than MC and (ii) MC are CM in age and (iii) NC stata are CAM in age, 
+  then MC are the youngest Devonian strata #COA
+
+    (1) [Standard Sequence]
+    (2) [BCL Older Than MC]
+    (3) [Some Main Culm as CM]
+    (4) [No Non-Culm as SIL]
+    (5) [Some Non-Culm as CAM]
+    ----
+    (6) [Main Culm Youngest Devonian Strata]*/
+
+ 
+
+[Culm Trough as Best Explanation]: Assuming that originally, younger strata rest upon older ones,
+the existence of a Culm trough is the best explanation of the Culm strata being juxtaposed solely with older strata  #COA #aux
+
+
+<Culm Trough - COA.2a>: If the existence of a Culm trough is the best explanation of 
+the Culm strata being juxtaposed solely with older strata, then there is a Culm trough #COA
+
+    (1) [Formation of strata]
+    (2) [Culm Trough as Best Explanation]
+    (3) [Devon Strata - Temporal Order - 2]
+    ----
+    (8) [Culm trough in Central Devon]
+ 
+
+
+
+[Youngest Devonian Strata in South Devon]: In Devon, the youngest strata are some LSTs in southeast Devon #GRE #chron-hyp
+    -> [Main Culm Youngest Devonian Strata]
+    -> [Exmoor Youngest Devonian Strata]
+
+///// Temporal Order 3 --- SE Devon LSTs, MC, BCL, MNC 
+
+[Devon Strata - Temporal Order - 3]: The main part of NC strata are older than BCL, MC strata and some South Devon LSTs, respectively #GRE #pri #chron-hyp
+        -> [Devon Strata - Temporal Order - 1]
+        -> [Devon Strata - Temporal Order - 2]
+        +> [Youngest Devonian Strata in South Devon]
+        +> [BCL Older Than MC]
+
+<Youngest Devonian Strata in South Devon - NC at Youngest ORS>: If some southeast Devon LSTs, being ORS in age, are the youngest Devonian strata,  
+ then there are no CM or ML NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (2) [Devon Strata - Temporal Order - 3]
+        (3) [Some South Devon LSTs as ORS]
+        ----
+        (5) [NC at Youngest ORS]
+
+<Youngest Devonian Strata in South Devon - MC at Youngest ORS>: If some southeast Devon LSTs, being ORS in age, are the youngest Devonian strata,  
+ then there are no CM or ML MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (2) [Devon Strata - Temporal Order - 3]
+        (3) [Some South Devon LSTs as ORS]
+        ----
+        (5) [MC at Youngest ORS]
+
+
+//// MC Older Than SE DEV LSTs ---- Consequences
+
+<MC Older Than SE DEV LSTs - Some NC as CM>: If MC strata, being CM in age, are older than some southeast Devon LSTs, 
+ then some Non-Culm, namely these LSTs, are CM in age, too #GRE #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Non-Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 3]
+        (4) [Some Main Culm as CM]
+        ----
+        (5) [Some Non-Culm as CM]
+
+/* EIGENTLICH, (5) [Some South Devon LSTs as CM] */
+
+<MC Older Than SE DEV LSTs - All CAM>: If MC strata are older than some southeast Devon LSTs, being CAM in age, 
+ then they are CAM in age, too #GRE #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 3]
+        (4) [Non-Culm as CAM]
+        ----
+        (5) [Main Culm as CAM]
+
+
+<MC Older Than SE DEV LSTs - MC at Youngest ML>: If MC strata are older than some southeast Devon LSTs, being at youngest ML in age, 
+ then there are no CM MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 3]
+        (4) [No Non-Culm as CM]
+        ----
+        (5) [No Main Culm as CM]
+
+/* EIGENLICH (4) [Some South Devon LSTs as ML] */
+
+
+<MC Older Than SE DEV LSTs - MC at Youngest ORS>: If MC strata are older than some southeast Devon LSTs, being at youngest ORS in age, 
+ then MC strata are at youngest ORS #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [Non-Culm as Post-Primary and Pre-NRS]
+        (4) [Devon Strata - Temporal Order - 3]
+        (5) [Some South Devon LSTs as ORS]
+        ----
+        (7) [MC at Youngest ORS]
+
+
+<MC Older Than SE DEV LSTs - MC at Youngest SIL>: If MC strata are older than some southeast Devon LSTs, being at youngest SIL in age, 
+  then MC strata are at youngest SIL #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Main Culm as Post-Primary and Pre-NRS]
+        (3) [Devon Strata - Temporal Order - 3]
+        (4) [NC at Youngest SIL]
+        ----
+        (5) [MC at Youngest SIL]
+
+/* EIGENTLCIH (4) [Some South Devon LSTs as SIL] */
+
+
+ 
+
+
+/* [Sequence of Strata - Tor Bay and Newton Abott]: Around Tor Bay and Newton Abott, (i) strata are undisturbed and (ii) some LSTs 
+ overlay MC strata, BCL strata and the main part of NC strata, respectively #ev */
+<Tor Bay and Newton Abott - TO3 - 1>: If (i) originally, the younger sediments rest on older ones and
+ (ii) some LSTs overlay MC strata, BCL strata and the main part of NC strata, respectively, then, given these strata are undisturbed, 
+  these LSTs are younger than MC strata, BCL strata and the main part of the NC strata, respectively  #GRE 
+    
+    (1) [Formation of strata] 
+    (2) [Sequence of Strata - Tor Bay and Newton Abott]
+    ----
+    (3) [Devon Strata - Temporal Order - 3] 
+
+<Tor Bay and Newton Abott - TO3 - 2>: If (i) originally, the younger sediments rest on older ones and
+ (ii) some LSTs are younger than MC strata, BCL strata and the main part of the NC strata, respectively, then, given these strata are undisturbed, 
+  these LSTs overlay MC strata, BCL strata and the main part of NC strata, respectively #GRE 
+    
+    (1) [Formation of strata] 
+    (2) [Devon Strata - Temporal Order - 3] 
+    ----
+    (3) [Sequence of Strata - Tor Bay and Newton Abott] 
+
+
+
+# Gap in the Sequence   {color: 8}
+
+
+
+
+<Unbroken Sequence - All Strata CM>: If, in Devon, all strata are CM in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [Main Culm as CM]
+        (2) [No BCL as ML]
+        (3) [No BCL as ORS]
+        (4) [No BCL as SIL]
+        (5) [No BCL as CAM]
+        (6) [No Non-Culm as ML]
+        (7) [No Non-Culm as ORS]
+        (8) [No Non-Culm as SIL]
+        (9) [No Non-Culm as CAM]
+        ----
+        (10) [Unbroken Sequence of Devon Strata]
+
+<Unbroken Sequence - All Strata ML>: If, in Devon, all strata are ML in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [No Main Culm as CM]
+        (2) [No Main Culm as ORS]
+        (3) [No Main Culm as SIL]
+        (4) [No Main Culm as CAM]
+        (5) [BCL as ML]
+        (6) [No Non-Culm as CM]
+        (7) [No Non-Culm as ORS]
+        (8) [No Non-Culm as SIL]
+        (9) [No Non-Culm as CAM]
+        ----
+        (10) [Unbroken Sequence of Devon Strata]
+
+<Unbroken Sequence - All Strata ORS>: If, in Devon, all strata are ORS in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [No Main Culm as CM]
+        (2) [No Main Culm as ML]
+        (3) [No Main Culm as SIL]
+        (4) [No Main Culm as CAM]
+        (5) [No BCL as CM]
+        (6) [No BCL as ML]
+        (7) [No BCL as SIL]
+        (8) [No BCL as CAM]
+        (9) [Non-Culm as ORS]
+        ----
+        (10) [Unbroken Sequence of Devon Strata]
+
+<Unbroken Sequence - All Strata SIL>: If, in Devon, all strata are SIL in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [No Main Culm as CM]
+        (2) [No Main Culm as ML]
+        (3) [No Main Culm as ORS]
+        (4) [No Main Culm as CAM]
+        (5) [No BCL as CM]
+        (6) [No BCL as ML]
+        (7) [No BCL as ORS]
+        (8) [No BCL as CAM]
+        (9) [No Non-Culm as CM]
+        (10) [No Non-Culm as ML]
+        (11) [No Non-Culm as ORS]
+        (12) [No Non-Culm as CAM]
+        ----
+        (13) [Unbroken Sequence of Devon Strata]
+
+<Unbroken Sequence - All Strata CAM>: If, in Devon, all strata are CAM in age, then the sequence is unbroken #pri #chron-hyp
+
+        (1) [Main Culm as CAM]
+        (2) [BCL as CAM]
+        (3) [Non-Culm as CAM]
+        ----
+        (4) [Unbroken Sequence of Devon Strata]
+
+//// A <=> B & C UND A => D
+
+[Conformable Passage - MC and BCL]: The passage between MC and BCL strata is conformable #GRE #struc-hyp #pri
+
+[Conformable Passages - 1]: The following passages are conformable: Exmoor and MC, MC and BCL, BCL and South Devon NC #struc-hyp
+        +> [Unbroken Sequence of Devon Strata]
+        +> [Devon Strata - Temporal Order - 1]
+        +> [Conformable Passage - MC and BCL]
+        
+
+<Unbroken Sequence - Exmoor YDS>: If South Devon NC strata are older than BCL strata and BCL strata are older than MC strata
+ and MC strata are older than Exmoor strata, and, in Devon, the sequence is unbroken, then all passages between them are conformable #GRE #pri
+
+    (1) [Unbroken Sequence of Devon Strata]
+    (2) [Devon Strata - Temporal Order - 1]
+    ----
+    (3) [Conformable Passages - 1]
+
+
+//// Conformable Passage Between Exmoor/MC, MC/BCL, BCL/S.DEV.NC -----
+
+<Conformable Passages - 1 - NC at Youngest SIL>: If, in Devon, some NC strata are the youngest and not younger than SIL, then all passages are conformable #GRE #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 1]
+        (3) [NC at Youngest SIL]
+        ----
+        (4) [Conformable Passages - 1]
+
+/// HIER FEHLEND wegen Satzlimit: Andere CH, die zu [Conformable Passages - 1] führen!
+
+
+///// Conformable Passage Between MC and BCL ---- BCL Older Than MC ----- Consequences
+
+
+<BCL Older Than MC - MC at Oldest CM - 1>: If BCL strata are older than MC strata, being at oldest CM in age, 
+ and there are no CM BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ML BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [No Main Culm as ML]
+        (6) [No BCL as CM]
+        ----
+        (7) [Some BCL as ML]
+
+<BCL Older Than MC - MC at Oldest CM - 2>: If BCL strata are older than MC strata, being at oldest CM in age, 
+ and there are no ML BCL strata, then, given that MC and BCL are passing conformably into one antoher, BCL strata are CM in age, too #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [No Main Culm as ML]
+        (6) [No BCL as ML]
+        ----
+        (7) [Some BCL as CM]
+
+<BCL Older Than MC - MC at Oldest ML - 1>:If BCL strata are older than MC strata, being at oldest ML in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ORS BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [No Main Culm as ORS]
+        (6) [No BCL as ML]
+        ----
+        (7) [Some BCL as ORS]
+
+<BCL Older Than MC - MC at Oldest ML - 2>:If BCL strata are older than MC strata, being at oldest ML in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ML BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [No Main Culm as ORS]
+        (6) [No BCL as ORS]
+        ----
+        (7) [Some BCL as ML]
+
+<BCL Older Than MC - MC at Oldest ORS - 1>:If BCL strata are older than MC strata, being at oldest ORS in age, 
+ and there are no ORS BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some SIL BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [No Main Culm as SIL]
+        (6) [No BCL as ORS]
+        ----
+        (7) [Some BCL as SIL]
+
+<BCL Older Than MC - MC at Oldest ORS - 2>:If BCL strata are older than MC strata, being at oldest ORS in age, 
+ and there are no SIL BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some ORS BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [No Main Culm as SIL]
+        (6) [No BCL as SIL]
+        ----
+        (7) [Some BCL as ORS]
+
+
+<BCL Older Than MC - MC at Oldest SIL - 2.1>:If BCL strata are older than MC strata, being at oldest SIL in age, 
+ and there are no SIL BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some CAM BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as SIL]
+        (5) [No Main Culm as CAM]
+        (6) [No BCL as SIL]
+        ----
+        (7) [Some BCL as CAM]
+
+
+<BCL Older Than MC - MC at Oldest SIL - 2.2>:If BCL strata are older than MC strata, being at oldest SIL in age, 
+ and there are no CAM BCL strata, then, given that MC and BCL are passing conformably into one antoher, there are some SIL BCL strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as SIL]
+        (5) [No Main Culm as CAM]
+        (6) [No BCL as CAM]
+        ----
+        (7) [Some BCL as SIL]
+
+///// Culm strata not intercalated by Non-Culm strata  ---- Consequences
+
+<Culm Not Intercalated - No NC as ML - MC and BCL>: If the Culm strata encompass CM as well as ORS strata, then there are no ML Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as CM]
+        (5) [Some BCL as ORS]
+        ----
+        (6) [No Non-Culm as ML]
+
+<Culm Not Intercalated - No NC as ORS - MC and BCL>: If the Culm strata encompass ML as well as SIL strata, then there are no ORS Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ML]
+        (5) [Some BCL as SIL]
+        ----
+        (6) [No Non-Culm as ORS]
+
+<Culm Not Intercalated - No NC as SIL - MC and BCL>: If the Culm strata encompass ORS as well as CAM strata, then there are no SIL Non-Culm strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [BCL Older Than MC]
+        (3) [Conformable Passage - MC and BCL]
+        (4) [Some Main Culm as ORS]
+        (5) [Some BCL as CAM]
+        ----
+        (6) [No Non-Culm as SIL] 
+
+
+//// A UND B <=> E  & C UND D <=> E : Macht das Sinn????
+[Conformable Passages - 2]: The following passages are conformable: MC and BCL, BCL and NC #struc-hyp
+    +> [Unbroken Sequence of Devon Strata]
+    +> [Devon Strata - Temporal Order - 2]
+    +> [Conformable Passage - MC and BCL]
+    +> [Conformable Passage - BCL and NC]
+
+[Conformable Passage - BCL and NC]: The passage between BCL and NC strata is conformable #struc-hyp
+
+<Conformable Passages - 2.2> #pri
+
+       (1) [Conformable Passage - MC and BCL]
+       (2) [Conformable Passage - BCL and NC]
+       ----
+       (3) [Conformable Passages - 2]
+
+<Unbroken Sequence - MC YDS - 2>: If NC strata are older than BCL strata and BCL strata are older than MC strata, 
+ and in Devon, the sequence is unbroken, then, all passages between them are conformable #DEV #pri
+
+    (1)  [Unbroken Sequence of Devon Strata]
+    (2)  [Devon Strata - Temporal Order - 2]
+    ----
+    (3) [Conformable Passages - 2]
+
+
+///// Conformable Passage Between BCL and NC ---- NC Older Than BCL ----- Consequences
+
+<NC Older Than BCL - BCL at Oldest CM - 1>: If BCL strata, passing conformably into NC strata, are at oldest CM in age and 
+ there are no CM NC strata, then there are some ML NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as CM]
+        (5) [No BCL as ML]
+        (6) [No Non-Culm as CM]
+        ----
+        (7) [Some Non-Culm as ML]
+
+
+
+<NC Older Than BCL - BCL at Oldest CM - 2>: If BCL strata, passing conformably into NC strata, are at oldest CM in age and 
+ there are no ML NC strata, then there are some CM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as CM]
+        (5) [No BCL as ML]
+        (6) [No Non-Culm as ML]
+        ----
+        (7) [Some Non-Culm as CM]
+
+<NC Older Than BCL - BCL at Oldest ML - 1>:  If BCL strata, passing conformably into NC strata, are at oldest ML in age and 
+ there are no ML NC strata, then there are some ORS NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as ML]
+        (5) [No BCL as ORS]
+        (6) [No Non-Culm as ML]
+        ----
+        (7) [Some Non-Culm as ORS]
+
+<NC Older Than BCL - BCL at Oldest ML - 2>: If BCL strata, passing conformably into NC strata, are at oldest ML in age and 
+ there are no ORS NC strata, then there are some ML NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as ML]
+        (5) [No BCL as ORS]
+        (6) [No Non-Culm as ORS]
+        ----
+        (7) [Some Non-Culm as ML]
+
+
+
+<NC Older Than BCL - BCL at Oldest ORS - 1>: If BCL strata, passing conformably into NC strata, are at oldest ORS in age and 
+ there are no ORS NC strata, then there are some SIL NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as ORS]
+        (5) [No BCL as SIL]
+        (6) [No Non-Culm as ORS]
+        ----
+        (7) [Some Non-Culm as SIL]
+
+<NC Older Than BCL - BCL at Oldest ORS - 2>: If BCL strata, passing conformably into NC strata, are at oldest ORS in age and 
+ there are no SIL NC strata, then there are some ORS NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as ORS]
+        (5) [No BCL as SIL]
+        (6) [No Non-Culm as SIL]
+        ----
+        (7) [Some Non-Culm as ORS]
+
+<NC Older Than BCL - BCL at Oldest SIL - 2.1>: If BCL strata, passing conformably into NC strata, are at oldest SIL in age and 
+ there are no SIL NC strata, then there are some CAM NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as SIL]
+        (5) [No BCL as CAM]
+        (6) [No Non-Culm as SIL]
+        ----
+        (7) [Some Non-Culm as CAM]
+
+<NC Older Than BCL - BCL at Oldest SIL - 2.2>: If BCL strata, passing conformably into NC strata, are at oldest SIL in age and 
+ there are no CAM NC strata, then there are some SIL NC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 2]
+        (4) [Some BCL as SIL]
+        (5) [No BCL as CAM]
+        (6) [No Non-Culm as CAM]
+        ----
+        (7) [Some Non-Culm as SIL]
+
+//// THe other way around
+
+<Conformable Passage Between BCL and NC - Some NC as ML>: If BCL strata are younger than NC strata and  
+ there are some ML NC strata, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 2]
+        (3) [BCL as Post-Primary and Pre-NRS]
+        (4) [Some Non-Culm as ML]
+        ----
+        (5) [Conformable Passage - BCL and NC]
+
+
+<Conformable Passage Between BCL and NC - Some NC as ORS - 1>: If NC strata are older than BCL strata 
+ and some BCL as well as NC strata are ORS in age, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Some BCL as ORS]
+       (5) [Some Non-Culm as ORS]
+        ----
+       (6) [Conformable Passage - BCL and NC]
+
+<Conformable Passage Between BCL and NC - Some NC as ORS - 2>: If NC strata are older than BCL strata 
+ and some BCL and NC strata are ML and ORS in age, respectively, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Some BCL as ML]
+       (5) [Some Non-Culm as ORS]
+        ----
+       (6) [Conformable Passage - BCL and NC]
+
+
+<Conformable Passage Between BCL and NC - Some NC as SIL - 1>: If NC strata are older than BCL strata 
+ and some BCL as well as NC strata are SIL in age, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Some BCL as SIL]
+       (5) [Some Non-Culm as SIL]
+        ----
+       (6) [Conformable Passage - BCL and NC]
+
+<Conformable Passage Between BCL and NC - Some NC as SIL - 2>: If NC strata are older than BCL strata 
+ and some BCL and NC strata are ORS and SIL in age, respectively, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Some BCL as ORS]
+       (5) [Some Non-Culm as SIL]
+        ----
+       (6) [Conformable Passage - BCL and NC]
+
+
+<Conformable Passage Between BCL and NC - Some BCL as CAM >: If NC strata are older than BCL strata 
+ and BCL strata are at oldest CAM in age, then BCL and NC strata are passing conformably into one another #pri #chron-hyp
+
+       (1) [Standard Sequence]
+       (2) [Devon Strata - Temporal Order - 2]
+       (3) [Non-Culm as Post-Primary and Pre-NRS]
+       (4) [Some BCL as CAM]
+        ----
+       (5) [Conformable Passage - BCL and NC]
+ 
+
+
+//// A <=> B & C UND A => D
+[Conformable Passages - 3]: The following passages are conformable: Some South Devon LSTs and MC, MC and BCL, BCL and the main part of NC #struc-hyp
+        +> [Unbroken Sequence of Devon Strata]
+        +> [Devon Strata - Temporal Order - 3] 
+        +> [Conformable Passage - MC and BCL]
+
+<Unbroken Sequence - South Devon LSTs YDS - 2>:If the main part of NC strata are older than BCL strata and BCL strata are older than MC strata
+ and MC strata are older than some South Devon LSTs, and in Devon, the sequence is unbroken, then, all passages between them are conformable #GRE #pri
+
+    (1) [Unbroken Sequence of Devon Strata]
+    (2) [Devon Strata - Temporal Order - 3] 
+    ----
+    (3) [Conformable Passages - 3]
+
+//// Conformable Passage Between SE DEV LSTs/MC, MC/BCL, BCL/RNC -----
+
+/// Vergeleiche S0/GAP: <Conformable Passages - 1 - NC at Youngest SIL>
+<Conformable Passages - 3 - NC at Youngest SIL>:If, in Devon, some NC strata are the youngest and not younger than SIL, then all passages are conformable #GRE #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Devon Strata - Temporal Order - 3]
+        (3) [NC at Youngest SIL]
+        ----
+        (4) [Conformable Passages - 3]
+
+/* HIER FEHLEND wegen Satzlimit: Andere CH, die zu [Conformable Passages - 3] führen!
+Insbesondere FEHLEND: [Some Main NC at Youngest SIL] bzw. [Some Main NC as SIL] usw. ----> Neue Gruppe nötig, neue atomare Sätze
+Deshalb:[Conformable Passage - BCL and Main NC] nicht zu begründen */
+
+
+//// Conformable Passage Between SE Devon LSTs and MC --- Consequences
+
+<MC Older Than SE Devon LSTs - Some MC as SIL>: If some southeast Devon LSTs, being ORS in age, 
+ pass conformably into MC strata, and there are no ORS MC strata, then, there are some SIL MC strata #GRE #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 3]
+        (3) [Some South Devon LSTs as ORS]
+        (4) [No Main Culm as ORS]
+        ----
+        (5) [Some Main Culm as SIL]
+
+
+<MC Older Than SE Devon LSTs - MC as ORS>: If some southeast Devon LSTs, being ORS in age, 
+ pass conformably into MC strata, and there are no SIL MC strata, then, there are some ORS MC strata #pri #chron-hyp
+
+        (1) [Standard Sequence]
+        (2) [Conformable Passages - 3]
+        (3) [Some South Devon LSTs as ORS]
+        (4) [No Main Culm as SIL]
+        ----
+        (5) [Some Main Culm as ORS]
+
+
+/* FEHLEND wegen Satzlimit: Analoge Args mit [Some South Devon LSTs as CM] usw */
+
+
+
+
+ 
+
+
+
+
+

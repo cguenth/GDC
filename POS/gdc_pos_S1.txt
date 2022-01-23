@@ -12,7 +12,9 @@
         "No BCL as CM",!"No BCL as ML","No BCL as ORS","No BCL as SIL","No BCL as CAM",
         "No Non-Culm as CM","No Non-Culm as ML",!"No Non-Culm as ORS","No Non-Culm as SIL","No Non-Culm as CAM"},
 "BK" -> {},
-"EV" -> {}|>,
+"EV" -> {"Scottish ORS - Fossils", 
+        !"Passing Devon Northwards"}|>,
+
 
 <|"name" -> "DLB", 
    "CH" -> {"No Main Culm as CM","No Main Culm as ML","No Main Culm as ORS","No Main Culm as SIL",!"No Main Culm as CAM",
@@ -75,3 +77,13 @@
 "EV" -> {}|>
 }
 
+(*<|"name"->"DEV",
+"CH" -> {!"No Main Culm as CM","No Main Culm as ML","No Main Culm as ORS","No Main Culm as SIL","No Main Culm as CAM",
+        "No BCL as CM",!"No BCL as ML","No BCL as ORS","No BCL as SIL","No BCL as CAM",
+        "No Non-Culm as CM","No Non-Culm as ML",!"No Non-Culm as ORS","No Non-Culm as SIL","No Non-Culm as CAM"},
+"BK" -> {!"Characteristic Rock Type Principle",
+          !"Characteristic Fossil Assemblage Principle", !"CFA - ORS", ! "Lyellian Principle",
+          !"Characteristic Fossil Principle"},
+"EV" -> {"Scottish ORS - Fossils", 
+          "Unbroken Sequence of Devon Strata", 
+          !"Passing Devon Northwards"}|>,*)

@@ -1,0 +1,587 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     25117,        579]
+NotebookOptionsPosition[     23330,        542]
+NotebookOutlinePosition[     23663,        557]
+CellTagsIndexPosition[     23620,        554]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"AppendTo", "[", 
+   RowBox[{"$Path", ",", 
+    RowBox[{"FileNameJoin", "[", 
+     RowBox[{"{", 
+      RowBox[{
+      "$HomeDirectory", ",", " ", "\"\<GDC\>\"", ",", " ", 
+       "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"If", "[", 
+   RowBox[{
+    RowBox[{"!", 
+     RowBox[{"MemberQ", "[", 
+      RowBox[{"$Path", ",", " ", 
+       RowBox[{"FileNameJoin", "[", 
+        RowBox[{"{", 
+         RowBox[{
+         "$HomeDirectory", ",", " ", "\"\<GDC\>\"", ",", " ", 
+          "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}]}], ",", 
+    " ", "\n", 
+    RowBox[{"AppendTo", "[", 
+     RowBox[{"$Path", ",", " ", 
+      RowBox[{"FileNameJoin", "[", 
+       RowBox[{"{", 
+        RowBox[{
+        "$HomeDirectory", ",", " ", "\"\<GDC\>\"", ",", " ", 
+         "\"\<DialecticalStructures\>\""}], "}"}], "]"}]}], "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", " ", 
+    RowBox[{"FindFile", "[", " ", "\"\<Argdown`\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", 
+    RowBox[{"FindFile", "[", "\"\<GDCAnalysis3`\>\"", "]"}]}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", 
+    RowBox[{"FindFile", "[", "\"\<GDCTools`\>\"", "]"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Package path \>\"", ",", 
+    RowBox[{"FindFile", "[", "\"\<GDCAnalysis6`\>\"", "]"}]}], "]"}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "Argdown`"}], "\n", 
+ RowBox[{"<<", "GDCAnalysis3`"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "GDCTools`"}], "\[IndentingNewLine]", 
+ RowBox[{"<<", "GDCAnalysis6`"}]}], "Input",
+ CellChangeTimes->{
+  3.809754354551619*^9, {3.823838546386537*^9, 3.823838549737813*^9}, {
+   3.8238393254502487`*^9, 3.823839333496347*^9}, {3.823839415626809*^9, 
+   3.823839431916382*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"6181eddf-3318-4897-9fb3-617b4a40d54a"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/home/carla/GDC/DialecticalStructures/Argdown.m\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/Argdown.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.809317295946062*^9, 3.809406647958234*^9, 3.809406953935171*^9, 
+   3.8096628048350763`*^9, 3.809663924484702*^9, 3.809664121072486*^9, 
+   3.809664174594948*^9, {3.809664235499154*^9, 3.8096642414611883`*^9}, {
+   3.80966429166365*^9, 3.809664297898492*^9}, 3.809664329048367*^9, {
+   3.809664383821212*^9, 3.809664400492818*^9}, 3.80966514549646*^9, 
+   3.809666473448161*^9, 3.8096684804166937`*^9, 3.8096685790295057`*^9, 
+   3.809668690116894*^9, {3.809669359464994*^9, 3.809669381338332*^9}, 
+   3.8096694658011417`*^9, {3.809754796665491*^9, 3.809754799264214*^9}, 
+   3.8097551496223717`*^9, 3.809838910682201*^9, 3.809842915115961*^9, 
+   3.811134410032363*^9, 3.822219707741922*^9, 3.8223721009305773`*^9, 
+   3.822456699136505*^9, 3.822644262816518*^9, 3.822646068518571*^9, 
+   3.822646129301613*^9, 3.8226461819973717`*^9, 3.8226462854807158`*^9, 
+   3.8226464834250717`*^9, 3.822716752448163*^9, 3.823835123812834*^9, 
+   3.8238375907180157`*^9, 3.823838550228084*^9, 3.823839333993944*^9, {
+   3.823839432300411*^9, 3.8238394434907703`*^9}, 3.82383964574468*^9, 
+   3.837658248891355*^9, 3.837658557029554*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"9ce1d7c1-ece1-4cf3-915e-0d261663708a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/home/carla/GDC/DialecticalStructures/GDCAnalysis3.m\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/GDCAnalysis3.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.809317295946062*^9, 3.809406647958234*^9, 3.809406953935171*^9, 
+   3.8096628048350763`*^9, 3.809663924484702*^9, 3.809664121072486*^9, 
+   3.809664174594948*^9, {3.809664235499154*^9, 3.8096642414611883`*^9}, {
+   3.80966429166365*^9, 3.809664297898492*^9}, 3.809664329048367*^9, {
+   3.809664383821212*^9, 3.809664400492818*^9}, 3.80966514549646*^9, 
+   3.809666473448161*^9, 3.8096684804166937`*^9, 3.8096685790295057`*^9, 
+   3.809668690116894*^9, {3.809669359464994*^9, 3.809669381338332*^9}, 
+   3.8096694658011417`*^9, {3.809754796665491*^9, 3.809754799264214*^9}, 
+   3.8097551496223717`*^9, 3.809838910682201*^9, 3.809842915115961*^9, 
+   3.811134410032363*^9, 3.822219707741922*^9, 3.8223721009305773`*^9, 
+   3.822456699136505*^9, 3.822644262816518*^9, 3.822646068518571*^9, 
+   3.822646129301613*^9, 3.8226461819973717`*^9, 3.8226462854807158`*^9, 
+   3.8226464834250717`*^9, 3.822716752448163*^9, 3.823835123812834*^9, 
+   3.8238375907180157`*^9, 3.823838550228084*^9, 3.823839333993944*^9, {
+   3.823839432300411*^9, 3.8238394434907703`*^9}, 3.82383964574468*^9, 
+   3.837658248891355*^9, 3.837658557043106*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"fac54735-b2d3-4789-8a24-4133e461785a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", "\<\"/home/carla/GDC/DialecticalStructures/GDCTools.m\
+\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/GDCTools.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.809317295946062*^9, 3.809406647958234*^9, 3.809406953935171*^9, 
+   3.8096628048350763`*^9, 3.809663924484702*^9, 3.809664121072486*^9, 
+   3.809664174594948*^9, {3.809664235499154*^9, 3.8096642414611883`*^9}, {
+   3.80966429166365*^9, 3.809664297898492*^9}, 3.809664329048367*^9, {
+   3.809664383821212*^9, 3.809664400492818*^9}, 3.80966514549646*^9, 
+   3.809666473448161*^9, 3.8096684804166937`*^9, 3.8096685790295057`*^9, 
+   3.809668690116894*^9, {3.809669359464994*^9, 3.809669381338332*^9}, 
+   3.8096694658011417`*^9, {3.809754796665491*^9, 3.809754799264214*^9}, 
+   3.8097551496223717`*^9, 3.809838910682201*^9, 3.809842915115961*^9, 
+   3.811134410032363*^9, 3.822219707741922*^9, 3.8223721009305773`*^9, 
+   3.822456699136505*^9, 3.822644262816518*^9, 3.822646068518571*^9, 
+   3.822646129301613*^9, 3.8226461819973717`*^9, 3.8226462854807158`*^9, 
+   3.8226464834250717`*^9, 3.822716752448163*^9, 3.823835123812834*^9, 
+   3.8238375907180157`*^9, 3.823838550228084*^9, 3.823839333993944*^9, {
+   3.823839432300411*^9, 3.8238394434907703`*^9}, 3.82383964574468*^9, 
+   3.837658248891355*^9, 3.837658557052711*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"a572a8c2-a979-400b-97a7-750189143992"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Package path \"\>", 
+   "\[InvisibleSpace]", \
+"\<\"/home/carla/GDC/DialecticalStructures/GDCAnalysis6.m\"\>"}],
+  SequenceForm[
+  "Package path ", "/home/carla/GDC/DialecticalStructures/GDCAnalysis6.m"],
+  Editable->False]], "Print",
+ CellChangeTimes->{
+  3.809317295946062*^9, 3.809406647958234*^9, 3.809406953935171*^9, 
+   3.8096628048350763`*^9, 3.809663924484702*^9, 3.809664121072486*^9, 
+   3.809664174594948*^9, {3.809664235499154*^9, 3.8096642414611883`*^9}, {
+   3.80966429166365*^9, 3.809664297898492*^9}, 3.809664329048367*^9, {
+   3.809664383821212*^9, 3.809664400492818*^9}, 3.80966514549646*^9, 
+   3.809666473448161*^9, 3.8096684804166937`*^9, 3.8096685790295057`*^9, 
+   3.809668690116894*^9, {3.809669359464994*^9, 3.809669381338332*^9}, 
+   3.8096694658011417`*^9, {3.809754796665491*^9, 3.809754799264214*^9}, 
+   3.8097551496223717`*^9, 3.809838910682201*^9, 3.809842915115961*^9, 
+   3.811134410032363*^9, 3.822219707741922*^9, 3.8223721009305773`*^9, 
+   3.822456699136505*^9, 3.822644262816518*^9, 3.822646068518571*^9, 
+   3.822646129301613*^9, 3.8226461819973717`*^9, 3.8226462854807158`*^9, 
+   3.8226464834250717`*^9, 3.822716752448163*^9, 3.823835123812834*^9, 
+   3.8238375907180157`*^9, 3.823838550228084*^9, 3.823839333993944*^9, {
+   3.823839432300411*^9, 3.8238394434907703`*^9}, 3.82383964574468*^9, 
+   3.837658248891355*^9, 3.837658557056559*^9},
+ CellLabel->
+  "During evaluation of \
+In[1]:=",ExpressionUUID->"02c8acb8-fddc-4891-91e3-f5267354f3f8"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"posFIN", "=", 
+   RowBox[{"Get", "[", "\"\</home/carla/GDC/POS/gdc_pos_S8.txt\>\"", "]"}]}], 
+  ";"}]], "Input",
+ CellChangeTimes->{{3.837658570360795*^9, 3.837658609169166*^9}},
+ CellLabel->
+  "In[111]:=",ExpressionUUID->"9243cece-1aa5-42f7-89a8-d4cd74a361f2"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"names", "=", 
+   RowBox[{"{", 
+    RowBox[{
+    "\"\<DLB\>\"", ",", "\"\<MUR\>\"", ",", "\"\<LYE\>\"", ",", "\"\<PHI\>\"",
+      ",", "\"\<SED\>\"", ",", "\"\<AUS\>\""}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"kNams", "=", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"#", "[", "\"\<name\>\"", "]"}], "&"}], ",", "posFIN"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"inds", "=", 
+   RowBox[{"Flatten", "[", 
+    RowBox[{
+     RowBox[{"Map", "[", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"Position", "[", 
+         RowBox[{"kNams", ",", "#"}], "]"}], "&"}], ",", "names"}], "]"}], 
+     ",", "2"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"bks", "=", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Union", "[", 
+       RowBox[{
+        RowBox[{"posFIN", "[", 
+         RowBox[{"[", "#", "]"}], "]"}], "[", "\"\<BK\>\"", "]"}], "]"}], 
+      "&"}], ",", "inds"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"evs", "=", 
+   RowBox[{"Map", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Union", "[", 
+       RowBox[{
+        RowBox[{"posFIN", "[", 
+         RowBox[{"[", "#", "]"}], "]"}], "[", "\"\<EV\>\"", "]"}], "]"}], 
+      "&"}], ",", "inds"}], "]"}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.837658625513935*^9, 3.837658800657383*^9}, {
+   3.8376588313797483`*^9, 3.837659030626305*^9}, {3.837659124812333*^9, 
+   3.837659148084136*^9}, 3.83765929746529*^9, 3.837659363315208*^9, {
+   3.837659634073113*^9, 3.837659638389865*^9}},
+ CellLabel->
+  "In[122]:=",ExpressionUUID->"3b02ae01-40e1-4904-9c7b-4d5f159bc5d2"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"bkDEV", "=", 
+  RowBox[{"Intersection", "[", 
+   RowBox[{
+    RowBox[{"bks", "[", 
+     RowBox[{"[", "1", "]"}], "]"}], ",", 
+    RowBox[{"bks", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], ",", " ", 
+    RowBox[{"bks", "[", 
+     RowBox[{"[", "3", "]"}], "]"}], ",", " ", 
+    RowBox[{"bks", "[", 
+     RowBox[{"[", "4", "]"}], "]"}], ",", " ", 
+    RowBox[{"bks", "[", 
+     RowBox[{"[", "5", "]"}], "]"}], ",", 
+    RowBox[{"bks", "[", 
+     RowBox[{"[", "6", "]"}], "]"}]}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{"evDEV", "=", 
+  RowBox[{"Intersection", "[", 
+   RowBox[{
+    RowBox[{"evs", "[", 
+     RowBox[{"[", "1", "]"}], "]"}], ",", 
+    RowBox[{"evs", "[", 
+     RowBox[{"[", "2", "]"}], "]"}], ",", " ", 
+    RowBox[{"evs", "[", 
+     RowBox[{"[", "3", "]"}], "]"}], ",", " ", 
+    RowBox[{"evs", "[", 
+     RowBox[{"[", "4", "]"}], "]"}], ",", " ", 
+    RowBox[{"evs", "[", 
+     RowBox[{"[", "5", "]"}], "]"}], ",", 
+    RowBox[{"evs", "[", 
+     RowBox[{"[", "6", "]"}], "]"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.837659149978026*^9, 3.83765919053922*^9}, {
+  3.8376592295273857`*^9, 3.83765938154042*^9}},
+ CellLabel->
+  "In[127]:=",ExpressionUUID->"9458d39c-7167-4a48-a356-009c6bf339f1"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"CFA - ORS - III - V2\"\>", ",", "\<\"LV in Sedimentation\"\>", 
+   ",", "\<\"Main Culm Youngest Devonian Strata\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Fossils\"\>", ",", 
+   RowBox[{"!", "\<\"Non-Culm - Body of Evidence - Region\"\>"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.837659162824601*^9, 3.837659191098426*^9}, {
+   3.8376592417563343`*^9, 3.8376593064233627`*^9}, 3.8376593400150213`*^9, 
+   3.8376593820689297`*^9, 3.837659648080761*^9},
+ CellLabel->
+  "Out[127]=",ExpressionUUID->"8f39097c-7bc0-433c-b4aa-691f1bf0ab17"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"Carboniferous Plants in North Devon\"\>", 
+   ",", "\<\"Philipps' Collection\"\>", ",", "\<\"Scottish ORS - Fossils\"\>",
+    ",", 
+   RowBox[{"!", "\<\"Passing Devon Northwards\"\>"}], ",", 
+   RowBox[{"!", "\<\"Sequence of Strata - Tor Bay and Newton Abott\"\>"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{{3.837659162824601*^9, 3.837659191098426*^9}, {
+   3.8376592417563343`*^9, 3.8376593064233627`*^9}, 3.8376593400150213`*^9, 
+   3.8376593820689297`*^9, 3.837659648083598*^9},
+ CellLabel->
+  "Out[128]=",ExpressionUUID->"c8ab90fb-803e-4fae-84e2-7e707c5ec812"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"Problem", " ", "LYE"}], " ", "-", " ", "AR", " ", "-", " ", 
+    RowBox[{"4", " ", 
+     RowBox[{"d", ".", "h"}], " ", "S3b"}]}], "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"dedABDEVhe", "=", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"Association", "[", 
+        RowBox[{"Map", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"dedAbAllInFunc", "[", 
+            RowBox[{
+            "\"\</home/carla/GDC/\>\"", ",", "#", ",", "\"\<AR\>\"", ",", 
+             "\"\<CHEVBK\>\""}], "]"}], "&"}], ",", 
+          RowBox[{"{", "\"\<DEV\>\"", "}"}]}], "]"}], "]"}], "[", 
+       "\"\<DEV\>\"", "]"}], "[", 
+      RowBox[{"[", "9", "]"}], "]"}], "[", 
+     RowBox[{"[", "2", "]"}], "]"}]}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dedABDEVe", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Association", "[", 
+         RowBox[{"Map", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dedAbAllInFunc", "[", 
+             RowBox[{
+             "\"\</home/carla/GDC/\>\"", ",", "#", ",", "\"\<AR\>\"", ",", 
+              "\"\<EVBK\>\""}], "]"}], "&"}], ",", 
+           RowBox[{"{", "\"\<DEV\>\"", "}"}]}], "]"}], "]"}], "[", 
+        "\"\<DEV\>\"", "]"}], "[", 
+       RowBox[{"[", "9", "]"}], "]"}], "[", 
+      RowBox[{"[", "2", "]"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"dedABDEVh", "=", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"Association", "[", 
+         RowBox[{"Map", "[", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"dedAbAllInFunc", "[", 
+             RowBox[{
+             "\"\</home/carla/GDC/\>\"", ",", "#", ",", "\"\<AR\>\"", ",", 
+              "\"\<CH\>\""}], "]"}], "&"}], ",", 
+           RowBox[{"{", "\"\<DEV\>\"", "}"}]}], "]"}], "]"}], "[", 
+        "\"\<DEV\>\"", "]"}], "[", 
+       RowBox[{"[", "9", "]"}], "]"}], "[", 
+      RowBox[{"[", "2", "]"}], "]"}]}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.8223789401687717`*^9, 3.822378949933133*^9}, {
+   3.822379303857149*^9, 3.822379343220533*^9}, 3.82237939959017*^9, {
+   3.8223810036203003`*^9, 3.822381033728896*^9}, {3.822392737940424*^9, 
+   3.8223927411646137`*^9}, {3.822393763534289*^9, 3.8223937641684847`*^9}, {
+   3.822644794358975*^9, 3.8226448784588833`*^9}, {3.822644922263301*^9, 
+   3.82264492604793*^9}, {3.822645018561986*^9, 3.822645073138217*^9}, {
+   3.822645292860314*^9, 3.8226453009265337`*^9}, {3.82264612229527*^9, 
+   3.822646122840829*^9}, {3.823835621674316*^9, 3.823835646893568*^9}, {
+   3.823836350899538*^9, 3.823836356177847*^9}, 3.823836931458873*^9, {
+   3.82383714286294*^9, 3.8238371436476927`*^9}, {3.823837638051881*^9, 
+   3.8238376765467443`*^9}, {3.8238396382183437`*^9, 3.823839641972227*^9}, {
+   3.837658262090053*^9, 3.837658271496344*^9}, {3.837659672446456*^9, 
+   3.837659874079709*^9}, 3.8376606557331247`*^9},
+ CellLabel->
+  "In[152]:=",ExpressionUUID->"840bdd00-49fa-458a-b4e3-0b8c44e6beb5"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"\<\"BCL as ML\"\>", ",", "\<\"BCL at Oldest ML\"\>", 
+   ",", "\<\"BCL - FA\"\>", ",", "\<\"CFA - ORS - II - V2\"\>", 
+   ",", "\<\"CFA - ORS - I - V2\"\>", 
+   ",", "\<\"Conformable Passage - BCL and NC\"\>", 
+   ",", "\<\"Conformable Passages - 2\"\>", 
+   ",", "\<\"Devon NC as LV - Fauna and Flora\"\>", 
+   ",", "\<\"Devon Strata - Temporal Order - 2\"\>", 
+   ",", "\<\"LV in Fauna and Flora - Some Time\"\>", 
+   ",", "\<\"LV in Sedimentation - CM\"\>", 
+   ",", "\<\"LV in Sedimentation - Some Time\"\>", 
+   ",", "\<\"Main Culm as CM\"\>", ",", "\<\"MC at Oldest ML\"\>", 
+   ",", "\<\"MC - FA\"\>", ",", "\<\"NC and Scottish Strata - FA\"\>", 
+   ",", "\<\"NC at Youngest ORS\"\>", ",", "\<\"NC - FA - 2\"\>", 
+   ",", "\<\"Non-Culm as ORS\"\>", 
+   ",", "\<\"Non-Culm Fossil Mixture - Devon\"\>", 
+   ",", "\<\"No ORS Fish in Devon Non-Culm\"\>", 
+   ",", "\<\"ORS as Intermediate\"\>", 
+   ",", "\<\"Scottish ORS as LV - Fauna and Flora\"\>", 
+   ",", "\<\"Some North Devonian Strata - FA - 2\"\>", 
+   ",", "\<\"Some ORS in North Devon\"\>", 
+   ",", "\<\"Some South Devon LSTs as ORS\"\>", 
+   ",", "\<\"Some Valday Hills Strata as ORS\"\>", 
+   ",", "\<\"South Devonian Fossil Fauna\"\>", 
+   ",", "\<\"South Devon LSTs - FA - 2\"\>", 
+   ",", "\<\"Unbroken Sequence of Devon Strata\"\>", ",", 
+   RowBox[{"!", "\<\"BCL as CAM\"\>"}], ",", 
+   RowBox[{"!", "\<\"BCL as CM\"\>"}], ",", 
+   RowBox[{"!", "\<\"BCL at Youngest ORS\"\>"}], ",", 
+   RowBox[{"!", "\<\"BCL at Youngest SIL\"\>"}], ",", 
+   RowBox[{"!", "\<\"BCL CRT - CAM\"\>"}], ",", 
+   RowBox[{"!", "\<\"CFA - ORS\"\>"}], ",", 
+   RowBox[{"!", "\<\"CFA - ORS - V2\"\>"}], ",", 
+   RowBox[{"!", "\<\"Characteristic Fossil Assemblage - Every Time\"\>"}], 
+   ",", 
+   RowBox[{"!", "\<\"Characteristic Fossil Assemblage Principle\"\>"}], ",", 
+   RowBox[{"!", "\<\"Characteristic Fossil - Every Time\"\>"}], ",", 
+   RowBox[{"!", "\<\"Characteristic Fossil Principle\"\>"}], ",", 
+   RowBox[{"!", "\<\"Characteristic Rock Type - Every Time\"\>"}], ",", 
+   RowBox[{"!", "\<\"Characteristic Rock Type Principle\"\>"}], ",", 
+   RowBox[{"!", "\<\"Characteristic Rock Type - Some Time\"\>"}], ",", 
+   RowBox[{"!", "\<\"Conformable Passages - 1\"\>"}], ",", 
+   RowBox[{"!", "\<\"Conformable Passages - 3\"\>"}], ",", 
+   RowBox[{"!", "\<\"CRT - CAM\"\>"}], ",", 
+   RowBox[{"!", "\<\"CRT - ORS\"\>"}], ",", 
+   RowBox[{"!", "\<\"Devon Strata - Temporal Order - 1\"\>"}], ",", 
+   RowBox[{"!", "\<\"Devon Strata - Temporal Order - 3\"\>"}], ",", 
+   RowBox[{"!", "\<\"Exmoor Youngest Devonian Strata\"\>"}], ",", 
+   RowBox[{"!", "\<\"Lyellian Principle\"\>"}], ",", 
+   RowBox[{"!", "\<\"Main Culm as CAM\"\>"}], ",", 
+   RowBox[{"!", "\<\"MC at Youngest ORS\"\>"}], ",", 
+   RowBox[{"!", "\<\"MC at Youngest SIL\"\>"}], ",", 
+   RowBox[{"!", "\<\"MC CRT - CAM\"\>"}], ",", 
+   RowBox[{"!", "\<\"NC at Oldest ML\"\>"}], ",", 
+   RowBox[{"!", "\<\"NC at Youngest SIL\"\>"}], ",", 
+   RowBox[{"!", "\<\"NC CRT - CAM\"\>"}], ",", 
+   RowBox[{"!", "\<\"NC - FA - 1\"\>"}], ",", 
+   RowBox[{"!", "\<\"NC - FA - 3\"\>"}], ",", 
+   RowBox[{"!", "\<\"No Carb Fossils in NC Strata\"\>"}], ",", 
+   RowBox[{"!", "\<\"Non-Culm as CAM\"\>"}], ",", 
+   RowBox[{"!", "\<\"Pembrokeshire - CAM in Age\"\>"}], ",", 
+   RowBox[{"!", "\<\"Pembrokeshire - Characteristic CAM Rock Type\"\>"}], ",", 
+   RowBox[{"!", "\<\"Scottland - Body of Evidence - Region\"\>"}], ",", 
+   RowBox[{"!", "\<\"South Devon LSTs - FA - 1\"\>"}], ",", 
+   RowBox[{"!", "\<\"Youngest Devonian Strata in South Devon\"\>"}], 
+   ",", "\<\"BCL as Post-Primary and Pre-NRS\"\>", 
+   ",", "\<\"BCL - FA - No LV\"\>", ",", "\<\"BCL Older Than MC\"\>", 
+   ",", "\<\"Carboniferous Plants in North Devon\"\>", 
+   ",", "\<\"CFA - ORS - III - V2\"\>", ",", "\<\"Characteristic Fossil\"\>", 
+   ",", "\<\"Characteristic Fossil Assemblage\"\>", 
+   ",", "\<\"Characteristic Fossil Assemblage Principle - V2\"\>", 
+   ",", "\<\"Characteristic Rock Type\"\>", 
+   ",", "\<\"CM Plants in Devon Culm\"\>", 
+   ",", "\<\"Conformable Passage - MC and BCL\"\>", 
+   ",", "\<\"Culm Trough as Best Explanation\"\>", 
+   ",", "\<\"Culm trough in Central Devon\"\>", 
+   ",", "\<\"Formation of strata\"\>", 
+   ",", "\<\"LV in Fauna and Flora -Today\"\>", 
+   ",", "\<\"LV in Sedimentation\"\>", 
+   ",", "\<\"Main Culm as Post-Primary and Pre-NRS\"\>", 
+   ",", "\<\"Main Culm Youngest Devonian Strata\"\>", 
+   ",", "\<\"MC - FA - No LV\"\>", ",", "\<\"ML and Pennines\"\>", 
+   ",", "\<\"NC and Scottish Strata - Body of Evidence\"\>", 
+   ",", "\<\"No BCL as CAM\"\>", ",", "\<\"No BCL as CM\"\>", 
+   ",", "\<\"No BCL as ORS\"\>", ",", "\<\"No BCL as SIL\"\>", 
+   ",", "\<\"No Holoptychius in North Devon\"\>", 
+   ",", "\<\"No Main Culm as CAM\"\>", ",", "\<\"No Main Culm as ML\"\>", 
+   ",", "\<\"No Main Culm as ORS\"\>", ",", "\<\"No Main Culm as SIL\"\>", 
+   ",", "\<\"Non-Culm as Post-Primary and Pre-NRS\"\>", 
+   ",", "\<\"Non-Culm - Body of Evidence - Fossils\"\>", 
+   ",", "\<\"No Non-Culm as CAM\"\>", ",", "\<\"No Non-Culm as CM\"\>", 
+   ",", "\<\"No Non-Culm as ML\"\>", ",", "\<\"No Non-Culm as SIL\"\>", 
+   ",", "\<\"Pembrokeshire - Appearance\"\>", 
+   ",", "\<\"Pembrokeshire - CM in Age\"\>", 
+   ",", "\<\"Philipps' Collection\"\>", 
+   ",", "\<\"Russian ORS - Body of Evidence\"\>", 
+   ",", "\<\"Scottish ORS - Fossils\"\>", ",", "\<\"Scottish ORS - Rocks\"\>",
+    ",", "\<\"Scottland - Body of Evidence - Fossils\"\>", 
+   ",", "\<\"Standard Sequence\"\>", ",", "\<\"Valday Hills\"\>", 
+   ",", "\<\"Yorkshire ML - FA - No LV\"\>", ",", 
+   RowBox[{"!", "\<\"No BCL as ML\"\>"}], ",", 
+   RowBox[{"!", "\<\"No Main Culm as CM\"\>"}], ",", 
+   RowBox[{"!", "\<\"Non-Culm - Body of Evidence - Region\"\>"}], ",", 
+   RowBox[{"!", "\<\"No Non-Culm as ORS\"\>"}], ",", 
+   RowBox[{"!", "\<\"Passing Devon Northwards\"\>"}], ",", 
+   RowBox[{"!", "\<\"Sequence of Strata - Tor Bay and Newton Abott\"\>"}]}], 
+  "}"}]], "Output",
+ CellChangeTimes->{3.837660656269368*^9},
+ CellLabel->
+  "Out[152]=",ExpressionUUID->"46d8fe01-9f30-4f54-a33c-8918ac52c5d7"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Complement", "[", 
+  RowBox[{"dedABDEVhe", ",", "dedABDEVe"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Complement", "[", 
+  RowBox[{"dedABDEVe", ",", "dedABDEVhe"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.83766085463829*^9, 3.83766086971213*^9}},
+ CellLabel->
+  "In[169]:=",ExpressionUUID->"a4346353-cd92-4af3-8e03-aacb79f743cc"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.837660861131645*^9, 3.837660870147821*^9}},
+ CellLabel->
+  "Out[169]=",ExpressionUUID->"0f22e106-eb74-4eb1-870d-3920bf623b4a"],
+
+Cell[BoxData[
+ RowBox[{"{", "}"}]], "Output",
+ CellChangeTimes->{{3.837660861131645*^9, 3.837660870151278*^9}},
+ CellLabel->
+  "Out[170]=",ExpressionUUID->"a3223dc3-ee33-4249-8caf-e6a9170eee1a"]
+}, Open  ]]
+},
+WindowSize->{1366, 703},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2093, 58, 270, "Input",ExpressionUUID->"6181eddf-3318-4897-9fb3-617b4a40d54a"],
+Cell[CellGroupData[{
+Cell[2698, 84, 1527, 27, 25, "Print",ExpressionUUID->"9ce1d7c1-ece1-4cf3-915e-0d261663708a"],
+Cell[4228, 113, 1537, 27, 25, "Print",ExpressionUUID->"fac54735-b2d3-4789-8a24-4133e461785a"],
+Cell[5768, 142, 1529, 27, 25, "Print",ExpressionUUID->"a572a8c2-a979-400b-97a7-750189143992"],
+Cell[7300, 171, 1537, 27, 25, "Print",ExpressionUUID->"02c8acb8-fddc-4891-91e3-f5267354f3f8"]
+}, Open  ]]
+}, Open  ]],
+Cell[8864, 202, 296, 7, 31, "Input",ExpressionUUID->"9243cece-1aa5-42f7-89a8-d4cd74a361f2"],
+Cell[9163, 211, 1689, 50, 124, "Input",ExpressionUUID->"3b02ae01-40e1-4904-9c7b-4d5f159bc5d2"],
+Cell[CellGroupData[{
+Cell[10877, 265, 1239, 34, 55, "Input",ExpressionUUID->"9458d39c-7167-4a48-a356-009c6bf339f1"],
+Cell[12119, 301, 591, 11, 59, "Output",ExpressionUUID->"8f39097c-7bc0-433c-b4aa-691f1bf0ab17"],
+Cell[12713, 314, 610, 12, 59, "Output",ExpressionUUID->"c8ab90fb-803e-4fae-84e2-7e707c5ec812"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13360, 331, 3033, 72, 101, "Input",ExpressionUUID->"840bdd00-49fa-458a-b4e3-0b8c44e6beb5"],
+Cell[16396, 405, 6131, 110, 565, "Output",ExpressionUUID->"46d8fe01-9f30-4f54-a33c-8918ac52c5d7"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22564, 520, 356, 7, 55, "Input",ExpressionUUID->"a4346353-cd92-4af3-8e03-aacb79f743cc"],
+Cell[22923, 529, 194, 4, 35, "Output",ExpressionUUID->"0f22e106-eb74-4eb1-870d-3920bf623b4a"],
+Cell[23120, 535, 194, 4, 67, "Output",ExpressionUUID->"a3223dc3-ee33-4249-8caf-e6a9170eee1a"]
+}, Open  ]]
+}
+]
+*)
+

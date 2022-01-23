@@ -1,7 +1,6 @@
-{{{0.006426735218508998, 40, 6224}, {0.005401251329262736, 
-   0.006426735218508998, 0.0010310528649033603}, 
-  {0.7247842892383354, 0.006426735218508998, 0.00004713038360134044, 
-   0.0010310528649033603}}, 
+{{{0.00196078431372549, 8, 4080}, {0.001730694178086495, 0.00196078431372549, 
+   0.00023048904168154622}, {0.7899558911687172, 0.00196078431372549, 
+   0.00003453272951163001, 0.00023048904168154622}}, 
  {{32, {"BCL as CM", "BCL as ML", "BCL at Oldest ML", 
     "Characteristic Rock Type - Some Time", 
     "Conformable Passage - BCL and NC", "Conformable Passages - 1", 
@@ -16,8 +15,5 @@
     "No Non-Culm as SIL", "Passing Devon Northwards", 
     "Pembrokeshire - Characteristic CAM Rock Type", 
     "Unbroken Sequence of Devon Strata"}}, 
-  {9, {"Characteristic Rock Type - Some Time", "CRT - CAM", "CRT - ORS", 
-    "Devon Strata - Temporal Order - 2", "Exmoor Youngest Devonian Strata", 
-    "LV in Sedimentation", "Main Culm Youngest Devonian Strata", 
-    "Pembrokeshire - Characteristic CAM Rock Type", 
-    "Unbroken Sequence of Devon Strata"}}}}
+  {5, {"Characteristic Rock Type - Some Time", "CRT - CAM", "CRT - ORS", 
+    "LV in Sedimentation", "Pembrokeshire - Characteristic CAM Rock Type"}}}}

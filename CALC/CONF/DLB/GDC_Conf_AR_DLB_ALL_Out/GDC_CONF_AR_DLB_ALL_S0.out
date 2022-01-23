@@ -1,15 +1,15 @@
-Mathematica File /home/cguenth/GDC/GDC_CONF.m
+Mathematica File /home/kit/itz/qb3892/GDC/GDC_CONF.m
 REV AR
 PERS DLB
 CONF ALL
-Eingabe - Datei - TAU 2 /home/cguenth/GDC/TAU2/GDC_Tau_Simplified_S0.txt
-Eingabe - Datei - POS /home/cguenth/GDC/POS/gdc_pos_S0.txt
-Eingabe - Datei - SIG /home/cguenth/GDC/SIG2/GDC_Sigma_2_S0.txt
-Ausgabe - Ordner /home/cguenth/GDC/GDC_Conf_AR_DLB_ALL_Out
+Eingabe - Datei - TAU 2 /home/kit/itz/qb3892/GDC/TAU2/GDC_Tau_Simplified_S0.txt
+Eingabe - Datei - POS /home/kit/itz/qb3892/GDC/POS/gdc_pos_S0.txt
+Eingabe - Datei - SIG /home/kit/itz/qb3892/GDC/SIG2/GDC_Sigma_2_S0.txt
+Ausgabe - Ordner /home/kit/itz/qb3892/GDC/GDC_Conf_AR_DLB_ALL_Out
 Ausgabe - Datei GDC_CONF_AR_DLB_ALL_S0.txt
-Package path /home/cguenth/GDC/DialecticalStructures/Argdown.m
-Package path /home/cguenth/GDC/DialecticalStructures/GDCAnalysis3.m
-Package path /home/cguenth/GDC/DialecticalStructures/GDCTools.m
+Package path /pfs/data5/home/kit/itz/qb3892/GDC/DialecticalStructures/Argdown.m
+Package path /pfs/data5/home/kit/itz/qb3892/GDC/DialecticalStructures/GDCAnalysis3.m
+Package path /pfs/data5/home/kit/itz/qb3892/GDC/DialecticalStructures/GDCTools.m
 Positions - Indexe {3, 3, 3}
  posTot {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 39, 45, 61, 62}
 posNeu {3, 7, 8, 9, 10, 11, 12, 16, 19, 23, 26, 39, 45, 61, 62}

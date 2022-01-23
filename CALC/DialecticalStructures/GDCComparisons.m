@@ -13,10 +13,13 @@
 
 
 (* Wolfram Language Package *)
-BeginPackage["DialecticalStructures`GDCComparisons`"]
+BeginPackage["DialecticalStructures`GDCComparisons`", { "DialecticalStructures`GDCAnalysis3`"}]
 
 
 (* Exported symbols added here with SymbolName::usage *) 
+posChangeFunc::usage = "posChangeFunc[persI_, ts1_, ts2_, posF_, compMod_, pMod_]";
+cmDeltaFunc::usage = "cmDeltaFunc[data_, ts1_, ts2_]";
+propPrincT::usage = "propPrincT[name_, cm_,posF_ , evbk_, pen_, opts_]";
 fileNameFunc::usage = "fileNameFunc[pers_,ts_]";
 pointsSXWP::usage = "pointsSXWP[accData_, confVVData_, pers_, ts_]";
 pointsWithoutPersons::usage = "pointsWithoutPersons[accData_, confVVData_, pers_]";
@@ -25,10 +28,12 @@ numEVBKFunc::usage = "numEVBKFunc[posL_, pers_,ts_]";
 tableFunc::usage = "tableFunc[data_, pers_]";
 tableFunc2::usage = "tableFunc2[data_]";
 maxValFunc::usage = "maxValFunc[tsAF_, tsBE_, dataAF_, dataBE_, pers_, conf_]"; 
+vvCHMaxFunc2::usage = "vvCHMaxFunc2[persI_, data_,t1_,t2_, ts_]";
 vvCHMaxFunc::usage = "vvCHMaxFunc[tsAF_, tsBE_,dataAF_, dataBE_, pers_]";
 vvHistPointsFunc::usage = "vvHistPointsFunc[dataIn_]";
 histFunc::usage = "histFunc[inD_, revM_, ts_]";
 compValCHFunc::usage = "compValCHFunc[maxCH_, tatCH_]";
+compDistFunc::usage = "compDistFunc[pos1_, pos2_, pMod_]";
 compCHMaxFunc::usage = "compCHMaxFunc[persI_, ts_, chT_, chM_]";
 compPosFunc::usage = "compPosFunc[persI1_, persI2_, ts_, ch_, compMod_, pMod_]";
 vvPosFunc::usage = "vvPosFunc[persI_, ts_, ch_, compMod_, pMod_]";
@@ -40,6 +45,102 @@ list3DFunc::usage = "list3DFunc[dataIn_, tInd_, mod_]";
 Begin["`Private`"] (* Begin Private Context *) 
 
 
+posChangeFunc[persI_, ts1_, ts2_, posF_, compMod_, pMod_]:=Module[{compL, t1,t2, tsI1,tsI2, pos1, pos2, conBKts1,conEVts1,conBKts2,conEVts2},
+(*Print["persI ", persI];*)
+t1={0.,1.,2.,3.,4.,5.,6.,7.,8.};
+t2={0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5};
+(*Print["ts1 ", ts1, " ", "ts2 ", ts2];*)
+tsI1=First@If[MemberQ[t1,ts1],Flatten[Position[t1,ts1]],Flatten[Position[t2,ts1]]];
+tsI2=First@If[MemberQ[t1,ts2],Flatten[Position[t1,ts2]],Flatten[Position[t2,ts2]]];
+(*Print["tsI1 ", tsI1, " ", "tsI2 ", tsI2];*)
+Which[compMod=="CH",
+pos1=posF[[tsI1]][[persI]][["CH"]];
+pos2=posF[[tsI2]][[persI]][["CH"]];
+compL=compValCHFunc[pos1,pos2];,
+compMod=="EVBK",
+If[MemberQ[t2,ts1],
+conBKts1=posF[[tsI1+1]][[1]][["BK"]];
+conEVts1=posF[[tsI1+1]][[1]][["EV"]];, 
+conBKts1=posF[[tsI1]][[1]][["BK"]];
+conEVts1=posF[[tsI1]][[1]][["EV"]];];
+If[MemberQ[t2,ts2],
+conBKts2=posF[[tsI2+1]][[1]][["BK"]];
+conEVts2=posF[[tsI2+1]][[1]][["EV"]];, 
+conBKts2=posF[[tsI2]][[1]][["BK"]];
+conEVts2=posF[[tsI2]][[1]][["EV"]];];
+(*Print["conBKts1 ", conBKts1, "conBKts2 ",conBKts2];
+Print["conEVts1 ", conEVts1, "conEVts2 ",conEVts2];*)
+pos1=Union[posF[[tsI1]][[persI]][["EV"]],posF[[tsI1]][[persI]][["BK"]], conBKts1,conEVts1];
+pos2=Union[posF[[tsI2]][[persI]][["EV"]],posF[[tsI2]][[persI]][["BK"]], conBKts2,conEVts2];
+(*Print["pos1 ", pos1, "pos2 ", pos2];*)
+compL=compDistFunc[pos1,pos2, pMod];
+];
+
+Return[compL];
+];
+
+
+cmDeltaFunc[data_, ts1_, ts2_]:=Module[{t1,t2, tsI1,tsI2,y,x, yts1,yts2,delta,xd,rV},
+x=data[[All,1]]/1.;
+(*Print["ts1 ", ts1, " ", "ts2 ", ts2];*)
+tsI1=First@Flatten[Position[x,ts1]]; tsI2=First@Flatten[Position[x,ts2]];
+(*Print["tsI1 ", tsI1, " ", "tsI2 ", tsI2];*)
+y=data[[All,2]]/1.;
+(*Print["yt1 ", y[[tsI1]], " ", Head[y[[tsI1]]], " yt2 ", y[[tsI2]]," ", Head[y[[tsI2]]]];*)
+
+If[BooleanQ[Head[y[[tsI1]]]==Times]||BooleanQ[Head[y[[tsI2]]]==Times], rV={xd,"DOJ nicht definiert!"},
+If[ts1>ts2,
+delta=y[[tsI1]]-y[[tsI2]];xd=x[[tsI2]]+0.25;,
+delta=y[[tsI2]]-y[[tsI1]];xd=x[[tsI1]]+0.25;
+];
+rV={xd,delta};
+];
+Return[rV];
+];
+
+
+propPrincT[name_, cm_,posF_ , evbk_, pen_, opts_]:=Module[{persI,cmF,tI,tE, yV,xV,dE,dCM, dEInd,dDOJInd,summingUp, indE, indCM},
+persI=First[persMixFunc[name]];
+(*Print["persI ", persI];*)
+tE=7.5;
+Which[name=="DLB",
+tI=0;,
+name=="MUR",
+tI=1;,
+name=="LYE",
+tI=1;,
+name=="PHI",
+tI=2;,
+name=="SED",
+tI=3;,
+name=="AUS",
+tI=6;
+];
+(*Print["tI ", tI];*)
+yV=Table[posChangeFunc[persI,i,i+0.5,posF,evbk,pen],{i,tI,tE,0.5}];
+(*Print["yV ", yV];*)
+xV=Table[i+0.25,{i,tI,tE,0.5}];
+dE=Map[{xV[[#]],yV[[#]]}&,Range[Length[xV]]];
+cmF=Get["/home/carla/GDC/CONF/"<>ToString[name]<>"/"<>ToString[name]<>"_"<>ToString[cm]<>".txt"];
+dCM=Table[cmDeltaFunc[cmF, i, i+0.5],{i,tI,tE,0.5}];
+(*Print["dE ", dE];
+Print["dCM ", dCM];*)
+If[opts=="CON",
+dEInd=Take[dE,{1,-1,2}];
+dDOJInd=Take[dCM,{1,-1,2}];,
+dEInd=Take[dE,{2,-1,2}];
+dDOJInd=Take[dCM,{2,-1,2}];];
+(*Print["dEInd ", dEInd];
+Print["dDOJInd ", dDOJInd];*)
+summingUp=Map[{dEInd[[#]][[1]],dEInd[[#]][[2]],dDOJInd[[#]][[2]]}&,Range[Length[dEInd]]];
+indE=DeleteCases[Cases[summingUp,p_/; p[[2]]!=1],p_/;StringQ[p[[3]]]];
+(*Print["indE ", indE];*)
+indCM=Cases[indE, p_/; p[[3]]<0&&Abs[p[[3]]]>0.001];
+(*Print["indCM ", indCM];*)
+(*dataToPlot=Map[{indE[[#]][[1]],indE[[#]][[3]]}&,Range[Length[indE]]];*)
+Return[{indCM,indE}];]
+
+
 fileNameFunc[pers_,ts_]:=Module[{tsL, mod,tsTat, fileN},
 tsL={0,1,2,3,4,5,6,7,8};
 If[MemberQ[tsL,ts],mod="AR";tsTat=ts+0.;,mod="BR";tsTat=ts+0.5;];
@@ -48,7 +149,7 @@ Return[fileN];
 ];
 
 
-pointsSXWP[accData_, confVVData_, pers_, ts_]:=Module[{outData,tsRed,v,timL},
+pointsSXWP[accData_, confVVData_, pers_, ts_]:=Module[{outData,tsRed,v,timL,r},
 timL={0.,0.5,1.,1.5,2.,2.5,3.,3.5,4.,4.5,5.,5.5,6.,6.5,7.,7.5,8.};
 Which[pers=="DLB",tsRed=Drop[timL,0];,
 pers=="MUR",tsRed=Drop[timL,2];,
@@ -64,19 +165,18 @@ Print["ts ",ts];*)
 If[MemberQ[tsRed,ts],
 v=First@First@Position[tsRed,ts];
 outData=Map[{accData[[pers]][[v,2]],#}&,
-Cases[confVVData[[pers]], p_/;accData[[pers]][[v,1]]==First[p]][[All,2]]
-];,
+Cases[confVVData[[pers]], p_/;accData[[pers]][[v,1]]==First[p]][[All,2]]];,
 outData={};];
-
+(*If[Length[outData]\[Equal]1,r=First[outData];,r=outData;];*)
 Return[outData];
 ];
 
 
 pointsWithoutPersons[accData_, confVVData_, pers_]:=Module[{outData},
 outData=Map[Function[v, 
-Map[Function[u,{accData[[pers]][[v,2]],u}],
-(*Cases[confVVData[[pers]], p_/;MemberQ[{accData[[pers]][[v,1]],(accData[[pers]][[v,1]]+0.5)},First[p]]][[All,2]]*)
-Cases[confVVData[[pers]], p_/;accData[[pers]][[v,1]]==First[p]][[All,2]]
+Map[Function[u,{accData[[pers]][[v,2]],u[[2]],u[[3]]}],
+(*Cases[confVVData[[pers]], p_/;accData[[pers]][[v,1]]==First[p]][[All,2]]*)
+Cases[confVVData[[pers]], p_/;accData[[pers]][[v,1]]==First[p]]
 ]],
 Range[Length[accData[[pers]]]]
 ];
@@ -88,8 +188,9 @@ histoAccFunc[points_, accL_, accH_, ts_]:=Module[{pointsOut,plotLab, l, ant, pro
 If[accH=="NULL",
 pointsOut=Map[Cases[#, p_/; accL== p[[1]]][[All,2]]&,points];
 plotLab="ACC = "<>ToString[accL];,
-pointsOut=Map[Cases[#, p_/; accL<p[[1]]<= accH][[All,2]]&,points];
-plotLab=ToString[accL]<>"<=ACC<"<>ToString[accH];
+pointsOut=Map[Cases[#, p_/; accL < p[[1]]<= accH][[All,2]]&,points];
+Print["pointsOut ", pointsOut];
+plotLab=ToString[accL]<>"<ACC<="<>ToString[accH];
 ];
 If[Length[points]==3,
 hist=Histogram[pointsOut, PlotLabel->"VV(CH=MAX),    "<> plotLab <>",    S"<>ToString[ts],ImageSize->400, ChartLegends->{"DOJ","Z","F"},ChartStyle->{Red,Blue,Yellow}];,
@@ -120,39 +221,18 @@ Alignment->{{Left,Right,{Right}}},ItemSize->{itemSL},Frame->Darker[Gray,.6],Item
 Return[g];];
 
 
-tableFunc2[data_]:=Module[{g, persL},
+tableFunc2[data_, mod_]:=Module[{persL,tableEnt, itemSL, g},
 persL={"DLB","MUR","LYE","PHI","SED","AUS"};
-g=Grid[Prepend[Map[Prepend[data[[#]],persL[[#]]]&,Range[6]], {Null,"S0","S0.5","S1","S1.5","S2","S2.5","S3","S3.5","S4","S4.5","S5","S5.5","S6","S6.5","S7","S7.5","S8"}],
+If[mod=="ALL",tableEnt={Null,"S0","S0.5", "S1","S1.5","S2","S2.5","S3","S3.5","S4","S4.5","S5","S5.5","S6","S6.5","S7","S7.5","S8"};
+itemSL={7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7};,
+tableEnt={Null,"S0","S1","S2","S3","S4","S5","S6","S7","S8"};
+itemSL={7,7,7,7,7,7,7,7,7,7}];
+
+g=Grid[Prepend[Map[Prepend[data[[#]],persL[[#]]]&,Range[6]], tableEnt],
 Background->{None,{Lighter[Yellow,.9],{White,Lighter[Blend[{Blue,Green}],.8]}}},
 Dividers->{{Darker[Gray,.6],{Lighter[Gray,.5]},Darker[Gray,.6]},{Darker[Gray,.6],Darker[Gray,.6],{False},Darker[Gray,.6]}},
-Alignment->{{Left,Right,{Right}}},ItemSize->{{7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7,7}},Frame->Darker[Gray,.6],ItemStyle->14,Spacings->{Automatic,.8}];
+Alignment->{{Left,Right,{Right}}},ItemSize->{itemSL},Frame->Darker[Gray,.6],ItemStyle->14,Spacings->{Automatic,.8}];
 Return[g];];
-
-
-maxValFunc[tsAF_, tsBE_, dataAF_, dataBE_, pers_, conf_]:=Module[{valAR, valBE, histoAF, histoBE},
-valAR=Map[{tsAF[[#]],dataAF[[#,2]][["value"]]}&, Range[Length[dataAF]]];
-valBE=Map[{tsBE[[#]],dataBE[[#,2]][["value"]]}&, Range[Length[dataBE]]];
-
-histoAF=histFunc[dataAF,"AR",tsAF,pers, conf];
-histoBE=histFunc[dataBE,"BR", tsBE,pers, conf];
-
-Return[Union[valAR,valBE]];
-];
-
-
-vvCHMaxFunc[tsAF_, tsBE_,dataAF_, dataBE_, pers_]:=Module[{vvAR,vvBR},
-vvAR=Map[{#,vvPosFunc[First[persMixFunc[pers]],# ,dataAF, "CH", "PEN"]}&,tsAF];
-vvBR=Map[{#,vvPosFunc[First[persMixFunc[pers]],# ,dataBE, "CH", "PEN"]}&,tsBE];
-Return[Union[vvAR,vvBR]];
-];
-
-
-vvHistPointsFunc[dataIn_]:=Module[{dataOut},
-dataOut=Flatten[Map[
-Function[x,Map[
-Function[y,{x[[1]],y}],x[[2]]]
-],dataIn],1];
-Return[dataOut];];
 
 
 histFunc[inD_, revM_, ts_, persName_, conf_]:=Module[{l,hD, hP,dirString},
@@ -163,6 +243,65 @@ dirString=FileNameJoin[{$HomeDirectory, "GDC", "CH_Pool",persName, "HIST", conf}
 SetDirectory[dirString];
 Map[Export[persName<>"_HIST_"<>conf<> revM<>"_S"<>ToString[ts[[#]]]<>".jpeg", hP[[#]],ImageSize->850]&,Range[l]]
 ];
+
+
+maxValFunc[tsAF_, tsBE_, dataAF_, dataBE_, pers_, conf_]:=Module[{dataBETat,valAR, valBE, valBETat, histoAF, histoBE},
+
+If[pers=="LYE", dataBETat=Drop[dataBE,-1];,dataBETat=dataBE; ];
+
+valAR=Map[{tsAF[[#]],dataAF[[#,2]][["value"]]}&, Range[Length[dataAF]]];
+valBE=Map[{tsBE[[#]],dataBETat[[#,2]][["value"]]}&, Range[Length[dataBETat]]];
+
+histoAF=histFunc[dataAF,"AR",tsAF,pers, conf];
+histoBE=histFunc[dataBETat,"BR", tsBE,pers, conf];
+
+Return[Union[valAR,valBE]];
+];
+
+
+vvCHMaxFunc2[persI_, data_,t1_,t2_, ts_]:=Module[{r, tInd,h},
+tInd=First@If[MemberQ[t1,ts],Flatten[Position[t1,ts]],Flatten[Position[t2,ts]]];
+(*Print["tInd ", tInd];
+Print["persI ", persI];*)
+
+Which[persI==19,
+h=tInd-6;,
+persI==15,
+h=tInd-3;,
+persI==11,
+h=tInd-2;,
+persI==9,
+h=tInd-1;,
+persI==7,
+h=tInd-1;,
+persI==3,
+h=tInd;
+];
+(*data[[1,2]][["value"]]: Zeitschritt 1 entspricht f\[UDoubleDot]r AUS S6, MAX-value*)
+r={ts,vvPosFunc[persI, ts ,data, "CH", "PEN"],data[[h,2]][["value"]]};
+Return[r];
+];
+
+
+
+vvCHMaxFunc[tsAF_, tsBE_,dataAF_, dataBE_, pers_]:=Module[{persI,t1,t2,tInd, h, vvAR,vvBR},
+persI=First[persMixFunc[pers]];
+t1={0,1,2,3,4,5,6,7,8};
+t2={0.5,1.5,2.5,3.5,4.5,5.5,6.5,7.5};
+(* F\[UDoubleDot]r compMod=="EV","BK","EVBK" : data = pos-files *)
+
+vvAR=Map[vvCHMaxFunc2[persI, dataAF,t1,t2, #]&,tsAF];
+vvBR=Map[vvCHMaxFunc2[persI, dataBE,t1,t2, #]&,tsBE];
+Return[Union[vvAR,vvBR]];
+];
+
+
+vvHistPointsFunc[dataIn_]:=Module[{dataOut},
+dataOut=Flatten[Map[
+Function[x,Map[
+Function[y,{x[[1]],y, x[[3]]}],x[[2]]]
+],dataIn],1];
+Return[dataOut];];
 
 
 compValCHFunc[ch1_, ch2_]:=Module[{vv}, 
